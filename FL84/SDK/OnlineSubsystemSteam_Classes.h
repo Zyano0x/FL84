@@ -1,0 +1,58 @@
+﻿#pragma once
+
+/**
+ * Name: FL84
+ * Version: 1.14.4.5.503427
+ */
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x01)
+#endif
+
+namespace CG
+{
+	// --------------------------------------------------
+	// # Classes
+	// --------------------------------------------------
+	/**
+	 * Class OnlineSubsystemSteam.SteamAuthComponentModuleInterface
+	 * Size -> 0x0000 (FullSize[0x0028] - InheritedSize[0x0028])
+	 */
+	class USteamAuthComponentModuleInterface : public UHandlerComponentFactory
+	{
+	public:
+		static UClass* StaticClass();
+	};
+
+	/**
+	 * Class OnlineSubsystemSteam.SteamNetConnection
+	 * Size -> 0x0008 (FullSize[0x1BB8] - InheritedSize[0x1BB0])
+	 */
+	class USteamNetConnection : public UIpConnection
+	{
+	public:
+		bool                                                       bIsPassthrough;                                          // 0x1BB0(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
+		unsigned char                                              UnknownData_I87U[0x7];                                   // 0x1BB1(0x0007) MISSED OFFSET (PADDING)
+
+	public:
+		static UClass* StaticClass();
+	};
+
+	/**
+	 * Class OnlineSubsystemSteam.SteamNetDriver
+	 * Size -> 0x0008 (FullSize[0x07D0] - InheritedSize[0x07C8])
+	 */
+	class USteamNetDriver : public UIpNetDriver
+	{
+	public:
+		unsigned char                                              UnknownData_L58U[0x8];                                   // 0x07C8(0x0008) MISSED OFFSET (PADDING)
+
+	public:
+		static UClass* StaticClass();
+	};
+
+}
+
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif
