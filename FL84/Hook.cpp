@@ -90,7 +90,7 @@ void hkGetViewPoint(CG::ULocalPlayer* LocalPlayer, CG::FMinimalViewInfo* OutView
 {
 	oGetViewPoint(LocalPlayer, OutViewInfo, StereoPass);
 
-	if (Settings[AIM_MODE].Value.iValue == 1 && GetAsyncKeyState(Settings[AIM_KEY].Value.iValue) & 0x80000)
+	if (/*Settings[AIM_MODE].Value.iValue == 1 &&*/ GetAsyncKeyState(Settings[AIM_KEY].Value.iValue) & 0x80000)
 	{
 		OutViewInfo->Location = OriginalLocation;
 		OutViewInfo->Rotation = OriginalRotation;
@@ -106,12 +106,12 @@ void hkGetPlayerViewPoint(CG::APlayerController* PlayerController, CG::FVector* 
 
 	//printf("Location: [%.0f | %.0f | %.0f]\nRotation: [%.0f | %.0f | %.0f]\n", Location->X, Location->Y, Location->Z, Rotation->Pitch, Rotation->Yaw, Rotation->Roll);
 
-	if (Settings[AIM_MODE].Value.iValue == 1 && GetAsyncKeyState(Settings[AIM_KEY].Value.iValue) & 0x80000)
+	if (/*Settings[AIM_MODE].Value.iValue == 1 &&*/ GetAsyncKeyState(Settings[AIM_KEY].Value.iValue) & 0x80000)
 	{
 		if (Aimbot::Target)
 		{
-			//CG::FRotator TargetRotation = (ZZZ.AimPosition - *Location).ToRotator();
-			*Rotation = Aimbot::AimRotation;
+			CG::FRotator TargetRotation = (Aimbot::AimPosition - *Location).ToRotator();
+			*Rotation = TargetRotation;
 		}
 	}
 }

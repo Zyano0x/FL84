@@ -3,6 +3,7 @@
 namespace Aimbot
 {
 	CG::ASolarCharacter* Target = NULL;
+	CG::FVector AimPosition = {};
 	CG::FRotator AimRotation = {};
 	CG::FVector Bone = {};
 
@@ -241,7 +242,7 @@ namespace Aimbot
 
 		CG::FRotator OldRotation = PlayerController->GetControlRotation();
 		CG::FVector LocalLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
-		CG::FVector AimPosition = /*Engine::GetBonePosition(Enemy->Mesh, NECK_01)*/ Enemy->Mesh->GetBoneWorldPos(NECK_01);
+		AimPosition = /*Engine::GetBonePosition(Enemy->Mesh, NECK_01)*/ Enemy->Mesh->GetBoneWorldPos(NECK_01);
 
 		if (Settings[AIM_PREDICTION].Value.bValue)
 		{

@@ -3,6 +3,7 @@
 namespace Aimbot
 {
 	extern CG::ASolarCharacter* Target;
+	extern CG::FVector AimPosition;
 	extern CG::FRotator AimRotation;
 	extern CG::FVector Bone;
 
