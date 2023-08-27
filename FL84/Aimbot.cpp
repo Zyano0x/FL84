@@ -145,7 +145,7 @@ namespace Aimbot
 		return vAngles;
 	}
 
-	static bool mouse_move(int x, int y)
+	bool mouse_move(int x, int y)
 	{
 		INPUT input;
 		input.type = INPUT_MOUSE;
@@ -270,7 +270,7 @@ namespace Aimbot
 
 			CG::FVector TargetBone = CalcFuturePos(PlayerController, Bone);
 			CG::FVector2D TargetPos = CG::FVector2D(TargetBone.X, TargetBone.Y);
-			AimAtPosV2(ScreenWidth, ScreenHeight, TargetPos.X, TargetPos.Y, Settings[AIM_SMOOTH].Value.fValue, 10, 1);
+			AimAtPosV2(ScreenWidth, ScreenHeight, TargetPos.X, TargetPos.Y, Settings[AIM_SMOOTH].Value.fValue, Settings[HUMAN_SPEED].Value.fValue, Settings[HUMAN_SCALE].Value.fValue);
 		}
 		else
 		{

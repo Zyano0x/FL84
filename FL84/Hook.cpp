@@ -63,6 +63,9 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* SwapChain, UINT SyncInterval, UINT F
 		Menu::MenuOpen ^= 1;
 
 	if (GetAsyncKeyState(VK_F1) & 1)
+		Settings[AIM_ENABLED].Value.bValue ^= 1;
+
+	if (GetAsyncKeyState(VK_F2) & 1)
 		Settings[ESP_LOOT_ENABLED].Value.bValue ^= 1;
 
 	ImGui::GetIO().MouseDrawCursor = Menu::MenuOpen;
@@ -87,7 +90,7 @@ void hkGetViewPoint(CG::ULocalPlayer* LocalPlayer, CG::FMinimalViewInfo* OutView
 {
 	oGetViewPoint(LocalPlayer, OutViewInfo, StereoPass);
 
-	if (/*Settings[AIM_MODE].Value.iValue == 1 &&*/ GetAsyncKeyState(VK_LBUTTON) & 0x80000)
+	if (Settings[AIM_MODE].Value.iValue == 1 && GetAsyncKeyState(Settings[AIM_KEY].Value.iValue) & 0x80000)
 	{
 		OutViewInfo->Location = OriginalLocation;
 		OutViewInfo->Rotation = OriginalRotation;
@@ -103,7 +106,7 @@ void hkGetPlayerViewPoint(CG::APlayerController* PlayerController, CG::FVector* 
 
 	//printf("Location: [%.0f | %.0f | %.0f]\nRotation: [%.0f | %.0f | %.0f]\n", Location->X, Location->Y, Location->Z, Rotation->Pitch, Rotation->Yaw, Rotation->Roll);
 
-	if (Settings[AIM_MODE].Value.iValue == 1 && GetAsyncKeyState(VK_LBUTTON) & 0x80000)
+	if (Settings[AIM_MODE].Value.iValue == 1 && GetAsyncKeyState(Settings[AIM_KEY].Value.iValue) & 0x80000)
 	{
 		if (Aimbot::Target)
 		{
@@ -118,6 +121,9 @@ void Initialize()
 	//AllocConsole();
 	//FILE* f;
 	//freopen_s(&f, "CONOUT$", "w", stdout);
+
+	strcpy(ConfigDirectory, "C:\\ZC\\");
+	CreateDirectoryA(ConfigDirectory, NULL);
 
 	CG::InitSDK();
 	InitSettings();

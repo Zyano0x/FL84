@@ -29,9 +29,11 @@ typedef enum
 	AIM_FOV,
 	AIM_SMOOTH,
 	AIM_PREDICTION,
+	AIM_KEY,
 	NO_RECOIL,
 	DRAW_FOV,
-	DISTANCE,
+	HUMAN_SPEED,
+	HUMAN_SCALE,
 
 	// ESP =======================================================================================================
 

@@ -4,6 +4,30 @@ namespace Menu
 {
 	bool MenuOpen = false;
 
+	void Hotkey(int* k, const ImVec2& size_arg)
+	{
+		static bool waitingforkey = false;
+		if (waitingforkey == false)
+		{
+			if (ImGui::Button(KeyNames[*(int*)k], size_arg))
+				waitingforkey = true;
+		}
+
+		else if (waitingforkey == true)
+		{
+			ImGui::Button("...", size_arg);
+
+			for (auto& Key : KeyCodes)
+			{
+				if (GetAsyncKeyState(Key))
+				{
+					*(int*)k = Key;
+					waitingforkey = false;
+				}
+			}
+		}
+	}
+
 	void StyleMenu()
 	{
 		ImGuiStyle* style = &ImGui::GetStyle();
@@ -112,6 +136,11 @@ namespace Menu
 				ImGui::Checkbox(" No Recoil", &Settings[NO_RECOIL].Value.bValue);
 				ImGui::Spacing();
 
+				ImGui::Text("Aim Key");
+				ImGui::SameLine(ImGui::GetCursorPosX() + 150.0f);
+				Menu::Hotkey(&Settings[AIM_KEY].Value.iValue);
+
+				ImGui::Spacing();
 				static const char* AimMode[] = { " Aimbot FOV", " Silent Aim" };
 				ImGui::PushItemWidth(220);
 				ImGui::Combo(" Aim Mode", &Settings[AIM_MODE].Value.iValue, AimMode, IM_ARRAYSIZE(AimMode));
@@ -119,12 +148,22 @@ namespace Menu
 
 				ImGui::Spacing();
 				ImGui::PushItemWidth(220);
-				ImGui::SliderFloat(" FOV", &Settings[AIM_FOV].Value.fValue, 10, 150, "%.f");
+				ImGui::SliderFloat(" FOV", &Settings[AIM_FOV].Value.fValue, 10, 250, "%.f");
 				ImGui::PopItemWidth();
 
 				ImGui::Spacing();
 				ImGui::PushItemWidth(220);
 				ImGui::SliderFloat(" Smooth", &Settings[AIM_SMOOTH].Value.fValue, 1, 100, "%.f");
+				ImGui::PopItemWidth();
+
+				ImGui::Spacing();
+				ImGui::PushItemWidth(220);
+				ImGui::SliderFloat(" Human Speed", &Settings[HUMAN_SPEED].Value.fValue, 1, 100, "%.f");
+				ImGui::PopItemWidth();
+
+				ImGui::Spacing();
+				ImGui::PushItemWidth(220);
+				ImGui::SliderFloat(" Human Scale", &Settings[HUMAN_SCALE].Value.fValue, 1, 20, "%.f");
 				ImGui::PopItemWidth();
 			}
 
@@ -216,6 +255,11 @@ namespace Menu
 				ImGui::ColorEdit4(" Treasure Box", (float*)&Settings[COLOR_TREASUREBOX].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
 
 				ImGui::Spacing();
+				ImGui::Checkbox(" AirDrop Box", &Settings[ESP_TREASUREBOX].Value.bValue);
+				ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
+				ImGui::ColorEdit4(" AirDrop Box", (float*)&Settings[COLOR_AIRDROP].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+
+				ImGui::Spacing();
 				static const char* LevelItems[] = { " Level 1", " Level 2", " Level 3", " Level 4" , " Level 5" , " Level 6" };
 				ImGui::PushItemWidth(220);
 				ImGui::Combo(" Level Items", &Settings[ESP_LOOT_LEVEL].Value.iValue, LevelItems, IM_ARRAYSIZE(LevelItems));
@@ -223,8 +267,73 @@ namespace Menu
 
 				ImGui::Spacing();
 				ImGui::PushItemWidth(220);
-				ImGui::SliderFloat(" Items Distance", &Settings[ESP_ITEMS_DISTANCE].Value.fValue, 1.f, 250.f, "%.f");
+				ImGui::SliderFloat(" Items Distance", &Settings[ESP_ITEMS_DISTANCE].Value.fValue, 1.f, 300.f, "%.f");
 				ImGui::PopItemWidth();
+			}
+
+			ImGui::Spacing();
+			if (ImGui::CollapsingHeader(ICON_FA_SLIDERS_H " Misc"))
+			{
+				ImGui::Spacing();
+				ImGui::Spacing();
+
+				if (ImGui::Button("Load Config", ImVec2(95, 35)))
+				{
+					if (LoadSettings())
+					{
+						ImGui::OpenPopup("Settings loaded");
+					}
+					else
+					{
+						ImGui::OpenPopup("Loading failed");
+					}
+				}
+
+				ImGui::Spacing();
+
+				if (ImGui::Button("Save Config", ImVec2(95, 35)))
+				{
+					if (SaveSettings())
+					{
+						ImGui::OpenPopup("Settings saved");
+					}
+					else
+					{
+						ImGui::OpenPopup("Saving failed");
+					}
+				}
+
+				if (ImGui::BeginPopupModal("Settings loaded", 0, ImGuiWindowFlags_NoResize))
+				{
+					ImGui::Text("The settings have been loaded");
+					ImGui::Separator();
+					if (ImGui::Button("OK", ImVec2(70, 0))) { ImGui::CloseCurrentPopup(); }
+					ImGui::EndPopup();
+				}
+
+				if (ImGui::BeginPopupModal("Settings saved", 0, ImGuiWindowFlags_NoResize))
+				{
+					ImGui::Text("The settings have been saved");
+					ImGui::Separator();
+					if (ImGui::Button("OK", ImVec2(70, 0))) { ImGui::CloseCurrentPopup(); }
+					ImGui::EndPopup();
+				}
+
+				if (ImGui::BeginPopupModal("Loading failed", 0, ImGuiWindowFlags_NoResize))
+				{
+					ImGui::Text("Failed to load the settings");
+					ImGui::Separator();
+					if (ImGui::Button("OK", ImVec2(70, 0))) { ImGui::CloseCurrentPopup(); }
+					ImGui::EndPopup();
+				}
+
+				if (ImGui::BeginPopupModal("Saving failed", 0, ImGuiWindowFlags_NoResize))
+				{
+					ImGui::Text("Failed to save the settings");
+					ImGui::Separator();
+					if (ImGui::Button("OK", ImVec2(70, 0))) { ImGui::CloseCurrentPopup(); }
+					ImGui::EndPopup();
+				}
 			}
 		}
 		ImGui::End();

@@ -121,7 +121,7 @@ void XXX::Unknown()
 				{
 					int Distance = LocalCharacter->GetDistanceTo(Enemy) / 100;
 
-					Draw::DrawString(std::string("[" + std::to_string(Distance) + " M]"), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));		
+					Draw::DrawString(std::string("[" + std::to_string(Distance) + " M]"), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 				}
 				else if (!Settings[ESP_DISTANCE].Value.bValue && Settings[ESP_WEAPON].Value.bValue)
 				{
@@ -157,22 +157,7 @@ void XXX::Unknown()
 				{
 					ImVec4 ShieldColor = ImVec4();
 					if (Enemy->CurrShieldValue > 0)
-					{
-						if (Enemy->CurrShieldLevel == 1)
-							ShieldColor = ImVec4(0.77f, 0.77f, 0.77f, 1.f);
-						else if (Enemy->CurrShieldValue == 2)
-							ShieldColor = ImVec4(.52f, .84f, 0.f, 1.f);
-						else if (Enemy->CurrShieldValue == 3)
-							ShieldColor = ImVec4(.40f, .92f, .96f, 1.f);
-						else if (Enemy->CurrShieldValue == 4)
-							ShieldColor = ImVec4(.86f, .45f, 1.f, 1.f);
-						else if (Enemy->CurrShieldValue == 5)
-							ShieldColor = ImVec4(1.f, .51f, .24f, 1.f);
-						else if (Enemy->CurrShieldValue == 6)
-							ShieldColor = ImVec4(.98f, .25f, .14f, 1.f);
-						else
-							ShieldColor = ImVec4(1.0f, 0.84f, 0.0f, 1.f);
-					}
+						ShieldColor = ImVec4(1.0f, 1.0f, 1.0f, 1.0f);
 
 					ImVec4 HPColor = ImVec4();
 					if (Enemy->GetCurrentHealth() > 0)
@@ -299,17 +284,12 @@ void XXX::Unknown()
 						ClosestDistance = Distance;
 						ClosestTarget = Enemy;
 					}
-
-					/*if (Distance > Settings[AIM_FOV].Value.fValue)
-						continue;*/
-
-						//ClosestDistance = Distance;
 				}
 
 				if (!ClosestTarget)
 					continue;
 
-				if (Settings[AIM_MODE].Value.iValue == 0 && GetAsyncKeyState(VK_LBUTTON) & 0x80000)
+				if (Settings[AIM_MODE].Value.iValue == 0 && GetAsyncKeyState(Settings[AIM_KEY].Value.iValue) & 0x80000)
 				{
 					Aimbot::AimFOV(ClosestTarget);
 				}

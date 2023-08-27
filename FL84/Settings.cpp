@@ -79,9 +79,11 @@ void InitSettings()
 	Settings[AIM_ENABLED] = AddConfig("Aimbot Settings", "Aimbot_Enabled", false);
 	Settings[AIM_PREDICTION] = AddConfig("Aimbot Settings", "Aimbot_Prediction", true);
 	Settings[AIM_MODE] = AddConfig("Aimbot Settings", "Aimbot_Mode", 0, 0, 1);
-	Settings[AIM_FOV] = AddConfig("Aimbot Settings", "Aimbot_FOV", 100.0f, 10.0f, 150.0f);
+	Settings[AIM_FOV] = AddConfig("Aimbot Settings", "Aimbot_FOV", 150.0f, 10.0f, 250.0f);
 	Settings[AIM_SMOOTH] = AddConfig("Aimbot Settings", "Aimbot_Smooth", 2.0f, 1.0f, 100.0f);
-	Settings[DISTANCE] = AddConfig("Aimbot Settings", "Aimbot_Distance", 250, 0, 250);
+	Settings[AIM_KEY] = AddConfig("Aimbot Settings", "Aimbot_Key", 1, 0, 166);
+	Settings[HUMAN_SPEED] = AddConfig("Aimbot Settings", "Aimbot_Human_Speed", 10.0f, 1.0f, 100.f);
+	Settings[HUMAN_SCALE] = AddConfig("Aimbot Settings", "Aimbot_Human_Scale", 1.0f, 1.0f, 20.f);
 	Settings[DRAW_FOV] = AddConfig("Aimbot Settings", "Aimbot_DrawFOV", false);
 	Settings[NO_RECOIL] = AddConfig("Aimbot Settings", "Aimbot_NoRecoil", false);
 
@@ -98,7 +100,7 @@ void InitSettings()
 	Settings[ESP_WEAPON] = AddConfig("Esp Settings", "Esp_Weapon", false);
 	Settings[ESP_SNAPLINES] = AddConfig("Esp Settings", "Esp_Snaplines", 2, 0, 2);
 	Settings[ESP_BOX_TYPE] = AddConfig("Esp Settings", "Esp_Box_Style", 2, 0, 2);
-	Settings[ESP_ITEMS_DISTANCE] = AddConfig("Esp Settings", "Esp_Items_Distance", 150.f, 1.0f, 250.0f);
+	Settings[ESP_ITEMS_DISTANCE] = AddConfig("Esp Settings", "Esp_Items_Distance", 200.f, 1.0f, 300.0f);
 	Settings[ESP_LOOT_ENABLED] = AddConfig("Esp Settings", "Esp_Loot_Enabled", false);
 	Settings[ESP_LOOT_LEVEL] = AddConfig("Esp Settings", "Esp_Loot_Level", 1, 0, 5);
 	Settings[ESP_LOOT_WEAPON] = AddConfig("Esp Settings", "Esp_Loot_Weapon", true);
@@ -113,52 +115,18 @@ void InitSettings()
 	Settings[ESP_TREASUREBOX] = AddConfig("Esp Settings", "Esp_Treasure_Box", true);
 	Settings[ESP_AIRDROP] = AddConfig("Esp Settings", "Esp_Airdrop_Box", true);
 	Settings[ESP_VEHICLE] = AddConfig("Esp Settings", "Esp_Vehicle", false);
-	Settings[RADAR_ENABLED] = AddConfig("Esp Settings", "Radar_Enabled", true);
+
+	//=============================================================================================================================
 
 	Settings[COLOR_TEAM] = AddConfig("Color Settings", "Color_Team", ImVec4(0.0f, 0.909f, 0.988f, 1.0f));
 	Settings[COLOR_ENEMY] = AddConfig("Color Settings", "Color_Enemy", ImVec4(1.0f, 0.949f, 0.0f, 1.0f));
-	Settings[COLOR_ENEMY_VISIBLE] = AddConfig("Color Settings", "Color_Enemy", ImVec4(0.725f, 0.0f, 0.764f, 1.0f));
-
+	Settings[COLOR_ENEMY_VISIBLE] = AddConfig("Color Settings", "Color_Enemy_Visible", ImVec4(0.725f, 0.0f, 0.764f, 1.0f));
 	Settings[COLOR_LOOT_WEAPON] = AddConfig("Color Settings", "Color_Loot_Weapon", ImVec4(0.0f, 0.764f, 1.0f, 1.0f));
 	Settings[COLOR_LOOT_AMMO] = AddConfig("Color Settings", "Color_Loot_Ammo", ImVec4(0.474f, 0.709f, 0.709f, 1.0f));
 	Settings[COLOR_LOOT_ATTACHMENTS] = AddConfig("Color Settings", "Color_Loot_Attachments", ImVec4(0.843f, 0.176f, 0.427f, 1.0f));
 	Settings[COLOR_LOOT_HEALTH] = AddConfig("Color Settings", "Color_Loot_Health_Items", ImVec4(0.839f, 0.682f, 0.003f, 1.0f));
 	Settings[COLOR_TREASUREBOX] = AddConfig("Color Settings", "Color_Treasure_Box", ImVec4(0.85f, 0.313f, 0.188f, 1.0f));
-	Settings[COLOR_AIRDROP] = AddConfig("Color Settings", "Color_Airdrop_Box", ImVec4(0.85f, 0.313f, 0.188f, 1.0f));
-
-	/*Settings[COLOR_LOOT_SPECIAL] = AddConfig("Color Settings", "Color_Loot_Special", ImVec4(1.0f, 1.0f, 1.0f, 1.0f));
-	Settings[COLOR_LOOT_AR] = AddConfig("Color Settings", "Color_Loot_AR", ImVec4(0.0f, 1.0f, 0.0f, 1.0f));
-	Settings[COLOR_LOOT_SMG] = AddConfig("Color Settings", "Color_Loot_SMG", ImVec4(1.0f, 0.64f, 0.0f, 1.0f));
-	Settings[COLOR_LOOT_SNIPER] = AddConfig("Color Settings", "Color_Loot_Sniper", ImVec4(1.0f, 0.27f, 0.0f, 1.0f));
-	Settings[COLOR_LOOT_SHOTGUN] = AddConfig("Color Settings", "Color_Loot_Shotgun", ImVec4(0.75f, 0.75f, 0.75f, 1.0f));
-	Settings[COLOR_LOOT_HELMET] = AddConfig("Color Settings", "Color_Loot_Helmet", ImVec4(1.0f, 1.0f, 0.0f, 1.0f));
-	Settings[COLOR_LOOT_ARMOR] = AddConfig("Color Settings", "Color_Loot_Armor", ImVec4(1.0f, 1.0f, 0.0f, 1.0f));
-	Settings[COLOR_LOOT_BACKPACK] = AddConfig("Color Settings", "Color_Loot_Backpack", ImVec4(1.0f, 1.0f, 0.0f, 1.0f));
-	Settings[COLOR_LOOT_SCOPES] = AddConfig("Color Settings", "Color_Loot_Scopes", ImVec4(1.0f, 0.0f, 1.0f, 1.0f));
-	Settings[COLOR_LOOT_OTHER] = AddConfig("Color Settings", "Color_Loot_Other", ImVec4(0.50f, 0.50f, 0.0f, 1.0f));
-	Settings[COLOR_LOOT_ACCESSORIES] = AddConfig("Color Settings", "Color_Loot_Accessories", ImVec4(0.75f, 0.75f, 0.75f, 1.0f));
-	Settings[COLOR_LOOT_ENERGY] = AddConfig("Color Settings", "Color_Loot_Energy", ImVec4(1.0f, 1.0f, 10.f, 1.0f));
-	Settings[COLOR_LOOT_GRENADE] = AddConfig("Color Settings", "Color_Loot_Energy", ImVec4(0.8f, 0.4f, 0.0f, 1.0f));
-	Settings[COLOR_LOOT_BICYCLE] = AddConfig("Color Settings", "Color_Loot_Energy", ImVec4(0.0f, 1.0f, 1.0f, 1.0f));
-
-	Settings[COLOR_VEHICLE_NAME] = AddConfig("Color Settings", "Color_Vehicle_Name", ImVec4(1.0f, 0.64f, 0.0f, 1.0f));
-	Settings[COLOR_VEHICLE_BOX] = AddConfig("Color Settings", "Color_Vehicle_Box", ImVec4(1.0f, 0.64f, 0.0f, 1.0f));
-	Settings[COLOR_VEHICLE_DIRECTIONLINE] = AddConfig("Color Settings", "Color_Vehicle_DirectionLine", ImVec4(1.0f, 0.64f, 0.0f, 1.0f));
-	Settings[COLOR_VEHICLE_VELOCITY] = AddConfig("Color Settings", "Color_Vehicle_Velocity", ImVec4(1.0f, 0.0f, 0.0f, 1.0f));
-
-	Settings[COLOR_RADAR_TEAM] = AddConfig("Color Settings", "Color_Radar_Team", ImVec4(0.0f, 0.0f, 1.0f, 1.0f));
-	Settings[COLOR_RADAR_ENEMY] = AddConfig("Color Settings", "Color_Radar_Enemy", ImVec4(1.0f, 1.0f, 0.0f, 1.0f));
-	Settings[COLOR_RADAR_BOT] = AddConfig("Color Settings", "Color_Radar_Bot", ImVec4(1.0f, 1.0f, 1.0f, 1.0f));
-	Settings[COLOR_RADAR_VEHICLE] = AddConfig("Color Settings", "Color_Radar_Vehicle", ImVec4(1.0f, 0.0f, 0.0f, 1.0f));
-	Settings[COLOR_RADAR_AIRDROP] = AddConfig("Color Settings", "Color_Radar_AirDrop", ImVec4(0.0f, 0.0f, 1.0f, 1.0f));
-	Settings[COLOR_CROSSHAIR] = AddConfig("Color Settings", "Color_Crosshair", ImVec4(0.0f, 1.0f, 0.0f, 1.0f));
-	Settings[COLOR_DEADBOX] = AddConfig("Color Settings", "Color_DeadBox", ImVec4(1.0f, 1.0f, 1.0f, 1.0f));
-	Settings[COLOR_AIRDROP] = AddConfig("Color Settings", "Color_AirDrop", ImVec4(0.0f, 0.0f, 1.0f, 1.0f));
-	Settings[COLOR_TREASURECHEST] = AddConfig("Color Settings", "Color_TreasureChest", ImVec4(0.83f, 0.68f, 0.21f, 1.0f));
-	Settings[COLOR_INVENTORYDETAILS] = AddConfig("Color Settings", "Color_InventoryDetails", ImVec4(1.0f, 1.0f, 0.0f, 1.0f));
-	Settings[COLOR_BY_TEAM_ID] = AddConfig("Color Settings", "Color_ByTeamId", false);
-
-	Settings[WATERMARK] = AddConfig("Watermark Settings", "Watermark", true);*/
+	Settings[COLOR_AIRDROP] = AddConfig("Color Settings", "Color_Airdrop_Box", ImVec4(0.258f, 0.960f, 0.784f, 1.0f));
 }
 
 bool LoadSettings()
