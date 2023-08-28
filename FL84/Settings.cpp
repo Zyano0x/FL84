@@ -82,6 +82,7 @@ void InitSettings()
 	Settings[AIM_FOV] = AddConfig("Aimbot Settings", "Aimbot_FOV", 150.0f, 10.0f, 250.0f);
 	Settings[AIM_SMOOTH] = AddConfig("Aimbot Settings", "Aimbot_Smooth", 2.0f, 1.0f, 100.0f);
 	Settings[AIM_KEY] = AddConfig("Aimbot Settings", "Aimbot_Key", 1, 0, 166);
+	Settings[AIM_SELECT_BONE] = AddConfig("Aimbot Settings", "Aimbot_Select_Bone", 0, 0, 2);
 	Settings[HUMAN_SPEED] = AddConfig("Aimbot Settings", "Aimbot_Human_Speed", 10.0f, 1.0f, 100.f);
 	Settings[HUMAN_SCALE] = AddConfig("Aimbot Settings", "Aimbot_Human_Scale", 1.0f, 1.0f, 20.f);
 	Settings[DRAW_FOV] = AddConfig("Aimbot Settings", "Aimbot_DrawFOV", false);

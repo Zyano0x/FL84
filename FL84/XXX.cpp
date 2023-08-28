@@ -110,7 +110,7 @@ void XXX::Unknown()
 					{
 						CG::FString PlayerName = Enemy->PlayerState->PlayerNamePrivate;
 
-						if (PlayerName.IsValid() && PlayerName.c_str() != nullptr)
+						if (PlayerName.IsValid())
 							Name = std::string(PlayerName.ToString());
 					}
 
@@ -122,6 +122,9 @@ void XXX::Unknown()
 					int Distance = LocalCharacter->GetDistanceTo(Enemy) / 100;
 
 					Draw::DrawString(std::string("[" + std::to_string(Distance) + " M]"), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+					
+					if (Enemy->IsInVehicle())
+						Draw::DrawString(std::string("[In Vehicle]"), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 				}
 				else if (!Settings[ESP_DISTANCE].Value.bValue && Settings[ESP_WEAPON].Value.bValue)
 				{
@@ -135,6 +138,9 @@ void XXX::Unknown()
 					}
 
 					Draw::DrawString(std::string(Weapon).append(" | ").append(AmmoClip), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+
+					if (Enemy->IsInVehicle())
+						Draw::DrawString(std::string("[In Vehicle]"), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 				}
 				else if (Settings[ESP_DISTANCE].Value.bValue && Settings[ESP_WEAPON].Value.bValue)
 				{
@@ -151,6 +157,9 @@ void XXX::Unknown()
 
 					Draw::DrawString(std::string(Weapon).append(" | ").append(AmmoClip), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 					Draw::DrawString(std::string("[" + std::to_string(Distance) + " M]"), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+
+					if (Enemy->IsInVehicle())
+						Draw::DrawString(std::string("[In Vehicle]"), (Left + Right) / 2, Bottom + 35, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 				}
 
 				if (Settings[ESP_HEALTH].Value.bValue)
@@ -296,7 +305,7 @@ void XXX::Unknown()
 
 				if (Settings[AIM_MODE].Value.iValue == 1)
 				{
-					Aimbot::SilentAim(Enemy);
+					Aimbot::SilentAim(ClosestTarget);
 				}
 			}
 
@@ -359,11 +368,11 @@ void XXX::Unknown()
 
 			PlayerController->ProjectWorldLocationToScreen(ItemLocation, &ItemPos, false);
 
-			int ItemDistance = LocalCharacter->GetDistanceTo(Item) / 100;
+			int ItemDistance = LocalCharacter->GetDistanceTo(Item) / 100.f;
 
 			CG::EItemType ItemType = Item->ItemData.ItemType;
 
-			int32_t ItemQuality = Item->ItemData.Quality;
+			int ItemQuality = Item->ItemData.Quality;
 
 			ImVec4 ItemColor = ImVec4();
 
@@ -387,17 +396,18 @@ void XXX::Unknown()
 			case 6:
 				ItemColor = ImVec4(1.f, 0.654f, 0.f, 1.f);
 				break;
+			default:
+				ItemColor = ImVec4(0.690f, 0.960f, 0.913f, 1.f);
+				break;
 			}
 
 			if ((int)ItemType <= 0)
 				continue;
 
-			CG::FString ItemName = Item->ItemData.Name;
+			std::string PickupName = Item->ItemData.Name.ToString();
 			CG::FVector2D ItemPos;
 
 			PlayerController->ProjectWorldLocationToScreen(ItemLocation, &ItemPos, false);
-
-			std::string PickupName = ItemName.ToString();
 
 			if (!Settings[ESP_LOOT_ENABLED].Value.bValue)
 				continue;
@@ -422,8 +432,9 @@ void XXX::Unknown()
 
 			if (ItemType == CG::EItemType::SHIELD)
 			{
+				auto Shield = Item;
 				if (Settings[ESP_LOOT_SHIELD].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue && ItemQuality >= (Settings[ESP_LOOT_LEVEL].Value.iValue + 1))
-					Draw::DrawString(std::string(PickupName).append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, false, ItemColor);
+					Draw::DrawString(std::string(PickupName).append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
 			}
 
 			if (ItemType == CG::EItemType::SHIELD_UPGRADE_MATERIAL || ItemType == CG::EItemType::EXP_ITEM)

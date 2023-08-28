@@ -110,7 +110,7 @@ void hkGetPlayerViewPoint(CG::APlayerController* PlayerController, CG::FVector* 
 	{
 		if (Aimbot::Target)
 		{
-			CG::FRotator TargetRotation = (Aimbot::AimPosition - *Location).ToRotator();
+			CG::FRotator TargetRotation = /*(Aimbot::AimPosition - *Location).ToRotator()*/ { 0,0,0 };
 			*Rotation = TargetRotation;
 		}
 	}
@@ -144,6 +144,6 @@ void Initialize()
 	oGetViewPoint = reinterpret_cast<tGetViewPoint>(Module + GET_VIEW_POINT_OFFSET);
 	oGetPlayerViewPoint = reinterpret_cast<tGetPlayerViewPoint>(Module + GET_PLAYER_VIEW_POINT_OFFSET);
 
-	Hook(oGetViewPoint, hkGetViewPoint);
-	Hook(oGetPlayerViewPoint, hkGetPlayerViewPoint);
+	//Hook(oGetViewPoint, hkGetViewPoint);
+	//Hook(oGetPlayerViewPoint, hkGetPlayerViewPoint);
 }

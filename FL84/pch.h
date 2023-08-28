@@ -17,6 +17,7 @@
 #include <cmath>
 #include <dxgi.h>
 #include <d3d11.h>
+#include <d3dx10math.h>
 #include <detours.h>
 
 #define IMGUI_DEFINE_MATH_OPERATORS
@@ -31,6 +32,7 @@
 #include "Settings.h"
 #include "Menu.h"
 #include "Draw.h"
+#include "Mathematics.h"
 #include "Hook.h"
 #include "Engine.h"
 #include "XXX.h"

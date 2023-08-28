@@ -147,6 +147,12 @@ namespace Menu
 				ImGui::PopItemWidth();
 
 				ImGui::Spacing();
+				static const char* SelectedBone[] = { " HEAD", " NECK", " NEAREST BONE"};
+				ImGui::PushItemWidth(220);
+				ImGui::Combo(" Select Bone", &Settings[AIM_SELECT_BONE].Value.iValue, SelectedBone, IM_ARRAYSIZE(SelectedBone));
+				ImGui::PopItemWidth();
+
+				ImGui::Spacing();
 				ImGui::PushItemWidth(220);
 				ImGui::SliderFloat(" FOV", &Settings[AIM_FOV].Value.fValue, 10, 250, "%.f");
 				ImGui::PopItemWidth();
@@ -255,7 +261,7 @@ namespace Menu
 				ImGui::ColorEdit4(" Treasure Box", (float*)&Settings[COLOR_TREASUREBOX].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
 
 				ImGui::Spacing();
-				ImGui::Checkbox(" AirDrop Box", &Settings[ESP_TREASUREBOX].Value.bValue);
+				ImGui::Checkbox(" AirDrop Box", &Settings[ESP_AIRDROP].Value.bValue);
 				ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
 				ImGui::ColorEdit4(" AirDrop Box", (float*)&Settings[COLOR_AIRDROP].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
 
