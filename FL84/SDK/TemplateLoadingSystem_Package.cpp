@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00820AC0
+	 * 		RVA    -> 0x00820A80
 	 * 		Name   -> Function TemplateLoadingSystem.LoadingScreenSubsystem.StopLoadingScreen
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -32,7 +32,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00820A20
+	 * 		RVA    -> 0x008209E0
 	 * 		Name   -> Function TemplateLoadingSystem.LoadingScreenSubsystem.StartLoadingScreen
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -57,7 +57,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00820950
+	 * 		RVA    -> 0x00820910
 	 * 		Name   -> Function TemplateLoadingSystem.LoadingScreenSubsystem.Get
 	 * 		Flags  -> (Final, Native, Static, Private)
 	 * Parameters:
@@ -96,7 +96,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00820A00
+	 * 		RVA    -> 0x008209C0
 	 * 		Name   -> Function TemplateLoadingSystem.LoadingWidgetBase.LoadingStarted
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -116,7 +116,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008209E0
+	 * 		RVA    -> 0x008209A0
 	 * 		Name   -> Function TemplateLoadingSystem.LoadingWidgetBase.LoadingFinished
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */

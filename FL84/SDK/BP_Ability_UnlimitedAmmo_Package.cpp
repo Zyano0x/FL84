@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function BP_Ability_UnlimitedAmmo.BP_Ability_UnlimitedAmmo_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function BP_Ability_UnlimitedAmmo.BP_Ability_UnlimitedAmmo_C.ReceiveEndPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -53,7 +53,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function BP_Ability_UnlimitedAmmo.BP_Ability_UnlimitedAmmo_C.EndWhenUnhold
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -72,7 +72,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function BP_Ability_UnlimitedAmmo.BP_Ability_UnlimitedAmmo_C.ExecuteUbergraph_BP_Ability_UnlimitedAmmo
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

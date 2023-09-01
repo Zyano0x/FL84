@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #ifdef _MSC_VER
@@ -24,7 +24,7 @@ namespace CG
 		class FScriptMulticastDelegate                             OnDownloadComplete;                                      // 0x0028(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnDownloadProgress;                                      // 0x0038(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnDownloadFailed;                                        // 0x0048(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_UM7V[0x80];                                  // 0x0058(0x0080) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_DU8T[0x80];                                  // 0x0058(0x0080) MISSED OFFSET (PADDING)
 
 	public:
 		void StartDownload();
@@ -44,7 +44,7 @@ namespace CG
 	class USolarlandResUpdater : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_M0DD[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_8Y66[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FPakFileEntry>                               ToDownloadPakList;                                       // 0x0030(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		class FScriptDelegate                                      OnPatchPrompt;                                           // 0x0040(0x0010) BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, NativeAccessSpecifierPublic
 		class FScriptDelegate                                      OnPatchComplete;                                         // 0x0050(0x0010) BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, NativeAccessSpecifierPublic

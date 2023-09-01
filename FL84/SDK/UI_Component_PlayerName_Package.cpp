@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function UI_Component_PlayerName.UI_Component_PlayerName_C.SetIsKilled
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function UI_Component_PlayerName.UI_Component_PlayerName_C.SetIsCheater
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -56,7 +56,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function UI_Component_PlayerName.UI_Component_PlayerName_C.SetVipStyle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -78,7 +78,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function UI_Component_PlayerName.UI_Component_PlayerName_C.SetPlayerNameAndStyle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -106,7 +106,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function UI_Component_PlayerName.UI_Component_PlayerName_C.SetPlayerName
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -128,7 +128,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function UI_Component_PlayerName.UI_Component_PlayerName_C.SetDefaultStyle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -150,7 +150,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function UI_Component_PlayerName.UI_Component_PlayerName_C.SetNameStyle
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -176,7 +176,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function UI_Component_PlayerName.UI_Component_PlayerName_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -198,7 +198,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function UI_Component_PlayerName.UI_Component_PlayerName_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -217,7 +217,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function UI_Component_PlayerName.UI_Component_PlayerName_C.ReSize
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -236,7 +236,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function UI_Component_PlayerName.UI_Component_PlayerName_C.UpdatePlayerNameAndStyle
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -264,7 +264,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function UI_Component_PlayerName.UI_Component_PlayerName_C.SetText
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -286,7 +286,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function UI_Component_PlayerName.UI_Component_PlayerName_C.SetTextColorAndOpacity
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -308,7 +308,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function UI_Component_PlayerName.UI_Component_PlayerName_C.SetStyle
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -334,7 +334,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function UI_Component_PlayerName.UI_Component_PlayerName_C.SetDeath
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -356,7 +356,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function UI_Component_PlayerName.UI_Component_PlayerName_C.SetVip
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -378,7 +378,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function UI_Component_PlayerName.UI_Component_PlayerName_C.SetCheater
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -400,7 +400,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function UI_Component_PlayerName.UI_Component_PlayerName_C.ExecuteUbergraph_UI_Component_PlayerName
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

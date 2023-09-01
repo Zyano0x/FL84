@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -36,7 +36,7 @@ namespace CG
 	 */
 	bool InitSDK()
 	{
-		return InitSDK(L"SolarlandClient-Win64-Shipping.exe", 0x665DDB0, 0x6645540, 0x67B5040);
+		return InitSDK(L"SolarlandClient-Win64-Shipping.exe", 0x665DDF0, 0x6645580, 0x67B5080);
 	}
 
 	// --------------------------------------------------
@@ -121,7 +121,7 @@ namespace CG
 		}
 
 		return "?";
-	}	
+	}
 
 	/**
 	 * Function:

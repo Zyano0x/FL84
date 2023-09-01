@@ -71,6 +71,9 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* SwapChain, UINT SyncInterval, UINT F
 	ImGui::GetIO().MouseDrawCursor = Menu::MenuOpen;
 
 	ZZZ.Unknown();
+	ZZZ.Removal();
+	ZZZ.Aimbot();
+	ZZZ.Radar();
 
 	if (Menu::MenuOpen)
 	{
@@ -81,39 +84,6 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* SwapChain, UINT SyncInterval, UINT F
 	pContext->OMSetRenderTargets(1, &pRenderTarget, NULL);
 	ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
 	return oPresent(SwapChain, SyncInterval, Flags);
-}
-
-CG::FVector OriginalLocation(0, 0, 0);
-CG::FRotator OriginalRotation(0, 0, 0);
-
-void hkGetViewPoint(CG::ULocalPlayer* LocalPlayer, CG::FMinimalViewInfo* OutViewInfo, CG::EStereoscopicPass StereoPass)
-{
-	oGetViewPoint(LocalPlayer, OutViewInfo, StereoPass);
-
-	if (/*Settings[AIM_MODE].Value.iValue == 1 &&*/ GetAsyncKeyState(Settings[AIM_KEY].Value.iValue) & 0x80000)
-	{
-		OutViewInfo->Location = OriginalLocation;
-		OutViewInfo->Rotation = OriginalRotation;
-	}
-}
-
-void hkGetPlayerViewPoint(CG::APlayerController* PlayerController, CG::FVector* Location, CG::FRotator* Rotation)
-{
-	oGetPlayerViewPoint(PlayerController, Location, Rotation);
-
-	OriginalLocation = *Location;
-	OriginalRotation = *Rotation;
-
-	//printf("Location: [%.0f | %.0f | %.0f]\nRotation: [%.0f | %.0f | %.0f]\n", Location->X, Location->Y, Location->Z, Rotation->Pitch, Rotation->Yaw, Rotation->Roll);
-
-	if (/*Settings[AIM_MODE].Value.iValue == 1 &&*/ GetAsyncKeyState(Settings[AIM_KEY].Value.iValue) & 0x80000)
-	{
-		if (Aimbot::Target)
-		{
-			CG::FRotator TargetRotation = /*(Aimbot::AimPosition - *Location).ToRotator()*/ { 0,0,0 };
-			*Rotation = TargetRotation;
-		}
-	}
 }
 
 void Initialize()
@@ -127,7 +97,7 @@ void Initialize()
 
 	CG::InitSDK();
 	InitSettings();
-	LoadSettings();
+	LoadSettings();	
 
 	uint64_t Module = reinterpret_cast<uint64_t>(GetModuleHandleW(L"SolarlandClient-Win64-Shipping.exe"));
 	uint64_t hkPresent_Sig = Engine::FindPattern("GameOverlayRenderer64.dll", "48 89 6C 24 ? 48 89 74 24 ? 41 56 48 83 EC ? 41 8B E8");
@@ -135,15 +105,10 @@ void Initialize()
 	//uint64_t GetBoneMatrix = Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 8B C4 48 89 58 ? 48 89 70 ? 57 48 81 EC ? ? ? ? F6 81");
 	//uint64_t GetViewPointAddress = Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 8B C4 48 89 58 ? 48 89 68 ? 56 57 41 56 48 81 EC ? ? ? ? 0F 29 70 ? 0F 29 78 ? 48 8B 05");
 	//uint64_t GetPlayerViewPointAddress = Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 89 5C 24 ? 48 89 7C 24 ? 55 41 56 41 57 48 8B EC 48 83 EC ? 48 8B FA");
+	//uint64_t GetPlayerViewRotationAddress = Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 89 5C 24 ? 55 56 57 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 84 24 ? ? ? ? 48 8B F2");
 
 	__int64(__fastcall * CreateHook)(unsigned __int64 pFuncAddress, __int64 pDetourFuncAddress, unsigned __int64* pOriginalFuncAddressOut, int a4);
 
 	CreateHook = (decltype(CreateHook))CreateHook_Sig;
 	CreateHook(hkPresent_Sig, (__int64)&hkPresent, (unsigned __int64*)&oPresent, 1);
-
-	oGetViewPoint = reinterpret_cast<tGetViewPoint>(Module + GET_VIEW_POINT_OFFSET);
-	oGetPlayerViewPoint = reinterpret_cast<tGetPlayerViewPoint>(Module + GET_PLAYER_VIEW_POINT_OFFSET);
-
-	//Hook(oGetViewPoint, hkGetViewPoint);
-	//Hook(oGetPlayerViewPoint, hkGetPlayerViewPoint);
 }

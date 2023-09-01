@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A2FA0
+	 * 		RVA    -> 0x009A2F60
 	 * 		Name   -> Function LimNative.LimNative.TranslateText
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -41,7 +41,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A2E80
+	 * 		RVA    -> 0x009A2E40
 	 * 		Name   -> Function LimNative.LimNative.SetResDir
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -66,7 +66,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A2D20
+	 * 		RVA    -> 0x009A2CE0
 	 * 		Name   -> Function LimNative.LimNative.SetMsgState
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -91,7 +91,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A2C70
+	 * 		RVA    -> 0x009A2C30
 	 * 		Name   -> Function LimNative.LimNative.SetLogHandler
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -114,7 +114,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A2B70
+	 * 		RVA    -> 0x009A2B30
 	 * 		Name   -> Function LimNative.LimNative.SetLanguage
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -139,7 +139,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A29B0
+	 * 		RVA    -> 0x009A2970
 	 * 		Name   -> Function LimNative.LimNative.SetGroupAttr
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -168,7 +168,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A2900
+	 * 		RVA    -> 0x009A28C0
 	 * 		Name   -> Function LimNative.LimNative.SetEventHandler
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -191,7 +191,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A26F0
+	 * 		RVA    -> 0x009A26B0
 	 * 		Name   -> Function LimNative.LimNative.SetConvRead
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -222,7 +222,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A2440
+	 * 		RVA    -> 0x009A2400
 	 * 		Name   -> Function LimNative.LimNative.SetAllConfig
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -247,7 +247,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A20B0
+	 * 		RVA    -> 0x009A2070
 	 * 		Name   -> Function LimNative.LimNative.SendVoiceMsg
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -282,7 +282,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A1D60
+	 * 		RVA    -> 0x009A1D20
 	 * 		Name   -> Function LimNative.LimNative.SendTextWithAtMsg
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -317,7 +317,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A1A10
+	 * 		RVA    -> 0x009A19D0
 	 * 		Name   -> Function LimNative.LimNative.SendTextMsg
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -352,7 +352,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A1640
+	 * 		RVA    -> 0x009A1600
 	 * 		Name   -> Function LimNative.LimNative.SendShareMsg
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -387,7 +387,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A12A0
+	 * 		RVA    -> 0x009A1260
 	 * 		Name   -> Function LimNative.LimNative.SendImageMsg
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -422,7 +422,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A0EE0
+	 * 		RVA    -> 0x009A0EA0
 	 * 		Name   -> Function LimNative.LimNative.SendEmotionMsg
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -457,7 +457,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A0BC0
+	 * 		RVA    -> 0x009A0B80
 	 * 		Name   -> Function LimNative.LimNative.RevokeVoiceMsg
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -490,7 +490,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A08D0
+	 * 		RVA    -> 0x009A0890
 	 * 		Name   -> Function LimNative.LimNative.RevokeTextWithAtMsg
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -523,7 +523,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A05E0
+	 * 		RVA    -> 0x009A05A0
 	 * 		Name   -> Function LimNative.LimNative.RevokeTextMsg
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -556,7 +556,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009A0260
+	 * 		RVA    -> 0x009A0220
 	 * 		Name   -> Function LimNative.LimNative.RevokeShareMsg
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -589,7 +589,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099FF10
+	 * 		RVA    -> 0x0099FED0
 	 * 		Name   -> Function LimNative.LimNative.RevokeImageMsg
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -622,7 +622,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099FBA0
+	 * 		RVA    -> 0x0099FB60
 	 * 		Name   -> Function LimNative.LimNative.RevokeEmotionMsg
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -655,7 +655,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099FA30
+	 * 		RVA    -> 0x0099F9F0
 	 * 		Name   -> Function LimNative.LimNative.ReportMsg
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -682,7 +682,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099F8C0
+	 * 		RVA    -> 0x0099F880
 	 * 		Name   -> Function LimNative.LimNative.RemoveGroupMember
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -709,7 +709,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099F7A0
+	 * 		RVA    -> 0x0099F760
 	 * 		Name   -> Function LimNative.LimNative.RemoveFromBlockee
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -734,7 +734,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099F630
+	 * 		RVA    -> 0x0099F5F0
 	 * 		Name   -> Function LimNative.LimNative.RemoveFriend
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -761,7 +761,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099F4C0
+	 * 		RVA    -> 0x0099F480
 	 * 		Name   -> Function LimNative.LimNative.RefuseFriendRequest
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -788,7 +788,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099F3A0
+	 * 		RVA    -> 0x0099F360
 	 * 		Name   -> Function LimNative.LimNative.QuitGroup
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -813,7 +813,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099EBD0
+	 * 		RVA    -> 0x0099EB90
 	 * 		Name   -> Function LimNative.LimNative.PostInitLIM
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -840,7 +840,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099EB20
+	 * 		RVA    -> 0x0099EAE0
 	 * 		Name   -> Function LimNative.LimNative.MsgsGetCommon
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -863,7 +863,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099EA70
+	 * 		RVA    -> 0x0099EA30
 	 * 		Name   -> Function LimNative.LimNative.Logout
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -886,7 +886,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099E900
+	 * 		RVA    -> 0x0099E8C0
 	 * 		Name   -> Function LimNative.LimNative.LoginV2
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -913,7 +913,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099E680
+	 * 		RVA    -> 0x0099E640
 	 * 		Name   -> Function LimNative.LimNative.Login
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -946,7 +946,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnTranslateTextDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -970,7 +970,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnSetResDirDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -994,7 +994,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnSetReportConfigDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1018,7 +1018,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnSetParkConfigDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1042,7 +1042,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnSetMsgStateDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1066,7 +1066,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnSetLanguageDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1090,7 +1090,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnSetGroupAttrDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1114,7 +1114,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnSetConvReadDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1138,7 +1138,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnSetAllConfigDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1162,7 +1162,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnSendMsgDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1186,7 +1186,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnRevokeMsgDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1210,7 +1210,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnReportMsgDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1234,7 +1234,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnRemoveGroupMemberDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1258,7 +1258,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnRemoveFromBlockeeDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1282,7 +1282,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnRemoveFriendDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1306,7 +1306,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnRefuseFriendRequestDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1330,7 +1330,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnQuitGroupDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1354,7 +1354,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnNetConnectStateDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1378,7 +1378,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnMsgRevokedDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1402,7 +1402,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnMsgReceivedDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1426,7 +1426,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnMsgLogicReceivedDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1450,7 +1450,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnLogoutDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1474,7 +1474,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnLoginDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1498,7 +1498,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnJoinGroupDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1522,7 +1522,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetUsersStateDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1546,7 +1546,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetUsersDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1570,7 +1570,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetUserDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1594,7 +1594,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetOssTokenDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1618,7 +1618,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetMsgsDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1642,7 +1642,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetMiscConfigInfoDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1666,7 +1666,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetGroupsDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1690,7 +1690,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetGroupMembersDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1714,7 +1714,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetGroupMemberDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1738,7 +1738,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetGroupDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1762,7 +1762,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetGroupAttrDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1786,7 +1786,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetGMETokenDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1810,7 +1810,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetFriendsDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1834,7 +1834,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetFriendRequestsDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1858,7 +1858,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetConvChatLevelConfigDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1882,7 +1882,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetConnStateDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1906,7 +1906,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetConfigDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1930,7 +1930,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetCommonMsgsDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1954,7 +1954,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetBlockeesDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -1978,7 +1978,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnGetAllGroupAttrDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2002,7 +2002,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnDestoryGroupDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2026,7 +2026,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnCreateGroupDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2050,7 +2050,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnCreateFriendRequestDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2074,7 +2074,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnConvsGetDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2098,7 +2098,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnConvHandleynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2122,7 +2122,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnCheckImageDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2146,7 +2146,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnCancelFriendRequestDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2170,7 +2170,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnAddToBlockeeDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2194,7 +2194,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnAddGroupMemberDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2218,7 +2218,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMOnAcceptFriendRequestDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2242,7 +2242,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMLogDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2266,7 +2266,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNative.LIMEventDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2290,7 +2290,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099E560
+	 * 		RVA    -> 0x0099E520
 	 * 		Name   -> Function LimNative.LimNative.JoinGroup
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2315,7 +2315,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099E2A0
+	 * 		RVA    -> 0x0099E260
 	 * 		Name   -> Function LimNative.LimNative.InitLIM
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2342,7 +2342,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099E150
+	 * 		RVA    -> 0x0099E110
 	 * 		Name   -> Function LimNative.LimNative.GetUsersState
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2367,7 +2367,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099DFF0
+	 * 		RVA    -> 0x0099DFB0
 	 * 		Name   -> Function LimNative.LimNative.GetUsers
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2392,7 +2392,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099DED0
+	 * 		RVA    -> 0x0099DE90
 	 * 		Name   -> Function LimNative.LimNative.GetUser
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2417,7 +2417,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099DE20
+	 * 		RVA    -> 0x0099DDE0
 	 * 		Name   -> Function LimNative.LimNative.GetResDir
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2440,7 +2440,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099DD70
+	 * 		RVA    -> 0x0099DD30
 	 * 		Name   -> Function LimNative.LimNative.GetOssToken
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2463,7 +2463,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099DCC0
+	 * 		RVA    -> 0x0099DC80
 	 * 		Name   -> Function LimNative.LimNative.GetMiscConfigInfo
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2486,7 +2486,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099DAB0
+	 * 		RVA    -> 0x0099DA70
 	 * 		Name   -> Function LimNative.LimNative.GetMessagesByID
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2517,7 +2517,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099D950
+	 * 		RVA    -> 0x0099D910
 	 * 		Name   -> Function LimNative.LimNative.GetLIMVersion
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2539,7 +2539,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099DA80
+	 * 		RVA    -> 0x0099DA40
 	 * 		Name   -> Function LimNative.LimNative.GetLimNativeInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2561,7 +2561,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099D9D0
+	 * 		RVA    -> 0x0099D990
 	 * 		Name   -> Function LimNative.LimNative.GetLanguage
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2584,7 +2584,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099D7E0
+	 * 		RVA    -> 0x0099D7A0
 	 * 		Name   -> Function LimNative.LimNative.GetGroups
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2611,7 +2611,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099D620
+	 * 		RVA    -> 0x0099D5E0
 	 * 		Name   -> Function LimNative.LimNative.GetGroupMembers
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2640,7 +2640,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099D4B0
+	 * 		RVA    -> 0x0099D470
 	 * 		Name   -> Function LimNative.LimNative.GetGroupAttr
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2667,7 +2667,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099D390
+	 * 		RVA    -> 0x0099D350
 	 * 		Name   -> Function LimNative.LimNative.GetGroupAllAttr
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2692,7 +2692,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099D270
+	 * 		RVA    -> 0x0099D230
 	 * 		Name   -> Function LimNative.LimNative.GetGroup
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2717,7 +2717,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099D0B0
+	 * 		RVA    -> 0x0099D070
 	 * 		Name   -> Function LimNative.LimNative.GetGMEToken
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2746,7 +2746,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099CFA0
+	 * 		RVA    -> 0x0099CF60
 	 * 		Name   -> Function LimNative.LimNative.GetFriendsV2
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2771,7 +2771,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099CDF0
+	 * 		RVA    -> 0x0099CDB0
 	 * 		Name   -> Function LimNative.LimNative.GetFriends
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2800,7 +2800,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099CC40
+	 * 		RVA    -> 0x0099CC00
 	 * 		Name   -> Function LimNative.LimNative.GetFriendRequests
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2829,7 +2829,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099CB90
+	 * 		RVA    -> 0x0099CB50
 	 * 		Name   -> Function LimNative.LimNative.GetConvChatLevelConfig
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2852,7 +2852,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099CAE0
+	 * 		RVA    -> 0x0099CAA0
 	 * 		Name   -> Function LimNative.LimNative.GetConnState
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2875,7 +2875,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099C930
+	 * 		RVA    -> 0x0099C8F0
 	 * 		Name   -> Function LimNative.LimNative.GetBlockees
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2904,7 +2904,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099C790
+	 * 		RVA    -> 0x0099C750
 	 * 		Name   -> Function LimNative.LimNative.GetBeforeMessages
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2933,7 +2933,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099C5F0
+	 * 		RVA    -> 0x0099C5B0
 	 * 		Name   -> Function LimNative.LimNative.GetAfterMessages
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2962,7 +2962,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099C5D0
+	 * 		RVA    -> 0x0099C590
 	 * 		Name   -> Function LimNative.LimNative.DestoryLimNativeInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2982,7 +2982,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099C4B0
+	 * 		RVA    -> 0x0099C470
 	 * 		Name   -> Function LimNative.LimNative.DestoryGroup
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3007,7 +3007,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099C3D0
+	 * 		RVA    -> 0x0099C390
 	 * 		Name   -> Function LimNative.LimNative.CreateLIM
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3032,7 +3032,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099C1D0
+	 * 		RVA    -> 0x0099C190
 	 * 		Name   -> Function LimNative.LimNative.CreateGroup
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3061,7 +3061,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099C060
+	 * 		RVA    -> 0x0099C020
 	 * 		Name   -> Function LimNative.LimNative.CreateFriendRequest
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3088,7 +3088,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099BF00
+	 * 		RVA    -> 0x0099BEC0
 	 * 		Name   -> Function LimNative.LimNative.ConversationsGet
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3115,7 +3115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099BEE0
+	 * 		RVA    -> 0x0099BEA0
 	 * 		Name   -> Function LimNative.LimNative.ConversationSetSticky
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3135,7 +3135,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099BEE0
+	 * 		RVA    -> 0x0099BEA0
 	 * 		Name   -> Function LimNative.LimNative.ConversationSetRead
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3155,7 +3155,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099BEE0
+	 * 		RVA    -> 0x0099BEA0
 	 * 		Name   -> Function LimNative.LimNative.ConversationSetMute
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3175,7 +3175,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099BEE0
+	 * 		RVA    -> 0x0099BEA0
 	 * 		Name   -> Function LimNative.LimNative.ConversationSetHide
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3195,7 +3195,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099BD80
+	 * 		RVA    -> 0x0099BD40
 	 * 		Name   -> Function LimNative.LimNative.ConversationDiscard
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3222,7 +3222,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099BC60
+	 * 		RVA    -> 0x0099BC20
 	 * 		Name   -> Function LimNative.LimNative.CheckImage
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3247,7 +3247,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099BAA0
+	 * 		RVA    -> 0x0099BA60
 	 * 		Name   -> Function LimNative.LimNative.CancelFriendRequest
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3276,7 +3276,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099B980
+	 * 		RVA    -> 0x0099B940
 	 * 		Name   -> Function LimNative.LimNative.AddToBlockee
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3301,7 +3301,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099B810
+	 * 		RVA    -> 0x0099B7D0
 	 * 		Name   -> Function LimNative.LimNative.AddGroupMember
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3328,7 +3328,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099B6A0
+	 * 		RVA    -> 0x0099B660
 	 * 		Name   -> Function LimNative.LimNative.AcceptFriendRequest
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3369,7 +3369,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B0CD0
+	 * 		RVA    -> 0x009B0C90
 	 * 		Name   -> Function LimNative.LimNativeChatMsgReader.GetVoiceMessage
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3398,7 +3398,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B0A20
+	 * 		RVA    -> 0x009B09E0
 	 * 		Name   -> Function LimNative.LimNativeChatMsgReader.GetTextMessage
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3427,7 +3427,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B07F0
+	 * 		RVA    -> 0x009B07B0
 	 * 		Name   -> Function LimNative.LimNativeChatMsgReader.GetShareMessage
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3456,7 +3456,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B0540
+	 * 		RVA    -> 0x009B0500
 	 * 		Name   -> Function LimNative.LimNativeChatMsgReader.GetNotificationMessage
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3485,7 +3485,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B01B0
+	 * 		RVA    -> 0x009B0170
 	 * 		Name   -> Function LimNative.LimNativeChatMsgReader.GetImageMessage
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3514,7 +3514,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009AFE50
+	 * 		RVA    -> 0x009AFE10
 	 * 		Name   -> Function LimNative.LimNativeChatMsgReader.GetEmotionMessage
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3557,7 +3557,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B6DD0
+	 * 		RVA    -> 0x009B6D90
 	 * 		Name   -> Function LimNative.LimNativeHelper.NameStringToEnumValue
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3584,7 +3584,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B6400
+	 * 		RVA    -> 0x009B63C0
 	 * 		Name   -> Function LimNative.LimNativeHelper.GetUE4LogFilePath
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3606,7 +3606,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00943EA0
+	 * 		RVA    -> 0x00943E60
 	 * 		Name   -> Function LimNative.LimNativeHelper.GetSavedPath
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3628,7 +3628,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B6380
+	 * 		RVA    -> 0x009B6340
 	 * 		Name   -> Function LimNative.LimNativeHelper.GetProjectPath
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3650,7 +3650,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B6300
+	 * 		RVA    -> 0x009B62C0
 	 * 		Name   -> Function LimNative.LimNativeHelper.GetProjectContentPath
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3672,7 +3672,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B5400
+	 * 		RVA    -> 0x009B53C0
 	 * 		Name   -> Function LimNative.LimNativeHelper.GetGamePersistentDownloadDir
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3694,7 +3694,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B4E20
+	 * 		RVA    -> 0x009B4DE0
 	 * 		Name   -> Function LimNative.LimNativeHelper.GetFileText
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3719,7 +3719,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B4D40
+	 * 		RVA    -> 0x009B4D00
 	 * 		Name   -> Function LimNative.LimNativeHelper.GetFileBinary
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3744,7 +3744,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B4280
+	 * 		RVA    -> 0x009B4240
 	 * 		Name   -> Function LimNative.LimNativeHelper.EnumToStringArray
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3771,7 +3771,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B4160
+	 * 		RVA    -> 0x009B4120
 	 * 		Name   -> Function LimNative.LimNativeHelper.EnumToString
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3798,7 +3798,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B4030
+	 * 		RVA    -> 0x009B3FF0
 	 * 		Name   -> Function LimNative.LimNativeHelper.EnumToNameStringArray
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3825,7 +3825,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B3F10
+	 * 		RVA    -> 0x009B3ED0
 	 * 		Name   -> Function LimNative.LimNativeHelper.EnumToNameString
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3866,7 +3866,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B8940
+	 * 		RVA    -> 0x009B8900
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.TranslateText
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3895,7 +3895,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B8820
+	 * 		RVA    -> 0x009B87E0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.SetMsgState
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3920,7 +3920,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B8610
+	 * 		RVA    -> 0x009B85D0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.SetMsgRead
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3951,7 +3951,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B8560
+	 * 		RVA    -> 0x009B8520
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.SetLogHandler
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3974,7 +3974,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B83A0
+	 * 		RVA    -> 0x009B8360
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.SetGroupAttr
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4003,7 +4003,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B81E0
+	 * 		RVA    -> 0x009B81A0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.SetGroup
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4032,7 +4032,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B8130
+	 * 		RVA    -> 0x009B80F0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.SetEventHandler
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4055,7 +4055,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B7F90
+	 * 		RVA    -> 0x009B7F50
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.SetConvSticky
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4084,7 +4084,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B7D80
+	 * 		RVA    -> 0x009B7D40
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.SetConvRead
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4115,7 +4115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B7BE0
+	 * 		RVA    -> 0x009B7BA0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.SetConvMute
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4144,7 +4144,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B79D0
+	 * 		RVA    -> 0x009B7990
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.SetConvAttr
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4175,7 +4175,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B78B0
+	 * 		RVA    -> 0x009B7870
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.SetAllConfigs
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4200,7 +4200,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B7790
+	 * 		RVA    -> 0x009B7750
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.SendMsg
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4225,7 +4225,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B7670
+	 * 		RVA    -> 0x009B7630
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.RevokeMsg
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4250,7 +4250,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099D9D0
+	 * 		RVA    -> 0x0099D990
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.Resume
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4273,7 +4273,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B7550
+	 * 		RVA    -> 0x009B7510
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.ReportMsg
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4298,7 +4298,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B73E0
+	 * 		RVA    -> 0x009B73A0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.RemoveGroupMember
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4325,7 +4325,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B72C0
+	 * 		RVA    -> 0x009B7280
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.RemoveFromBlockee
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4350,7 +4350,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B7150
+	 * 		RVA    -> 0x009B7110
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.RemoveFriend
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4377,7 +4377,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B6FE0
+	 * 		RVA    -> 0x009B6FA0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.RefuseFriendRequest
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4404,7 +4404,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B6EC0
+	 * 		RVA    -> 0x009B6E80
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.QuitGroup
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4429,7 +4429,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099D9D0
+	 * 		RVA    -> 0x0099D990
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.Pause
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4452,7 +4452,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B6D20
+	 * 		RVA    -> 0x009B6CE0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.Logout
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4475,7 +4475,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B6BB0
+	 * 		RVA    -> 0x009B6B70
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.LoginV2
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4502,7 +4502,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B6930
+	 * 		RVA    -> 0x009B68F0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.Login
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4535,7 +4535,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNativeLowLevel.LIMResultDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -4559,7 +4559,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNativeLowLevel.LIMLogDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -4583,7 +4583,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction LimNative.LimNativeLowLevel.LIMEventDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -4607,7 +4607,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B6810
+	 * 		RVA    -> 0x009B67D0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.JoinGroup
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4632,7 +4632,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B66C0
+	 * 		RVA    -> 0x009B6680
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetUsersState
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4657,7 +4657,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B65A0
+	 * 		RVA    -> 0x009B6560
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetUsers
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4682,7 +4682,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B6480
+	 * 		RVA    -> 0x009B6440
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetUser
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4707,7 +4707,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B6250
+	 * 		RVA    -> 0x009B6210
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetOssToken
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4730,7 +4730,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B6040
+	 * 		RVA    -> 0x009B6000
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetMsgsV2
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4761,7 +4761,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B5E00
+	 * 		RVA    -> 0x009B5DC0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetMsgs
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4794,7 +4794,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B5D50
+	 * 		RVA    -> 0x009B5D10
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetMiscConfigInfo
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4817,7 +4817,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0099D950
+	 * 		RVA    -> 0x0099D910
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetLIMVersion
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -4839,7 +4839,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B5D20
+	 * 		RVA    -> 0x009B5CE0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -4861,7 +4861,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B5B80
+	 * 		RVA    -> 0x009B5B40
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetGroups
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4890,7 +4890,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B59A0
+	 * 		RVA    -> 0x009B5960
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetGroupMembers
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4921,7 +4921,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B5830
+	 * 		RVA    -> 0x009B57F0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetGroupMember
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4948,7 +4948,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B56C0
+	 * 		RVA    -> 0x009B5680
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetGroupAttr
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4975,7 +4975,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B55A0
+	 * 		RVA    -> 0x009B5560
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetGroupAllAttrs
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5000,7 +5000,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B5480
+	 * 		RVA    -> 0x009B5440
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetGroup
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5025,7 +5025,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B5240
+	 * 		RVA    -> 0x009B5200
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetGMEToken
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5054,7 +5054,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B50A0
+	 * 		RVA    -> 0x009B5060
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetFriends
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5083,7 +5083,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B4F00
+	 * 		RVA    -> 0x009B4EC0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetFriendRequests
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5112,7 +5112,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B4BE0
+	 * 		RVA    -> 0x009B4BA0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetConvs
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5139,7 +5139,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B4B30
+	 * 		RVA    -> 0x009B4AF0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetConvChatLevelConfig
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5162,7 +5162,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B4970
+	 * 		RVA    -> 0x009B4930
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetConvAttr
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5191,7 +5191,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B4810
+	 * 		RVA    -> 0x009B47D0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetConvAllAttrs
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5218,7 +5218,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B46B0
+	 * 		RVA    -> 0x009B4670
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetConv
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5245,7 +5245,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B4600
+	 * 		RVA    -> 0x009B45C0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetConnState
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5268,7 +5268,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B4460
+	 * 		RVA    -> 0x009B4420
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetBlockees
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5297,7 +5297,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B43B0
+	 * 		RVA    -> 0x009B4370
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.GetAllConfigs
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5320,7 +5320,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B3DF0
+	 * 		RVA    -> 0x009B3DB0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.DestroyGroup
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5345,7 +5345,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B3C90
+	 * 		RVA    -> 0x009B3C50
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.DestroyConv
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5372,7 +5372,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B3C70
+	 * 		RVA    -> 0x009B3C30
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.DestoryInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -5392,7 +5392,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B3B50
+	 * 		RVA    -> 0x009B3B10
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.CreateLIM
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5417,7 +5417,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B38B0
+	 * 		RVA    -> 0x009B3870
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.CreateGroup
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5446,7 +5446,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B3740
+	 * 		RVA    -> 0x009B3700
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.CreateFriendRequest
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5473,7 +5473,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B3580
+	 * 		RVA    -> 0x009B3540
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.CreateConv
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5502,7 +5502,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B3420
+	 * 		RVA    -> 0x009B33E0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.ClearConv
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5529,7 +5529,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B3300
+	 * 		RVA    -> 0x009B32C0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.CheckImage
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5554,7 +5554,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B3140
+	 * 		RVA    -> 0x009B3100
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.CancelFriendRequest
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5583,7 +5583,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B3020
+	 * 		RVA    -> 0x009B2FE0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.Call
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5608,7 +5608,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B2F00
+	 * 		RVA    -> 0x009B2EC0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.BlockeeExists
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5633,7 +5633,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B2DE0
+	 * 		RVA    -> 0x009B2DA0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.AddToBlockee
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5658,7 +5658,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B2C70
+	 * 		RVA    -> 0x009B2C30
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.AddGroupMember
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5685,7 +5685,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B2B00
+	 * 		RVA    -> 0x009B2AC0
 	 * 		Name   -> Function LimNative.LimNativeLowLevel.AcceptFriendRequest
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

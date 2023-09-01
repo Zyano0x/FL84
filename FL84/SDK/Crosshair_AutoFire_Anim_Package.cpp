@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function Crosshair_AutoFire_Anim.Crosshair_AutoFire_Anim_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function Crosshair_AutoFire_Anim.Crosshair_AutoFire_Anim_C.ExecuteUbergraph_Crosshair_AutoFire_Anim
 	 * 		Flags  -> (Final)
 	 * Parameters:

@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #ifdef _MSC_VER
@@ -25,7 +25,7 @@ namespace CG
 		ERedHintPath                                               Path_7_6229F76641F2B5DD8915A592798C0451;                 // 0x0008(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bAutoRefresh_9_E2E903644E809943087FCDAB89AF4410;         // 0x0009(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		E_Type_RedHint                                             Style_13_2AE8F5AD43CAA7BCF6308795DC0100A4;               // 0x000A(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1VRA[0x5];                                   // 0x000B(0x0005) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_QIWD[0x5];                                   // 0x000B(0x0005) MISSED OFFSET (PADDING)
 	};
 
 }

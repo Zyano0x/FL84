@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01598DC0
+	 * 		RVA    -> 0x01598BF0
 	 * 		Name   -> Function MeshWidget.MeshRectangleWidget.SetInstanceNum
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -63,7 +63,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01598DC0
+	 * 		RVA    -> 0x01598BF0
 	 * 		Name   -> Function MeshWidget.MeshRectangleWidget.ModifyInstanceNum
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -86,7 +86,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008EE0F0
+	 * 		RVA    -> 0x008EE0B0
 	 * 		Name   -> Function MeshWidget.MeshRectangleWidget.InitUnitTestProvider
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */

@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class AUdiniInputActorBase : public AActor
 	{
 	public:
-		unsigned char                                              UnknownData_69BW[0x8];                                   // 0x0228(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_WU81[0x8];                                   // 0x0228(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -83,7 +83,7 @@ namespace CG
 		EUdiniAttributeType                                        AttributeType;                                           // 0x0048(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		EUdiniAttributeClass                                       AttributeOwner;                                          // 0x0049(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIsHide;                                                 // 0x004A(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_EYYQ[0x1];                                   // 0x004B(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7WP6[0x1];                                   // 0x004B(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    AttributeCount;                                          // 0x004C(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    AttributeTupleSize;                                      // 0x0050(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      MaxValue;                                                // 0x0054(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -98,7 +98,7 @@ namespace CG
 		bool                                                       ShowAttributeValueAsDir;                                 // 0x006C(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       ShowAttributeValueAsText;                                // 0x006D(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       EnableShowBackGroundValue;                               // 0x006E(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_5WEZ[0x99];                                  // 0x006F(0x0099) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_6HUC[0x99];                                  // 0x006F(0x0099) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -113,7 +113,7 @@ namespace CG
 	public:
 		TArray<float>                                              Value;                                                   // 0x0108(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      DefaultValue;                                            // 0x0118(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_YLRZ[0x4];                                   // 0x011C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_V06R[0x4];                                   // 0x011C(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -129,7 +129,7 @@ namespace CG
 		TArray<struct FVector>                                     Value;                                                   // 0x0108(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             DefaultValue;                                            // 0x0118(0x000C) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bShowOnlyDir;                                            // 0x0124(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_TEMU[0x3];                                   // 0x0125(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_3B3D[0x3];                                   // 0x0125(0x0003) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -157,7 +157,7 @@ namespace CG
 	{
 	public:
 		TArray<struct FVector4>                                    Value;                                                   // 0x0108(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_AVI8[0x8];                                   // 0x0118(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_ZHQA[0x8];                                   // 0x0118(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector4                                            DefaultValue;                                            // 0x0120(0x0010) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
 	public:
@@ -173,7 +173,7 @@ namespace CG
 	public:
 		TArray<int32_t>                                            Value;                                                   // 0x0108(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    DefaultValue;                                            // 0x0118(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ZC9U[0x4];                                   // 0x011C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_B2S0[0x4];                                   // 0x011C(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -279,7 +279,7 @@ namespace CG
 	{
 	public:
 		EUdiniDataPartType                                         PartType;                                                // 0x0028(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_WNIA[0x7];                                   // 0x0029(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7ZQ2[0x7];                                   // 0x0029(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FVector>                                     VertexPosition;                                          // 0x0030(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<struct FLinearColor>                                VertexColors;                                            // 0x0040(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<struct FLinearColor>                                VertexColorsCatche;                                      // 0x0050(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -289,7 +289,7 @@ namespace CG
 		TArray<float>                                              PointDrawSize;                                           // 0x0090(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<float>                                              PrimDrawLineThinkness;                                   // 0x00A0(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TMap<class FString, class UUdiniAttribute*>                UdiniAttributesMap;                                      // 0x00B0(0x0050) NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ZD4O[0x10];                                  // 0x0100(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_84ZE[0x10];                                  // 0x0100(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -312,7 +312,7 @@ namespace CG
 	class AUdiniInputVolumActor : public AActor
 	{
 	public:
-		unsigned char                                              UnknownData_AMC3[0x8];                                   // 0x0228(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_FAQ6[0x8];                                   // 0x0228(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -392,10 +392,10 @@ namespace CG
 		TArray<int32_t>                                            bIsPrimHide;                                             // 0x0150(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<int32_t>                                            bIsPointHide;                                            // 0x0160(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<float>                                              PrimDrawSize;                                            // 0x0170(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_28Z9[0x10];                                  // 0x0180(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_VJP5[0x10];                                  // 0x0180(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		bool                                                       GeneraProcaduralMesh;                                    // 0x0190(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIsMask;                                                 // 0x0191(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_2IO7[0x16];                                  // 0x0192(0x0016) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_DN9O[0x16];                                  // 0x0192(0x0016) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -438,7 +438,7 @@ namespace CG
 	class UUdiniSplineComponent : public USplineComponent
 	{
 	public:
-		unsigned char                                              UnknownData_7711[0x20];                                  // 0x0630(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_YMW4[0x20];                                  // 0x0630(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

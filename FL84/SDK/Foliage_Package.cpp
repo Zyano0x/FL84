@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x032CB1C0
+	 * 		RVA    -> 0x032CB2D0
 	 * 		Name   -> Function Foliage.FoliageStatistics.FoliageOverlappingSphereCount
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -57,7 +57,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x032CB080
+	 * 		RVA    -> 0x032CB190
 	 * 		Name   -> Function Foliage.FoliageStatistics.FoliageOverlappingBoxCount
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -156,7 +156,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x032CAE60
+	 * 		RVA    -> 0x032CAF70
 	 * 		Name   -> Function Foliage.InteractiveFoliageActor.CapsuleTouched
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -245,7 +245,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x032CB320
+	 * 		RVA    -> 0x032CB430
 	 * 		Name   -> Function Foliage.ProceduralFoliageSpawner.Simulate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:

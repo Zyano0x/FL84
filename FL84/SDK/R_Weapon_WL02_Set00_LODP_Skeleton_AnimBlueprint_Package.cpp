@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0154CE00
+	 * 		RVA    -> 0x0154CD50
 	 * 		Name   -> Function R_Weapon_WL02_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL02_Set00_LODP_Skeleton_AnimBlueprint_C.TestAPI
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -32,7 +32,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01559350
+	 * 		RVA    -> 0x015592A0
 	 * 		Name   -> Function R_Weapon_WL02_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL02_Set00_LODP_Skeleton_AnimBlueprint_C.InterruptAnim
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -52,7 +52,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0154D000
+	 * 		RVA    -> 0x0154CF50
 	 * 		Name   -> Function R_Weapon_WL02_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL02_Set00_LODP_Skeleton_AnimBlueprint_C.AnimNotify_QuitReload
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -72,7 +72,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0154D020
+	 * 		RVA    -> 0x0154CF70
 	 * 		Name   -> Function R_Weapon_WL02_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL02_Set00_LODP_Skeleton_AnimBlueprint_C.AnimNotify_QuitIdle
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -92,7 +92,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0154CDE0
+	 * 		RVA    -> 0x0154CD30
 	 * 		Name   -> Function R_Weapon_WL02_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL02_Set00_LODP_Skeleton_AnimBlueprint_C.AnimNotify_QuitFire
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -112,7 +112,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0154CE80
+	 * 		RVA    -> 0x0154CDD0
 	 * 		Name   -> Function R_Weapon_WL02_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL02_Set00_LODP_Skeleton_AnimBlueprint_C.AnimNotify_EnterReload
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -132,7 +132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01559490
+	 * 		RVA    -> 0x015593E0
 	 * 		Name   -> Function R_Weapon_WL02_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL02_Set00_LODP_Skeleton_AnimBlueprint_C.AnimNotify_EnterIdle
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -152,7 +152,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0154CE60
+	 * 		RVA    -> 0x0154CDB0
 	 * 		Name   -> Function R_Weapon_WL02_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL02_Set00_LODP_Skeleton_AnimBlueprint_C.AnimNotify_EnterFire
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -172,7 +172,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0154CC00
+	 * 		RVA    -> 0x0154CB50
 	 * 		Name   -> Function R_Weapon_WL02_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL02_Set00_LODP_Skeleton_AnimBlueprint_C.AnimGraph
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

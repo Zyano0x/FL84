@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017B6210
+	 * 		RVA    -> 0x017B6040
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.StopLocationServices
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017B61E0
+	 * 		RVA    -> 0x017B6010
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.StartLocationServices
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -56,7 +56,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017B6160
+	 * 		RVA    -> 0x017B5F90
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.IsLocationAccuracyAvailable
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -81,7 +81,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017B6050
+	 * 		RVA    -> 0x017B5E80
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.InitLocationServices
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -110,7 +110,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017B6030
+	 * 		RVA    -> 0x017B5E60
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.GetLocationServicesImpl
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -132,7 +132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017B5FF0
+	 * 		RVA    -> 0x017B5E20
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.GetLastKnownLocation
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -154,7 +154,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017B5FC0
+	 * 		RVA    -> 0x017B5DF0
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.AreLocationServicesEnabled
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */

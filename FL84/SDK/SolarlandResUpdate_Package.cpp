@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02306990
+	 * 		RVA    -> 0x02306F70
 	 * 		Name   -> Function SolarlandResUpdate.DownloadFileTask.StartDownload
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -32,7 +32,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02306900
+	 * 		RVA    -> 0x02306EE0
 	 * 		Name   -> Function SolarlandResUpdate.DownloadFileTask.SetSaveToFile
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -55,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02306870
+	 * 		RVA    -> 0x02306E50
 	 * 		Name   -> Function SolarlandResUpdate.DownloadFileTask.SetNeedDecode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -78,7 +78,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x023067E0
+	 * 		RVA    -> 0x02306DC0
 	 * 		Name   -> Function SolarlandResUpdate.DownloadFileTask.SetForceRedownload
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -101,7 +101,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02306760
+	 * 		RVA    -> 0x02306D40
 	 * 		Name   -> Function SolarlandResUpdate.DownloadFileTask.GetUrl
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -123,7 +123,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02306680
+	 * 		RVA    -> 0x02306C60
 	 * 		Name   -> Function SolarlandResUpdate.DownloadFileTask.CreateNoFile
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -150,7 +150,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x023064B0
+	 * 		RVA    -> 0x02306A90
 	 * 		Name   -> Function SolarlandResUpdate.DownloadFileTask.Create
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:

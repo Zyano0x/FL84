@@ -62,4 +62,48 @@ namespace Math
 
 		return pOut;
 	}
+
+	CG::FVector2D WorldToRadar(CG::FRotator Rotation, CG::FVector CameraLocation, CG::FVector Origin, CG::FVector2D RadarPosition, CG::FVector2D RadarSize)
+	{
+		CG::FVector2D DotPos;
+		CG::FVector2D Direction;
+
+		// Get Origin Of Entity
+		CG::FVector EntityPosition = Origin;
+
+		// Get Origin Of LocalPlayer
+		CG::FVector LocalPosition = CameraLocation;
+
+		// Calculate Direction
+		Direction.Y = EntityPosition.Y - LocalPosition.Y;
+		Direction.X = EntityPosition.X - LocalPosition.X;
+
+		// Get Rotation
+		float LocalAngles = Rotation.Yaw;
+
+		float Radian = DEG2RAD(LocalAngles);
+
+		// Calculate Raw DotPos
+		DotPos.X = (Direction.X * (float)cos(Radian) - Direction.Y * (float)sin(Radian)) / 150.0f;
+		DotPos.Y = (Direction.Y * (float)cos(Radian) + Direction.X * (float)sin(Radian)) / 150.0f;
+
+		// Add RadarPos To Calculated DotPos
+		DotPos.X = DotPos.X + RadarPosition.X + RadarSize.X / 2.f;
+		DotPos.Y = -DotPos.Y + RadarPosition.Y + RadarSize.Y / 2.f;
+
+		// Clamp Dots To RadarSize ( Where 18 = Width/Height of the Dot)
+		if (DotPos.X < RadarPosition.X)
+			DotPos.X = RadarPosition.X;
+
+		if (DotPos.X > RadarPosition.X + RadarSize.X - 18)
+			DotPos.X = RadarPosition.X + RadarSize.X - 18;
+
+		if (DotPos.Y < RadarPosition.Y)
+			DotPos.Y = RadarPosition.Y;
+
+		if (DotPos.Y > RadarPosition.Y + RadarSize.Y - 18)
+			DotPos.Y = RadarPosition.Y + RadarSize.Y - 18;
+
+		return DotPos;
+	}
 }

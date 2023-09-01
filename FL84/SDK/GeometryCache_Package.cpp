@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0173FCB0
+	 * 		RVA    -> 0x0173FAE0
 	 * 		Name   -> Function GeometryCache.GeometryCacheActor.GetGeometryCacheComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -104,7 +104,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01740320
+	 * 		RVA    -> 0x01740150
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.TickAtThisTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -133,7 +133,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01740300
+	 * 		RVA    -> 0x01740130
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.Stop
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -153,7 +153,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01740280
+	 * 		RVA    -> 0x017400B0
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.SetStartTimeOffset
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -176,7 +176,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01740200
+	 * 		RVA    -> 0x01740030
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.SetPlaybackSpeed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -199,7 +199,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0173FF70
+	 * 		RVA    -> 0x0173FDA0
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.SetLooping
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -222,7 +222,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0173FED0
+	 * 		RVA    -> 0x0173FD00
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.SetGeometryCache
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -247,7 +247,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0173FEB0
+	 * 		RVA    -> 0x0173FCE0
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.PlayReversedFromEnd
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -267,7 +267,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0173FE90
+	 * 		RVA    -> 0x0173FCC0
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.PlayReversed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -287,7 +287,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0173FE70
+	 * 		RVA    -> 0x0173FCA0
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.PlayFromStart
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -307,7 +307,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0173FE50
+	 * 		RVA    -> 0x0173FC80
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.Play
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -327,7 +327,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0173FE30
+	 * 		RVA    -> 0x0173FC60
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.Pause
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -347,7 +347,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0173FE00
+	 * 		RVA    -> 0x0173FC30
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.IsPlayingReversed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -369,7 +369,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0173FDD0
+	 * 		RVA    -> 0x0173FC00
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.IsPlaying
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -391,7 +391,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0173FDA0
+	 * 		RVA    -> 0x0173FBD0
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.IsLooping
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -413,7 +413,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0173FD70
+	 * 		RVA    -> 0x0173FBA0
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetStartTimeOffset
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -435,7 +435,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0173FD40
+	 * 		RVA    -> 0x0173FB70
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetPlaybackSpeed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -457,7 +457,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0173FD10
+	 * 		RVA    -> 0x0173FB40
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetPlaybackDirection
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -479,7 +479,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0173FCE0
+	 * 		RVA    -> 0x0173FB10
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetNumberOfFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -501,7 +501,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0173FC80
+	 * 		RVA    -> 0x0173FAB0
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetDuration
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -523,7 +523,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0173FC50
+	 * 		RVA    -> 0x0173FA80
 	 * 		Name   -> Function GeometryCache.GeometryCacheComponent.GetAnimationTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -573,7 +573,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0173FA00
+	 * 		RVA    -> 0x0173F830
 	 * 		Name   -> Function GeometryCache.GeometryCacheTrack_FlipbookAnimation.AddMeshSample
 	 * 		Flags  -> (Final, Native, Public, HasOutParms)
 	 * Parameters:
@@ -626,7 +626,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01740000
+	 * 		RVA    -> 0x0173FE30
 	 * 		Name   -> Function GeometryCache.GeometryCacheTrack_TransformAnimation.SetMesh
 	 * 		Flags  -> (Final, Native, Public, HasOutParms)
 	 * Parameters:
@@ -663,7 +663,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01740000
+	 * 		RVA    -> 0x0173FE30
 	 * 		Name   -> Function GeometryCache.GeometryCacheTrack_TransformGroupAnimation.SetMesh
 	 * 		Flags  -> (Final, Native, Public, HasOutParms)
 	 * Parameters:

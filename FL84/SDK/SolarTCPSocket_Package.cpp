@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016B78E0
+	 * 		RVA    -> 0x016B7710
 	 * 		Name   -> Function SolarTCPSocket.SolarTCPSocketClient.SendData
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -39,7 +39,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016B7850
+	 * 		RVA    -> 0x016B7680
 	 * 		Name   -> Function SolarTCPSocket.SolarTCPSocketClient.Disconnect
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -62,7 +62,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016B75E0
+	 * 		RVA    -> 0x016B7410
 	 * 		Name   -> Function SolarTCPSocket.SolarTCPSocketClient.Connect
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

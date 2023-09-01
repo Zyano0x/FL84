@@ -78,9 +78,6 @@
     <ClInclude Include="Fonts.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SDK.h">
-      <Filter>SDK</Filter>
-    </ClInclude>
     <ClInclude Include="XXX.h">
       <Filter>Features</Filter>
     </ClInclude>
@@ -95,6 +92,9 @@
     </ClInclude>
     <ClInclude Include="Mathematics.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK.h">
+      <Filter>SDK</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -137,18 +137,6 @@
     <ClCompile Include="Settings.cpp">
       <Filter>Menu\Settings</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\CoreUObject_Package.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\BasicTypes_Package.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\Solarland_Package.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\Engine_Package.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
     <ClCompile Include="XXX.cpp">
       <Filter>Features</Filter>
     </ClCompile>
@@ -160,6 +148,18 @@
     </ClCompile>
     <ClCompile Include="Mathematics.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\CoreUObject_Package.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\BasicTypes_Package.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Solarland_Package.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Engine_Package.cpp">
+      <Filter>SDK</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

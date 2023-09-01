@@ -80,7 +80,7 @@ namespace Draw
 
 		ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2, y), ImGui::GetColorU32(color), text.c_str());
 	}
-	
+
 	void VerticalHealthBar(int x, int y, int w, int h, float Health, float MaxHealth, ImVec4 color)
 	{
 		if (Health <= 0)

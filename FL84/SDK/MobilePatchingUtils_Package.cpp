@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017BA090
+	 * 		RVA    -> 0x017B9EC0
 	 * 		Name   -> Function MobilePatchingUtils.MobileInstalledContent.Mount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -39,7 +39,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017B9F20
+	 * 		RVA    -> 0x017B9D50
 	 * 		Name   -> Function MobilePatchingUtils.MobileInstalledContent.GetInstalledContentSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -61,7 +61,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017B9D20
+	 * 		RVA    -> 0x017B9B50
 	 * 		Name   -> Function MobilePatchingUtils.MobileInstalledContent.GetDiskFreeSpace
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -97,7 +97,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017BA370
+	 * 		RVA    -> 0x017BA1A0
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.StartInstall
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -122,7 +122,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017BA060
+	 * 		RVA    -> 0x017B9E90
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.GetTotalDownloadedSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -144,7 +144,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017B9F50
+	 * 		RVA    -> 0x017B9D80
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.GetRequiredDiskSpace
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -166,7 +166,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017B9E50
+	 * 		RVA    -> 0x017B9C80
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.GetInstallProgress
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -188,7 +188,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017B9DB0
+	 * 		RVA    -> 0x017B9BE0
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.GetDownloadStatusText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -210,7 +210,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017B9D80
+	 * 		RVA    -> 0x017B9BB0
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.GetDownloadSpeed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -232,7 +232,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017B9D50
+	 * 		RVA    -> 0x017B9B80
 	 * 		Name   -> Function MobilePatchingUtils.MobilePendingContent.GetDownloadSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -268,7 +268,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017BA180
+	 * 		RVA    -> 0x017B9FB0
 	 * 		Name   -> Function MobilePatchingUtils.MobilePatchingLibrary.RequestContent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -299,7 +299,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009D37B0
+	 * 		RVA    -> 0x009D3770
 	 * 		Name   -> Function MobilePatchingUtils.MobilePatchingLibrary.HasActiveWiFiConnection
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -321,7 +321,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017B9F80
+	 * 		RVA    -> 0x017B9DB0
 	 * 		Name   -> Function MobilePatchingUtils.MobilePatchingLibrary.GetSupportedPlatformNames
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -343,7 +343,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017B9E80
+	 * 		RVA    -> 0x017B9CB0
 	 * 		Name   -> Function MobilePatchingUtils.MobilePatchingLibrary.GetInstalledContent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -368,7 +368,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x017B9CA0
+	 * 		RVA    -> 0x017B9AD0
 	 * 		Name   -> Function MobilePatchingUtils.MobilePatchingLibrary.GetActiveDeviceProfileName
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */

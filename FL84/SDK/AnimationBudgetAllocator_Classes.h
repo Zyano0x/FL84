@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #ifdef _MSC_VER
@@ -33,11 +33,11 @@ namespace CG
 	class USkeletalMeshComponentBudgeted : public USkeletalMeshComponent
 	{
 	public:
-		unsigned char                                              UnknownData_JHMJ[0x20];                                  // 0x0C20(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_DAG6[0x20];                                  // 0x0C20(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		bool                                                       bAutoRegisterWithBudgetAllocator : 1;                    // 0x0C40(0x0001) BIT_FIELD Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		bool                                                       bAutoCalculateSignificance : 1;                          // 0x0C40(0x0001) BIT_FIELD Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		bool                                                       bShouldUseActorRenderedFlag : 1;                         // 0x0C40(0x0001) BIT_FIELD Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_0UAX[0xF];                                   // 0x0C41(0x000F) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_8HRP[0xF];                                   // 0x0C41(0x000F) MISSED OFFSET (PADDING)
 
 	public:
 		void SetAutoRegisterWithBudgetAllocator(bool bInAutoRegisterWithBudgetAllocator);

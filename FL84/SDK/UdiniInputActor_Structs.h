@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #ifdef _MSC_VER
@@ -123,7 +123,7 @@ namespace CG
 		TArray<int32_t>                                            polyTrianglePrimIndex;                                   // 0x0020(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    __Primitive_Id_;                                         // 0x0030(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIsHid;                                                  // 0x0034(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_9MQ2[0x3];                                   // 0x0035(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_3GNE[0x3];                                   // 0x0035(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -135,7 +135,7 @@ namespace CG
 	public:
 		TArray<int32_t>                                            polyPosIndex;                                            // 0x0000(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIsHid;                                                  // 0x0010(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_FTJE[0x7];                                   // 0x0011(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_V3L7[0x7];                                   // 0x0011(0x0007) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -157,7 +157,7 @@ namespace CG
 	public:
 		bool                                                       bIsDebug;                                                // 0x0008(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		EUdiniTableType                                            TableType;                                               // 0x0009(0x0001) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1OK4[0x6];                                   // 0x000A(0x0006) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_C5OL[0x6];                                   // 0x000A(0x0006) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -167,7 +167,7 @@ namespace CG
 	struct FUdiniTableDatas
 	{
 	public:
-		unsigned char                                              UnknownData_RMA1[0xE0];                                  // 0x0000(0x00E0) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_NNDE[0xE0];                                  // 0x0000(0x00E0) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -204,7 +204,7 @@ namespace CG
 		class FString                                              Name;                                                    // 0x0000(0x0010) Edit, ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              help;                                                    // 0x0010(0x0010) Edit, ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		EUdiniAttributeType                                        AttributeType;                                           // 0x0020(0x0001) Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_UWLJ[0x3];                                   // 0x0021(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_QQO2[0x3];                                   // 0x0021(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    TupleSize;                                               // 0x0024(0x0004) Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<float>                                              FloatValue;                                              // 0x0028(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<int32_t>                                            IntValue;                                                // 0x0038(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -222,7 +222,7 @@ namespace CG
 		bool                                                       hasMax;                                                  // 0x00C2(0x0001) Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       hasUIMin;                                                // 0x00C3(0x0001) Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       hasUIMax;                                                // 0x00C4(0x0001) Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_VDGT[0x3];                                   // 0x00C5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_5O45[0x3];                                   // 0x00C5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      UIMax;                                                   // 0x00C8(0x0004) Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      UIMin;                                                   // 0x00CC(0x0004) Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              VisibilityCondition;                                     // 0x00D0(0x0010) Edit, ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -243,10 +243,10 @@ namespace CG
 		class FString                                              HdaTypeName;                                             // 0x0050(0x0010) Edit, ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       IsClosedCurve;                                           // 0x0060(0x0001) Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       IsPoint;                                                 // 0x0061(0x0001) Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_2NPZ[0x2];                                   // 0x0062(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XSFB[0x2];                                   // 0x0062(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      SnapGridSize;                                            // 0x0064(0x0004) Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      SnapGridNum;                                             // 0x0068(0x0004) Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_2NZV[0x4];                                   // 0x006C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_S37U[0x4];                                   // 0x006C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              OperationModeType;                                       // 0x0070(0x0010) Edit, ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              OutputTypeClassName;                                     // 0x0080(0x0010) Edit, ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              ActorOwnerClassName;                                     // 0x0090(0x0010) Edit, ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -294,12 +294,12 @@ namespace CG
 	{
 	public:
 		float                                                      PaintScale;                                              // 0x0000(0x0004) Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_Y859[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_UVI6[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSubOpData                                          StaticSubOpData;                                         // 0x0008(0x0288) NonTransactional, NativeAccessSpecifierPublic
 		class FString                                              PaintAttValue;                                           // 0x0290(0x0010) ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              PaintAttName;                                            // 0x02A0(0x0010) ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIsUsePaintDir;                                          // 0x02B0(0x0001) ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_OZ4M[0x7];                                   // 0x02B1(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_POKD[0x7];                                   // 0x02B1(0x0007) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -357,7 +357,7 @@ namespace CG
 	struct FSnapPoint
 	{
 	public:
-		unsigned char                                              UnknownData_DP8K[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_91JI[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -393,7 +393,7 @@ namespace CG
 	struct FUdiniInstanceData
 	{
 	public:
-		unsigned char                                              UnknownData_SS9V[0x68];                                  // 0x0000(0x0068) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_X5OM[0x68];                                  // 0x0000(0x0068) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -403,7 +403,7 @@ namespace CG
 	struct FOutPutContext
 	{
 	public:
-		unsigned char                                              UnknownData_98EY[0x18];                                  // 0x0000(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_MM8Q[0x18];                                  // 0x0000(0x0018) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -413,7 +413,7 @@ namespace CG
 	struct FHoudiniPartData
 	{
 	public:
-		unsigned char                                              UnknownData_E55Q[0x20];                                  // 0x0000(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_DIPH[0x20];                                  // 0x0000(0x0020) MISSED OFFSET (PADDING)
 	};
 
 }

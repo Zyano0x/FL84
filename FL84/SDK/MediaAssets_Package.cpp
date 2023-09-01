@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C78E60
+	 * 		RVA    -> 0x00C78E20
 	 * 		Name   -> Function MediaAssets.MediaSource.Validate
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645C40
+	 * 		RVA    -> 0x03645D20
 	 * 		Name   -> Function MediaAssets.MediaSource.SetMediaOptionString
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -59,7 +59,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645B70
+	 * 		RVA    -> 0x03645C50
 	 * 		Name   -> Function MediaAssets.MediaSource.SetMediaOptionInt64
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -84,7 +84,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645A90
+	 * 		RVA    -> 0x03645B70
 	 * 		Name   -> Function MediaAssets.MediaSource.SetMediaOptionFloat
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -109,7 +109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036459B0
+	 * 		RVA    -> 0x03645A90
 	 * 		Name   -> Function MediaAssets.MediaSource.SetMediaOptionBool
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -134,7 +134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644210
+	 * 		RVA    -> 0x036442F0
 	 * 		Name   -> Function MediaAssets.MediaSource.GetUrl
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -184,7 +184,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645870
+	 * 		RVA    -> 0x03645950
 	 * 		Name   -> Function MediaAssets.FileMediaSource.SetFilePath
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -221,7 +221,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036430B0
+	 * 		RVA    -> 0x03643190
 	 * 		Name   -> Function MediaAssets.MediaBlueprintFunctionLibrary.EnumerateWebcamCaptureDevices
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -248,7 +248,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03642F60
+	 * 		RVA    -> 0x03643040
 	 * 		Name   -> Function MediaAssets.MediaBlueprintFunctionLibrary.EnumerateVideoCaptureDevices
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -275,7 +275,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03642E10
+	 * 		RVA    -> 0x03642EF0
 	 * 		Name   -> Function MediaAssets.MediaBlueprintFunctionLibrary.EnumerateAudioCaptureDevices
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -316,7 +316,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9F00
+	 * 		RVA    -> 0x030CA010
 	 * 		Name   -> Function MediaAssets.MediaComponent.GetMediaTexture
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -338,7 +338,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036437B0
+	 * 		RVA    -> 0x03643890
 	 * 		Name   -> Function MediaAssets.MediaComponent.GetMediaPlayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -374,7 +374,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036466E0
+	 * 		RVA    -> 0x036467C0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SupportsSeeking
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -396,7 +396,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036466B0
+	 * 		RVA    -> 0x03646790
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SupportsScrubbing
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -418,7 +418,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036465E0
+	 * 		RVA    -> 0x036466C0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SupportsRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -445,7 +445,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03646500
+	 * 		RVA    -> 0x036465E0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetViewRotation
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -472,7 +472,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036463E0
+	 * 		RVA    -> 0x036464C0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetViewField
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -501,7 +501,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036462D0
+	 * 		RVA    -> 0x036463B0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetVideoTrackFrameRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -530,7 +530,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036461C0
+	 * 		RVA    -> 0x036462A0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetTrackFormat
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -559,7 +559,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03646140
+	 * 		RVA    -> 0x03646220
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetTimeDelay
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -582,7 +582,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645F80
+	 * 		RVA    -> 0x03646060
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -607,7 +607,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645EF0
+	 * 		RVA    -> 0x03645FD0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetNativeVolume
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -632,7 +632,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645D40
+	 * 		RVA    -> 0x03645E20
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetMediaOptions
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -655,7 +655,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645910
+	 * 		RVA    -> 0x036459F0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetLooping
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -680,7 +680,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036455F0
+	 * 		RVA    -> 0x036456D0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetDesiredPlayerName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -703,7 +703,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645560
+	 * 		RVA    -> 0x03645640
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SetBlockOnTime
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -726,7 +726,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645490
+	 * 		RVA    -> 0x03645570
 	 * 		Name   -> Function MediaAssets.MediaPlayer.SelectTrack
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -753,7 +753,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036453F0
+	 * 		RVA    -> 0x036454D0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.Seek
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -778,7 +778,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036453C0
+	 * 		RVA    -> 0x036454A0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.Rewind
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -800,7 +800,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036452C0
+	 * 		RVA    -> 0x036453A0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.Reopen
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -822,7 +822,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645150
+	 * 		RVA    -> 0x03645230
 	 * 		Name   -> Function MediaAssets.MediaPlayer.Previous
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -844,7 +844,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645130
+	 * 		RVA    -> 0x03645210
 	 * 		Name   -> Function MediaAssets.MediaPlayer.PlayAndSeek
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -864,7 +864,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645100
+	 * 		RVA    -> 0x036451E0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.Play
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -886,7 +886,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036450D0
+	 * 		RVA    -> 0x036451B0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.Pause
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -908,7 +908,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645020
+	 * 		RVA    -> 0x03645100
 	 * 		Name   -> Function MediaAssets.MediaPlayer.OpenUrl
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -933,7 +933,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644F10
+	 * 		RVA    -> 0x03644FF0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.OpenSourceWithOptions
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -960,7 +960,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644D20
+	 * 		RVA    -> 0x03644E00
 	 * 		Name   -> Function MediaAssets.MediaPlayer.OpenSourceLatent
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -993,7 +993,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644C80
+	 * 		RVA    -> 0x03644D60
 	 * 		Name   -> Function MediaAssets.MediaPlayer.OpenSource
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1018,7 +1018,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644BB0
+	 * 		RVA    -> 0x03644C90
 	 * 		Name   -> Function MediaAssets.MediaPlayer.OpenPlaylistIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1045,7 +1045,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644B10
+	 * 		RVA    -> 0x03644BF0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.OpenPlaylist
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1070,7 +1070,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644A60
+	 * 		RVA    -> 0x03644B40
 	 * 		Name   -> Function MediaAssets.MediaPlayer.OpenFile
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1095,7 +1095,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644A10
+	 * 		RVA    -> 0x03644AF0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.Next
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1117,7 +1117,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036449E0
+	 * 		RVA    -> 0x03644AC0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.IsReady
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1139,7 +1139,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036449B0
+	 * 		RVA    -> 0x03644A90
 	 * 		Name   -> Function MediaAssets.MediaPlayer.IsPreparing
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1161,7 +1161,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644980
+	 * 		RVA    -> 0x03644A60
 	 * 		Name   -> Function MediaAssets.MediaPlayer.IsPlaying
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1183,7 +1183,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644950
+	 * 		RVA    -> 0x03644A30
 	 * 		Name   -> Function MediaAssets.MediaPlayer.IsPaused
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1205,7 +1205,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644920
+	 * 		RVA    -> 0x03644A00
 	 * 		Name   -> Function MediaAssets.MediaPlayer.IsLooping
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1227,7 +1227,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036448F0
+	 * 		RVA    -> 0x036449D0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.IsConnecting
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1249,7 +1249,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036448C0
+	 * 		RVA    -> 0x036449A0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.IsClosed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1271,7 +1271,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644890
+	 * 		RVA    -> 0x03644970
 	 * 		Name   -> Function MediaAssets.MediaPlayer.IsBuffering
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1293,7 +1293,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644790
+	 * 		RVA    -> 0x03644870
 	 * 		Name   -> Function MediaAssets.MediaPlayer.HasError
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1315,7 +1315,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644720
+	 * 		RVA    -> 0x03644800
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetViewRotation
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1337,7 +1337,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644610
+	 * 		RVA    -> 0x036446F0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetVideoTrackType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1364,7 +1364,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644540
+	 * 		RVA    -> 0x03644620
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetVideoTrackFrameRates
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1391,7 +1391,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644470
+	 * 		RVA    -> 0x03644550
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetVideoTrackFrameRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1418,7 +1418,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644390
+	 * 		RVA    -> 0x03644470
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetVideoTrackDimensions
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1445,7 +1445,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036442C0
+	 * 		RVA    -> 0x036443A0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetVideoTrackAspectRatio
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1472,7 +1472,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644290
+	 * 		RVA    -> 0x03644370
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetVerticalFieldOfView
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1494,7 +1494,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036441D0
+	 * 		RVA    -> 0x036442B0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetUrl
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1516,7 +1516,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036440C0
+	 * 		RVA    -> 0x036441A0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetTrackLanguage
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1543,7 +1543,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643FF0
+	 * 		RVA    -> 0x036440D0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetTrackFormat
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1570,7 +1570,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643EC0
+	 * 		RVA    -> 0x03643FA0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetTrackDisplayName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1597,7 +1597,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643E80
+	 * 		RVA    -> 0x03643F60
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetTimeDelay
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1619,7 +1619,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643E40
+	 * 		RVA    -> 0x03643F20
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetTime
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1641,7 +1641,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643D40
+	 * 		RVA    -> 0x03643E20
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetSupportedRates
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1668,7 +1668,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643C30
+	 * 		RVA    -> 0x03643D10
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetSelectedTrack
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1693,7 +1693,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643C00
+	 * 		RVA    -> 0x03643CE0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1715,7 +1715,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643AA0
+	 * 		RVA    -> 0x03643B80
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetPlaylistIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1737,7 +1737,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643A80
+	 * 		RVA    -> 0x03643B60
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetPlaylist
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1759,7 +1759,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643A40
+	 * 		RVA    -> 0x03643B20
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetPlayerName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1781,7 +1781,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036439B0
+	 * 		RVA    -> 0x03643A90
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetNumTracks
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1806,7 +1806,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036438E0
+	 * 		RVA    -> 0x036439C0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetNumTrackFormats
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1833,7 +1833,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643710
+	 * 		RVA    -> 0x036437F0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetMediaName
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1855,7 +1855,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036436D0
+	 * 		RVA    -> 0x036437B0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetLastVideoSampleProcessedTime
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1877,7 +1877,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643690
+	 * 		RVA    -> 0x03643770
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetLastAudioSampleProcessedTime
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1899,7 +1899,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643660
+	 * 		RVA    -> 0x03643740
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetHorizontalFieldOfView
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1921,7 +1921,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036435C0
+	 * 		RVA    -> 0x036436A0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetDuration
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1943,7 +1943,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643580
+	 * 		RVA    -> 0x03643660
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetDesiredPlayerName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1965,7 +1965,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643470
+	 * 		RVA    -> 0x03643550
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetAudioTrackType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1992,7 +1992,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036433A0
+	 * 		RVA    -> 0x03643480
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetAudioTrackSampleRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2019,7 +2019,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036432D0
+	 * 		RVA    -> 0x036433B0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.GetAudioTrackChannels
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2046,7 +2046,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03642DF0
+	 * 		RVA    -> 0x03642ED0
 	 * 		Name   -> Function MediaAssets.MediaPlayer.Close
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -2066,7 +2066,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03642D40
+	 * 		RVA    -> 0x03642E20
 	 * 		Name   -> Function MediaAssets.MediaPlayer.CanPlayUrl
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2091,7 +2091,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03642CA0
+	 * 		RVA    -> 0x03642D80
 	 * 		Name   -> Function MediaAssets.MediaPlayer.CanPlaySource
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2116,7 +2116,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03642C70
+	 * 		RVA    -> 0x03642D50
 	 * 		Name   -> Function MediaAssets.MediaPlayer.CanPause
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2152,7 +2152,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036452F0
+	 * 		RVA    -> 0x036453D0
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.Replace
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2179,7 +2179,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645220
+	 * 		RVA    -> 0x03645300
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.RemoveAt
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2204,7 +2204,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645180
+	 * 		RVA    -> 0x03645260
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.Remove
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2229,7 +2229,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644A40
+	 * 		RVA    -> 0x03644B20
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.Num
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -2251,7 +2251,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036447C0
+	 * 		RVA    -> 0x036448A0
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.Insert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2276,7 +2276,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643B60
+	 * 		RVA    -> 0x03643C40
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.GetRandom
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2303,7 +2303,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643AC0
+	 * 		RVA    -> 0x03643BA0
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.GetPrevious
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2330,7 +2330,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643840
+	 * 		RVA    -> 0x03643920
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.GetNext
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2357,7 +2357,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643200
+	 * 		RVA    -> 0x036432E0
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.Get
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2382,7 +2382,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03642970
+	 * 		RVA    -> 0x03642A50
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.AddUrl
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2407,7 +2407,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036428C0
+	 * 		RVA    -> 0x036429A0
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.AddFile
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2432,7 +2432,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03642820
+	 * 		RVA    -> 0x03642900
 	 * 		Name   -> Function MediaAssets.MediaPlaylist.Add
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2471,7 +2471,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03646010
+	 * 		RVA    -> 0x036460F0
 	 * 		Name   -> Function MediaAssets.MediaSoundComponent.SetSpectralAnalysisSettings
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2496,7 +2496,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645DD0
+	 * 		RVA    -> 0x03645EB0
 	 * 		Name   -> Function MediaAssets.MediaSoundComponent.SetMediaPlayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2519,7 +2519,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036457A0
+	 * 		RVA    -> 0x03645880
 	 * 		Name   -> Function MediaAssets.MediaSoundComponent.SetEnvelopeFollowingsettings
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2544,7 +2544,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645710
+	 * 		RVA    -> 0x036457F0
 	 * 		Name   -> Function MediaAssets.MediaSoundComponent.SetEnableSpectralAnalysis
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2567,7 +2567,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645680
+	 * 		RVA    -> 0x03645760
 	 * 		Name   -> Function MediaAssets.MediaSoundComponent.SetEnableEnvelopeFollowing
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2590,7 +2590,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643CC0
+	 * 		RVA    -> 0x03643DA0
 	 * 		Name   -> Function MediaAssets.MediaSoundComponent.GetSpectralData
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -2612,7 +2612,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036437E0
+	 * 		RVA    -> 0x036438C0
 	 * 		Name   -> Function MediaAssets.MediaSoundComponent.GetMediaPlayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2634,7 +2634,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643600
+	 * 		RVA    -> 0x036436E0
 	 * 		Name   -> Function MediaAssets.MediaSoundComponent.GetEnvelopeValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2656,7 +2656,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03642A20
+	 * 		RVA    -> 0x03642B00
 	 * 		Name   -> Function MediaAssets.MediaSoundComponent.BP_GetAttenuationSettingsToApply
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2697,7 +2697,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03645E60
+	 * 		RVA    -> 0x03645F40
 	 * 		Name   -> Function MediaAssets.MediaTexture.SetMediaPlayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2720,7 +2720,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03644760
+	 * 		RVA    -> 0x03644840
 	 * 		Name   -> Function MediaAssets.MediaTexture.GetWidth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2742,7 +2742,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643810
+	 * 		RVA    -> 0x036438F0
 	 * 		Name   -> Function MediaAssets.MediaTexture.GetMediaPlayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2764,7 +2764,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03643630
+	 * 		RVA    -> 0x03643710
 	 * 		Name   -> Function MediaAssets.MediaTexture.GetHeight
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2786,7 +2786,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x036432A0
+	 * 		RVA    -> 0x03643380
 	 * 		Name   -> Function MediaAssets.MediaTexture.GetAspectRatio
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

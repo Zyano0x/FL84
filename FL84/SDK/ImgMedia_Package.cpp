@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01751FF0
+	 * 		RVA    -> 0x01751E20
 	 * 		Name   -> Function ImgMedia.ImgMediaSource.SetSequencePath
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -35,7 +35,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01751F20
+	 * 		RVA    -> 0x01751D50
 	 * 		Name   -> Function ImgMedia.ImgMediaSource.GetSequencePath
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -57,7 +57,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01751E50
+	 * 		RVA    -> 0x01751C80
 	 * 		Name   -> Function ImgMedia.ImgMediaSource.GetProxies
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:

@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #ifdef _MSC_VER
@@ -126,7 +126,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnMountPakDelegate;                                      // 0x0028(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnUnMountPakDelegate;                                    // 0x0038(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_SL1Z[0x50];                                  // 0x0048(0x0050) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_4XWJ[0x50];                                  // 0x0048(0x0050) MISSED OFFSET (PADDING)
 
 	public:
 		void Init();
@@ -140,7 +140,7 @@ namespace CG
 	class UScopedSlowTaskContext : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_8JRF[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_F5Q9[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

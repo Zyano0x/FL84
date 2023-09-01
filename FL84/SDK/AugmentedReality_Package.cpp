@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C52B0
+	 * 		RVA    -> 0x030C53C0
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.UnpinComponent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -35,7 +35,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C5290
+	 * 		RVA    -> 0x030C53A0
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.StopARSession
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -55,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C5210
+	 * 		RVA    -> 0x030C5320
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.StartARSession
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -78,7 +78,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C4AE0
+	 * 		RVA    -> 0x030C4BF0
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.SetAlignmentTransform
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -101,7 +101,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C4A60
+	 * 		RVA    -> 0x030C4B70
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.RemovePin
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -124,7 +124,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C48D0
+	 * 		RVA    -> 0x030C49E0
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.PinComponentToTraceResult
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -153,7 +153,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C4720
+	 * 		RVA    -> 0x030C4830
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.PinComponent
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -184,7 +184,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C4700
+	 * 		RVA    -> 0x030C4810
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.PauseARSession
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -204,7 +204,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C42F0
+	 * 		RVA    -> 0x030C4400
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.LineTraceTrackedObjects3D
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -239,7 +239,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C4520
+	 * 		RVA    -> 0x030C4630
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.LineTraceTrackedObjects
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -272,7 +272,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C4270
+	 * 		RVA    -> 0x030C4380
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.IsSessionTypeSupported
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -297,7 +297,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C41B0
+	 * 		RVA    -> 0x030C42C0
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.IsSessionTrackingFeatureSupported
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -324,7 +324,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009D37B0
+	 * 		RVA    -> 0x009D3770
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.IsARSupported
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -346,7 +346,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C4180
+	 * 		RVA    -> 0x030C4290
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetWorldMappingStatus
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -368,7 +368,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009432A0
+	 * 		RVA    -> 0x00943260
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetTrackingQualityReason
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -390,7 +390,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C40E0
+	 * 		RVA    -> 0x030C41F0
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetTrackingQuality
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -412,7 +412,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3DE0
+	 * 		RVA    -> 0x030C3EF0
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetSupportedVideoFormats
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -437,7 +437,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3DB0
+	 * 		RVA    -> 0x030C3EC0
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetSessionConfig
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -459,7 +459,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3D30
+	 * 		RVA    -> 0x030C3E40
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetPointCloud
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -481,7 +481,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3CD0
+	 * 		RVA    -> 0x030C3DE0
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetPersonSegmentationImage
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -503,7 +503,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3CA0
+	 * 		RVA    -> 0x030C3DB0
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetPersonSegmentationDepthImage
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -525,7 +525,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C36A0
+	 * 		RVA    -> 0x030C37B0
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetCurrentLightEstimate
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -547,7 +547,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3550
+	 * 		RVA    -> 0x030C3660
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetCameraImage
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -569,7 +569,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3520
+	 * 		RVA    -> 0x030C3630
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetCameraDepth
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -591,7 +591,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C2F30
+	 * 		RVA    -> 0x030C3040
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetARSessionStatus
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -613,7 +613,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3400
+	 * 		RVA    -> 0x030C3510
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAllTrackedPoses
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -635,7 +635,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3380
+	 * 		RVA    -> 0x030C3490
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAllTrackedPoints
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -657,7 +657,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3300
+	 * 		RVA    -> 0x030C3410
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAllTrackedPlanes
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -679,7 +679,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3280
+	 * 		RVA    -> 0x030C3390
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAllTrackedImages
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -701,7 +701,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3200
+	 * 		RVA    -> 0x030C3310
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAllTrackedEnvironmentCaptureProbes
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -723,7 +723,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C30C0
+	 * 		RVA    -> 0x030C31D0
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAllTracked2DPoses
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -745,7 +745,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3040
+	 * 		RVA    -> 0x030C3150
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAllPins
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -767,7 +767,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C2FC0
+	 * 		RVA    -> 0x030C30D0
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.GetAllGeometries
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -789,7 +789,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C2D90
+	 * 		RVA    -> 0x030C2EA0
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.DebugDrawTrackedGeometry
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -820,7 +820,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C2BF0
+	 * 		RVA    -> 0x030C2D00
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.DebugDrawPin
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -851,7 +851,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C2900
+	 * 		RVA    -> 0x030C2A10
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.AddRuntimeCandidateImage
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -882,7 +882,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C2820
+	 * 		RVA    -> 0x030C2930
 	 * 		Name   -> Function AugmentedReality.ARBlueprintLibrary.AddManualEnvironmentCaptureProbe
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -923,7 +923,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3FE0
+	 * 		RVA    -> 0x030C40F0
 	 * 		Name   -> Function AugmentedReality.ARTraceResultLibrary.GetTrackedGeometry
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -948,7 +948,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3EB0
+	 * 		RVA    -> 0x030C3FC0
 	 * 		Name   -> Function AugmentedReality.ARTraceResultLibrary.GetTraceChannel
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -973,7 +973,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3B50
+	 * 		RVA    -> 0x030C3C60
 	 * 		Name   -> Function AugmentedReality.ARTraceResultLibrary.GetLocalToWorldTransform
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -998,7 +998,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C39D0
+	 * 		RVA    -> 0x030C3AE0
 	 * 		Name   -> Function AugmentedReality.ARTraceResultLibrary.GetLocalToTrackingTransform
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1023,7 +1023,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3750
+	 * 		RVA    -> 0x030C3860
 	 * 		Name   -> Function AugmentedReality.ARTraceResultLibrary.GetDistanceFromCamera
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1076,7 +1076,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C2670
+	 * 		RVA    -> 0x030C2780
 	 * 		Name   -> Function AugmentedReality.ARSaveWorldAsyncTaskBlueprintProxy.ARSaveWorld
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1115,7 +1115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C2540
+	 * 		RVA    -> 0x030C2650
 	 * 		Name   -> Function AugmentedReality.ARGetCandidateObjectAsyncTaskBlueprintProxy.ARGetCandidateObject
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1172,7 +1172,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C34F0
+	 * 		RVA    -> 0x030C3600
 	 * 		Name   -> Function AugmentedReality.ARBasicLightEstimate.GetAmbientIntensityLumens
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1194,7 +1194,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C34C0
+	 * 		RVA    -> 0x030C35D0
 	 * 		Name   -> Function AugmentedReality.ARBasicLightEstimate.GetAmbientColorTemperatureKelvin
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1216,7 +1216,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3480
+	 * 		RVA    -> 0x030C3590
 	 * 		Name   -> Function AugmentedReality.ARBasicLightEstimate.GetAmbientColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1266,7 +1266,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3850
+	 * 		RVA    -> 0x030C3960
 	 * 		Name   -> Function AugmentedReality.ARPin.GetTrackingState
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1288,7 +1288,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3FB0
+	 * 		RVA    -> 0x030C40C0
 	 * 		Name   -> Function AugmentedReality.ARPin.GetTrackedGeometry
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1310,7 +1310,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x021853A0
+	 * 		RVA    -> 0x02185980
 	 * 		Name   -> Function AugmentedReality.ARPin.GetPinnedComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1332,7 +1332,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3AF0
+	 * 		RVA    -> 0x030C3C00
 	 * 		Name   -> Function AugmentedReality.ARPin.GetLocalToWorldTransform
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1354,7 +1354,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3970
+	 * 		RVA    -> 0x030C3A80
 	 * 		Name   -> Function AugmentedReality.ARPin.GetLocalToTrackingTransform
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1376,7 +1376,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C36D0
+	 * 		RVA    -> 0x030C37E0
 	 * 		Name   -> Function AugmentedReality.ARPin.GetDebugName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1398,7 +1398,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C2A90
+	 * 		RVA    -> 0x030C2BA0
 	 * 		Name   -> Function AugmentedReality.ARPin.DebugDraw
 	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults, Const)
 	 * Parameters:
@@ -1441,7 +1441,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C51E0
+	 * 		RVA    -> 0x030C52F0
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.ShouldResetTrackedObjects
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1463,7 +1463,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C51B0
+	 * 		RVA    -> 0x030C52C0
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.ShouldResetCameraTracking
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1485,7 +1485,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C5180
+	 * 		RVA    -> 0x030C5290
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.ShouldRenderCameraOverlay
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1507,7 +1507,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C5150
+	 * 		RVA    -> 0x030C5260
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.ShouldEnableCameraTracking
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1529,7 +1529,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C5120
+	 * 		RVA    -> 0x030C5230
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.ShouldEnableAutoFocus
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1551,7 +1551,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C5030
+	 * 		RVA    -> 0x030C5140
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetWorldMapData
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1574,7 +1574,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C4FB0
+	 * 		RVA    -> 0x030C50C0
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetSessionTrackingFeatureToEnable
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1597,7 +1597,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C4F20
+	 * 		RVA    -> 0x030C5030
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetResetTrackedObjects
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1620,7 +1620,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C4E90
+	 * 		RVA    -> 0x030C4FA0
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetResetCameraTracking
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1643,7 +1643,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C4E10
+	 * 		RVA    -> 0x030C4F20
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetFaceTrackingUpdate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1666,7 +1666,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C4D90
+	 * 		RVA    -> 0x030C4EA0
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetFaceTrackingDirection
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1689,7 +1689,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C4D00
+	 * 		RVA    -> 0x030C4E10
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetEnableAutoFocus
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1712,7 +1712,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C4C60
+	 * 		RVA    -> 0x030C4D70
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetDesiredVideoFormat
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1735,7 +1735,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C4BB0
+	 * 		RVA    -> 0x030C4CC0
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.SetCandidateObjectList
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1758,7 +1758,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C4140
+	 * 		RVA    -> 0x030C4250
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetWorldMapData
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1780,7 +1780,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C4110
+	 * 		RVA    -> 0x030C4220
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetWorldAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1802,7 +1802,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01685260
+	 * 		RVA    -> 0x0167E540
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetSessionType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1824,7 +1824,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3D00
+	 * 		RVA    -> 0x030C3E10
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetPlaneDetectionMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1846,7 +1846,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3C70
+	 * 		RVA    -> 0x030C3D80
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetMaxNumSimultaneousImagesTracked
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1868,7 +1868,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3940
+	 * 		RVA    -> 0x030C3A50
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetLightEstimationMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1890,7 +1890,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3910
+	 * 		RVA    -> 0x030C3A20
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetFrameSyncMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1912,7 +1912,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C38E0
+	 * 		RVA    -> 0x030C39F0
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetFaceTrackingUpdate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1934,7 +1934,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C38B0
+	 * 		RVA    -> 0x030C39C0
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetFaceTrackingDirection
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1956,7 +1956,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3880
+	 * 		RVA    -> 0x030C3990
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetEnvironmentCaptureProbeType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1978,7 +1978,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3850
+	 * 		RVA    -> 0x030C3960
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetEnabledSessionTrackingFeature
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2000,7 +2000,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3710
+	 * 		RVA    -> 0x030C3820
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetDesiredVideoFormat
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2022,7 +2022,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3610
+	 * 		RVA    -> 0x030C3720
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetCandidateObjectList
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2044,7 +2044,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3580
+	 * 		RVA    -> 0x030C3690
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.GetCandidateImageList
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2066,7 +2066,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C2790
+	 * 		RVA    -> 0x030C28A0
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.AddCandidateObject
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2089,7 +2089,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C2700
+	 * 		RVA    -> 0x030C2810
 	 * 		Name   -> Function AugmentedReality.ARSessionConfig.AddCandidateImage
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2126,7 +2126,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030CA450
+	 * 		RVA    -> 0x030CA560
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldGameMode.SetPreviewImageData
 	 * 		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2149,7 +2149,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030CA160
+	 * 		RVA    -> 0x030CA270
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldGameMode.SetARWorldSharingIsReady
 	 * 		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 	 */
@@ -2169,7 +2169,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030CA070
+	 * 		RVA    -> 0x030CA180
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldGameMode.SetARSharedWorldData
 	 * 		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2192,7 +2192,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9810
+	 * 		RVA    -> 0x030C9920
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldGameMode.GetARSharedWorldGameState
 	 * 		Flags  -> (Final, BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 	 */
@@ -2228,7 +2228,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldGameState.K2_OnARWorldMapIsReady
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -2261,7 +2261,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030CA020
+	 * 		RVA    -> 0x030CA130
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldPlayerController.ServerMarkReadyForReceiving
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 	 */
@@ -2281,7 +2281,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9700
+	 * 		RVA    -> 0x030C9810
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldPlayerController.ClientUpdatePreviewImageData
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient, NetValidate)
 	 * Parameters:
@@ -2306,7 +2306,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C95F0
+	 * 		RVA    -> 0x030C9700
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldPlayerController.ClientUpdateARWorldData
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient, NetValidate)
 	 * Parameters:
@@ -2331,7 +2331,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C94F0
+	 * 		RVA    -> 0x030C9600
 	 * 		Name   -> Function AugmentedReality.ARSharedWorldPlayerController.ClientInitSharedWorld
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient, NetValidate)
 	 * Parameters:
@@ -2370,7 +2370,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030CA2D0
+	 * 		RVA    -> 0x030CA3E0
 	 * 		Name   -> Function AugmentedReality.ARSkyLight.SetEnvironmentCaptureProbe
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2477,7 +2477,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9FF0
+	 * 		RVA    -> 0x030CA100
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.IsTracked
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2499,7 +2499,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9F00
+	 * 		RVA    -> 0x030CA010
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.GetUnderlyingMesh
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -2521,7 +2521,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3850
+	 * 		RVA    -> 0x030C3960
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.GetTrackingState
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2543,7 +2543,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9E10
+	 * 		RVA    -> 0x030C9F20
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.GetObjectClassification
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2565,7 +2565,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9DB0
+	 * 		RVA    -> 0x030C9EC0
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.GetLocalToWorldTransform
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2587,7 +2587,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C3970
+	 * 		RVA    -> 0x030C3A80
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.GetLocalToTrackingTransform
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2609,7 +2609,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9CE0
+	 * 		RVA    -> 0x030C9DF0
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.GetLastUpdateTimestamp
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2631,7 +2631,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9CB0
+	 * 		RVA    -> 0x030C9DC0
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.GetLastUpdateFrameNumber
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2653,7 +2653,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9B10
+	 * 		RVA    -> 0x030C9C20
 	 * 		Name   -> Function AugmentedReality.ARTrackedGeometry.GetDebugName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2689,7 +2689,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9EB0
+	 * 		RVA    -> 0x030C9FC0
 	 * 		Name   -> Function AugmentedReality.ARPlaneGeometry.GetSubsumedBy
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2711,7 +2711,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9E50
+	 * 		RVA    -> 0x030C9F60
 	 * 		Name   -> Function AugmentedReality.ARPlaneGeometry.GetOrientation
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2733,7 +2733,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9C20
+	 * 		RVA    -> 0x030C9D30
 	 * 		Name   -> Function AugmentedReality.ARPlaneGeometry.GetExtent
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2755,7 +2755,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9AE0
+	 * 		RVA    -> 0x030C9BF0
 	 * 		Name   -> Function AugmentedReality.ARPlaneGeometry.GetCenter
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2777,7 +2777,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C99A0
+	 * 		RVA    -> 0x030C9AB0
 	 * 		Name   -> Function AugmentedReality.ARPlaneGeometry.GetBoundaryPolygonInLocalSpace
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2827,7 +2827,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9BA0
+	 * 		RVA    -> 0x030C9CB0
 	 * 		Name   -> Function AugmentedReality.ARTrackedImage.GetEstimateSize
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 */
@@ -2849,7 +2849,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9B50
+	 * 		RVA    -> 0x030C9C60
 	 * 		Name   -> Function AugmentedReality.ARTrackedImage.GetDetectedImage
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2899,7 +2899,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9F30
+	 * 		RVA    -> 0x030CA040
 	 * 		Name   -> Function AugmentedReality.ARFaceGeometry.GetWorldSpaceEyeTransform
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2924,7 +2924,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9D10
+	 * 		RVA    -> 0x030C9E20
 	 * 		Name   -> Function AugmentedReality.ARFaceGeometry.GetLocalSpaceEyeTransform
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2949,7 +2949,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9840
+	 * 		RVA    -> 0x030C9950
 	 * 		Name   -> Function AugmentedReality.ARFaceGeometry.GetBlendShapeValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2974,7 +2974,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C98D0
+	 * 		RVA    -> 0x030C99E0
 	 * 		Name   -> Function AugmentedReality.ARFaceGeometry.GetBlendShapes
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3010,7 +3010,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9BE0
+	 * 		RVA    -> 0x030C9CF0
 	 * 		Name   -> Function AugmentedReality.AREnvironmentCaptureProbe.GetExtent
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3032,7 +3032,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9B70
+	 * 		RVA    -> 0x030C9C80
 	 * 		Name   -> Function AugmentedReality.AREnvironmentCaptureProbe.GetEnvironmentCaptureTexture
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -3068,7 +3068,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9B50
+	 * 		RVA    -> 0x030C9C60
 	 * 		Name   -> Function AugmentedReality.ARTrackedObject.GetDetectedObject
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3104,7 +3104,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9ED0
+	 * 		RVA    -> 0x030C9FE0
 	 * 		Name   -> Function AugmentedReality.ARTrackedPose.GetTrackedPoseData
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3168,7 +3168,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9E90
+	 * 		RVA    -> 0x030C9FA0
 	 * 		Name   -> Function AugmentedReality.ARCandidateImage.GetPhysicalWidth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3190,7 +3190,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9E70
+	 * 		RVA    -> 0x030C9F80
 	 * 		Name   -> Function AugmentedReality.ARCandidateImage.GetPhysicalHeight
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3212,7 +3212,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9E30
+	 * 		RVA    -> 0x030C9F40
 	 * 		Name   -> Function AugmentedReality.ARCandidateImage.GetOrientation
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3234,7 +3234,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9C50
+	 * 		RVA    -> 0x030C9D60
 	 * 		Name   -> Function AugmentedReality.ARCandidateImage.GetFriendlyName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3256,7 +3256,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9AC0
+	 * 		RVA    -> 0x030C9BD0
 	 * 		Name   -> Function AugmentedReality.ARCandidateImage.GetCandidateTexture
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3292,7 +3292,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030CA360
+	 * 		RVA    -> 0x030CA470
 	 * 		Name   -> Function AugmentedReality.ARCandidateObject.SetFriendlyName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3315,7 +3315,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030CA220
+	 * 		RVA    -> 0x030CA330
 	 * 		Name   -> Function AugmentedReality.ARCandidateObject.SetCandidateObjectData
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3338,7 +3338,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030CA180
+	 * 		RVA    -> 0x030CA290
 	 * 		Name   -> Function AugmentedReality.ARCandidateObject.SetBoundingBox
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3361,7 +3361,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9C80
+	 * 		RVA    -> 0x030C9D90
 	 * 		Name   -> Function AugmentedReality.ARCandidateObject.GetFriendlyName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3383,7 +3383,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9A90
+	 * 		RVA    -> 0x030C9BA0
 	 * 		Name   -> Function AugmentedReality.ARCandidateObject.GetCandidateObjectData
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3405,7 +3405,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030C9A60
+	 * 		RVA    -> 0x030C9B70
 	 * 		Name   -> Function AugmentedReality.ARCandidateObject.GetBoundingBox
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */

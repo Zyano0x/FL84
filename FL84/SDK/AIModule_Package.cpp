@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -96,7 +96,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FED90
+	 * 		RVA    -> 0x040FEE70
 	 * 		Name   -> Function AIModule.AIController.UseBlackboard
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -125,7 +125,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FEB40
+	 * 		RVA    -> 0x040FEC20
 	 * 		Name   -> Function AIModule.AIController.UnclaimTaskResource
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -148,7 +148,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FE630
+	 * 		RVA    -> 0x040FE710
 	 * 		Name   -> Function AIModule.AIController.SetPathFollowingComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -171,7 +171,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FE5A0
+	 * 		RVA    -> 0x040FE680
 	 * 		Name   -> Function AIModule.AIController.SetMoveBlockDetection
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -194,7 +194,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FE3B0
+	 * 		RVA    -> 0x040FE490
 	 * 		Name   -> Function AIModule.AIController.RunBehaviorTree
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -219,7 +219,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.AIController.OnUsingBlackBoard
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -243,7 +243,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FDD50
+	 * 		RVA    -> 0x040FDE30
 	 * 		Name   -> Function AIModule.AIController.OnGameplayTaskResourcesClaimed
 	 * 		Flags  -> (Native, Public)
 	 * Parameters:
@@ -268,7 +268,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FDAC0
+	 * 		RVA    -> 0x040FDBA0
 	 * 		Name   -> Function AIModule.AIController.MoveToLocation
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -307,7 +307,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FD880
+	 * 		RVA    -> 0x040FD960
 	 * 		Name   -> Function AIModule.AIController.MoveToActor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -344,7 +344,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FD6E0
+	 * 		RVA    -> 0x040FD7C0
 	 * 		Name   -> Function AIModule.AIController.K2_SetFocus
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -367,7 +367,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FD650
+	 * 		RVA    -> 0x040FD730
 	 * 		Name   -> Function AIModule.AIController.K2_SetFocalPoint
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -390,7 +390,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FD630
+	 * 		RVA    -> 0x040FD710
 	 * 		Name   -> Function AIModule.AIController.K2_ClearFocus
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -410,7 +410,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FD450
+	 * 		RVA    -> 0x040FD530
 	 * 		Name   -> Function AIModule.AIController.HasPartialPath
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -432,7 +432,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FD150
+	 * 		RVA    -> 0x040FD230
 	 * 		Name   -> Function AIModule.AIController.GetPathFollowingComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -454,7 +454,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FD120
+	 * 		RVA    -> 0x040FD200
 	 * 		Name   -> Function AIModule.AIController.GetMoveStatus
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -476,7 +476,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FCFF0
+	 * 		RVA    -> 0x040FD0D0
 	 * 		Name   -> Function AIModule.AIController.GetImmediateMoveDestination
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -498,7 +498,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FCFC0
+	 * 		RVA    -> 0x040FD0A0
 	 * 		Name   -> Function AIModule.AIController.GetFocusActor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -520,7 +520,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FCF10
+	 * 		RVA    -> 0x040FCFF0
 	 * 		Name   -> Function AIModule.AIController.GetFocalPointOnActor
 	 * 		Flags  -> (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -545,7 +545,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FCED0
+	 * 		RVA    -> 0x040FCFB0
 	 * 		Name   -> Function AIModule.AIController.GetFocalPoint
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -567,7 +567,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FCBA0
+	 * 		RVA    -> 0x040FCC80
 	 * 		Name   -> Function AIModule.AIController.GetAIPerceptionComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -589,7 +589,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FC880
+	 * 		RVA    -> 0x040FC960
 	 * 		Name   -> Function AIModule.AIController.ClaimTaskResource
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -696,7 +696,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveTickAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -722,7 +722,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveTick
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -746,7 +746,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveSearchStartAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -770,7 +770,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveSearchStart
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -792,7 +792,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveDeactivationAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -816,7 +816,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveDeactivation
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -838,7 +838,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveActivationAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -862,7 +862,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.ReceiveActivation
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -884,7 +884,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410B660
+	 * 		RVA    -> 0x0410B740
 	 * 		Name   -> Function AIModule.BTService_BlueprintBase.IsServiceActive
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1046,7 +1046,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041169A0
+	 * 		RVA    -> 0x04116A80
 	 * 		Name   -> Function AIModule.PathFollowingComponent.OnNavDataRegistered
 	 * 		Flags  -> (Final, Native, Protected)
 	 * Parameters:
@@ -1069,7 +1069,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04116800
+	 * 		RVA    -> 0x041168E0
 	 * 		Name   -> Function AIModule.PathFollowingComponent.OnActorBump
 	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -1098,7 +1098,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041163D0
+	 * 		RVA    -> 0x041164B0
 	 * 		Name   -> Function AIModule.PathFollowingComponent.GetPathDestination
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1120,7 +1120,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041163A0
+	 * 		RVA    -> 0x04116480
 	 * 		Name   -> Function AIModule.PathFollowingComponent.GetPathActionType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1156,7 +1156,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410F980
+	 * 		RVA    -> 0x0410FA60
 	 * 		Name   -> Function AIModule.CrowdFollowingComponent.SuspendCrowdSteering
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1193,7 +1193,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04116E40
+	 * 		RVA    -> 0x04116F20
 	 * 		Name   -> Function AIModule.NavLinkProxy.SetSmartLinkEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1216,7 +1216,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04116B30
+	 * 		RVA    -> 0x04116C10
 	 * 		Name   -> Function AIModule.NavLinkProxy.ResumePathFollowing
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1239,7 +1239,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.NavLinkProxy.ReceiveSmartLinkReached
 	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintEvent)
 	 * Parameters:
@@ -1263,7 +1263,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04116480
+	 * 		RVA    -> 0x04116560
 	 * 		Name   -> Function AIModule.NavLinkProxy.IsSmartLinkEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1285,7 +1285,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04116450
+	 * 		RVA    -> 0x04116530
 	 * 		Name   -> Function AIModule.NavLinkProxy.HasMovingAgents
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1321,7 +1321,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FE6C0
+	 * 		RVA    -> 0x040FE7A0
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.SetSenseEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1346,7 +1346,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FE390
+	 * 		RVA    -> 0x040FE470
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.RequestStimuliListenerUpdate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1366,7 +1366,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FDEF0
+	 * 		RVA    -> 0x040FDFD0
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.OnOwnerEndPlay
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -1391,7 +1391,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FD260
+	 * 		RVA    -> 0x040FD340
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.GetPerceivedHostileActors
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1416,7 +1416,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FD170
+	 * 		RVA    -> 0x040FD250
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.GetPerceivedActors
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1443,7 +1443,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FD030
+	 * 		RVA    -> 0x040FD110
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.GetKnownPerceivedActors
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1470,7 +1470,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FCDE0
+	 * 		RVA    -> 0x040FCEC0
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.GetCurrentlyPerceivedActors
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1497,7 +1497,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FCBC0
+	 * 		RVA    -> 0x040FCCA0
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.GetActorsPerception
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1526,7 +1526,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FCAF0
+	 * 		RVA    -> 0x040FCBD0
 	 * 		Name   -> Function AIModule.AIPerceptionComponent.ForgetAll
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1560,7 +1560,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FDE20
+	 * 		RVA    -> 0x040FDF00
 	 * 		Name   -> Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -1599,7 +1599,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FEBD0
+	 * 		RVA    -> 0x040FECB0
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.UnlockAIResourcesWithAnimation
 	 * 		Flags  -> (Final, BlueprintAuthorityOnly, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1626,7 +1626,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FE910
+	 * 		RVA    -> 0x040FE9F0
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.SpawnAIFromClass
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1663,7 +1663,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FE850
+	 * 		RVA    -> 0x040FE930
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.SimpleMoveToLocation
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1688,7 +1688,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FE790
+	 * 		RVA    -> 0x040FE870
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.SimpleMoveToActor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1713,7 +1713,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FE450
+	 * 		RVA    -> 0x040FE530
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.SendAIMessage
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1742,7 +1742,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FD770
+	 * 		RVA    -> 0x040FD850
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.LockAIResourcesWithAnimation
 	 * 		Flags  -> (Final, BlueprintAuthorityOnly, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1769,7 +1769,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FD5A0
+	 * 		RVA    -> 0x040FD680
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.IsValidAIRotation
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1794,7 +1794,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FD510
+	 * 		RVA    -> 0x040FD5F0
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.IsValidAILocation
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1819,7 +1819,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FD480
+	 * 		RVA    -> 0x040FD560
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.IsValidAIDirection
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1844,7 +1844,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FCD50
+	 * 		RVA    -> 0x040FCE30
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.GetCurrentPath
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1869,7 +1869,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FCCC0
+	 * 		RVA    -> 0x040FCDA0
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.GetBlackboard
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1894,7 +1894,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FCB10
+	 * 		RVA    -> 0x040FCBF0
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.GetAIController
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1919,7 +1919,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FC910
+	 * 		RVA    -> 0x040FC9F0
 	 * 		Name   -> Function AIModule.AIBlueprintHelperLibrary.CreateMoveToProxyObject
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2038,7 +2038,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FED00
+	 * 		RVA    -> 0x040FEDE0
 	 * 		Name   -> Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromSense
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2061,7 +2061,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FECE0
+	 * 		RVA    -> 0x040FEDC0
 	 * 		Name   -> Function AIModule.AIPerceptionStimuliSourceComponent.UnregisterFromPerceptionSystem
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -2081,7 +2081,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FE220
+	 * 		RVA    -> 0x040FE300
 	 * 		Name   -> Function AIModule.AIPerceptionStimuliSourceComponent.RegisterWithPerceptionSystem
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -2101,7 +2101,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FE090
+	 * 		RVA    -> 0x040FE170
 	 * 		Name   -> Function AIModule.AIPerceptionStimuliSourceComponent.RegisterForSense
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2152,7 +2152,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FE2D0
+	 * 		RVA    -> 0x040FE3B0
 	 * 		Name   -> Function AIModule.AIPerceptionSystem.ReportPerceptionEvent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2177,7 +2177,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FE240
+	 * 		RVA    -> 0x040FE320
 	 * 		Name   -> Function AIModule.AIPerceptionSystem.ReportEvent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2200,7 +2200,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FE120
+	 * 		RVA    -> 0x040FE200
 	 * 		Name   -> Function AIModule.AIPerceptionSystem.RegisterPerceptionStimuliSource
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2229,7 +2229,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FDFC0
+	 * 		RVA    -> 0x040FE0A0
 	 * 		Name   -> Function AIModule.AIPerceptionSystem.OnPerceptionStimuliSourceEndPlay
 	 * 		Flags  -> (Final, Native, Protected)
 	 * Parameters:
@@ -2254,7 +2254,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x040FD310
+	 * 		RVA    -> 0x040FD3F0
 	 * 		Name   -> Function AIModule.AIPerceptionSystem.GetSenseClassForStimulus
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2337,7 +2337,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.AISense_Blueprint.OnUpdate
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -2361,7 +2361,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.AISense_Blueprint.OnListenerUpdated
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -2385,7 +2385,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.AISense_Blueprint.OnListenerUnregistered
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -2409,7 +2409,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.AISense_Blueprint.OnListenerRegistered
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -2433,7 +2433,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.AISense_Blueprint.K2_OnNewPawn
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -2455,7 +2455,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04102C70
+	 * 		RVA    -> 0x04102D50
 	 * 		Name   -> Function AIModule.AISense_Blueprint.GetAllListenerComponents
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2480,7 +2480,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04102BC0
+	 * 		RVA    -> 0x04102CA0
 	 * 		Name   -> Function AIModule.AISense_Blueprint.GetAllListenerActors
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2519,7 +2519,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04102DC0
+	 * 		RVA    -> 0x04102EA0
 	 * 		Name   -> Function AIModule.AISense_Damage.ReportDamageEvent
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2566,7 +2566,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04102FB0
+	 * 		RVA    -> 0x04103090
 	 * 		Name   -> Function AIModule.AISense_Hearing.ReportNoiseEvent
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2613,7 +2613,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041032A0
+	 * 		RVA    -> 0x04103380
 	 * 		Name   -> Function AIModule.AISense_Prediction.RequestPawnPredictionEvent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2640,7 +2640,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04103190
+	 * 		RVA    -> 0x04103270
 	 * 		Name   -> Function AIModule.AISense_Prediction.RequestControllerPredictionEvent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2891,7 +2891,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x030B6470
+	 * 		RVA    -> 0x030B6580
 	 * 		Name   -> Function AIModule.AISystem.AILoggingVerbose
 	 * 		Flags  -> (Exec, Native, Public)
 	 */
@@ -2911,7 +2911,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x021D3CE0
+	 * 		RVA    -> 0x021D42C0
 	 * 		Name   -> Function AIModule.AISystem.AIIgnorePlayers
 	 * 		Flags  -> (Exec, Native, Public)
 	 */
@@ -2973,7 +2973,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041027A0
+	 * 		RVA    -> 0x04102880
 	 * 		Name   -> Function AIModule.AITask_MoveTo.AIMoveTo
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3030,7 +3030,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041033B0
+	 * 		RVA    -> 0x04103490
 	 * 		Name   -> Function AIModule.AITask_RunEQS.RunEQS
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3085,7 +3085,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04107E00
+	 * 		RVA    -> 0x04107EE0
 	 * 		Name   -> Function AIModule.BrainComponent.StopLogic
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3108,7 +3108,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C2DC90
+	 * 		RVA    -> 0x00C2DC50
 	 * 		Name   -> Function AIModule.BrainComponent.StartLogic
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -3128,7 +3128,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C2DC70
+	 * 		RVA    -> 0x00C2DC30
 	 * 		Name   -> Function AIModule.BrainComponent.RestartLogic
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -3148,7 +3148,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04107430
+	 * 		RVA    -> 0x04107510
 	 * 		Name   -> Function AIModule.BrainComponent.IsRunning
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3170,7 +3170,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04107400
+	 * 		RVA    -> 0x041074E0
 	 * 		Name   -> Function AIModule.BrainComponent.IsPaused
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3206,7 +3206,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04103480
+	 * 		RVA    -> 0x04103560
 	 * 		Name   -> Function AIModule.BehaviorTreeComponent.SetDynamicSubtree
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3231,7 +3231,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04102D20
+	 * 		RVA    -> 0x04102E00
 	 * 		Name   -> Function AIModule.BehaviorTreeComponent.GetTagCooldownEndTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3256,7 +3256,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04102AA0
+	 * 		RVA    -> 0x04102B80
 	 * 		Name   -> Function AIModule.BehaviorTreeComponent.AddCooldownTagDuration
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3325,7 +3325,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04106AF0
+	 * 		RVA    -> 0x04106BD0
 	 * 		Name   -> Function AIModule.BlackboardAssetProvider.GetBlackboardAsset
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3361,7 +3361,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04107D10
+	 * 		RVA    -> 0x04107DF0
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsVector
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3386,7 +3386,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04107BD0
+	 * 		RVA    -> 0x04107CB0
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsString
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3411,7 +3411,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04107AE0
+	 * 		RVA    -> 0x04107BC0
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsRotator
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3436,7 +3436,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04107A10
+	 * 		RVA    -> 0x04107AF0
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsObject
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3461,7 +3461,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04107940
+	 * 		RVA    -> 0x04107A20
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsName
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3486,7 +3486,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04107870
+	 * 		RVA    -> 0x04107950
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsInt
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3511,7 +3511,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04107790
+	 * 		RVA    -> 0x04107870
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsFloat
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3536,7 +3536,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041076B0
+	 * 		RVA    -> 0x04107790
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsEnum
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3561,7 +3561,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041075E0
+	 * 		RVA    -> 0x041076C0
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsClass
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3586,7 +3586,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04107500
+	 * 		RVA    -> 0x041075E0
 	 * 		Name   -> Function AIModule.BlackboardComponent.SetValueAsBool
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3611,7 +3611,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04107460
+	 * 		RVA    -> 0x04107540
 	 * 		Name   -> Function AIModule.BlackboardComponent.IsVectorValueSet
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3636,7 +3636,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041072F0
+	 * 		RVA    -> 0x041073D0
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsVector
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3661,7 +3661,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04107210
+	 * 		RVA    -> 0x041072F0
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsString
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3686,7 +3686,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04107160
+	 * 		RVA    -> 0x04107240
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsRotator
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3711,7 +3711,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041070C0
+	 * 		RVA    -> 0x041071A0
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsObject
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3736,7 +3736,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04107020
+	 * 		RVA    -> 0x04107100
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsName
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3761,7 +3761,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04106F80
+	 * 		RVA    -> 0x04107060
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsInt
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3786,7 +3786,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04106EE0
+	 * 		RVA    -> 0x04106FC0
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsFloat
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3811,7 +3811,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04106E40
+	 * 		RVA    -> 0x04106F20
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsEnum
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3836,7 +3836,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04106DA0
+	 * 		RVA    -> 0x04106E80
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsClass
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3861,7 +3861,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04106D00
+	 * 		RVA    -> 0x04106DE0
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetValueAsBool
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3886,7 +3886,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04106C10
+	 * 		RVA    -> 0x04106CF0
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetRotationFromEntry
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3915,7 +3915,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04106B20
+	 * 		RVA    -> 0x04106C00
 	 * 		Name   -> Function AIModule.BlackboardComponent.GetLocationFromEntry
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3944,7 +3944,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04106A60
+	 * 		RVA    -> 0x04106B40
 	 * 		Name   -> Function AIModule.BlackboardComponent.ClearValue
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4205,7 +4205,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveTickAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4231,7 +4231,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveTick
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4255,7 +4255,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivatedAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4279,7 +4279,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverDeactivated
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4301,7 +4301,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivatedAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4325,7 +4325,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveObserverActivated
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4347,7 +4347,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStartAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4371,7 +4371,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionStart
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4393,7 +4393,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinishAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4419,7 +4419,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.ReceiveExecutionFinish
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4443,7 +4443,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheckAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4469,7 +4469,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.PerformConditionCheck
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4493,7 +4493,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041073D0
+	 * 		RVA    -> 0x041074B0
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.IsDecoratorObserverActive
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4515,7 +4515,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041073A0
+	 * 		RVA    -> 0x04107480
 	 * 		Name   -> Function AIModule.BTDecorator_BlueprintBase.IsDecoratorExecutionActive
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4747,7 +4747,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03E48250
+	 * 		RVA    -> 0x03E48330
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.StopUsingExternalEvent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4770,7 +4770,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02073570
+	 * 		RVA    -> 0x02073B20
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.StartUsingExternalEvent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4795,7 +4795,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410C2A0
+	 * 		RVA    -> 0x0410C380
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsVector
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -4822,7 +4822,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410C110
+	 * 		RVA    -> 0x0410C1F0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsString
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4849,7 +4849,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410BFC0
+	 * 		RVA    -> 0x0410C0A0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsRotator
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -4876,7 +4876,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410BE80
+	 * 		RVA    -> 0x0410BF60
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsObject
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4903,7 +4903,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410BD40
+	 * 		RVA    -> 0x0410BE20
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsName
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4930,7 +4930,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410BC00
+	 * 		RVA    -> 0x0410BCE0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsInt
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4957,7 +4957,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410BAB0
+	 * 		RVA    -> 0x0410BB90
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsFloat
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4984,7 +4984,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410B970
+	 * 		RVA    -> 0x0410BA50
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsEnum
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5011,7 +5011,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410B830
+	 * 		RVA    -> 0x0410B910
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsClass
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5038,7 +5038,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410B6F0
+	 * 		RVA    -> 0x0410B7D0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.SetBlackboardValueAsBool
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5065,7 +5065,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410B5D0
+	 * 		RVA    -> 0x0410B6B0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetOwnersBlackboard
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -5090,7 +5090,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410B540
+	 * 		RVA    -> 0x0410B620
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetOwnerComponent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -5115,7 +5115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410B430
+	 * 		RVA    -> 0x0410B510
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsVector
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -5142,7 +5142,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410B2F0
+	 * 		RVA    -> 0x0410B3D0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsString
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -5169,7 +5169,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410B1E0
+	 * 		RVA    -> 0x0410B2C0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsRotator
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -5196,7 +5196,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410B0E0
+	 * 		RVA    -> 0x0410B1C0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsObject
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -5223,7 +5223,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410AFD0
+	 * 		RVA    -> 0x0410B0B0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsName
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -5250,7 +5250,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410AED0
+	 * 		RVA    -> 0x0410AFB0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsInt
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -5277,7 +5277,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410ADD0
+	 * 		RVA    -> 0x0410AEB0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsFloat
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -5304,7 +5304,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410ACD0
+	 * 		RVA    -> 0x0410ADB0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsEnum
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -5331,7 +5331,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410ABD0
+	 * 		RVA    -> 0x0410ACB0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsClass
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -5358,7 +5358,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410AAD0
+	 * 		RVA    -> 0x0410ABB0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsBool
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -5385,7 +5385,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410A9D0
+	 * 		RVA    -> 0x0410AAB0
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.GetBlackboardValueAsActor
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -5412,7 +5412,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410A830
+	 * 		RVA    -> 0x0410A910
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.ClearBlackboardValueAsVector
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5437,7 +5437,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410A830
+	 * 		RVA    -> 0x0410A910
 	 * 		Name   -> Function AIModule.BTFunctionLibrary.ClearBlackboardValue
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5504,7 +5504,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410C480
+	 * 		RVA    -> 0x0410C560
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.SetFinishOnMessageWithId
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -5529,7 +5529,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410C3F0
+	 * 		RVA    -> 0x0410C4D0
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.SetFinishOnMessage
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -5552,7 +5552,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.ReceiveTickAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -5578,7 +5578,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.ReceiveTick
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -5602,7 +5602,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.ReceiveExecuteAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -5626,7 +5626,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.ReceiveExecute
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -5648,7 +5648,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.ReceiveAbortAI
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -5672,7 +5672,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.ReceiveAbort
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -5694,7 +5694,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410B6C0
+	 * 		RVA    -> 0x0410B7A0
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.IsTaskExecuting
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -5716,7 +5716,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410B690
+	 * 		RVA    -> 0x0410B770
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.IsTaskAborting
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -5738,7 +5738,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410A940
+	 * 		RVA    -> 0x0410AA20
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.FinishExecute
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -5761,7 +5761,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410A920
+	 * 		RVA    -> 0x0410AA00
 	 * 		Name   -> Function AIModule.BTTask_BlueprintBase.FinishAbort
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 */
@@ -6047,7 +6047,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleLocation
 	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintEvent, Const)
 	 * Parameters:
@@ -6075,7 +6075,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleActor
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent, Const)
 	 * Parameters:
@@ -6103,7 +6103,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.EnvQueryContext_BlueprintBase.ProvideLocationsSet
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent, Const)
 	 * Parameters:
@@ -6131,7 +6131,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.EnvQueryContext_BlueprintBase.ProvideActorsSet
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent, Const)
 	 * Parameters:
@@ -6243,7 +6243,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410F950
+	 * 		RVA    -> 0x0410FA30
 	 * 		Name   -> Function AIModule.EnvQueryGenerator_BlueprintBase.GetQuerier
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -6265,7 +6265,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.EnvQueryGenerator_BlueprintBase.DoItemGeneration
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent, Const)
 	 * Parameters:
@@ -6287,7 +6287,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410F8C0
+	 * 		RVA    -> 0x0410F9A0
 	 * 		Name   -> Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedVector
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, Const)
 	 * Parameters:
@@ -6310,7 +6310,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0410F830
+	 * 		RVA    -> 0x0410F910
 	 * 		Name   -> Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedActor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
 	 * Parameters:
@@ -6459,7 +6459,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04113500
+	 * 		RVA    -> 0x041135E0
 	 * 		Name   -> Function AIModule.EnvQueryInstanceBlueprintWrapper.SetNamedParam
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6484,7 +6484,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041132F0
+	 * 		RVA    -> 0x041133D0
 	 * 		Name   -> Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsLocations
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -6506,7 +6506,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04113270
+	 * 		RVA    -> 0x04113350
 	 * 		Name   -> Function AIModule.EnvQueryInstanceBlueprintWrapper.GetResultsAsActors
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -6528,7 +6528,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041131B0
+	 * 		RVA    -> 0x04113290
 	 * 		Name   -> Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsLocations
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -6555,7 +6555,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041130F0
+	 * 		RVA    -> 0x041131D0
 	 * 		Name   -> Function AIModule.EnvQueryInstanceBlueprintWrapper.GetQueryResultsAsActors
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -6582,7 +6582,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04113050
+	 * 		RVA    -> 0x04113130
 	 * 		Name   -> Function AIModule.EnvQueryInstanceBlueprintWrapper.GetItemScore
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -6607,7 +6607,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction AIModule.EnvQueryInstanceBlueprintWrapper.EQSQueryDoneSignature__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -6729,7 +6729,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04113370
+	 * 		RVA    -> 0x04113450
 	 * 		Name   -> Function AIModule.EnvQueryManager.RunEQSQuery
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -7014,7 +7014,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04116BC0
+	 * 		RVA    -> 0x04116CA0
 	 * 		Name   -> Function AIModule.NavLocalGridManager.SetLocalNavigationGridDensity
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -7041,7 +7041,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04116A30
+	 * 		RVA    -> 0x04116B10
 	 * 		Name   -> Function AIModule.NavLocalGridManager.RemoveLocalNavigationGrid
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -7068,7 +7068,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04116190
+	 * 		RVA    -> 0x04116270
 	 * 		Name   -> Function AIModule.NavLocalGridManager.FindLocalNavigationGridPath
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -7101,7 +7101,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04115EE0
+	 * 		RVA    -> 0x04115FC0
 	 * 		Name   -> Function AIModule.NavLocalGridManager.AddLocalNavigationGridForPoints
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -7134,7 +7134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04115D20
+	 * 		RVA    -> 0x04115E00
 	 * 		Name   -> Function AIModule.NavLocalGridManager.AddLocalNavigationGridForPoint
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -7167,7 +7167,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04115B00
+	 * 		RVA    -> 0x04115BE0
 	 * 		Name   -> Function AIModule.NavLocalGridManager.AddLocalNavigationGridForCapsule
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -7204,7 +7204,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041158C0
+	 * 		RVA    -> 0x041159A0
 	 * 		Name   -> Function AIModule.NavLocalGridManager.AddLocalNavigationGridForBox
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -7269,7 +7269,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x020193F0
+	 * 		RVA    -> 0x020199A0
 	 * 		Name   -> Function AIModule.PawnAction.GetActionPriority
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -7291,7 +7291,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04116320
+	 * 		RVA    -> 0x04116400
 	 * 		Name   -> Function AIModule.PawnAction.Finish
 	 * 		Flags  -> (Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -7314,7 +7314,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041160C0
+	 * 		RVA    -> 0x041161A0
 	 * 		Name   -> Function AIModule.PawnAction.CreateActionInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -7355,7 +7355,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.PawnAction_BlueprintBase.ActionTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -7379,7 +7379,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.PawnAction_BlueprintBase.ActionStart
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -7401,7 +7401,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.PawnAction_BlueprintBase.ActionResume
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -7423,7 +7423,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.PawnAction_BlueprintBase.ActionPause
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -7445,7 +7445,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> Function AIModule.PawnAction_BlueprintBase.ActionFinished
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -7539,7 +7539,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041166F0
+	 * 		RVA    -> 0x041167D0
 	 * 		Name   -> Function AIModule.PawnActionsComponent.K2_PushAction
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7568,7 +7568,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041165F0
+	 * 		RVA    -> 0x041166D0
 	 * 		Name   -> Function AIModule.PawnActionsComponent.K2_PerformAction
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -7597,7 +7597,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04116550
+	 * 		RVA    -> 0x04116630
 	 * 		Name   -> Function AIModule.PawnActionsComponent.K2_ForceAbortAction
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7622,7 +7622,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x041164B0
+	 * 		RVA    -> 0x04116590
 	 * 		Name   -> Function AIModule.PawnActionsComponent.K2_AbortAction
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7661,7 +7661,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04116DB0
+	 * 		RVA    -> 0x04116E90
 	 * 		Name   -> Function AIModule.PawnSensingComponent.SetSensingUpdatesEnabled
 	 * 		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7684,7 +7684,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04116D20
+	 * 		RVA    -> 0x04116E00
 	 * 		Name   -> Function AIModule.PawnSensingComponent.SetSensingInterval
 	 * 		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7707,7 +7707,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04116C90
+	 * 		RVA    -> 0x04116D70
 	 * 		Name   -> Function AIModule.PawnSensingComponent.SetPeripheralVisionAngle
 	 * 		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7730,7 +7730,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction AIModule.PawnSensingComponent.SeePawnDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -7752,7 +7752,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0260DE00
+	 * 		RVA    -> 0x0260DF10
 	 * 		Name   -> DelegateFunction AIModule.PawnSensingComponent.HearNoiseDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -7778,7 +7778,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04116430
+	 * 		RVA    -> 0x04116510
 	 * 		Name   -> Function AIModule.PawnSensingComponent.GetPeripheralVisionCosine
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7800,7 +7800,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04116410
+	 * 		RVA    -> 0x041164F0
 	 * 		Name   -> Function AIModule.PawnSensingComponent.GetPeripheralVisionAngle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

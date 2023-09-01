@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -13,14 +13,14 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction ABP_PBags_FSJ_Set01_C.StaticClass
+	 * 		Name   -> PredefinedFunction UAnim_LobbyCharacter_LR_C.StaticClass
 	 * 		Flags  -> (Predefined, Static)
 	 */
-	UClass* ABP_PBags_FSJ_Set01_C::StaticClass()
+	UClass* UAnim_LobbyCharacter_LR_C::StaticClass()
 	{
 		static UClass* ptr = nullptr;
 		if (!ptr)
-			ptr = UObject::FindClass("BlueprintGeneratedClass BP_PBags_FSJ_Set01.BP_PBags_FSJ_Set01_C");
+			ptr = UObject::FindClass("DynamicClass Anim_LobbyCharacter_LR.Anim_LobbyCharacter_LR_C");
 		return ptr;
 	}
 

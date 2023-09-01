@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677250
+	 * 		RVA    -> 0x01670530
 	 * 		Name   -> Function AkAudio.AkPortalComponent.PortalPlacementValid
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677230
+	 * 		RVA    -> 0x01670510
 	 * 		Name   -> Function AkAudio.AkPortalComponent.OpenPortal
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -54,7 +54,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016770F0
+	 * 		RVA    -> 0x016703D0
 	 * 		Name   -> Function AkAudio.AkPortalComponent.GetPrimitiveParent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -76,7 +76,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677000
+	 * 		RVA    -> 0x016702E0
 	 * 		Name   -> Function AkAudio.AkPortalComponent.GetCurrentState
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -98,7 +98,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01676EC0
+	 * 		RVA    -> 0x016701A0
 	 * 		Name   -> Function AkAudio.AkPortalComponent.ClosePortal
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -132,7 +132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677210
+	 * 		RVA    -> 0x016704F0
 	 * 		Name   -> Function AkAudio.AkAcousticPortal.OpenPortal
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -152,7 +152,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01676FD0
+	 * 		RVA    -> 0x016702B0
 	 * 		Name   -> Function AkAudio.AkAcousticPortal.GetCurrentState
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -174,7 +174,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01676EA0
+	 * 		RVA    -> 0x01670180
 	 * 		Name   -> Function AkAudio.AkAcousticPortal.ClosePortal
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -250,7 +250,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016783E0
+	 * 		RVA    -> 0x016716C0
 	 * 		Name   -> Function AkAudio.AkAmbientSound.StopAmbientSound
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 */
@@ -270,7 +270,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016783C0
+	 * 		RVA    -> 0x016716A0
 	 * 		Name   -> Function AkAudio.AkAmbientSound.StartAmbientSound
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 */
@@ -304,7 +304,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677180
+	 * 		RVA    -> 0x01670460
 	 * 		Name   -> Function AkAudio.AkAndroidInitializationSettings.MigrateMultiCoreRendering
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -481,7 +481,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016770C0
+	 * 		RVA    -> 0x016703A0
 	 * 		Name   -> Function AkAudio.AkAudioEvent.GetMinimumDuration
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -503,7 +503,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677090
+	 * 		RVA    -> 0x01670370
 	 * 		Name   -> Function AkAudio.AkAudioEvent.GetMaximumDuration
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -525,7 +525,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677060
+	 * 		RVA    -> 0x01670340
 	 * 		Name   -> Function AkAudio.AkAudioEvent.GetMaxAttenuationRadius
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -547,7 +547,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677030
+	 * 		RVA    -> 0x01670310
 	 * 		Name   -> Function AkAudio.AkAudioEvent.GetIsInfinite
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -583,7 +583,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167FDA0
+	 * 		RVA    -> 0x01679080
 	 * 		Name   -> Function AkAudio.AkGameObject.Stop
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 */
@@ -603,7 +603,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167E550
+	 * 		RVA    -> 0x01677830
 	 * 		Name   -> Function AkAudio.AkGameObject.SetRTPCValue
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, Const)
 	 * Parameters:
@@ -632,7 +632,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167CA40
+	 * 		RVA    -> 0x01675D20
 	 * 		Name   -> Function AkAudio.AkGameObject.PostAssociatedAkEventAsync
 	 * 		Flags  -> (BlueprintCosmetic, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -667,7 +667,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167C8A0
+	 * 		RVA    -> 0x01675B80
 	 * 		Name   -> Function AkAudio.AkGameObject.PostAssociatedAkEvent
 	 * 		Flags  -> (BlueprintCosmetic, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -696,7 +696,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167C0E0
+	 * 		RVA    -> 0x016753C0
 	 * 		Name   -> Function AkAudio.AkGameObject.PostAkEventAsync
 	 * 		Flags  -> (BlueprintCosmetic, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -733,7 +733,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167BEB0
+	 * 		RVA    -> 0x01675190
 	 * 		Name   -> Function AkAudio.AkGameObject.PostAkEvent
 	 * 		Flags  -> (BlueprintCosmetic, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -766,7 +766,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167A980
+	 * 		RVA    -> 0x01673C60
 	 * 		Name   -> Function AkAudio.AkGameObject.GetRTPCValue
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -816,7 +816,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016785F0
+	 * 		RVA    -> 0x016718D0
 	 * 		Name   -> Function AkAudio.AkComponent.UseReverbVolumes
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -839,7 +839,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01678400
+	 * 		RVA    -> 0x016716E0
 	 * 		Name   -> Function AkAudio.AkComponent.UseEarlyReflections
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -872,7 +872,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01678210
+	 * 		RVA    -> 0x016714F0
 	 * 		Name   -> Function AkAudio.AkComponent.SetSwitch
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -899,7 +899,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01678180
+	 * 		RVA    -> 0x01671460
 	 * 		Name   -> Function AkAudio.AkComponent.SetStopWhenOwnerDestroyed
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -922,7 +922,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01678100
+	 * 		RVA    -> 0x016713E0
 	 * 		Name   -> Function AkAudio.AkComponent.SetOutputBusVolume
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -945,7 +945,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01678050
+	 * 		RVA    -> 0x01671330
 	 * 		Name   -> Function AkAudio.AkComponent.SetListeners
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -968,7 +968,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677EF0
+	 * 		RVA    -> 0x016711D0
 	 * 		Name   -> Function AkAudio.AkComponent.SetGameObjectRadius
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -993,7 +993,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677E70
+	 * 		RVA    -> 0x01671150
 	 * 		Name   -> Function AkAudio.AkComponent.SetEarlyReflectionsVolume
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1016,7 +1016,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677DD0
+	 * 		RVA    -> 0x016710B0
 	 * 		Name   -> Function AkAudio.AkComponent.SetEarlyReflectionsAuxBus
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1039,7 +1039,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677CD0
+	 * 		RVA    -> 0x01670FB0
 	 * 		Name   -> Function AkAudio.AkComponent.SetAttenuationScalingFactor
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1062,7 +1062,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677A60
+	 * 		RVA    -> 0x01670D40
 	 * 		Name   -> Function AkAudio.AkComponent.PostTrigger
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1087,7 +1087,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677890
+	 * 		RVA    -> 0x01670B70
 	 * 		Name   -> Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEndAsync
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1116,7 +1116,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677720
+	 * 		RVA    -> 0x01670A00
 	 * 		Name   -> Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEnd
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1143,7 +1143,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677670
+	 * 		RVA    -> 0x01670950
 	 * 		Name   -> Function AkAudio.AkComponent.PostAkEventByName
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1168,7 +1168,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016774A0
+	 * 		RVA    -> 0x01670780
 	 * 		Name   -> Function AkAudio.AkComponent.PostAkEventAndWaitForEndAsync
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1199,7 +1199,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016772B0
+	 * 		RVA    -> 0x01670590
 	 * 		Name   -> Function AkAudio.AkComponent.PostAkEventAndWaitForEnd
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1230,7 +1230,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01676F70
+	 * 		RVA    -> 0x01670250
 	 * 		Name   -> Function AkAudio.AkComponent.GetAttenuationRadius
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1266,7 +1266,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677A30
+	 * 		RVA    -> 0x01670D10
 	 * 		Name   -> Function AkAudio.AkAudioInputComponent.PostAssociatedAudioInputEvent
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 */
@@ -1316,7 +1316,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677FC0
+	 * 		RVA    -> 0x016712A0
 	 * 		Name   -> Function AkAudio.AkCheckBox.SetIsChecked
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1339,7 +1339,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677D50
+	 * 		RVA    -> 0x01671030
 	 * 		Name   -> Function AkAudio.AkCheckBox.SetCheckedState
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1362,7 +1362,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677C30
+	 * 		RVA    -> 0x01670F10
 	 * 		Name   -> Function AkAudio.AkCheckBox.SetAkItemId
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1385,7 +1385,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677B90
+	 * 		RVA    -> 0x01670E70
 	 * 		Name   -> Function AkAudio.AkCheckBox.SetAkBoolProperty
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1408,7 +1408,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677150
+	 * 		RVA    -> 0x01670430
 	 * 		Name   -> Function AkAudio.AkCheckBox.IsPressed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1430,7 +1430,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677120
+	 * 		RVA    -> 0x01670400
 	 * 		Name   -> Function AkAudio.AkCheckBox.IsChecked
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1452,7 +1452,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01676FA0
+	 * 		RVA    -> 0x01670280
 	 * 		Name   -> Function AkAudio.AkCheckBox.GetCheckedState
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1474,7 +1474,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01676F20
+	 * 		RVA    -> 0x01670200
 	 * 		Name   -> Function AkAudio.AkCheckBox.GetAkProperty
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1496,7 +1496,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01676EE0
+	 * 		RVA    -> 0x016701C0
 	 * 		Name   -> Function AkAudio.AkCheckBox.GetAkItemId
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1574,7 +1574,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01680D80
+	 * 		RVA    -> 0x0167A060
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.WakeupFromSuspend
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1594,7 +1594,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01680CB0
+	 * 		RVA    -> 0x01679F90
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.UseReverbVolumes
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1619,7 +1619,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01680A90
+	 * 		RVA    -> 0x01679D70
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.UseEarlyReflections
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1654,7 +1654,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016809B0
+	 * 		RVA    -> 0x01679C90
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.UpdatePostedEventMultiPositions
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1679,7 +1679,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016808F0
+	 * 		RVA    -> 0x01679BD0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.UpdateDopplerEffectDatas
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1704,7 +1704,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01680800
+	 * 		RVA    -> 0x01679AE0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.UnloadBankByNameAsync
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1729,7 +1729,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01680770
+	 * 		RVA    -> 0x01679A50
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.UnloadBankByName
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1752,7 +1752,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01680690
+	 * 		RVA    -> 0x01679970
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.UnloadBankAsync
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1777,7 +1777,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01680520
+	 * 		RVA    -> 0x01679800
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.UnloadBank
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1806,7 +1806,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016804A0
+	 * 		RVA    -> 0x01679780
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.Suspend
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1829,7 +1829,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01680240
+	 * 		RVA    -> 0x01679520
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StopSoundOnComponentbyname
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1856,7 +1856,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01680170
+	 * 		RVA    -> 0x01679450
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StopSoundOnComponent
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1883,7 +1883,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01680370
+	 * 		RVA    -> 0x01679650
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StopSoundbyname
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1910,7 +1910,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167FFB0
+	 * 		RVA    -> 0x01679290
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StopSound2Dbyname
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1935,7 +1935,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167FF20
+	 * 		RVA    -> 0x01679200
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StopSound2D
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1960,7 +1960,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016800A0
+	 * 		RVA    -> 0x01679380
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StopSound
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1987,7 +1987,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167FF00
+	 * 		RVA    -> 0x016791E0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StopProfilerCapture
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2007,7 +2007,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167FEE0
+	 * 		RVA    -> 0x016791C0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StopOutputCapture
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2027,7 +2027,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167FE60
+	 * 		RVA    -> 0x01679140
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StopAllAmbientSounds
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2050,7 +2050,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167FE40
+	 * 		RVA    -> 0x01679120
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StopAll
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2070,7 +2070,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167FDC0
+	 * 		RVA    -> 0x016790A0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StopActor
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2093,7 +2093,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167FD10
+	 * 		RVA    -> 0x01678FF0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StartProfilerCapture
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2116,7 +2116,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167FC80
+	 * 		RVA    -> 0x01678F60
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StartOutputCapture
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2139,7 +2139,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167FC00
+	 * 		RVA    -> 0x01678EE0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.StartAllAmbientSounds
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2162,7 +2162,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167F9C0
+	 * 		RVA    -> 0x01678CA0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SpawnAkComponentAtLocation
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2199,7 +2199,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167F6B0
+	 * 		RVA    -> 0x01678990
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetSwitchToListenerbyname
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2224,7 +2224,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167F630
+	 * 		RVA    -> 0x01678910
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetSwitchToListener
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2247,7 +2247,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167F490
+	 * 		RVA    -> 0x01678770
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetSwitchToComponentbyname
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2274,7 +2274,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167F3D0
+	 * 		RVA    -> 0x016786B0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetSwitchToComponent
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2299,7 +2299,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167F820
+	 * 		RVA    -> 0x01678B00
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetSwitchbyname
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2326,7 +2326,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167F280
+	 * 		RVA    -> 0x01678560
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetSwitch
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2355,7 +2355,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167F180
+	 * 		RVA    -> 0x01678460
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetState
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2382,7 +2382,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167F030
+	 * 		RVA    -> 0x01678310
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetSpeakerAngles
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2409,7 +2409,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167EC80
+	 * 		RVA    -> 0x01677F60
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetRTPCValueToListenerbyname
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2436,7 +2436,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167EB70
+	 * 		RVA    -> 0x01677E50
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetRTPCValueToListener
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2463,7 +2463,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167E9E0
+	 * 		RVA    -> 0x01677CC0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetRTPCValueToComponentbyname
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2492,7 +2492,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167E890
+	 * 		RVA    -> 0x01677B70
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetRTPCValueToComponent
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2521,7 +2521,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167EDE0
+	 * 		RVA    -> 0x016780C0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetRTPCValuebyname
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2550,7 +2550,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167E700
+	 * 		RVA    -> 0x016779E0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetRTPCValue
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2581,7 +2581,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167EF70
+	 * 		RVA    -> 0x01678250
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetReflectionsOrder
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2606,7 +2606,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167E440
+	 * 		RVA    -> 0x01677720
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetPortalToPortalObstruction
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2633,7 +2633,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167E340
+	 * 		RVA    -> 0x01677620
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetPortalObstructionAndOcclusion
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2660,7 +2660,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167E2D0
+	 * 		RVA    -> 0x016775B0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetPanningRule
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2683,7 +2683,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167E210
+	 * 		RVA    -> 0x016774F0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetOutputBusVolume
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2708,7 +2708,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167E190
+	 * 		RVA    -> 0x01677470
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetOcclusionScalingFactor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2731,7 +2731,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167E0D0
+	 * 		RVA    -> 0x016773B0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetOcclusionRefreshInterval
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2756,7 +2756,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167DF70
+	 * 		RVA    -> 0x01677250
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetMultiplePositions
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2783,7 +2783,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167DD90
+	 * 		RVA    -> 0x01677070
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetMultipleChannelMaskEmitterPositions
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2812,7 +2812,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167DBB0
+	 * 		RVA    -> 0x01676E90
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetMultipleChannelEmitterPositions
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2841,7 +2841,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167DAA0
+	 * 		RVA    -> 0x01676D80
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetGameObjectToPortalObstruction
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2868,7 +2868,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167D9B0
+	 * 		RVA    -> 0x01676C90
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetCurrentAudioCultureAsync
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2893,7 +2893,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167D860
+	 * 		RVA    -> 0x01676B40
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetCurrentAudioCulture
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2920,7 +2920,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167D790
+	 * 		RVA    -> 0x01676A70
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.SetBusConfig
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2945,7 +2945,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167D6F0
+	 * 		RVA    -> 0x016769D0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.ReplaceMainOutput
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2968,7 +2968,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167D5F0
+	 * 		RVA    -> 0x016768D0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PostTrigger
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2995,7 +2995,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167D4D0
+	 * 		RVA    -> 0x016767B0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PostEventByName
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3022,7 +3022,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167D2E0
+	 * 		RVA    -> 0x016765C0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PostEventAttached
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3055,7 +3055,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167D170
+	 * 		RVA    -> 0x01676450
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PostEventAtLocationByName
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3084,7 +3084,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167CFB0
+	 * 		RVA    -> 0x01676290
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PostEventAtLocation
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3117,7 +3117,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167CCC0
+	 * 		RVA    -> 0x01675FA0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PostEvent
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3154,7 +3154,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167C640
+	 * 		RVA    -> 0x01675920
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PostAndWaitForEndOfEventAsync
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3189,7 +3189,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167C3A0
+	 * 		RVA    -> 0x01675680
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PostAndWaitForEndOfEvent
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3224,7 +3224,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167BBD0
+	 * 		RVA    -> 0x01674EB0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PlaySoundToComponentbyname
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3253,7 +3253,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167BAD0
+	 * 		RVA    -> 0x01674DB0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PlaySoundToComponent
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3282,7 +3282,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167BD40
+	 * 		RVA    -> 0x01675020
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PlaySoundbyname
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3311,7 +3311,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167B950
+	 * 		RVA    -> 0x01674C30
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PlaySoundAtLocationbyname
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3342,7 +3342,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167B7D0
+	 * 		RVA    -> 0x01674AB0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PlaySoundAtLocation
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3373,7 +3373,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167B5A0
+	 * 		RVA    -> 0x01674880
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PlaySound2Dbyname
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3400,7 +3400,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167B4D0
+	 * 		RVA    -> 0x016747B0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PlaySound2D
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3427,7 +3427,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167B6D0
+	 * 		RVA    -> 0x016749B0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.PlaySound
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3456,7 +3456,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167B4B0
+	 * 		RVA    -> 0x01674790
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.LoadInitBank
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3476,7 +3476,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167B3C0
+	 * 		RVA    -> 0x016746A0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.LoadBanks
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3501,7 +3501,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167B2D0
+	 * 		RVA    -> 0x016745B0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.LoadBankByNameAsync
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3526,7 +3526,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167B240
+	 * 		RVA    -> 0x01674520
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.LoadBankByName
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3549,7 +3549,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167B160
+	 * 		RVA    -> 0x01674440
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.LoadBankAsync
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3574,7 +3574,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167AFF0
+	 * 		RVA    -> 0x016742D0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.LoadBank
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3603,7 +3603,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167AF60
+	 * 		RVA    -> 0x01674240
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.IsGame
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3628,7 +3628,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009432A0
+	 * 		RVA    -> 0x00943260
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.IsEditor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3650,7 +3650,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167AE00
+	 * 		RVA    -> 0x016740E0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.GetSpeakerAngles
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3680,7 +3680,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167ABD0
+	 * 		RVA    -> 0x01673EB0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.GetRTPCValue
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3718,7 +3718,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167A950
+	 * 		RVA    -> 0x01673C30
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.GetOcclusionScalingFactor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3740,7 +3740,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167A800
+	 * 		RVA    -> 0x01673AE0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.GetDopplerEffectDatas
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3771,7 +3771,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167A780
+	 * 		RVA    -> 0x01673A60
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.GetCurrentAudioCulture
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3793,7 +3793,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167A6A0
+	 * 		RVA    -> 0x01673980
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.GetAvailableAudioCultures
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3815,7 +3815,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167A430
+	 * 		RVA    -> 0x01673710
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.GetAkMediaAssetUserData
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3842,7 +3842,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167A500
+	 * 		RVA    -> 0x016737E0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.GetAkComponent
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3877,7 +3877,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167A430
+	 * 		RVA    -> 0x01673710
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.GetAkAudioTypeUserData
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3904,7 +3904,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167A2F0
+	 * 		RVA    -> 0x016735D0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.ExecuteActionOnPlayingID
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3933,7 +3933,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167A120
+	 * 		RVA    -> 0x01673400
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.ExecuteActionOnEvent
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3966,7 +3966,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167A100
+	 * 		RVA    -> 0x016733E0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.ClearBanks
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3986,7 +3986,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0167A060
+	 * 		RVA    -> 0x01673340
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.CancelEventCallback
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4009,7 +4009,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01679FD0
+	 * 		RVA    -> 0x016732B0
 	 * 		Name   -> Function AkAudio.AkGameplayStatics.AddOutputCaptureMarker
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4074,7 +4074,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01685260
+	 * 		RVA    -> 0x0167E540
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4096,7 +4096,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016851B0
+	 * 		RVA    -> 0x0167E490
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetProgramChange
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4123,7 +4123,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01685100
+	 * 		RVA    -> 0x0167E3E0
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetPitchBend
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4150,7 +4150,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01685050
+	 * 		RVA    -> 0x0167E330
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetNoteOn
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4177,7 +4177,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01684FA0
+	 * 		RVA    -> 0x0167E280
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetNoteOff
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4204,7 +4204,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01684EF0
+	 * 		RVA    -> 0x0167E1D0
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetNoteAftertouch
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4231,7 +4231,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01684E40
+	 * 		RVA    -> 0x0167E120
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetGeneric
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4258,7 +4258,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01684D90
+	 * 		RVA    -> 0x0167E070
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetChannelAftertouch
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4285,7 +4285,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01684D60
+	 * 		RVA    -> 0x0167E040
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetChannel
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4307,7 +4307,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01684CB0
+	 * 		RVA    -> 0x0167DF90
 	 * 		Name   -> Function AkAudio.AkMIDIEventCallbackInfo.GetCc
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4390,7 +4390,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016852D0
+	 * 		RVA    -> 0x0167E5B0
 	 * 		Name   -> Function AkAudio.AkGeometryComponent.UpdateGeometry
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4410,7 +4410,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016852B0
+	 * 		RVA    -> 0x0167E590
 	 * 		Name   -> Function AkAudio.AkGeometryComponent.SendGeometry
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4430,7 +4430,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01685290
+	 * 		RVA    -> 0x0167E570
 	 * 		Name   -> Function AkAudio.AkGeometryComponent.RemoveGeometry
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4450,7 +4450,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01684C90
+	 * 		RVA    -> 0x0167DF70
 	 * 		Name   -> Function AkAudio.AkGeometryComponent.ConvertMesh
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4498,7 +4498,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677180
+	 * 		RVA    -> 0x01670460
 	 * 		Name   -> Function AkAudio.AkHololensInitializationSettings.MigrateMultiCoreRendering
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -4605,7 +4605,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01688CC0
+	 * 		RVA    -> 0x01681FB0
 	 * 		Name   -> Function AkAudio.AkItemBoolPropertiesConv.Conv_FAkBoolPropertyToControlToText
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -4630,7 +4630,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01688BD0
+	 * 		RVA    -> 0x01681EC0
 	 * 		Name   -> Function AkAudio.AkItemBoolPropertiesConv.Conv_FAkBoolPropertyToControlToString
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -4669,7 +4669,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01689320
+	 * 		RVA    -> 0x01682610
 	 * 		Name   -> Function AkAudio.AkItemBoolProperties.SetSearchText
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4692,7 +4692,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01688F00
+	 * 		RVA    -> 0x016821F0
 	 * 		Name   -> Function AkAudio.AkItemBoolProperties.GetSelectedProperty
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4714,7 +4714,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01688E80
+	 * 		RVA    -> 0x01682170
 	 * 		Name   -> Function AkAudio.AkItemBoolProperties.GetSearchText
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4750,7 +4750,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01688CC0
+	 * 		RVA    -> 0x01681FB0
 	 * 		Name   -> Function AkAudio.AkItemPropertiesConv.Conv_FAkPropertyToControlToText
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -4775,7 +4775,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01688BD0
+	 * 		RVA    -> 0x01681EC0
 	 * 		Name   -> Function AkAudio.AkItemPropertiesConv.Conv_FAkPropertyToControlToString
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -4814,7 +4814,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01689320
+	 * 		RVA    -> 0x01682610
 	 * 		Name   -> Function AkAudio.AkItemProperties.SetSearchText
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4837,7 +4837,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01688F80
+	 * 		RVA    -> 0x01682270
 	 * 		Name   -> Function AkAudio.AkItemProperties.GetSelectedProperty
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4859,7 +4859,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01688E80
+	 * 		RVA    -> 0x01682170
 	 * 		Name   -> Function AkAudio.AkItemProperties.GetSearchText
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4895,7 +4895,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01688B40
+	 * 		RVA    -> 0x01681E30
 	 * 		Name   -> Function AkAudio.AkLateReverbComponent.AssociateAkTextureSetComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4932,7 +4932,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677180
+	 * 		RVA    -> 0x01670460
 	 * 		Name   -> Function AkAudio.AkLinuxInitializationSettings.MigrateMultiCoreRendering
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -4983,7 +4983,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677180
+	 * 		RVA    -> 0x01670460
 	 * 		Name   -> Function AkAudio.AkMacInitializationSettings.MigrateMultiCoreRendering
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -5104,7 +5104,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01689030
+	 * 		RVA    -> 0x01682320
 	 * 		Name   -> Function AkAudio.AkPS4InitializationSettings.MigrateMultiCoreRendering
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -5169,7 +5169,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01688E50
+	 * 		RVA    -> 0x01682140
 	 * 		Name   -> Function AkAudio.AkRoomComponent.GetPrimitiveParent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -5247,7 +5247,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01689560
+	 * 		RVA    -> 0x01682850
 	 * 		Name   -> Function AkAudio.AkSlider.SetValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5270,7 +5270,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016894E0
+	 * 		RVA    -> 0x016827D0
 	 * 		Name   -> Function AkAudio.AkSlider.SetStepSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5293,7 +5293,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01689450
+	 * 		RVA    -> 0x01682740
 	 * 		Name   -> Function AkAudio.AkSlider.SetSliderHandleColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -5316,7 +5316,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016893C0
+	 * 		RVA    -> 0x016826B0
 	 * 		Name   -> Function AkAudio.AkSlider.SetSliderBarColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -5339,7 +5339,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01689290
+	 * 		RVA    -> 0x01682580
 	 * 		Name   -> Function AkAudio.AkSlider.SetLocked
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5362,7 +5362,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01689200
+	 * 		RVA    -> 0x016824F0
 	 * 		Name   -> Function AkAudio.AkSlider.SetIndentHandle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5385,7 +5385,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01689160
+	 * 		RVA    -> 0x01682450
 	 * 		Name   -> Function AkAudio.AkSlider.SetAkSliderItemProperty
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5408,7 +5408,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016890C0
+	 * 		RVA    -> 0x016823B0
 	 * 		Name   -> Function AkAudio.AkSlider.SetAkSliderItemId
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -5431,7 +5431,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01689000
+	 * 		RVA    -> 0x016822F0
 	 * 		Name   -> Function AkAudio.AkSlider.GetValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -5453,7 +5453,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01688E00
+	 * 		RVA    -> 0x016820F0
 	 * 		Name   -> Function AkAudio.AkSlider.GetAkSliderItemProperty
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -5475,7 +5475,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01688DC0
+	 * 		RVA    -> 0x016820B0
 	 * 		Name   -> Function AkAudio.AkSlider.GetAkSliderItemId
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -5553,7 +5553,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168EDD0
+	 * 		RVA    -> 0x016880C0
 	 * 		Name   -> Function AkAudio.AkSurfaceReflectorSetComponent.UpdateSurfaceReflectorSet
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -5573,7 +5573,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168DD90
+	 * 		RVA    -> 0x01687080
 	 * 		Name   -> Function AkAudio.AkSurfaceReflectorSetComponent.SendSurfaceReflectorSet
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -5593,7 +5593,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168DD70
+	 * 		RVA    -> 0x01687060
 	 * 		Name   -> Function AkAudio.AkSurfaceReflectorSetComponent.RemoveSurfaceReflectorSet
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -5627,7 +5627,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677180
+	 * 		RVA    -> 0x01670460
 	 * 		Name   -> Function AkAudio.AkSwitchInitializationSettings.MigrateMultiCoreRendering
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -5734,7 +5734,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168ECB0
+	 * 		RVA    -> 0x01687FA0
 	 * 		Name   -> Function AkAudio.AkWaapiCalls.Unsubscribe
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5763,7 +5763,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168EA40
+	 * 		RVA    -> 0x01687D30
 	 * 		Name   -> Function AkAudio.AkWaapiCalls.SubscribeToWaapi
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5799,7 +5799,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168E970
+	 * 		RVA    -> 0x01687C60
 	 * 		Name   -> Function AkAudio.AkWaapiCalls.SetSubscriptionID
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5824,7 +5824,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168DCC0
+	 * 		RVA    -> 0x01686FB0
 	 * 		Name   -> Function AkAudio.AkWaapiCalls.RegisterWaapiProjectLoadedCallback
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5849,7 +5849,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168DC10
+	 * 		RVA    -> 0x01686F00
 	 * 		Name   -> Function AkAudio.AkWaapiCalls.RegisterWaapiConnectionLostCallback
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5874,7 +5874,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168DB80
+	 * 		RVA    -> 0x01686E70
 	 * 		Name   -> Function AkAudio.AkWaapiCalls.GetSubscriptionID
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5899,7 +5899,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168D020
+	 * 		RVA    -> 0x01686310
 	 * 		Name   -> Function AkAudio.AkWaapiCalls.Conv_FAkWaapiSubscriptionIdToText
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -5924,7 +5924,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168CF50
+	 * 		RVA    -> 0x01686240
 	 * 		Name   -> Function AkAudio.AkWaapiCalls.Conv_FAkWaapiSubscriptionIdToString
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -5949,7 +5949,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168CB10
+	 * 		RVA    -> 0x01685E00
 	 * 		Name   -> Function AkAudio.AkWaapiCalls.CallWaapi
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5992,7 +5992,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01688CC0
+	 * 		RVA    -> 0x01681FB0
 	 * 		Name   -> Function AkAudio.SAkWaapiFieldNamesConv.Conv_FAkWaapiFieldNamesToText
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -6017,7 +6017,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01688BD0
+	 * 		RVA    -> 0x01681EC0
 	 * 		Name   -> Function AkAudio.SAkWaapiFieldNamesConv.Conv_FAkWaapiFieldNamesToString
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -6056,7 +6056,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168E790
+	 * 		RVA    -> 0x01687A80
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.SetStringField
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -6085,7 +6085,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168E570
+	 * 		RVA    -> 0x01687860
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.SetObjectField
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -6114,7 +6114,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168E3A0
+	 * 		RVA    -> 0x01687690
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.SetNumberField
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -6143,7 +6143,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168E1D0
+	 * 		RVA    -> 0x016874C0
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.SetBoolField
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -6172,7 +6172,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168DFD0
+	 * 		RVA    -> 0x016872C0
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.SetArrayStringFields
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -6201,7 +6201,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168DDB0
+	 * 		RVA    -> 0x016870A0
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.SetArrayObjectFields
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -6230,7 +6230,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168D9F0
+	 * 		RVA    -> 0x01686CE0
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.GetStringField
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -6257,7 +6257,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168D750
+	 * 		RVA    -> 0x01686A40
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.GetObjectField
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -6284,7 +6284,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168D600
+	 * 		RVA    -> 0x016868F0
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.GetNumberField
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -6311,7 +6311,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168D4B0
+	 * 		RVA    -> 0x016867A0
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.GetIntegerField
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -6338,7 +6338,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168D360
+	 * 		RVA    -> 0x01686650
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.GetBoolField
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -6365,7 +6365,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168D110
+	 * 		RVA    -> 0x01686400
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.GetArrayField
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -6392,7 +6392,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168CE20
+	 * 		RVA    -> 0x01686110
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.Conv_FAKWaapiJsonObjectToText
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -6417,7 +6417,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168CD10
+	 * 		RVA    -> 0x01686000
 	 * 		Name   -> Function AkAudio.AkWaapiJsonManager.Conv_FAKWaapiJsonObjectToString
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -6456,7 +6456,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01688CC0
+	 * 		RVA    -> 0x01681FB0
 	 * 		Name   -> Function AkAudio.AkWaapiUriConv.Conv_FAkWaapiUriToText
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -6481,7 +6481,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01688BD0
+	 * 		RVA    -> 0x01681EC0
 	 * 		Name   -> Function AkAudio.AkWaapiUriConv.Conv_FAkWaapiUriToString
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -6520,7 +6520,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677180
+	 * 		RVA    -> 0x01670460
 	 * 		Name   -> Function AkAudio.AkWindowsInitializationSettings.MigrateMultiCoreRendering
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -6599,7 +6599,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01689320
+	 * 		RVA    -> 0x01682610
 	 * 		Name   -> Function AkAudio.AkWwiseTree.SetSearchText
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6622,7 +6622,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0168D8D0
+	 * 		RVA    -> 0x01686BC0
 	 * 		Name   -> Function AkAudio.AkWwiseTree.GetSelectedItem
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -6644,7 +6644,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01688E80
+	 * 		RVA    -> 0x01682170
 	 * 		Name   -> Function AkAudio.AkWwiseTree.GetSearchText
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -6694,7 +6694,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01677180
+	 * 		RVA    -> 0x01670460
 	 * 		Name   -> Function AkAudio.AkXboxOneInitializationSettings.MigrateMultiCoreRendering
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -6871,7 +6871,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016911F0
+	 * 		RVA    -> 0x0168A4E0
 	 * 		Name   -> Function AkAudio.PostEventAsync.PostEventAsync
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -6908,7 +6908,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016911B0
+	 * 		RVA    -> 0x0168A4A0
 	 * 		Name   -> Function AkAudio.PostEventAsync.PollPostEventFuture
 	 * 		Flags  -> (Final, Native, Private)
 	 */
@@ -6942,7 +6942,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01691480
+	 * 		RVA    -> 0x0168A770
 	 * 		Name   -> Function AkAudio.PostEventAtLocationAsync.PostEventAtLocationAsync
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -6973,7 +6973,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x016911D0
+	 * 		RVA    -> 0x0168A4C0
 	 * 		Name   -> Function AkAudio.PostEventAtLocationAsync.PollPostEventFuture
 	 * 		Flags  -> (Final, Native, Private)
 	 */

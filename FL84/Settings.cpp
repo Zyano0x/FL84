@@ -78,11 +78,11 @@ void InitSettings()
 {
 	Settings[AIM_ENABLED] = AddConfig("Aimbot Settings", "Aimbot_Enabled", false);
 	Settings[AIM_PREDICTION] = AddConfig("Aimbot Settings", "Aimbot_Prediction", true);
-	Settings[AIM_MODE] = AddConfig("Aimbot Settings", "Aimbot_Mode", 0, 0, 1);
 	Settings[AIM_FOV] = AddConfig("Aimbot Settings", "Aimbot_FOV", 150.0f, 10.0f, 250.0f);
 	Settings[AIM_SMOOTH] = AddConfig("Aimbot Settings", "Aimbot_Smooth", 2.0f, 1.0f, 100.0f);
 	Settings[AIM_KEY] = AddConfig("Aimbot Settings", "Aimbot_Key", 1, 0, 166);
 	Settings[AIM_SELECT_BONE] = AddConfig("Aimbot Settings", "Aimbot_Select_Bone", 0, 0, 2);
+	Settings[IGNORE_KNOCKED] = AddConfig("Aimbot Settings", "Aimbot_Ignore_Knocked", true);
 	Settings[HUMAN_SPEED] = AddConfig("Aimbot Settings", "Aimbot_Human_Speed", 10.0f, 1.0f, 100.f);
 	Settings[HUMAN_SCALE] = AddConfig("Aimbot Settings", "Aimbot_Human_Scale", 1.0f, 1.0f, 20.f);
 	Settings[DRAW_FOV] = AddConfig("Aimbot Settings", "Aimbot_DrawFOV", false);
@@ -116,6 +116,9 @@ void InitSettings()
 	Settings[ESP_TREASUREBOX] = AddConfig("Esp Settings", "Esp_Treasure_Box", true);
 	Settings[ESP_AIRDROP] = AddConfig("Esp Settings", "Esp_Airdrop_Box", true);
 	Settings[ESP_VEHICLE] = AddConfig("Esp Settings", "Esp_Vehicle", false);
+
+	Settings[RADAR_ENABLED] = AddConfig("Esp Settings", "Radar_Enabled", false);
+	Settings[RADAR_DISTANCE] = AddConfig("Esp Settings", "Radar_Distance", 300.f, 1.f, 500.f);
 
 	//=============================================================================================================================
 

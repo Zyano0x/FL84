@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #ifdef _MSC_VER
@@ -94,7 +94,7 @@ namespace CG
 		int32_t                                                    Flags;                                                   // 0x0008(0x0004)
 		int32_t                                                    ClusterIndex;                                            // 0x000C(0x0004)
 		int32_t                                                    SerialNumber;                                            // 0x0010(0x0004)
-		unsigned char                                              pad_KHMA0F9U4Z[0x04];                                    // 0x0014(0x0004)
+		unsigned char                                              pad_1858I3Z69B[0x04];                                    // 0x0014(0x0004)
 
 	public:
 		bool IsUnreachable() const;

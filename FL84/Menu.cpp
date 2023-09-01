@@ -131,6 +131,8 @@ namespace Menu
 
 				ImGui::Checkbox(" Aim Prediction", &Settings[AIM_PREDICTION].Value.bValue);
 				ImGui::Spacing();
+				ImGui::Checkbox(" Ignore Knocked", &Settings[IGNORE_KNOCKED].Value.bValue);
+				ImGui::Spacing();
 				ImGui::Checkbox(" Draw FOV", &Settings[DRAW_FOV].Value.bValue);
 				ImGui::Spacing();
 				ImGui::Checkbox(" No Recoil", &Settings[NO_RECOIL].Value.bValue);
@@ -141,12 +143,6 @@ namespace Menu
 				Menu::Hotkey(&Settings[AIM_KEY].Value.iValue);
 
 				ImGui::Spacing();
-				static const char* AimMode[] = { " Aimbot FOV", " Silent Aim" };
-				ImGui::PushItemWidth(220);
-				ImGui::Combo(" Aim Mode", &Settings[AIM_MODE].Value.iValue, AimMode, IM_ARRAYSIZE(AimMode));
-				ImGui::PopItemWidth();
-
-				ImGui::Spacing();
 				static const char* SelectedBone[] = { " HEAD", " NECK", " NEAREST BONE"};
 				ImGui::PushItemWidth(220);
 				ImGui::Combo(" Select Bone", &Settings[AIM_SELECT_BONE].Value.iValue, SelectedBone, IM_ARRAYSIZE(SelectedBone));
@@ -154,8 +150,13 @@ namespace Menu
 
 				ImGui::Spacing();
 				ImGui::PushItemWidth(220);
-				ImGui::SliderFloat(" FOV", &Settings[AIM_FOV].Value.fValue, 10, 250, "%.f");
+				ImGui::SliderFloat(" Aimbot FOV", &Settings[AIM_FOV].Value.fValue, 10, 250, "%.f");
 				ImGui::PopItemWidth();
+
+				/*ImGui::Spacing();
+				ImGui::PushItemWidth(220);
+				ImGui::SliderFloat(" FOV", &Settings[FOV].Value.fValue, 1.f, 60.f, "%.f");
+				ImGui::PopItemWidth();*/
 
 				ImGui::Spacing();
 				ImGui::PushItemWidth(220);
@@ -177,104 +178,117 @@ namespace Menu
 			if (ImGui::CollapsingHeader(ICON_FA_EYE_SLASH " Visuals"))
 			{
 				ImGui::Spacing();
-				ImGui::Spacing();
-				ImGui::Checkbox(" Enable", &Settings[ESP_ENABLED].Value.bValue);
-				ImGui::Spacing();
-				ImGui::Spacing();
+				if (ImGui::TreeNode("Players"))
+				{
+					ImGui::Spacing();
+					ImGui::Spacing();
+					ImGui::Checkbox(" Enable", &Settings[ESP_ENABLED].Value.bValue);
+					ImGui::Spacing();
+					ImGui::Spacing();
 
-				ImGui::Checkbox(" Enemy", &Settings[ESP_ENEMY].Value.bValue);
-				ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-				ImGui::ColorEdit4(" Visible Color", (float*)&Settings[COLOR_ENEMY_VISIBLE].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
-				ImGui::Spacing();
-				ImGui::Checkbox(" Team", &Settings[ESP_TEAM].Value.bValue);
-				ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-				ImGui::ColorEdit4(" Team Color", (float*)&Settings[COLOR_TEAM].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
-				ImGui::Spacing();
-				ImGui::Checkbox(" Name", &Settings[ESP_NAME].Value.bValue);
-				ImGui::Spacing();
-				ImGui::Checkbox(" Direction Line", &Settings[ESP_DIRECTIONLINE].Value.bValue);
-				ImGui::Spacing();
-				ImGui::Checkbox(" Distance", &Settings[ESP_DISTANCE].Value.bValue);
-				ImGui::Spacing();
-				ImGui::Checkbox(" Health", &Settings[ESP_HEALTH].Value.bValue);
-				ImGui::Spacing();
-				ImGui::Checkbox(" Skeleton", &Settings[ESP_SKELETON].Value.bValue);
-				ImGui::Spacing();
-				ImGui::Checkbox(" Weapon", &Settings[ESP_WEAPON].Value.bValue);
-				ImGui::Spacing();
-				ImGui::Checkbox(" Vehicle", &Settings[ESP_VEHICLE].Value.bValue);
-				ImGui::Spacing();
+					ImGui::Checkbox(" Enemy", &Settings[ESP_ENEMY].Value.bValue);
+					ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
+					ImGui::ColorEdit4(" Visible Color", (float*)&Settings[COLOR_ENEMY_VISIBLE].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+					ImGui::Spacing();
+					ImGui::Checkbox(" Team", &Settings[ESP_TEAM].Value.bValue);
+					ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
+					ImGui::ColorEdit4(" Team Color", (float*)&Settings[COLOR_TEAM].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+					ImGui::Spacing();
+					ImGui::Checkbox(" Name", &Settings[ESP_NAME].Value.bValue);
+					ImGui::Spacing();
+					ImGui::Checkbox(" Direction Line", &Settings[ESP_DIRECTIONLINE].Value.bValue);
+					ImGui::Spacing();
+					ImGui::Checkbox(" Distance", &Settings[ESP_DISTANCE].Value.bValue);
+					ImGui::Spacing();
+					ImGui::Checkbox(" Health", &Settings[ESP_HEALTH].Value.bValue);
+					ImGui::Spacing();
+					ImGui::Checkbox(" Skeleton", &Settings[ESP_SKELETON].Value.bValue);
+					ImGui::Spacing();
+					ImGui::Checkbox(" Weapon", &Settings[ESP_WEAPON].Value.bValue);
+					ImGui::Spacing();
+					ImGui::Checkbox(" Vehicle", &Settings[ESP_VEHICLE].Value.bValue);
+					ImGui::Spacing();
+					ImGui::Checkbox(" Radar", &Settings[RADAR_ENABLED].Value.bValue);
+					
+					ImGui::Spacing();
+					ImGui::PushItemWidth(220);
+					ImGui::SliderFloat(" Radar Distance", &Settings[RADAR_DISTANCE].Value.fValue, 1, 500, "%.f");
+					ImGui::PopItemWidth();
 
-				static const char* SnaplinesType[] = { " Off", " Top", " Base" };
-				ImGui::PushItemWidth(220);
-				ImGui::Combo(" Snaplines", &Settings[ESP_SNAPLINES].Value.iValue, SnaplinesType, IM_ARRAYSIZE(SnaplinesType));
-				ImGui::PopItemWidth();
+					ImGui::Spacing();
+					static const char* SnaplinesType[] = { " Off", " Top", " Base" };
+					ImGui::PushItemWidth(220);
+					ImGui::Combo(" Snaplines", &Settings[ESP_SNAPLINES].Value.iValue, SnaplinesType, IM_ARRAYSIZE(SnaplinesType));
+					ImGui::PopItemWidth();
 
-				ImGui::Spacing();
-
-				static const char* BoxType[] = { " Off", " Box", " Corners Box" };
-				ImGui::PushItemWidth(220);
-				ImGui::Combo(" Box Style", &Settings[ESP_BOX_TYPE].Value.iValue, BoxType, IM_ARRAYSIZE(BoxType));
-				ImGui::PopItemWidth();
-				ImGui::Spacing();
-			}
-
-			ImGui::Spacing();
-			if (ImGui::CollapsingHeader(ICON_FA_SHIELD " Items"))
-			{
-				ImGui::Spacing();
-				ImGui::Spacing();
-				ImGui::Checkbox(" Enabled", &Settings[ESP_LOOT_ENABLED].Value.bValue);
-				ImGui::Spacing();
-				ImGui::Spacing();
-
-				ImGui::Checkbox(" Weapon", &Settings[ESP_LOOT_WEAPON].Value.bValue);
-				ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-				ImGui::ColorEdit4(" Weapon Color", (float*)&Settings[COLOR_LOOT_WEAPON].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
-				
-				ImGui::Spacing();
-				ImGui::Checkbox(" Bullet", &Settings[ESP_LOOT_AMMO].Value.bValue);
-				ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-				ImGui::ColorEdit4(" Bullet Color", (float*)&Settings[COLOR_LOOT_AMMO].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
-				
-				ImGui::Spacing();
-				ImGui::Checkbox(" Weapon Parts", &Settings[ESP_LOOT_ATTACHMENTS].Value.bValue);
-				ImGui::Spacing();
-				ImGui::Checkbox(" Shield", &Settings[ESP_LOOT_SHIELD].Value.bValue);
-				ImGui::Spacing();
-				ImGui::Checkbox(" Shield Upgrade", &Settings[ESP_LOOT_SHIELDUPGR].Value.bValue);
-				ImGui::Spacing();
-				ImGui::Checkbox(" Horizontal Jetpack", &Settings[ESP_LOOT_HJETPACK].Value.bValue);
-				ImGui::Spacing();
-				ImGui::Checkbox(" Vertical Jetpack", &Settings[ESP_LOOT_VJETPACK].Value.bValue);
-				ImGui::Spacing();
-				ImGui::Checkbox(" Death Box", &Settings[ESP_LOOT_DEATHBOX].Value.bValue);
-			
-				ImGui::Spacing();
-				ImGui::Checkbox(" Health Items", &Settings[ESP_LOOT_HEALTH].Value.bValue);
-				ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-				ImGui::ColorEdit4(" Health Items", (float*)&Settings[COLOR_LOOT_HEALTH].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
-			
-				ImGui::Spacing();
-				ImGui::Checkbox(" Treasure Box", &Settings[ESP_TREASUREBOX].Value.bValue);
-				ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-				ImGui::ColorEdit4(" Treasure Box", (float*)&Settings[COLOR_TREASUREBOX].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+					ImGui::Spacing();
+					static const char* BoxType[] = { " Off", " Box", " Corners Box" };
+					ImGui::PushItemWidth(220);
+					ImGui::Combo(" Box Style", &Settings[ESP_BOX_TYPE].Value.iValue, BoxType, IM_ARRAYSIZE(BoxType));
+					ImGui::PopItemWidth();
+					
+					ImGui::TreePop();
+				}
 
 				ImGui::Spacing();
-				ImGui::Checkbox(" AirDrop Box", &Settings[ESP_AIRDROP].Value.bValue);
-				ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-				ImGui::ColorEdit4(" AirDrop Box", (float*)&Settings[COLOR_AIRDROP].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+				if (ImGui::TreeNode("Items"))
+				{
+					ImGui::Spacing();
+					ImGui::Spacing();
+					ImGui::Checkbox(" Enabled", &Settings[ESP_LOOT_ENABLED].Value.bValue);
+					ImGui::Spacing();
+					ImGui::Spacing();
 
-				ImGui::Spacing();
-				static const char* LevelItems[] = { " Level 1", " Level 2", " Level 3", " Level 4" , " Level 5" , " Level 6" };
-				ImGui::PushItemWidth(220);
-				ImGui::Combo(" Level Items", &Settings[ESP_LOOT_LEVEL].Value.iValue, LevelItems, IM_ARRAYSIZE(LevelItems));
-				ImGui::PopItemWidth();
+					ImGui::Checkbox(" Weapon", &Settings[ESP_LOOT_WEAPON].Value.bValue);
+					ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
+					ImGui::ColorEdit4(" Weapon Color", (float*)&Settings[COLOR_LOOT_WEAPON].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
 
-				ImGui::Spacing();
-				ImGui::PushItemWidth(220);
-				ImGui::SliderFloat(" Items Distance", &Settings[ESP_ITEMS_DISTANCE].Value.fValue, 1.f, 300.f, "%.f");
-				ImGui::PopItemWidth();
+					ImGui::Spacing();
+					ImGui::Checkbox(" Bullet", &Settings[ESP_LOOT_AMMO].Value.bValue);
+					ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
+					ImGui::ColorEdit4(" Bullet Color", (float*)&Settings[COLOR_LOOT_AMMO].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+
+					ImGui::Spacing();
+					ImGui::Checkbox(" Weapon Parts", &Settings[ESP_LOOT_ATTACHMENTS].Value.bValue);
+					ImGui::Spacing();
+					ImGui::Checkbox(" Shield", &Settings[ESP_LOOT_SHIELD].Value.bValue);
+					ImGui::Spacing();
+					ImGui::Checkbox(" Shield Upgrade", &Settings[ESP_LOOT_SHIELDUPGR].Value.bValue);
+					ImGui::Spacing();
+					ImGui::Checkbox(" Horizontal Jetpack", &Settings[ESP_LOOT_HJETPACK].Value.bValue);
+					ImGui::Spacing();
+					ImGui::Checkbox(" Vertical Jetpack", &Settings[ESP_LOOT_VJETPACK].Value.bValue);
+					ImGui::Spacing();
+					ImGui::Checkbox(" Death Box", &Settings[ESP_LOOT_DEATHBOX].Value.bValue);
+
+					ImGui::Spacing();
+					ImGui::Checkbox(" Health Items", &Settings[ESP_LOOT_HEALTH].Value.bValue);
+					ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
+					ImGui::ColorEdit4(" Health Items", (float*)&Settings[COLOR_LOOT_HEALTH].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+
+					ImGui::Spacing();
+					ImGui::Checkbox(" Treasure Box", &Settings[ESP_TREASUREBOX].Value.bValue);
+					ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
+					ImGui::ColorEdit4(" Treasure Box", (float*)&Settings[COLOR_TREASUREBOX].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+
+					ImGui::Spacing();
+					ImGui::Checkbox(" AirDrop Box", &Settings[ESP_AIRDROP].Value.bValue);
+					ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
+					ImGui::ColorEdit4(" AirDrop Box", (float*)&Settings[COLOR_AIRDROP].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+
+					ImGui::Spacing();
+					static const char* LevelItems[] = { " Level 1", " Level 2", " Level 3", " Level 4" , " Level 5" , " Level 6" };
+					ImGui::PushItemWidth(220);
+					ImGui::Combo(" Level Items", &Settings[ESP_LOOT_LEVEL].Value.iValue, LevelItems, IM_ARRAYSIZE(LevelItems));
+					ImGui::PopItemWidth();
+
+					ImGui::Spacing();
+					ImGui::PushItemWidth(220);
+					ImGui::SliderFloat(" Items Distance", &Settings[ESP_ITEMS_DISTANCE].Value.fValue, 1.f, 300.f, "%.f");
+					ImGui::PopItemWidth();
+
+					ImGui::TreePop();
+				}
 			}
 
 			ImGui::Spacing();

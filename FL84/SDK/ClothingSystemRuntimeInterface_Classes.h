@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #ifdef _MSC_VER
@@ -65,7 +65,7 @@ namespace CG
 	class UClothingSimulationInteractor : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_5H01[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_DAGU[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		void SetAnimDriveSpringStiffness(float InStiffness);
@@ -91,7 +91,7 @@ namespace CG
 		int32_t                                                    NumFixedVerts;                                           // 0x0078(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    MaxBoneWeights;                                          // 0x007C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<uint32_t>                                           SelfCollisionIndices;                                    // 0x0080(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_0BXT[0x50];                                  // 0x0090(0x0050) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_CNTZ[0x50];                                  // 0x0090(0x0050) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BB2340
+	 * 		RVA    -> 0x00BB2300
 	 * 		Name   -> Function CommonInput.CommonInputBaseControllerData.GetRegisteredGamepads
 	 * 		Flags  -> (Final, Native, Static, Public)
 	 */
@@ -62,7 +62,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BB2380
+	 * 		RVA    -> 0x00BB2340
 	 * 		Name   -> Function CommonInput.CommonInputSettings.GetRegisteredPlatforms
 	 * 		Flags  -> (Final, Native, Static, Private)
 	 */
@@ -98,7 +98,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BB25A0
+	 * 		RVA    -> 0x00BB2560
 	 * 		Name   -> Function CommonInput.CommonInputSubsystem.ShouldShowInputKeys
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -120,7 +120,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BB2510
+	 * 		RVA    -> 0x00BB24D0
 	 * 		Name   -> Function CommonInput.CommonInputSubsystem.SetGamepadInputType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -143,7 +143,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BB2480
+	 * 		RVA    -> 0x00BB2440
 	 * 		Name   -> Function CommonInput.CommonInputSubsystem.SetCurrentInputType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -168,7 +168,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BB2450
+	 * 		RVA    -> 0x00BB2410
 	 * 		Name   -> Function CommonInput.CommonInputSubsystem.IsUsingPointerInput
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -190,7 +190,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BB23C0
+	 * 		RVA    -> 0x00BB2380
 	 * 		Name   -> Function CommonInput.CommonInputSubsystem.IsInputMethodActive
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -215,7 +215,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BB2310
+	 * 		RVA    -> 0x00BB22D0
 	 * 		Name   -> Function CommonInput.CommonInputSubsystem.GetDefaultInputType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -237,7 +237,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BB22E0
+	 * 		RVA    -> 0x00BB22A0
 	 * 		Name   -> Function CommonInput.CommonInputSubsystem.GetCurrentInputType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -259,7 +259,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BB22A0
+	 * 		RVA    -> 0x00BB2260
 	 * 		Name   -> Function CommonInput.CommonInputSubsystem.GetCurrentGamepadName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

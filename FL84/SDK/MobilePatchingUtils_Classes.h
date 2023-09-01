@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UMobileInstalledContent : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_65VY[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_G1YH[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		bool Mount(int32_t PakOrder, const class FString& MountPoint);
@@ -37,7 +37,7 @@ namespace CG
 	class UMobilePendingContent : public UMobileInstalledContent
 	{
 	public:
-		unsigned char                                              UnknownData_1N4H[0x40];                                  // 0x0048(0x0040) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_NGYI[0x40];                                  // 0x0048(0x0040) MISSED OFFSET (PADDING)
 
 	public:
 		void StartInstall(const class FScriptDelegate& OnSucceeded, const class FScriptDelegate& OnFailed);

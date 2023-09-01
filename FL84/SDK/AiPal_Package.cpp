@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C7C3C0
+	 * 		RVA    -> 0x00C7C380
 	 * 		Name   -> Function AiPal.AiPalComponent.SetUserID
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -35,7 +35,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C7C340
+	 * 		RVA    -> 0x00C7C300
 	 * 		Name   -> Function AiPal.AiPalComponent.SetThreshold
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -58,7 +58,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C7C2B0
+	 * 		RVA    -> 0x00C7C270
 	 * 		Name   -> Function AiPal.AiPalComponent.SetMaxDetectTimes
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -81,7 +81,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C7C220
+	 * 		RVA    -> 0x00C7C1E0
 	 * 		Name   -> Function AiPal.AiPalComponent.SetDetectGap_ms
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -104,7 +104,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C7C200
+	 * 		RVA    -> 0x00C7C1C0
 	 * 		Name   -> Function AiPal.AiPalComponent.EndDetect
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -124,7 +124,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C7C1E0
+	 * 		RVA    -> 0x00C7C1A0
 	 * 		Name   -> Function AiPal.AiPalComponent.Capture
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -144,7 +144,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C7C1C0
+	 * 		RVA    -> 0x00C7C180
 	 * 		Name   -> Function AiPal.AiPalComponent.BeginDetect
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */

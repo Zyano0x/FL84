@@ -56,6 +56,9 @@ public:
 	}
 
 	void Unknown();
+	void Removal();
+	void Aimbot();
+	void Radar();
 
 private:
 	bool IsTeam;

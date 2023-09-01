@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #ifdef _MSC_VER
@@ -32,7 +32,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsPassthrough;                                          // 0x1BB0(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_I87U[0x7];                                   // 0x1BB1(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_TM46[0x7];                                   // 0x1BB1(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -45,7 +45,7 @@ namespace CG
 	class USteamNetDriver : public UIpNetDriver
 	{
 	public:
-		unsigned char                                              UnknownData_L58U[0x8];                                   // 0x07C8(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_P7VQ[0x8];                                   // 0x07C8(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

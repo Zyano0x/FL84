@@ -22,16 +22,11 @@ void XXX::Unknown()
 	if (!CameraManager)
 		return;
 
-	CG::ASolarCharacter* LocalCharacter = reinterpret_cast<CG::ASolarCharacter*>(PlayerController->Character);
+	CG::ASolarCharacter* LocalCharacter = reinterpret_cast<CG::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
 	if (!LocalCharacter)
 		return;
 
 	PlayerController->GetViewportSize(&ScreenWidth, &ScreenHeight);
-
-	if (Settings[DRAW_FOV].Value.bValue)
-	{
-		ImGui::GetBackgroundDrawList()->AddCircle(ImVec2(ScreenWidth / 2, ScreenHeight / 2), Settings[AIM_FOV].Value.fValue, ImGui::GetColorU32(ImVec4(1.f, 0.141f, 0.f, 1.f)));
-	}
 
 	CG::TArray<CG::AActor*> Actors = *(CG::TArray<CG::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
 	for (int i = 0; i < Actors.Count(); i++)
@@ -73,10 +68,7 @@ void XXX::Unknown()
 			if (!Enemy->K2_IsAlive())
 				continue;
 
-			if (!Enemy->PlayerState || !LocalCharacter->PlayerState)
-				continue;
-
-			if (Enemy->PlayerState->PawnPrivate == LocalCharacter->PlayerState->PawnPrivate)
+			if (Enemy == LocalCharacter)
 				continue;
 
 			Head = Engine::GetBonePosition(Enemy->Mesh, HEAD);
@@ -100,9 +92,12 @@ void XXX::Unknown()
 				{
 					std::string Name = "------";
 
-					CG::ESCMPlayerType PlayerState = reinterpret_cast<CG::ASCMPlayerState*>(Enemy->PlayerState)->PlayerType;
+					if (!Enemy->PlayerState)
+						continue;
 
-					if (PlayerState == CG::ESCMPlayerType::BotAI)
+					CG::ESCMPlayerType PlayerType = reinterpret_cast<CG::ASCMPlayerState*>(Enemy->PlayerState)->PlayerType;
+
+					if (PlayerType == CG::ESCMPlayerType::BotAI)
 					{
 						Draw::DrawString("BOT", (Left + Right) / 2, Top - 17, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 					}
@@ -122,7 +117,7 @@ void XXX::Unknown()
 					int Distance = LocalCharacter->GetDistanceTo(Enemy) / 100;
 
 					Draw::DrawString(std::string("[" + std::to_string(Distance) + " M]"), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
-					
+
 					if (Enemy->IsInVehicle())
 						Draw::DrawString(std::string("[In Vehicle]"), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 				}
@@ -265,99 +260,6 @@ void XXX::Unknown()
 					}
 				}
 			}
-
-			if (Settings[AIM_ENABLED].Value.bValue)
-			{
-				CG::ASolarCharacter* ClosestTarget = NULL;
-				float ClosestDistance = FLT_MAX;
-
-				//float dX = HeadPos.X - (ScreenWidth / 2);
-				//float dY = HeadPos.Y - (ScreenHeight / 2);
-				//float Distance = sqrtf((dX * dX) + (dY * dY));
-
-				CG::FVector2D Position = CG::FVector2D();
-
-				PlayerController->ProjectWorldLocationToScreen(Enemy->K2_GetActorLocation(), &Position, false);
-
-				float Distance = Aimbot::GetCrossDistance(Position.X, Position.Y, ScreenWidth / 2, ScreenHeight / 2);
-
-				if (Distance <= ClosestDistance)
-				{
-					float Radius = Settings[AIM_FOV].Value.fValue;
-
-					if (Position.X <= ((ScreenWidth / 2) + Radius) &&
-						Position.X >= ((ScreenWidth / 2) - Radius) &&
-						Position.Y <= ((ScreenHeight / 2) + Radius) &&
-						Position.Y >= ((ScreenHeight / 2) - Radius))
-					{
-						ClosestDistance = Distance;
-						ClosestTarget = Enemy;
-					}
-				}
-
-				if (!ClosestTarget)
-					continue;
-
-				if (Settings[AIM_MODE].Value.iValue == 0 && GetAsyncKeyState(Settings[AIM_KEY].Value.iValue) & 0x80000)
-				{
-					Aimbot::AimFOV(ClosestTarget);
-				}
-
-				if (Settings[AIM_MODE].Value.iValue == 1)
-				{
-					Aimbot::SilentAim(ClosestTarget);
-				}
-			}
-
-			if (Settings[NO_RECOIL].Value.bValue)
-			{
-				CG::ASolarPlayerWeapon* CachedCurrentWeapon = reinterpret_cast<CG::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
-				if (!CachedCurrentWeapon)
-					continue;
-
-				CG::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
-				if (!Config)
-					continue;
-
-				Config->MaxSpread = 0.0f;
-				Config->HipFireBaseSpread = 0.0f;
-				Config->ShoulderFireBaseSpread = 0.0f;
-				Config->ADSBaseSpread = 0.0f;
-				Config->VhADSBaseSpread = 0.0f;
-
-				CG::UWeaponShootConfig* WeaponShootConfig = Config->WeaponShootConfig;
-				if (!WeaponShootConfig)
-					continue;
-
-				WeaponShootConfig->bEnableNewRecoil = false;
-				WeaponShootConfig->bEnableNewSpread = false;
-
-				CG::UWeaponRecoilComponent* RecoilComponent = CachedCurrentWeapon->RecoilComponent;
-				if (!RecoilComponent)
-					continue;
-
-				RecoilComponent->SetRecoilActive(false);
-				RecoilComponent->SetRecoilVActive(false);
-				RecoilComponent->SetRecoilRActive(false);
-				RecoilComponent->SetRecoilHActive(false);
-			}
-			else
-			{
-				CG::ASolarPlayerWeapon* CachedCurrentWeapon = reinterpret_cast<CG::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
-				if (!CachedCurrentWeapon)
-					continue;
-
-				CG::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
-				if (!Config)
-					continue;
-
-				CG::UWeaponShootConfig* WeaponShootConfig = Config->WeaponShootConfig;
-				if (!WeaponShootConfig)
-					continue;
-
-				WeaponShootConfig->bEnableNewRecoil = true;
-				WeaponShootConfig->bEnableNewSpread = true;
-			}
 		}
 
 		if (Actor->IsA(CG::ASolarItemActor::StaticClass()) || Actor->IsA(CG::ASolarGroundPreviewActor::StaticClass()))
@@ -372,7 +274,7 @@ void XXX::Unknown()
 
 			CG::EItemType ItemType = Item->ItemData.ItemType;
 
-			int ItemQuality = Item->ItemData.Quality;
+			int32_t ItemQuality = Item->GetQuality();
 
 			ImVec4 ItemColor = ImVec4();
 
@@ -432,7 +334,6 @@ void XXX::Unknown()
 
 			if (ItemType == CG::EItemType::SHIELD)
 			{
-				auto Shield = Item;
 				if (Settings[ESP_LOOT_SHIELD].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue && ItemQuality >= (Settings[ESP_LOOT_LEVEL].Value.iValue + 1))
 					Draw::DrawString(std::string(PickupName).append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
 			}
@@ -521,6 +422,304 @@ void XXX::Unknown()
 
 				Draw::HorizontalHealthBar(VehiclePos.X - 60, VehiclePos.Y, 100, 10, (int)Vehicle->GetCurrentHealth(), (int)Vehicle->GetMaxHealth(), HPColor);
 				Draw::DrawString(std::string(VehicleName).append(" [").append(std::to_string(VehicleDistance)).append(" M]"), VehiclePos.X, VehiclePos.Y + 10, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+			}
+		}
+	}
+}
+
+void XXX::Removal()
+{
+	CG::UWorld* World = *CG::UWorld::GWorld;
+	if (!World)
+		return;
+
+	CG::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
+	if (!LocalPlayer)
+		return;
+
+	CG::APlayerController* PlayerController = LocalPlayer->PlayerController;
+	if (!PlayerController)
+		return;
+
+	if (Settings[NO_RECOIL].Value.bValue)
+	{
+		if (!PlayerController->Character)
+			return;
+
+		CG::ASolarPlayerWeapon* CachedCurrentWeapon = reinterpret_cast<CG::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
+		if (!CachedCurrentWeapon)
+			return;
+
+		CG::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
+		if (!Config)
+			return;
+
+		Config->MaxSpread = 0.0f;
+		Config->HipFireBaseSpread = 0.0f;
+		Config->ShoulderFireBaseSpread = 0.0f;
+		Config->ADSBaseSpread = 0.0f;
+		Config->VhADSBaseSpread = 0.0f;
+
+		CG::UWeaponShootConfig* WeaponShootConfig = Config->WeaponShootConfig;
+		if (!WeaponShootConfig)
+			return;
+
+		WeaponShootConfig->bEnableNewRecoil = false;
+		WeaponShootConfig->bEnableNewSpread = false;
+
+		CG::UWeaponRecoilComponent* RecoilComponent = CachedCurrentWeapon->RecoilComponent;
+		if (!RecoilComponent)
+			return;
+
+		RecoilComponent->SetRecoilActive(false);
+		RecoilComponent->SetRecoilVActive(false);
+		RecoilComponent->SetRecoilRActive(false);
+		RecoilComponent->SetRecoilHActive(false);
+	}
+	else
+	{
+		if (!PlayerController->Character)
+			return;
+
+		CG::ASolarPlayerWeapon* CachedCurrentWeapon = reinterpret_cast<CG::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
+		if (!CachedCurrentWeapon)
+			return;
+
+		CG::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
+		if (!Config)
+			return;
+
+		CG::UWeaponShootConfig* WeaponShootConfig = Config->WeaponShootConfig;
+		if (!WeaponShootConfig)
+			return;
+
+		WeaponShootConfig->bEnableNewRecoil = true;
+		WeaponShootConfig->bEnableNewSpread = true;
+	}
+}
+
+void XXX::Aimbot()
+{
+	CG::UWorld* World = *CG::UWorld::GWorld;
+	if (!World)
+		return;
+
+	CG::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
+	if (!LocalPlayer)
+		return;
+
+	CG::APlayerController* PlayerController = LocalPlayer->PlayerController;
+	if (!PlayerController)
+		return;
+
+	CG::ASolarCharacter* LocalCharacter = reinterpret_cast<CG::ASolarCharacter*>(PlayerController->Character);
+	if (!LocalCharacter)
+		return;
+
+	if (Settings[DRAW_FOV].Value.bValue)
+	{
+		ImGui::GetBackgroundDrawList()->AddCircle(ImVec2(ScreenWidth / 2, ScreenHeight / 2), Settings[AIM_FOV].Value.fValue * ((ScreenWidth / 2) / 90), ImGui::GetColorU32(ImVec4(1.f, 0.141f, 0.f, 1.f)));
+	}
+
+	if (!Settings[AIM_ENABLED].Value.bValue)
+		return;
+
+	CG::TArray<CG::AActor*> Actors = *(CG::TArray<CG::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
+	for (int i = 0; i < Actors.Count(); i++)
+	{
+		CG::AActor* Actor = Actors[i];
+
+		if (!Actor)
+			continue;
+
+		if (Actor->IsA(CG::ASolarCharacter::StaticClass()))
+		{
+			CG::ASolarCharacter* Enemy = reinterpret_cast<CG::ASolarCharacter*>(Actor);
+
+			if (Enemy == LocalCharacter)
+				continue;
+
+			if (Enemy->InSameTeamWithFirstPlayerController())
+				continue;
+
+			if (!PlayerController->LineOfSightTo(Enemy, { 0.f,0.f,0.f }, false))
+				continue;
+
+			float ClosestDistance = 1337;
+			CG::ASolarCharacter* ClosestTarget = NULL;
+			CG::FVector2D Position = CG::FVector2D();
+
+			if (PlayerController->ProjectWorldLocationToScreen(Enemy->K2_GetActorLocation(), &Position, false))
+			{
+				float Multiplier = (ScreenWidth / 2) / 90;
+				float xDiff = (ScreenWidth / 2) - Position.X;
+				float yDiff = (ScreenHeight / 2) - Position.Y;
+				float Hypotenuse = sqrtf((xDiff * xDiff) + (yDiff * yDiff));
+				float Size = Settings[AIM_FOV].Value.fValue * Multiplier;
+				//float Distance = Aimbot::GetCrossDistance(Position.X, Position.Y, ScreenWidth / 2, ScreenHeight / 2);
+
+				if (Hypotenuse < Size && Hypotenuse < ClosestDistance)
+				{
+					/*float Radius = Settings[AIM_FOV].Value.fValue * Multiplier;
+
+					if (Position.X <= ((ScreenWidth / 2) + Radius) &&
+						Position.X >= ((ScreenWidth / 2) - Radius) &&
+						Position.Y <= ((ScreenHeight / 2) + Radius) &&
+						Position.Y >= ((ScreenHeight / 2) - Radius))
+					{
+						ClosestDistance = Distance;
+						ClosestTarget = Enemy;
+					}*/
+
+					ClosestDistance = Hypotenuse;
+					ClosestTarget = Enemy;
+				}
+
+				if (!ClosestTarget)
+					continue;
+
+				if (Settings[IGNORE_KNOCKED].Value.bValue && Enemy->IsDying())
+					return;
+
+				CG::FVector LocalLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
+				std::vector<CG::FVector> AimPos = std::vector<CG::FVector>();
+
+				switch (Settings[AIM_SELECT_BONE].Value.iValue)
+				{
+				case 0:
+					AimPos.push_back(Enemy->Mesh->GetBoneWorldPos(HEAD));
+					break;
+
+				case 1:
+					AimPos.push_back(Enemy->Mesh->GetBoneWorldPos(NECK_01));
+					break;
+
+				case 2:
+					int Point = Engine::GetNearestBone(PlayerController->PlayerCameraManager, Enemy, Engine::HitBoxes);
+					AimPos.push_back(Enemy->Mesh->GetBoneWorldPos(Point));
+					break;
+				}
+
+				if (GetAsyncKeyState(Settings[AIM_KEY].Value.iValue) & 0x80000)
+				{
+					for (CG::FVector Hitbox : AimPos)
+					{
+						if (Hitbox.X != 0)
+						{
+							if (Settings[AIM_PREDICTION].Value.bValue)
+							{
+								CG::ASolarPlayerWeapon* CachedCurrentWeapon = LocalCharacter->CachedCurrentWeapon;
+								if (!CachedCurrentWeapon)
+									continue;
+
+								CG::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
+								if (!Config)
+									continue;
+
+								CG::UAmmoConfig* AmmoConfig = Config->PrimaryAmmo;
+								if (!AmmoConfig)
+									continue;
+
+								float BulletSpeed = AmmoConfig->InitSpeed / 100.f;
+								float BulletGravity = AmmoConfig->ProjectileMaxGravity;
+								float Distance = LocalLocation.Distance(Hitbox) / 100.f;
+
+								CG::FVector Velocity = Enemy->RootComponent->ComponentVelocity;
+								CG::FVector AimPrediction = Aimbot::AimbotPrediction(BulletSpeed, BulletGravity, Distance, Hitbox, Velocity);
+
+								Hitbox.X = AimPrediction.X;
+								Hitbox.Y = AimPrediction.Y;
+								Hitbox.Z = AimPrediction.Z;
+
+								//CG::FVector TargetBone = Aimbot::CalcFuturePos(PlayerController, Hitbox);
+								//Aimbot::AimAtPosV2(ScreenWidth, ScreenHeight, TargetBone.X, TargetBone.Y, Settings[AIM_SMOOTH].Value.fValue, Settings[HUMAN_SPEED].Value.fValue, Settings[HUMAN_SCALE].Value.fValue);
+								CG::FRotator TargetRotation = Aimbot::CalcAngle(LocalLocation, Hitbox);
+								TargetRotation.Roll = 0;
+								TargetRotation.Clamp();
+								Aimbot::SetRotation(PlayerController->PlayerCameraManager, PlayerController, TargetRotation, false, Settings[AIM_SMOOTH].Value.fValue);
+							}
+							else
+							{
+								CG::FRotator TargetRotation = Aimbot::CalcAngle(LocalLocation, Hitbox);
+								TargetRotation.Roll = 0;
+								TargetRotation.Clamp();
+								Aimbot::SetRotation(PlayerController->PlayerCameraManager, PlayerController, TargetRotation, false, Settings[AIM_SMOOTH].Value.fValue);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+void XXX::Radar()
+{
+	if (!Settings[RADAR_ENABLED].Value.bValue)
+		return;
+
+	ImVec2 size = ImGui::GetContentRegionAvail();
+
+	float RadarCenterX = ScreenWidth / 2.0f;
+	float RadarCenterY = ScreenHeight - size.y / 4.0f;
+
+	float radius = 80.0f;
+	int segments = 64; // Increase the number of segments for a smoother circle
+
+	// Draw a static circle with a slightly transparent background
+	ImGui::GetBackgroundDrawList()->AddCircleFilled(ImVec2(RadarCenterX, RadarCenterY), radius, IM_COL32(0, 0, 0, 190), segments);
+
+	// Draw a vertical line in the middle
+	ImGui::GetBackgroundDrawList()->AddLine(ImVec2(RadarCenterX, RadarCenterY) + ImVec2(0, -radius), ImVec2(RadarCenterX, RadarCenterY) + ImVec2(0, radius), IM_COL32(150, 150, 150, 200), 1.0f);
+
+	// Draw a horizontal line in the middle
+	ImGui::GetBackgroundDrawList()->AddLine(ImVec2(RadarCenterX, RadarCenterY) + ImVec2(-radius, 0), ImVec2(RadarCenterX, RadarCenterY) + ImVec2(radius, 0), IM_COL32(150, 150, 150, 200), 1.0f);
+
+	// Draw projection lines on the upper-right and upper-left
+	ImVec2 upperRight = ImVec2(RadarCenterX + radius * cosf(-IM_PI / 4.0f), RadarCenterY + radius * sinf(-IM_PI / 4.0f));
+	ImVec2 upperLeft = ImVec2(RadarCenterX + radius * cosf(-3.0f * IM_PI / 4.0f), RadarCenterY + radius * sinf(-3.0f * IM_PI / 4.0f));
+
+	ImGui::GetBackgroundDrawList()->AddLine(ImVec2(RadarCenterX, RadarCenterY), upperRight, IM_COL32(150, 150, 150, 200), 1.0f);
+	ImGui::GetBackgroundDrawList()->AddLine(ImVec2(RadarCenterX, RadarCenterY), upperLeft, IM_COL32(150, 150, 150, 200), 1.0f);
+
+	CG::UWorld* World = *CG::UWorld::GWorld;
+	if (!World)
+		return;
+
+	CG::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
+	if (!LocalPlayer)
+		return;
+
+	CG::APlayerController* PlayerController = LocalPlayer->PlayerController;
+	if (!PlayerController)
+		return;
+
+	CG::APlayerCameraManager* CameraManager = PlayerController->PlayerCameraManager;
+	if (!CameraManager)
+		return;
+
+	CG::TArray<CG::AActor*> Actors = *(CG::TArray<CG::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
+	for (int i = 0; i < Actors.Count(); i++)
+	{
+		CG::AActor* Actor = Actors[i];
+
+		if (!Actor)
+			continue;
+
+		if (Actor->IsA(CG::ASolarCharacter::StaticClass()))
+		{
+			CG::ASolarCharacter* Enemy = reinterpret_cast<CG::ASolarCharacter*>(Actor);
+
+			if (Enemy->InSameTeamWithFirstPlayerController())
+				continue;
+
+			float Distance = CameraManager->GetCameraLocation().Distance(Enemy->K2_GetActorLocation()) / 100.f;
+
+			CG::FVector2D Position = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), CG::FVector2D((int)RadarCenterX - 65, (int)RadarCenterY - 85), CG::FVector2D(radius * 2, radius * 2));
+
+			if (Distance >= 0.f && Distance < Settings[RADAR_DISTANCE].Value.fValue)
+			{
+				Draw::DrawCircleFilled(Position.X, Position.Y, 4, ImVec4(1.0f, 0.874f, 0.0f, 1.0f));
 			}
 		}
 	}

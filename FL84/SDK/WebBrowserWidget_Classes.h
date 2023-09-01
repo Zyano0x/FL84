@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #ifdef _MSC_VER
@@ -26,7 +26,7 @@ namespace CG
 		class FScriptMulticastDelegate                             OnBeforeNavigation;                                      // 0x0158(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FString                                              InitialURL;                                              // 0x0168(0x0010) Edit, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		bool                                                       bSupportsTransparency;                                   // 0x0178(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_5P5S[0x17];                                  // 0x0179(0x0017) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_XRDE[0x17];                                  // 0x0179(0x0017) MISSED OFFSET (PADDING)
 
 	public:
 		void StopLoad();
@@ -52,7 +52,7 @@ namespace CG
 	{
 	public:
 		unsigned char                                              DefaultMaterial[0x28];                                   // 0x0028(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
-		unsigned char                                              UnknownData_AYBI[0x28];                                  // 0x0050(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_RAP5[0x28];                                  // 0x0050(0x0028) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

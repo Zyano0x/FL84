@@ -2,7 +2,6 @@
 
 namespace Aimbot
 {
-	CG::ASolarCharacter* Target = NULL;
 	CG::FVector Bone = {};
 
 	float Normalize(float angle)
@@ -63,7 +62,7 @@ namespace Aimbot
 		float pitch = (-((acosf((delta.Z / distance)) * 180.f / M_PI) - 90.f));
 		float yaw = atan2f(delta.Y, delta.X) * (180.f / M_PI);
 
-		return CG::FRotator(Normalize(pitch), Normalize(yaw), 0.f);
+		return CG::FRotator(pitch, yaw, 0.0f);
 	}
 
 	CG::FVector CalcFuturePos(CG::APlayerController* Controller, CG::FVector InVec)
@@ -85,13 +84,13 @@ namespace Aimbot
 		return OutPos;
 	}
 
-	CG::FVector AimbotCorrection(float bulletVelocity, float bulletGravity, float targetDistance, CG::FVector targetPosition, CG::FVector targetVelocity)
+	CG::FVector AimbotPrediction(float bulletVelocity, float bulletGravity, float targetDistance, CG::FVector targetPosition, CG::FVector targetVelocity)
 	{
 		CG::FVector recalculated = targetPosition;
 		float gravity = fabs(bulletGravity);
 		float time = targetDistance / fabs(bulletVelocity);
 		float bulletDrop = gravity * time * time;
-		recalculated.Z += bulletDrop;
+		recalculated.Z += bulletDrop * 120;
 		recalculated.X += time * (targetVelocity.X);
 		recalculated.Y += time * (targetVelocity.Y);
 		recalculated.Z += time * (targetVelocity.Z);
@@ -193,142 +192,5 @@ namespace Aimbot
 
 		//mouse_move(OutTarget.X, OutTarget.Y);
 		mouse_event(0x0001, (DWORD)(OutTarget.X), (DWORD)(OutTarget.Y), NULL, NULL);
-	}
-
-	void AimFOV(CG::ASolarCharacter* Enemy)
-	{
-		CG::UWorld* World = *CG::UWorld::GWorld;
-		if (!World)
-			return;
-
-		CG::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
-		if (!LocalPlayer)
-			return;
-
-		CG::APlayerController* PlayerController = LocalPlayer->PlayerController;
-		if (!PlayerController)
-			return;
-
-		CG::ASolarCharacter* LocalCharacter = reinterpret_cast<CG::ASolarCharacter*>(PlayerController->Character);
-		if (!LocalCharacter)
-			return;
-
-		if (!Enemy->PlayerState || !LocalCharacter->PlayerState)
-			return;
-
-		if (Enemy->PlayerState->PawnPrivate == LocalCharacter->PlayerState->PawnPrivate)
-			return;
-
-		if (Enemy->InSameTeamWithFirstPlayerController())
-			return;
-
-		if (!PlayerController->LineOfSightTo(Enemy, { 0.f,0.f,0.f }, false))
-			return;
-
-		CG::FVector LocalLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
-		std::vector<CG::FVector> AimPos = std::vector<CG::FVector>();
-
-		switch (Settings[AIM_SELECT_BONE].Value.iValue)
-		{
-		case 0:
-			AimPos.push_back(Enemy->Mesh->GetBoneWorldPos(HEAD));
-			break;
-
-		case 1:
-			AimPos.push_back(Enemy->Mesh->GetBoneWorldPos(NECK_01));
-			break;
-
-		case 2:
-			int Point = Engine::GetNearestBone(PlayerController->PlayerCameraManager, Enemy, Engine::HitBoxes);
-			AimPos.push_back(Enemy->Mesh->GetBoneWorldPos(Point));
-			break;
-		}
-
-		//AimPosition = /*Engine::GetBonePosition(Enemy->Mesh, NECK_01)*/ Enemy->Mesh->GetBoneWorldPos(HEAD);
-
-		for (CG::FVector Hitbox : AimPos)
-		{
-			if (Hitbox.X != 0)
-			{
-				Bone = Hitbox;
-				
-				if (Settings[AIM_PREDICTION].Value.bValue)
-				{
-					CG::ASolarPlayerWeapon* CachedCurrentWeapon = LocalCharacter->CachedCurrentWeapon;
-					if (!CachedCurrentWeapon)
-						return;
-
-					CG::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
-					if (!Config)
-						return;
-
-					CG::UAmmoConfig* AmmoConfig = Config->PrimaryAmmo;
-					if (!AmmoConfig)
-						return;
-
-					float BulletSpeed = AmmoConfig->InitSpeed / 100.f;
-					float BulletGravity = AmmoConfig->ProjectileMaxGravity;
-					float Distance = LocalLocation.Distance(Bone) / 100.f;
-
-					CG::FVector Velocity = Enemy->RootComponent->ComponentVelocity;
-					CG::FVector AimPrediction = AimbotCorrection(BulletSpeed, BulletGravity, Distance, Bone, Velocity);
-
-					Bone.X = AimPrediction.X;
-					Bone.Y = AimPrediction.Y;
-					Bone.Z = AimPrediction.Z;
-
-					CG::FVector TargetBone = CalcFuturePos(PlayerController, Bone);
-					CG::FVector2D TargetPos = CG::FVector2D(TargetBone.X, TargetBone.Y);
-					AimAtPosV2(ScreenWidth, ScreenHeight, TargetPos.X, TargetPos.Y, Settings[AIM_SMOOTH].Value.fValue, Settings[HUMAN_SPEED].Value.fValue, Settings[HUMAN_SCALE].Value.fValue);
-				}
-				else
-				{
-					CG::FRotator TargetRotation = CalcAngle(LocalLocation, Bone);
-					TargetRotation.Roll = 0;
-					TargetRotation.Clamp();
-					SetRotation(PlayerController->PlayerCameraManager, PlayerController, TargetRotation, false, Settings[AIM_SMOOTH].Value.fValue);
-				}
-			}
-		}
-	}
-
-	void SilentAim(CG::ASolarCharacter* Enemy)
-	{
-		CG::UWorld* World = *CG::UWorld::GWorld;
-		if (!World)
-			return;
-
-		CG::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
-		if (!LocalPlayer)
-			return;
-
-		CG::APlayerController* PlayerController = LocalPlayer->PlayerController;
-		if (!PlayerController)
-			return;
-
-		CG::ASolarCharacter* LocalCharacter = reinterpret_cast<CG::ASolarCharacter*>(PlayerController->Character);
-		if (!LocalCharacter)
-			return;
-
-		if (!Enemy->PlayerState || !LocalCharacter->PlayerState)
-			return;
-
-		if (Enemy->PlayerState->PawnPrivate == LocalCharacter->PlayerState->PawnPrivate)
-			return;
-
-		if (Enemy->InSameTeamWithFirstPlayerController())
-			return;
-
-		if (!PlayerController->LineOfSightTo(Enemy, { 0.f,0.f,0.f }, false))
-			return;
-
-		Target = Enemy;
-
-		CG::FRotator OldRotation = PlayerController->GetControlRotation();
-		CG::FVector LocalLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
-		CG::FVector AimPosition = /*Engine::GetBonePosition(Target->Mesh, NECK_01)*/ Enemy->Mesh->GetBoneWorldPos(NECK_01);
-		CG::FRotator AimRotation = CalcAngle(LocalLocation, AimPosition);
-		AimRotation.Roll = 0;
-		AimRotation.Clamp();
 	}
 }

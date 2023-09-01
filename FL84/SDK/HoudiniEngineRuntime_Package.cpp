@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 1.14.4.5.503427
+ * Version: 1.14.4.6.511026
  */
 
 #include "pch.h"
@@ -68,7 +68,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0086E230
+	 * 		RVA    -> 0x0086E1F0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniAssetBlueprintComponent.SetToggleValueAt
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -95,7 +95,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0086E0D0
+	 * 		RVA    -> 0x0086E090
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniAssetBlueprintComponent.SetFloatParameter
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -122,7 +122,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0086DFD0
+	 * 		RVA    -> 0x0086DF90
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniAssetBlueprintComponent.HasParameter
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1295,7 +1295,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087BEB0
+	 * 		RVA    -> 0x0087BE70
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.SetVertexPosition
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -1320,7 +1320,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087BD90
+	 * 		RVA    -> 0x0087BD50
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.SetTriangleVertexVTangent
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -1347,7 +1347,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087BC30
+	 * 		RVA    -> 0x0087BBF0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.SetTriangleVertexUV
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -1376,7 +1376,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087BB10
+	 * 		RVA    -> 0x0087BAD0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.SetTriangleVertexUTangent
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -1403,7 +1403,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087B9F0
+	 * 		RVA    -> 0x0087B9B0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.SetTriangleVertexNormal
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -1430,7 +1430,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087B920
+	 * 		RVA    -> 0x0087B8E0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.SetTriangleVertexIndices
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -1455,7 +1455,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087B800
+	 * 		RVA    -> 0x0087B7C0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.SetTriangleVertexColor
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -1482,7 +1482,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087B730
+	 * 		RVA    -> 0x0087B6F0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.SetTriangleMaterialID
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -1507,7 +1507,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087B620
+	 * 		RVA    -> 0x0087B5E0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.SetStaticMaterial
 	 * 		Flags  -> (Final, Native, Public, HasOutParms)
 	 * Parameters:
@@ -1532,7 +1532,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087B590
+	 * 		RVA    -> 0x0087B550
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.SetNumUVLayers
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -1555,7 +1555,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087B500
+	 * 		RVA    -> 0x0087B4C0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.SetNumStaticMaterials
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -1578,7 +1578,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087B470
+	 * 		RVA    -> 0x0087B430
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.SetHasTangents
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -1601,7 +1601,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087B3E0
+	 * 		RVA    -> 0x0087B3A0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.SetHasPerFaceMaterials
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -1624,7 +1624,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087B350
+	 * 		RVA    -> 0x0087B310
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.SetHasNormals
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -1647,7 +1647,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087B2C0
+	 * 		RVA    -> 0x0087B280
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.SetHasColors
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -1670,7 +1670,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087B2A0
+	 * 		RVA    -> 0x0087B260
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.Optimize
 	 * 		Flags  -> (Final, Native, Public)
 	 */
@@ -1690,7 +1690,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087B200
+	 * 		RVA    -> 0x0087B1C0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.IsValid
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 * Parameters:
@@ -1715,7 +1715,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087AF90
+	 * 		RVA    -> 0x0087AF50
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.Initialize
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -1752,7 +1752,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087AF70
+	 * 		RVA    -> 0x0087AF30
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.HasTangents
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -1774,7 +1774,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087AF50
+	 * 		RVA    -> 0x0087AF10
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.HasPerFaceMaterials
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -1796,7 +1796,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087AF30
+	 * 		RVA    -> 0x0087AEF0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.HasNormals
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -1818,7 +1818,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087AF10
+	 * 		RVA    -> 0x0087AED0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.HasColors
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -1840,7 +1840,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087AEE0
+	 * 		RVA    -> 0x0087AEA0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.GetVertexPositions
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -1862,7 +1862,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087AEB0
+	 * 		RVA    -> 0x0087AE70
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.GetVertexInstanceVTangents
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -1884,7 +1884,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087AE20
+	 * 		RVA    -> 0x0087ADE0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.GetVertexInstanceUVs
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -1906,7 +1906,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087ADF0
+	 * 		RVA    -> 0x0087ADB0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.GetVertexInstanceUTangents
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -1928,7 +1928,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087ADC0
+	 * 		RVA    -> 0x0087AD80
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.GetVertexInstanceNormals
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -1950,7 +1950,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087AD30
+	 * 		RVA    -> 0x0087ACF0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.GetVertexInstanceColors
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -1972,7 +1972,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087ACA0
+	 * 		RVA    -> 0x0087AC60
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.GetTriangleIndices
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -1994,7 +1994,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087AC10
+	 * 		RVA    -> 0x0087ABD0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.GetStaticMaterials
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -2016,7 +2016,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087ABF0
+	 * 		RVA    -> 0x0087ABB0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.GetNumVertices
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -2038,7 +2038,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087ABD0
+	 * 		RVA    -> 0x0087AB90
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.GetNumVertexInstances
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -2060,7 +2060,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087ABB0
+	 * 		RVA    -> 0x0087AB70
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.GetNumUVLayers
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -2082,7 +2082,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087AB90
+	 * 		RVA    -> 0x0087AB50
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.GetNumTriangles
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -2104,7 +2104,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087AB70
+	 * 		RVA    -> 0x0087AB30
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.GetNumStaticMaterials
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -2126,7 +2126,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087AAD0
+	 * 		RVA    -> 0x0087AA90
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.GetMaterialIndex
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 * Parameters:
@@ -2151,7 +2151,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087AA40
+	 * 		RVA    -> 0x0087AA00
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.GetMaterialIDsPerTriangle
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -2173,7 +2173,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087A9A0
+	 * 		RVA    -> 0x0087A960
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.GetMaterial
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -2198,7 +2198,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087A910
+	 * 		RVA    -> 0x0087A8D0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.CalculateTangents
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -2221,7 +2221,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087A880
+	 * 		RVA    -> 0x0087A840
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.CalculateNormals
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -2244,7 +2244,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087A830
+	 * 		RVA    -> 0x0087A7F0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.CalcBounds
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, Const)
 	 */
@@ -2266,7 +2266,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087A720
+	 * 		RVA    -> 0x0087A6E0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMesh.AddStaticMaterial
 	 * 		Flags  -> (Final, Native, Public, HasOutParms)
 	 * Parameters:
@@ -2305,7 +2305,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087C2D0
+	 * 		RVA    -> 0x0087C290
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMeshComponent.SetMesh
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -2328,7 +2328,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087C240
+	 * 		RVA    -> 0x0087C200
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMeshComponent.SetHoudiniIconVisible
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -2351,7 +2351,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087C220
+	 * 		RVA    -> 0x0087C1E0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMeshComponent.NotifyMeshUpdated
 	 * 		Flags  -> (Final, Native, Public)
 	 */
@@ -2371,7 +2371,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087C200
+	 * 		RVA    -> 0x0087C1C0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMeshComponent.IsHoudiniIconVisible
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 */
@@ -2393,7 +2393,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0087C1E0
+	 * 		RVA    -> 0x0087C1A0
 	 * 		Name   -> Function HoudiniEngineRuntime.HoudiniStaticMeshComponent.GetMesh
 	 * 		Flags  -> (Final, Native, Public)
 	 */
