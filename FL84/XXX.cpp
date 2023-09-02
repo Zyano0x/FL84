@@ -441,6 +441,26 @@ void XXX::Removal()
 	if (!PlayerController)
 		return;
 
+	if (Settings[FAST_RELOAD].Value.bValue)
+	{
+		if (!PlayerController->Character)
+			return;
+
+		CG::ASolarPlayerWeapon* CachedCurrentWeapon = reinterpret_cast<CG::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
+		if (!CachedCurrentWeapon)
+			return;
+
+		CG::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
+		if (!Config)
+			return;
+
+		CG::UAmmoConfig* AmmoConfig = Config->PrimaryAmmo;
+		if (!AmmoConfig)
+			return;
+
+		AmmoConfig->BaseReloadTime = 1.5f;
+	}
+
 	if (Settings[NO_RECOIL].Value.bValue)
 	{
 		if (!PlayerController->Character)
@@ -466,6 +486,9 @@ void XXX::Removal()
 
 		WeaponShootConfig->bEnableNewRecoil = false;
 		WeaponShootConfig->bEnableNewSpread = false;
+		WeaponShootConfig->bEnableNewWeaponAnim = false;
+		WeaponShootConfig->bEnableNewCameraShake = false;
+		WeaponShootConfig->BaseSpread = 0.0f;
 
 		CG::UWeaponRecoilComponent* RecoilComponent = CachedCurrentWeapon->RecoilComponent;
 		if (!RecoilComponent)
@@ -578,74 +601,75 @@ void XXX::Aimbot()
 				if (!ClosestTarget)
 					continue;
 
-				if (Settings[IGNORE_KNOCKED].Value.bValue && Enemy->IsDying())
-					return;
+				if (Settings[IGNORE_KNOCKED].Value.bValue && ClosestTarget->IsDying())
+					continue;
+
+				if (!ClosestTarget->K2_IsAlive())
+					continue;
 
 				CG::FVector LocalLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
-				std::vector<CG::FVector> AimPos = std::vector<CG::FVector>();
+				//std::vector<CG::FVector> AimPos = std::vector<CG::FVector>();
 
 				switch (Settings[AIM_SELECT_BONE].Value.iValue)
 				{
 				case 0:
-					AimPos.push_back(Enemy->Mesh->GetBoneWorldPos(HEAD));
+					//AimPos.push_back(ClosestTarget->Mesh->GetBoneWorldPos(HEAD));
+					AimPos = ClosestTarget->Mesh->GetBoneWorldPos(HEAD);
 					break;
 
 				case 1:
-					AimPos.push_back(Enemy->Mesh->GetBoneWorldPos(NECK_01));
+					//AimPos.push_back(ClosestTarget->Mesh->GetBoneWorldPos(NECK_01));
+					AimPos = ClosestTarget->Mesh->GetBoneWorldPos(NECK_01);
 					break;
 
 				case 2:
-					int Point = Engine::GetNearestBone(PlayerController->PlayerCameraManager, Enemy, Engine::HitBoxes);
-					AimPos.push_back(Enemy->Mesh->GetBoneWorldPos(Point));
+					int Point = Engine::GetNearestBone(PlayerController->PlayerCameraManager, ClosestTarget, Engine::HitBoxes);
+					//AimPos.push_back(ClosestTarget->Mesh->GetBoneWorldPos(Point));
+					AimPos = ClosestTarget->Mesh->GetBoneWorldPos(Point);
 					break;
 				}
 
 				if (GetAsyncKeyState(Settings[AIM_KEY].Value.iValue) & 0x80000)
 				{
-					for (CG::FVector Hitbox : AimPos)
+
+					if (Settings[AIM_PREDICTION].Value.bValue)
 					{
-						if (Hitbox.X != 0)
-						{
-							if (Settings[AIM_PREDICTION].Value.bValue)
-							{
-								CG::ASolarPlayerWeapon* CachedCurrentWeapon = LocalCharacter->CachedCurrentWeapon;
-								if (!CachedCurrentWeapon)
-									continue;
+						CG::ASolarPlayerWeapon* CachedCurrentWeapon = LocalCharacter->CachedCurrentWeapon;
+						if (!CachedCurrentWeapon)
+							continue;
 
-								CG::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
-								if (!Config)
-									continue;
+						CG::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
+						if (!Config)
+							continue;
 
-								CG::UAmmoConfig* AmmoConfig = Config->PrimaryAmmo;
-								if (!AmmoConfig)
-									continue;
+						CG::UAmmoConfig* AmmoConfig = Config->PrimaryAmmo;
+						if (!AmmoConfig)
+							continue;
 
-								float BulletSpeed = AmmoConfig->InitSpeed / 100.f;
-								float BulletGravity = AmmoConfig->ProjectileMaxGravity;
-								float Distance = LocalLocation.Distance(Hitbox) / 100.f;
+						float BulletSpeed = AmmoConfig->InitSpeed / 100.f;
+						float BulletGravity = AmmoConfig->ProjectileMaxGravity;
+						float Distance = LocalLocation.Distance(AimPos) / 100.f;
 
-								CG::FVector Velocity = Enemy->RootComponent->ComponentVelocity;
-								CG::FVector AimPrediction = Aimbot::AimbotPrediction(BulletSpeed, BulletGravity, Distance, Hitbox, Velocity);
+						CG::FVector Velocity = ClosestTarget->RootComponent->ComponentVelocity;
+						CG::FVector AimPrediction = Aimbot::AimbotPrediction(BulletSpeed, BulletGravity, Distance, AimPos, Velocity);
 
-								Hitbox.X = AimPrediction.X;
-								Hitbox.Y = AimPrediction.Y;
-								Hitbox.Z = AimPrediction.Z;
+						//Hitbox.X = AimPrediction.X;
+						//Hitbox.Y = AimPrediction.Y;
+						//Hitbox.Z = AimPrediction.Z;
 
-								//CG::FVector TargetBone = Aimbot::CalcFuturePos(PlayerController, Hitbox);
-								//Aimbot::AimAtPosV2(ScreenWidth, ScreenHeight, TargetBone.X, TargetBone.Y, Settings[AIM_SMOOTH].Value.fValue, Settings[HUMAN_SPEED].Value.fValue, Settings[HUMAN_SCALE].Value.fValue);
-								CG::FRotator TargetRotation = Aimbot::CalcAngle(LocalLocation, Hitbox);
-								TargetRotation.Roll = 0;
-								TargetRotation.Clamp();
-								Aimbot::SetRotation(PlayerController->PlayerCameraManager, PlayerController, TargetRotation, false, Settings[AIM_SMOOTH].Value.fValue);
-							}
-							else
-							{
-								CG::FRotator TargetRotation = Aimbot::CalcAngle(LocalLocation, Hitbox);
-								TargetRotation.Roll = 0;
-								TargetRotation.Clamp();
-								Aimbot::SetRotation(PlayerController->PlayerCameraManager, PlayerController, TargetRotation, false, Settings[AIM_SMOOTH].Value.fValue);
-							}
-						}
+						//CG::FVector TargetBone = Aimbot::CalcFuturePos(PlayerController, Hitbox);
+						//Aimbot::AimAtPosV2(ScreenWidth, ScreenHeight, TargetBone.X, TargetBone.Y, Settings[AIM_SMOOTH].Value.fValue, Settings[HUMAN_SPEED].Value.fValue, Settings[HUMAN_SCALE].Value.fValue);
+						CG::FRotator TargetRotation = Aimbot::CalcAngle(LocalLocation, AimPrediction);
+						TargetRotation.Roll = 0;
+						TargetRotation.Clamp();
+						Aimbot::SetRotation(PlayerController->PlayerCameraManager, PlayerController, TargetRotation, false, Settings[AIM_SMOOTH].Value.fValue);
+					}
+					else
+					{
+						CG::FRotator TargetRotation = Aimbot::CalcAngle(LocalLocation, AimPos);
+						TargetRotation.Roll = 0;
+						TargetRotation.Clamp();
+						Aimbot::SetRotation(PlayerController->PlayerCameraManager, PlayerController, TargetRotation, false, Settings[AIM_SMOOTH].Value.fValue);
 					}
 				}
 			}
@@ -715,7 +739,7 @@ void XXX::Radar()
 
 			float Distance = CameraManager->GetCameraLocation().Distance(Enemy->K2_GetActorLocation()) / 100.f;
 
-			CG::FVector2D Position = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), CG::FVector2D((int)RadarCenterX - 65, (int)RadarCenterY - 85), CG::FVector2D(radius * 2, radius * 2));
+			CG::FVector2D Position = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), CG::FVector2D((int)RadarCenterX - 85, (int)RadarCenterY - 85), CG::FVector2D(radius * 2, radius * 2));
 
 			if (Distance >= 0.f && Distance < Settings[RADAR_DISTANCE].Value.fValue)
 			{

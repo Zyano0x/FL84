@@ -2,8 +2,6 @@
 
 namespace Aimbot
 {
-	CG::FVector Bone = {};
-
 	float Normalize(float angle)
 	{
 		float out = fmodf(fmodf(angle, 360.f) + 360.f, 360.f);
@@ -51,7 +49,7 @@ namespace Aimbot
 		smoothRotation.Yaw = SmoothOutYaw(TargetRotation.Yaw, currentRotation.Yaw, Smooth);
 		smoothRotation.Roll = currentRotation.Roll + (TargetRotation.Roll - currentRotation.Roll) / Smooth;
 
-		*(CG::FRotator*)(v11) = smoothRotation;
+		*(CG::FRotator*)(v11) = CG::FRotator(Normalize(smoothRotation.Pitch), Normalize(smoothRotation.Yaw), Normalize(smoothRotation.Roll));
 	}
 
 	CG::FRotator CalcAngle(CG::FVector& src, CG::FVector& dst)
@@ -63,38 +61,6 @@ namespace Aimbot
 		float yaw = atan2f(delta.Y, delta.X) * (180.f / M_PI);
 
 		return CG::FRotator(pitch, yaw, 0.0f);
-	}
-
-	CG::FVector CalcFuturePos(CG::APlayerController* Controller, CG::FVector InVec)
-	{
-		CG::FVector2D NewPos = CG::FVector2D();
-		CG::FVector	OutPos = CG::FVector();
-
-		if (Controller->ProjectWorldLocationToScreen(InVec, &NewPos, false))
-		{
-			OutPos.X = NewPos.X;
-			OutPos.Y = NewPos.Y;
-		}
-		else
-		{
-			OutPos.X = 0;
-			OutPos.Y = 0;
-			OutPos.Z = 0;
-		}
-		return OutPos;
-	}
-
-	CG::FVector AimbotPrediction(float bulletVelocity, float bulletGravity, float targetDistance, CG::FVector targetPosition, CG::FVector targetVelocity)
-	{
-		CG::FVector recalculated = targetPosition;
-		float gravity = fabs(bulletGravity);
-		float time = targetDistance / fabs(bulletVelocity);
-		float bulletDrop = gravity * time * time;
-		recalculated.Z += bulletDrop * 120;
-		recalculated.X += time * (targetVelocity.X);
-		recalculated.Y += time * (targetVelocity.Y);
-		recalculated.Z += time * (targetVelocity.Z);
-		return recalculated;
 	}
 
 	CG::FVector2D Randomize(CG::FVector2D vAngles, float HumanSpeed, float HumanScale)
@@ -143,6 +109,38 @@ namespace Aimbot
 		return vAngles;
 	}
 
+	CG::FVector CalcFuturePos(CG::APlayerController* Controller, CG::FVector InVec)
+	{
+		CG::FVector2D NewPos = CG::FVector2D();
+		CG::FVector	OutPos = CG::FVector();
+
+		if (Controller->ProjectWorldLocationToScreen(InVec, &NewPos, false))
+		{
+			OutPos.X = NewPos.X;
+			OutPos.Y = NewPos.Y;
+		}
+		else
+		{
+			OutPos.X = 0;
+			OutPos.Y = 0;
+			OutPos.Z = 0;
+		}
+		return OutPos;
+	}
+
+	CG::FVector AimbotPrediction(float bulletVelocity, float bulletGravity, float targetDistance, CG::FVector targetPosition, CG::FVector targetVelocity)
+	{
+		CG::FVector recalculated = targetPosition;
+		float gravity = fabs(bulletGravity);
+		float time = targetDistance / fabs(bulletVelocity);
+		float bulletDrop = gravity * time * time;
+		recalculated.Z += bulletDrop * 120;
+		recalculated.X += time * (targetVelocity.X);
+		recalculated.Y += time * (targetVelocity.Y);
+		recalculated.Z += time * (targetVelocity.Z);
+		return recalculated;
+	}
+	
 	void AimAtPosV2(int screenwidth, int screenheight, float x, float y, float speed, float humanspeed, float humanscale)
 	{
 		int ScreenCenterX = screenwidth / 2, ScreenCenterY = screenheight / 2;

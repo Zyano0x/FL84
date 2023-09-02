@@ -52,6 +52,8 @@ public:
 		Head = CG::FVector(0.0f, 0.0f, 0.0f);
 		Root = CG::FVector(0.0f, 0.0f, 0.0f);
 
+		AimPos = CG::FVector(0.0f, 0.0f, 0.0f);
+
 		ColorVisisble = ImVec4(0.0f, 0.0f, 0.0f, 0.0f);
 	}
 
@@ -65,6 +67,7 @@ private:
 	ImVec4 ColorVisisble;
 	CG::FVector2D HeadPos, FootPos, ItemPos, VehiclePos;
 	CG::FVector Head, Root;
+	CG::FVector AimPos;
 };
 
 extern XXX ZZZ;

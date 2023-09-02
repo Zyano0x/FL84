@@ -137,6 +137,8 @@ namespace Menu
 				ImGui::Spacing();
 				ImGui::Checkbox(" No Recoil", &Settings[NO_RECOIL].Value.bValue);
 				ImGui::Spacing();
+				ImGui::Checkbox(" Fast Reload", &Settings[FAST_RELOAD].Value.bValue);
+				ImGui::Spacing();
 
 				ImGui::Text("Aim Key");
 				ImGui::SameLine(ImGui::GetCursorPosX() + 150.0f);
@@ -163,15 +165,15 @@ namespace Menu
 				ImGui::SliderFloat(" Smooth", &Settings[AIM_SMOOTH].Value.fValue, 1, 100, "%.f");
 				ImGui::PopItemWidth();
 
-				ImGui::Spacing();
+				/*ImGui::Spacing();
 				ImGui::PushItemWidth(220);
 				ImGui::SliderFloat(" Human Speed", &Settings[HUMAN_SPEED].Value.fValue, 1, 100, "%.f");
-				ImGui::PopItemWidth();
+				ImGui::PopItemWidth();*/
 
-				ImGui::Spacing();
+				/*ImGui::Spacing();
 				ImGui::PushItemWidth(220);
 				ImGui::SliderFloat(" Human Scale", &Settings[HUMAN_SCALE].Value.fValue, 1, 20, "%.f");
-				ImGui::PopItemWidth();
+				ImGui::PopItemWidth();*/
 			}
 
 			ImGui::Spacing();
