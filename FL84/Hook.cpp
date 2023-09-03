@@ -8,14 +8,18 @@ HWND window = 0;
 WNDPROC oWndProc = 0;
 
 tPresent oPresent;
-tGetViewPoint oGetViewPoint;
-tGetPlayerViewPoint oGetPlayerViewPoint;
+tGetViewPoint GetViewPoint;
+tGetPlayerViewPoint GetPlayerViewPoint;
 
 ID3D11Device* pDevice = 0;
 ID3D11DeviceContext* pContext = 0;
 ID3D11RenderTargetView* pRenderTarget = 0;
+
 int32_t ScreenWidth = 0;
 int32_t ScreenHeight = 0;
+
+CG::FVector OriginalLocation(0, 0, 0);
+CG::FRotator OriginalRotation(0, 0, 0);
 
 extern LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 LRESULT __stdcall WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
@@ -86,6 +90,30 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* SwapChain, UINT SyncInterval, UINT F
 	return oPresent(SwapChain, SyncInterval, Flags);
 }
 
+void hkGetViewPoint(CG::ULocalPlayer* LocalPlayer, CG::FMinimalViewInfo* OutViewInfo, CG::EStereoscopicPass StereoPass)
+{
+	GetViewPoint(LocalPlayer, OutViewInfo, StereoPass);
+	
+	if (GetAsyncKeyState(Settings[AIM_KEY].Value.iValue) & 0x80000)
+	{
+		OutViewInfo->Location = OriginalLocation;
+		OutViewInfo->Rotation = OriginalRotation;
+	}
+}
+
+void hkGetPlayerViewPoint(CG::APlayerController* PlayerController, CG::FVector* Location, CG::FRotator* Rotation)
+{
+	GetPlayerViewPoint(PlayerController, Location, Rotation);
+
+	OriginalLocation = *Location;
+	OriginalRotation = *Rotation;
+
+	if (GetAsyncKeyState(Settings[AIM_KEY].Value.iValue) & 0x80000)
+	{
+		
+	}
+}
+
 void Initialize()
 {
 	//AllocConsole();
@@ -111,4 +139,10 @@ void Initialize()
 
 	CreateHook = (decltype(CreateHook))CreateHook_Sig;
 	CreateHook(hkPresent_Sig, (__int64)&hkPresent, (unsigned __int64*)&oPresent, 1);
+
+	//GetViewPoint = reinterpret_cast<tGetViewPoint>(Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 8B C4 48 89 58 ? 48 89 68 ? 56 57 41 56 48 81 EC ? ? ? ? 0F 29 70 ? 0F 29 78 ? 48 8B 05"));
+	//GetPlayerViewPoint = reinterpret_cast<tGetPlayerViewPoint>(Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 89 5C 24 ? 48 89 7C 24 ? 55 41 56 41 57 48 8B EC 48 83 EC ? 48 8B FA"));
+
+	//Hook(GetViewPoint, hkGetViewPoint);
+	//Hook(GetPlayerViewPoint, hkGetPlayerViewPoint);
 }

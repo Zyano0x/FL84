@@ -78,7 +78,7 @@ void InitSettings()
 {
 	Settings[AIM_ENABLED] = AddConfig("Aimbot Settings", "Aimbot_Enabled", false);
 	Settings[AIM_PREDICTION] = AddConfig("Aimbot Settings", "Aimbot_Prediction", true);
-	Settings[AIM_FOV] = AddConfig("Aimbot Settings", "Aimbot_FOV", 150.0f, 10.0f, 250.0f);
+	Settings[AIM_FOV] = AddConfig("Aimbot Settings", "Aimbot_FOV", 15.0f, 1.0f, 100.0f);
 	Settings[AIM_SMOOTH] = AddConfig("Aimbot Settings", "Aimbot_Smooth", 2.0f, 1.0f, 100.0f);
 	Settings[AIM_KEY] = AddConfig("Aimbot Settings", "Aimbot_Key", 1, 0, 166);
 	Settings[AIM_SELECT_BONE] = AddConfig("Aimbot Settings", "Aimbot_Select_Bone", 0, 0, 2);
@@ -119,7 +119,7 @@ void InitSettings()
 	Settings[ESP_VEHICLE] = AddConfig("Esp Settings", "Esp_Vehicle", false);
 
 	Settings[RADAR_ENABLED] = AddConfig("Esp Settings", "Radar_Enabled", false);
-	Settings[RADAR_DISTANCE] = AddConfig("Esp Settings", "Radar_Distance", 300.f, 1.f, 500.f);
+	Settings[RADAR_DISTANCE] = AddConfig("Esp Settings", "Radar_Distance", 300.f, 1.f, 300.f);
 
 	//=============================================================================================================================
 

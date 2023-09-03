@@ -8,7 +8,6 @@
 
 #define STREAM(s) (((std::stringstream&)(std::stringstream() << s)).str())
 
-
 typedef enum
 {
 	SETTING_BOOL,
@@ -35,8 +34,8 @@ typedef enum
 	FAST_RELOAD,
 	IGNORE_KNOCKED,
 	DRAW_FOV,
-	HUMAN_SPEED,
-	HUMAN_SCALE,
+	//HUMAN_SPEED,
+	//HUMAN_SCALE,
 
 	// ESP =======================================================================================================
 

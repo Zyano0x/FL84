@@ -12,6 +12,11 @@ namespace Draw
 		ImGui::GetBackgroundDrawList()->AddCircleFilled(ImVec2(x1, y1), radius, ImGui::GetColorU32(color), radius);
 	}
 
+	void DrawTriangleFilled(float x1, float y1, float x2, float y2, float x3, float y3, ImVec4 color)
+	{
+		ImGui::GetBackgroundDrawList()->AddTriangleFilled(ImVec2(x1, y1), ImVec2(x2, y2), ImVec2(x3, y3), ImGui::GetColorU32(color));
+	}
+
 	void DrawBox(float x, float y, float w, float h, bool filled, ImVec4 color)
 	{
 		if (filled)

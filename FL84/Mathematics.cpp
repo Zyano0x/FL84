@@ -1,6 +1,5 @@
 #include "pch.h"
 
-
 namespace Math
 {
 	D3DXMATRIX Matrix(CG::FRotator Rotation, CG::FRotator Origin)

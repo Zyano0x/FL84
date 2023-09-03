@@ -15,7 +15,8 @@
 #include <sstream>
 #include <iomanip>
 #include <cmath>
-#include <dxgi.h>
+#include <array>
+#include <dxgi.h>	
 #include <d3d11.h>
 #include <d3dx10math.h>
 #include <detours.h>

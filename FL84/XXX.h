@@ -1,7 +1,8 @@
 #pragma once
 
 #define M_PI 3.14159265358979323846
-#define DEG2RAD(x) x * (M_PI/180.0f)
+#define RAD2DEG(x) (x * (180.f / M_PI))
+#define DEG2RAD(x) (x * (M_PI / 180.0f))
 #define ImVec4Copy(i,v)	(v.x = i.x, v.y = i.y, v.z = i.z, v.w = i.w)
 
 enum BONES

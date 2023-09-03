@@ -264,6 +264,9 @@ void XXX::Unknown()
 
 		if (Actor->IsA(CG::ASolarItemActor::StaticClass()) || Actor->IsA(CG::ASolarGroundPreviewActor::StaticClass()))
 		{
+			if (!Settings[ESP_LOOT_ENABLED].Value.bValue)
+				continue;
+
 			CG::ASolarItemActor* Item = reinterpret_cast<CG::ASolarItemActor*>(Actor);
 
 			CG::FVector ItemLocation = Item->K2_GetActorLocation();
@@ -310,9 +313,6 @@ void XXX::Unknown()
 			CG::FVector2D ItemPos;
 
 			PlayerController->ProjectWorldLocationToScreen(ItemLocation, &ItemPos, false);
-
-			if (!Settings[ESP_LOOT_ENABLED].Value.bValue)
-				continue;
 
 			if (ItemType == CG::EItemType::WEAPON)
 			{
@@ -403,6 +403,9 @@ void XXX::Unknown()
 
 		if (Actor->IsA(CG::ASolarVehiclePawn::StaticClass()))
 		{
+			if (!Settings[ESP_VEHICLE].Value.bValue)
+				continue;
+
 			CG::ASolarVehiclePawn* Vehicle = reinterpret_cast<CG::ASolarVehiclePawn*>(Actor);
 
 			CG::FVector VehicleLocation = Vehicle->K2_GetActorLocation();
@@ -413,16 +416,13 @@ void XXX::Unknown()
 
 			std::string VehicleName = Engine::GetVehicleName(Vehicle->Name.GetName());
 
-			if (Settings[ESP_VEHICLE].Value.bValue)
-			{
-				ImVec4 HPColor = ImVec4();
+			ImVec4 HPColor = ImVec4();
 
-				if (Vehicle->GetCurrentHealth() > 0)
-					HPColor = ImVec4(.90f, .90f, .90f, 1.f);
+			if (Vehicle->GetCurrentHealth() > 0)
+				HPColor = ImVec4(.90f, .90f, .90f, 1.f);
 
-				Draw::HorizontalHealthBar(VehiclePos.X - 60, VehiclePos.Y, 100, 10, (int)Vehicle->GetCurrentHealth(), (int)Vehicle->GetMaxHealth(), HPColor);
-				Draw::DrawString(std::string(VehicleName).append(" [").append(std::to_string(VehicleDistance)).append(" M]"), VehiclePos.X, VehiclePos.Y + 10, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
-			}
+			Draw::HorizontalHealthBar(VehiclePos.X - 60, VehiclePos.Y, 100, 10, (int)Vehicle->GetCurrentHealth(), (int)Vehicle->GetMaxHealth(), HPColor);
+			Draw::DrawString(std::string(VehicleName).append(" [").append(std::to_string(VehicleDistance)).append(" M]"), VehiclePos.X, VehiclePos.Y + 10, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 		}
 	}
 }
@@ -631,7 +631,6 @@ void XXX::Aimbot()
 
 				if (GetAsyncKeyState(Settings[AIM_KEY].Value.iValue) & 0x80000)
 				{
-
 					if (Settings[AIM_PREDICTION].Value.bValue)
 					{
 						CG::ASolarPlayerWeapon* CachedCurrentWeapon = LocalCharacter->CachedCurrentWeapon;
@@ -659,6 +658,7 @@ void XXX::Aimbot()
 
 						//CG::FVector TargetBone = Aimbot::CalcFuturePos(PlayerController, Hitbox);
 						//Aimbot::AimAtPosV2(ScreenWidth, ScreenHeight, TargetBone.X, TargetBone.Y, Settings[AIM_SMOOTH].Value.fValue, Settings[HUMAN_SPEED].Value.fValue, Settings[HUMAN_SCALE].Value.fValue);
+
 						CG::FRotator TargetRotation = Aimbot::CalcAngle(LocalLocation, AimPrediction);
 						TargetRotation.Roll = 0;
 						TargetRotation.Clamp();
@@ -682,69 +682,72 @@ void XXX::Radar()
 	if (!Settings[RADAR_ENABLED].Value.bValue)
 		return;
 
-	ImVec2 size = ImGui::GetContentRegionAvail();
-
-	float RadarCenterX = ScreenWidth / 2.0f;
-	float RadarCenterY = ScreenHeight - size.y / 4.0f;
-
-	float radius = 80.0f;
-	int segments = 64; // Increase the number of segments for a smoother circle
-
-	// Draw a static circle with a slightly transparent background
-	ImGui::GetBackgroundDrawList()->AddCircleFilled(ImVec2(RadarCenterX, RadarCenterY), radius, IM_COL32(0, 0, 0, 190), segments);
-
-	// Draw a vertical line in the middle
-	ImGui::GetBackgroundDrawList()->AddLine(ImVec2(RadarCenterX, RadarCenterY) + ImVec2(0, -radius), ImVec2(RadarCenterX, RadarCenterY) + ImVec2(0, radius), IM_COL32(150, 150, 150, 200), 1.0f);
-
-	// Draw a horizontal line in the middle
-	ImGui::GetBackgroundDrawList()->AddLine(ImVec2(RadarCenterX, RadarCenterY) + ImVec2(-radius, 0), ImVec2(RadarCenterX, RadarCenterY) + ImVec2(radius, 0), IM_COL32(150, 150, 150, 200), 1.0f);
-
-	// Draw projection lines on the upper-right and upper-left
-	ImVec2 upperRight = ImVec2(RadarCenterX + radius * cosf(-IM_PI / 4.0f), RadarCenterY + radius * sinf(-IM_PI / 4.0f));
-	ImVec2 upperLeft = ImVec2(RadarCenterX + radius * cosf(-3.0f * IM_PI / 4.0f), RadarCenterY + radius * sinf(-3.0f * IM_PI / 4.0f));
-
-	ImGui::GetBackgroundDrawList()->AddLine(ImVec2(RadarCenterX, RadarCenterY), upperRight, IM_COL32(150, 150, 150, 200), 1.0f);
-	ImGui::GetBackgroundDrawList()->AddLine(ImVec2(RadarCenterX, RadarCenterY), upperLeft, IM_COL32(150, 150, 150, 200), 1.0f);
-
-	CG::UWorld* World = *CG::UWorld::GWorld;
-	if (!World)
-		return;
-
-	CG::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
-	if (!LocalPlayer)
-		return;
-
-	CG::APlayerController* PlayerController = LocalPlayer->PlayerController;
-	if (!PlayerController)
-		return;
-
-	CG::APlayerCameraManager* CameraManager = PlayerController->PlayerCameraManager;
-	if (!CameraManager)
-		return;
-
-	CG::TArray<CG::AActor*> Actors = *(CG::TArray<CG::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
-	for (int i = 0; i < Actors.Count(); i++)
+	ImGui::SetNextWindowSize(ImVec2(161.0f, 161.0f), ImGuiCond_Appearing);
+	ImGui::PushStyleColor(ImGuiCol_WindowBg, ImVec4(0.0f, 0.0f, 0.0f, 0.35f));
+	ImGui::Begin("Radar", &Settings[RADAR_ENABLED].Value.bValue, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoTitleBar);   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked)
 	{
-		CG::AActor* Actor = Actors[i];
+		ImVec2 windowSize = ImGui::GetContentRegionAvail();
+		ImVec2 windowPos = ImGui::GetCursorScreenPos();
+		float RadarCenterX = windowPos.x + (windowSize.x / 2);
+		float RadarCenterY = windowPos.y + (windowSize.y / 2);
 
-		if (!Actor)
-			continue;
+		//ImVec2 windowPos = ImGui::GetWindowPos();
+		//ImVec2 windowSize = ImGui::GetWindowSize();
 
-		if (Actor->IsA(CG::ASolarCharacter::StaticClass()))
+		ImDrawList* draw_list = ImGui::GetWindowDrawList();
+		if (draw_list != nullptr)
 		{
-			CG::ASolarCharacter* Enemy = reinterpret_cast<CG::ASolarCharacter*>(Actor);
+			draw_list->AddLine(
+				ImVec2(windowPos.x + (windowSize.x / 2), windowPos.y),
+				ImVec2(windowPos.x + (windowSize.x / 2), windowPos.y + windowSize.y), IM_COL32(255, 255, 255, 255), 1.0f);
 
-			if (Enemy->InSameTeamWithFirstPlayerController())
-				continue;
+			draw_list->AddLine(
+				ImVec2(windowPos.x, windowPos.y + (windowSize.y / 2)),
+				ImVec2(windowPos.x + windowSize.x, windowPos.y + (windowSize.y / 2)), IM_COL32(255, 255, 255, 255), 1.0f);
 
-			float Distance = CameraManager->GetCameraLocation().Distance(Enemy->K2_GetActorLocation()) / 100.f;
+			CG::UWorld* World = *CG::UWorld::GWorld;
+			if (!World)
+				return;
 
-			CG::FVector2D Position = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), CG::FVector2D((int)RadarCenterX - 85, (int)RadarCenterY - 85), CG::FVector2D(radius * 2, radius * 2));
+			CG::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
+			if (!LocalPlayer)
+				return;
 
-			if (Distance >= 0.f && Distance < Settings[RADAR_DISTANCE].Value.fValue)
+			CG::APlayerController* PlayerController = LocalPlayer->PlayerController;
+			if (!PlayerController)
+				return;
+
+			CG::APlayerCameraManager* CameraManager = PlayerController->PlayerCameraManager;
+			if (!CameraManager)
+				return;
+
+			CG::TArray<CG::AActor*> Actors = *(CG::TArray<CG::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
+			for (int i = 0; i < Actors.Count(); i++)
 			{
-				Draw::DrawCircleFilled(Position.X, Position.Y, 4, ImVec4(1.0f, 0.874f, 0.0f, 1.0f));
+				CG::AActor* Actor = Actors[i];
+
+				if (!Actor)
+					continue;
+
+				if (Actor->IsA(CG::ASolarCharacter::StaticClass()))
+				{
+					CG::ASolarCharacter* Enemy = reinterpret_cast<CG::ASolarCharacter*>(Actor);
+
+					if (Enemy->InSameTeamWithFirstPlayerController())
+						continue;
+
+					float Distance = CameraManager->GetCameraLocation().Distance(Enemy->K2_GetActorLocation()) / 100.f;
+
+					CG::FVector2D Position = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), CG::FVector2D(windowPos.x, windowPos.y), CG::FVector2D(windowSize.x, windowSize.y));
+
+					if (Distance >= 0.f && Distance < Settings[RADAR_DISTANCE].Value.fValue)
+					{
+						Draw::DrawCircleFilled(Position.X, Position.Y, 4, ImVec4(1.0f, 0.874f, 0.0f, 1.0f));
+					}
+				}
 			}
 		}
 	}
+	ImGui::PopStyleColor();
+	ImGui::End();
 }

@@ -125,7 +125,7 @@ namespace Menu
 			{
 				ImGui::Spacing();
 				ImGui::Spacing();
-				ImGui::Checkbox(" Enable", &Settings[AIM_ENABLED].Value.bValue);
+				ImGui::Checkbox(" Enabled", &Settings[AIM_ENABLED].Value.bValue);
 				ImGui::Spacing();
 				ImGui::Spacing();
 
@@ -152,7 +152,7 @@ namespace Menu
 
 				ImGui::Spacing();
 				ImGui::PushItemWidth(220);
-				ImGui::SliderFloat(" Aimbot FOV", &Settings[AIM_FOV].Value.fValue, 10, 250, "%.f");
+				ImGui::SliderFloat(" Aimbot FOV", &Settings[AIM_FOV].Value.fValue, 1, 100, "%.f");
 				ImGui::PopItemWidth();
 
 				/*ImGui::Spacing();
@@ -184,7 +184,7 @@ namespace Menu
 				{
 					ImGui::Spacing();
 					ImGui::Spacing();
-					ImGui::Checkbox(" Enable", &Settings[ESP_ENABLED].Value.bValue);
+					ImGui::Checkbox(" Enabled", &Settings[ESP_ENABLED].Value.bValue);
 					ImGui::Spacing();
 					ImGui::Spacing();
 

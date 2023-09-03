@@ -11,9 +11,9 @@ typedef HRESULT(__stdcall* tPresent) (IDXGISwapChain* pSwapChain, UINT SyncInter
 extern tPresent oPresent;
 
 typedef void(*tGetViewPoint)(CG::ULocalPlayer*, CG::FMinimalViewInfo*, CG::EStereoscopicPass);
-extern tGetViewPoint oGetViewPoint;
+extern tGetViewPoint GetViewPoint;
 
 typedef void(*tGetPlayerViewPoint)(CG::APlayerController*, CG::FVector*, CG::FRotator*);
-extern tGetPlayerViewPoint oGetPlayerViewPoint;
+extern tGetPlayerViewPoint GetPlayerViewPoint;
 
 extern void Initialize();
