@@ -208,8 +208,8 @@ void XXX::Unknown()
 						int Bone1 = Connection.first;
 						int Bone2 = Connection.second;
 
-						CG::FVector BoneLoc1 = /*Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(Bone1))*/ Engine::GetBonePosition(Enemy->Mesh, Bone1);
-						CG::FVector BoneLoc2 = /*Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(Bone2))*/ Engine::GetBonePosition(Enemy->Mesh, Bone2);
+						CG::FVector BoneLoc1 = /*Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(Bone1))*/ Enemy->Mesh->GetBoneWorldPos(Bone1);
+						CG::FVector BoneLoc2 = /*Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(Bone2))*/ Enemy->Mesh->GetBoneWorldPos(Bone2);
 
 						if (PlayerController->ProjectWorldLocationToScreen(BoneLoc1, &BoneScreen, false)
 							&& PlayerController->ProjectWorldLocationToScreen(BoneLoc2, &PrevBoneScreen, false))

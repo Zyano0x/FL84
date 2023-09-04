@@ -133,8 +133,8 @@ namespace Aimbot
 		CG::FVector recalculated = targetPosition;
 		float gravity = fabs(bulletGravity);
 		float time = targetDistance / fabs(bulletVelocity);
-		float bulletDrop = (gravity / 250) * time * time;
-		recalculated.Z += bulletDrop * 120;
+		float bulletDrop = gravity * time * time;
+		recalculated.Z += bulletDrop;
 		recalculated.X += time * (targetVelocity.X);
 		recalculated.Y += time * (targetVelocity.Y);
 		recalculated.Z += time * (targetVelocity.Z);
