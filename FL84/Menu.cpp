@@ -129,8 +129,6 @@ namespace Menu
 				ImGui::Spacing();
 				ImGui::Spacing();
 
-				ImGui::Checkbox(" Aim Prediction", &Settings[AIM_PREDICTION].Value.bValue);
-				ImGui::Spacing();
 				ImGui::Checkbox(" Ignore Knocked", &Settings[IGNORE_KNOCKED].Value.bValue);
 				ImGui::Spacing();
 				ImGui::Checkbox(" Draw FOV", &Settings[DRAW_FOV].Value.bValue);
@@ -145,24 +143,25 @@ namespace Menu
 				Menu::Hotkey(&Settings[AIM_KEY].Value.iValue);
 
 				ImGui::Spacing();
-				static const char* SelectedBone[] = { " HEAD", " NECK", " NEAREST BONE"};
+				static const char* AimMode[] = { " Aimbot FOV", " Silent Aim"};
+				ImGui::PushItemWidth(220);
+				ImGui::Combo(" Aim Mode", &Settings[AIM_MODE].Value.iValue, AimMode, IM_ARRAYSIZE(AimMode));
+				ImGui::PopItemWidth();
+
+				ImGui::Spacing();
+				static const char* SelectedBone[] = { " HEAD", " NECK", " NEAREST BONE" };
 				ImGui::PushItemWidth(220);
 				ImGui::Combo(" Select Bone", &Settings[AIM_SELECT_BONE].Value.iValue, SelectedBone, IM_ARRAYSIZE(SelectedBone));
 				ImGui::PopItemWidth();
 
 				ImGui::Spacing();
 				ImGui::PushItemWidth(220);
-				ImGui::SliderFloat(" Aimbot FOV", &Settings[AIM_FOV].Value.fValue, 1, 100, "%.f");
+				ImGui::SliderFloat(" Aimbot FOV", &Settings[AIM_FOV].Value.fValue, 1, 150, "%.f");
 				ImGui::PopItemWidth();
-
-				/*ImGui::Spacing();
-				ImGui::PushItemWidth(220);
-				ImGui::SliderFloat(" FOV", &Settings[FOV].Value.fValue, 1.f, 60.f, "%.f");
-				ImGui::PopItemWidth();*/
 
 				ImGui::Spacing();
 				ImGui::PushItemWidth(220);
-				ImGui::SliderFloat(" Smooth", &Settings[AIM_SMOOTH].Value.fValue, 1, 100, "%.f");
+				ImGui::SliderFloat(" Smooth", &Settings[AIM_SMOOTH].Value.fValue, 1, 10, "%.f");
 				ImGui::PopItemWidth();
 
 				/*ImGui::Spacing();
@@ -211,7 +210,7 @@ namespace Menu
 					ImGui::Checkbox(" Vehicle", &Settings[ESP_VEHICLE].Value.bValue);
 					ImGui::Spacing();
 					ImGui::Checkbox(" Radar", &Settings[RADAR_ENABLED].Value.bValue);
-					
+
 					ImGui::Spacing();
 					ImGui::PushItemWidth(220);
 					ImGui::SliderFloat(" Radar Distance", &Settings[RADAR_DISTANCE].Value.fValue, 1, 500, "%.f");
@@ -228,7 +227,7 @@ namespace Menu
 					ImGui::PushItemWidth(220);
 					ImGui::Combo(" Box Style", &Settings[ESP_BOX_TYPE].Value.iValue, BoxType, IM_ARRAYSIZE(BoxType));
 					ImGui::PopItemWidth();
-					
+
 					ImGui::TreePop();
 				}
 
@@ -294,7 +293,16 @@ namespace Menu
 			}
 
 			ImGui::Spacing();
-			if (ImGui::CollapsingHeader(ICON_FA_SLIDERS_H " Misc"))
+			if (ImGui::CollapsingHeader(ICON_FA_SLIDERS " Miscs"))
+			{
+				ImGui::Spacing();
+				ImGui::Spacing();
+				ImGui::Checkbox(" Kick Spectator", &Settings[STOP_SPECTATOR].Value.bValue);
+				ImGui::Spacing();
+			}
+
+			ImGui::Spacing();
+			if (ImGui::CollapsingHeader(ICON_FA_GEAR " Config"))
 			{
 				ImGui::Spacing();
 				ImGui::Spacing();

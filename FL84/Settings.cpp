@@ -78,16 +78,18 @@ void InitSettings()
 {
 	Settings[AIM_ENABLED] = AddConfig("Aimbot Settings", "Aimbot_Enabled", false);
 	Settings[AIM_PREDICTION] = AddConfig("Aimbot Settings", "Aimbot_Prediction", true);
-	Settings[AIM_FOV] = AddConfig("Aimbot Settings", "Aimbot_FOV", 15.0f, 1.0f, 100.0f);
-	Settings[AIM_SMOOTH] = AddConfig("Aimbot Settings", "Aimbot_Smooth", 2.0f, 1.0f, 100.0f);
+	Settings[AIM_FOV] = AddConfig("Aimbot Settings", "Aimbot_FOV", 15.0f, 1.0f, 150.0f);
+	Settings[AIM_SMOOTH] = AddConfig("Aimbot Settings", "Aimbot_Smooth", 2.0f, 1.0f, 10.0f);
 	Settings[AIM_KEY] = AddConfig("Aimbot Settings", "Aimbot_Key", 1, 0, 166);
+	Settings[AIM_MODE] = AddConfig("Aimbot Settings", "Aimbot_Mode", 1, 0, 1);
 	Settings[AIM_SELECT_BONE] = AddConfig("Aimbot Settings", "Aimbot_Select_Bone", 0, 0, 2);
 	Settings[IGNORE_KNOCKED] = AddConfig("Aimbot Settings", "Aimbot_Ignore_Knocked", true);
-	//Settings[HUMAN_SPEED] = AddConfig("Aimbot Settings", "Aimbot_Human_Speed", 10.0f, 1.0f, 100.f);
-	//Settings[HUMAN_SCALE] = AddConfig("Aimbot Settings", "Aimbot_Human_Scale", 1.0f, 1.0f, 20.f);
+	Settings[HUMAN_SPEED] = AddConfig("Aimbot Settings", "Aimbot_Human_Speed", 10.0f, 1.0f, 100.f);
+	Settings[HUMAN_SCALE] = AddConfig("Aimbot Settings", "Aimbot_Human_Scale", 1.0f, 1.0f, 20.f);
+	Settings[IS_AIMING] = AddConfig("Aimbot Settings", "Aimbot_Is_Aiming", false);
 	Settings[DRAW_FOV] = AddConfig("Aimbot Settings", "Aimbot_DrawFOV", false);
-	Settings[NO_RECOIL] = AddConfig("Aimbot Settings", "Aimbot_NoRecoil", false);
-	Settings[FAST_RELOAD] = AddConfig("Aimbot Settings", "Aimbot_FastReload", false);
+	Settings[NO_RECOIL] = AddConfig("Aimbot Settings", "NoRecoil", false);
+	Settings[FAST_RELOAD] = AddConfig("Aimbot Settings", "FastReload", false);
 
 	//=============================================================================================================================
 
@@ -122,13 +124,16 @@ void InitSettings()
 	Settings[RADAR_DISTANCE] = AddConfig("Esp Settings", "Radar_Distance", 300.f, 1.f, 300.f);
 
 	//=============================================================================================================================
+	
+	Settings[STOP_SPECTATOR] = AddConfig("Misc Settings", "Misc_Stop_Spectator", false);
+
+	//=============================================================================================================================
 
 	Settings[COLOR_TEAM] = AddConfig("Color Settings", "Color_Team", ImVec4(0.0f, 0.909f, 0.988f, 1.0f));
 	Settings[COLOR_ENEMY] = AddConfig("Color Settings", "Color_Enemy", ImVec4(1.0f, 0.949f, 0.0f, 1.0f));
 	Settings[COLOR_ENEMY_VISIBLE] = AddConfig("Color Settings", "Color_Enemy_Visible", ImVec4(0.725f, 0.0f, 0.764f, 1.0f));
 	Settings[COLOR_LOOT_WEAPON] = AddConfig("Color Settings", "Color_Loot_Weapon", ImVec4(0.0f, 0.764f, 1.0f, 1.0f));
 	Settings[COLOR_LOOT_AMMO] = AddConfig("Color Settings", "Color_Loot_Ammo", ImVec4(0.474f, 0.709f, 0.709f, 1.0f));
-	Settings[COLOR_LOOT_ATTACHMENTS] = AddConfig("Color Settings", "Color_Loot_Attachments", ImVec4(0.843f, 0.176f, 0.427f, 1.0f));
 	Settings[COLOR_LOOT_HEALTH] = AddConfig("Color Settings", "Color_Loot_Health_Items", ImVec4(0.839f, 0.682f, 0.003f, 1.0f));
 	Settings[COLOR_TREASUREBOX] = AddConfig("Color Settings", "Color_Treasure_Box", ImVec4(0.85f, 0.313f, 0.188f, 1.0f));
 	Settings[COLOR_AIRDROP] = AddConfig("Color Settings", "Color_Airdrop_Box", ImVec4(0.258f, 0.960f, 0.784f, 1.0f));

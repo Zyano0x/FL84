@@ -33,9 +33,10 @@ typedef enum
 	NO_RECOIL,
 	FAST_RELOAD,
 	IGNORE_KNOCKED,
+	IS_AIMING,
 	DRAW_FOV,
-	//HUMAN_SPEED,
-	//HUMAN_SCALE,
+	HUMAN_SPEED,
+	HUMAN_SCALE,
 
 	// ESP =======================================================================================================
 
@@ -74,6 +75,10 @@ typedef enum
 	RADAR_ENABLED,
 	RADAR_DISTANCE,
 
+	// Misc =======================================================================================================
+
+	STOP_SPECTATOR,
+
 	// Color =======================================================================================================
 
 	COLOR_TEAM,
@@ -82,7 +87,6 @@ typedef enum
 
 	COLOR_LOOT_WEAPON,
 	COLOR_LOOT_AMMO,
-	COLOR_LOOT_ATTACHMENTS,
 	COLOR_LOOT_HEALTH,
 	COLOR_TREASUREBOX,
 

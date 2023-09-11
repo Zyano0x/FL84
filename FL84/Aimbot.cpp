@@ -2,13 +2,10 @@
 
 namespace Aimbot
 {
-	float Normalize(float angle)
-	{
-		float out = fmodf(fmodf(angle, 360.f) + 360.f, 360.f);
-		if (out > 180.f)
-			out -= 360.f;
-		return out;
-	}
+	float ClosestDistance = InitCenterDistance;
+	CG::FVector2D LockPosition = CG::FVector2D();
+	CG::FVector TargetPosition = CG::FVector();
+	CG::FRotator TargetRotation = CG::FRotator();
 
 	float SmoothOutYaw(float targetYaw, float currentYaw, float smoothness)
 	{
@@ -28,28 +25,12 @@ namespace Aimbot
 		return currentYaw + (targetYaw - currentYaw) / smoothness;
 	}
 
-	double GetCrossDistance(double x1, double y1, double x2, double y2)
+	float Normalize(float angle)
 	{
-		return sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
-	}
-
-	void SetRotation(CG::APlayerCameraManager* PlayerCameraManager, CG::APlayerController* PlayerController, CG::FRotator TargetRotation, bool bWithRotationInput, float Smooth)
-	{
-		auto v11 = reinterpret_cast<uint64_t>(PlayerController) + 0x6A0;
-		auto v10 = reinterpret_cast<uint64_t>(PlayerCameraManager) + 0x299C;
-
-		if (!bWithRotationInput)
-			v11 = v10;
-
-		CG::FRotator currentRotation = *(CG::FRotator*)(v11);
-
-		CG::FRotator smoothRotation;
-		smoothRotation.Pitch = currentRotation.Pitch + (TargetRotation.Pitch - currentRotation.Pitch) / Smooth;
-		//smoothRotation.Yaw = currentRotation.Yaw + (TargetRotation.Yaw - currentRotation.Yaw) / Smooth;
-		smoothRotation.Yaw = SmoothOutYaw(TargetRotation.Yaw, currentRotation.Yaw, Smooth);
-		smoothRotation.Roll = currentRotation.Roll + (TargetRotation.Roll - currentRotation.Roll) / Smooth;
-
-		*(CG::FRotator*)(v11) = CG::FRotator(Normalize(smoothRotation.Pitch), Normalize(smoothRotation.Yaw), Normalize(smoothRotation.Roll));
+		float out = fmodf(fmodf(angle, 360.f) + 360.f, 360.f);
+		if (out > 180.f)
+			out -= 360.f;
+		return out;
 	}
 
 	CG::FRotator CalcAngle(CG::FVector& src, CG::FVector& dst)
@@ -57,10 +38,25 @@ namespace Aimbot
 		CG::FVector delta(dst - src);
 
 		float distance = sqrtf(delta.X * delta.X + delta.Y * delta.Y + delta.Z * delta.Z);
+		float pitch = -((acosf((delta.Z / distance)) * 180.f / M_PI) - 90.f);
+		float yaw = atan2f(delta.Y, delta.X) * (180.f / M_PI);
+		float roll = 0.0f;
+
+		return CG::FRotator(pitch, yaw, roll);
+	}
+
+	CG::FRotator CalcAngle(CG::FVector& src, CG::FVector& dst, CG::FRotator& oldRotation, float& smoothing)
+	{
+		CG::FVector delta(dst - src);
+
+		float distance = sqrtf(delta.X * delta.X + delta.Y * delta.Y + delta.Z * delta.Z);
 		float pitch = (-((acosf((delta.Z / distance)) * 180.f / M_PI) - 90.f));
 		float yaw = atan2f(delta.Y, delta.X) * (180.f / M_PI);
 
-		return CG::FRotator(pitch, yaw, 0.0f);
+		pitch = (pitch - oldRotation.Pitch) / smoothing + oldRotation.Pitch;
+		yaw = (yaw - oldRotation.Yaw) / smoothing + oldRotation.Yaw;
+
+		return CG::FRotator(Normalize(pitch), Normalize(yaw), 0.0f).Clamp();
 	}
 
 	CG::FVector2D Randomize(CG::FVector2D vAngles, float HumanSpeed, float HumanScale)
@@ -109,25 +105,6 @@ namespace Aimbot
 		return vAngles;
 	}
 
-	CG::FVector CalcFuturePos(CG::APlayerController* Controller, CG::FVector InVec)
-	{
-		CG::FVector2D NewPos = CG::FVector2D();
-		CG::FVector	OutPos = CG::FVector();
-
-		if (Controller->ProjectWorldLocationToScreen(InVec, &NewPos, false))
-		{
-			OutPos.X = NewPos.X;
-			OutPos.Y = NewPos.Y;
-		}
-		else
-		{
-			OutPos.X = 0;
-			OutPos.Y = 0;
-			OutPos.Z = 0;
-		}
-		return OutPos;
-	}
-
 	CG::FVector AimbotPrediction(float bulletVelocity, float bulletGravity, float targetDistance, CG::FVector targetPosition, CG::FVector targetVelocity)
 	{
 		CG::FVector recalculated = targetPosition;
@@ -140,55 +117,105 @@ namespace Aimbot
 		recalculated.Z += time * (targetVelocity.Z);
 		return recalculated;
 	}
-	
-	void AimAtPosV2(int screenwidth, int screenheight, float x, float y, float speed, float humanspeed, float humanscale)
+
+	void ResetLock()
 	{
-		int ScreenCenterX = screenwidth / 2, ScreenCenterY = screenheight / 2;
-		float AimSpeed = (speed) * 2.f;
+		ClosestDistance = InitCenterDistance;
+	}
+
+	void LockOnTarget()
+	{
+		int ScreenCenterX = ScreenWidth / 2;
+		int ScreenCenterY = ScreenHeight / 2;
+		float AimSpeed = (Settings[AIM_SMOOTH].Value.fValue) * 2.f;
 		float TargetX = 0;
 		float TargetY = 0;
 
-		//X Axis
-		if (x != 0)
+		if (Engine::IsKeyDown(Settings[AIM_KEY].Value.iValue) && Settings[AIM_MODE].Value.iValue == 0)
 		{
-			if (x > ScreenCenterX)
+			if (ClosestDistance != InitCenterDistance)
 			{
-				TargetX = -(ScreenCenterX - x);
-				TargetX /= AimSpeed;
-				if (TargetX + ScreenCenterX > ScreenCenterX * 2) TargetX = 0;
-			}
+				// X Axis
+				if (LockPosition.X != 0)
+				{
+					if (LockPosition.X > ScreenCenterX)
+					{
+						TargetX = -(ScreenCenterX - LockPosition.X);
+						TargetX /= AimSpeed;
+						if (TargetX + ScreenCenterX > ScreenCenterX * 2)
+							TargetX = 0;
+					}
 
-			if (x < ScreenCenterX)
-			{
-				TargetX = x - ScreenCenterX;
-				TargetX /= AimSpeed;
-				if (TargetX + ScreenCenterX < 0) TargetX = 0;
+					if (LockPosition.X < ScreenCenterX)
+					{
+						TargetX = LockPosition.X - ScreenCenterX;
+						TargetX /= AimSpeed;
+						if (TargetX + ScreenCenterX < 0)
+							TargetX = 0;
+					}
+				}
+
+				// Y Axis
+				if (LockPosition.Y != 0)
+				{
+					if (LockPosition.Y > ScreenCenterY)
+					{
+						TargetY = -(ScreenCenterY - LockPosition.Y);
+						TargetY /= AimSpeed;
+						if (TargetY + ScreenCenterY > ScreenCenterY * 2)
+							TargetY = 0;
+					}
+
+					if (LockPosition.Y < ScreenCenterY)
+					{
+						TargetY = LockPosition.Y - ScreenCenterY;
+						TargetY /= AimSpeed;
+						if (TargetY + ScreenCenterY < 0)
+							TargetY = 0;
+					}
+				}
+
+				CG::FVector2D GetTarget = CG::FVector2D(TargetX, TargetY);
+				CG::FVector2D OutTarget = Randomize(GetTarget, Settings[HUMAN_SPEED].Value.fValue, Settings[HUMAN_SCALE].Value.fValue);
+
+				if (TargetX != 0 && TargetY != 0)
+					mouse_event(MOUSEEVENTF_MOVE, static_cast<DWORD>(OutTarget.X), static_cast<DWORD>(OutTarget.Y), NULL, NULL);
 			}
 		}
-
-		//Y Axis
-		if (y != 0)
+		else
 		{
-			if (y > ScreenCenterY)
-			{
-				TargetY = -(ScreenCenterY - y);
-				TargetY /= AimSpeed;
-				if (TargetY + ScreenCenterY > ScreenCenterY * 2) TargetY = 0;
-			}
+			Settings[IS_AIMING].Value.bValue = false;
+		}
+	}
 
-			if (y < ScreenCenterY)
+	void SetRotation(CG::APlayerCameraManager* PlayerCameraManager, CG::APlayerController* PlayerController, CG::FRotator TargetRotation, bool bWithRotationInput, float Smooth)
+	{
+		auto v11 = reinterpret_cast<uint64_t>(PlayerController) + 0x6A0;
+		auto v10 = reinterpret_cast<uint64_t>(PlayerCameraManager) + 0x299C;
+
+		if (!bWithRotationInput)
+			v11 = v10;
+
+		//CG::FRotator currentRotation = *(CG::FRotator*)(v11);
+
+		//CG::FRotator smoothRotation;
+		//smoothRotation.Pitch = currentRotation.Pitch + (TargetRotation.Pitch - currentRotation.Pitch) / Smooth;
+		////smoothRotation.Yaw = currentRotation.Yaw + (TargetRotation.Yaw - currentRotation.Yaw) / Smooth;
+		//smoothRotation.Yaw = SmoothOutYaw(TargetRotation.Yaw, currentRotation.Yaw, Smooth);
+		//smoothRotation.Roll = currentRotation.Roll + (TargetRotation.Roll - currentRotation.Roll) / Smooth;
+
+		//smoothRotation.Clamp();
+
+		if (Engine::IsKeyDown(Settings[AIM_KEY].Value.iValue) && Settings[AIM_MODE].Value.iValue == 0 && Settings[AIM_ENABLED].Value.bValue)
+		{
+			if (ClosestDistance != InitCenterDistance)
 			{
-				TargetY = y - ScreenCenterY;
-				TargetY /= AimSpeed;
-				if (TargetY + ScreenCenterY < 0) TargetY = 0;
+				*(CG::FRotator*)(v11) =/* CG::FRotator(smoothRotation.Pitch, smoothRotation.Yaw, smoothRotation.Roll)*/ TargetRotation;
 			}
 		}
-
-		CG::FVector2D GetTarget = CG::FVector2D(TargetX, TargetY);
-
-		CG::FVector2D OutTarget = Randomize(GetTarget, humanspeed, humanscale);
-
-		//mouse_move(OutTarget.X, OutTarget.Y);
-		mouse_event(0x0001, (DWORD)(OutTarget.X), (DWORD)(OutTarget.Y), NULL, NULL);
+		else
+		{
+			Settings[IS_AIMING].Value.bValue = false;
+		}
 	}
 }

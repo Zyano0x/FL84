@@ -2,13 +2,19 @@
 
 namespace Aimbot
 {
-	float Normalize(float angle);
+	constexpr float InitCenterDistance = 10000.0f;
+	extern float ClosestDistance;
+	extern CG::FVector2D LockPosition;
+	extern CG::FVector TargetPosition;
+	extern CG::FRotator TargetRotation;
+
 	float SmoothOutYaw(float targetYaw, float currentYaw, float smoothness);
-	double GetCrossDistance(double x1, double y1, double x2, double y2);
+	float Normalize(float angle);
 	CG::FRotator CalcAngle(CG::FVector& src, CG::FVector& dst);
-	CG::FVector2D Randomize(CG::FVector2D vAngles, float HumanSpeed, float HumanScale);
-	CG::FVector CalcFuturePos(CG::APlayerController* Controller, CG::FVector InVec);
+	CG::FRotator CalcAngle(CG::FVector& src, CG::FVector& dst, CG::FRotator& oldRotation, float& smoothing);
 	CG::FVector AimbotPrediction(float bulletVelocity, float bulletGravity, float targetDistance, CG::FVector targetPosition, CG::FVector targetVelocity);
-	void AimAtPosV2(int screenwidth, int screenheight, float x, float y, float speed, float humanspeed, float humanscale);
+	CG::FVector2D Randomize(CG::FVector2D vAngles, float HumanSpeed, float HumanScale);
+	void ResetLock();
+	void LockOnTarget();
 	void SetRotation(CG::APlayerCameraManager* PlayerCameraManager, CG::APlayerController* PlayerController, CG::FRotator TargetRotation, bool bWithRotationInput, float Smooth);
 }

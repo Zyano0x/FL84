@@ -1,10 +1,5 @@
 #pragma once
 
-#define M_PI 3.14159265358979323846
-#define RAD2DEG(x) (x * (180.f / M_PI))
-#define DEG2RAD(x) (x * (M_PI / 180.0f))
-#define ImVec4Copy(i,v)	(v.x = i.x, v.y = i.y, v.z = i.z, v.w = i.w)
-
 enum BONES
 {
 	ROOT = 0, BIP001 = 1, PELVIS = 2,
@@ -49,6 +44,7 @@ public:
 		FootPos = CG::FVector2D(0.0f, 0.0f);
 		ItemPos = CG::FVector2D(0.0f, 0.0f);
 		VehiclePos = CG::FVector2D(0.0f, 0.0f);
+		Position = CG::FVector2D(0.0f, 0.0f);
 
 		Head = CG::FVector(0.0f, 0.0f, 0.0f);
 		Root = CG::FVector(0.0f, 0.0f, 0.0f);
@@ -61,12 +57,17 @@ public:
 	void Unknown();
 	void Removal();
 	void Aimbot();
+	void Misc();
 	void Radar();
+	void BypassEAC();
+
+public:
+	CG::APlayerCameraManager* CameraManager;
 
 private:
 	bool IsTeam;
 	ImVec4 ColorVisisble;
-	CG::FVector2D HeadPos, FootPos, ItemPos, VehiclePos;
+	CG::FVector2D HeadPos, FootPos, ItemPos, VehiclePos, Position;
 	CG::FVector Head, Root;
 	CG::FVector AimPos;
 };

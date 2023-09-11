@@ -31,6 +31,9 @@
     <Filter Include="Detours">
       <UniqueIdentifier>{3ab290c3-9508-44f8-ad2e-4ad80b92b5e3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Encryption">
+      <UniqueIdentifier>{c6d44f1c-68aa-48e7-9cae-89a1a7c18dc0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -95,6 +98,9 @@
     </ClInclude>
     <ClInclude Include="SDK.h">
       <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="xorstr.hpp">
+      <Filter>Encryption</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

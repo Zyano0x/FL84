@@ -56,30 +56,66 @@ namespace Engine
 
 	std::string GetVehicleName(std::string oName)
 	{
-		if (oName == "BP_VH_Hover_WL04_C")
-			return "Wasteland HoverCraft";
-		else if (oName == "BP_VH_Hover_9A03_C")
-			return "GunBoat";
-		else if (oName == "BP_VH_Hover_Soroll02_C")
-			return "Hovercar";
-		else if (oName == "BP_VH_Hover_Soroll04_C")
-			return "Air Beast";
-		else if (oName == "BP_VH_Hover_Soroll03_C")
-			return "Hoverbike";
-		else if (oName == "BP_VH_TransTL_WL07_C")
-			return "Blazing Infantry";
-		else if (oName == "BP_SolarVH_Tire_9A04_new_C")
-			return "Mobile Turret";
-		else if (oName == "BP_SolarVH_Tire_WL01_new_C")
-			return "Flamethrower";
-		else if (oName == "VH_Leg_9A02_New_C")
-			return "Single-Poilt Mecha";
-		else if (oName == "BP_VH_Leg_WL03_New_Procedural_C")
-			return "4-Legged-Lizard";
-		else if (oName == "BP_VH_Leg_WL06_New_C")
-			return "War Spider";
+		if (oName == xorstr_("BP_VH_Hover_WL04_C"))
+			return xorstr_("Wasteland HoverCraft");
+		else if (oName == xorstr_("BP_VH_Hover_9A03_C"))
+			return xorstr_("GunBoat");
+		else if (oName == xorstr_("BP_VH_Hover_Soroll02_C"))
+			return xorstr_("Hovercar");
+		else if (oName == xorstr_("BP_VH_Hover_Soroll04_C"))
+			return xorstr_("Air Beast");
+		else if (oName == xorstr_("BP_VH_Hover_Soroll03_C"))
+			return xorstr_("Hoverbike");
+		else if (oName == xorstr_("BP_VH_TransTL_WL07_C"))
+			return xorstr_("Blazing Infantry");
+		else if (oName == xorstr_("BP_SolarVH_Tire_9A04_new_C"))
+			return xorstr_("Mobile Turret");
+		else if (oName == xorstr_("BP_SolarVH_Tire_WL01_new_C"))
+			return xorstr_("Flamethrower");
+		else if (oName == xorstr_("VH_Leg_9A02_New_C"))
+			return xorstr_("Single-Poilt Mecha");
+		else if (oName == xorstr_("BP_VH_Leg_WL03_New_Procedural_C"))
+			return xorstr_("4-Legged-Lizard");
+		else if (oName == xorstr_("BP_VH_Leg_WL06_New_C"))
+			return xorstr_("War Spider");
 		else
-			return "Unknown Vehicle!";
+			return xorstr_("Unknown Vehicle!");
+	}
+
+	std::string GetWeaponType(int WeaponID)
+	{
+		switch (WeaponID)
+		{
+		case 1510201:
+		case 1510207:
+		case 1510208:
+		case 1510219:
+		case 1510210:
+		case 1510216:
+		case 1510222:
+		case 1510223:
+			return xorstr_("[AR]");
+
+		case 1510250:
+		case 1510203:
+		case 1510209:
+		case 1510211:
+		case 1510218:
+			return xorstr_("[SMG]");
+
+		case 1510204:
+		case 1510206:
+		case 1510212:
+			return xorstr_("[SNP]");
+
+		case 1511521:
+		case 1511522:
+			return xorstr_("[SPC]");
+
+		case 1510205:
+		case 1510214:
+			return xorstr_("[SHG]");
+		}
 	}
 
 	typedef CG::FMatrix* (__thiscall* tGetBoneMatrix)(CG::USkeletalMeshComponent* mesh, CG::FMatrix* result, int index);
@@ -144,6 +180,11 @@ namespace Engine
 			return false;
 
 		return true;
+	}
+
+	bool IsKeyDown(int VK_Key)
+	{
+		return ((GetAsyncKeyState(VK_Key) & 0x8000) ? 1 : 0);
 	}
 
 	float GetActorFromCenter(CG::APlayerCameraManager* CameraManager, CG::FVector Point)

@@ -310,19 +310,24 @@ namespace CG
 	FRotator FRotator::Clamp() const
 	{
 		FRotator r = { Pitch, Yaw, Roll };
+
 		if (r.Yaw > 180.0f)
 			r.Yaw -= 360.0f;
 		else if (r.Yaw < -180.0f)
 			r.Yaw += 360.0f;
+
 		if (r.Pitch > 180.0f)
 			r.Pitch -= 360.0f;
 		else if (r.Pitch < -180.0f)
 			r.Pitch += 360.0f;
+
 		if (r.Pitch < -89.0f)
 			r.Pitch = -89.0f;
 		else if (r.Pitch > 89.0f)
 			r.Pitch = 89.0f;
+
 		r.Roll = 0.0f;
+
 		return r;
 	}
 
@@ -708,6 +713,29 @@ namespace CG
 	float FVector::DistanceMeter(FVector& v) const
 	{
 		return Distance(v) * 0.01f;
+	}
+
+	FORCEINLINE float InvSqrt(float F)
+	{
+		return 1.0f / sqrtf(F);
+	}
+	
+	FVector FVector::GetSafeNormal(float Tolerance) const
+	{
+		const float SquareSum = X * X + Y * Y + Z * Z;
+
+		// Not sure if it's safe to add tolerance in there. Might introduce too many errors
+		if (SquareSum == 1.f)
+		{
+			return *this;
+		}
+		else if (SquareSum < Tolerance)
+		{
+			return FVector(0, 0, 0);
+		}
+		const float Scale = InvSqrt(SquareSum);
+
+		return FVector(X * Scale, Y * Scale, Z * Scale);
 	}
 
 	/**

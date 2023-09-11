@@ -1,5 +1,8 @@
 #pragma once
 
+#define Hook(original, hook) (DetourTransactionBegin(), DetourUpdateThread(GetCurrentThread()), DetourAttach((LPVOID*)&original, (LPVOID)hook), DetourTransactionCommit())
+#define UnHook(original, hook) (DetourTransactionBegin(), DetourUpdateThread(GetCurrentThread()), DetourDetach((LPVOID*)&original, (LPVOID)hook), DetourTransactionCommit())
+
 extern HWND window;
 extern ID3D11Device* pDevice;
 extern ID3D11DeviceContext* pContext;
@@ -10,10 +13,8 @@ extern int32_t ScreenHeight;
 typedef HRESULT(__stdcall* tPresent) (IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags);
 extern tPresent oPresent;
 
-typedef void(*tGetViewPoint)(CG::ULocalPlayer*, CG::FMinimalViewInfo*, CG::EStereoscopicPass);
-extern tGetViewPoint GetViewPoint;
+typedef __int64(*tGetShotDir)(CG::ASolarPlayerWeapon* Weapon, uint64_t a2, bool NeedSpread);
+extern tGetShotDir GetShotDir;
 
-typedef void(*tGetPlayerViewPoint)(CG::APlayerController*, CG::FVector*, CG::FRotator*);
-extern tGetPlayerViewPoint GetPlayerViewPoint;
-
-extern void Initialize();
+void SwapVTable(void* Object, void* Hook, uint32_t Index);
+void Initialize();

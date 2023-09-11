@@ -105,4 +105,9 @@ namespace Math
 
 		return DotPos;
 	}
+
+	CG::FVector GetDirectionUnitVector(CG::FVector From, CG::FVector To)
+	{
+		return (To - From).GetSafeNormal();
+	}
 }

@@ -2,6 +2,8 @@
 
 XXX ZZZ;
 
+//static bool HookedGetShotDir = false;
+
 //========================================================================================================
 
 void XXX::Unknown()
@@ -18,7 +20,7 @@ void XXX::Unknown()
 	if (!PlayerController)
 		return;
 
-	CG::APlayerCameraManager* CameraManager = PlayerController->PlayerCameraManager;
+	CameraManager = PlayerController->PlayerCameraManager;
 	if (!CameraManager)
 		return;
 
@@ -71,8 +73,8 @@ void XXX::Unknown()
 			if (Enemy == LocalCharacter)
 				continue;
 
-			Head = Engine::GetBonePosition(Enemy->Mesh, HEAD);
-			Root = Engine::GetBonePosition(Enemy->Mesh, ROOT);
+			Head = Enemy->Mesh->GetBoneWorldPos(HEAD);
+			Root = Enemy->Mesh->GetBoneWorldPos(ROOT);
 			//Head = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(HEAD));
 			//Root = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(ROOT));
 
@@ -90,7 +92,7 @@ void XXX::Unknown()
 
 				if (Settings[ESP_NAME].Value.bValue)
 				{
-					std::string Name = "------";
+					std::string Name = xorstr_("------");
 
 					if (!Enemy->PlayerState)
 						continue;
@@ -99,7 +101,7 @@ void XXX::Unknown()
 
 					if (PlayerType == CG::ESCMPlayerType::BotAI)
 					{
-						Draw::DrawString("BOT", (Left + Right) / 2, Top - 17, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+						Draw::DrawString(std::string(xorstr_("BOT")), (Left + Right) / 2, Top - 17, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 					}
 					else
 					{
@@ -277,9 +279,15 @@ void XXX::Unknown()
 
 			CG::EItemType ItemType = Item->ItemData.ItemType;
 
+			int32_t ItemID = Item->ItemData.ItemID;
+
 			int32_t ItemQuality = Item->GetQuality();
 
+			std::string PickupName = Item->ItemData.Name.ToString();
+
 			ImVec4 ItemColor = ImVec4();
+
+			//std::cout << "Item ID: " << ItemID << " Name: " << PickupName << std::endl;
 
 			switch (ItemQuality)
 			{
@@ -299,73 +307,67 @@ void XXX::Unknown()
 				ItemColor = ImVec4(1.f, 0.509f, 0.239f, 1.f);
 				break;
 			case 6:
-				ItemColor = ImVec4(1.f, 0.654f, 0.f, 1.f);
-				break;
-			default:
-				ItemColor = ImVec4(0.690f, 0.960f, 0.913f, 1.f);
+				ItemColor = ImVec4(0.98f, 0.250f, 0.141f, 1.f);
 				break;
 			}
 
-			if ((int)ItemType <= 0)
+			if (ItemType <= CG::EItemType::NONE)
 				continue;
-
-			std::string PickupName = Item->ItemData.Name.ToString();
-			CG::FVector2D ItemPos;
-
-			PlayerController->ProjectWorldLocationToScreen(ItemLocation, &ItemPos, false);
 
 			if (ItemType == CG::EItemType::WEAPON)
 			{
+				std::string WeaponType = Engine::GetWeaponType(ItemID);
+
 				if (Settings[ESP_LOOT_WEAPON].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue)
-					Draw::DrawString(std::string(PickupName).append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, Settings[COLOR_LOOT_WEAPON].Value.v4Value);
+					Draw::DrawString(WeaponType.append(" ").append(PickupName).append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, Settings[COLOR_LOOT_WEAPON].Value.v4Value);
 			}
 
 			if (ItemType == CG::EItemType::BULLET)
 			{
 				if (Settings[ESP_LOOT_AMMO].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue)
-					Draw::DrawString(std::string(PickupName).append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, Settings[COLOR_LOOT_AMMO].Value.v4Value);
+					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, Settings[COLOR_LOOT_AMMO].Value.v4Value);
 			}
 
 			if (ItemType == CG::EItemType::WEAPON_PARTS)
 			{
 				if (Settings[ESP_LOOT_ATTACHMENTS].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue && ItemQuality >= (Settings[ESP_LOOT_LEVEL].Value.iValue + 1))
-					Draw::DrawString(std::string(PickupName).append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, Settings[COLOR_LOOT_ATTACHMENTS].Value.v4Value);
+					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
 			}
 
 			if (ItemType == CG::EItemType::SHIELD)
 			{
 				if (Settings[ESP_LOOT_SHIELD].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue && ItemQuality >= (Settings[ESP_LOOT_LEVEL].Value.iValue + 1))
-					Draw::DrawString(std::string(PickupName).append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
+					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
 			}
 
 			if (ItemType == CG::EItemType::SHIELD_UPGRADE_MATERIAL || ItemType == CG::EItemType::EXP_ITEM)
 			{
 				if (Settings[ESP_LOOT_SHIELDUPGR].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue)
-					Draw::DrawString(std::string(PickupName).append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
+					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
 			}
 
 			if (ItemType == CG::EItemType::JETPACK_MODULE_HORIZONTAL)
 			{
 				if (Settings[ESP_LOOT_HJETPACK].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue && ItemQuality >= (Settings[ESP_LOOT_LEVEL].Value.iValue + 1))
-					Draw::DrawString(std::string(PickupName).append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
+					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
 			}
 
 			if (ItemType == CG::EItemType::JETPACK_MODULE_VERTICAL)
 			{
 				if (Settings[ESP_LOOT_VJETPACK].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue && ItemQuality >= (Settings[ESP_LOOT_LEVEL].Value.iValue + 1))
-					Draw::DrawString(std::string(PickupName).append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
+					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
 			}
 
 			if (ItemType == CG::EItemType::CARIRIDGE_BAG)
 			{
 				if (Settings[ESP_LOOT_HEALTH].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue)
-					Draw::DrawString(std::string(PickupName).append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, Settings[COLOR_LOOT_HEALTH].Value.v4Value);
+					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, Settings[COLOR_LOOT_HEALTH].Value.v4Value);
 			}
 
 			if (ItemType == CG::EItemType::DEATHBOX)
 			{
 				if (Settings[ESP_LOOT_DEATHBOX].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue)
-					Draw::DrawString(std::string(PickupName).append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 			}
 
 			if (ItemType == CG::EItemType::TREASUREBOX)
@@ -375,11 +377,11 @@ void XXX::Unknown()
 				{
 					if (TreausureBox->BOpened())
 					{
-						Draw::DrawString(std::string(PickupName).append(" [Opened] ").append("[").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, Settings[COLOR_TREASUREBOX].Value.v4Value);
+						Draw::DrawString(PickupName.append(" [Opened] ").append("[").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, Settings[COLOR_TREASUREBOX].Value.v4Value);
 					}
 					else
 					{
-						Draw::DrawString(std::string(PickupName).append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, Settings[COLOR_TREASUREBOX].Value.v4Value);
+						Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, Settings[COLOR_TREASUREBOX].Value.v4Value);
 					}
 				}
 			}
@@ -391,11 +393,11 @@ void XXX::Unknown()
 				{
 					if (AirDropBox->BOpened())
 					{
-						Draw::DrawString(std::string(PickupName).append(" [Opened] ").append("[").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, Settings[COLOR_AIRDROP].Value.v4Value);
+						Draw::DrawString(PickupName.append(" [Opened] ").append("[").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, Settings[COLOR_AIRDROP].Value.v4Value);
 					}
 					else
 					{
-						Draw::DrawString(std::string(PickupName).append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, Settings[COLOR_AIRDROP].Value.v4Value);
+						Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, Settings[COLOR_AIRDROP].Value.v4Value);
 					}
 				}
 			}
@@ -421,8 +423,8 @@ void XXX::Unknown()
 			if (Vehicle->GetCurrentHealth() > 0)
 				HPColor = ImVec4(.90f, .90f, .90f, 1.f);
 
-			Draw::HorizontalHealthBar(VehiclePos.X - 60, VehiclePos.Y, 100, 10, (int)Vehicle->GetCurrentHealth(), (int)Vehicle->GetMaxHealth(), HPColor);
-			Draw::DrawString(std::string(VehicleName).append(" [").append(std::to_string(VehicleDistance)).append(" M]"), VehiclePos.X, VehiclePos.Y + 10, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+			Draw::HorizontalHealthBar(VehiclePos.X - 55, VehiclePos.Y, 100, 10, (int)Vehicle->GetCurrentHealth(), (int)Vehicle->GetMaxHealth(), HPColor);
+			Draw::DrawString(VehicleName.append(" [").append(std::to_string(VehicleDistance)).append(" M]"), VehiclePos.X, VehiclePos.Y + 10, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 		}
 	}
 }
@@ -458,7 +460,7 @@ void XXX::Removal()
 		if (!AmmoConfig)
 			return;
 
-		AmmoConfig->BaseReloadTime = 1.5f;
+		AmmoConfig->BaseReloadTime = 1.6f;
 	}
 
 	if (Settings[NO_RECOIL].Value.bValue)
@@ -480,6 +482,15 @@ void XXX::Removal()
 		Config->ADSBaseSpread = 0.0f;
 		Config->VhADSBaseSpread = 0.0f;
 
+		CG::UAmmoConfig* AmmoConfig = Config->PrimaryAmmo;
+		if (!AmmoConfig)
+			return;
+
+		CG::FAmmonRecoilScope FAmmonRecoilScope = AmmoConfig->ScopeRecoil;
+		FAmmonRecoilScope.EnableScopeVibration = false;
+		FAmmonRecoilScope.EnableCrossHairVibration = false;
+		FAmmonRecoilScope.EnableScopeRoll = false;
+
 		CG::UWeaponShootConfig* WeaponShootConfig = Config->WeaponShootConfig;
 		if (!WeaponShootConfig)
 			return;
@@ -490,7 +501,7 @@ void XXX::Removal()
 		WeaponShootConfig->bEnableNewCameraShake = false;
 		WeaponShootConfig->BaseSpread = 0.0f;
 
-		CG::UWeaponRecoilComponent* RecoilComponent = CachedCurrentWeapon->RecoilComponent;
+		CG::UWeaponRecoilComponent* RecoilComponent = CachedCurrentWeapon->GetRecoilComponent();
 		if (!RecoilComponent)
 			return;
 
@@ -539,9 +550,11 @@ void XXX::Aimbot()
 	if (!LocalCharacter)
 		return;
 
+	CG::FVector LocalLocation = LocalCharacter->GetCameraLocation();
+
 	if (Settings[DRAW_FOV].Value.bValue)
 	{
-		ImGui::GetBackgroundDrawList()->AddCircle(ImVec2(ScreenWidth / 2, ScreenHeight / 2), Settings[AIM_FOV].Value.fValue * ((ScreenWidth / 2) / 90), ImGui::GetColorU32(ImVec4(1.f, 0.141f, 0.f, 1.f)));
+		ImGui::GetBackgroundDrawList()->AddCircle(ImVec2(ScreenWidth / 2, ScreenHeight / 2), Settings[AIM_FOV].Value.fValue /** ((ScreenWidth / 2) / 90)*/, ImGui::GetColorU32(ImVec4(1.f, 0.141f, 0.f, 1.f)));
 	}
 
 	if (!Settings[AIM_ENABLED].Value.bValue)
@@ -568,109 +581,123 @@ void XXX::Aimbot()
 			if (!PlayerController->LineOfSightTo(Enemy, { 0.f,0.f,0.f }, false))
 				continue;
 
-			float ClosestDistance = 1337;
-			CG::ASolarCharacter* ClosestTarget = NULL;
-			CG::FVector2D Position = CG::FVector2D();
+			if (!Enemy->K2_IsAlive())
+				continue;
 
-			if (PlayerController->ProjectWorldLocationToScreen(Enemy->K2_GetActorLocation(), &Position, false))
+			if (Settings[IGNORE_KNOCKED].Value.bValue && Enemy->IsDying())
+				continue;
+
+			switch (Settings[AIM_SELECT_BONE].Value.iValue)
 			{
-				float Multiplier = (ScreenWidth / 2) / 90;
-				float xDiff = (ScreenWidth / 2) - Position.X;
-				float yDiff = (ScreenHeight / 2) - Position.Y;
-				float Hypotenuse = sqrtf((xDiff * xDiff) + (yDiff * yDiff));
-				float Size = Settings[AIM_FOV].Value.fValue * Multiplier;
-				//float Distance = Aimbot::GetCrossDistance(Position.X, Position.Y, ScreenWidth / 2, ScreenHeight / 2);
+			case 0:
+				AimPos = Enemy->Mesh->GetBoneWorldPos(HEAD);
+				break;
 
-				if (Hypotenuse < Size && Hypotenuse < ClosestDistance)
-				{
-					/*float Radius = Settings[AIM_FOV].Value.fValue * Multiplier;
+			case 1:
+				AimPos = Enemy->Mesh->GetBoneWorldPos(NECK_01);
+				break;
 
-					if (Position.X <= ((ScreenWidth / 2) + Radius) &&
-						Position.X >= ((ScreenWidth / 2) - Radius) &&
-						Position.Y <= ((ScreenHeight / 2) + Radius) &&
-						Position.Y >= ((ScreenHeight / 2) - Radius))
-					{
-						ClosestDistance = Distance;
-						ClosestTarget = Enemy;
-					}*/
+			case 2:
+				int Point = Engine::GetNearestBone(PlayerController->PlayerCameraManager, Enemy, Engine::HitBoxes);
+				AimPos = Enemy->Mesh->GetBoneWorldPos(Point);
+				break;
+			}
 
-					ClosestDistance = Hypotenuse;
-					ClosestTarget = Enemy;
-				}
+			CG::ASolarPlayerWeapon* CachedCurrentWeapon = LocalCharacter->CachedCurrentWeapon;
+			if (!CachedCurrentWeapon)
+				continue;
 
-				if (!ClosestTarget)
+			CG::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
+			if (!Config)
+				continue;
+
+			CG::UAmmoConfig* AmmoConfig = Config->PrimaryAmmo;
+			if (!AmmoConfig)
+				continue;
+
+			float BulletSpeed = AmmoConfig->InitSpeed / 100.f;
+			float BulletGravity = AmmoConfig->ProjectileMaxGravity;
+			float Distance = LocalLocation.Distance(AimPos) / 100.f;
+
+			CG::FRotator OldRotation = PlayerController->GetControlRotation();
+			CG::FVector Velocity = Enemy->RootComponent->ComponentVelocity;
+			CG::FVector AimPrediction = Aimbot::AimbotPrediction(BulletSpeed, BulletGravity, Distance, AimPos, Velocity);
+
+			CG::FVector2D TargetPos = CG::FVector2D();
+			if (!PlayerController->ProjectWorldLocationToScreen(AimPrediction, &TargetPos, false))
+				continue;
+
+			const float x = TargetPos.X - (ScreenWidth / 2);
+			const float y = TargetPos.Y - (ScreenHeight / 2);
+			float CenterDistance = sqrt(pow(y, 2) + pow(x, 2));
+
+			if (CenterDistance < Aimbot::ClosestDistance && CenterDistance <= Settings[AIM_FOV].Value.fValue)
+			{
+				Aimbot::ClosestDistance = CenterDistance;
+				Aimbot::LockPosition = TargetPos;
+				Aimbot::TargetPosition = AimPrediction;
+				Aimbot::TargetRotation = Aimbot::CalcAngle(LocalLocation, AimPrediction, OldRotation, Settings[AIM_SMOOTH].Value.fValue);
+			}
+
+			//CG::FRotator TargetRotation = Aimbot::CalcAngle(LocalLocation, AimPrediction);
+		}
+	}
+
+	//Draw::DrawLine(ScreenWidth / 2, ScreenHeight / 2, Aimbot::LockPosition.X, Aimbot::LockPosition.Y, 1.f, ImVec4(1.f, 0.141f, 0.f, 1.f));
+	//Aimbot::LockOnTarget();
+	Aimbot::SetRotation(PlayerController->PlayerCameraManager, PlayerController, Aimbot::TargetRotation, false, Settings[AIM_SMOOTH].Value.fValue);
+}
+
+void XXX::Misc()
+{
+	CG::UWorld* World = *CG::UWorld::GWorld;
+	if (!World)
+		return;
+
+	CG::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
+	if (!LocalPlayer)
+		return;
+
+	CG::APlayerController* PlayerController = LocalPlayer->PlayerController;
+	if (!PlayerController)
+		return;
+
+	CG::ASolarCharacter* LocalCharacter = reinterpret_cast<CG::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
+	if (!LocalCharacter)
+		return;
+
+	CG::TArray<CG::AActor*> Actors = *(CG::TArray<CG::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
+	for (int i = 0; i < Actors.Count(); i++)
+	{
+		CG::AActor* Actor = Actors[i];
+
+		if (!Actor)
+			continue;
+
+		if (Actor->IsA(CG::ASolarCharacter::StaticClass()))
+		{
+			CG::ASolarCharacter* Enemy = reinterpret_cast<CG::ASolarCharacter*>(Actor);
+
+			if (Settings[STOP_SPECTATOR].Value.bValue)
+			{
+				CG::ASolarPlayerState* LocalPlayerState = LocalCharacter->GetSolarPlayerState();
+				if (!LocalPlayerState)
 					continue;
 
-				if (Settings[IGNORE_KNOCKED].Value.bValue && ClosestTarget->IsDying())
+				CG::ASolarSpectateInfo* SpectateInfo = LocalPlayerState->GetSpectateInfo();
+				if (!SpectateInfo)
 					continue;
 
-				if (!ClosestTarget->K2_IsAlive())
-					continue;
-
-				CG::FVector LocalLocation = PlayerController->PlayerCameraManager->GetCameraLocation();
-				//std::vector<CG::FVector> AimPos = std::vector<CG::FVector>();
-
-				switch (Settings[AIM_SELECT_BONE].Value.iValue)
+				CG::TArray<CG::ASolarPlayerState*> Spectators = SpectateInfo->PlayersSpectatingMe;
+				for (int i = 0; i < Spectators.Count(); i++)
 				{
-				case 0:
-					//AimPos.push_back(ClosestTarget->Mesh->GetBoneWorldPos(HEAD));
-					AimPos = ClosestTarget->Mesh->GetBoneWorldPos(HEAD);
-					break;
+					CG::ASolarPlayerState* SpectatingMe = Spectators[i];
 
-				case 1:
-					//AimPos.push_back(ClosestTarget->Mesh->GetBoneWorldPos(NECK_01));
-					AimPos = ClosestTarget->Mesh->GetBoneWorldPos(NECK_01);
-					break;
+					if (!SpectatingMe->GetSpectateInfo())
+						continue;
 
-				case 2:
-					int Point = Engine::GetNearestBone(PlayerController->PlayerCameraManager, ClosestTarget, Engine::HitBoxes);
-					//AimPos.push_back(ClosestTarget->Mesh->GetBoneWorldPos(Point));
-					AimPos = ClosestTarget->Mesh->GetBoneWorldPos(Point);
-					break;
-				}
-
-				if (GetAsyncKeyState(Settings[AIM_KEY].Value.iValue) & 0x80000)
-				{
-					if (Settings[AIM_PREDICTION].Value.bValue)
-					{
-						CG::ASolarPlayerWeapon* CachedCurrentWeapon = LocalCharacter->CachedCurrentWeapon;
-						if (!CachedCurrentWeapon)
-							continue;
-
-						CG::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
-						if (!Config)
-							continue;
-
-						CG::UAmmoConfig* AmmoConfig = Config->PrimaryAmmo;
-						if (!AmmoConfig)
-							continue;
-
-						float BulletSpeed = AmmoConfig->InitSpeed / 100.f;
-						float BulletGravity = AmmoConfig->ProjectileMaxGravity;
-						float Distance = LocalLocation.Distance(AimPos) / 100.f;
-
-						CG::FVector Velocity = ClosestTarget->RootComponent->ComponentVelocity;
-						CG::FVector AimPrediction = Aimbot::AimbotPrediction(BulletSpeed, BulletGravity, Distance, AimPos, Velocity);
-
-						//Hitbox.X = AimPrediction.X;
-						//Hitbox.Y = AimPrediction.Y;
-						//Hitbox.Z = AimPrediction.Z;
-
-						//CG::FVector TargetBone = Aimbot::CalcFuturePos(PlayerController, Hitbox);
-						//Aimbot::AimAtPosV2(ScreenWidth, ScreenHeight, TargetBone.X, TargetBone.Y, Settings[AIM_SMOOTH].Value.fValue, Settings[HUMAN_SPEED].Value.fValue, Settings[HUMAN_SCALE].Value.fValue);
-
-						CG::FRotator TargetRotation = Aimbot::CalcAngle(LocalLocation, AimPrediction);
-						TargetRotation.Roll = 0;
-						TargetRotation.Clamp();
-						Aimbot::SetRotation(PlayerController->PlayerCameraManager, PlayerController, TargetRotation, false, Settings[AIM_SMOOTH].Value.fValue);
-					}
-					else
-					{
-						CG::FRotator TargetRotation = Aimbot::CalcAngle(LocalLocation, AimPos);
-						TargetRotation.Roll = 0;
-						TargetRotation.Clamp();
-						Aimbot::SetRotation(PlayerController->PlayerCameraManager, PlayerController, TargetRotation, false, Settings[AIM_SMOOTH].Value.fValue);
-					}
+					LocalPlayerState->OnOtherPlayerStopSpectateMe(SpectatingMe, SpectatingMe->GetSpectateInfo());
+					SpectatingMe->GetSpectateInfo()->SpectateConditions.bCanBeSpectate = false;
 				}
 			}
 		}
@@ -750,4 +777,29 @@ void XXX::Radar()
 	}
 	ImGui::PopStyleColor();
 	ImGui::End();
+}
+
+void XXX::BypassEAC()
+{
+	CG::USolarEasyAntiCheatManager* EAC_ = reinterpret_cast<CG::USolarEasyAntiCheatManager*>(CG::USolarEasyAntiCheatManager::StaticClass());
+	if (!EAC_)
+		return;
+
+	EAC_->EnableAntiCheat = false;
+	EAC_->bEnableAntiCheatLauncherCheck = false;
+
+	CG::UWorld* World = *CG::UWorld::GWorld;
+	if (!World)
+		return;
+
+	CG::USolarGameInstanceBase* GameInstance = reinterpret_cast<CG::USolarGameInstanceBase*>(World->OwningGameInstance);
+	if (!GameInstance)
+		return;
+
+	CG::USolarEasyAntiCheatManager* EAC__ = GameInstance->GetSolarEasyAntiCheatManager();
+	if (!EAC__)
+		return;
+
+	EAC__->EnableAntiCheat = false;
+	EAC__->bEnableAntiCheatLauncherCheck = false;
 }

@@ -1,15 +1,11 @@
 #include "pch.h"
 
-#define Hook(original, hook) (DetourTransactionBegin(), DetourUpdateThread(GetCurrentThread()), DetourAttach((LPVOID*)&original, (LPVOID)hook), DetourTransactionCommit())
-#define UnHook(original, hook) (DetourTransactionBegin(), DetourUpdateThread(GetCurrentThread()), DetourDetach((LPVOID*)&original, (LPVOID)hook), DetourTransactionCommit())
-
 bool Initialized = false;
 HWND window = 0;
 WNDPROC oWndProc = 0;
 
 tPresent oPresent;
-tGetViewPoint GetViewPoint;
-tGetPlayerViewPoint GetPlayerViewPoint;
+tGetShotDir GetShotDir;
 
 ID3D11Device* pDevice = 0;
 ID3D11DeviceContext* pContext = 0;
@@ -18,8 +14,24 @@ ID3D11RenderTargetView* pRenderTarget = 0;
 int32_t ScreenWidth = 0;
 int32_t ScreenHeight = 0;
 
-CG::FVector OriginalLocation(0, 0, 0);
-CG::FRotator OriginalRotation(0, 0, 0);
+void SwapVTable(void* Object, void* Hook, uint32_t Index)
+{
+	auto CurrVTable = *(void**)(Object);
+
+	auto VTable = *(void***)(Object);
+	int i = 0;
+
+	for (; VTable[i]; i++)
+		__noop();
+
+	auto NewVTable = new uintptr_t[i];
+
+	memcpy(NewVTable, CurrVTable, i * 0x8);
+
+	NewVTable[Index] = (uintptr_t)Hook;
+
+	*(uintptr_t**)(Object) = NewVTable;
+}
 
 extern LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 LRESULT __stdcall WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
@@ -63,6 +75,8 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* SwapChain, UINT SyncInterval, UINT F
 	ImGui_ImplWin32_NewFrame();
 	ImGui::NewFrame();
 
+	ImGui::GetIO().MouseDrawCursor = Menu::MenuOpen;
+
 	if (GetAsyncKeyState(VK_INSERT) & 1)
 		Menu::MenuOpen ^= 1;
 
@@ -72,11 +86,15 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* SwapChain, UINT SyncInterval, UINT F
 	if (GetAsyncKeyState(VK_F2) & 1)
 		Settings[ESP_LOOT_ENABLED].Value.bValue ^= 1;
 
-	ImGui::GetIO().MouseDrawCursor = Menu::MenuOpen;
+	if (!Settings[IS_AIMING].Value.bValue)
+		Aimbot::ResetLock();
+
+	ZZZ.BypassEAC();
 
 	ZZZ.Unknown();
 	ZZZ.Removal();
 	ZZZ.Aimbot();
+	ZZZ.Misc();
 	ZZZ.Radar();
 
 	if (Menu::MenuOpen)
@@ -90,42 +108,37 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* SwapChain, UINT SyncInterval, UINT F
 	return oPresent(SwapChain, SyncInterval, Flags);
 }
 
-void hkGetViewPoint(CG::ULocalPlayer* LocalPlayer, CG::FMinimalViewInfo* OutViewInfo, CG::EStereoscopicPass StereoPass)
+__int64 hkGetShotDir(CG::ASolarPlayerWeapon* Weapon, uint64_t a2, bool NeedSpread)
 {
-	GetViewPoint(LocalPlayer, OutViewInfo, StereoPass);
-	
-	if (GetAsyncKeyState(Settings[AIM_KEY].Value.iValue) & 0x80000)
+	__int64 Result = GetShotDir(Weapon, a2, NeedSpread);
+
+	if (Settings[AIM_ENABLED].Value.bValue && Settings[AIM_MODE].Value.iValue == 1 && a2 && !Aimbot::TargetPosition.IsValid())
 	{
-		OutViewInfo->Location = OriginalLocation;
-		OutViewInfo->Rotation = OriginalRotation;
+		// Maybe from muzzle/GetShootingTraceStartLocation instead of camera location more accurate
+
+		CG::FVector Out = Math::GetDirectionUnitVector(ZZZ.CameraManager->GetCameraLocation() /*Weapon->GetShootingTraceStartLocation()*/, Aimbot::TargetPosition);
+
+		*(CG::FVector*)(Result) = Out;
 	}
-}
 
-void hkGetPlayerViewPoint(CG::APlayerController* PlayerController, CG::FVector* Location, CG::FRotator* Rotation)
-{
-	GetPlayerViewPoint(PlayerController, Location, Rotation);
-
-	OriginalLocation = *Location;
-	OriginalRotation = *Rotation;
-
-	if (GetAsyncKeyState(Settings[AIM_KEY].Value.iValue) & 0x80000)
-	{
-		
-	}
+	return Result;
 }
 
 void Initialize()
 {
-	//AllocConsole();
-	//FILE* f;
-	//freopen_s(&f, "CONOUT$", "w", stdout);
+#ifdef _DEBUG
+	AllocConsole();
+	FILE* f;
+	freopen_s(&f, "CONOUT$", "w", stdout);
+	SetConsoleTitle(xorstr_(L"Zy4n0 Private Debug Mode"));
+#endif
 
 	strcpy(ConfigDirectory, "C:\\ZC\\");
 	CreateDirectoryA(ConfigDirectory, NULL);
 
 	CG::InitSDK();
 	InitSettings();
-	LoadSettings();	
+	LoadSettings();
 
 	uint64_t Module = reinterpret_cast<uint64_t>(GetModuleHandleW(L"SolarlandClient-Win64-Shipping.exe"));
 	uint64_t hkPresent_Sig = Engine::FindPattern("GameOverlayRenderer64.dll", "48 89 6C 24 ? 48 89 74 24 ? 41 56 48 83 EC ? 41 8B E8");
@@ -140,9 +153,6 @@ void Initialize()
 	CreateHook = (decltype(CreateHook))CreateHook_Sig;
 	CreateHook(hkPresent_Sig, (__int64)&hkPresent, (unsigned __int64*)&oPresent, 1);
 
-	//GetViewPoint = reinterpret_cast<tGetViewPoint>(Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 8B C4 48 89 58 ? 48 89 68 ? 56 57 41 56 48 81 EC ? ? ? ? 0F 29 70 ? 0F 29 78 ? 48 8B 05"));
-	//GetPlayerViewPoint = reinterpret_cast<tGetPlayerViewPoint>(Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 89 5C 24 ? 48 89 7C 24 ? 55 41 56 41 57 48 8B EC 48 83 EC ? 48 8B FA"));
-
-	//Hook(GetViewPoint, hkGetViewPoint);
-	//Hook(GetPlayerViewPoint, hkGetPlayerViewPoint);
+	GetShotDir = reinterpret_cast<tGetShotDir>(Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9"));
+	Hook(GetShotDir, hkGetShotDir);
 }

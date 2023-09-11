@@ -389,6 +389,8 @@ namespace CG
 		FVector ToVector() const;
 	};
 
+#define SMALL_NUMBER 0
+
 	/**
 	 * ScriptStruct CoreUObject.Vector
 	 * Size -> 0x000C
@@ -424,6 +426,7 @@ namespace CG
 		float MagnitudeSqr() const;
 		float Magnitude() const;
 		FVector Unit() const;
+		FVector GetSafeNormal(float Tolerance = SMALL_NUMBER) const;
 		FRotator ToRotator() const;
 		float Distance(const FVector& v) const;
 		float DistanceMeter(FVector& v) const;
@@ -436,7 +439,6 @@ namespace CG
 		{
 			return !(first == second);
 		}
-
 	};
 
 	/**

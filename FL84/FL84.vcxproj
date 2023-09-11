@@ -173,6 +173,7 @@
     <ClInclude Include="Menu.h" />
     <ClInclude Include="SDK.h" />
     <ClInclude Include="Settings.h" />
+    <ClInclude Include="xorstr.hpp" />
     <ClInclude Include="XXX.h" />
     <ClInclude Include="Hook.h" />
     <ClInclude Include="pch.h" />
