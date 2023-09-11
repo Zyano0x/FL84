@@ -94,7 +94,6 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* SwapChain, UINT SyncInterval, UINT F
 	ZZZ.Unknown();
 	ZZZ.Removal();
 	ZZZ.Aimbot();
-	ZZZ.Misc();
 	ZZZ.Radar();
 
 	if (Menu::MenuOpen)
@@ -132,6 +131,7 @@ void Initialize()
 	freopen_s(&f, "CONOUT$", "w", stdout);
 	SetConsoleTitle(xorstr_(L"Zy4n0 Private Debug Mode"));
 #endif
+	printf("Injecting\n");
 
 	strcpy(ConfigDirectory, "C:\\ZC\\");
 	CreateDirectoryA(ConfigDirectory, NULL);
@@ -155,4 +155,6 @@ void Initialize()
 
 	GetShotDir = reinterpret_cast<tGetShotDir>(Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9"));
 	Hook(GetShotDir, hkGetShotDir);
+
+	printf("Cheat Loaded!\n");
 }

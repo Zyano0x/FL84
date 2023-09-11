@@ -8,9 +8,7 @@ namespace Aimbot
 	extern CG::FVector TargetPosition;
 	extern CG::FRotator TargetRotation;
 
-	float SmoothOutYaw(float targetYaw, float currentYaw, float smoothness);
 	float Normalize(float angle);
-	CG::FRotator CalcAngle(CG::FVector& src, CG::FVector& dst);
 	CG::FRotator CalcAngle(CG::FVector& src, CG::FVector& dst, CG::FRotator& oldRotation, float& smoothing);
 	CG::FVector AimbotPrediction(float bulletVelocity, float bulletGravity, float targetDistance, CG::FVector targetPosition, CG::FVector targetVelocity);
 	CG::FVector2D Randomize(CG::FVector2D vAngles, float HumanSpeed, float HumanScale);

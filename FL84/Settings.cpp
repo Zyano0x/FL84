@@ -120,12 +120,10 @@ void InitSettings()
 	Settings[ESP_AIRDROP] = AddConfig("Esp Settings", "Esp_Airdrop_Box", true);
 	Settings[ESP_VEHICLE] = AddConfig("Esp Settings", "Esp_Vehicle", false);
 
+	Settings[OFFSCREEN] = AddConfig("Esp Settings", "Offscreen", false);
+
 	Settings[RADAR_ENABLED] = AddConfig("Esp Settings", "Radar_Enabled", false);
 	Settings[RADAR_DISTANCE] = AddConfig("Esp Settings", "Radar_Distance", 300.f, 1.f, 300.f);
-
-	//=============================================================================================================================
-	
-	Settings[STOP_SPECTATOR] = AddConfig("Misc Settings", "Misc_Stop_Spectator", false);
 
 	//=============================================================================================================================
 

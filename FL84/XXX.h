@@ -57,7 +57,6 @@ public:
 	void Unknown();
 	void Removal();
 	void Aimbot();
-	void Misc();
 	void Radar();
 	void BypassEAC();
 

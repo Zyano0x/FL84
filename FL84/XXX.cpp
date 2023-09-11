@@ -2,8 +2,6 @@
 
 XXX ZZZ;
 
-//static bool HookedGetShotDir = false;
-
 //========================================================================================================
 
 void XXX::Unknown()
@@ -170,9 +168,9 @@ void XXX::Unknown()
 						HPColor = ImVec4(0.745f, 0.0f, 0.0f, 1.f);
 
 					if (Enemy->CurrShieldValue > 0)
-						Draw::VerticalHealthBar(Left - 10, Top, Width, Bottom - Top, (int)Enemy->CurrShieldValue, (int)Enemy->MaxShieldValue, ShieldColor);
-					else
-						Draw::VerticalHealthBar(Left - 10, Top, Width, Bottom - Top, (int)Enemy->GetCurrentHealth(), (int)Enemy->GetMaxHealth(), HPColor);
+						Draw::VerticalHealthBar(Left - 15, Top, Width, Bottom - Top, (int)Enemy->CurrShieldValue, (int)Enemy->MaxShieldValue, ShieldColor);	
+					
+					Draw::VerticalHealthBar(Left - 10, Top, Width, Bottom - Top, (int)Enemy->GetCurrentHealth(), (int)Enemy->GetMaxHealth(), HPColor);
 				}
 
 				if (Settings[ESP_SKELETON].Value.bValue)
@@ -261,6 +259,11 @@ void XXX::Unknown()
 						break;
 					}
 				}
+			}
+			else
+			{
+				if (!Settings[OFFSCREEN].Value.bValue)
+					continue;
 			}
 		}
 
@@ -646,62 +649,6 @@ void XXX::Aimbot()
 	//Draw::DrawLine(ScreenWidth / 2, ScreenHeight / 2, Aimbot::LockPosition.X, Aimbot::LockPosition.Y, 1.f, ImVec4(1.f, 0.141f, 0.f, 1.f));
 	//Aimbot::LockOnTarget();
 	Aimbot::SetRotation(PlayerController->PlayerCameraManager, PlayerController, Aimbot::TargetRotation, false, Settings[AIM_SMOOTH].Value.fValue);
-}
-
-void XXX::Misc()
-{
-	CG::UWorld* World = *CG::UWorld::GWorld;
-	if (!World)
-		return;
-
-	CG::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
-	if (!LocalPlayer)
-		return;
-
-	CG::APlayerController* PlayerController = LocalPlayer->PlayerController;
-	if (!PlayerController)
-		return;
-
-	CG::ASolarCharacter* LocalCharacter = reinterpret_cast<CG::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
-	if (!LocalCharacter)
-		return;
-
-	CG::TArray<CG::AActor*> Actors = *(CG::TArray<CG::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
-	for (int i = 0; i < Actors.Count(); i++)
-	{
-		CG::AActor* Actor = Actors[i];
-
-		if (!Actor)
-			continue;
-
-		if (Actor->IsA(CG::ASolarCharacter::StaticClass()))
-		{
-			CG::ASolarCharacter* Enemy = reinterpret_cast<CG::ASolarCharacter*>(Actor);
-
-			if (Settings[STOP_SPECTATOR].Value.bValue)
-			{
-				CG::ASolarPlayerState* LocalPlayerState = LocalCharacter->GetSolarPlayerState();
-				if (!LocalPlayerState)
-					continue;
-
-				CG::ASolarSpectateInfo* SpectateInfo = LocalPlayerState->GetSpectateInfo();
-				if (!SpectateInfo)
-					continue;
-
-				CG::TArray<CG::ASolarPlayerState*> Spectators = SpectateInfo->PlayersSpectatingMe;
-				for (int i = 0; i < Spectators.Count(); i++)
-				{
-					CG::ASolarPlayerState* SpectatingMe = Spectators[i];
-
-					if (!SpectatingMe->GetSpectateInfo())
-						continue;
-
-					LocalPlayerState->OnOtherPlayerStopSpectateMe(SpectatingMe, SpectatingMe->GetSpectateInfo());
-					SpectatingMe->GetSpectateInfo()->SpectateConditions.bCanBeSpectate = false;
-				}
-			}
-		}
-	}
 }
 
 void XXX::Radar()

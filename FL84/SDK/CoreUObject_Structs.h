@@ -389,7 +389,7 @@ namespace CG
 		FVector ToVector() const;
 	};
 
-#define SMALL_NUMBER 0
+#define SMALL_NUMBER 0.0f
 
 	/**
 	 * ScriptStruct CoreUObject.Vector
@@ -425,6 +425,7 @@ namespace CG
 		float Dot(const FVector& b) const;
 		float MagnitudeSqr() const;
 		float Magnitude() const;
+		float Size() const;
 		FVector Unit() const;
 		FVector GetSafeNormal(float Tolerance = SMALL_NUMBER) const;
 		FRotator ToRotator() const;

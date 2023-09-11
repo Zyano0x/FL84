@@ -664,6 +664,11 @@ namespace CG
 		return std::sqrtf(MagnitudeSqr());
 	}
 
+	float FVector::Size() const
+	{
+		return sqrt((this->X * this->X) + (this->Y * this->Y) + (this->Z * this->Z));
+	}
+
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000

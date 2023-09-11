@@ -7,42 +7,12 @@ namespace Aimbot
 	CG::FVector TargetPosition = CG::FVector();
 	CG::FRotator TargetRotation = CG::FRotator();
 
-	float SmoothOutYaw(float targetYaw, float currentYaw, float smoothness)
-	{
-		if (targetYaw > 0.f && currentYaw < 0.f)
-		{
-			float dist = 180.f - targetYaw + 180.f + currentYaw;
-			if (dist < 180.f)
-				return currentYaw - dist / smoothness;
-		}
-		else if (currentYaw > 0.f && targetYaw < 0.f)
-		{
-			float dist = 180.f - currentYaw + 180.f + targetYaw;
-			if (dist < 180.f)
-				return currentYaw + dist / smoothness;
-		}
-
-		return currentYaw + (targetYaw - currentYaw) / smoothness;
-	}
-
 	float Normalize(float angle)
 	{
 		float out = fmodf(fmodf(angle, 360.f) + 360.f, 360.f);
 		if (out > 180.f)
 			out -= 360.f;
 		return out;
-	}
-
-	CG::FRotator CalcAngle(CG::FVector& src, CG::FVector& dst)
-	{
-		CG::FVector delta(dst - src);
-
-		float distance = sqrtf(delta.X * delta.X + delta.Y * delta.Y + delta.Z * delta.Z);
-		float pitch = -((acosf((delta.Z / distance)) * 180.f / M_PI) - 90.f);
-		float yaw = atan2f(delta.Y, delta.X) * (180.f / M_PI);
-		float roll = 0.0f;
-
-		return CG::FRotator(pitch, yaw, roll);
 	}
 
 	CG::FRotator CalcAngle(CG::FVector& src, CG::FVector& dst, CG::FRotator& oldRotation, float& smoothing)
@@ -121,6 +91,7 @@ namespace Aimbot
 	void ResetLock()
 	{
 		ClosestDistance = InitCenterDistance;
+		TargetPosition = CG::FVector();
 	}
 
 	void LockOnTarget()
@@ -196,21 +167,11 @@ namespace Aimbot
 		if (!bWithRotationInput)
 			v11 = v10;
 
-		//CG::FRotator currentRotation = *(CG::FRotator*)(v11);
-
-		//CG::FRotator smoothRotation;
-		//smoothRotation.Pitch = currentRotation.Pitch + (TargetRotation.Pitch - currentRotation.Pitch) / Smooth;
-		////smoothRotation.Yaw = currentRotation.Yaw + (TargetRotation.Yaw - currentRotation.Yaw) / Smooth;
-		//smoothRotation.Yaw = SmoothOutYaw(TargetRotation.Yaw, currentRotation.Yaw, Smooth);
-		//smoothRotation.Roll = currentRotation.Roll + (TargetRotation.Roll - currentRotation.Roll) / Smooth;
-
-		//smoothRotation.Clamp();
-
 		if (Engine::IsKeyDown(Settings[AIM_KEY].Value.iValue) && Settings[AIM_MODE].Value.iValue == 0 && Settings[AIM_ENABLED].Value.bValue)
 		{
 			if (ClosestDistance != InitCenterDistance)
 			{
-				*(CG::FRotator*)(v11) =/* CG::FRotator(smoothRotation.Pitch, smoothRotation.Yaw, smoothRotation.Roll)*/ TargetRotation;
+				*(CG::FRotator*)(v11) = TargetRotation;
 			}
 		}
 		else
