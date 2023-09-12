@@ -22,7 +22,7 @@ void XXX::Unknown()
 	if (!CameraManager)
 		return;
 
-	CG::ASolarCharacter* LocalCharacter = reinterpret_cast<CG::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
+	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
 	if (!LocalCharacter)
 		return;
 
@@ -38,7 +38,7 @@ void XXX::Unknown()
 
 		if (Actor->IsA(CG::ASolarCharacter::StaticClass()))
 		{
-			CG::ASolarCharacter* Enemy = reinterpret_cast<CG::ASolarCharacter*>(Actor);
+			CG::ASolarCharacter* Enemy = static_cast<CG::ASolarCharacter*>(Actor);
 
 			if (Enemy->InSameTeamWithFirstPlayerController())
 				IsTeam = true;
@@ -95,7 +95,7 @@ void XXX::Unknown()
 					if (!Enemy->PlayerState)
 						continue;
 
-					CG::ESCMPlayerType PlayerType = reinterpret_cast<CG::ASCMPlayerState*>(Enemy->PlayerState)->PlayerType;
+					CG::ESCMPlayerType PlayerType = static_cast<CG::ASCMPlayerState*>(Enemy->PlayerState)->PlayerType;
 
 					if (PlayerType == CG::ESCMPlayerType::BotAI)
 					{
@@ -272,7 +272,7 @@ void XXX::Unknown()
 			if (!Settings[ESP_LOOT_ENABLED].Value.bValue)
 				continue;
 
-			CG::ASolarItemActor* Item = reinterpret_cast<CG::ASolarItemActor*>(Actor);
+			CG::ASolarItemActor* Item = static_cast<CG::ASolarItemActor*>(Actor);
 
 			CG::FVector ItemLocation = Item->K2_GetActorLocation();
 
@@ -375,7 +375,7 @@ void XXX::Unknown()
 
 			if (ItemType == CG::EItemType::TREASUREBOX)
 			{
-				CG::ASolarTreasureBoxActor* TreausureBox = reinterpret_cast<CG::ASolarTreasureBoxActor*>(Item);
+				CG::ASolarTreasureBoxActor* TreausureBox = static_cast<CG::ASolarTreasureBoxActor*>(Item);
 				if (Settings[ESP_TREASUREBOX].Value.bValue && ItemDistance < (Settings[ESP_ITEMS_DISTANCE].Value.fValue * 2))
 				{
 					if (TreausureBox->BOpened())
@@ -391,7 +391,7 @@ void XXX::Unknown()
 
 			if (ItemType == CG::EItemType::AIRDROPBOX)
 			{
-				CG::AAirDropTreasureBox* AirDropBox = reinterpret_cast<CG::AAirDropTreasureBox*>(Item);
+				CG::AAirDropTreasureBox* AirDropBox = static_cast<CG::AAirDropTreasureBox*>(Item);
 				if (Settings[ESP_AIRDROP].Value.bValue && ItemDistance < (Settings[ESP_ITEMS_DISTANCE].Value.fValue * 2))
 				{
 					if (AirDropBox->BOpened())
@@ -411,7 +411,7 @@ void XXX::Unknown()
 			if (!Settings[ESP_VEHICLE].Value.bValue)
 				continue;
 
-			CG::ASolarVehiclePawn* Vehicle = reinterpret_cast<CG::ASolarVehiclePawn*>(Actor);
+			CG::ASolarVehiclePawn* Vehicle = static_cast<CG::ASolarVehiclePawn*>(Actor);
 
 			CG::FVector VehicleLocation = Vehicle->K2_GetActorLocation();
 
@@ -451,7 +451,7 @@ void XXX::Removal()
 		if (!PlayerController->Character)
 			return;
 
-		CG::ASolarPlayerWeapon* CachedCurrentWeapon = reinterpret_cast<CG::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
+		CG::ASolarPlayerWeapon* CachedCurrentWeapon = static_cast<CG::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
 		if (!CachedCurrentWeapon)
 			return;
 
@@ -471,7 +471,7 @@ void XXX::Removal()
 		if (!PlayerController->Character)
 			return;
 
-		CG::ASolarPlayerWeapon* CachedCurrentWeapon = reinterpret_cast<CG::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
+		CG::ASolarPlayerWeapon* CachedCurrentWeapon = static_cast<CG::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
 		if (!CachedCurrentWeapon)
 			return;
 
@@ -518,7 +518,7 @@ void XXX::Removal()
 		if (!PlayerController->Character)
 			return;
 
-		CG::ASolarPlayerWeapon* CachedCurrentWeapon = reinterpret_cast<CG::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
+		CG::ASolarPlayerWeapon* CachedCurrentWeapon = static_cast<CG::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
 		if (!CachedCurrentWeapon)
 			return;
 
@@ -549,7 +549,7 @@ void XXX::Aimbot()
 	if (!PlayerController)
 		return;
 
-	CG::ASolarCharacter* LocalCharacter = reinterpret_cast<CG::ASolarCharacter*>(PlayerController->Character);
+	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(PlayerController->Character);
 	if (!LocalCharacter)
 		return;
 
@@ -573,7 +573,7 @@ void XXX::Aimbot()
 
 		if (Actor->IsA(CG::ASolarCharacter::StaticClass()))
 		{
-			CG::ASolarCharacter* Enemy = reinterpret_cast<CG::ASolarCharacter*>(Actor);
+			CG::ASolarCharacter* Enemy = static_cast<CG::ASolarCharacter*>(Actor);
 
 			if (Enemy == LocalCharacter)
 				continue;
@@ -705,7 +705,7 @@ void XXX::Radar()
 
 				if (Actor->IsA(CG::ASolarCharacter::StaticClass()))
 				{
-					CG::ASolarCharacter* Enemy = reinterpret_cast<CG::ASolarCharacter*>(Actor);
+					CG::ASolarCharacter* Enemy = static_cast<CG::ASolarCharacter*>(Actor);
 
 					if (Enemy->InSameTeamWithFirstPlayerController())
 						continue;
@@ -728,7 +728,7 @@ void XXX::Radar()
 
 void XXX::BypassEAC()
 {
-	CG::USolarEasyAntiCheatManager* EAC_ = reinterpret_cast<CG::USolarEasyAntiCheatManager*>(CG::USolarEasyAntiCheatManager::StaticClass());
+	CG::USolarEasyAntiCheatManager* EAC_ = (CG::USolarEasyAntiCheatManager*)(CG::USolarEasyAntiCheatManager::StaticClass());
 	if (!EAC_)
 		return;
 
@@ -739,7 +739,7 @@ void XXX::BypassEAC()
 	if (!World)
 		return;
 
-	CG::USolarGameInstanceBase* GameInstance = reinterpret_cast<CG::USolarGameInstanceBase*>(World->OwningGameInstance);
+	CG::USolarGameInstanceBase* GameInstance = static_cast<CG::USolarGameInstanceBase*>(World->OwningGameInstance);
 	if (!GameInstance)
 		return;
 
