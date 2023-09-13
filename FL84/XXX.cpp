@@ -262,7 +262,7 @@ void XXX::Unknown()
 			}
 			else
 			{
-				if (!Settings[OFFSCREEN].Value.bValue)
+				if (!Settings[OFFSCREEN].Value.bValue) // TODO: Implement Offscreen ESP
 					continue;
 			}
 		}

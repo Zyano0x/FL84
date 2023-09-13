@@ -344,15 +344,6 @@ namespace Menu
 			}
 
 			ImGui::Spacing();
-			if (ImGui::CollapsingHeader(ICON_FA_SLIDERS " Miscs"))
-			{
-				ImGui::Spacing();
-				ImGui::Spacing();
-				ImGui::Checkbox(" Kick Spectator", &Settings[STOP_SPECTATOR].Value.bValue);
-				ImGui::Spacing();
-			}
-
-			ImGui::Spacing();
 			if (ImGui::CollapsingHeader(ICON_FA_GEAR " Config"))
 			{
 				ImGui::Spacing();
