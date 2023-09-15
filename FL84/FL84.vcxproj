@@ -137,7 +137,7 @@
       <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;FL84_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -169,11 +169,12 @@
     <ClInclude Include="ImGUI\imstb_rectpack.h" />
     <ClInclude Include="ImGUI\imstb_textedit.h" />
     <ClInclude Include="ImGUI\imstb_truetype.h" />
+    <ClInclude Include="LazyImporter.hpp" />
     <ClInclude Include="Mathematics.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="SDK.h" />
     <ClInclude Include="Settings.h" />
-    <ClInclude Include="xorstr.hpp" />
+    <ClInclude Include="XOR.hpp" />
     <ClInclude Include="XXX.h" />
     <ClInclude Include="Hook.h" />
     <ClInclude Include="pch.h" />

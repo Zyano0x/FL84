@@ -131,18 +131,18 @@ void Initialize()
 	freopen_s(&f, "CONOUT$", "w", stdout);
 	SetConsoleTitle(xorstr_(L"Zy4n0 Private Debug Mode"));
 #endif
-	printf("Injecting\n");
+	printf(xorstr_("Injecting\n"));
 
-	strcpy(ConfigDirectory, "C:\\ZC\\");
+	strcpy(ConfigDirectory, xorstr_("C:\\ZC\\"));
 	CreateDirectoryA(ConfigDirectory, NULL);
 
 	CG::InitSDK();
 	InitSettings();
 	LoadSettings();
 
-	uint64_t Module = reinterpret_cast<uint64_t>(GetModuleHandleW(L"SolarlandClient-Win64-Shipping.exe"));
-	uint64_t hkPresent_Sig = Engine::FindPattern("GameOverlayRenderer64.dll", "48 89 6C 24 ? 48 89 74 24 ? 41 56 48 83 EC ? 41 8B E8");
-	uint64_t CreateHook_Sig = Engine::FindPattern("GameOverlayRenderer64.dll", "48 89 5C 24 ? 57 48 83 EC ? 33 C0");
+	uint64_t Module = reinterpret_cast<uint64_t>(LI_FN(GetModuleHandleW).safe()(xorstr_(L"SolarlandClient-Win64-Shipping.exe")));
+	uint64_t hkPresent_Sig = Engine::FindPattern(xorstr_("GameOverlayRenderer64.dll"), xorstr_("48 89 6C 24 ? 48 89 74 24 ? 41 56 48 83 EC ? 41 8B E8"));
+	uint64_t CreateHook_Sig = Engine::FindPattern(xorstr_("GameOverlayRenderer64.dll"), xorstr_("48 89 5C 24 ? 57 48 83 EC ? 33 C0"));
 	//uint64_t GetBoneMatrix = Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 8B C4 48 89 58 ? 48 89 70 ? 57 48 81 EC ? ? ? ? F6 81");
 	//uint64_t GetViewPointAddress = Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 8B C4 48 89 58 ? 48 89 68 ? 56 57 41 56 48 81 EC ? ? ? ? 0F 29 70 ? 0F 29 78 ? 48 8B 05");
 	//uint64_t GetPlayerViewPointAddress = Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 89 5C 24 ? 48 89 7C 24 ? 55 41 56 41 57 48 8B EC 48 83 EC ? 48 8B FA");
@@ -158,8 +158,8 @@ void Initialize()
 	CreateHook = (decltype(CreateHook))CreateHook_Sig;
 	CreateHook(hkPresent_Sig, (__int64)&hkPresent, (unsigned __int64*)&oPresent, 1);
 
-	GetShotDir = reinterpret_cast<tGetShotDir>(Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9"));
+	GetShotDir = reinterpret_cast<tGetShotDir>(Engine::FindPattern(xorstr_("SolarlandClient-Win64-Shipping.exe"), xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")));
 	Hook(GetShotDir, hkGetShotDir);
 
-	printf("Cheat Loaded!\n");
+	printf(xorstr_("Cheat Loaded!\n"));
 }

@@ -99,7 +99,7 @@ void XXX::Unknown()
 
 					if (PlayerType == CG::ESCMPlayerType::BotAI)
 					{
-						Draw::DrawString(std::string(xorstr_("BOT")), (Left + Right) / 2, Top - 17, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+						Draw::DrawString(xorstr_("BOT"), (Left + Right) / 2, Top - 17, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 					}
 					else
 					{
@@ -168,9 +168,9 @@ void XXX::Unknown()
 						HPColor = ImVec4(0.745f, 0.0f, 0.0f, 1.f);
 
 					if (Enemy->CurrShieldValue > 0)
-						Draw::VerticalHealthBar(Left - 15, Top, Width, Bottom - Top, (int)Enemy->CurrShieldValue, (int)Enemy->MaxShieldValue, ShieldColor);	
+						Draw::VerticalHealthBar(Left - 10, Top, Width, Bottom - Top, (int)Enemy->CurrShieldValue, (int)Enemy->MaxShieldValue, ShieldColor);	
 					
-					Draw::VerticalHealthBar(Left - 10, Top, Width, Bottom - Top, (int)Enemy->GetCurrentHealth(), (int)Enemy->GetMaxHealth(), HPColor);
+					Draw::VerticalHealthBar(Left - 5, Top, Width, Bottom - Top, (int)Enemy->GetCurrentHealth(), (int)Enemy->GetMaxHealth(), HPColor);
 				}
 
 				if (Settings[ESP_SKELETON].Value.bValue)
@@ -485,14 +485,29 @@ void XXX::Removal()
 		Config->ADSBaseSpread = 0.0f;
 		Config->VhADSBaseSpread = 0.0f;
 
-		CG::UAmmoConfig* AmmoConfig = Config->PrimaryAmmo;
-		if (!AmmoConfig)
+		CG::UAmmoConfig* PrimaryAmmo = Config->PrimaryAmmo;
+		if (!PrimaryAmmo)
 			return;
 
-		CG::FAmmonRecoilScope FAmmonRecoilScope = AmmoConfig->ScopeRecoil;
-		FAmmonRecoilScope.EnableScopeVibration = false;
-		FAmmonRecoilScope.EnableCrossHairVibration = false;
-		FAmmonRecoilScope.EnableScopeRoll = false;
+		PrimaryAmmo->ADSRecoilCOP = 0.0f;
+		PrimaryAmmo->ADSSpreadCOP = 0.0f;
+	
+		CG::FAmmonRecoilScope FAmmonRecoilScopePrimary = PrimaryAmmo->ScopeRecoil;
+		FAmmonRecoilScopePrimary.EnableScopeVibration = false;
+		FAmmonRecoilScopePrimary.EnableCrossHairVibration = false;
+		FAmmonRecoilScopePrimary.EnableScopeRoll = false;
+
+		CG::UAmmoConfig* SecondaryAmmo = Config->SecondaryAmmo;
+		if (!SecondaryAmmo)
+			return;
+
+		SecondaryAmmo->ADSRecoilCOP = 0.0f;
+		SecondaryAmmo->ADSSpreadCOP = 0.0f;
+
+		CG::FAmmonRecoilScope FAmmonRecoilScopeSecondary = SecondaryAmmo->ScopeRecoil;
+		FAmmonRecoilScopeSecondary.EnableScopeVibration = false;
+		FAmmonRecoilScopeSecondary.EnableCrossHairVibration = false;
+		FAmmonRecoilScopeSecondary.EnableScopeRoll = false;
 
 		CG::UWeaponShootConfig* WeaponShootConfig = Config->WeaponShootConfig;
 		if (!WeaponShootConfig)

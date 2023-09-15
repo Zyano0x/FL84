@@ -113,7 +113,7 @@ namespace Menu
 	{
 		ImGui::SetNextWindowSize(ImVec2(450, 450));
 		ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(255 / 255.f, 242 / 255.f, 0, 1.f));
-		ImGui::Begin("Zyano Private", &MenuOpen, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoCollapse);
+		ImGui::Begin(xorstr_("Zyano Private"), &MenuOpen, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoCollapse);
 		ImGui::PopStyleColor();
 		{
 			auto Draw = ImGui::GetWindowDrawList();
@@ -125,7 +125,7 @@ namespace Menu
 			{
 				ImGui::Spacing();
 				ImGui::Spacing();
-				ImGui::Checkbox(" Enabled", &Settings[AIM_ENABLED].Value.bValue);
+				ImGui::Checkbox(xorstr_(" Enabled"), &Settings[AIM_ENABLED].Value.bValue);
 				ImGui::Spacing();
 				ImGui::Spacing();
 
@@ -135,34 +135,34 @@ namespace Menu
 					ImGui::PushStyleVar(ImGuiStyleVar_Alpha, ImGui::GetStyle().Alpha * 0.5f);
 				}
 				{
-					ImGui::Checkbox(" Ignore Knocked", &Settings[IGNORE_KNOCKED].Value.bValue);
+					ImGui::Checkbox(xorstr_(" Ignore Knocked"), &Settings[IGNORE_KNOCKED].Value.bValue);
 					ImGui::Spacing();
-					ImGui::Checkbox(" Draw FOV", &Settings[DRAW_FOV].Value.bValue);
+					ImGui::Checkbox(xorstr_(" Draw FOV"), &Settings[DRAW_FOV].Value.bValue);
 					ImGui::Spacing();
-					ImGui::Checkbox(" No Recoil", &Settings[NO_RECOIL].Value.bValue);
+					ImGui::Checkbox(xorstr_(" No Recoil"), &Settings[NO_RECOIL].Value.bValue);
 					ImGui::Spacing();
-					ImGui::Checkbox(" Fast Reload", &Settings[FAST_RELOAD].Value.bValue);
+					ImGui::Checkbox(xorstr_(" Fast Reload"), &Settings[FAST_RELOAD].Value.bValue);
 					ImGui::Spacing();
 
-					ImGui::Text("Aim Key");
+					ImGui::Text(xorstr_("Aim Key"));
 					ImGui::SameLine(ImGui::GetCursorPosX() + 150.0f);
 					Menu::Hotkey(&Settings[AIM_KEY].Value.iValue);
 
 					ImGui::Spacing();
 					static const char* AimMode[] = { " Aimbot FOV", " Silent Aim" };
 					ImGui::PushItemWidth(220);
-					ImGui::Combo(" Aim Mode", &Settings[AIM_MODE].Value.iValue, AimMode, IM_ARRAYSIZE(AimMode));
+					ImGui::Combo(xorstr_(" Aim Mode"), &Settings[AIM_MODE].Value.iValue, AimMode, IM_ARRAYSIZE(AimMode));
 					ImGui::PopItemWidth();
 
 					ImGui::Spacing();
 					static const char* SelectedBone[] = { " HEAD", " NECK", " NEAREST BONE" };
 					ImGui::PushItemWidth(220);
-					ImGui::Combo(" Select Bone", &Settings[AIM_SELECT_BONE].Value.iValue, SelectedBone, IM_ARRAYSIZE(SelectedBone));
+					ImGui::Combo(xorstr_(" Select Bone"), &Settings[AIM_SELECT_BONE].Value.iValue, SelectedBone, IM_ARRAYSIZE(SelectedBone));
 					ImGui::PopItemWidth();
 
 					ImGui::Spacing();
 					ImGui::PushItemWidth(220);
-					ImGui::SliderFloat(" Aimbot FOV", &Settings[AIM_FOV].Value.fValue, 1, 150, "%.f");
+					ImGui::SliderFloat(xorstr_(" Aimbot FOV"), &Settings[AIM_FOV].Value.fValue, 1, 150, "%.f");
 					ImGui::PopItemWidth();
 
 					if (Settings[AIM_MODE].Value.iValue == 1)
@@ -173,17 +173,17 @@ namespace Menu
 					{
 						ImGui::Spacing();
 						ImGui::PushItemWidth(220);
-						ImGui::SliderFloat(" Smooth", &Settings[AIM_SMOOTH].Value.fValue, 1, 10, "%.f");
+						ImGui::SliderFloat(xorstr_(" Smooth"), &Settings[AIM_SMOOTH].Value.fValue, 1, 10, "%.f");
 						ImGui::PopItemWidth();
 
 						ImGui::Spacing();
 						ImGui::PushItemWidth(220);
-						ImGui::SliderFloat(" Human Speed", &Settings[HUMAN_SPEED].Value.fValue, 1, 100, "%.f");
+						ImGui::SliderFloat(xorstr_(" Human Speed"), &Settings[HUMAN_SPEED].Value.fValue, 1, 100, "%.f");
 						ImGui::PopItemWidth();
 
 						ImGui::Spacing();
 						ImGui::PushItemWidth(220);
-						ImGui::SliderFloat(" Human Scale", &Settings[HUMAN_SCALE].Value.fValue, 1, 20, "%.f");
+						ImGui::SliderFloat(xorstr_(" Human Scale"), &Settings[HUMAN_SCALE].Value.fValue, 1, 20, "%.f");
 						ImGui::PopItemWidth();
 					}
 					if (Settings[AIM_MODE].Value.iValue == 1)
@@ -204,11 +204,11 @@ namespace Menu
 			if (ImGui::CollapsingHeader(ICON_FA_EYE_SLASH " Visuals"))
 			{
 				ImGui::Spacing();
-				if (ImGui::TreeNode("Players"))
+				if (ImGui::TreeNode(xorstr_("Players")))
 				{
 					ImGui::Spacing();
 					ImGui::Spacing();
-					ImGui::Checkbox(" Enabled", &Settings[ESP_ENABLED].Value.bValue);
+					ImGui::Checkbox(xorstr_(" Enabled"), &Settings[ESP_ENABLED].Value.bValue);
 					ImGui::Spacing();
 					ImGui::Spacing();
 
@@ -218,47 +218,47 @@ namespace Menu
 						ImGui::PushStyleVar(ImGuiStyleVar_Alpha, ImGui::GetStyle().Alpha * 0.5f);
 					}
 					{
-						ImGui::Checkbox(" Enemy", &Settings[ESP_ENEMY].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Enemy"), &Settings[ESP_ENEMY].Value.bValue);
 						ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-						ImGui::ColorEdit4(" Visible Color", (float*)&Settings[COLOR_ENEMY_VISIBLE].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+						ImGui::ColorEdit4(xorstr_(" Visible Color"), (float*)&Settings[COLOR_ENEMY_VISIBLE].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
 						ImGui::Spacing();
-						ImGui::Checkbox(" Team", &Settings[ESP_TEAM].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Team"), &Settings[ESP_TEAM].Value.bValue);
 						ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-						ImGui::ColorEdit4(" Team Color", (float*)&Settings[COLOR_TEAM].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+						ImGui::ColorEdit4(xorstr_(" Team Color"), (float*)&Settings[COLOR_TEAM].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
 						ImGui::Spacing();
-						ImGui::Checkbox(" Name", &Settings[ESP_NAME].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Name"), &Settings[ESP_NAME].Value.bValue);
 						ImGui::Spacing();
-						ImGui::Checkbox(" Direction Line", &Settings[ESP_DIRECTIONLINE].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Direction Line"), &Settings[ESP_DIRECTIONLINE].Value.bValue);
 						ImGui::Spacing();
-						ImGui::Checkbox(" Distance", &Settings[ESP_DISTANCE].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Distance"), &Settings[ESP_DISTANCE].Value.bValue);
 						ImGui::Spacing();
-						ImGui::Checkbox(" Health", &Settings[ESP_HEALTH].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Health"), &Settings[ESP_HEALTH].Value.bValue);
 						ImGui::Spacing();
-						ImGui::Checkbox(" Skeleton", &Settings[ESP_SKELETON].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Skeleton"), &Settings[ESP_SKELETON].Value.bValue);
 						ImGui::Spacing();
-						ImGui::Checkbox(" Weapon", &Settings[ESP_WEAPON].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Weapon"), &Settings[ESP_WEAPON].Value.bValue);
 						ImGui::Spacing();
-						ImGui::Checkbox(" Vehicle", &Settings[ESP_VEHICLE].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Vehicle"), &Settings[ESP_VEHICLE].Value.bValue);
 						ImGui::Spacing();
-						ImGui::Checkbox(" Radar", &Settings[RADAR_ENABLED].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Radar"), &Settings[RADAR_ENABLED].Value.bValue);
 						ImGui::Spacing();
-						ImGui::Checkbox(" Offscreen", &Settings[OFFSCREEN].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Offscreen"), &Settings[OFFSCREEN].Value.bValue);
 
 						ImGui::Spacing();
 						ImGui::PushItemWidth(220);
-						ImGui::SliderFloat(" Radar Distance", &Settings[RADAR_DISTANCE].Value.fValue, 1, 300, "%.f");
+						ImGui::SliderFloat(xorstr_(" Radar Distance"), &Settings[RADAR_DISTANCE].Value.fValue, 1, 300, "%.f");
 						ImGui::PopItemWidth();
 
 						ImGui::Spacing();
 						static const char* SnaplinesType[] = { " Off", " Top", " Base" };
 						ImGui::PushItemWidth(220);
-						ImGui::Combo(" Snaplines", &Settings[ESP_SNAPLINES].Value.iValue, SnaplinesType, IM_ARRAYSIZE(SnaplinesType));
+						ImGui::Combo(xorstr_(" Snaplines"), &Settings[ESP_SNAPLINES].Value.iValue, SnaplinesType, IM_ARRAYSIZE(SnaplinesType));
 						ImGui::PopItemWidth();
 
 						ImGui::Spacing();
 						static const char* BoxType[] = { " Off", " Box", " Corners Box" };
 						ImGui::PushItemWidth(220);
-						ImGui::Combo(" Box Style", &Settings[ESP_BOX_TYPE].Value.iValue, BoxType, IM_ARRAYSIZE(BoxType));
+						ImGui::Combo(xorstr_(" Box Style"), &Settings[ESP_BOX_TYPE].Value.iValue, BoxType, IM_ARRAYSIZE(BoxType));
 						ImGui::PopItemWidth();
 					}
 					if (!Settings[ESP_ENABLED].Value.bValue)
@@ -271,11 +271,11 @@ namespace Menu
 				}
 
 				ImGui::Spacing();
-				if (ImGui::TreeNode("Items"))
+				if (ImGui::TreeNode(xorstr_("Items")))
 				{
 					ImGui::Spacing();
 					ImGui::Spacing();
-					ImGui::Checkbox(" Enabled", &Settings[ESP_LOOT_ENABLED].Value.bValue);
+					ImGui::Checkbox(xorstr_(" Enabled"), &Settings[ESP_LOOT_ENABLED].Value.bValue);
 					ImGui::Spacing();
 					ImGui::Spacing();
 
@@ -285,52 +285,52 @@ namespace Menu
 						ImGui::PushStyleVar(ImGuiStyleVar_Alpha, ImGui::GetStyle().Alpha * 0.5f);
 					}
 					{
-						ImGui::Checkbox(" Weapon", &Settings[ESP_LOOT_WEAPON].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Weapon"), &Settings[ESP_LOOT_WEAPON].Value.bValue);
 						ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-						ImGui::ColorEdit4(" Weapon Color", (float*)&Settings[COLOR_LOOT_WEAPON].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+						ImGui::ColorEdit4(xorstr_(" Weapon Color"), (float*)&Settings[COLOR_LOOT_WEAPON].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
 
 						ImGui::Spacing();
-						ImGui::Checkbox(" Bullet", &Settings[ESP_LOOT_AMMO].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Bullet"), &Settings[ESP_LOOT_AMMO].Value.bValue);
 						ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-						ImGui::ColorEdit4(" Bullet Color", (float*)&Settings[COLOR_LOOT_AMMO].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+						ImGui::ColorEdit4(xorstr_(" Bullet Color"), (float*)&Settings[COLOR_LOOT_AMMO].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
 
 						ImGui::Spacing();
-						ImGui::Checkbox(" Weapon Parts", &Settings[ESP_LOOT_ATTACHMENTS].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Weapon Parts"), &Settings[ESP_LOOT_ATTACHMENTS].Value.bValue);
 						ImGui::Spacing();
-						ImGui::Checkbox(" Shield", &Settings[ESP_LOOT_SHIELD].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Shield"), &Settings[ESP_LOOT_SHIELD].Value.bValue);
 						ImGui::Spacing();
-						ImGui::Checkbox(" Shield Upgrade", &Settings[ESP_LOOT_SHIELDUPGR].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Shield Upgrade"), &Settings[ESP_LOOT_SHIELDUPGR].Value.bValue);
 						ImGui::Spacing();
-						ImGui::Checkbox(" Horizontal Jetpack", &Settings[ESP_LOOT_HJETPACK].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Horizontal Jetpack"), &Settings[ESP_LOOT_HJETPACK].Value.bValue);
 						ImGui::Spacing();
-						ImGui::Checkbox(" Vertical Jetpack", &Settings[ESP_LOOT_VJETPACK].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Vertical Jetpack"), &Settings[ESP_LOOT_VJETPACK].Value.bValue);
 						ImGui::Spacing();
-						ImGui::Checkbox(" Death Box", &Settings[ESP_LOOT_DEATHBOX].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Death Box"), &Settings[ESP_LOOT_DEATHBOX].Value.bValue);
 
 						ImGui::Spacing();
-						ImGui::Checkbox(" Health Items", &Settings[ESP_LOOT_HEALTH].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Health Items"), &Settings[ESP_LOOT_HEALTH].Value.bValue);
 						ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-						ImGui::ColorEdit4(" Health Items", (float*)&Settings[COLOR_LOOT_HEALTH].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+						ImGui::ColorEdit4(xorstr_(" Health Items"), (float*)&Settings[COLOR_LOOT_HEALTH].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
 
 						ImGui::Spacing();
-						ImGui::Checkbox(" Treasure Box", &Settings[ESP_TREASUREBOX].Value.bValue);
+						ImGui::Checkbox(xorstr_(" Treasure Box"), &Settings[ESP_TREASUREBOX].Value.bValue);
 						ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-						ImGui::ColorEdit4(" Treasure Box", (float*)&Settings[COLOR_TREASUREBOX].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+						ImGui::ColorEdit4(xorstr_(" Treasure Box"), (float*)&Settings[COLOR_TREASUREBOX].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
 
 						ImGui::Spacing();
-						ImGui::Checkbox(" AirDrop Box", &Settings[ESP_AIRDROP].Value.bValue);
+						ImGui::Checkbox(xorstr_(" AirDrop Box"), &Settings[ESP_AIRDROP].Value.bValue);
 						ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-						ImGui::ColorEdit4(" AirDrop Box", (float*)&Settings[COLOR_AIRDROP].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+						ImGui::ColorEdit4(xorstr_(" AirDrop Box"), (float*)&Settings[COLOR_AIRDROP].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
 
 						ImGui::Spacing();
 						static const char* LevelItems[] = { " Level 1", " Level 2", " Level 3", " Level 4" , " Level 5" , " Level 6" };
 						ImGui::PushItemWidth(220);
-						ImGui::Combo(" Level Items", &Settings[ESP_LOOT_LEVEL].Value.iValue, LevelItems, IM_ARRAYSIZE(LevelItems));
+						ImGui::Combo(xorstr_(" Level Items"), &Settings[ESP_LOOT_LEVEL].Value.iValue, LevelItems, IM_ARRAYSIZE(LevelItems));
 						ImGui::PopItemWidth();
 
 						ImGui::Spacing();
 						ImGui::PushItemWidth(220);
-						ImGui::SliderFloat(" Items Distance", &Settings[ESP_ITEMS_DISTANCE].Value.fValue, 1.f, 300.f, "%.f");
+						ImGui::SliderFloat(xorstr_(" Items Distance"), &Settings[ESP_ITEMS_DISTANCE].Value.fValue, 1.f, 300.f, "%.f");
 						ImGui::PopItemWidth();
 					}
 					if (!Settings[ESP_LOOT_ENABLED].Value.bValue)
@@ -349,61 +349,61 @@ namespace Menu
 				ImGui::Spacing();
 				ImGui::Spacing();
 
-				if (ImGui::Button("Load Config", ImVec2(95, 35)))
+				if (ImGui::Button(xorstr_("Load Config"), ImVec2(95, 35)))
 				{
 					if (LoadSettings())
 					{
-						ImGui::OpenPopup("Settings loaded");
+						ImGui::OpenPopup(xorstr_("Settings loaded"));
 					}
 					else
 					{
-						ImGui::OpenPopup("Loading failed");
+						ImGui::OpenPopup(xorstr_("Loading failed"));
 					}
 				}
 
 				ImGui::Spacing();
 
-				if (ImGui::Button("Save Config", ImVec2(95, 35)))
+				if (ImGui::Button(xorstr_("Save Config"), ImVec2(95, 35)))
 				{
 					if (SaveSettings())
 					{
-						ImGui::OpenPopup("Settings saved");
+						ImGui::OpenPopup(xorstr_("Settings saved"));
 					}
 					else
 					{
-						ImGui::OpenPopup("Saving failed");
+						ImGui::OpenPopup(xorstr_("Saving failed"));
 					}
 				}
 
-				if (ImGui::BeginPopupModal("Settings Loaded", 0, ImGuiWindowFlags_NoResize))
+				if (ImGui::BeginPopupModal(xorstr_("Settings Loaded"), 0, ImGuiWindowFlags_NoResize))
 				{
-					ImGui::Text("The settings have been loaded");
+					ImGui::Text(xorstr_("The settings have been loaded"));
 					ImGui::Separator();
-					if (ImGui::Button("OK", ImVec2(70, 0))) { ImGui::CloseCurrentPopup(); }
+					if (ImGui::Button(xorstr_("OK"), ImVec2(70, 0))) { ImGui::CloseCurrentPopup(); }
 					ImGui::EndPopup();
 				}
 
-				if (ImGui::BeginPopupModal("Settings Saved", 0, ImGuiWindowFlags_NoResize))
+				if (ImGui::BeginPopupModal(xorstr_("Settings Saved"), 0, ImGuiWindowFlags_NoResize))
 				{
-					ImGui::Text("The settings have been saved");
+					ImGui::Text(xorstr_("The settings have been saved"));
 					ImGui::Separator();
-					if (ImGui::Button("OK", ImVec2(70, 0))) { ImGui::CloseCurrentPopup(); }
+					if (ImGui::Button(xorstr_("OK"), ImVec2(70, 0))) { ImGui::CloseCurrentPopup(); }
 					ImGui::EndPopup();
 				}
 
-				if (ImGui::BeginPopupModal("Loading Failed", 0, ImGuiWindowFlags_NoResize))
+				if (ImGui::BeginPopupModal(xorstr_("Loading Failed"), 0, ImGuiWindowFlags_NoResize))
 				{
-					ImGui::Text("Failed to load the settings");
+					ImGui::Text(xorstr_("Failed to load the settings"));
 					ImGui::Separator();
-					if (ImGui::Button("OK", ImVec2(70, 0))) { ImGui::CloseCurrentPopup(); }
+					if (ImGui::Button(xorstr_("OK"), ImVec2(70, 0))) { ImGui::CloseCurrentPopup(); }
 					ImGui::EndPopup();
 				}
 
-				if (ImGui::BeginPopupModal("Saving Failed", 0, ImGuiWindowFlags_NoResize))
+				if (ImGui::BeginPopupModal(xorstr_("Saving Failed"), 0, ImGuiWindowFlags_NoResize))
 				{
-					ImGui::Text("Failed to save the settings");
+					ImGui::Text(xorstr_("Failed to save the settings"));
 					ImGui::Separator();
-					if (ImGui::Button("OK", ImVec2(70, 0))) { ImGui::CloseCurrentPopup(); }
+					if (ImGui::Button(xorstr_("OK"), ImVec2(70, 0))) { ImGui::CloseCurrentPopup(); }
 					ImGui::EndPopup();
 				}
 			}

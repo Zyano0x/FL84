@@ -99,7 +99,10 @@
     <ClInclude Include="SDK.h">
       <Filter>SDK</Filter>
     </ClInclude>
-    <ClInclude Include="xorstr.hpp">
+    <ClInclude Include="XOR.hpp">
+      <Filter>Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="LazyImporter.hpp">
       <Filter>Encryption</Filter>
     </ClInclude>
   </ItemGroup>

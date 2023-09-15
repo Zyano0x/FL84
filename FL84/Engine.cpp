@@ -32,7 +32,7 @@ namespace Engine
 		const auto ntHeaders = (PIMAGE_NT_HEADERS)((std::uint8_t*)moduleAdress + dosHeader->e_lfanew);
 
 		const auto sizeOfImage = ntHeaders->OptionalHeader.SizeOfImage;
-		auto       patternBytes = patternToByte(pattern);
+		const auto patternBytes = patternToByte(pattern);
 		const auto scanBytes = reinterpret_cast<std::uint8_t*>(moduleAdress);
 
 		const auto s = patternBytes.size();

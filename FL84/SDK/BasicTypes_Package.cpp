@@ -20,7 +20,7 @@ namespace CG
 	 */
 	bool InitSDK(const std::wstring& moduleName, uintptr_t gObjectsOffset, uintptr_t gNamesOffset, uintptr_t gWorldOffset)
 	{
-		auto mBaseAddress = reinterpret_cast<uintptr_t>(GetModuleHandleW(moduleName.c_str()));
+		auto mBaseAddress = reinterpret_cast<uintptr_t>(LI_FN(GetModuleHandleW).safe()(moduleName.c_str()));
 		if (!mBaseAddress)
 			return false;
 
@@ -36,7 +36,7 @@ namespace CG
 	 */
 	bool InitSDK()
 	{
-		return InitSDK(L"SolarlandClient-Win64-Shipping.exe", 0x665DDF0, 0x6645580, 0x67B5080);
+		return InitSDK(xorstr_(L"SolarlandClient-Win64-Shipping.exe"), 0x665DDF0, 0x6645580, 0x67B5080);
 	}
 
 	// --------------------------------------------------
@@ -109,15 +109,15 @@ namespace CG
 	 */
 	std::string FString::ToString() const
 	{
-		/*size_t length = std::wcslen(_data);
-		std::string str(length, '\0');
-		std::use_facet<std::ctype<wchar_t>>(std::locale()).narrow(_data, _data + length, '?', &str[0]);
-		return str;*/
-
 		if (IsValid())
 		{
-			std::wstring WData(_data);
-			return std::string(WData.begin(), WData.end());
+			/*std::wstring WData(_data);
+			return std::string(WData.begin(), WData.end());*/
+
+			const auto length = std::wcslen(_data);
+			std::string str(length, '\0');
+			std::use_facet<std::ctype<wchar_t>>(std::locale()).narrow(_data, _data + length, '?', &str[0]);
+			return str;
 		}
 
 		return "?";
