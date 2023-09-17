@@ -44,7 +44,6 @@ public:
 		FootPos = CG::FVector2D(0.0f, 0.0f);
 		ItemPos = CG::FVector2D(0.0f, 0.0f);
 		VehiclePos = CG::FVector2D(0.0f, 0.0f);
-		Position = CG::FVector2D(0.0f, 0.0f);
 
 		Head = CG::FVector(0.0f, 0.0f, 0.0f);
 		Root = CG::FVector(0.0f, 0.0f, 0.0f);
@@ -66,7 +65,7 @@ public:
 private:
 	bool IsTeam;
 	ImVec4 ColorVisisble;
-	CG::FVector2D HeadPos, FootPos, ItemPos, VehiclePos, Position;
+	CG::FVector2D HeadPos, FootPos, ItemPos, VehiclePos;
 	CG::FVector Head, Root;
 	CG::FVector AimPos;
 };
