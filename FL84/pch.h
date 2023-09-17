@@ -15,6 +15,7 @@
 #include <sstream>
 #include <iomanip>
 #include <cmath>
+#include <algorithm>
 #include <array>
 #include <dxgi.h>	
 #include <d3d11.h>

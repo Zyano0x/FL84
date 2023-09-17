@@ -11,4 +11,6 @@ namespace Math
 	D3DMATRIX MatrixMultiplication(D3DMATRIX pM1, D3DMATRIX pM2);
 	CG::FVector2D WorldToRadar(CG::FRotator Rotation, CG::FVector CameraLocation, CG::FVector Origin, CG::FVector2D RadarPosition, CG::FVector2D RadarSize);
 	CG::FVector GetDirectionUnitVector(CG::FVector From, CG::FVector To);
+	void VectorAnglesRadar(CG::FVector& Forward, CG::FVector& Angles);
+	void RotateTriangle(std::array<CG::FVector, 3>& Points, float Rotation);
 }

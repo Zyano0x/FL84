@@ -122,8 +122,12 @@ void InitSettings()
 
 	Settings[OFFSCREEN] = AddConfig("Esp Settings", "Offscreen", false);
 
-	Settings[RADAR_ENABLED] = AddConfig("Esp Settings", "Radar_Enabled", false);
-	Settings[RADAR_DISTANCE] = AddConfig("Esp Settings", "Radar_Distance", 300.f, 1.f, 300.f);
+	Settings[RADAR_ENABLED] = AddConfig("Radar Settings", "Radar_Enabled", false);
+	Settings[RADAR_DISTANCE] = AddConfig("Radar Settings", "Radar_Distance", 300.f, 1.f, 300.f);
+	Settings[RADAR_ZOOM] = AddConfig("Radar Settings", "Radar_Zoom", 1.0f, 1.0f, 5.0f);
+	Settings[RADAR_SIZE] = AddConfig("Radar Settings", "Radar_Size", 250.0f, 10.0f, 300.0f);
+	Settings[RADAR_X] = AddConfig("Radar Settings", "Radar_X", 100.0f, 1.0f, 500.0f);
+	Settings[RADAR_Y] = AddConfig("Radar Settings", "Radar_Y", 100.0f, 1.0f, 500.0f);
 
 	//=============================================================================================================================
 

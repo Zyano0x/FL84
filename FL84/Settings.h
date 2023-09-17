@@ -76,6 +76,10 @@ typedef enum
 
 	RADAR_ENABLED,
 	RADAR_DISTANCE,
+	RADAR_ZOOM,
+	RADAR_SIZE,
+	RADAR_X,
+	RADAR_Y,
 
 	// Misc =======================================================================================================
 

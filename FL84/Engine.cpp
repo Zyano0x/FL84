@@ -149,6 +149,18 @@ namespace Engine
 		return 0;
 	}
 
+	float GetActorFromCenter(CG::APlayerCameraManager* CameraManager, CG::FVector Point)
+	{
+		float XDif, YDif, xcenter, ycenter;
+		CG::FVector Screen;
+		xcenter = ScreenWidth / 2;
+		ycenter = ScreenHeight / 2;
+		NerstBoneToScreen(CameraManager, Point, Screen);
+		Screen.X > xcenter ? XDif = Screen.X - xcenter : XDif = xcenter - Screen.X;
+		Screen.Y > ycenter ? YDif = Screen.Y - ycenter : YDif = ycenter - Screen.Y;
+		return (float)GetObjectDistance2D(ScreenWidth / 2, ScreenHeight / 2, Screen.X, Screen.Y);
+	}
+
 	bool NerstBoneToScreen(CG::APlayerCameraManager* CameraManager, CG::FVector WorldLocation, CG::FVector& Screenlocation)
 	{
 		CG::FRotator Rotation = CameraManager->CameraCache.POV.Rotation;
@@ -185,18 +197,6 @@ namespace Engine
 	bool IsKeyDown(int VK_Key)
 	{
 		return ((GetAsyncKeyState(VK_Key) & 0x8000) ? 1 : 0);
-	}
-
-	float GetActorFromCenter(CG::APlayerCameraManager* CameraManager, CG::FVector Point)
-	{
-		float XDif, YDif, xcenter, ycenter;
-		CG::FVector Screen;
-		xcenter = ScreenWidth / 2;
-		ycenter = ScreenHeight / 2;
-		NerstBoneToScreen(CameraManager, Point, Screen);
-		Screen.X > xcenter ? XDif = Screen.X - xcenter : XDif = xcenter - Screen.X;
-		Screen.Y > ycenter ? YDif = Screen.Y - ycenter : YDif = ycenter - Screen.Y;
-		return (float)GetObjectDistance2D(ScreenWidth / 2, ScreenHeight / 2, Screen.X, Screen.Y);
 	}
 
 	std::vector<int> HitBoxes = { HEAD, BIP001, UPPERARM_L, UPPERARM_R, HAND_L, HAND_R, THUMB_01_L, THUMB_01_R, THIGH_R, THIGH_L, CALF_R, CALF_L, FOOT_L, FOOT_R, ROOT };

@@ -49,7 +49,7 @@ namespace Menu
 		colors[ImGuiCol_TitleBg] = ImColor(0, 0, 0, 235);
 		colors[ImGuiCol_TitleBgActive] = ImColor(0, 0, 0, 235);
 
-		colors[ImGuiCol_WindowBg] = ImColor(0, 0, 0, 235);
+		colors[ImGuiCol_WindowBg] = ImVec4(0, 0, 0, 0.921f);
 
 		colors[ImGuiCol_Border] = ImVec4{ 0.20f ,0.20f ,0.20f ,0.20f };
 		colors[ImGuiCol_BorderShadow] = ImVec4{ 0.10f , 0.10f , 0.10f , 0.10f };

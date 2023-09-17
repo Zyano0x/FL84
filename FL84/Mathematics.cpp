@@ -62,23 +62,22 @@ namespace Math
 		return pOut;
 	}
 
-	CG::FVector2D WorldToRadar(CG::FRotator Rotation, CG::FVector CameraLocation, CG::FVector Origin, CG::FVector2D RadarPosition, CG::FVector2D RadarSize)
+	CG::FVector2D WorldToRadar(CG::FRotator LocalRotation, CG::FVector LocalPos, CG::FVector EntityPos, CG::FVector2D RadarPosition, CG::FVector2D RadarSize)
 	{
 		CG::FVector2D DotPos;
 		CG::FVector2D Direction;
 
-		// Get Origin Of Entity
-		CG::FVector EntityPosition = Origin;
-
-		// Get Origin Of LocalPlayer
-		CG::FVector LocalPosition = CameraLocation;
-
 		// Calculate Direction
-		Direction.Y = EntityPosition.Y - LocalPosition.Y;
-		Direction.X = EntityPosition.X - LocalPosition.X;
+		Direction.X = EntityPos.X - LocalPos.X;
+		Direction.Y = EntityPos.Y - LocalPos.Y;
+
+		Direction.X *= -1;
+
+		Direction.X += RadarPosition.X + (RadarSize.X / 2);
+		Direction.Y += RadarPosition.Y + (RadarSize.Y / 2);
 
 		// Get Rotation
-		float LocalAngles = Rotation.Yaw;
+		float LocalAngles = LocalRotation.Yaw - 90;
 
 		float Radian = DEG2RAD(LocalAngles);
 
@@ -92,16 +91,16 @@ namespace Math
 
 		// Clamp Dots To RadarSize ( Where 18 = Width/Height of the Dot)
 		if (DotPos.X < RadarPosition.X)
-			DotPos.X = RadarPosition.X;
+			DotPos.X = RadarPosition.X + 10;
 
-		if (DotPos.X > RadarPosition.X + RadarSize.X - 18)
-			DotPos.X = RadarPosition.X + RadarSize.X - 18;
+		if (DotPos.X > RadarPosition.X + RadarSize.X - 10)
+			DotPos.X = RadarPosition.X + RadarSize.X - 10;
 
 		if (DotPos.Y < RadarPosition.Y)
-			DotPos.Y = RadarPosition.Y;
+			DotPos.Y = RadarPosition.Y + 10;
 
-		if (DotPos.Y > RadarPosition.Y + RadarSize.Y - 18)
-			DotPos.Y = RadarPosition.Y + RadarSize.Y - 18;
+		if (DotPos.Y > RadarPosition.Y + RadarSize.Y - 10)
+			DotPos.Y = RadarPosition.Y + RadarSize.Y - 10;
 
 		return DotPos;
 	}
@@ -109,5 +108,41 @@ namespace Math
 	CG::FVector GetDirectionUnitVector(CG::FVector From, CG::FVector To)
 	{
 		return (To - From).GetSafeNormal();
+	}
+
+	void VectorAnglesRadar(CG::FVector& Forward, CG::FVector& Angles)
+	{
+		if (Forward.X == 0.f && Forward.Y == 0.f)
+		{
+			Angles.X = Forward.Z > 0.f ? -90.f : 90.f;
+			Angles.Y = 0.f;
+		}
+		else
+		{
+			Angles.X = RAD2DEG(atan2(-Forward.Z, Forward.Size()));
+			Angles.Y = RAD2DEG(atan2(Forward.Y, Forward.X));
+		}
+		Angles.Z = 0.f;
+	}
+
+	void RotateTriangle(std::array<CG::FVector, 3>& Points, float Rotation)
+	{
+		const auto PointsCenter = (Points.at(0) + Points.at(1) + Points.at(2)) / 3;
+		for (auto& Point : Points)
+		{
+			Point -= PointsCenter;
+
+			const auto TempX = Point.X;
+			const auto TempY = Point.Y;
+
+			const auto theta = DEG2RAD(Rotation);
+			const auto c = cosf(theta);
+			const auto s = sinf(theta);
+
+			Point.X = TempX * c - TempY * s;
+			Point.Y = TempX * s + TempY * c;
+
+			Point += PointsCenter;
+		}
 	}
 }

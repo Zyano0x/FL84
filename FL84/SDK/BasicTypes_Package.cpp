@@ -111,16 +111,16 @@ namespace CG
 	{
 		if (IsValid())
 		{
-			/*std::wstring WData(_data);
-			return std::string(WData.begin(), WData.end());*/
-
-			const auto length = std::wcslen(_data);
-			std::string str(length, '\0');
-			std::use_facet<std::ctype<wchar_t>>(std::locale()).narrow(_data, _data + length, '?', &str[0]);
-			return str;
+			std::wstring WData(_data);
+			return std::string(WData.begin(), WData.end());
 		}
 
 		return "?";
+
+		/*const auto length = std::wcslen(_data);
+		std::string str(length, '\0');
+		std::use_facet<std::ctype<wchar_t>>(std::locale()).narrow(_data, _data + length, '?', &str[0]);
+		return str;*/
 	}
 
 	/**

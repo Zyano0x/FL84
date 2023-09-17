@@ -36,6 +36,9 @@ void XXX::Unknown()
 		if (!Actor)
 			continue;
 
+		if (!Actor->RootComponent)
+			continue;
+
 		if (Actor->IsA(CG::ASolarCharacter::StaticClass()))
 		{
 			CG::ASolarCharacter* Enemy = static_cast<CG::ASolarCharacter*>(Actor);
@@ -119,12 +122,12 @@ void XXX::Unknown()
 					Draw::DrawString(std::string("[" + std::to_string(Distance) + " M]"), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 
 					if (Enemy->IsInVehicle())
-						Draw::DrawString(std::string("[In Vehicle]"), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+						Draw::DrawString(std::string(xorstr_("[In Vehicle]")), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 				}
 				else if (!Settings[ESP_DISTANCE].Value.bValue && Settings[ESP_WEAPON].Value.bValue)
 				{
-					std::string Weapon = "----";
-					std::string AmmoClip = "----";
+					std::string Weapon = xorstr_("----");
+					std::string AmmoClip = xorstr_("----");
 
 					if (Enemy->CachedCurrentWeapon)
 					{
@@ -135,14 +138,14 @@ void XXX::Unknown()
 					Draw::DrawString(std::string(Weapon).append(" | ").append(AmmoClip), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 
 					if (Enemy->IsInVehicle())
-						Draw::DrawString(std::string("[In Vehicle]"), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+						Draw::DrawString(std::string(xorstr_("[In Vehicle]")), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 				}
 				else if (Settings[ESP_DISTANCE].Value.bValue && Settings[ESP_WEAPON].Value.bValue)
 				{
 					int Distance = LocalCharacter->GetDistanceTo(Enemy) / 100;
 
-					std::string Weapon = "----";
-					std::string AmmoClip = "----";
+					std::string Weapon = xorstr_("----");
+					std::string AmmoClip = xorstr_("----");
 
 					if (Enemy->CachedCurrentWeapon)
 					{
@@ -154,23 +157,39 @@ void XXX::Unknown()
 					Draw::DrawString(std::string("[" + std::to_string(Distance) + " M]"), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 
 					if (Enemy->IsInVehicle())
-						Draw::DrawString(std::string("[In Vehicle]"), (Left + Right) / 2, Bottom + 35, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+						Draw::DrawString(std::string(xorstr_("[In Vehicle]")), (Left + Right) / 2, Bottom + 35, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 				}
 
 				if (Settings[ESP_HEALTH].Value.bValue)
 				{
 					ImVec4 ShieldColor = ImVec4();
-					if (Enemy->CurrShieldValue > 0)
-						ShieldColor = ImVec4(1.0f, 1.0f, 1.0f, 1.0f);
 
+					if (Enemy->CurrShieldValue > 0)
+					{
+						if (Enemy->CurrShieldLevel == 1)
+							ShieldColor = ImVec4(0.77f, 0.77f, 0.77f, 1.f);
+						else if (Enemy->CurrShieldLevel == 2)
+							ShieldColor = ImVec4(0.52f, 0.84f, 0.f, 1.f);
+						else if (Enemy->CurrShieldLevel == 3)
+							ShieldColor = ImVec4(0.40f, 0.92f, 0.96f, 1.f);
+						else if (Enemy->CurrShieldLevel == 4)
+							ShieldColor = ImVec4(0.86f, 0.45f, 1.f, 1.f);
+						else if (Enemy->CurrShieldLevel == 5)
+							ShieldColor = ImVec4(1.f, 0.51f, 0.24f, 1.f);
+						else if (Enemy->CurrShieldLevel == 6)
+							ShieldColor = ImVec4(0.98f, 0.25f, 0.14f, 1.f);
+						else
+							ShieldColor = ImVec4(1.0f, 0.84f, 0.0f, 1.f);
+					}
+					
 					ImVec4 HPColor = ImVec4();
 					if (Enemy->GetCurrentHealth() > 0)
 						HPColor = ImVec4(0.745f, 0.0f, 0.0f, 1.f);
 
 					if (Enemy->CurrShieldValue > 0)
-						Draw::VerticalHealthBar(Left - 10, Top, Width, Bottom - Top, (int)Enemy->CurrShieldValue, (int)Enemy->MaxShieldValue, ShieldColor);	
+						Draw::VerticalHealthBar(Left - 12, Top, Width, Bottom - Top, (int)Enemy->CurrShieldValue, (int)Enemy->MaxShieldValue, ShieldColor);	
 					
-					Draw::VerticalHealthBar(Left - 5, Top, Width, Bottom - Top, (int)Enemy->GetCurrentHealth(), (int)Enemy->GetMaxHealth(), HPColor);
+					Draw::VerticalHealthBar(Left - 7, Top, Width, Bottom - Top, (int)Enemy->GetCurrentHealth(), (int)Enemy->GetMaxHealth(), HPColor);
 				}
 
 				if (Settings[ESP_SKELETON].Value.bValue)
@@ -262,8 +281,33 @@ void XXX::Unknown()
 			}
 			else
 			{
-				if (!Settings[OFFSCREEN].Value.bValue) // TODO: Implement Offscreen ESP
+				if (!Settings[OFFSCREEN].Value.bValue) // TODO: Fix Offscreen ESP
 					continue;
+
+				if (Enemy == LocalCharacter)
+					continue;
+
+				CG::FVector2D EntityPos = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), CG::FVector2D(0, 0), CG::FVector2D(ScreenWidth, ScreenHeight));
+				int RadarRange = 150;
+
+				CG::FVector Angles = CG::FVector();
+				CG::FVector Forward = CG::FVector((float)(ScreenWidth / 2) - EntityPos.X, (float)(ScreenHeight / 2) - EntityPos.Y, 0.f);
+
+				Math::VectorAnglesRadar(Forward, Angles);
+
+				const auto Yaw = DEG2RAD(Angles.Y);
+				const auto PointX = (ScreenWidth / 2) + (RadarRange) / 2 * 2 * cosf(Yaw);
+				const auto PointY = (ScreenHeight / 2) + (RadarRange) / 2 * 2 * sinf(Yaw);
+
+				std::array<CG::FVector, 3> Points
+				{
+					CG::FVector(PointX - ((90) / 4 + 1.5f) / 2, PointY - ((RadarRange) / 4 + 1.5f) / 2, 0.f),
+					CG::FVector(PointX + ((90) / 4 + 1.5f) / 4, PointY, 0.f),
+					CG::FVector(PointX - ((90) / 4 + 1.5f) / 2, PointY + ((RadarRange) / 4 + 1.5f) / 2, 0.f)
+				};
+
+				Math::RotateTriangle(Points, Angles.Y);
+				Draw::DrawTriangle(Points.at(0).X, Points.at(0).Y, Points.at(1).X, Points.at(1).Y, Points.at(2).X, Points.at(2).Y, ImVec4(1.0f, 0.874f, 0.0f, 1.0f));
 			}
 		}
 
@@ -463,7 +507,7 @@ void XXX::Removal()
 		if (!AmmoConfig)
 			return;
 
-		AmmoConfig->BaseReloadTime = 1.6f;
+		AmmoConfig->BaseReloadTime = 1.65f;
 	}
 
 	if (Settings[NO_RECOIL].Value.bValue)
@@ -671,17 +715,18 @@ void XXX::Radar()
 	if (!Settings[RADAR_ENABLED].Value.bValue)
 		return;
 
-	ImGui::SetNextWindowSize(ImVec2(161.0f, 161.0f), ImGuiCond_Appearing);
-	ImGui::PushStyleColor(ImGuiCol_WindowBg, ImVec4(0.0f, 0.0f, 0.0f, 0.35f));
+	ImGui::SetNextWindowSize(ImVec2(Settings[RADAR_SIZE].Value.fValue, Settings[RADAR_SIZE].Value.fValue), ImGuiCond_Appearing);
+	ImGui::PushStyleColor(ImGuiCol_WindowBg, ImVec4(0.0f, 0.0f, 0.0f, 0.45f));
 	ImGui::Begin("Radar", &Settings[RADAR_ENABLED].Value.bValue, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoTitleBar);   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked)
 	{
-		ImVec2 windowSize = ImGui::GetContentRegionAvail();
-		ImVec2 windowPos = ImGui::GetCursorScreenPos();
-		float RadarCenterX = windowPos.x + (windowSize.x / 2);
-		float RadarCenterY = windowPos.y + (windowSize.y / 2);
+		ImVec2 windowPos = ImGui::GetWindowPos();
+		ImVec2 windowSize = ImGui::GetWindowSize();
 
-		//ImVec2 windowPos = ImGui::GetWindowPos();
-		//ImVec2 windowSize = ImGui::GetWindowSize();
+		Settings[RADAR_X].Value.fValue = windowPos.x;
+		Settings[RADAR_Y].Value.fValue = windowPos.y;
+
+		float RadarCenterX = windowPos.x + (Settings[RADAR_SIZE].Value.fValue / 2);
+		float RadarCenterY = windowPos.y + (Settings[RADAR_SIZE].Value.fValue / 2);
 
 		ImDrawList* draw_list = ImGui::GetWindowDrawList();
 		if (draw_list != nullptr)
@@ -706,6 +751,10 @@ void XXX::Radar()
 			if (!PlayerController)
 				return;
 
+			CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
+			if (!LocalCharacter)
+				return;
+
 			CG::APlayerCameraManager* CameraManager = PlayerController->PlayerCameraManager;
 			if (!CameraManager)
 				return;
@@ -725,13 +774,16 @@ void XXX::Radar()
 					if (Enemy->InSameTeamWithFirstPlayerController())
 						continue;
 
-					float Distance = CameraManager->GetCameraLocation().Distance(Enemy->K2_GetActorLocation()) / 100.f;
+					if (Enemy == LocalCharacter)
+						continue;
 
-					CG::FVector2D Position = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), CG::FVector2D(windowPos.x, windowPos.y), CG::FVector2D(windowSize.x, windowSize.y));
+					float Distance = LocalCharacter->GetDistanceTo(Enemy) / 100.0f;
+
+					CG::FVector2D RotatePoint = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), CG::FVector2D(windowPos.x, windowPos.y), CG::FVector2D(windowSize.x, windowSize.y));
 
 					if (Distance >= 0.f && Distance < Settings[RADAR_DISTANCE].Value.fValue)
 					{
-						Draw::DrawCircleFilled(Position.X, Position.Y, 4, ImVec4(1.0f, 0.874f, 0.0f, 1.0f));
+						Draw::DrawCircleFilled(RotatePoint.X, RotatePoint.Y, 4, ImVec4(1.0f, 0.874f, 0.0f, 1.0f));
 					}
 				}
 			}
