@@ -296,8 +296,8 @@ void XXX::Unknown()
 				Math::VectorAnglesRadar(Forward, Angles);
 
 				const auto Yaw = DEG2RAD(Angles.Y);
-				const float PointX = (ScreenWidth / 2) + (RadarRange) *cosf(Yaw);
-				const float PointY = (ScreenHeight / 2) + (RadarRange) *sinf(Yaw);
+				const float PointX = (ScreenWidth / 2) + RadarRange * cosf(Yaw);
+				const float PointY = (ScreenHeight / 2) + RadarRange * sinf(Yaw);
 
 				std::array<CG::FVector2D, 3> Points
 				{

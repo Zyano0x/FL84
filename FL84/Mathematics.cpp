@@ -62,21 +62,16 @@ namespace Math
 		return pOut;
 	}
 
-	CG::FVector2D WorldToRadar(CG::FRotator LocalRotation, CG::FVector LocalPos, CG::FVector EntityPos, CG::FVector2D RadarPosition, CG::FVector2D RadarSize)
+	CG::FVector2D WorldToRadar(CG::FRotator LocalRotation, CG::FVector LocalPosition, CG::FVector EntityPosition, CG::FVector2D RadarPosition, CG::FVector2D RadarSize)
 	{
 		CG::FVector2D DotPos;
 		CG::FVector2D Direction;
 
 		// Calculate Direction
-		Direction.X = EntityPos.X - LocalPos.X;
-		Direction.Y = EntityPos.Y - LocalPos.Y;
+		Direction.Y = EntityPosition.X - LocalPosition.X;
+		Direction.X = EntityPosition.Y - LocalPosition.Y;
 
-		Direction.X *= -1;
-
-		Direction.X += RadarPosition.X + (RadarSize.X / 2);
-		Direction.Y += RadarPosition.Y + (RadarSize.Y / 2);
-
-		float Radian = DEG2RAD(LocalRotation.Yaw - 90);
+		float Radian = DEG2RAD(LocalRotation.Yaw);
 
 		// Calculate Raw DotPos
 		DotPos.X = (Direction.X * (float)cos(Radian) - Direction.Y * (float)sin(Radian)) / 150.0f;
