@@ -68,7 +68,7 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* SwapChain, UINT SyncInterval, UINT F
 			Initialized = true;
 		}
 		else
-			return oPresent(SwapChain, SyncInterval, Flags);
+			return spoof_call(oPresent, SwapChain, SyncInterval, Flags);
 	}
 
 	ImGui_ImplDX11_NewFrame();
@@ -104,12 +104,12 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* SwapChain, UINT SyncInterval, UINT F
 	ImGui::Render();
 	pContext->OMSetRenderTargets(1, &pRenderTarget, NULL);
 	ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
-	return oPresent(SwapChain, SyncInterval, Flags);
+	return spoof_call(oPresent, SwapChain, SyncInterval, Flags);
 }
 
 __int64 hkGetShotDir(CG::ASolarPlayerWeapon* Weapon, uint64_t a2, bool NeedSpread)
 {
-	__int64 Result = GetShotDir(Weapon, a2, NeedSpread);
+	__int64 Result = spoof_call(GetShotDir, Weapon, a2, NeedSpread);
 
 	if (Settings[AIM_ENABLED].Value.bValue && Settings[AIM_MODE].Value.iValue == 1 && a2 && !Aimbot::TargetPosition.IsValid())
 	{

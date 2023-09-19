@@ -54,6 +54,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
@@ -144,6 +145,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard_C>Default</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -174,6 +176,7 @@
     <ClInclude Include="Menu.h" />
     <ClInclude Include="SDK.h" />
     <ClInclude Include="Settings.h" />
+    <ClInclude Include="SpoofCall.h" />
     <ClInclude Include="XOR.hpp" />
     <ClInclude Include="XXX.h" />
     <ClInclude Include="Hook.h" />
@@ -210,7 +213,13 @@
   <ItemGroup>
     <Library Include="Detours\detours.lib" />
   </ItemGroup>
+  <ItemGroup>
+    <MASM Include="SpoofCall.asm">
+      <FileType>Document</FileType>
+    </MASM>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
   </ImportGroup>
 </Project>

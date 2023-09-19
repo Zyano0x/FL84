@@ -296,14 +296,14 @@ void XXX::Unknown()
 				Math::VectorAnglesRadar(Forward, Angles);
 
 				const auto Yaw = DEG2RAD(Angles.Y);
-				const auto PointX = (ScreenWidth / 2) + (RadarRange) / 2 * 2 * cosf(Yaw);
-				const auto PointY = (ScreenHeight / 2) + (RadarRange) / 2 * 2 * sinf(Yaw);
+				const float PointX = (ScreenWidth / 2) + (RadarRange) *cosf(Yaw);
+				const float PointY = (ScreenHeight / 2) + (RadarRange) *sinf(Yaw);
 
-				std::array<CG::FVector, 3> Points
+				std::array<CG::FVector2D, 3> Points
 				{
-					CG::FVector(PointX - ((90) / 4 + 1.5f) / 2, PointY - ((RadarRange) / 4 + 1.5f) / 2, 0.f),
-					CG::FVector(PointX + ((90) / 4 + 1.5f) / 4, PointY, 0.f),
-					CG::FVector(PointX - ((90) / 4 + 1.5f) / 2, PointY + ((RadarRange) / 4 + 1.5f) / 2, 0.f)
+					CG::FVector2D(PointX - 10, PointY - 10),
+					CG::FVector2D(PointX + 15, PointY),
+					CG::FVector2D(PointX - 10, PointY + 10)
 				};
 
 				Math::RotateTriangle(Points, Angles.Y);
@@ -728,14 +728,14 @@ void XXX::Radar()
 		float RadarCenterX = windowPos.x + (Settings[RADAR_SIZE].Value.fValue / 2);
 		float RadarCenterY = windowPos.y + (Settings[RADAR_SIZE].Value.fValue / 2);
 
-		ImDrawList* draw_list = ImGui::GetWindowDrawList();
-		if (draw_list != nullptr)
+		ImDrawList* DrawList = ImGui::GetWindowDrawList();
+		if (DrawList != nullptr)
 		{
-			draw_list->AddLine(
+			DrawList->AddLine(
 				ImVec2(windowPos.x + (windowSize.x / 2), windowPos.y),
 				ImVec2(windowPos.x + (windowSize.x / 2), windowPos.y + windowSize.y), IM_COL32(255, 255, 255, 255), 1.0f);
 
-			draw_list->AddLine(
+			DrawList->AddLine(
 				ImVec2(windowPos.x, windowPos.y + (windowSize.y / 2)),
 				ImVec2(windowPos.x + windowSize.x, windowPos.y + (windowSize.y / 2)), IM_COL32(255, 255, 255, 255), 1.0f);
 
@@ -755,16 +755,15 @@ void XXX::Radar()
 			if (!LocalCharacter)
 				return;
 
-			CG::APlayerCameraManager* CameraManager = PlayerController->PlayerCameraManager;
-			if (!CameraManager)
-				return;
-
 			CG::TArray<CG::AActor*> Actors = *(CG::TArray<CG::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
 			for (int i = 0; i < Actors.Count(); i++)
 			{
 				CG::AActor* Actor = Actors[i];
 
 				if (!Actor)
+					continue;
+
+				if (!Actor->RootComponent)
 					continue;
 
 				if (Actor->IsA(CG::ASolarCharacter::StaticClass()))

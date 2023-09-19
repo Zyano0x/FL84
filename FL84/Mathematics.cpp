@@ -76,10 +76,7 @@ namespace Math
 		Direction.X += RadarPosition.X + (RadarSize.X / 2);
 		Direction.Y += RadarPosition.Y + (RadarSize.Y / 2);
 
-		// Get Rotation
-		float LocalAngles = LocalRotation.Yaw - 90;
-
-		float Radian = DEG2RAD(LocalAngles);
+		float Radian = DEG2RAD(LocalRotation.Yaw - 90);
 
 		// Calculate Raw DotPos
 		DotPos.X = (Direction.X * (float)cos(Radian) - Direction.Y * (float)sin(Radian)) / 150.0f;
@@ -89,7 +86,7 @@ namespace Math
 		DotPos.X = DotPos.X + RadarPosition.X + RadarSize.X / 2.f;
 		DotPos.Y = -DotPos.Y + RadarPosition.Y + RadarSize.Y / 2.f;
 
-		// Clamp Dots To RadarSize ( Where 18 = Width/Height of the Dot)
+		// Clamp Dots To RadarSize ( Where 10 = Width/Height of the Dot)
 		if (DotPos.X < RadarPosition.X)
 			DotPos.X = RadarPosition.X + 10;
 
@@ -125,7 +122,7 @@ namespace Math
 		Angles.Z = 0.f;
 	}
 
-	void RotateTriangle(std::array<CG::FVector, 3>& Points, float Rotation)
+	void RotateTriangle(std::array<CG::FVector2D, 3>& Points, float Rotation)
 	{
 		const auto PointsCenter = (Points.at(0) + Points.at(1) + Points.at(2)) / 3;
 		for (auto& Point : Points)

@@ -12,5 +12,5 @@ namespace Math
 	CG::FVector2D WorldToRadar(CG::FRotator Rotation, CG::FVector CameraLocation, CG::FVector Origin, CG::FVector2D RadarPosition, CG::FVector2D RadarSize);
 	CG::FVector GetDirectionUnitVector(CG::FVector From, CG::FVector To);
 	void VectorAnglesRadar(CG::FVector& Forward, CG::FVector& Angles);
-	void RotateTriangle(std::array<CG::FVector, 3>& Points, float Rotation);
+	void RotateTriangle(std::array<CG::FVector2D, 3>& Points, float Rotation);
 }

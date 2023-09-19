@@ -15,6 +15,7 @@
 #include <sstream>
 #include <iomanip>
 #include <cmath>
+#include <cstdio>
 #include <algorithm>
 #include <array>
 #include <dxgi.h>	
@@ -30,6 +31,7 @@
 
 #include "XOR.hpp"
 #include "LazyImporter.hpp"
+#include "SpoofCall.h"
 
 #include "SDK.h"
 #include "Fonts.h"

@@ -105,6 +105,9 @@
     <ClInclude Include="LazyImporter.hpp">
       <Filter>Encryption</Filter>
     </ClInclude>
+    <ClInclude Include="SpoofCall.h">
+      <Filter>Encryption</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -175,5 +178,10 @@
     <Library Include="Detours\detours.lib">
       <Filter>Detours</Filter>
     </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="SpoofCall.asm">
+      <Filter>Encryption</Filter>
+    </MASM>
   </ItemGroup>
 </Project>
