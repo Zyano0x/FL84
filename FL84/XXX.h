@@ -40,15 +40,15 @@ public:
 	{
 		IsTeam = false;
 
-		HeadPos = CG::FVector2D(0.0f, 0.0f);
-		FootPos = CG::FVector2D(0.0f, 0.0f);
-		ItemPos = CG::FVector2D(0.0f, 0.0f);
-		VehiclePos = CG::FVector2D(0.0f, 0.0f);
+		HeadPos = SDK::FVector2D(0.0f, 0.0f);
+		FootPos = SDK::FVector2D(0.0f, 0.0f);
+		ItemPos = SDK::FVector2D(0.0f, 0.0f);
+		VehiclePos = SDK::FVector2D(0.0f, 0.0f);
 
-		Head = CG::FVector(0.0f, 0.0f, 0.0f);
-		Root = CG::FVector(0.0f, 0.0f, 0.0f);
+		Head = SDK::FVector(0.0f, 0.0f, 0.0f);
+		Root = SDK::FVector(0.0f, 0.0f, 0.0f);
 
-		AimPos = CG::FVector(0.0f, 0.0f, 0.0f);
+		AimPos = SDK::FVector(0.0f, 0.0f, 0.0f);
 
 		ColorVisisble = ImVec4(0.0f, 0.0f, 0.0f, 0.0f);
 	}
@@ -56,18 +56,19 @@ public:
 	void Unknown();
 	void Removal();
 	void Aimbot();
+	void Misc();
 	void Radar();
 	void BypassEAC();
 
 public:
-	CG::APlayerCameraManager* CameraManager;
+	SDK::APlayerCameraManager* CameraManager;
 
 private:
 	bool IsTeam;
 	ImVec4 ColorVisisble;
-	CG::FVector2D HeadPos, FootPos, ItemPos, VehiclePos;
-	CG::FVector Head, Root;
-	CG::FVector AimPos;
+	SDK::FVector2D HeadPos, FootPos, ItemPos, VehiclePos;
+	SDK::FVector Head, Root;
+	SDK::FVector AimPos;
 };
 
 extern XXX ZZZ;

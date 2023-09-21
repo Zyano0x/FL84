@@ -135,13 +135,13 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;FL84_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -174,7 +174,7 @@
     <ClInclude Include="LazyImporter.hpp" />
     <ClInclude Include="Mathematics.h" />
     <ClInclude Include="Menu.h" />
-    <ClInclude Include="SDK.h" />
+    <ClInclude Include="SDK.hpp" />
     <ClInclude Include="Settings.h" />
     <ClInclude Include="SpoofCall.h" />
     <ClInclude Include="XOR.hpp" />
@@ -196,10 +196,10 @@
     <ClCompile Include="ImGUI\imgui_widgets.cpp" />
     <ClCompile Include="Mathematics.cpp" />
     <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="SDK\BasicTypes_Package.cpp" />
-    <ClCompile Include="SDK\CoreUObject_Package.cpp" />
-    <ClCompile Include="SDK\Engine_Package.cpp" />
-    <ClCompile Include="SDK\Solarland_Package.cpp" />
+    <ClCompile Include="SDK\Basic.cpp" />
+    <ClCompile Include="SDK\CoreUObject_functions.cpp" />
+    <ClCompile Include="SDK\Engine_functions.cpp" />
+    <ClCompile Include="SDK\Solarland_functions.cpp" />
     <ClCompile Include="Settings.cpp" />
     <ClCompile Include="XXX.cpp" />
     <ClCompile Include="Hook.cpp" />

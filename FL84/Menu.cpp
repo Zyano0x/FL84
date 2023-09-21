@@ -239,10 +239,6 @@ namespace Menu
 						ImGui::Checkbox(xorstr_(" Weapon"), &Settings[ESP_WEAPON].Value.bValue);
 						ImGui::Spacing();
 						ImGui::Checkbox(xorstr_(" Vehicle"), &Settings[ESP_VEHICLE].Value.bValue);
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Radar"), &Settings[RADAR_ENABLED].Value.bValue);
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Offscreen"), &Settings[OFFSCREEN].Value.bValue);
 
 						ImGui::Spacing();
 						ImGui::PushItemWidth(220);
@@ -341,6 +337,18 @@ namespace Menu
 
 					ImGui::TreePop();
 				}
+			}
+
+			ImGui::Spacing();
+			if (ImGui::CollapsingHeader(ICON_FA_SLIDERS " Miscs"))
+			{
+				ImGui::Spacing();
+				ImGui::Spacing();
+				ImGui::Checkbox(xorstr_(" Radar"), &Settings[RADAR_ENABLED].Value.bValue);
+				ImGui::Spacing();
+				ImGui::Checkbox(xorstr_(" Offscreen"), &Settings[OFFSCREEN].Value.bValue);
+				ImGui::Spacing();
+				ImGui::Checkbox(xorstr_(" Kick Spectator"), &Settings[STOP_SPECTATOR].Value.bValue);
 			}
 
 			ImGui::Spacing();

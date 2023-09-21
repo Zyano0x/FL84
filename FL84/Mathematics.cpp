@@ -2,7 +2,7 @@
 
 namespace Math
 {
-	D3DXMATRIX Matrix(CG::FRotator Rotation, CG::FRotator Origin)
+	D3DXMATRIX Matrix(SDK::FRotator Rotation, SDK::FRotator Origin)
 	{
 		float radPitch = (Rotation.Pitch * float(M_PI) / 180.f);
 		float radYaw = (Rotation.Yaw * float(M_PI) / 180.f);
@@ -62,10 +62,10 @@ namespace Math
 		return pOut;
 	}
 
-	CG::FVector2D WorldToRadar(CG::FRotator LocalRotation, CG::FVector LocalPosition, CG::FVector EntityPosition, CG::FVector2D RadarPosition, CG::FVector2D RadarSize)
+	SDK::FVector2D WorldToRadar(SDK::FRotator LocalRotation, SDK::FVector LocalPosition, SDK::FVector EntityPosition, SDK::FVector2D RadarPosition, SDK::FVector2D RadarSize)
 	{
-		CG::FVector2D DotPos;
-		CG::FVector2D Direction;
+		SDK::FVector2D DotPos;
+		SDK::FVector2D Direction;
 
 		// Calculate Direction
 		Direction.Y = EntityPosition.X - LocalPosition.X;
@@ -97,16 +97,16 @@ namespace Math
 		return DotPos;
 	}
 
-	CG::FVector GetDirectionUnitVector(CG::FVector From, CG::FVector To)
+	SDK::FVector GetDirectionUnitVector(SDK::FVector From, SDK::FVector To)
 	{
 		return (To - From).GetSafeNormal();
 	}
 
-	void VectorAnglesRadar(CG::FVector& Forward, CG::FVector& Angles)
+	void VectorAnglesRadar(SDK::FVector& Forward, SDK::FVector& Angles)
 	{
 		if (Forward.X == 0.f && Forward.Y == 0.f)
 		{
-			Angles.X = Forward.Z > 0.f ? -90.f : 90.f;
+			Angles.X = Forward.Z < 0.f ? -90.f : 90.f;
 			Angles.Y = 0.f;
 		}
 		else
@@ -117,7 +117,7 @@ namespace Math
 		Angles.Z = 0.f;
 	}
 
-	void RotateTriangle(std::array<CG::FVector2D, 3>& Points, float Rotation)
+	void RotateTriangle(std::array<SDK::FVector2D, 3>& Points, float Rotation)
 	{
 		const auto PointsCenter = (Points.at(0) + Points.at(1) + Points.at(2)) / 3;
 		for (auto& Point : Points)

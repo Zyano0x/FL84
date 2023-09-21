@@ -94,6 +94,7 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* SwapChain, UINT SyncInterval, UINT F
 	ZZZ.Unknown();
 	ZZZ.Removal();
 	ZZZ.Aimbot();
+	ZZZ.Misc();
 	ZZZ.Radar();
 
 	if (Menu::MenuOpen)
@@ -107,7 +108,7 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* SwapChain, UINT SyncInterval, UINT F
 	return spoof_call(oPresent, SwapChain, SyncInterval, Flags);
 }
 
-__int64 hkGetShotDir(CG::ASolarPlayerWeapon* Weapon, uint64_t a2, bool NeedSpread)
+__int64 hkGetShotDir(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2, bool NeedSpread)
 {
 	__int64 Result = spoof_call(GetShotDir, Weapon, a2, NeedSpread);
 
@@ -115,9 +116,9 @@ __int64 hkGetShotDir(CG::ASolarPlayerWeapon* Weapon, uint64_t a2, bool NeedSprea
 	{
 		// Maybe from muzzle/GetShootingTraceStartLocation instead of camera location more accurate
 
-		CG::FVector Out = Math::GetDirectionUnitVector(ZZZ.CameraManager->GetCameraLocation() /*Weapon->GetShootingTraceStartLocation()*/, Aimbot::TargetPosition);
+		SDK::FVector Out = Math::GetDirectionUnitVector(ZZZ.CameraManager->GetCameraLocation() /*Weapon->GetShootingTraceStartLocation()*/, Aimbot::TargetPosition);
 
-		*(CG::FVector*)(Result) = Out;
+		*(SDK::FVector*)(Result) = Out;
 	}
 
 	return Result;
@@ -136,7 +137,7 @@ void Initialize()
 	strcpy(ConfigDirectory, xorstr_("C:\\ZC\\"));
 	CreateDirectoryA(ConfigDirectory, NULL);
 
-	CG::InitSDK();
+	SDK::InitSDK();
 	InitSettings();
 	LoadSettings();
 

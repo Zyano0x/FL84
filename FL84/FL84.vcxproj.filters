@@ -96,9 +96,6 @@
     <ClInclude Include="Mathematics.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SDK.h">
-      <Filter>SDK</Filter>
-    </ClInclude>
     <ClInclude Include="XOR.hpp">
       <Filter>Encryption</Filter>
     </ClInclude>
@@ -107,6 +104,9 @@
     </ClInclude>
     <ClInclude Include="SpoofCall.h">
       <Filter>Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK.hpp">
+      <Filter>SDK</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -161,16 +161,16 @@
     <ClCompile Include="Mathematics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\CoreUObject_Package.cpp">
+    <ClCompile Include="SDK\CoreUObject_functions.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\BasicTypes_Package.cpp">
+    <ClCompile Include="SDK\Basic.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\Solarland_Package.cpp">
+    <ClCompile Include="SDK\Engine_functions.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\Engine_Package.cpp">
+    <ClCompile Include="SDK\Solarland_functions.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
   </ItemGroup>

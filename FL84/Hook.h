@@ -13,7 +13,7 @@ extern int32_t ScreenHeight;
 typedef HRESULT(__stdcall* tPresent) (IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags);
 extern tPresent oPresent;
 
-typedef __int64(*tGetShotDir)(CG::ASolarPlayerWeapon* Weapon, uint64_t a2, bool NeedSpread);
+typedef __int64(*tGetShotDir)(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2, bool NeedSpread);
 extern tGetShotDir GetShotDir;
 
 void SwapVTable(void* Object, void* Hook, uint32_t Index);

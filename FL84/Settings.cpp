@@ -130,6 +130,10 @@ void InitSettings()
 	Settings[RADAR_Y] = AddConfig("Radar Settings", "Radar_Y", 100.0f, 1.0f, 500.0f);
 
 	//=============================================================================================================================
+	
+	Settings[STOP_SPECTATOR] = AddConfig("Misc Settings", "Stop_Spectator", false);
+
+	//=============================================================================================================================
 
 	Settings[COLOR_TEAM] = AddConfig("Color Settings", "Color_Team", ImVec4(0.0f, 0.909f, 0.988f, 1.0f));
 	Settings[COLOR_ENEMY] = AddConfig("Color Settings", "Color_Enemy", ImVec4(1.0f, 0.949f, 0.0f, 1.0f));

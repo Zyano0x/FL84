@@ -3,9 +3,9 @@
 namespace Aimbot
 {
 	float ClosestDistance = InitCenterDistance;
-	CG::FVector2D LockPosition = CG::FVector2D();
-	CG::FVector TargetPosition = CG::FVector();
-	CG::FRotator TargetRotation = CG::FRotator();
+	SDK::FVector2D LockPosition = SDK::FVector2D();
+	SDK::FVector TargetPosition = SDK::FVector();
+	SDK::FRotator TargetRotation = SDK::FRotator();
 
 	float Normalize(float angle)
 	{
@@ -15,9 +15,9 @@ namespace Aimbot
 		return out;
 	}
 
-	CG::FRotator CalcAngle(CG::FVector& src, CG::FVector& dst, CG::FRotator& oldRotation, float& smoothing)
+	SDK::FRotator CalcAngle(SDK::FVector& src, SDK::FVector& dst, SDK::FRotator& oldRotation, float& smoothing)
 	{
-		CG::FVector delta(dst - src);
+		SDK::FVector delta(dst - src);
 
 		float distance = sqrtf(delta.X * delta.X + delta.Y * delta.Y + delta.Z * delta.Z);
 		float pitch = (-((acosf((delta.Z / distance)) * 180.f / M_PI) - 90.f));
@@ -26,10 +26,10 @@ namespace Aimbot
 		pitch = (pitch - oldRotation.Pitch) / smoothing + oldRotation.Pitch;
 		yaw = (yaw - oldRotation.Yaw) / smoothing + oldRotation.Yaw;
 
-		return CG::FRotator(Normalize(pitch), Normalize(yaw), 0.0f).Clamp();
+		return SDK::FRotator(Normalize(pitch), Normalize(yaw), 0.0f).Clamp();
 	}
 
-	CG::FVector2D Randomize(CG::FVector2D vAngles, float HumanSpeed, float HumanScale)
+	SDK::FVector2D Randomize(SDK::FVector2D vAngles, float HumanSpeed, float HumanScale)
 	{
 		float lastX = 0.f;
 
@@ -75,9 +75,9 @@ namespace Aimbot
 		return vAngles;
 	}
 
-	CG::FVector AimbotPrediction(float bulletVelocity, float bulletGravity, float targetDistance, CG::FVector targetPosition, CG::FVector targetVelocity)
+	SDK::FVector AimbotPrediction(float bulletVelocity, float bulletGravity, float targetDistance, SDK::FVector targetPosition, SDK::FVector targetVelocity)
 	{
-		CG::FVector recalculated = targetPosition;
+		SDK::FVector recalculated = targetPosition;
 		float gravity = fabs(bulletGravity);
 		float time = targetDistance / fabs(bulletVelocity);
 		float bulletDrop = gravity * time * time;
@@ -91,7 +91,7 @@ namespace Aimbot
 	void ResetLock()
 	{
 		ClosestDistance = InitCenterDistance;
-		TargetPosition = CG::FVector();
+		TargetPosition = SDK::FVector();
 	}
 
 	void LockOnTarget()
@@ -146,8 +146,8 @@ namespace Aimbot
 					}
 				}
 
-				CG::FVector2D GetTarget = CG::FVector2D(TargetX, TargetY);
-				CG::FVector2D OutTarget = Randomize(GetTarget, Settings[HUMAN_SPEED].Value.fValue, Settings[HUMAN_SCALE].Value.fValue);
+				SDK::FVector2D GetTarget = SDK::FVector2D(TargetX, TargetY);
+				SDK::FVector2D OutTarget = Randomize(GetTarget, Settings[HUMAN_SPEED].Value.fValue, Settings[HUMAN_SCALE].Value.fValue);
 
 				if (TargetX != 0 && TargetY != 0)
 					mouse_event(MOUSEEVENTF_MOVE, static_cast<DWORD>(OutTarget.X), static_cast<DWORD>(OutTarget.Y), NULL, NULL);
@@ -159,7 +159,7 @@ namespace Aimbot
 		}
 	}
 
-	void SetRotation(CG::APlayerCameraManager* PlayerCameraManager, CG::APlayerController* PlayerController, CG::FRotator TargetRotation, bool bWithRotationInput, float Smooth)
+	void SetRotation(SDK::APlayerCameraManager* PlayerCameraManager, SDK::APlayerController* PlayerController, SDK::FRotator TargetRotation, bool bWithRotationInput, float Smooth)
 	{
 		uint64_t v11 = reinterpret_cast<uint64_t>(PlayerController) + 0x6A0;
 		uint64_t v10 = reinterpret_cast<uint64_t>(PlayerCameraManager) + 0x299C;
@@ -171,7 +171,7 @@ namespace Aimbot
 		{
 			if (ClosestDistance != InitCenterDistance)
 			{
-				*(CG::FRotator*)(v11) = TargetRotation;
+				*(SDK::FRotator*)(v11) = TargetRotation;
 			}
 		}
 		else

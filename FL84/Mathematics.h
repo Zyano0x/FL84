@@ -7,10 +7,10 @@
 
 namespace Math
 {
-	D3DXMATRIX Matrix(CG::FRotator Rotation, CG::FRotator Origin = CG::FRotator(0, 0, 0));
+	D3DXMATRIX Matrix(SDK::FRotator Rotation, SDK::FRotator Origin = SDK::FRotator(0, 0, 0));
 	D3DMATRIX MatrixMultiplication(D3DMATRIX pM1, D3DMATRIX pM2);
-	CG::FVector2D WorldToRadar(CG::FRotator Rotation, CG::FVector CameraLocation, CG::FVector Origin, CG::FVector2D RadarPosition, CG::FVector2D RadarSize);
-	CG::FVector GetDirectionUnitVector(CG::FVector From, CG::FVector To);
-	void VectorAnglesRadar(CG::FVector& Forward, CG::FVector& Angles);
-	void RotateTriangle(std::array<CG::FVector2D, 3>& Points, float Rotation);
+	SDK::FVector2D WorldToRadar(SDK::FRotator Rotation, SDK::FVector CameraLocation, SDK::FVector Origin, SDK::FVector2D RadarPosition, SDK::FVector2D RadarSize);
+	SDK::FVector GetDirectionUnitVector(SDK::FVector From, SDK::FVector To);
+	void VectorAnglesRadar(SDK::FVector& Forward, SDK::FVector& Angles);
+	void RotateTriangle(std::array<SDK::FVector2D, 3>& Points, float Rotation);
 }

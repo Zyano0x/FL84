@@ -6,15 +6,15 @@ XXX ZZZ;
 
 void XXX::Unknown()
 {
-	CG::UWorld* World = *CG::UWorld::GWorld;
+	SDK::UWorld* World = *SDK::UWorld::GWorld;
 	if (!World)
 		return;
 
-	CG::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
+	SDK::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
 	if (!LocalPlayer)
 		return;
 
-	CG::APlayerController* PlayerController = LocalPlayer->PlayerController;
+	SDK::APlayerController* PlayerController = LocalPlayer->PlayerController;
 	if (!PlayerController)
 		return;
 
@@ -22,26 +22,23 @@ void XXX::Unknown()
 	if (!CameraManager)
 		return;
 
-	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
+	SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
 	if (!LocalCharacter)
 		return;
 
 	PlayerController->GetViewportSize(&ScreenWidth, &ScreenHeight);
 
-	CG::TArray<CG::AActor*> Actors = *(CG::TArray<CG::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
+	SDK::TArray<SDK::AActor*> Actors = *(SDK::TArray<SDK::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
 	for (int i = 0; i < Actors.Count(); i++)
 	{
-		CG::AActor* Actor = Actors[i];
+		SDK::AActor* Actor = Actors[i];
 
 		if (!Actor)
 			continue;
 
-		if (!Actor->RootComponent)
-			continue;
-
-		if (Actor->IsA(CG::ASolarCharacter::StaticClass()))
+		if (Actor->IsA(SDK::ASolarCharacter::StaticClass()))
 		{
-			CG::ASolarCharacter* Enemy = static_cast<CG::ASolarCharacter*>(Actor);
+			SDK::ASolarCharacter* Enemy = static_cast<SDK::ASolarCharacter*>(Actor);
 
 			if (Enemy->InSameTeamWithFirstPlayerController())
 				IsTeam = true;
@@ -98,15 +95,15 @@ void XXX::Unknown()
 					if (!Enemy->PlayerState)
 						continue;
 
-					CG::ESCMPlayerType PlayerType = static_cast<CG::ASCMPlayerState*>(Enemy->PlayerState)->PlayerType;
+					SDK::ESCMPlayerType PlayerType = static_cast<SDK::ASCMPlayerState*>(Enemy->PlayerState)->PlayerType;
 
-					if (PlayerType == CG::ESCMPlayerType::BotAI)
+					if (PlayerType == SDK::ESCMPlayerType::BotAI)
 					{
 						Draw::DrawString(xorstr_("BOT"), (Left + Right) / 2, Top - 17, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 					}
 					else
 					{
-						CG::FString PlayerName = Enemy->PlayerState->PlayerNamePrivate;
+						SDK::FString PlayerName = Enemy->PlayerState->PlayerNamePrivate;
 
 						if (PlayerName.IsValid())
 							Name = std::string(PlayerName.ToString());
@@ -221,14 +218,14 @@ void XXX::Unknown()
 						{FOOT_L, CALF_L},
 					};
 
-					CG::FVector2D BoneScreen, PrevBoneScreen;
+					SDK::FVector2D BoneScreen, PrevBoneScreen;
 					for (const std::pair<int, int>& Connection : SkeletonConnections)
 					{
 						int Bone1 = Connection.first;
 						int Bone2 = Connection.second;
 
-						CG::FVector BoneLoc1 = /*Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(Bone1))*/ Enemy->Mesh->GetBoneWorldPos(Bone1);
-						CG::FVector BoneLoc2 = /*Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(Bone2))*/ Enemy->Mesh->GetBoneWorldPos(Bone2);
+						SDK::FVector BoneLoc1 = /*Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(Bone1))*/ Enemy->Mesh->GetBoneWorldPos(Bone1);
+						SDK::FVector BoneLoc2 = /*Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(Bone2))*/ Enemy->Mesh->GetBoneWorldPos(Bone2);
 
 						if (PlayerController->ProjectWorldLocationToScreen(BoneLoc1, &BoneScreen, false)
 							&& PlayerController->ProjectWorldLocationToScreen(BoneLoc2, &PrevBoneScreen, false))
@@ -240,10 +237,10 @@ void XXX::Unknown()
 
 				if (Settings[ESP_DIRECTIONLINE].Value.bValue)
 				{
-					CG::FVector Start = Enemy->Mesh->GetBoneWorldPos(HEAD);
-					CG::FVector Angles = Enemy->K2_GetActorRotation().ToVector();
-					CG::FVector End = Angles * 250 + Start;
-					CG::FVector2D ScreenStart, ScreenEnd;
+					SDK::FVector Start = Enemy->Mesh->GetBoneWorldPos(HEAD);
+					SDK::FVector Angles = Enemy->K2_GetActorRotation().ToVector();
+					SDK::FVector End = Angles * 250 + Start;
+					SDK::FVector2D ScreenStart, ScreenEnd;
 
 					if (PlayerController->ProjectWorldLocationToScreen(Start, &ScreenStart, false)
 						&& PlayerController->ProjectWorldLocationToScreen(End, &ScreenEnd, false))
@@ -284,14 +281,11 @@ void XXX::Unknown()
 				if (!Settings[OFFSCREEN].Value.bValue) // TODO: Fix Offscreen ESP
 					continue;
 
-				if (Enemy == LocalCharacter)
-					continue;
-
-				CG::FVector2D EntityPos = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), CG::FVector2D(0, 0), CG::FVector2D(ScreenWidth, ScreenHeight));
+				SDK::FVector2D EntityPos = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), SDK::FVector2D(0, 0), SDK::FVector2D(ScreenWidth, ScreenHeight));
 				int RadarRange = 150;
 
-				CG::FVector Angles = CG::FVector();
-				CG::FVector Forward = CG::FVector((float)(ScreenWidth / 2) - EntityPos.X, (float)(ScreenHeight / 2) - EntityPos.Y, 0.f);
+				SDK::FVector Angles = SDK::FVector();
+				SDK::FVector Forward = SDK::FVector((float)(ScreenWidth / 2) - EntityPos.X, (float)(ScreenHeight / 2) - EntityPos.Y, 0.f);
 
 				Math::VectorAnglesRadar(Forward, Angles);
 
@@ -299,11 +293,11 @@ void XXX::Unknown()
 				const float PointX = (ScreenWidth / 2) + RadarRange * cosf(Yaw);
 				const float PointY = (ScreenHeight / 2) + RadarRange * sinf(Yaw);
 
-				std::array<CG::FVector2D, 3> Points
+				std::array<SDK::FVector2D, 3> Points
 				{
-					CG::FVector2D(PointX - 10, PointY - 10),
-					CG::FVector2D(PointX + 15, PointY),
-					CG::FVector2D(PointX - 10, PointY + 10)
+					SDK::FVector2D(PointX - 10, PointY - 10),
+					SDK::FVector2D(PointX + 15, PointY),
+					SDK::FVector2D(PointX - 10, PointY + 10)
 				};
 
 				Math::RotateTriangle(Points, Angles.Y);
@@ -311,24 +305,24 @@ void XXX::Unknown()
 			}
 		}
 
-		if (Actor->IsA(CG::ASolarItemActor::StaticClass()) || Actor->IsA(CG::ASolarGroundPreviewActor::StaticClass()))
+		if (Actor->IsA(SDK::ASolarItemActor::StaticClass()) || Actor->IsA(SDK::ASolarGroundPreviewActor::StaticClass()))
 		{
 			if (!Settings[ESP_LOOT_ENABLED].Value.bValue)
 				continue;
 
-			CG::ASolarItemActor* Item = static_cast<CG::ASolarItemActor*>(Actor);
+			SDK::ASolarItemActor* Item = static_cast<SDK::ASolarItemActor*>(Actor);
 
-			CG::FVector ItemLocation = Item->K2_GetActorLocation();
+			SDK::FVector ItemLocation = Item->K2_GetActorLocation();
 
 			PlayerController->ProjectWorldLocationToScreen(ItemLocation, &ItemPos, false);
 
 			int ItemDistance = LocalCharacter->GetDistanceTo(Item) / 100.f;
 
-			CG::EItemType ItemType = Item->ItemData.ItemType;
+			SDK::EItemType ItemType = Item->ItemData.ItemType;
 
 			int32_t ItemID = Item->ItemData.ItemID;
 
-			int32_t ItemQuality = Item->GetQuality();
+			int32_t ItemQuality = Item->ItemData.Quality;
 
 			std::string PickupName = Item->ItemData.Name.ToString();
 
@@ -358,10 +352,10 @@ void XXX::Unknown()
 				break;
 			}
 
-			if (ItemType <= CG::EItemType::NONE)
+			if (ItemType <= SDK::EItemType::NONE)
 				continue;
 
-			if (ItemType == CG::EItemType::WEAPON)
+			if (ItemType == SDK::EItemType::WEAPON)
 			{
 				std::string WeaponType = Engine::GetWeaponType(ItemID);
 
@@ -369,57 +363,57 @@ void XXX::Unknown()
 					Draw::DrawString(WeaponType.append(" ").append(PickupName).append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, Settings[COLOR_LOOT_WEAPON].Value.v4Value);
 			}
 
-			if (ItemType == CG::EItemType::BULLET)
+			if (ItemType == SDK::EItemType::BULLET)
 			{
 				if (Settings[ESP_LOOT_AMMO].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue)
 					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, Settings[COLOR_LOOT_AMMO].Value.v4Value);
 			}
 
-			if (ItemType == CG::EItemType::WEAPON_PARTS)
+			if (ItemType == SDK::EItemType::WEAPON_PARTS)
 			{
 				if (Settings[ESP_LOOT_ATTACHMENTS].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue && ItemQuality >= (Settings[ESP_LOOT_LEVEL].Value.iValue + 1))
 					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
 			}
 
-			if (ItemType == CG::EItemType::SHIELD)
+			if (ItemType == SDK::EItemType::SHIELD)
 			{
 				if (Settings[ESP_LOOT_SHIELD].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue && ItemQuality >= (Settings[ESP_LOOT_LEVEL].Value.iValue + 1))
 					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
 			}
 
-			if (ItemType == CG::EItemType::SHIELD_UPGRADE_MATERIAL || ItemType == CG::EItemType::EXP_ITEM)
+			if (ItemType == SDK::EItemType::SHIELD_UPGRADE_MATERIAL || ItemType == SDK::EItemType::EXP_ITEM)
 			{
 				if (Settings[ESP_LOOT_SHIELDUPGR].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue)
 					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
 			}
 
-			if (ItemType == CG::EItemType::JETPACK_MODULE_HORIZONTAL)
+			if (ItemType == SDK::EItemType::JETPACK_MODULE_HORIZONTAL)
 			{
 				if (Settings[ESP_LOOT_HJETPACK].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue && ItemQuality >= (Settings[ESP_LOOT_LEVEL].Value.iValue + 1))
 					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
 			}
 
-			if (ItemType == CG::EItemType::JETPACK_MODULE_VERTICAL)
+			if (ItemType == SDK::EItemType::JETPACK_MODULE_VERTICAL)
 			{
 				if (Settings[ESP_LOOT_VJETPACK].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue && ItemQuality >= (Settings[ESP_LOOT_LEVEL].Value.iValue + 1))
 					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
 			}
 
-			if (ItemType == CG::EItemType::CARIRIDGE_BAG)
+			if (ItemType == SDK::EItemType::CARIRIDGE_BAG)
 			{
 				if (Settings[ESP_LOOT_HEALTH].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue)
 					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, Settings[COLOR_LOOT_HEALTH].Value.v4Value);
 			}
 
-			if (ItemType == CG::EItemType::DEATHBOX)
+			if (ItemType == SDK::EItemType::DEATHBOX)
 			{
 				if (Settings[ESP_LOOT_DEATHBOX].Value.bValue && ItemDistance < Settings[ESP_ITEMS_DISTANCE].Value.fValue)
 					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 			}
 
-			if (ItemType == CG::EItemType::TREASUREBOX)
+			if (ItemType == SDK::EItemType::TREASUREBOX)
 			{
-				CG::ASolarTreasureBoxActor* TreausureBox = static_cast<CG::ASolarTreasureBoxActor*>(Item);
+				SDK::ASolarTreasureBoxActor* TreausureBox = static_cast<SDK::ASolarTreasureBoxActor*>(Item);
 				if (Settings[ESP_TREASUREBOX].Value.bValue && ItemDistance < (Settings[ESP_ITEMS_DISTANCE].Value.fValue * 2))
 				{
 					if (TreausureBox->BOpened())
@@ -433,9 +427,9 @@ void XXX::Unknown()
 				}
 			}
 
-			if (ItemType == CG::EItemType::AIRDROPBOX)
+			if (ItemType == SDK::EItemType::AIRDROPBOX)
 			{
-				CG::AAirDropTreasureBox* AirDropBox = static_cast<CG::AAirDropTreasureBox*>(Item);
+				SDK::AAirDropTreasureBox* AirDropBox = static_cast<SDK::AAirDropTreasureBox*>(Item);
 				if (Settings[ESP_AIRDROP].Value.bValue && ItemDistance < (Settings[ESP_ITEMS_DISTANCE].Value.fValue * 2))
 				{
 					if (AirDropBox->BOpened())
@@ -450,20 +444,20 @@ void XXX::Unknown()
 			}
 		}
 
-		if (Actor->IsA(CG::ASolarVehiclePawn::StaticClass()))
+		if (Actor->IsA(SDK::ASolarVehiclePawn::StaticClass()))
 		{
 			if (!Settings[ESP_VEHICLE].Value.bValue)
 				continue;
 
-			CG::ASolarVehiclePawn* Vehicle = static_cast<CG::ASolarVehiclePawn*>(Actor);
+			SDK::ASolarVehiclePawn* Vehicle = static_cast<SDK::ASolarVehiclePawn*>(Actor);
 
-			CG::FVector VehicleLocation = Vehicle->K2_GetActorLocation();
+			SDK::FVector VehicleLocation = Vehicle->K2_GetActorLocation();
 
 			PlayerController->ProjectWorldLocationToScreen(VehicleLocation, &VehiclePos, false);
 
 			int VehicleDistance = LocalCharacter->GetDistanceTo(Vehicle) / 100;
 
-			std::string VehicleName = Engine::GetVehicleName(Vehicle->Name.GetName());
+			std::string VehicleName = Engine::GetVehicleName(Vehicle->Name.GetRawString());
 
 			ImVec4 HPColor = ImVec4();
 
@@ -478,15 +472,15 @@ void XXX::Unknown()
 
 void XXX::Removal()
 {
-	CG::UWorld* World = *CG::UWorld::GWorld;
+	SDK::UWorld* World = *SDK::UWorld::GWorld;
 	if (!World)
 		return;
 
-	CG::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
+	SDK::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
 	if (!LocalPlayer)
 		return;
 
-	CG::APlayerController* PlayerController = LocalPlayer->PlayerController;
+	SDK::APlayerController* PlayerController = LocalPlayer->PlayerController;
 	if (!PlayerController)
 		return;
 
@@ -495,15 +489,15 @@ void XXX::Removal()
 		if (!PlayerController->Character)
 			return;
 
-		CG::ASolarPlayerWeapon* CachedCurrentWeapon = static_cast<CG::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
+		SDK::ASolarPlayerWeapon* CachedCurrentWeapon = static_cast<SDK::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
 		if (!CachedCurrentWeapon)
 			return;
 
-		CG::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
+		SDK::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
 		if (!Config)
 			return;
 
-		CG::UAmmoConfig* AmmoConfig = Config->PrimaryAmmo;
+		SDK::UAmmoConfig* AmmoConfig = Config->PrimaryAmmo;
 		if (!AmmoConfig)
 			return;
 
@@ -515,11 +509,11 @@ void XXX::Removal()
 		if (!PlayerController->Character)
 			return;
 
-		CG::ASolarPlayerWeapon* CachedCurrentWeapon = static_cast<CG::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
+		SDK::ASolarPlayerWeapon* CachedCurrentWeapon = static_cast<SDK::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
 		if (!CachedCurrentWeapon)
 			return;
 
-		CG::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
+		SDK::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
 		if (!Config)
 			return;
 
@@ -529,31 +523,31 @@ void XXX::Removal()
 		Config->ADSBaseSpread = 0.0f;
 		Config->VhADSBaseSpread = 0.0f;
 
-		CG::UAmmoConfig* PrimaryAmmo = Config->PrimaryAmmo;
+		SDK::UAmmoConfig* PrimaryAmmo = Config->PrimaryAmmo;
 		if (!PrimaryAmmo)
 			return;
 
 		PrimaryAmmo->ADSRecoilCOP = 0.0f;
 		PrimaryAmmo->ADSSpreadCOP = 0.0f;
 	
-		CG::FAmmonRecoilScope FAmmonRecoilScopePrimary = PrimaryAmmo->ScopeRecoil;
+		SDK::FAmmonRecoilScope FAmmonRecoilScopePrimary = PrimaryAmmo->ScopeRecoil;
 		FAmmonRecoilScopePrimary.EnableScopeVibration = false;
 		FAmmonRecoilScopePrimary.EnableCrossHairVibration = false;
 		FAmmonRecoilScopePrimary.EnableScopeRoll = false;
 
-		CG::UAmmoConfig* SecondaryAmmo = Config->SecondaryAmmo;
+		SDK::UAmmoConfig* SecondaryAmmo = Config->SecondaryAmmo;
 		if (!SecondaryAmmo)
 			return;
 
 		SecondaryAmmo->ADSRecoilCOP = 0.0f;
 		SecondaryAmmo->ADSSpreadCOP = 0.0f;
 
-		CG::FAmmonRecoilScope FAmmonRecoilScopeSecondary = SecondaryAmmo->ScopeRecoil;
+		SDK::FAmmonRecoilScope FAmmonRecoilScopeSecondary = SecondaryAmmo->ScopeRecoil;
 		FAmmonRecoilScopeSecondary.EnableScopeVibration = false;
 		FAmmonRecoilScopeSecondary.EnableCrossHairVibration = false;
 		FAmmonRecoilScopeSecondary.EnableScopeRoll = false;
 
-		CG::UWeaponShootConfig* WeaponShootConfig = Config->WeaponShootConfig;
+		SDK::UWeaponShootConfig* WeaponShootConfig = Config->WeaponShootConfig;
 		if (!WeaponShootConfig)
 			return;
 
@@ -563,7 +557,7 @@ void XXX::Removal()
 		WeaponShootConfig->bEnableNewCameraShake = false;
 		WeaponShootConfig->BaseSpread = 0.0f;
 
-		CG::UWeaponRecoilComponent* RecoilComponent = CachedCurrentWeapon->GetRecoilComponent();
+		SDK::UWeaponRecoilComponent* RecoilComponent = CachedCurrentWeapon->GetRecoilComponent();
 		if (!RecoilComponent)
 			return;
 
@@ -577,15 +571,15 @@ void XXX::Removal()
 		if (!PlayerController->Character)
 			return;
 
-		CG::ASolarPlayerWeapon* CachedCurrentWeapon = static_cast<CG::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
+		SDK::ASolarPlayerWeapon* CachedCurrentWeapon = static_cast<SDK::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
 		if (!CachedCurrentWeapon)
 			return;
 
-		CG::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
+		SDK::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
 		if (!Config)
 			return;
 
-		CG::UWeaponShootConfig* WeaponShootConfig = Config->WeaponShootConfig;
+		SDK::UWeaponShootConfig* WeaponShootConfig = Config->WeaponShootConfig;
 		if (!WeaponShootConfig)
 			return;
 
@@ -596,23 +590,23 @@ void XXX::Removal()
 
 void XXX::Aimbot()
 {
-	CG::UWorld* World = *CG::UWorld::GWorld;
+	SDK::UWorld* World = *SDK::UWorld::GWorld;
 	if (!World)
 		return;
 
-	CG::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
+	SDK::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
 	if (!LocalPlayer)
 		return;
 
-	CG::APlayerController* PlayerController = LocalPlayer->PlayerController;
+	SDK::APlayerController* PlayerController = LocalPlayer->PlayerController;
 	if (!PlayerController)
 		return;
 
-	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(PlayerController->Character);
+	SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->Character);
 	if (!LocalCharacter)
 		return;
 
-	CG::FVector LocalLocation = LocalCharacter->GetCameraLocation();
+	SDK::FVector LocalLocation = LocalCharacter->GetCameraLocation();
 
 	if (Settings[DRAW_FOV].Value.bValue)
 	{
@@ -622,17 +616,20 @@ void XXX::Aimbot()
 	if (!Settings[AIM_ENABLED].Value.bValue)
 		return;
 
-	CG::TArray<CG::AActor*> Actors = *(CG::TArray<CG::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
+	SDK::TArray<SDK::AActor*> Actors = *(SDK::TArray<SDK::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
 	for (int i = 0; i < Actors.Count(); i++)
 	{
-		CG::AActor* Actor = Actors[i];
+		SDK::AActor* Actor = Actors[i];
 
 		if (!Actor)
 			continue;
 
-		if (Actor->IsA(CG::ASolarCharacter::StaticClass()))
+		if (!Actor->RootComponent)
+			continue;
+
+		if (Actor->IsA(SDK::ASolarCharacter::StaticClass()))
 		{
-			CG::ASolarCharacter* Enemy = static_cast<CG::ASolarCharacter*>(Actor);
+			SDK::ASolarCharacter* Enemy = static_cast<SDK::ASolarCharacter*>(Actor);
 
 			if (Enemy == LocalCharacter)
 				continue;
@@ -665,15 +662,15 @@ void XXX::Aimbot()
 				break;
 			}
 
-			CG::ASolarPlayerWeapon* CachedCurrentWeapon = LocalCharacter->CachedCurrentWeapon;
+			SDK::ASolarPlayerWeapon* CachedCurrentWeapon = LocalCharacter->CachedCurrentWeapon;
 			if (!CachedCurrentWeapon)
 				continue;
 
-			CG::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
+			SDK::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
 			if (!Config)
 				continue;
 
-			CG::UAmmoConfig* AmmoConfig = Config->PrimaryAmmo;
+			SDK::UAmmoConfig* AmmoConfig = Config->PrimaryAmmo;
 			if (!AmmoConfig)
 				continue;
 
@@ -681,11 +678,11 @@ void XXX::Aimbot()
 			float BulletGravity = AmmoConfig->ProjectileMaxGravity;
 			float Distance = LocalLocation.Distance(AimPos) / 100.f;
 
-			CG::FRotator OldRotation = PlayerController->GetControlRotation();
-			CG::FVector Velocity = Enemy->RootComponent->ComponentVelocity;
-			CG::FVector AimPrediction = Aimbot::AimbotPrediction(BulletSpeed, BulletGravity, Distance, AimPos, Velocity);
+			SDK::FRotator OldRotation = PlayerController->GetControlRotation();
+			SDK::FVector Velocity = Enemy->RootComponent->ComponentVelocity;
+			SDK::FVector AimPrediction = Aimbot::AimbotPrediction(BulletSpeed, BulletGravity, Distance, AimPos, Velocity);
 
-			CG::FVector2D TargetPos = CG::FVector2D();
+			SDK::FVector2D TargetPos = SDK::FVector2D();
 			if (!PlayerController->ProjectWorldLocationToScreen(AimPrediction, &TargetPos, false))
 				continue;
 
@@ -701,13 +698,71 @@ void XXX::Aimbot()
 				Aimbot::TargetRotation = Aimbot::CalcAngle(LocalLocation, AimPrediction, OldRotation, Settings[AIM_SMOOTH].Value.fValue);
 			}
 
-			//CG::FRotator TargetRotation = Aimbot::CalcAngle(LocalLocation, AimPrediction);
+			//SDK::FRotator TargetRotation = Aimbot::CalcAngle(LocalLocation, AimPrediction);
 		}
 	}
 
 	//Draw::DrawLine(ScreenWidth / 2, ScreenHeight / 2, Aimbot::LockPosition.X, Aimbot::LockPosition.Y, 1.f, ImVec4(1.f, 0.141f, 0.f, 1.f));
 	//Aimbot::LockOnTarget();
 	Aimbot::SetRotation(PlayerController->PlayerCameraManager, PlayerController, Aimbot::TargetRotation, false, Settings[AIM_SMOOTH].Value.fValue);
+}
+
+void XXX::Misc()
+{
+	SDK::UWorld* World = *SDK::UWorld::GWorld;
+	if (!World)
+		return;
+
+	SDK::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
+	if (!LocalPlayer)
+		return;
+
+	SDK::APlayerController* PlayerController = LocalPlayer->PlayerController;
+	if (!PlayerController)
+		return;
+
+	SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
+	if (!LocalCharacter)
+		return;
+
+	SDK::TArray<SDK::AActor*> Actors = *(SDK::TArray<SDK::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
+	for (int i = 0; i < Actors.Count(); i++)
+	{
+		SDK::AActor* Actor = Actors[i];
+
+		if (!Actor)
+			continue;
+
+		if (Actor->IsA(SDK::ASolarCharacter::StaticClass()))
+		{
+			SDK::ASolarCharacter* Enemy = static_cast<SDK::ASolarCharacter*>(Actor);
+
+			if (Enemy == LocalCharacter)
+				continue;
+
+			if (Settings[STOP_SPECTATOR].Value.bValue)
+			{
+				SDK::ASolarSpectateInfo* SpectateInfo = LocalCharacter->GetSpectateInfo();
+				if (!SpectateInfo)
+					continue;
+
+				SDK::TArray<SDK::ASolarPlayerState*> Spectators = SpectateInfo->PlayersSpectatingMe;
+				for (int i = 0; i < Spectators.Count(); i++)
+				{
+					SDK::ASolarSpectateInfo* SpectateInfo = Spectators[i]->GetSpectateInfo();
+					if (!SpectateInfo)
+						continue;
+
+					SpectateInfo->SetSpectateTargetForPlayingReplay(Enemy->GetSolarPlayerState());
+					SDK::ASolarReplayPlayerController* ReplayPlayerController = static_cast<SDK::ASolarReplayPlayerController*>(SpectateInfo->GetSolarPlayerState()->GetSolarPlayerController());
+					if (!ReplayPlayerController)
+						continue;
+
+					ReplayPlayerController->StopSpectatePlayer();
+				}	
+			}
+		}
+	}
 }
 
 void XXX::Radar()
@@ -739,26 +794,26 @@ void XXX::Radar()
 				ImVec2(windowPos.x, windowPos.y + (windowSize.y / 2)),
 				ImVec2(windowPos.x + windowSize.x, windowPos.y + (windowSize.y / 2)), IM_COL32(255, 255, 255, 255), 1.0f);
 
-			CG::UWorld* World = *CG::UWorld::GWorld;
+			SDK::UWorld* World = *SDK::UWorld::GWorld;
 			if (!World)
 				return;
 
-			CG::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
+			SDK::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
 			if (!LocalPlayer)
 				return;
 
-			CG::APlayerController* PlayerController = LocalPlayer->PlayerController;
+			SDK::APlayerController* PlayerController = LocalPlayer->PlayerController;
 			if (!PlayerController)
 				return;
 
-			CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
+			SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
 			if (!LocalCharacter)
 				return;
 
-			CG::TArray<CG::AActor*> Actors = *(CG::TArray<CG::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
+			SDK::TArray<SDK::AActor*> Actors = *(SDK::TArray<SDK::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
 			for (int i = 0; i < Actors.Count(); i++)
 			{
-				CG::AActor* Actor = Actors[i];
+				SDK::AActor* Actor = Actors[i];
 
 				if (!Actor)
 					continue;
@@ -766,9 +821,9 @@ void XXX::Radar()
 				if (!Actor->RootComponent)
 					continue;
 
-				if (Actor->IsA(CG::ASolarCharacter::StaticClass()))
+				if (Actor->IsA(SDK::ASolarCharacter::StaticClass()))
 				{
-					CG::ASolarCharacter* Enemy = static_cast<CG::ASolarCharacter*>(Actor);
+					SDK::ASolarCharacter* Enemy = static_cast<SDK::ASolarCharacter*>(Actor);
 
 					if (Enemy->InSameTeamWithFirstPlayerController())
 						continue;
@@ -778,7 +833,7 @@ void XXX::Radar()
 
 					float Distance = LocalCharacter->GetDistanceTo(Enemy) / 100.0f;
 
-					CG::FVector2D RotatePoint = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), CG::FVector2D(windowPos.x, windowPos.y), CG::FVector2D(windowSize.x, windowSize.y));
+					SDK::FVector2D RotatePoint = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), SDK::FVector2D(windowPos.x, windowPos.y), SDK::FVector2D(windowSize.x, windowSize.y));
 
 					if (Distance >= 0.f && Distance < Settings[RADAR_DISTANCE].Value.fValue)
 					{
@@ -794,22 +849,22 @@ void XXX::Radar()
 
 void XXX::BypassEAC()
 {
-	CG::USolarEasyAntiCheatManager* EAC_ = (CG::USolarEasyAntiCheatManager*)(CG::USolarEasyAntiCheatManager::StaticClass());
+	SDK::USolarEasyAntiCheatManager* EAC_ = (SDK::USolarEasyAntiCheatManager*)(SDK::USolarEasyAntiCheatManager::StaticClass());
 	if (!EAC_)
 		return;
 
 	EAC_->EnableAntiCheat = false;
 	EAC_->bEnableAntiCheatLauncherCheck = false;
 
-	CG::UWorld* World = *CG::UWorld::GWorld;
+	SDK::UWorld* World = *SDK::UWorld::GWorld;
 	if (!World)
 		return;
 
-	CG::USolarGameInstanceBase* GameInstance = static_cast<CG::USolarGameInstanceBase*>(World->OwningGameInstance);
+	SDK::USolarGameInstanceBase* GameInstance = static_cast<SDK::USolarGameInstanceBase*>(World->OwningGameInstance);
 	if (!GameInstance)
 		return;
 
-	CG::USolarEasyAntiCheatManager* EAC__ = GameInstance->GetSolarEasyAntiCheatManager();
+	SDK::USolarEasyAntiCheatManager* EAC__ = GameInstance->GetSolarEasyAntiCheatManager();
 	if (!EAC__)
 		return;
 

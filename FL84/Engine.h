@@ -7,11 +7,11 @@ namespace Engine
 	uint64_t FindPattern(const char* module, const char* pattern);
 	std::string GetVehicleName(std::string oName);
 	std::string GetWeaponType(int WeaponID);
-	CG::FVector GetBonePosition(CG::USkeletalMeshComponent* mesh, int index);
+	SDK::FVector GetBonePosition(SDK::USkeletalMeshComponent* mesh, int index);
 	float GetObjectDistance2D(float x1, float y1, float x2, float y2);
-	float ScreenToEnemy(CG::APlayerController* controller, CG::FVector position);
-	float GetActorFromCenter(CG::APlayerCameraManager* CameraManager, CG::FVector Point);
-	bool NerstBoneToScreen(CG::APlayerCameraManager* CameraManager, CG::FVector WorldLocation, CG::FVector& Screenlocation);
+	float ScreenToEnemy(SDK::APlayerController* controller, SDK::FVector position);
+	float GetActorFromCenter(SDK::APlayerCameraManager* CameraManager, SDK::FVector Point);
+	bool NerstBoneToScreen(SDK::APlayerCameraManager* CameraManager, SDK::FVector WorldLocation, SDK::FVector& Screenlocation);
 	bool IsKeyDown(int VK_Key);
-	int GetNearestBone(CG::APlayerCameraManager* CameraManager, CG::ASolarCharacter* Enemy, std::vector<int> Bones);
+	int GetNearestBone(SDK::APlayerCameraManager* CameraManager, SDK::ASolarCharacter* Enemy, std::vector<int> Bones);
 }

@@ -33,7 +33,7 @@
 #include "LazyImporter.hpp"
 #include "SpoofCall.h"
 
-#include "SDK.h"
+#include "SDK.hpp"
 #include "Fonts.h"
 #include "Icons.h"
 #include "Settings.h"

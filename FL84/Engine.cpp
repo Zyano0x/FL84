@@ -118,14 +118,14 @@ namespace Engine
 		}
 	}
 
-	typedef CG::FMatrix* (__thiscall* tGetBoneMatrix)(CG::USkeletalMeshComponent* mesh, CG::FMatrix* result, int index);
-	CG::FVector GetBonePosition(CG::USkeletalMeshComponent* mesh, int index)
+	typedef SDK::FMatrix* (__thiscall* tGetBoneMatrix)(SDK::USkeletalMeshComponent* mesh, SDK::FMatrix* result, int index);
+	SDK::FVector GetBonePosition(SDK::USkeletalMeshComponent* mesh, int index)
 	{
 		if (!mesh)
 			return { 0.f, 0.f, 0.f };
 
-		CG::FMatrix matrix{};
-		tGetBoneMatrix oGetBoneMatrix = reinterpret_cast<tGetBoneMatrix>((uintptr_t)GetModuleHandleW(NULL) + GET_BONE_MATRIX_OFFSET);
+		SDK::FMatrix matrix{};
+		tGetBoneMatrix oGetBoneMatrix = reinterpret_cast<tGetBoneMatrix>((uintptr_t)GetModuleHandleW(NULL) + Offsets::GetBoneMatrix);
 		oGetBoneMatrix(mesh, &matrix, index);
 
 		return matrix.WPlane;
@@ -139,9 +139,9 @@ namespace Engine
 		return sqrt(xx * xx + yy * yy);
 	}
 
-	float ScreenToEnemy(CG::APlayerController* controller, CG::FVector position)
+	float ScreenToEnemy(SDK::APlayerController* controller, SDK::FVector position)
 	{
-		CG::FVector2D out;
+		SDK::FVector2D out;
 		if (controller->ProjectWorldLocationToScreen(position, &out, false))
 		{
 			return (fabs(out.X - (ScreenWidth / 2)) + fabs(out.Y - (ScreenHeight / 2)));
@@ -149,10 +149,10 @@ namespace Engine
 		return 0;
 	}
 
-	float GetActorFromCenter(CG::APlayerCameraManager* CameraManager, CG::FVector Point)
+	float GetActorFromCenter(SDK::APlayerCameraManager* CameraManager, SDK::FVector Point)
 	{
 		float XDif, YDif, xcenter, ycenter;
-		CG::FVector Screen;
+		SDK::FVector Screen;
 		xcenter = ScreenWidth / 2;
 		ycenter = ScreenHeight / 2;
 		NerstBoneToScreen(CameraManager, Point, Screen);
@@ -161,19 +161,19 @@ namespace Engine
 		return (float)GetObjectDistance2D(ScreenWidth / 2, ScreenHeight / 2, Screen.X, Screen.Y);
 	}
 
-	bool NerstBoneToScreen(CG::APlayerCameraManager* CameraManager, CG::FVector WorldLocation, CG::FVector& Screenlocation)
+	bool NerstBoneToScreen(SDK::APlayerCameraManager* CameraManager, SDK::FVector WorldLocation, SDK::FVector& Screenlocation)
 	{
-		CG::FRotator Rotation = CameraManager->CameraCache.POV.Rotation;
+		SDK::FRotator Rotation = CameraManager->CameraCache.POV.Rotation;
 		D3DMATRIX tempMatrix = Math::Matrix(Rotation);
 
-		CG::FVector vAxisX, vAxisY, vAxisZ;
+		SDK::FVector vAxisX, vAxisY, vAxisZ;
 
-		vAxisX = CG::FVector(tempMatrix.m[0][0], tempMatrix.m[0][1], tempMatrix.m[0][2]);
-		vAxisY = CG::FVector(tempMatrix.m[1][0], tempMatrix.m[1][1], tempMatrix.m[1][2]);
-		vAxisZ = CG::FVector(tempMatrix.m[2][0], tempMatrix.m[2][1], tempMatrix.m[2][2]);
+		vAxisX = SDK::FVector(tempMatrix.m[0][0], tempMatrix.m[0][1], tempMatrix.m[0][2]);
+		vAxisY = SDK::FVector(tempMatrix.m[1][0], tempMatrix.m[1][1], tempMatrix.m[1][2]);
+		vAxisZ = SDK::FVector(tempMatrix.m[2][0], tempMatrix.m[2][1], tempMatrix.m[2][2]);
 
-		CG::FVector vDelta = WorldLocation - CameraManager->CameraCache.POV.Location;
-		CG::FVector vTransformed = CG::FVector(vDelta.Dot(vAxisY), vDelta.Dot(vAxisZ), vDelta.Dot(vAxisX));
+		SDK::FVector vDelta = WorldLocation - CameraManager->CameraCache.POV.Location;
+		SDK::FVector vTransformed = SDK::FVector(vDelta.Dot(vAxisY), vDelta.Dot(vAxisZ), vDelta.Dot(vAxisX));
 
 		if (vTransformed.Z < 0.0001f) return false;
 
@@ -200,7 +200,7 @@ namespace Engine
 	}
 
 	std::vector<int> HitBoxes = { HEAD, BIP001, UPPERARM_L, UPPERARM_R, HAND_L, HAND_R, THUMB_01_L, THUMB_01_R, THIGH_R, THIGH_L, CALF_R, CALF_L, FOOT_L, FOOT_R, ROOT };
-	int GetNearestBone(CG::APlayerCameraManager* CameraManager, CG::ASolarCharacter* Enemy, std::vector<int> Bones)
+	int GetNearestBone(SDK::APlayerCameraManager* CameraManager, SDK::ASolarCharacter* Enemy, std::vector<int> Bones)
 	{
 		FLOAT PriorityDists = FLT_MAX;
 		int TargerBone = HitBoxes[0];
@@ -208,7 +208,7 @@ namespace Engine
 		{
 			if (Bones[i] > 0)
 			{
-				CG::FVector BoneX{ Enemy->Mesh->GetBoneWorldPos(Bones[i]) };
+				SDK::FVector BoneX{ Enemy->Mesh->GetBoneWorldPos(Bones[i]) };
 				FLOAT Dist = GetActorFromCenter(CameraManager, BoneX);
 				if (Dist < PriorityDists)
 				{

@@ -4,15 +4,15 @@ namespace Aimbot
 {
 	constexpr float InitCenterDistance = 10000.0f;
 	extern float ClosestDistance;
-	extern CG::FVector2D LockPosition;
-	extern CG::FVector TargetPosition;
-	extern CG::FRotator TargetRotation;
+	extern SDK::FVector2D LockPosition;
+	extern SDK::FVector TargetPosition;
+	extern SDK::FRotator TargetRotation;
 
 	float Normalize(float angle);
-	CG::FRotator CalcAngle(CG::FVector& src, CG::FVector& dst, CG::FRotator& oldRotation, float& smoothing);
-	CG::FVector AimbotPrediction(float bulletVelocity, float bulletGravity, float targetDistance, CG::FVector targetPosition, CG::FVector targetVelocity);
-	CG::FVector2D Randomize(CG::FVector2D vAngles, float HumanSpeed, float HumanScale);
+	SDK::FRotator CalcAngle(SDK::FVector& src, SDK::FVector& dst, SDK::FRotator& oldRotation, float& smoothing);
+	SDK::FVector AimbotPrediction(float bulletVelocity, float bulletGravity, float targetDistance, SDK::FVector targetPosition, SDK::FVector targetVelocity);
+	SDK::FVector2D Randomize(SDK::FVector2D vAngles, float HumanSpeed, float HumanScale);
 	void ResetLock();
 	void LockOnTarget();
-	void SetRotation(CG::APlayerCameraManager* PlayerCameraManager, CG::APlayerController* PlayerController, CG::FRotator TargetRotation, bool bWithRotationInput, float Smooth);
+	void SetRotation(SDK::APlayerCameraManager* PlayerCameraManager, SDK::APlayerController* PlayerController, SDK::FRotator TargetRotation, bool bWithRotationInput, float Smooth);
 }
