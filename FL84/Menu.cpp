@@ -135,10 +135,12 @@ namespace Menu
 					ImGui::PushStyleVar(ImGuiStyleVar_Alpha, ImGui::GetStyle().Alpha * 0.5f);
 				}
 				{
-					ImGui::Checkbox(xorstr_(" Ignore Knocked"), &Settings[IGNORE_KNOCKED].Value.bValue);
-					ImGui::Spacing();
 					ImGui::Checkbox(xorstr_(" Draw FOV"), &Settings[DRAW_FOV].Value.bValue);
 					ImGui::Spacing();
+					ImGui::Checkbox(xorstr_(" Ignore Knocked"), &Settings[IGNORE_KNOCKED].Value.bValue);
+					ImGui::Spacing();
+					ImGui::Checkbox(xorstr_(" Ignore Stealth"), &Settings[IGNORE_STEALTH].Value.bValue);
+					ImGui::Spacing();		
 					ImGui::Checkbox(xorstr_(" No Recoil"), &Settings[NO_RECOIL].Value.bValue);
 					ImGui::Spacing();
 					ImGui::Checkbox(xorstr_(" Fast Reload"), &Settings[FAST_RELOAD].Value.bValue);
@@ -219,8 +221,10 @@ namespace Menu
 					}
 					{
 						ImGui::Checkbox(xorstr_(" Enemy"), &Settings[ESP_ENEMY].Value.bValue);
-						ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
+						ImGui::SameLine(ImGui::GetCursorPosX() + 135.0f);
 						ImGui::ColorEdit4(xorstr_(" Visible Color"), (float*)&Settings[COLOR_ENEMY_VISIBLE].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+						ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
+						ImGui::ColorEdit4(xorstr_(" Stealth Color"), (float*)&Settings[COLOR_ENEMY_STEALTH].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
 						ImGui::Spacing();
 						ImGui::Checkbox(xorstr_(" Team"), &Settings[ESP_TEAM].Value.bValue);
 						ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);

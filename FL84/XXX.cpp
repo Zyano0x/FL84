@@ -59,6 +59,9 @@ void XXX::Unknown()
 
 				if (PlayerController->LineOfSightTo(Enemy, { 0.f,0.f,0.f }, false))
 					ImVec4Copy(Settings[COLOR_ENEMY_VISIBLE].Value.v4Value, ColorVisisble);
+
+				if (Enemy->IsInInvisibleStatus())
+					ImVec4Copy(Settings[COLOR_ENEMY_STEALTH].Value.v4Value, ColorVisisble);
 			}
 			else
 			{
@@ -457,7 +460,7 @@ void XXX::Unknown()
 
 			int VehicleDistance = LocalCharacter->GetDistanceTo(Vehicle) / 100;
 
-			std::string VehicleName = Engine::GetVehicleName(Vehicle->Name.GetRawString());
+			std::string VehicleName = Engine::GetVehicleName(Vehicle->Name.GetName());
 
 			ImVec4 HPColor = ImVec4();
 
@@ -644,6 +647,9 @@ void XXX::Aimbot()
 				continue;
 
 			if (Settings[IGNORE_KNOCKED].Value.bValue && Enemy->IsDying())
+				continue;
+
+			if (Settings[IGNORE_STEALTH].Value.bValue && Enemy->IsInInvisibleStatus())
 				continue;
 
 			switch (Settings[AIM_SELECT_BONE].Value.iValue)

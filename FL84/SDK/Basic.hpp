@@ -171,11 +171,88 @@ namespace SDK
 		}
 	};
 
+	/**
+	 * PredefinedClass BasicTypes.FNameEntryHeader
+	 * Size -> 0x0000
+	 */
+	class FNameEntryHeader
+	{
+	public:
+		static const constexpr uint32_t                            ProbeHashBits = 5;                                       // 0x0000(0x0000)
+		uint16_t                                                   bIsWide : 1;                                             // 0x0000(0x0000)
+		uint16_t                                                   LowercaseProbeHash : ProbeHashBits;                      // 0x0000(0x0000)
+		uint16_t                                                   Len : 10;                                                // 0x0000(0x0000)
+	};
+
+	/**
+	 * PredefinedClass BasicTypes.FNameEntry
+	 * Size -> 0x0000
+	 */
+	class FNameEntry
+	{
+	public:
+		FNameEntryHeader                                           Header;                                                  // 0x0000(0x0000)
+		union
+		{
+			char                                                      AnsiName[1024];                                          // 0x0000(0x0000)
+			wchar_t                                                   WideName[1024];                                          // 0x0000(0x0000)
+		};
+
+	public:
+		int32_t GetLength() const;
+		bool IsWide() const;
+		int32_t GetId() const;
+		std::string GetAnsiName() const;
+		std::wstring GetWideName() const;
+		std::string GetName() const;
+	};
+
+	/**
+	 * PredefinedClass BasicTypes.FNameEntryAllocator
+	 * Size -> 0x0000
+	 */
+	class FNameEntryAllocator
+	{
+	private:
+		uint8_t                                                    FrwLock[0x8];                                            // 0x0000(0x0000)
+	public:
+		static const constexpr int32_t                             Stride = 0x02;                                           // 0x0000(0x0000)
+		static const constexpr int32_t                             MaxOffset = Stride * (1 << 16);                          // 0x0000(0x0000)
+		int32_t                                                    CurrentBlock;                                            // 0x0000(0x0000)
+		int32_t                                                    CurrentByteCursor;                                       // 0x0000(0x0000)
+		uint8_t* Blocks[8192];                                            // 0x0000(0x0000)
+
+	public:
+		int32_t NumBlocks() const;
+		FNameEntry* GetById(int32_t key) const;
+		bool IsValidIndex(int32_t key) const;
+		bool IsValidIndex(int32_t key, uint32_t block, uint16_t offset) const;
+	};
+
+	/**
+	 * PredefinedClass BasicTypes.FNamePool
+	 * Size -> 0x0000
+	 */
+	class FNamePool
+	{
+	public:
+		FNameEntryAllocator                                        Allocator;                                               // 0x0000(0x0000)
+		int32_t                                                    AnsiCount;                                               // 0x0000(0x0000)
+		int32_t                                                    WideCount;                                               // 0x0000(0x0000)
+
+	public:
+		FNameEntry* GetNext(uintptr_t& nextFNameAddress, uint32_t* comparisonId) const;
+		int32_t Count() const;
+		bool IsValidIndex(int32_t index) const;
+		FNameEntry* GetById(int32_t id) const;
+		FNameEntry* operator[](int32_t id) const;
+	};
+
 	class FName
 	{
 	public:
 		// GNames - either of type TNameEntryArray [<4.23] or FNamePool [>=4.23]
-		static void* GNames;
+		static FNamePool* GNames;
 
 		// Members of FName - depending on configuration [WITH_CASE_PRESERVING_NAME | FNAME_OUTLINE_NUMBER]
 		int32 ComparisonIndex;
@@ -183,7 +260,7 @@ namespace SDK
 
 		static inline void InitGNames()
 		{
-			GNames = reinterpret_cast<void*>(uint64(GetModuleHandle(0)) + Offsets::GNames);
+			GNames = reinterpret_cast<FNamePool*>(uint64(GetModuleHandle(0)) + Offsets::GNames);
 		}
 
 		// GetDisplayIndex - returns the Id of the string depending on the configuration [default: ComparisonIndex, WITH_CASE_PRESERVING_NAME: DisplayIndex]
@@ -220,6 +297,26 @@ namespace SDK
 				return OutputString;
 
 			return OutputString.substr(pos + 1);
+		}
+
+		inline static FNamePool& GetGlobalNames()
+		{
+			return *GNames;
+		}
+
+		inline std::string GetNameA() const
+		{
+			return GetGlobalNames()[ComparisonIndex]->GetAnsiName();
+		}
+
+		inline std::wstring GetNameW() const
+		{
+			return GetGlobalNames()[ComparisonIndex]->GetWideName();
+		}
+
+		inline std::string GetName() const
+		{
+			return GetNameA();
 		}
 
 		inline bool operator==(const FName& Other) const

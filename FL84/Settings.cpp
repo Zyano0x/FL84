@@ -84,6 +84,7 @@ void InitSettings()
 	Settings[AIM_MODE] = AddConfig("Aimbot Settings", "Aimbot_Mode", 1, 0, 1);
 	Settings[AIM_SELECT_BONE] = AddConfig("Aimbot Settings", "Aimbot_Select_Bone", 0, 0, 2);
 	Settings[IGNORE_KNOCKED] = AddConfig("Aimbot Settings", "Aimbot_Ignore_Knocked", true);
+	Settings[IGNORE_STEALTH] = AddConfig("Aimbot Settings", "Aimbot_Ignore_Stealth", true);
 	Settings[HUMAN_SPEED] = AddConfig("Aimbot Settings", "Aimbot_Human_Speed", 10.0f, 1.0f, 100.f);
 	Settings[HUMAN_SCALE] = AddConfig("Aimbot Settings", "Aimbot_Human_Scale", 1.0f, 1.0f, 20.f);
 	Settings[IS_AIMING] = AddConfig("Aimbot Settings", "Aimbot_Is_Aiming", false);
@@ -137,6 +138,7 @@ void InitSettings()
 
 	Settings[COLOR_TEAM] = AddConfig("Color Settings", "Color_Team", ImVec4(0.0f, 0.909f, 0.988f, 1.0f));
 	Settings[COLOR_ENEMY] = AddConfig("Color Settings", "Color_Enemy", ImVec4(1.0f, 0.949f, 0.0f, 1.0f));
+	Settings[COLOR_ENEMY_STEALTH] = AddConfig("Color Settings", "Color_Enemy_Stealth", ImVec4(0.0f, 0.0f, 0.0f, 1.0f));
 	Settings[COLOR_ENEMY_VISIBLE] = AddConfig("Color Settings", "Color_Enemy_Visible", ImVec4(0.725f, 0.0f, 0.764f, 1.0f));
 	Settings[COLOR_LOOT_WEAPON] = AddConfig("Color Settings", "Color_Loot_Weapon", ImVec4(0.0f, 0.764f, 1.0f, 1.0f));
 	Settings[COLOR_LOOT_AMMO] = AddConfig("Color Settings", "Color_Loot_Ammo", ImVec4(0.474f, 0.709f, 0.709f, 1.0f));
