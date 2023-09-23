@@ -78,6 +78,8 @@ namespace Engine
 			return xorstr_("4-Legged-Lizard");
 		else if (oName == xorstr_("BP_VH_Leg_WL06_New_C"))
 			return xorstr_("War Spider");
+		else if (oName == xorstr_("BP_VH_Legged_WL09_C"))
+			return xorstr_("Rocket Tarantula");
 		else
 			return xorstr_("Unknown Vehicle!");
 	}

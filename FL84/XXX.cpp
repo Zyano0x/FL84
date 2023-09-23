@@ -755,16 +755,15 @@ void XXX::Misc()
 				SDK::TArray<SDK::ASolarPlayerState*> Spectators = SpectateInfo->PlayersSpectatingMe;
 				for (int i = 0; i < Spectators.Count(); i++)
 				{
-					SDK::ASolarSpectateInfo* SpectateInfo = Spectators[i]->GetSpectateInfo();
-					if (!SpectateInfo)
+					SDK::ASolarCharacter* SolarCharacter = Spectators[i]->GetSolarCharacter();
+					if (!SolarCharacter)
 						continue;
 
-					SpectateInfo->SetSpectateTargetForPlayingReplay(Enemy->GetSolarPlayerState());
-					SDK::ASolarReplayPlayerController* ReplayPlayerController = static_cast<SDK::ASolarReplayPlayerController*>(SpectateInfo->GetSolarPlayerState()->GetSolarPlayerController());
-					if (!ReplayPlayerController)
+					SDK::ASolarReplayPlayerController* SolarReplayPlayerController = static_cast<SDK::ASolarReplayPlayerController*>(SolarCharacter->GetSolarPlayerController(true));
+					if (!SolarReplayPlayerController)
 						continue;
 
-					ReplayPlayerController->StopSpectatePlayer();
+					SolarReplayPlayerController->StopSpectatePlayer();
 				}	
 			}
 		}
