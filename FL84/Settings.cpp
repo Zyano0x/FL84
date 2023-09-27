@@ -81,8 +81,8 @@ void InitSettings()
 	Settings[AIM_FOV] = AddConfig("Aimbot Settings", "Aimbot_FOV", 15.0f, 1.0f, 150.0f);
 	Settings[AIM_SMOOTH] = AddConfig("Aimbot Settings", "Aimbot_Smooth", 2.0f, 1.0f, 10.0f);
 	Settings[AIM_KEY] = AddConfig("Aimbot Settings", "Aimbot_Key", 1, 0, 166);
-	Settings[AIM_MODE] = AddConfig("Aimbot Settings", "Aimbot_Mode", 1, 0, 1);
-	Settings[AIM_SELECT_BONE] = AddConfig("Aimbot Settings", "Aimbot_Select_Bone", 0, 0, 2);
+	Settings[AIM_MODE] = AddConfig("Aimbot Settings", "Aimbot_Mode", 1, 0, 2);
+	Settings[AIM_SELECT_BONE] = AddConfig("Aimbot Settings", "Aimbot_Select_Bone", 0, 0, 3);
 	Settings[IGNORE_KNOCKED] = AddConfig("Aimbot Settings", "Aimbot_Ignore_Knocked", true);
 	Settings[IGNORE_STEALTH] = AddConfig("Aimbot Settings", "Aimbot_Ignore_Stealth", true);
 	Settings[HUMAN_SPEED] = AddConfig("Aimbot Settings", "Aimbot_Human_Speed", 10.0f, 1.0f, 100.f);
@@ -133,6 +133,7 @@ void InitSettings()
 	//=============================================================================================================================
 	
 	Settings[STOP_SPECTATOR] = AddConfig("Misc Settings", "Stop_Spectator", false);
+	Settings[SPAM_LIKE] = AddConfig("Misc Settings", "Spam_Like", false);
 
 	//=============================================================================================================================
 

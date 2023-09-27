@@ -53,6 +53,7 @@ public:
 		ColorVisisble = ImVec4(0.0f, 0.0f, 0.0f, 0.0f);
 	}
 
+	bool SanityCheck();
 	void Unknown();
 	void Removal();
 	void Aimbot();
@@ -61,7 +62,12 @@ public:
 	void BypassEAC();
 
 public:
+	SDK::UWorld* World;
+	SDK::ULocalPlayer* LocalPlayer;
+	SDK::APlayerController* PlayerController;
 	SDK::APlayerCameraManager* CameraManager;
+
+	SDK::UGameplayStatics* GameplayStatics;
 
 private:
 	bool IsTeam;

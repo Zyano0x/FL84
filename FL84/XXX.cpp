@@ -4,22 +4,34 @@ XXX ZZZ;
 
 //========================================================================================================
 
-void XXX::Unknown()
+bool XXX::SanityCheck()
 {
-	SDK::UWorld* World = *SDK::UWorld::GWorld;
+	World = *SDK::UWorld::GWorld;
 	if (!World)
-		return;
+		return false;
 
-	SDK::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
+	LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
 	if (!LocalPlayer)
-		return;
+		return false;
 
-	SDK::APlayerController* PlayerController = LocalPlayer->PlayerController;
+	PlayerController = LocalPlayer->PlayerController;
 	if (!PlayerController)
-		return;
+		return false;
 
 	CameraManager = PlayerController->PlayerCameraManager;
 	if (!CameraManager)
+		return false;
+
+	GameplayStatics = SDK::UGameplayStatics::GetDefaultObj();
+	if (!GameplayStatics)
+		return false;
+
+	return true;
+}
+
+void XXX::Unknown()
+{
+	if (!SanityCheck())
 		return;
 
 	SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
@@ -79,8 +91,8 @@ void XXX::Unknown()
 			//Head = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(HEAD));
 			//Root = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(ROOT));
 
-			if (PlayerController->ProjectWorldLocationToScreen(Head, &HeadPos, false)
-				&& PlayerController->ProjectWorldLocationToScreen(Root, &FootPos, false))
+			if (GameplayStatics->ProjectWorldToScreen(PlayerController, Head, &HeadPos, false)
+				&& GameplayStatics->ProjectWorldToScreen(PlayerController, Root, &FootPos, false))
 			{
 				float Top = HeadPos.Y;
 				float Bottom = FootPos.Y;
@@ -230,8 +242,8 @@ void XXX::Unknown()
 						SDK::FVector BoneLoc1 = /*Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(Bone1))*/ Enemy->Mesh->GetBoneWorldPos(Bone1);
 						SDK::FVector BoneLoc2 = /*Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(Bone2))*/ Enemy->Mesh->GetBoneWorldPos(Bone2);
 
-						if (PlayerController->ProjectWorldLocationToScreen(BoneLoc1, &BoneScreen, false)
-							&& PlayerController->ProjectWorldLocationToScreen(BoneLoc2, &PrevBoneScreen, false))
+						if (GameplayStatics->ProjectWorldToScreen(PlayerController, BoneLoc1, &BoneScreen, false)
+							&& GameplayStatics->ProjectWorldToScreen(PlayerController, BoneLoc2, &PrevBoneScreen, false))
 						{
 							Draw::DrawLine(BoneScreen.X, BoneScreen.Y, PrevBoneScreen.X, PrevBoneScreen.Y, 1.f, ColorVisisble);
 						}
@@ -245,8 +257,8 @@ void XXX::Unknown()
 					SDK::FVector End = Angles * 250 + Start;
 					SDK::FVector2D ScreenStart, ScreenEnd;
 
-					if (PlayerController->ProjectWorldLocationToScreen(Start, &ScreenStart, false)
-						&& PlayerController->ProjectWorldLocationToScreen(End, &ScreenEnd, false))
+					if (GameplayStatics->ProjectWorldToScreen(PlayerController, Start, &ScreenStart, false)
+						&& GameplayStatics->ProjectWorldToScreen(PlayerController, End, &ScreenEnd, false))
 					{
 						Draw::DrawLine(ScreenStart.X, ScreenStart.Y, ScreenEnd.X, ScreenEnd.Y, 1.f, ColorVisisble);
 						Draw::DrawCircleFilled(ScreenEnd.X, ScreenEnd.Y, 4, ColorVisisble);
@@ -293,8 +305,8 @@ void XXX::Unknown()
 				Math::VectorAnglesRadar(Forward, Angles);
 
 				const auto Yaw = DEG2RAD(Angles.Y);
-				const float PointX = (ScreenWidth / 2) + RadarRange * cosf(Yaw);
-				const float PointY = (ScreenHeight / 2) + RadarRange * sinf(Yaw);
+				const float PointX = (ScreenWidth / 2) + RadarRange / 2 * 8 * cosf(Yaw);
+				const float PointY = (ScreenHeight / 2) + RadarRange / 2 * 8 * sinf(Yaw);
 
 				std::array<SDK::FVector2D, 3> Points
 				{
@@ -303,7 +315,7 @@ void XXX::Unknown()
 					SDK::FVector2D(PointX - 10, PointY + 10)
 				};
 
-				Math::RotateTriangle(Points, Angles.Y);
+				Math::RotateTriangle(Points, Angles.Y + 180);
 				Draw::DrawTriangle(Points.at(0).X, Points.at(0).Y, Points.at(1).X, Points.at(1).Y, Points.at(2).X, Points.at(2).Y, ImVec4(1.0f, 0.874f, 0.0f, 1.0f));
 			}
 		}
@@ -317,7 +329,7 @@ void XXX::Unknown()
 
 			SDK::FVector ItemLocation = Item->K2_GetActorLocation();
 
-			PlayerController->ProjectWorldLocationToScreen(ItemLocation, &ItemPos, false);
+			GameplayStatics->ProjectWorldToScreen(PlayerController, ItemLocation, &ItemPos, false);
 
 			int ItemDistance = LocalCharacter->GetDistanceTo(Item) / 100.f;
 
@@ -456,7 +468,7 @@ void XXX::Unknown()
 
 			SDK::FVector VehicleLocation = Vehicle->K2_GetActorLocation();
 
-			PlayerController->ProjectWorldLocationToScreen(VehicleLocation, &VehiclePos, false);
+			GameplayStatics->ProjectWorldToScreen(PlayerController, VehicleLocation, &VehiclePos, false);
 
 			int VehicleDistance = LocalCharacter->GetDistanceTo(Vehicle) / 100;
 
@@ -475,16 +487,7 @@ void XXX::Unknown()
 
 void XXX::Removal()
 {
-	SDK::UWorld* World = *SDK::UWorld::GWorld;
-	if (!World)
-		return;
-
-	SDK::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
-	if (!LocalPlayer)
-		return;
-
-	SDK::APlayerController* PlayerController = LocalPlayer->PlayerController;
-	if (!PlayerController)
+	if (!SanityCheck())
 		return;
 
 	if (Settings[FAST_RELOAD].Value.bValue)
@@ -593,16 +596,7 @@ void XXX::Removal()
 
 void XXX::Aimbot()
 {
-	SDK::UWorld* World = *SDK::UWorld::GWorld;
-	if (!World)
-		return;
-
-	SDK::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
-	if (!LocalPlayer)
-		return;
-
-	SDK::APlayerController* PlayerController = LocalPlayer->PlayerController;
-	if (!PlayerController)
+	if (!SanityCheck())
 		return;
 
 	SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->Character);
@@ -663,6 +657,11 @@ void XXX::Aimbot()
 				break;
 
 			case 2:
+				AimPos = Enemy->Mesh->GetBoneWorldPos(SPINE_03);
+				AimPos.Y -= 10;
+				break;
+
+			case 3:
 				int Point = Engine::GetNearestBone(PlayerController->PlayerCameraManager, Enemy, Engine::HitBoxes);
 				AimPos = Enemy->Mesh->GetBoneWorldPos(Point);
 				break;
@@ -689,7 +688,7 @@ void XXX::Aimbot()
 			SDK::FVector AimPrediction = Aimbot::AimbotPrediction(BulletSpeed, BulletGravity, Distance, AimPos, Velocity);
 
 			SDK::FVector2D TargetPos = SDK::FVector2D();
-			if (!PlayerController->ProjectWorldLocationToScreen(AimPrediction, &TargetPos, false))
+			if (!GameplayStatics->ProjectWorldToScreen(PlayerController, AimPrediction, &TargetPos, false))
 				continue;
 
 			const float x = TargetPos.X - (ScreenWidth / 2);
@@ -701,35 +700,35 @@ void XXX::Aimbot()
 				Aimbot::ClosestDistance = CenterDistance;
 				Aimbot::LockPosition = TargetPos;
 				Aimbot::TargetPosition = AimPrediction;
-				Aimbot::TargetRotation = Aimbot::CalcAngle(LocalLocation, AimPrediction, OldRotation, Settings[AIM_SMOOTH].Value.fValue);
+				//Aimbot::TargetRotation = Aimbot::CalcAngle(LocalLocation, AimPrediction, OldRotation, Settings[AIM_SMOOTH].Value.fValue);	
 			}
-
-			//SDK::FRotator TargetRotation = Aimbot::CalcAngle(LocalLocation, AimPrediction);
 		}
 	}
 
 	//Draw::DrawLine(ScreenWidth / 2, ScreenHeight / 2, Aimbot::LockPosition.X, Aimbot::LockPosition.Y, 1.f, ImVec4(1.f, 0.141f, 0.f, 1.f));
-	//Aimbot::LockOnTarget();
-	Aimbot::SetRotation(PlayerController->PlayerCameraManager, PlayerController, Aimbot::TargetRotation, false, Settings[AIM_SMOOTH].Value.fValue);
+	Aimbot::LockOnTarget();
+	//Aimbot::SetRotation(PlayerController->PlayerCameraManager, PlayerController, Aimbot::TargetRotation, false, Settings[AIM_SMOOTH].Value.fValue);
 }
 
 void XXX::Misc()
 {
-	SDK::UWorld* World = *SDK::UWorld::GWorld;
-	if (!World)
+	if (!SanityCheck())
 		return;
 
-	SDK::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
-	if (!LocalPlayer)
-		return;
-
-	SDK::APlayerController* PlayerController = LocalPlayer->PlayerController;
-	if (!PlayerController)
-		return;
-
-	SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
+	SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->Character);
 	if (!LocalCharacter)
 		return;
+
+	if (GetAsyncKeyState(VK_DELETE) & 1)
+	{
+		LocalCharacter->Suicide();
+	}
+
+	if (GetAsyncKeyState(VK_F3) & 1)
+	{
+		LocalCharacter->ServerSetJetPackModule(1140103, true);
+		LocalCharacter->ServerSetJetPackModule(1110403, false);
+	}
 
 	SDK::TArray<SDK::AActor*> Actors = *(SDK::TArray<SDK::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
 	for (int i = 0; i < Actors.Count(); i++)
@@ -746,25 +745,36 @@ void XXX::Misc()
 			if (Enemy == LocalCharacter)
 				continue;
 
+			SDK::ASolarSpectateInfo* SpectateInfo = LocalCharacter->GetSpectateInfo();
+			if (!SpectateInfo)
+				continue;
+
+			if (Settings[SPAM_LIKE].Value.bValue)
+			{
+				if (GetAsyncKeyState(VK_OEM_PLUS) & 1)
+				{
+					SpectateInfo->ServerChangeLikeValue(50, 2, SDK::ESocialActionType::Like);
+				}
+
+				if (GetAsyncKeyState(VK_OEM_MINUS) & 1)
+				{
+					SpectateInfo->ServerChangeLikeValue(-20, -1, SDK::ESocialActionType::Unlike);
+				}
+			}
+
 			if (Settings[STOP_SPECTATOR].Value.bValue)
 			{
-				SDK::ASolarSpectateInfo* SpectateInfo = LocalCharacter->GetSpectateInfo();
-				if (!SpectateInfo)
-					continue;
-
 				SDK::TArray<SDK::ASolarPlayerState*> Spectators = SpectateInfo->PlayersSpectatingMe;
 				for (int i = 0; i < Spectators.Count(); i++)
 				{
-					SDK::ASolarCharacter* SolarCharacter = Spectators[i]->GetSolarCharacter();
-					if (!SolarCharacter)
+					SDK::ASolarSpectateInfo* Spectator = Spectators[i]->SpectateInfo;
+					if (!Spectator)
 						continue;
 
-					SDK::ASolarReplayPlayerController* SolarReplayPlayerController = static_cast<SDK::ASolarReplayPlayerController*>(SolarCharacter->GetSolarPlayerController(true));
-					if (!SolarReplayPlayerController)
-						continue;
-
-					SolarReplayPlayerController->StopSpectatePlayer();
-				}	
+					//Spectator->ServerStopSpectateOtherPlayer_Internal();
+					Spectator->ServerStopSpectateOtherPlayer();
+					Spectator->ServerSpectateNextPlayer();
+				}
 			}
 		}
 	}
@@ -799,16 +809,7 @@ void XXX::Radar()
 				ImVec2(windowPos.x, windowPos.y + (windowSize.y / 2)),
 				ImVec2(windowPos.x + windowSize.x, windowPos.y + (windowSize.y / 2)), IM_COL32(255, 255, 255, 255), 1.0f);
 
-			SDK::UWorld* World = *SDK::UWorld::GWorld;
-			if (!World)
-				return;
-
-			SDK::ULocalPlayer* LocalPlayer = World->OwningGameInstance->LocalPlayers[0];
-			if (!LocalPlayer)
-				return;
-
-			SDK::APlayerController* PlayerController = LocalPlayer->PlayerController;
-			if (!PlayerController)
+			if (!SanityCheck())
 				return;
 
 			SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
@@ -854,7 +855,7 @@ void XXX::Radar()
 
 void XXX::BypassEAC()
 {
-	SDK::USolarEasyAntiCheatManager* EAC_ = (SDK::USolarEasyAntiCheatManager*)(SDK::USolarEasyAntiCheatManager::StaticClass());
+	SDK::USolarEasyAntiCheatManager* EAC_ = SDK::USolarEasyAntiCheatManager::GetDefaultObj();
 	if (!EAC_)
 		return;
 

@@ -6,6 +6,8 @@ WNDPROC oWndProc = 0;
 
 tPresent oPresent;
 tGetShotDir GetShotDir;
+tProcessRemoteFunction ProcessRemoteFunction;
+tProcessEvent oProcessEvent;
 
 ID3D11Device* pDevice = 0;
 ID3D11DeviceContext* pContext = 0;
@@ -13,6 +15,18 @@ ID3D11RenderTargetView* pRenderTarget = 0;
 
 int32_t ScreenWidth = 0;
 int32_t ScreenHeight = 0;
+
+struct FuncInfo
+{
+	std::string sFuncName;
+	int nCallCount;
+};
+
+struct ClassInfo
+{
+	std::string sClassName; 
+	std::unordered_map<SDK::UFunction*, FuncInfo> oRpcFuncInfoMap;
+};
 
 void SwapVTable(void* Object, void* Hook, uint32_t Index)
 {
@@ -112,7 +126,8 @@ __int64 hkGetShotDir(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2, bool NeedSpre
 {
 	__int64 Result = spoof_call(GetShotDir, Weapon, a2, NeedSpread);
 
-	if (Settings[AIM_ENABLED].Value.bValue && Settings[AIM_MODE].Value.iValue == 1 && a2 && !Aimbot::TargetPosition.IsValid())
+	if (Settings[AIM_ENABLED].Value.bValue && Settings[AIM_MODE].Value.iValue == 1 && a2 && !Aimbot::TargetPosition.IsValid()
+		|| Settings[AIM_ENABLED].Value.bValue && Settings[AIM_MODE].Value.iValue == 2 && a2 && !Aimbot::TargetPosition.IsValid())
 	{
 		// Maybe from muzzle/GetShootingTraceStartLocation instead of camera location more accurate
 
@@ -122,6 +137,40 @@ __int64 hkGetShotDir(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2, bool NeedSpre
 	}
 
 	return Result;
+}
+
+std::unordered_map<SDK::UClass*, ClassInfo> m_oRpcClassInfoMap;
+void LogRPC(SDK::AActor* pActor, SDK::UFunction* pFunc)
+{
+	auto& oClassInfo = m_oRpcClassInfoMap[pActor->Class];
+	if (oClassInfo.sClassName.empty())
+	{
+		oClassInfo.sClassName = pActor->Class->GetFullName();
+	}
+
+	auto& oFuncInfo = oClassInfo.oRpcFuncInfoMap[pFunc];
+	if (oFuncInfo.sFuncName.empty())
+	{
+		oFuncInfo.sFuncName = pFunc->GetFullName();
+	}
+
+	oFuncInfo.nCallCount++;
+}
+void hkProcessRemoteFunction(SDK::UNetDriver* Driver, SDK::AActor* Actor, SDK::UFunction* Function, void* Parameters, SDK::FOutParmRec* OutParms, __int64 Stack, SDK::UObject* SubObject)
+{
+	LogRPC(Actor, Function);
+
+	for (const auto& oClassInfoIt : m_oRpcClassInfoMap)
+	{
+		printf("Class: %s\n", oClassInfoIt.second.sClassName.c_str());
+
+		for (const auto& oFuncInfoIt : oClassInfoIt.second.oRpcFuncInfoMap)
+		{
+			printf("\t%s | %d\n", oFuncInfoIt.second.sFuncName.c_str(), oFuncInfoIt.second.nCallCount);
+		}
+	}
+
+	ProcessRemoteFunction(Driver, Actor, Function, Parameters, OutParms, Stack, SubObject);
 }
 
 void Initialize()
@@ -162,5 +211,12 @@ void Initialize()
 	GetShotDir = reinterpret_cast<tGetShotDir>(Engine::FindPattern(xorstr_("SolarlandClient-Win64-Shipping.exe"), xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")));
 	Hook(GetShotDir, hkGetShotDir);
 
+	/*oProcessEvent = reinterpret_cast<tProcessEvent>(Engine::FindPattern(xorstr_("SolarlandClient-Win64-Shipping.exe"), xorstr_("40 55 56 57 41 54 41 55 41 56 41 57 48 81 EC ? ? ? ? 48 8D 6C 24 ? 48 89 9D ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C5 48 89 85 ? ? ? ? 4C 8B E1")));
+	Hook(oProcessEvent, hkProcessEvent);*/
+
+#ifdef _DEBUG
+	ProcessRemoteFunction = reinterpret_cast<tProcessRemoteFunction>(Engine::FindPattern(xorstr_("SolarlandClient-Win64-Shipping.exe"), xorstr_("4C 89 4C 24 ? 55 53 56 57 41 55 41 57")));
+	Hook(ProcessRemoteFunction, hkProcessRemoteFunction);
+#endif
 	printf(xorstr_("Cheat Loaded!\n"));
 }

@@ -4,8 +4,8 @@
 
 namespace SDK
 {
-	bool InitSDK(const std::wstring& moduleName, uintptr_t gObjectsOffset, uintptr_t gNamesOffset, uintptr_t gWorldOffset);
-	bool InitSDK();
+	void InitSDK(const std::wstring& moduleName, uintptr_t gObjectsOffset, uintptr_t gNamesOffset, uintptr_t gWorldOffset);
+	void InitSDK();
 
 	template<typename Fn>
 	inline Fn GetVFunction(const void* Instance, std::size_t Index)
@@ -70,19 +70,22 @@ namespace SDK
 	template<class T>
 	class TArray
 	{
-	protected:
+	private:
 		T* Data;
 		int32 NumElements;
 		int32 MaxElements;
 
+		friend class FString;
 	public:
 
-		inline TArray()
-			:NumElements(0), MaxElements(0), Data(nullptr)
+		TArray()
 		{
+			NumElements = 0;
+			MaxElements = 0;
+			Data = nullptr;
 		}
 
-		inline TArray(int32 Size)
+		TArray(int32 Size)
 			: NumElements(0), MaxElements(Size), Data(reinterpret_cast<T*>(malloc(sizeof(T)* Size)))
 		{
 		}

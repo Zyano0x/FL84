@@ -17,7 +17,13 @@ namespace SDK
 
 	std::string UObject::GetName() const
 	{
-		return this ? Name.ToString() : "None";
+		std::string name(Name.GetName());
+		if (Name.Number > 0)
+			name += '_' + std::to_string(Name.Number);
+		auto pos = name.rfind('/');
+		if (pos == std::string::npos)
+			return name;
+		return name.substr(pos + 1);
 	}
 
 	std::string UObject::GetFullName() const

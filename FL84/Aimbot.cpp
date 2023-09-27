@@ -102,7 +102,8 @@ namespace Aimbot
 		float TargetX = 0;
 		float TargetY = 0;
 
-		if (Engine::IsKeyDown(Settings[AIM_KEY].Value.iValue) && Settings[AIM_MODE].Value.iValue == 0)
+		if (Engine::IsKeyDown(Settings[AIM_KEY].Value.iValue) && Settings[AIM_MODE].Value.iValue == 0 && Settings[AIM_ENABLED].Value.bValue
+			|| Engine::IsKeyDown(Settings[AIM_KEY].Value.iValue) && Settings[AIM_MODE].Value.iValue == 2 && Settings[AIM_ENABLED].Value.bValue)
 		{
 			if (ClosestDistance != InitCenterDistance)
 			{
@@ -167,7 +168,8 @@ namespace Aimbot
 		if (!bWithRotationInput)
 			v11 = v10;
 
-		if (Engine::IsKeyDown(Settings[AIM_KEY].Value.iValue) && Settings[AIM_MODE].Value.iValue == 0 && Settings[AIM_ENABLED].Value.bValue)
+		if (Engine::IsKeyDown(Settings[AIM_KEY].Value.iValue) && Settings[AIM_MODE].Value.iValue == 0 && Settings[AIM_ENABLED].Value.bValue
+			|| Engine::IsKeyDown(Settings[AIM_KEY].Value.iValue) && Settings[AIM_MODE].Value.iValue == 2 && Settings[AIM_ENABLED].Value.bValue)
 		{
 			if (ClosestDistance != InitCenterDistance)
 			{

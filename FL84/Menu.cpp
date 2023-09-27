@@ -151,13 +151,13 @@ namespace Menu
 					Menu::Hotkey(&Settings[AIM_KEY].Value.iValue);
 
 					ImGui::Spacing();
-					static const char* AimMode[] = { " Aimbot FOV", " Silent Aim" };
+					static const char* AimMode[] = { " Aimbot FOV", " Silent Aim", " Aim + Silent"};
 					ImGui::PushItemWidth(220);
 					ImGui::Combo(xorstr_(" Aim Mode"), &Settings[AIM_MODE].Value.iValue, AimMode, IM_ARRAYSIZE(AimMode));
 					ImGui::PopItemWidth();
 
 					ImGui::Spacing();
-					static const char* SelectedBone[] = { " HEAD", " NECK", " NEAREST BONE" };
+					static const char* SelectedBone[] = { " HEAD", " NECK", " SPINE"," NEAREST BONE"};
 					ImGui::PushItemWidth(220);
 					ImGui::Combo(xorstr_(" Select Bone"), &Settings[AIM_SELECT_BONE].Value.iValue, SelectedBone, IM_ARRAYSIZE(SelectedBone));
 					ImGui::PopItemWidth();
@@ -351,6 +351,8 @@ namespace Menu
 				ImGui::Checkbox(xorstr_(" Radar"), &Settings[RADAR_ENABLED].Value.bValue);
 				ImGui::Spacing();
 				ImGui::Checkbox(xorstr_(" Offscreen"), &Settings[OFFSCREEN].Value.bValue);
+				ImGui::Spacing();
+				ImGui::Checkbox(xorstr_(" Spam Like/Dislike"), &Settings[SPAM_LIKE].Value.bValue);
 				ImGui::Spacing();
 				ImGui::Checkbox(xorstr_(" Kick Spectator"), &Settings[STOP_SPECTATOR].Value.bValue);
 			}

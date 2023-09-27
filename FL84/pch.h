@@ -18,6 +18,8 @@
 #include <cstdio>
 #include <algorithm>
 #include <array>
+#include <random>
+#include <unordered_map>
 #include <dxgi.h>	
 #include <d3d11.h>
 #include <d3dx10math.h>

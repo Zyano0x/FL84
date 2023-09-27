@@ -776,6 +776,13 @@ namespace SDK
 		int32                                        Value;                                             // 0x0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
+	struct FOutParmRec
+	{
+		FProperty* Property;
+		uint8* PropAddr;
+		FOutParmRec* NextOutParm;
+	};
+
 	// 0x8 (0x8 - 0x0)
 	// ScriptStruct CoreUObject.FrameRate
 	struct FFrameRate

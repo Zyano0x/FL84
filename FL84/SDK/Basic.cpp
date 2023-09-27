@@ -9,18 +9,18 @@ namespace SDK
 {
 	FNamePool* FName::GNames = nullptr;
 
-	bool InitSDK(const std::wstring& moduleName, uintptr_t gObjectsOffset, uintptr_t gNamesOffset, uintptr_t gWorldOffset)
+	void InitSDK(const std::wstring& moduleName, uintptr_t gObjectsOffset, uintptr_t gNamesOffset, uintptr_t gWorldOffset)
 	{
 		auto mBaseAddress = reinterpret_cast<uintptr_t>(LI_FN(GetModuleHandleW).safe()(moduleName.c_str()));
 		if (!mBaseAddress)
-			return false;
+			return;
 
 		UObject::GObjects = reinterpret_cast<TUObjectArray*>(uintptr_t(GetModuleHandle(0)) + gObjectsOffset);
 		FName::GNames = reinterpret_cast<FNamePool*>(mBaseAddress + gNamesOffset);
 		UWorld::GWorld = reinterpret_cast<SDK::UWorld**>(mBaseAddress + gWorldOffset);
 	}
 
-	bool InitSDK()
+	void InitSDK()
 	{
 		return InitSDK(xorstr_(L"SolarlandClient-Win64-Shipping.exe"), 0x066B0680, 0x6697E00, 0x6807900);
 	}
