@@ -730,52 +730,35 @@ void XXX::Misc()
 		LocalCharacter->ServerSetJetPackModule(1110403, false);
 	}
 
-	SDK::TArray<SDK::AActor*> Actors = *(SDK::TArray<SDK::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
-	for (int i = 0; i < Actors.Count(); i++)
+	SDK::ASolarSpectateInfo* SpectateInfo = LocalCharacter->GetSpectateInfo();
+	if (!SpectateInfo)
+		return;
+
+	if (Settings[SPAM_LIKE].Value.bValue)
 	{
-		SDK::AActor* Actor = Actors[i];
-
-		if (!Actor)
-			continue;
-
-		if (Actor->IsA(SDK::ASolarCharacter::StaticClass()))
+		if (GetAsyncKeyState(VK_OEM_PLUS) & 1)
 		{
-			SDK::ASolarCharacter* Enemy = static_cast<SDK::ASolarCharacter*>(Actor);
+			SpectateInfo->ServerChangeLikeValue(50, 2, SDK::ESocialActionType::Like);
+		}
 
-			if (Enemy == LocalCharacter)
+		if (GetAsyncKeyState(VK_OEM_MINUS) & 1)
+		{
+			SpectateInfo->ServerChangeLikeValue(-20, -1, SDK::ESocialActionType::Unlike);
+		}
+	}
+
+	if (Settings[STOP_SPECTATOR].Value.bValue)
+	{
+		SDK::TArray<SDK::ASolarPlayerState*> Spectators = SpectateInfo->PlayersSpectatingMe;
+		for (int i = 0; i < Spectators.Count(); i++)
+		{
+			SDK::ASolarSpectateInfo* Spectator = Spectators[i]->GetSpectateInfo();
+			if (!Spectator)
 				continue;
 
-			SDK::ASolarSpectateInfo* SpectateInfo = LocalCharacter->GetSpectateInfo();
-			if (!SpectateInfo)
-				continue;
-
-			if (Settings[SPAM_LIKE].Value.bValue)
-			{
-				if (GetAsyncKeyState(VK_OEM_PLUS) & 1)
-				{
-					SpectateInfo->ServerChangeLikeValue(50, 2, SDK::ESocialActionType::Like);
-				}
-
-				if (GetAsyncKeyState(VK_OEM_MINUS) & 1)
-				{
-					SpectateInfo->ServerChangeLikeValue(-20, -1, SDK::ESocialActionType::Unlike);
-				}
-			}
-
-			if (Settings[STOP_SPECTATOR].Value.bValue)
-			{
-				SDK::TArray<SDK::ASolarPlayerState*> Spectators = SpectateInfo->PlayersSpectatingMe;
-				for (int i = 0; i < Spectators.Count(); i++)
-				{
-					SDK::ASolarSpectateInfo* Spectator = Spectators[i]->SpectateInfo;
-					if (!Spectator)
-						continue;
-
-					//Spectator->ServerStopSpectateOtherPlayer_Internal();
-					Spectator->ServerStopSpectateOtherPlayer();
-					Spectator->ServerSpectateNextPlayer();
-				}
-			}
+			Spectator->ServerStopSpectateOtherPlayer_Internal();
+			Spectator->ServerStopSpectateOtherPlayer();
+			Spectator->ServerSpectateNextPlayer();
 		}
 	}
 }
