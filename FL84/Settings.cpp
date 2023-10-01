@@ -134,6 +134,8 @@ void InitSettings()
 	
 	Settings[STOP_SPECTATOR] = AddConfig("Misc Settings", "Stop_Spectator", false);
 	Settings[SPAM_LIKE] = AddConfig("Misc Settings", "Spam_Like", false);
+	Settings[SHOTGUN_DAMAGE] = AddConfig("Misc Settings", "Shotgun_Damage", false);
+	Settings[TEST_] = AddConfig("Misc Settings", "TEST_", false);
 
 	//=============================================================================================================================
 

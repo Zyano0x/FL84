@@ -490,6 +490,20 @@ void XXX::Removal()
 	if (!SanityCheck())
 		return;
 
+	/*if (Settings[TEST_DAMAGE_SHOTGUN].Value.bValue)
+	{
+		if (!PlayerController->Character)
+			return;
+
+		SDK::ASolarPlayerWeapon* CachedCurrentWeapon = static_cast<SDK::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
+		if (!CachedCurrentWeapon)
+			return;
+
+		uint64_t* VTable = *(uint64_t**)(CachedCurrentWeapon + 0x0);
+
+		printf("0x%llX\n", VTable[292]);
+	}*/
+
 	if (Settings[FAST_RELOAD].Value.bValue)
 	{
 		if (!PlayerController->Character)

@@ -28,6 +28,18 @@ namespace Menu
 		}
 	}
 
+	void HelpMarker(const char* desc)
+	{
+		ImGui::TextDisabled("(?)");
+		if (ImGui::BeginItemTooltip())
+		{
+			ImGui::PushTextWrapPos(ImGui::GetFontSize() * 35.0f);
+			ImGui::TextUnformatted(desc);
+			ImGui::PopTextWrapPos();
+			ImGui::EndTooltip();
+		}
+	}
+
 	void StyleMenu()
 	{
 		ImGuiStyle* style = &ImGui::GetStyle();
@@ -123,6 +135,8 @@ namespace Menu
 			ImGui::Spacing();
 			if (ImGui::CollapsingHeader(ICON_FA_BULLSEYE " Aimbot"))
 			{
+				ImGui::SameLine();
+				HelpMarker("F1 - Enable/Disable Aimbot");
 				ImGui::Spacing();
 				ImGui::Spacing();
 				ImGui::Checkbox(xorstr_(" Enabled"), &Settings[AIM_ENABLED].Value.bValue);
@@ -205,6 +219,8 @@ namespace Menu
 			ImGui::Spacing();
 			if (ImGui::CollapsingHeader(ICON_FA_EYE_SLASH " Visuals"))
 			{
+				ImGui::SameLine();
+				HelpMarker("F2 - Enable/Disable Items ESP");
 				ImGui::Spacing();
 				if (ImGui::TreeNode(xorstr_("Players")))
 				{
@@ -351,10 +367,22 @@ namespace Menu
 				ImGui::Checkbox(xorstr_(" Radar"), &Settings[RADAR_ENABLED].Value.bValue);
 				ImGui::Spacing();
 				ImGui::Checkbox(xorstr_(" Offscreen"), &Settings[OFFSCREEN].Value.bValue);
+			}
+
+			ImGui::Spacing();
+			if (ImGui::CollapsingHeader(ICON_FA_BOLT " Exploits"))
+			{
+				ImGui::Spacing();
 				ImGui::Spacing();
 				ImGui::Checkbox(xorstr_(" Spam Like/Dislike"), &Settings[SPAM_LIKE].Value.bValue);
+				ImGui::SameLine();
+				HelpMarker("Key (-)/Key (+) - Like/Dislike");
 				ImGui::Spacing();
 				ImGui::Checkbox(xorstr_(" Kick Spectator"), &Settings[STOP_SPECTATOR].Value.bValue);
+				ImGui::Spacing();
+				ImGui::Checkbox(xorstr_(" Shotgun High Damage"), &Settings[SHOTGUN_DAMAGE].Value.bValue);
+				ImGui::Spacing();
+				ImGui::Checkbox(xorstr_(" Test_"), &Settings[TEST_].Value.bValue);
 			}
 
 			ImGui::Spacing();

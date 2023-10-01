@@ -6,6 +6,7 @@ WNDPROC oWndProc = 0;
 
 tPresent oPresent;
 tGetShotDir GetShotDir;
+tShotgunImpact ShotgunImpact;
 tProcessRemoteFunction ProcessRemoteFunction;
 tProcessEvent oProcessEvent;
 
@@ -139,6 +140,16 @@ __int64 hkGetShotDir(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2, bool NeedSpre
 	return Result;
 }
 
+__int64 hkShotgunImpact(SDK::ASolarPlayerWeapon* Weapon)
+{
+	__int64 Result = spoof_call(ShotgunImpact, Weapon);
+	if (Settings[SHOTGUN_DAMAGE].Value.bValue)
+	{
+		Result *= Result; // You can basically lower your dmg or maximize your dmg
+	}
+	return Result;
+}
+
 std::unordered_map<SDK::UClass*, ClassInfo> m_oRpcClassInfoMap;
 void LogRPC(SDK::AActor* pActor, SDK::UFunction* pFunc)
 {
@@ -170,17 +181,32 @@ void hkProcessRemoteFunction(SDK::UNetDriver* Driver, SDK::AActor* Actor, SDK::U
 		}
 	}
 
-	ProcessRemoteFunction(Driver, Actor, Function, Parameters, OutParms, Stack, SubObject);
+	spoof_call(ProcessRemoteFunction, Driver, Actor, Function, Parameters, OutParms, Stack, SubObject);
+}
+
+int TargetFunctionIndex = -1;
+void hkProcessEvent(void* Object, SDK::UFunction* Function, void* Params)
+{
+	if (TargetFunctionIndex == -1)
+		if (Function->GetFullName().compare("Function Solarland.SolarPlayerController.AntiCheatDataSchedulerUpload") == 0)
+			TargetFunctionIndex = Function->Index;
+
+	if (Function->Index == TargetFunctionIndex)
+	{
+		if (SDK::UObject::FindObject<SDK::UScriptStruct>("ScriptStruct Solarland.FixedAntiCheatData") != nullptr)
+			return;
+	}
+
+	return spoof_call(oProcessEvent, Object, Function, Params);
 }
 
 void Initialize()
 {
-#ifdef _DEBUG
 	AllocConsole();
 	FILE* f;
 	freopen_s(&f, "CONOUT$", "w", stdout);
 	SetConsoleTitle(xorstr_(L"Zy4n0 Private Debug Mode"));
-#endif
+
 	printf(xorstr_("Injecting\n"));
 
 	strcpy(ConfigDirectory, xorstr_("C:\\ZC\\"));
@@ -197,7 +223,7 @@ void Initialize()
 	//uint64_t GetViewPointAddress = Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 8B C4 48 89 58 ? 48 89 68 ? 56 57 41 56 48 81 EC ? ? ? ? 0F 29 70 ? 0F 29 78 ? 48 8B 05");
 	//uint64_t GetPlayerViewPointAddress = Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 89 5C 24 ? 48 89 7C 24 ? 55 41 56 41 57 48 8B EC 48 83 EC ? 48 8B FA");
 	//uint64_t GetPlayerViewRotationAddress = Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 89 5C 24 ? 55 56 57 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 84 24 ? ? ? ? 48 8B F2");
-	
+
 	//GWorld: 48 8B 1D ?? ?? ?? ?? 48 85 DB 74 ?? 41 B0 01
 	//GNames: 4C 8D 05 ? ? ? ? EB ? 48 8D 0D ? ? ? ? E8
 	//GObjects: 48 8B 05 ? ? ? ? 48 8B 0C C8 4C 8D 04 D1
@@ -211,12 +237,19 @@ void Initialize()
 	GetShotDir = reinterpret_cast<tGetShotDir>(Engine::FindPattern(xorstr_("SolarlandClient-Win64-Shipping.exe"), xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")));
 	Hook(GetShotDir, hkGetShotDir);
 
-	/*oProcessEvent = reinterpret_cast<tProcessEvent>(Engine::FindPattern(xorstr_("SolarlandClient-Win64-Shipping.exe"), xorstr_("40 55 56 57 41 54 41 55 41 56 41 57 48 81 EC ? ? ? ? 48 8D 6C 24 ? 48 89 9D ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C5 48 89 85 ? ? ? ? 4C 8B E1")));
-	Hook(oProcessEvent, hkProcessEvent);*/
+	ShotgunImpact = reinterpret_cast<tShotgunImpact>(Engine::FindPattern(xorstr_("SolarlandClient-Win64-Shipping.exe"), xorstr_("40 53 48 83 EC ? 48 8B D9 E8 ? ? ? ? 48 85 C0 74 ? 48 8B CB E8 ? ? ? ? F3 0F 10 98")));
+	Hook(ShotgunImpact, hkShotgunImpact);
+
+	oProcessEvent = reinterpret_cast<tProcessEvent>(Engine::FindPattern(xorstr_("SolarlandClient-Win64-Shipping.exe"), xorstr_("40 55 56 57 41 54 41 55 41 56 41 57 48 81 EC ? ? ? ? 48 8D 6C 24 ? 48 89 9D ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C5 48 89 85 ? ? ? ? 4C 8B E1")));
+	Hook(oProcessEvent, hkProcessEvent);
 
 #ifdef _DEBUG
 	ProcessRemoteFunction = reinterpret_cast<tProcessRemoteFunction>(Engine::FindPattern(xorstr_("SolarlandClient-Win64-Shipping.exe"), xorstr_("4C 89 4C 24 ? 55 53 56 57 41 55 41 57")));
 	Hook(ProcessRemoteFunction, hkProcessRemoteFunction);
 #endif
 	printf(xorstr_("Cheat Loaded!\n"));
+#ifndef _DEBUG
+	Sleep(3000);
+	::ShowWindow(::GetConsoleWindow(), SW_HIDE);
+#endif
 }
