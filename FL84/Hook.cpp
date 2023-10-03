@@ -249,7 +249,7 @@ void Initialize()
 #endif
 	printf(xorstr_("Cheat Loaded!\n"));
 #ifndef _DEBUG
-	Sleep(3000);
+	Sleep(2000);
 	::ShowWindow(::GetConsoleWindow(), SW_HIDE);
 #endif
 }

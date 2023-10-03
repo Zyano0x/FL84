@@ -538,6 +538,7 @@ void XXX::Removal()
 			return;
 
 		Config->MaxSpread = 0.0f;
+		Config->MinSpread = 0.0f;
 		Config->HipFireBaseSpread = 0.0f;
 		Config->ShoulderFireBaseSpread = 0.0f;
 		Config->ADSBaseSpread = 0.0f;
@@ -549,6 +550,9 @@ void XXX::Removal()
 
 		PrimaryAmmo->ADSRecoilCOP = 0.0f;
 		PrimaryAmmo->ADSSpreadCOP = 0.0f;
+		PrimaryAmmo->BoltActionTime = 0.0f;
+		PrimaryAmmo->FireIntervalRevertPreTime = 0.65f;
+		PrimaryAmmo->FireIntervalReavertSpeed = 0.65f;
 	
 		SDK::FAmmonRecoilScope FAmmonRecoilScopePrimary = PrimaryAmmo->ScopeRecoil;
 		FAmmonRecoilScopePrimary.EnableScopeVibration = false;
@@ -561,6 +565,9 @@ void XXX::Removal()
 
 		SecondaryAmmo->ADSRecoilCOP = 0.0f;
 		SecondaryAmmo->ADSSpreadCOP = 0.0f;
+		SecondaryAmmo->BoltActionTime = 0.0f;
+		SecondaryAmmo->FireIntervalRevertPreTime = 0.65f;
+		SecondaryAmmo->FireIntervalReavertSpeed = 0.65f;
 
 		SDK::FAmmonRecoilScope FAmmonRecoilScopeSecondary = SecondaryAmmo->ScopeRecoil;
 		FAmmonRecoilScopeSecondary.EnableScopeVibration = false;
@@ -740,6 +747,9 @@ void XXX::Misc()
 
 	if (GetAsyncKeyState(VK_F3) & 1)
 	{
+		if (LocalCharacter->IsInVehicle())
+			return;
+
 		LocalCharacter->ServerSetJetPackModule(1140103, true);
 		LocalCharacter->ServerSetJetPackModule(1110403, false);
 	}
@@ -770,7 +780,6 @@ void XXX::Misc()
 			if (!Spectator)
 				continue;
 
-			Spectator->ServerStopSpectateOtherPlayer_Internal();
 			Spectator->ServerStopSpectateOtherPlayer();
 			Spectator->ServerSpectateNextPlayer();
 		}
@@ -832,6 +841,9 @@ void XXX::Radar()
 						continue;
 
 					if (Enemy == LocalCharacter)
+						continue;
+
+					if (!Enemy->K2_IsAlive())
 						continue;
 
 					float Distance = LocalCharacter->GetDistanceTo(Enemy) / 100.0f;
