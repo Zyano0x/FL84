@@ -25,14 +25,26 @@
     <Filter Include="Menu">
       <UniqueIdentifier>{c1a0687a-1f7c-4457-ad1b-84dee1b79b06}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Menu\Settings">
-      <UniqueIdentifier>{87b9ba67-1c9d-4d26-97d8-97216903f137}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Detours">
       <UniqueIdentifier>{3ab290c3-9508-44f8-ad2e-4ad80b92b5e3}</UniqueIdentifier>
     </Filter>
     <Filter Include="Encryption">
       <UniqueIdentifier>{c6d44f1c-68aa-48e7-9cae-89a1a7c18dc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Profiler">
+      <UniqueIdentifier>{87b9ba67-1c9d-4d26-97d8-97216903f137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Profiler\RapidXML">
+      <UniqueIdentifier>{1651f8c1-14d1-4996-8d2b-4e3cb119b593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Profiler\RapidXML\Utilities">
+      <UniqueIdentifier>{1666ec20-96ac-40d7-97d3-3773fb5a3845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGUI\FileSystem">
+      <UniqueIdentifier>{9b7798ac-9f23-4515-8df6-5efddbc4b4cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGUI\Custom">
+      <UniqueIdentifier>{5fd407ae-058a-4b5c-81f7-bc20c7692976}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -75,9 +87,6 @@
     <ClInclude Include="Menu.h">
       <Filter>Menu</Filter>
     </ClInclude>
-    <ClInclude Include="Settings.h">
-      <Filter>Menu\Settings</Filter>
-    </ClInclude>
     <ClInclude Include="Fonts.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -96,17 +105,53 @@
     <ClInclude Include="Mathematics.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="XOR.hpp">
-      <Filter>Encryption</Filter>
-    </ClInclude>
-    <ClInclude Include="LazyImporter.hpp">
-      <Filter>Encryption</Filter>
-    </ClInclude>
-    <ClInclude Include="SpoofCall.h">
-      <Filter>Encryption</Filter>
-    </ClInclude>
     <ClInclude Include="SDK.hpp">
       <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Encryption\LazyImporter.hpp">
+      <Filter>Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="Encryption\SpoofCall.h">
+      <Filter>Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="Encryption\XOR.hpp">
+      <Filter>Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="Profiler.h">
+      <Filter>Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidXML\rapidxml.hpp">
+      <Filter>Profiler\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidXML\rapidxml_iterators.hpp">
+      <Filter>Profiler\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidXML\rapidxml_print.hpp">
+      <Filter>Profiler\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidXML\rapidxml_utils.hpp">
+      <Filter>Profiler\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidXML\rapidxml_wrap.hpp">
+      <Filter>Profiler\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="Thunk.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dirent.h">
+      <Filter>ImGUI\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements.h">
+      <Filter>ImGUI\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\imgui_file_system.h">
+      <Filter>ImGUI\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="FileUtility\StringUtility.h">
+      <Filter>Profiler\RapidXML\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="FileUtility\FileUtility.h">
+      <Filter>Profiler\RapidXML\Utilities</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -146,9 +191,6 @@
     <ClCompile Include="Menu.cpp">
       <Filter>Menu</Filter>
     </ClCompile>
-    <ClCompile Include="Settings.cpp">
-      <Filter>Menu\Settings</Filter>
-    </ClCompile>
     <ClCompile Include="XXX.cpp">
       <Filter>Features</Filter>
     </ClCompile>
@@ -173,6 +215,18 @@
     <ClCompile Include="SDK\Solarland_functions.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
+    <ClCompile Include="Profiler.cpp">
+      <Filter>Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements.cpp">
+      <Filter>ImGUI\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUI\imgui_file_system.cpp">
+      <Filter>ImGUI\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="FileUtility\FileUtility.cpp">
+      <Filter>Profiler\RapidXML\Utilities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Library Include="Detours\detours.lib">
@@ -180,7 +234,7 @@
     </Library>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="SpoofCall.asm">
+    <MASM Include="Encryption\SpoofCall.asm">
       <Filter>Encryption</Filter>
     </MASM>
   </ItemGroup>

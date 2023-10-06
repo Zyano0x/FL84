@@ -696,6 +696,20 @@ namespace SDK
 			angle.Y += 360.0f;
 	}
 
+	void FVector::Normalize()
+	{
+		// pitch
+		if (X > 90.f)
+			X = 90.f;
+		else if (X < -90.f)
+			X = -90.f;
+
+		// convert to Sword With Sauce's angle system
+		if (X < 0.f)
+			X += 360.f;
+		Y = fmodf(Y + 360.f, 360.f);
+	}
+
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000

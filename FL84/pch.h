@@ -18,6 +18,7 @@
 #include <cstdio>
 #include <algorithm>
 #include <array>
+#include <map>
 #include <random>
 #include <unordered_map>
 #include <dxgi.h>	
@@ -30,15 +31,18 @@
 #include "imgui/imgui_internal.h"
 #include "imgui/imgui_impl_dx11.h"
 #include "imgui/imgui_impl_win32.h"
+#include "imgui/imgui_file_system.h"
 
-#include "XOR.hpp"
-#include "LazyImporter.hpp"
-#include "SpoofCall.h"
+#include "Encryption/XOR.hpp"
+#include "Encryption/LazyImporter.hpp"
+#include "Encryption/SpoofCall.h"
+#include "Thunk.hpp"
 
 #include "SDK.hpp"
 #include "Fonts.h"
 #include "Icons.h"
-#include "Settings.h"
+#include "Profiler.h"
+#include "Elements.h"
 #include "Menu.h"
 #include "Draw.h"
 #include "Mathematics.h"
@@ -47,4 +51,7 @@
 #include "XXX.h"
 #include "Aimbot.h"
 
+using namespace ZyanoCheats;
+
+#pragma intrinsic(_ReturnAddress)
 #endif //PCH_H

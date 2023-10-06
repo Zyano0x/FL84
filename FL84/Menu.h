@@ -1,5 +1,14 @@
 #pragma once
 
+#include "Thunk.hpp"
+
+#define MAX_VIRTUALKEYS 0x100
+
+#define DEFAULT_CFG "\\ZyanoCheats.cfg"
+#define DEFAULT_INI "\\ZyanoCheats.ini"
+#define DEFAULT_LOG "\\ZyanoCheats.log"
+#define DEFAULT_XML "\\ZyanoCheats.xml"
+
 static const char* KeyNames[] = {
 	"OFF",
 	"VK_LBUTTON",
@@ -338,11 +347,52 @@ static const int KeyCodes[] = {
 	0xA5
 };
 
-namespace Menu
-{
-	extern bool MenuOpen;
+extern LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
-	void Hotkey(int* k, const ImVec2& size_arg = ImVec2(0, 0));
-	void InitGUI();
-	void Render();
+namespace ZyanoCheats
+{
+	class MainGUI
+	{
+	public:
+
+		MainGUI() : _thunkWindowProcess(&MainGUI::WindowProcess, this) {}
+
+		bool bInitialized = false;
+
+		struct sMenu
+		{
+			char szProfile[1024] = { NULL }, szMessage[1024] = { NULL };
+			bool bShowWindow = true, bWriteLog = false;
+
+			std::string szIniFileName, szLogFileName;
+
+			bool bSaveButton, bLoadButton;
+			ImGuiFs::Dialog SaveDialog, LoadDialog;
+		} Menu;
+
+		struct sVirtualKeys
+		{
+			bool bKey, bDown, bUp;
+		} VirtualKeys[MAX_VIRTUALKEYS];
+
+		HWND hWindow;
+		ID3D11Device* pDevice;
+		ID3D11DeviceContext* pDeviceContext;
+		ID3D11RenderTargetView* pRenderTarget;
+
+		void Hotkey(int* k, const ImVec2& size_arg = ImVec2(0, 0));
+		bool GetKeyPress(int vkey, bool immediate);
+		void HelpMarker(const char* desc);
+		void StyleMenu();
+		void InitGUI();
+		void Render();
+
+		void WINAPI Present(_In_ IDXGISwapChain* pSwapChain, _In_ UINT SyncInterval, _In_ UINT Flags);
+		LRESULT CALLBACK WindowProcess(_In_ HWND hWnd, _In_ UINT uMsg, _In_ WPARAM wParam, _In_ LPARAM lParam);
+
+		typedef LRESULT(CALLBACK* tWindowProcess)(_In_ HWND hWnd, _In_ UINT uMsg, _In_ WPARAM wParam, _In_ LPARAM lParam);
+		tWindowProcess oWindowProcess;
+
+		cWin32Thunk<tWindowProcess, MainGUI> _thunkWindowProcess;
+	} extern _mainGUI;
 }

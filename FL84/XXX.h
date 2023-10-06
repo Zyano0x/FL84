@@ -31,6 +31,7 @@ enum BONES
 	VB_SPINE_03_RIGHTHANDWEAPONATTACH = 56,
 	VB_VB_SPINE_03_RIGHTHANDWEAPONATTACH_HAND_R = 57,
 	VB_VB_VB_SPINE_03_RIGHTHANDWEAPONATTACH_HAND_R_LOWERARM_R = 58,
+	BONE_MAX,
 };
 
 class XXX
@@ -47,8 +48,6 @@ public:
 
 		Head = SDK::FVector(0.0f, 0.0f, 0.0f);
 		Root = SDK::FVector(0.0f, 0.0f, 0.0f);
-
-		AimPos = SDK::FVector(0.0f, 0.0f, 0.0f);
 
 		ColorVisisble = ImVec4(0.0f, 0.0f, 0.0f, 0.0f);
 	}
@@ -74,7 +73,6 @@ private:
 	ImVec4 ColorVisisble;
 	SDK::FVector2D HeadPos, FootPos, ItemPos, VehiclePos;
 	SDK::FVector Head, Root;
-	SDK::FVector AimPos;
 };
 
 extern XXX ZZZ;

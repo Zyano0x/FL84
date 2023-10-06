@@ -88,15 +88,19 @@
 
 //---- Define constructor and implicit cast operators to convert back<>forth between your math types and ImVec2/ImVec4.
 // This will be inlined as part of ImVec2 and ImVec4 class declarations.
-/*
-#define IM_VEC2_CLASS_EXTRA                                                     \
-        constexpr ImVec2(const MyVec2& f) : x(f.x), y(f.y) {}                   \
-        operator MyVec2() const { return MyVec2(x,y); }
 
-#define IM_VEC4_CLASS_EXTRA                                                     \
-        constexpr ImVec4(const MyVec4& f) : x(f.x), y(f.y), z(f.z), w(f.w) {}   \
-        operator MyVec4() const { return MyVec4(x,y,z,w); }
-*/
+#define IM_VEC2_CLASS_EXTRA                                                 \
+        ImVec2(const ImVec2& f) { x = f.x; y = f.y; }                       \
+        operator ImVec2() const { return ImVec2(x,y); }						\
+		operator const float*() const { return &x; }						\
+		operator float*() { return &x; }
+
+#define IM_VEC4_CLASS_EXTRA                                                 \
+        ImVec4(const ImVec4& f) { x = f.x; y = f.y; z = f.z; w = f.w; }     \
+        operator ImVec4() const { return ImVec4(x,y,z,w); }					\
+		operator const float*() const { return &x; }						\
+		operator float*() { return &x; }
+
 //---- ...Or use Dear ImGui's own very basic math operators.
 //#define IMGUI_DEFINE_MATH_OPERATORS
 

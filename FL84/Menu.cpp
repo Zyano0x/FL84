@@ -1,10 +1,17 @@
 #include "pch.h"
 
-namespace Menu
+typedef enum
 {
-	bool MenuOpen = false;
+	AIMBOT, VISUALS, MISCS, CONFIGS
+}eMainTabs;
 
-	void Hotkey(int* k, const ImVec2& size_arg)
+namespace ZyanoCheats
+{
+	MainGUI _mainGUI;
+
+	int MainTab = 0;
+
+	void MainGUI::Hotkey(int* k, const ImVec2& size_arg)
 	{
 		static bool waitingforkey = false;
 		if (waitingforkey == false)
@@ -28,7 +35,7 @@ namespace Menu
 		}
 	}
 
-	void HelpMarker(const char* desc)
+	void MainGUI::HelpMarker(const char* desc)
 	{
 		ImGui::TextDisabled("(?)");
 		if (ImGui::BeginItemTooltip())
@@ -40,7 +47,7 @@ namespace Menu
 		}
 	}
 
-	void StyleMenu()
+	void MainGUI::StyleMenu()
 	{
 		ImGuiStyle* style = &ImGui::GetStyle();
 		style->Alpha = 1.f;
@@ -93,363 +100,691 @@ namespace Menu
 		colors[ImGuiCol_ScrollbarGrabActive] = ImColor(255, 242, 0, 255);
 	}
 
-	void InitGUI()
+	void MainGUI::InitGUI()
 	{
+		if (!hWindow || !pDevice || !pDeviceContext)
+			return;
+
+		oWindowProcess = (tWindowProcess)SetWindowLongPtr(hWindow, GWLP_WNDPROC, (LONG_PTR)_thunkWindowProcess.GetThunk());
+
 		ImGui::CreateContext();
 		auto& io = ImGui::GetIO(); (void)io;
-		io.LogFilename = nullptr;
-		io.IniFilename = nullptr;
-		io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
-		io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;      // Enable Gamepad Controls
+
+		Menu.szIniFileName = acut::GetExeDirectory() + DEFAULT_INI;
+		Menu.szLogFileName = acut::GetExeDirectory() + DEFAULT_LOG;
+
+		io.LogFilename = Menu.szIniFileName.c_str();
+		io.IniFilename = Menu.szLogFileName.c_str();
+
+		io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
 		io.Fonts->AddFontFromMemoryTTF(RudaFont, sizeof(RudaFont), 17.0f);
 
-		static const ImWchar Ranges[] = { 0xE005, 0xF8FF, 0 };
+		static const ImWchar Ranges[] =
+		{
+			0x0020, 0x00FF, // Basic Latin + Latin Supplement
+			0x0400, 0x052F, // Cyrillic + Cyrillic Supplement
+			0x2DE0, 0x2DFF, // Cyrillic Extended-A
+			0xA640, 0xA69F, // Cyrillic Extended-B
+			0xE000, 0xE226, // icons
+			0,
+		};
 
 		// Load Fonts
 		ImFontConfig Font_Config;
-		Font_Config.MergeMode = true;
-		Font_Config.PixelSnapH = true;
-		Font_Config.OversampleH = 2.5;
-		Font_Config.OversampleV = 2.5;
-		Font_Config.GlyphMinAdvanceX = 17.0f;
+		Font_Config.PixelSnapH = false;
+		Font_Config.OversampleH = 5;
+		Font_Config.OversampleV = 5;
+		Font_Config.RasterizerMultiply = 1.2f;
+		Font_Config.GlyphRanges = Ranges;
 
 		io.Fonts->AddFontFromMemoryTTF(FASolid, sizeof(FASolid), 15.0f, &Font_Config, Ranges);
+		Elements::RudaFont = io.Fonts->AddFontFromMemoryTTF(RudaFont, sizeof(RudaFont), 15.0f, &Font_Config, Ranges);
+		Elements::Weapon_Icon = io.Fonts->AddFontFromMemoryCompressedTTF(WeaponsCompressedData, sizeof(WeaponsCompressedData), 30);
+		Elements::Tab_Icon = io.Fonts->AddFontFromMemoryTTF(ClarityFont, sizeof(ClarityFont), 15.0f, &Font_Config, Ranges);
 
 		StyleMenu();
-
-		ImGui_ImplWin32_Init(window);
-		ImGui_ImplDX11_Init(pDevice, pContext);
+	
+		ImGui_ImplWin32_Init(hWindow);
+		ImGui_ImplDX11_Init(pDevice, pDeviceContext);
 	}
 
-	void Render()
+	void MainGUI::Render()
 	{
-		ImGui::SetNextWindowSize(ImVec2(450, 450));
+		ImGui::SetNextWindowSize(ImVec2(820, 570));
 		ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(255 / 255.f, 242 / 255.f, 0, 1.f));
-		ImGui::Begin(xorstr_("Zyano Private"), &MenuOpen, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoCollapse);
+		ImGui::Begin(xorstr_("Zyano Private"), &Menu.bShowWindow, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoCollapse);
 		ImGui::PopStyleColor();
 		{
-			auto Draw = ImGui::GetWindowDrawList();
-			auto Size = ImGui::GetWindowSize();
-			auto Pos = ImGui::GetWindowPos();
-
 			ImGui::Spacing();
-			if (ImGui::CollapsingHeader(ICON_FA_BULLSEYE " Aimbot"))
+			ImGui::BeginGroup();
 			{
+				if (Elements::Tab("B", "Aimbot", MainTab == AIMBOT)) { MainTab = AIMBOT; }
 				ImGui::SameLine();
-				HelpMarker("F1 - Enable/Disable Aimbot");
-				ImGui::Spacing();
-				ImGui::Spacing();
-				ImGui::Checkbox(xorstr_(" Enabled"), &Settings[AIM_ENABLED].Value.bValue);
-				ImGui::Spacing();
-				ImGui::Spacing();
+				if (Elements::Tab("D", "Visuals", MainTab == VISUALS)) { MainTab = VISUALS; }
+				ImGui::SameLine();
+				if (Elements::Tab("E", "Miscs", MainTab == MISCS)) { MainTab = MISCS; }
+				ImGui::SameLine();
+				if (Elements::Tab("H", "Configs", MainTab == CONFIGS)) { MainTab = CONFIGS; }
+			}
+			ImGui::EndGroup();
 
-				if (!Settings[AIM_ENABLED].Value.bValue)
+			switch (MainTab)
+			{
+			case AIMBOT:
+				ImGui::BeginChild("Aimbot", ImVec2(0, 0));
 				{
-					ImGui::PushItemFlag(ImGuiItemFlags_Disabled, true);
-					ImGui::PushStyleVar(ImGuiStyleVar_Alpha, ImGui::GetStyle().Alpha * 0.5f);
-				}
-				{
-					ImGui::Checkbox(xorstr_(" Draw FOV"), &Settings[DRAW_FOV].Value.bValue);
 					ImGui::Spacing();
-					ImGui::Checkbox(xorstr_(" Ignore Knocked"), &Settings[IGNORE_KNOCKED].Value.bValue);
-					ImGui::Spacing();
-					ImGui::Checkbox(xorstr_(" Ignore Stealth"), &Settings[IGNORE_STEALTH].Value.bValue);
-					ImGui::Spacing();		
-					ImGui::Checkbox(xorstr_(" No Recoil"), &Settings[NO_RECOIL].Value.bValue);
-					ImGui::Spacing();
-					ImGui::Checkbox(xorstr_(" Fast Reload"), &Settings[FAST_RELOAD].Value.bValue);
 					ImGui::Spacing();
 
-					ImGui::Text(xorstr_("Aim Key"));
-					ImGui::SameLine(ImGui::GetCursorPosX() + 150.0f);
-					Menu::Hotkey(&Settings[AIM_KEY].Value.iValue);
+					if (ImGui::Checkbox(_profiler.gAimEnabled.szLabel, &_profiler.gAimEnabled.Custom.bValue))
+					{
+						Menu.bWriteLog = true;
+					} ImGui::SameLine();
+					HelpMarker(xorstr_("F1 - Enable/Disable Aimbot"));
 
 					ImGui::Spacing();
-					static const char* AimMode[] = { " Aimbot FOV", " Silent Aim", " Aim + Silent"};
-					ImGui::PushItemWidth(220);
-					ImGui::Combo(xorstr_(" Aim Mode"), &Settings[AIM_MODE].Value.iValue, AimMode, IM_ARRAYSIZE(AimMode));
-					ImGui::PopItemWidth();
-
 					ImGui::Spacing();
-					static const char* SelectedBone[] = { " HEAD", " NECK", " SPINE"," NEAREST BONE"};
-					ImGui::PushItemWidth(220);
-					ImGui::Combo(xorstr_(" Select Bone"), &Settings[AIM_SELECT_BONE].Value.iValue, SelectedBone, IM_ARRAYSIZE(SelectedBone));
-					ImGui::PopItemWidth();
 
-					ImGui::Spacing();
-					ImGui::PushItemWidth(220);
-					ImGui::SliderFloat(xorstr_(" Aimbot FOV"), &Settings[AIM_FOV].Value.fValue, 1, 150, "%.f");
-					ImGui::PopItemWidth();
-
-					if (Settings[AIM_MODE].Value.iValue == 1)
+					if (!_profiler.gAimEnabled.Custom.bValue)
 					{
 						ImGui::PushItemFlag(ImGuiItemFlags_Disabled, true);
 						ImGui::PushStyleVar(ImGuiStyleVar_Alpha, ImGui::GetStyle().Alpha * 0.5f);
 					}
 					{
+						if (ImGui::Checkbox(_profiler.gDrawFOV.szLabel, &_profiler.gDrawFOV.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 225.0f);
+
+						if (ImGui::Checkbox(_profiler.gIgnoreKnocked.szLabel, &_profiler.gIgnoreKnocked.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
+
+						if (ImGui::Checkbox(_profiler.gAimPrediction.szLabel, &_profiler.gAimPrediction.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 225.0f);
+
+						if (ImGui::Checkbox(_profiler.gIgnoreStealth.szLabel, &_profiler.gIgnoreStealth.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
+
+						ImGui::Text(_profiler.gAimKey.szLabel);
+						ImGui::SameLine(ImGui::GetCursorPosX() + 150.0f);
+						Hotkey(&_profiler.gAimKey.Custom.iValue);
+
 						ImGui::Spacing();
+
 						ImGui::PushItemWidth(220);
-						ImGui::SliderFloat(xorstr_(" Smooth"), &Settings[AIM_SMOOTH].Value.fValue, 1, 10, "%.f");
+						if (ImGui::Combo(_profiler.gAimType.szLabel, &_profiler.gAimType.Custom.iValue, _profiler.gAimType.szItems, _profiler.gAimType.MaxValue.iMax))
+						{
+							Menu.bWriteLog = true;
+						}
 						ImGui::PopItemWidth();
 
 						ImGui::Spacing();
+
 						ImGui::PushItemWidth(220);
-						ImGui::SliderFloat(xorstr_(" Human Speed"), &Settings[HUMAN_SPEED].Value.fValue, 1, 100, "%.f");
+						if (ImGui::Combo(_profiler.gAimMode.szLabel, &_profiler.gAimMode.Custom.iValue, _profiler.gAimMode.szItems, _profiler.gAimMode.MaxValue.iMax))
+						{
+							Menu.bWriteLog = true;
+						}
+						ImGui::PopItemWidth();
+
+						ImGui::SameLine(ImGui::GetCursorPosX() + 400.0f);
+
+						ImGui::PushItemWidth(220);
+						if (ImGui::Combo(_profiler.gAimBone.szLabel, &_profiler.gAimBone.Custom.iValue, _profiler.gAimBone.szItems, _profiler.gAimBone.MaxValue.iMax))
+						{
+							Menu.bWriteLog = true;
+						}
 						ImGui::PopItemWidth();
 
 						ImGui::Spacing();
+
 						ImGui::PushItemWidth(220);
-						ImGui::SliderFloat(xorstr_(" Human Scale"), &Settings[HUMAN_SCALE].Value.fValue, 1, 20, "%.f");
+						if (ImGui::SliderFloat(_profiler.gAimFOV.szLabel, &_profiler.gAimFOV.Custom.flValue, _profiler.gAimFOV.MinValue.flMin, _profiler.gAimFOV.MaxValue.flMax, "%.f"))
+						{
+							Menu.bWriteLog = true;
+						}
 						ImGui::PopItemWidth();
+
+						if (_profiler.gAimMode.Custom.iValue == 1)
+						{
+							ImGui::PushItemFlag(ImGuiItemFlags_Disabled, true);
+							ImGui::PushStyleVar(ImGuiStyleVar_Alpha, ImGui::GetStyle().Alpha * 0.5f);
+						}
+						{
+							ImGui::SameLine(ImGui::GetCursorPosX() + 400.0f);
+
+							ImGui::PushItemWidth(220);
+							if (ImGui::SliderFloat(_profiler.gHumanSpeed.szLabel, &_profiler.gHumanSpeed.Custom.flValue, _profiler.gHumanSpeed.MinValue.flMin, _profiler.gHumanSpeed.MaxValue.flMax, "%.f"))
+							{
+								Menu.bWriteLog = true;
+							}
+							ImGui::PopItemWidth();
+
+							ImGui::Spacing();
+
+							ImGui::PushItemWidth(220);
+							if (ImGui::SliderFloat(_profiler.gAimSmooth.szLabel, &_profiler.gAimSmooth.Custom.flValue, _profiler.gAimSmooth.MinValue.flMin, _profiler.gAimSmooth.MaxValue.flMax, "%.f"))
+							{
+								Menu.bWriteLog = true;
+							}
+							ImGui::PopItemWidth();
+
+							ImGui::SameLine(ImGui::GetCursorPosX() + 400.0f);
+
+							ImGui::PushItemWidth(220);
+							if (ImGui::SliderFloat(_profiler.gHumanScale.szLabel, &_profiler.gHumanScale.Custom.flValue, _profiler.gHumanScale.MinValue.flMin, _profiler.gHumanScale.MaxValue.flMax, "%.f"))
+							{
+								Menu.bWriteLog = true;
+							}
+							ImGui::PopItemWidth();
+						}
+						if (_profiler.gAimMode.Custom.iValue == 1)
+						{
+							ImGui::PopItemFlag();
+							ImGui::PopStyleVar();
+						}
 					}
-					if (Settings[AIM_MODE].Value.iValue == 1)
+					if (!_profiler.gAimEnabled.Custom.bValue)
 					{
 						ImGui::PopItemFlag();
 						ImGui::PopStyleVar();
 					}
 				}
-				if (!Settings[AIM_ENABLED].Value.bValue)
+				ImGui::EndChild();
+				break;
+			case VISUALS:
+				ImGui::BeginChild("Players", ImVec2(405, 0));
 				{
-					ImGui::PopItemFlag();
-					ImGui::PopStyleVar();
-				}
-
-			}
-
-			ImGui::Spacing();
-			if (ImGui::CollapsingHeader(ICON_FA_EYE_SLASH " Visuals"))
-			{
-				ImGui::SameLine();
-				HelpMarker("F2 - Enable/Disable Items ESP");
-				ImGui::Spacing();
-				if (ImGui::TreeNode(xorstr_("Players")))
-				{
-					ImGui::Spacing();
-					ImGui::Spacing();
-					ImGui::Checkbox(xorstr_(" Enabled"), &Settings[ESP_ENABLED].Value.bValue);
+					ImGui::SeparatorText("Players");
 					ImGui::Spacing();
 					ImGui::Spacing();
 
-					if (!Settings[ESP_ENABLED].Value.bValue)
+					if (ImGui::Checkbox(_profiler.gPlayerEspEnabled.szLabel, &_profiler.gPlayerEspEnabled.Custom.bValue))
+					{
+						Menu.bWriteLog = true;
+					}
+
+					ImGui::Spacing();
+					ImGui::Spacing();
+
+					if (!_profiler.gPlayerEspEnabled.Custom.bValue)
 					{
 						ImGui::PushItemFlag(ImGuiItemFlags_Disabled, true);
 						ImGui::PushStyleVar(ImGuiStyleVar_Alpha, ImGui::GetStyle().Alpha * 0.5f);
 					}
 					{
-						ImGui::Checkbox(xorstr_(" Enemy"), &Settings[ESP_ENEMY].Value.bValue);
-						ImGui::SameLine(ImGui::GetCursorPosX() + 135.0f);
-						ImGui::ColorEdit4(xorstr_(" Visible Color"), (float*)&Settings[COLOR_ENEMY_VISIBLE].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
-						ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-						ImGui::ColorEdit4(xorstr_(" Stealth Color"), (float*)&Settings[COLOR_ENEMY_STEALTH].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Team"), &Settings[ESP_TEAM].Value.bValue);
-						ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-						ImGui::ColorEdit4(xorstr_(" Team Color"), (float*)&Settings[COLOR_TEAM].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Name"), &Settings[ESP_NAME].Value.bValue);
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Direction Line"), &Settings[ESP_DIRECTIONLINE].Value.bValue);
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Distance"), &Settings[ESP_DISTANCE].Value.bValue);
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Health"), &Settings[ESP_HEALTH].Value.bValue);
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Skeleton"), &Settings[ESP_SKELETON].Value.bValue);
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Weapon"), &Settings[ESP_WEAPON].Value.bValue);
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Vehicle"), &Settings[ESP_VEHICLE].Value.bValue);
+						if (ImGui::Checkbox(_profiler.gEnemyEsp.szLabel, &_profiler.gEnemyEsp.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 125.0f);
+						if (ImGui::ColorEdit3(_profiler.gColorEnemyVisible.szLabel, _profiler.gColorEnemyVisible.Custom.cValue, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 250.0f);
+						if (ImGui::ColorEdit3(_profiler.gColorEnemyStealth.szLabel, _profiler.gColorEnemyStealth.Custom.cValue, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
 
-						ImGui::Spacing();
+						if (ImGui::Checkbox(_profiler.gTeamEsp.szLabel, &_profiler.gTeamEsp.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 250.0f);
+						if (ImGui::ColorEdit3(_profiler.gColorTeammate.szLabel, _profiler.gColorTeammate.Custom.cValue, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
+
+						if (ImGui::Checkbox(_profiler.gPlayerName.szLabel, &_profiler.gPlayerName.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
+
+						if (ImGui::Checkbox(_profiler.gPlayerDirectionLine.szLabel, &_profiler.gPlayerDirectionLine.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
+
+						if (ImGui::Checkbox(_profiler.gPlayerDistance.szLabel, &_profiler.gPlayerDistance.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
+
+						if (ImGui::Checkbox(_profiler.gPlayerHealth.szLabel, &_profiler.gPlayerHealth.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
+
+						if (ImGui::Checkbox(_profiler.gPlayerSkeleton.szLabel, &_profiler.gPlayerSkeleton.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
+
+						if (ImGui::Checkbox(_profiler.gPlayerWeapon.szLabel, &_profiler.gPlayerWeapon.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
+
+						if (ImGui::Checkbox(_profiler.gVehicle.szLabel, &_profiler.gVehicle.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
+
 						ImGui::PushItemWidth(220);
-						ImGui::SliderFloat(xorstr_(" Radar Distance"), &Settings[RADAR_DISTANCE].Value.fValue, 1, 300, "%.f");
+						if (ImGui::Combo(_profiler.gPlayerSnaplines.szLabel, &_profiler.gPlayerSnaplines.Custom.iValue, _profiler.gPlayerSnaplines.szItems, _profiler.gPlayerSnaplines.MaxValue.iMax))
+						{
+							Menu.bWriteLog = true;
+						}
 						ImGui::PopItemWidth();
 
 						ImGui::Spacing();
-						static const char* SnaplinesType[] = { " Off", " Top", " Base" };
-						ImGui::PushItemWidth(220);
-						ImGui::Combo(xorstr_(" Snaplines"), &Settings[ESP_SNAPLINES].Value.iValue, SnaplinesType, IM_ARRAYSIZE(SnaplinesType));
-						ImGui::PopItemWidth();
 
-						ImGui::Spacing();
-						static const char* BoxType[] = { " Off", " Box", " Corners Box" };
 						ImGui::PushItemWidth(220);
-						ImGui::Combo(xorstr_(" Box Style"), &Settings[ESP_BOX_TYPE].Value.iValue, BoxType, IM_ARRAYSIZE(BoxType));
+						if (ImGui::Combo(_profiler.gPlayerBoxes.szLabel, &_profiler.gPlayerBoxes.Custom.iValue, _profiler.gPlayerBoxes.szItems, _profiler.gPlayerBoxes.MaxValue.iMax))
+						{
+							Menu.bWriteLog = true;
+						}
 						ImGui::PopItemWidth();
 					}
-					if (!Settings[ESP_ENABLED].Value.bValue)
+					if (!_profiler.gPlayerEspEnabled.Custom.bValue)
 					{
 						ImGui::PopItemFlag();
 						ImGui::PopStyleVar();
 					}
-
-					ImGui::TreePop();
 				}
+				ImGui::EndChild();
 
-				ImGui::Spacing();
-				if (ImGui::TreeNode(xorstr_("Items")))
+				ImGui::SameLine();
+
+				ImGui::BeginChild("Items", ImVec2(0, 0));
 				{
-					ImGui::Spacing();
-					ImGui::Spacing();
-					ImGui::Checkbox(xorstr_(" Enabled"), &Settings[ESP_LOOT_ENABLED].Value.bValue);
+					ImGui::SeparatorText("Items");
 					ImGui::Spacing();
 					ImGui::Spacing();
 
-					if (!Settings[ESP_LOOT_ENABLED].Value.bValue)
+					if (ImGui::Checkbox(_profiler.gItemEspEnabled.szLabel, &_profiler.gItemEspEnabled.Custom.bValue))
+					{
+						Menu.bWriteLog = true;
+					} ImGui::SameLine();
+					HelpMarker("F2 - Enable/Disable");
+
+					ImGui::Spacing();
+					ImGui::Spacing();
+
+					if (!_profiler.gItemEspEnabled.Custom.bValue)
 					{
 						ImGui::PushItemFlag(ImGuiItemFlags_Disabled, true);
 						ImGui::PushStyleVar(ImGuiStyleVar_Alpha, ImGui::GetStyle().Alpha * 0.5f);
 					}
 					{
-						ImGui::Checkbox(xorstr_(" Weapon"), &Settings[ESP_LOOT_WEAPON].Value.bValue);
-						ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-						ImGui::ColorEdit4(xorstr_(" Weapon Color"), (float*)&Settings[COLOR_LOOT_WEAPON].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+						if (ImGui::Checkbox(_profiler.gWeaponItems.szLabel, &_profiler.gWeaponItems.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 250.0f);
+						if (ImGui::ColorEdit3(_profiler.gColorWeaponItems.szLabel, _profiler.gColorWeaponItems.Custom.cValue, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
 
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Bullet"), &Settings[ESP_LOOT_AMMO].Value.bValue);
-						ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-						ImGui::ColorEdit4(xorstr_(" Bullet Color"), (float*)&Settings[COLOR_LOOT_AMMO].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+						if (ImGui::Checkbox(_profiler.gAmmoItems.szLabel, &_profiler.gAmmoItems.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 250.0f);
+						if (ImGui::ColorEdit3(_profiler.gColorAmmoItems.szLabel, _profiler.gColorAmmoItems.Custom.cValue, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
 
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Weapon Parts"), &Settings[ESP_LOOT_ATTACHMENTS].Value.bValue);
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Shield"), &Settings[ESP_LOOT_SHIELD].Value.bValue);
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Shield Upgrade"), &Settings[ESP_LOOT_SHIELDUPGR].Value.bValue);
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Horizontal Jetpack"), &Settings[ESP_LOOT_HJETPACK].Value.bValue);
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Vertical Jetpack"), &Settings[ESP_LOOT_VJETPACK].Value.bValue);
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Death Box"), &Settings[ESP_LOOT_DEATHBOX].Value.bValue);
+						if (ImGui::Checkbox(_profiler.gAttachmentsItems.szLabel, &_profiler.gAttachmentsItems.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
 
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Health Items"), &Settings[ESP_LOOT_HEALTH].Value.bValue);
-						ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-						ImGui::ColorEdit4(xorstr_(" Health Items"), (float*)&Settings[COLOR_LOOT_HEALTH].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+						if (ImGui::Checkbox(_profiler.gShieldItems.szLabel, &_profiler.gShieldItems.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
 
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" Treasure Box"), &Settings[ESP_TREASUREBOX].Value.bValue);
-						ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-						ImGui::ColorEdit4(xorstr_(" Treasure Box"), (float*)&Settings[COLOR_TREASUREBOX].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+						if (ImGui::Checkbox(_profiler.gShieldUpgrItems.szLabel, &_profiler.gShieldUpgrItems.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
 
-						ImGui::Spacing();
-						ImGui::Checkbox(xorstr_(" AirDrop Box"), &Settings[ESP_AIRDROP].Value.bValue);
-						ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
-						ImGui::ColorEdit4(xorstr_(" AirDrop Box"), (float*)&Settings[COLOR_AIRDROP].Value.v4Value, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs);
+						if (ImGui::Checkbox(_profiler.gHJetPackItems.szLabel, &_profiler.gHJetPackItems.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
 
-						ImGui::Spacing();
-						static const char* LevelItems[] = { " Level 1", " Level 2", " Level 3", " Level 4" , " Level 5" , " Level 6" };
+						if (ImGui::Checkbox(_profiler.gVJetPackItems.szLabel, &_profiler.gVJetPackItems.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
+
+						if (ImGui::Checkbox(_profiler.gDeathBox.szLabel, &_profiler.gDeathBox.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
+
+						if (ImGui::Checkbox(_profiler.gHealthItems.szLabel, &_profiler.gHealthItems.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 250.0f);
+						if (ImGui::ColorEdit3(_profiler.gColorHealthItems.szLabel, _profiler.gColorHealthItems.Custom.cValue, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
+
+						if (ImGui::Checkbox(_profiler.gTreasureBox.szLabel, &_profiler.gTreasureBox.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 250.0f);
+						if (ImGui::ColorEdit3(_profiler.gColorTreasureBox.szLabel, _profiler.gColorTreasureBox.Custom.cValue, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
+
+						if (ImGui::Checkbox(_profiler.gAirDrop.szLabel, &_profiler.gAirDrop.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 250.0f);
+						if (ImGui::ColorEdit3(_profiler.gColorAirDrop.szLabel, _profiler.gColorAirDrop.Custom.cValue, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::Spacing();
+
 						ImGui::PushItemWidth(220);
-						ImGui::Combo(xorstr_(" Level Items"), &Settings[ESP_LOOT_LEVEL].Value.iValue, LevelItems, IM_ARRAYSIZE(LevelItems));
+						if (ImGui::Combo(_profiler.gItemLevel.szLabel, &_profiler.gItemLevel.Custom.iValue, _profiler.gItemLevel.szItems, _profiler.gItemLevel.MaxValue.iMax))
+						{
+							Menu.bWriteLog = true;
+						}
 						ImGui::PopItemWidth();
 
 						ImGui::Spacing();
+
 						ImGui::PushItemWidth(220);
-						ImGui::SliderFloat(xorstr_(" Items Distance"), &Settings[ESP_ITEMS_DISTANCE].Value.fValue, 1.f, 300.f, "%.f");
+						if (ImGui::SliderFloat(_profiler.gItemDistance.szLabel, &_profiler.gItemDistance.Custom.flValue, _profiler.gItemDistance.MinValue.flMin, _profiler.gItemDistance.MaxValue.flMax, "%.f"))
+						{
+							Menu.bWriteLog = true;
+						}
 						ImGui::PopItemWidth();
 					}
-					if (!Settings[ESP_LOOT_ENABLED].Value.bValue)
+					if (!_profiler.gItemEspEnabled.Custom.bValue)
 					{
 						ImGui::PopItemFlag();
 						ImGui::PopStyleVar();
 					}
-
-					ImGui::TreePop();
 				}
-			}
-
-			ImGui::Spacing();
-			if (ImGui::CollapsingHeader(ICON_FA_SLIDERS " Miscs"))
-			{
-				ImGui::Spacing();
-				ImGui::Spacing();
-				ImGui::Checkbox(xorstr_(" Radar"), &Settings[RADAR_ENABLED].Value.bValue);
-				ImGui::Spacing();
-				ImGui::Checkbox(xorstr_(" Offscreen"), &Settings[OFFSCREEN].Value.bValue);
-			}
-
-			ImGui::Spacing();
-			if (ImGui::CollapsingHeader(ICON_FA_BOLT " Exploits"))
-			{
-				ImGui::Spacing();
-				ImGui::Spacing();
-				ImGui::Checkbox(xorstr_(" Spam Like/Dislike"), &Settings[SPAM_LIKE].Value.bValue);
-				ImGui::SameLine();
-				HelpMarker("Key (-)/Key (+) - Like/Dislike");
-				ImGui::Spacing();
-				ImGui::Checkbox(xorstr_(" Kick Spectator"), &Settings[STOP_SPECTATOR].Value.bValue);
-				ImGui::Spacing();
-				ImGui::Checkbox(xorstr_(" Shotgun High Damage"), &Settings[SHOTGUN_DAMAGE].Value.bValue);
-				ImGui::Spacing();
-				ImGui::Checkbox(xorstr_(" Test_"), &Settings[TEST_].Value.bValue);
-			}
-
-			ImGui::Spacing();
-			if (ImGui::CollapsingHeader(ICON_FA_GEAR " Config"))
-			{
-				ImGui::Spacing();
-				ImGui::Spacing();
-
-				if (ImGui::Button(xorstr_("Load Config"), ImVec2(95, 35)))
+				ImGui::EndChild();
+				break;
+			case MISCS:
+				ImGui::BeginChild("Miscs", ImVec2(0, 240));
 				{
-					if (LoadSettings())
+					ImGui::SeparatorText("Miscs");
+					ImGui::Spacing();
+					ImGui::Spacing();
+
+					if (ImGui::Checkbox(_profiler.gNoRecoil.szLabel, &_profiler.gNoRecoil.Custom.bValue))
 					{
-						ImGui::OpenPopup(xorstr_("Settings loaded"));
-					}
-					else
+						Menu.bWriteLog = true;
+					} ImGui::SameLine(ImGui::GetCursorPosX() + 225.0f);
+
+					if (ImGui::Checkbox(_profiler.gVehicleNoRecoil.szLabel, &_profiler.gVehicleNoRecoil.Custom.bValue))
 					{
-						ImGui::OpenPopup(xorstr_("Loading failed"));
-					}
-				}
+						Menu.bWriteLog = true;
+					} ImGui::Spacing();
 
-				ImGui::Spacing();
-
-				if (ImGui::Button(xorstr_("Save Config"), ImVec2(95, 35)))
-				{
-					if (SaveSettings())
+					if (ImGui::Checkbox(_profiler.gFastReload.szLabel, &_profiler.gFastReload.Custom.bValue))
 					{
-						ImGui::OpenPopup(xorstr_("Settings saved"));
-					}
-					else
+						Menu.bWriteLog = true;
+					} ImGui::Spacing();
+
+					if (ImGui::Checkbox(_profiler.gOffscreen.szLabel, &_profiler.gOffscreen.Custom.bValue))
 					{
-						ImGui::OpenPopup(xorstr_("Saving failed"));
+						Menu.bWriteLog = true;
+					} ImGui::Spacing();
+
+					if (ImGui::Checkbox(_profiler.gRadar.szLabel, &_profiler.gRadar.Custom.bValue))
+					{
+						Menu.bWriteLog = true;
+					} ImGui::Spacing();
+
+					ImGui::PushItemWidth(220);
+					if (ImGui::SliderFloat(_profiler.gRadarDistance.szLabel, &_profiler.gRadarDistance.Custom.flValue, _profiler.gRadarDistance.MinValue.flMin, _profiler.gRadarDistance.MaxValue.flMax, "%.f"))
+					{
+						Menu.bWriteLog = true;
+					}
+					ImGui::PopItemWidth();
+				}
+				ImGui::EndChild();
+
+				ImGui::BeginChild("Exploits", ImVec2(0, 0));
+				{
+					ImGui::SeparatorText("Exploits");
+					ImGui::Spacing();
+					ImGui::Spacing();
+
+					if (ImGui::Checkbox(_profiler.gSpamLike.szLabel, &_profiler.gSpamLike.Custom.bValue))
+					{
+						Menu.bWriteLog = true;
+					} ImGui::SameLine();
+					HelpMarker("Key (-)/Key (+) - Like/Dislike");
+					ImGui::Spacing();
+
+					if (ImGui::Checkbox(_profiler.gStopSpectator.szLabel, &_profiler.gStopSpectator.Custom.bValue))
+					{
+						Menu.bWriteLog = true;
+					} ImGui::Spacing();
+
+					if (ImGui::Checkbox(_profiler.gShotgunDamage.szLabel, &_profiler.gShotgunDamage.Custom.bValue))
+					{
+						Menu.bWriteLog = true;
+					} ImGui::Spacing();
+
+					if (ImGui::Checkbox(_profiler.gVehicleSpeed.szLabel, &_profiler.gVehicleSpeed.Custom.bValue))
+					{
+						Menu.bWriteLog = true;
+					} ImGui::Spacing();
+
+					if (!_profiler.gVehicleSpeed.Custom.bValue)
+					{
+						ImGui::PushItemFlag(ImGuiItemFlags_Disabled, true);
+						ImGui::PushStyleVar(ImGuiStyleVar_Alpha, ImGui::GetStyle().Alpha * 0.5f);
+					}
+					{
+						ImGui::PushItemWidth(220);
+						if (ImGui::SliderFloat(_profiler.gVehicleSpeedMulti.szLabel, &_profiler.gVehicleSpeedMulti.Custom.flValue, _profiler.gVehicleSpeedMulti.MinValue.flMin, _profiler.gVehicleSpeedMulti.MaxValue.flMax, "%.1f"))
+						{
+							Menu.bWriteLog = true;
+						}
+						ImGui::PopItemWidth();
+					}
+					if (!_profiler.gVehicleSpeed.Custom.bValue)
+					{
+						ImGui::PopItemFlag();
+						ImGui::PopStyleVar();
 					}
 				}
-
-				if (ImGui::BeginPopupModal(xorstr_("Settings Loaded"), 0, ImGuiWindowFlags_NoResize))
+				ImGui::EndChild();
+				break;
+			case CONFIGS:
+				ImGui::BeginChild("Configs", ImVec2(0, 0));
 				{
-					ImGui::Text(xorstr_("The settings have been loaded"));
-					ImGui::Separator();
-					if (ImGui::Button(xorstr_("OK"), ImVec2(70, 0))) { ImGui::CloseCurrentPopup(); }
-					ImGui::EndPopup();
-				}
+					ImGui::Spacing();
+					ImGui::Spacing();
 
-				if (ImGui::BeginPopupModal(xorstr_("Settings Saved"), 0, ImGuiWindowFlags_NoResize))
-				{
-					ImGui::Text(xorstr_("The settings have been saved"));
-					ImGui::Separator();
-					if (ImGui::Button(xorstr_("OK"), ImVec2(70, 0))) { ImGui::CloseCurrentPopup(); }
-					ImGui::EndPopup();
-				}
+					if (ImGui::Button(xorstr_("Set as Default"), ImVec2(155.0f, 35.0f)))
+					{
+						_profiler.SaveProfile("");
+						Menu.bWriteLog = true;
+					} ImGui::SameLine(ImGui::GetCursorPosX() + 200.0f);
 
-				if (ImGui::BeginPopupModal(xorstr_("Loading Failed"), 0, ImGuiWindowFlags_NoResize))
-				{
-					ImGui::Text(xorstr_("Failed to load the settings"));
-					ImGui::Separator();
-					if (ImGui::Button(xorstr_("OK"), ImVec2(70, 0))) { ImGui::CloseCurrentPopup(); }
-					ImGui::EndPopup();
-				}
+					if ((Menu.bSaveButton = ImGui::Button(xorstr_("Save Profile"), ImVec2(155.0f, 35.0f))))
+					{
+						Menu.bWriteLog = true;
+					} ImGui::SameLine(ImGui::GetCursorPosX() + 400.0f);
+					LPCSTR szSavePath = Menu.SaveDialog.saveFileDialog(Menu.bSaveButton, Menu.SaveDialog.getLastDirectory(), NULL, xorstr_(".xml"), xorstr_("Save Profile"));
 
-				if (ImGui::BeginPopupModal(xorstr_("Saving Failed"), 0, ImGuiWindowFlags_NoResize))
-				{
-					ImGui::Text(xorstr_("Failed to save the settings"));
-					ImGui::Separator();
-					if (ImGui::Button(xorstr_("OK"), ImVec2(70, 0))) { ImGui::CloseCurrentPopup(); }
-					ImGui::EndPopup();
+					if (strlen(szSavePath))
+					{
+						_profiler.SaveProfile(szSavePath);
+						strcpy_s(Menu.szProfile, szSavePath);
+					}
+
+					if ((Menu.bLoadButton = ImGui::Button(xorstr_("Load Profile"), ImVec2(155.0f, 35.0f))))
+					{
+						Menu.bWriteLog = true;
+					} LPCSTR szLoadPath = Menu.LoadDialog.chooseFileDialog(Menu.bLoadButton, Menu.LoadDialog.getLastDirectory(), xorstr_(".xml"), xorstr_("Load Profile"));
+
+					if (strlen(szLoadPath))
+					{
+						_profiler.LoadProfile(szLoadPath);
+						strcpy_s(Menu.szProfile, szLoadPath);
+					}
+
+					ImGui::Spacing();
+
+					ImGui::PushItemWidth(ImGui::GetWindowContentRegionWidth());
+					ImGui::InputText("##", Menu.szProfile, sizeof(Menu.szProfile), ImGuiInputTextFlags_ReadOnly);
+					ImGui::PopItemWidth();
 				}
+				ImGui::EndChild();		
+				break;
 			}
 		}
 		ImGui::End();
+	}
+
+	bool MainGUI::GetKeyPress(int vkey, bool immediate)
+	{
+		if (VirtualKeys[vkey].bKey)
+		{
+			VirtualKeys[vkey].bUp = false;
+			VirtualKeys[vkey].bDown = true;
+		}
+		else if (!VirtualKeys[vkey].bKey && VirtualKeys[vkey].bDown)
+		{
+			VirtualKeys[vkey].bUp = true;
+			VirtualKeys[vkey].bDown = false;
+		}
+		else
+		{
+			VirtualKeys[vkey].bUp = false;
+			VirtualKeys[vkey].bDown = false;
+		}
+
+		if (immediate)
+			return VirtualKeys[vkey].bDown;
+		else
+			return VirtualKeys[vkey].bUp;
+	}
+
+	LRESULT CALLBACK MainGUI::WindowProcess(_In_ HWND hWnd, _In_ UINT uMsg, _In_ WPARAM wParam, _In_ LPARAM lParam)
+	{
+		switch (uMsg)
+		{
+		case WM_LBUTTONDOWN:
+			VirtualKeys[VK_LBUTTON].bKey = true;
+			break;
+
+		case WM_LBUTTONUP:
+			VirtualKeys[VK_LBUTTON].bKey = false;
+			break;
+
+		case WM_RBUTTONDOWN:
+			VirtualKeys[VK_RBUTTON].bKey = true;
+			break;
+
+		case WM_RBUTTONUP:
+			VirtualKeys[VK_RBUTTON].bKey = false;
+			break;
+
+		case WM_KEYDOWN:
+			VirtualKeys[wParam].bKey = true;
+			break;
+
+		case WM_KEYUP:
+			VirtualKeys[wParam].bKey = false;
+			break;
+		}
+
+		if (GetKeyPress(VK_INSERT, false))
+			Menu.bShowWindow = !Menu.bShowWindow;
+
+		if (GetKeyPress(VK_HOME, false))
+			_profiler.LoadProfile("");
+
+		if (GetKeyPress(VK_END, false))
+			_profiler.DisableAll();
+
+		if (GetKeyPress(VK_F1, false))
+			_profiler.gAimEnabled.Custom.bValue ^= 1;
+
+		if (GetKeyPress(VK_F2, false))
+			_profiler.gItemEspEnabled.Custom.bValue ^= 1;
+
+		if (bInitialized && Menu.bShowWindow && ImGui_ImplWin32_WndProcHandler(hWnd, uMsg, wParam, lParam))
+			return TRUE;
+
+		return spoof_call(CallWindowProc, oWindowProcess, hWnd, uMsg, wParam, lParam);
+	}
+
+	void WINAPI MainGUI::Present(_In_ IDXGISwapChain* SwapChain, _In_ UINT SyncInterval, _In_ UINT Flags)
+	{
+		if (!bInitialized)
+		{
+			SwapChain->GetDevice(__uuidof(ID3D11Device), (void**)&pDevice);
+			pDevice->GetImmediateContext(&pDeviceContext);
+			DXGI_SWAP_CHAIN_DESC sd;
+			SwapChain->GetDesc(&sd);
+
+			hWindow = sd.OutputWindow;
+			ID3D11Texture2D* buffer;
+			SwapChain->GetBuffer(0, __uuidof(ID3D11Texture2D), (LPVOID*)&buffer);
+			pDevice->CreateRenderTargetView(buffer, NULL, &pRenderTarget);
+
+			buffer->Release();
+
+			InitGUI();
+
+			bInitialized = true;
+		}
+
+		ImGui::GetIO().MouseDrawCursor = Menu.bShowWindow;
+
+		ImGui_ImplDX11_NewFrame();
+		ImGui_ImplWin32_NewFrame();
+		ImGui::NewFrame();
+
+		if (!_profiler.gIsAiming.Custom.bValue)
+			Aimbot::ResetLock();
+
+		ZZZ.BypassEAC();
+
+		ZZZ.Unknown();
+		ZZZ.Removal();
+		ZZZ.Aimbot();
+		ZZZ.Misc();
+		ZZZ.Radar();
+
+		if (Menu.bShowWindow)
+		{
+			if (Menu.bWriteLog)
+			{
+				ImGui::LogToFile();
+				Menu.bWriteLog = false;
+			}
+
+			Render();
+		}
+
+		ImGui::Render();
+		pDeviceContext->OMSetRenderTargets(1, &pRenderTarget, NULL);
+		ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
 	}
 }

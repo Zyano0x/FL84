@@ -508,10 +508,10 @@ struct IMGUI_API ImRect
     ImVec2      Min;    // Upper-left
     ImVec2      Max;    // Lower-right
 
-    constexpr ImRect()                                        : Min(0.0f, 0.0f), Max(0.0f, 0.0f)  {}
-    constexpr ImRect(const ImVec2& min, const ImVec2& max)    : Min(min), Max(max)                {}
-    constexpr ImRect(const ImVec4& v)                         : Min(v.x, v.y), Max(v.z, v.w)      {}
-    constexpr ImRect(float x1, float y1, float x2, float y2)  : Min(x1, y1), Max(x2, y2)          {}
+    ImRect()                                        : Min(0.0f, 0.0f), Max(0.0f, 0.0f)  {}
+    ImRect(const ImVec2& min, const ImVec2& max)    : Min(min), Max(max)                {}
+    ImRect(const ImVec4& v)                         : Min(v.x, v.y), Max(v.z, v.w)      {}
+    ImRect(float x1, float y1, float x2, float y2)  : Min(x1, y1), Max(x2, y2)          {}
 
     ImVec2      GetCenter() const                   { return ImVec2((Min.x + Max.x) * 0.5f, (Min.y + Max.y) * 0.5f); }
     ImVec2      GetSize() const                     { return ImVec2(Max.x - Min.x, Max.y - Min.y); }

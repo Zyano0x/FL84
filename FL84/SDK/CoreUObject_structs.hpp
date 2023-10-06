@@ -376,6 +376,7 @@ namespace SDK
 		FVector& operator *=(float scalar);
 		bool IsValid();
 		void Normalize360(FVector& angle);
+		void Normalize();
 		float Dot(const FVector& b) const;
 		float MagnitudeSqr() const;
 		float Magnitude() const;
