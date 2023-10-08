@@ -22,10 +22,6 @@ bool XXX::SanityCheck()
 	if (!CameraManager)
 		return false;
 
-	GameplayStatics = SDK::UGameplayStatics::GetDefaultObj();
-	if (!GameplayStatics)
-		return false;
-
 	return true;
 }
 
@@ -91,8 +87,8 @@ void XXX::Unknown()
 			//Head = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(HEAD));
 			//Root = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(ROOT));
 
-			if (GameplayStatics->ProjectWorldToScreen(PlayerController, Head, &HeadPos, false)
-				&& GameplayStatics->ProjectWorldToScreen(PlayerController, Root, &FootPos, false))
+			if (PlayerController->ProjectWorldLocationToScreen(Head, &HeadPos, false)
+				&& PlayerController->ProjectWorldLocationToScreen(Root, &FootPos, false))
 			{
 				float Top = HeadPos.Y;
 				float Bottom = FootPos.Y;
@@ -242,8 +238,8 @@ void XXX::Unknown()
 						SDK::FVector BoneLoc1 = Enemy->Mesh->GetBoneWorldPos(Bone1);
 						SDK::FVector BoneLoc2 = Enemy->Mesh->GetBoneWorldPos(Bone2);
 
-						if (GameplayStatics->ProjectWorldToScreen(PlayerController, BoneLoc1, &BoneScreen, false)
-							&& GameplayStatics->ProjectWorldToScreen(PlayerController, BoneLoc2, &PrevBoneScreen, false))
+						if (PlayerController->ProjectWorldLocationToScreen(BoneLoc1, &BoneScreen, false)
+							&& PlayerController->ProjectWorldLocationToScreen(BoneLoc2, &PrevBoneScreen, false))
 						{
 							Draw::DrawLine(BoneScreen.X, BoneScreen.Y, PrevBoneScreen.X, PrevBoneScreen.Y, 1.f, ColorVisisble);
 						}
@@ -257,8 +253,8 @@ void XXX::Unknown()
 					SDK::FVector End = Angles * 250 + Start;
 					SDK::FVector2D ScreenStart, ScreenEnd;
 
-					if (GameplayStatics->ProjectWorldToScreen(PlayerController, Start, &ScreenStart, false)
-						&& GameplayStatics->ProjectWorldToScreen(PlayerController, End, &ScreenEnd, false))
+					if (PlayerController->ProjectWorldLocationToScreen(Start, &ScreenStart, false)
+						&& PlayerController->ProjectWorldLocationToScreen(End, &ScreenEnd, false))
 					{
 						Draw::DrawLine(ScreenStart.X, ScreenStart.Y, ScreenEnd.X, ScreenEnd.Y, 1.f, ColorVisisble);
 						Draw::DrawCircleFilled(ScreenEnd.X, ScreenEnd.Y, 4, ColorVisisble);
@@ -338,7 +334,7 @@ void XXX::Unknown()
 
 			SDK::FVector ItemLocation = Item->K2_GetActorLocation();
 
-			GameplayStatics->ProjectWorldToScreen(PlayerController, ItemLocation, &ItemPos, false);
+			PlayerController->ProjectWorldLocationToScreen(ItemLocation, &ItemPos, false);
 
 			int ItemDistance = LocalCharacter->GetDistanceTo(Item) / 100.f;
 
@@ -477,7 +473,7 @@ void XXX::Unknown()
 
 			SDK::FVector VehicleLocation = Vehicle->K2_GetActorLocation();
 
-			GameplayStatics->ProjectWorldToScreen(PlayerController, VehicleLocation, &VehiclePos, false);
+			PlayerController->ProjectWorldLocationToScreen(VehicleLocation, &VehiclePos, false);
 
 			int VehicleDistance = LocalCharacter->GetDistanceTo(Vehicle) / 100;
 
@@ -494,7 +490,7 @@ void XXX::Unknown()
 	}
 }
 
-void XXX::Removal()
+void XXX::RemovalPlayer()
 {
 	if (!SanityCheck())
 		return;
@@ -513,55 +509,12 @@ void XXX::Removal()
 		printf("0x%llX\n", VTable[292]);
 	}*/
 
-	SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
-	if (!LocalCharacter)
-		return;
-
-	if (_profiler.gVehicleNoRecoil.Custom.bValue && LocalCharacter->IsInVehicle())
+	if (_profiler.gFastReload.Custom.bValue)
 	{
-		SDK::ASolarPlayerController* SolarPlayerController = LocalCharacter->GetSolarPlayerController(true);
-		if (!SolarPlayerController)
+		if (!PlayerController->Character)
 			return;
 
-		SDK::ASolarVehiclePawn* LocalVehicle = SolarPlayerController->BestInteractingVehicle;
-		if (!LocalVehicle)
-			return;
-
-		SDK::ASolarVehicleWeapon* VehicleWeapon = nullptr;
-		SDK::TArray<SDK::FVehicleSeatSlot> Seats = LocalVehicle->SeatSlots;
-		for (int i = 0; i < Seats.Count(); i++)
-		{
-			if (Seats[i].SeatWeapon)
-			{
-				VehicleWeapon = Seats[i].SeatWeapon;
-				break;
-			}
-		}
-
-		SDK::USingleWeaponConfig* Config = VehicleWeapon->Config;
-		if (!Config)
-			return;
-
-		Config->MaxSpread = 0.0f;
-		Config->MinSpread = 0.0f;
-		Config->HipFireBaseSpread = 0.0f;
-		Config->ShoulderFireBaseSpread = 0.0f;
-		Config->ADSBaseSpread = 0.0f;
-		Config->VhADSBaseSpread = 0.0f;
-
-		SDK::UWeaponRecoilComponent* RecoilComponent = VehicleWeapon->GetRecoilComponent();
-		if (!RecoilComponent)
-			return;
-
-		RecoilComponent->SetRecoilActive(false);
-		RecoilComponent->SetRecoilVActive(false);
-		RecoilComponent->SetRecoilRActive(false);
-		RecoilComponent->SetRecoilHActive(false);
-	}
-
-	if (_profiler.gFastReload.Custom.bValue && !LocalCharacter->IsInVehicle())
-	{
-		SDK::ASolarPlayerWeapon* CachedCurrentWeapon = LocalCharacter->CachedCurrentWeapon;
+		SDK::ASolarPlayerWeapon* CachedCurrentWeapon = static_cast<SDK::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
 		if (!CachedCurrentWeapon)
 			return;
 
@@ -576,9 +529,12 @@ void XXX::Removal()
 		AmmoConfig->BaseReloadTime = 1.65f;
 	}
 
-	if (_profiler.gNoRecoil.Custom.bValue && !LocalCharacter->IsInVehicle())
+	if (_profiler.gNoRecoil.Custom.bValue)
 	{
-		SDK::ASolarPlayerWeapon* CachedCurrentWeapon = LocalCharacter->CachedCurrentWeapon;
+		if (!PlayerController->Character)
+			return;
+
+		SDK::ASolarPlayerWeapon* CachedCurrentWeapon = static_cast<SDK::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
 		if (!CachedCurrentWeapon)
 			return;
 
@@ -634,6 +590,51 @@ void XXX::Removal()
 		WeaponShootConfig->BaseSpread = 0.0f;
 
 		SDK::UWeaponRecoilComponent* RecoilComponent = CachedCurrentWeapon->GetRecoilComponent();
+		if (!RecoilComponent)
+			return;
+
+		RecoilComponent->SetRecoilActive(false);
+		RecoilComponent->SetRecoilVActive(false);
+		RecoilComponent->SetRecoilRActive(false);
+		RecoilComponent->SetRecoilHActive(false);
+	}
+}
+
+void XXX::RemovalVehicle()
+{
+	if (!SanityCheck())
+		return;
+
+	if (_profiler.gVehicleNoRecoil.Custom.bValue)
+	{
+		SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
+		if (!LocalCharacter)
+			return;
+
+		SDK::ASolarPlayerController* SolarPlayerController = LocalCharacter->GetSolarPlayerController(true);
+		if (!SolarPlayerController)
+			return;
+
+		SDK::ASolarVehiclePawn* LocalVehicle = SolarPlayerController->BestInteractingVehicle;
+		if (!LocalVehicle)
+			return;
+
+		SDK::ASolarVehicleWeapon* VehicleWeapon = LocalVehicle->SeatSlots[0].SeatWeapon;
+		if (!VehicleWeapon)
+			return;
+
+		SDK::USingleWeaponConfig* Config = VehicleWeapon->Config;
+		if (!Config)
+			return;
+
+		Config->MaxSpread = 0.0f;
+		Config->MinSpread = 0.0f;
+		Config->HipFireBaseSpread = 0.0f;
+		Config->ShoulderFireBaseSpread = 0.0f;
+		Config->ADSBaseSpread = 0.0f;
+		Config->VhADSBaseSpread = 0.0f;
+
+		SDK::UWeaponRecoilComponent* RecoilComponent = VehicleWeapon->GetRecoilComponent();
 		if (!RecoilComponent)
 			return;
 
@@ -745,7 +746,7 @@ void XXX::Aimbot()
 			}
 
 			SDK::FVector2D TargetPos = SDK::FVector2D();
-			if (!GameplayStatics->ProjectWorldToScreen(PlayerController, Aimbot::CurrentPosition, &TargetPos, false))
+			if (!PlayerController->ProjectWorldLocationToScreen(Aimbot::CurrentPosition, &TargetPos, false))
 				continue;
 
 			const float x = TargetPos.X - (ScreenWidth / 2);
@@ -828,12 +829,12 @@ void XXX::Misc()
 		}
 	}
 
+	SDK::ASolarPlayerController* SolarPlayerController = LocalCharacter->GetSolarPlayerController(true);
+	if (!SolarPlayerController)
+		return;
+
 	if (_profiler.gVehicleSpeed.Custom.bValue)
 	{
-		SDK::ASolarPlayerController* SolarPlayerController = LocalCharacter->GetSolarPlayerController(true);
-		if (!SolarPlayerController)
-			return;
-
 		SDK::ASolarVehiclePawn* LocalVehicle = SolarPlayerController->BestInteractingVehicle;
 		if (!LocalVehicle)
 			return;

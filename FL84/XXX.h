@@ -54,7 +54,8 @@ public:
 
 	bool SanityCheck();
 	void Unknown();
-	void Removal();
+	void RemovalPlayer();
+	void RemovalVehicle();
 	void Aimbot();
 	void Misc();
 	void Radar();

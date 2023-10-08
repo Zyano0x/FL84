@@ -299,7 +299,7 @@ namespace ZyanoCheats
 				ImGui::EndChild();
 				break;
 			case VISUALS:
-				ImGui::BeginChild("Players", ImVec2(405, 0));
+				ImGui::BeginChild("Players", ImVec2(400, 0));
 				{
 					ImGui::SeparatorText("Players");
 					ImGui::Spacing();
@@ -322,11 +322,11 @@ namespace ZyanoCheats
 						if (ImGui::Checkbox(_profiler.gEnemyEsp.szLabel, &_profiler.gEnemyEsp.Custom.bValue))
 						{
 							Menu.bWriteLog = true;
-						} ImGui::SameLine(ImGui::GetCursorPosX() + 125.0f);
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 135.0f);
 						if (ImGui::ColorEdit3(_profiler.gColorEnemyVisible.szLabel, _profiler.gColorEnemyVisible.Custom.cValue, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs))
 						{
 							Menu.bWriteLog = true;
-						} ImGui::SameLine(ImGui::GetCursorPosX() + 250.0f);
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
 						if (ImGui::ColorEdit3(_profiler.gColorEnemyStealth.szLabel, _profiler.gColorEnemyStealth.Custom.cValue, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs))
 						{
 							Menu.bWriteLog = true;
@@ -335,7 +335,7 @@ namespace ZyanoCheats
 						if (ImGui::Checkbox(_profiler.gTeamEsp.szLabel, &_profiler.gTeamEsp.Custom.bValue))
 						{
 							Menu.bWriteLog = true;
-						} ImGui::SameLine(ImGui::GetCursorPosX() + 250.0f);
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 260.0f);
 						if (ImGui::ColorEdit3(_profiler.gColorTeammate.szLabel, _profiler.gColorTeammate.Custom.cValue, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs))
 						{
 							Menu.bWriteLog = true;
@@ -426,7 +426,7 @@ namespace ZyanoCheats
 						if (ImGui::Checkbox(_profiler.gWeaponItems.szLabel, &_profiler.gWeaponItems.Custom.bValue))
 						{
 							Menu.bWriteLog = true;
-						} ImGui::SameLine(ImGui::GetCursorPosX() + 250.0f);
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 220.0f);
 						if (ImGui::ColorEdit3(_profiler.gColorWeaponItems.szLabel, _profiler.gColorWeaponItems.Custom.cValue, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs))
 						{
 							Menu.bWriteLog = true;
@@ -435,7 +435,7 @@ namespace ZyanoCheats
 						if (ImGui::Checkbox(_profiler.gAmmoItems.szLabel, &_profiler.gAmmoItems.Custom.bValue))
 						{
 							Menu.bWriteLog = true;
-						} ImGui::SameLine(ImGui::GetCursorPosX() + 250.0f);
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 220.0f);
 						if (ImGui::ColorEdit3(_profiler.gColorAmmoItems.szLabel, _profiler.gColorAmmoItems.Custom.cValue, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs))
 						{
 							Menu.bWriteLog = true;
@@ -474,7 +474,7 @@ namespace ZyanoCheats
 						if (ImGui::Checkbox(_profiler.gHealthItems.szLabel, &_profiler.gHealthItems.Custom.bValue))
 						{
 							Menu.bWriteLog = true;
-						} ImGui::SameLine(ImGui::GetCursorPosX() + 250.0f);
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 220.0f);
 						if (ImGui::ColorEdit3(_profiler.gColorHealthItems.szLabel, _profiler.gColorHealthItems.Custom.cValue, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs))
 						{
 							Menu.bWriteLog = true;
@@ -483,7 +483,7 @@ namespace ZyanoCheats
 						if (ImGui::Checkbox(_profiler.gTreasureBox.szLabel, &_profiler.gTreasureBox.Custom.bValue))
 						{
 							Menu.bWriteLog = true;
-						} ImGui::SameLine(ImGui::GetCursorPosX() + 250.0f);
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 220.0f);
 						if (ImGui::ColorEdit3(_profiler.gColorTreasureBox.szLabel, _profiler.gColorTreasureBox.Custom.cValue, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs))
 						{
 							Menu.bWriteLog = true;
@@ -492,7 +492,7 @@ namespace ZyanoCheats
 						if (ImGui::Checkbox(_profiler.gAirDrop.szLabel, &_profiler.gAirDrop.Custom.bValue))
 						{
 							Menu.bWriteLog = true;
-						} ImGui::SameLine(ImGui::GetCursorPosX() + 250.0f);
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 220.0f);
 						if (ImGui::ColorEdit3(_profiler.gColorAirDrop.szLabel, _profiler.gColorAirDrop.Custom.cValue, ImGuiColorEditFlags_PickerHueBar | ImGuiColorEditFlags_NoInputs))
 						{
 							Menu.bWriteLog = true;
@@ -767,7 +767,8 @@ namespace ZyanoCheats
 		ZZZ.BypassEAC();
 
 		ZZZ.Unknown();
-		ZZZ.Removal();
+		ZZZ.RemovalPlayer();
+		ZZZ.RemovalVehicle();
 		ZZZ.Aimbot();
 		ZZZ.Misc();
 		ZZZ.Radar();
