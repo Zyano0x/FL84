@@ -180,6 +180,7 @@
     <ClInclude Include="ImGUI\imstb_textedit.h" />
     <ClInclude Include="ImGUI\imstb_truetype.h" />
     <ClInclude Include="Mathematics.h" />
+    <ClInclude Include="Memory.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Profiler.h" />
     <ClInclude Include="RapidXML\rapidxml.hpp" />
@@ -209,6 +210,7 @@
     <ClCompile Include="ImGUI\imgui_tables.cpp" />
     <ClCompile Include="ImGUI\imgui_widgets.cpp" />
     <ClCompile Include="Mathematics.cpp" />
+    <ClCompile Include="Memory.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Profiler.cpp" />
     <ClCompile Include="SDK\Basic.cpp" />

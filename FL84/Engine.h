@@ -4,7 +4,6 @@ namespace Engine
 {
 	extern std::vector<int> HitBoxes;
 
-	uint64_t FindPattern(const char* module, const char* pattern);
 	std::string GetVehicleName(std::string oName);
 	std::string GetWeaponType(int WeaponID);
 	SDK::FVector GetBonePosition(SDK::USkeletalMeshComponent* mesh, int index);

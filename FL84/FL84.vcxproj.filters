@@ -153,6 +153,9 @@
     <ClInclude Include="FileUtility\FileUtility.h">
       <Filter>Profiler\RapidXML\Utilities</Filter>
     </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -226,6 +229,9 @@
     </ClCompile>
     <ClCompile Include="FileUtility\FileUtility.cpp">
       <Filter>Profiler\RapidXML\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

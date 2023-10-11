@@ -9,22 +9,23 @@
 
 // add headers that you want to pre-compile here
 #include <Windows.h>
-#include <iostream>
+#include <map>
+#include <array>
+#include <mutex>
+#include <cmath>
 #include <vector>
 #include <string>
+#include <cstdio>
+#include <random>
+#include <dxgi.h>	
 #include <sstream>
 #include <iomanip>
-#include <cmath>
-#include <cstdio>
-#include <algorithm>
-#include <array>
-#include <map>
-#include <random>
-#include <unordered_map>
-#include <dxgi.h>	
 #include <d3d11.h>
-#include <d3dx10math.h>
+#include <iostream>
+#include <algorithm>
 #include <detours.h>
+#include <d3dx10math.h>
+#include <unordered_map>
 
 #define IMGUI_DEFINE_MATH_OPERATORS
 #include "imgui/imgui.h"
@@ -43,9 +44,10 @@
 #include "Icons.h"
 #include "Profiler.h"
 #include "Elements.h"
+#include "Mathematics.h"
 #include "Menu.h"
 #include "Draw.h"
-#include "Mathematics.h"
+#include "Memory.h"
 #include "Hook.h"
 #include "Engine.h"
 #include "XXX.h"

@@ -490,12 +490,12 @@ void XXX::Unknown()
 	}
 }
 
-void XXX::RemovalPlayer()
+void XXX::NoRecoil()
 {
 	if (!SanityCheck())
 		return;
 
-	/*if (Settings[TEST_DAMAGE_SHOTGUN].Value.bValue)
+	/*if (_profiler.gTest.Custom.bValue)
 	{
 		if (!PlayerController->Character)
 			return;
@@ -506,7 +506,7 @@ void XXX::RemovalPlayer()
 
 		uint64_t* VTable = *(uint64_t**)(CachedCurrentWeapon + 0x0);
 
-		printf("0x%llX\n", VTable[292]);
+		printf("0x%llX\n", VTable[235]);
 	}*/
 
 	if (_profiler.gFastReload.Custom.bValue)
@@ -600,25 +600,43 @@ void XXX::RemovalPlayer()
 	}
 }
 
-void XXX::RemovalVehicle()
+void XXX::Vehicle()
 {
 	if (!SanityCheck())
 		return;
 
+	SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
+	if (!LocalCharacter)
+		return;
+
+	SDK::ASolarPlayerController* SolarPlayerController = LocalCharacter->GetSolarPlayerController(true);
+	if (!SolarPlayerController)
+		return;
+
+	SDK::ASolarVehiclePawn* LocalVehicle = SolarPlayerController->BestInteractingVehicle;
+	if (!LocalVehicle)
+		return;
+
+	if (_profiler.gVehicleSpeed.Custom.bValue)
+	{
+		LocalVehicle->VehicleAttributeSet->SpeedMultiplier.BaseValue = _profiler.gVehicleSpeedMulti.Custom.flValue;
+		LocalVehicle->VehicleAttributeSet->SpeedMultiplier.CurrentValue = _profiler.gVehicleSpeedMulti.Custom.flValue;
+	}
+
+	if (_profiler.gVehicleSilentAim.Custom.bValue)
+	{
+		SDK::ASolarVehicleWeapon* VehicleWeapon = LocalVehicle->SeatSlots[0].SeatWeapon;
+		if (!VehicleWeapon)
+			return;
+
+		if (Aimbot::TargetPosition.IsValid())
+			return;
+
+		*(SDK::FVector*)(VehicleWeapon + 0xE9C) = Aimbot::TargetPosition;
+	}
+
 	if (_profiler.gVehicleNoRecoil.Custom.bValue)
 	{
-		SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
-		if (!LocalCharacter)
-			return;
-
-		SDK::ASolarPlayerController* SolarPlayerController = LocalCharacter->GetSolarPlayerController(true);
-		if (!SolarPlayerController)
-			return;
-
-		SDK::ASolarVehiclePawn* LocalVehicle = SolarPlayerController->BestInteractingVehicle;
-		if (!LocalVehicle)
-			return;
-
 		SDK::ASolarVehicleWeapon* VehicleWeapon = LocalVehicle->SeatSlots[0].SeatWeapon;
 		if (!VehicleWeapon)
 			return;
@@ -807,6 +825,7 @@ void XXX::Misc()
 		if (_mainGUI.GetKeyPress(VK_OEM_PLUS, false))
 		{
 			SpectateInfo->ServerChangeLikeValue(50, 2, SDK::ESocialActionType::Like);
+			SpectateInfo->ServerChangeLikeValue(50, 2, SDK::ESocialActionType::Gift);
 		}
 
 		if (_mainGUI.GetKeyPress(VK_OEM_MINUS, false))
@@ -820,27 +839,13 @@ void XXX::Misc()
 		SDK::TArray<SDK::ASolarPlayerState*> Spectators = SpectateInfo->PlayersSpectatingMe;
 		for (int i = 0; i < Spectators.Count(); i++)
 		{
-			SDK::ASolarSpectateInfo* Spectator = Spectators[i]->GetSpectateInfo();
+			SDK::ASolarSpectateInfo* Spectator = Spectators[i]->SpectateInfo;
 			if (!Spectator)
 				continue;
 
 			Spectator->ServerStopSpectateOtherPlayer();
 			Spectator->ServerSpectateNextPlayer();
 		}
-	}
-
-	SDK::ASolarPlayerController* SolarPlayerController = LocalCharacter->GetSolarPlayerController(true);
-	if (!SolarPlayerController)
-		return;
-
-	if (_profiler.gVehicleSpeed.Custom.bValue)
-	{
-		SDK::ASolarVehiclePawn* LocalVehicle = SolarPlayerController->BestInteractingVehicle;
-		if (!LocalVehicle)
-			return;
-
-		LocalVehicle->VehicleAttributeSet->SpeedMultiplier.BaseValue = _profiler.gVehicleSpeedMulti.Custom.flValue;
-		LocalVehicle->VehicleAttributeSet->SpeedMultiplier.CurrentValue = _profiler.gVehicleSpeedMulti.Custom.flValue;
 	}
 }
 

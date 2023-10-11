@@ -21,25 +21,6 @@ struct ClassInfo
 	std::unordered_map<SDK::UFunction*, FuncInfo> oRpcFuncInfoMap;
 };
 
-void SwapVTable(void* Object, void* Hook, uint32_t Index)
-{
-	auto CurrVTable = *(void**)(Object);
-
-	auto VTable = *(void***)(Object);
-	int i = 0;
-
-	for (; VTable[i]; i++)
-		__noop();
-
-	auto NewVTable = new uintptr_t[i];
-
-	memcpy(NewVTable, CurrVTable, i * 0x8);
-
-	NewVTable[Index] = (uintptr_t)Hook;
-
-	*(uintptr_t**)(Object) = NewVTable;
-}
-
 HRESULT WINAPI hkPresent(_In_ IDXGISwapChain* SwapChain, _In_ UINT SyncInterval, _In_ UINT Flags)
 {
 	_mainGUI.Present(SwapChain, SyncInterval, Flags);
@@ -155,17 +136,17 @@ void Initialize()
 	//CreateHook = (decltype(CreateHook))CreateHook_Sig;
 	//CreateHook(hkPresent_Sig, (__int64)&hkPresent, (unsigned __int64*)&oPresent, 1);
 
-	GetShotDir = reinterpret_cast<tGetShotDir>(Engine::FindPattern(xorstr_("SolarlandClient-Win64-Shipping.exe"), xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")));
+	GetShotDir = reinterpret_cast<tGetShotDir>(Signature(xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")).GetPointer());
 	Hook(GetShotDir, hkGetShotDir);
 
-	ShotgunImpact = reinterpret_cast<tShotgunImpact>(Engine::FindPattern(xorstr_("SolarlandClient-Win64-Shipping.exe"), xorstr_("40 53 48 83 EC ? 48 8B D9 E8 ? ? ? ? 48 85 C0 74 ? 48 8B CB E8 ? ? ? ? F3 0F 10 98")));
+	ShotgunImpact = reinterpret_cast<tShotgunImpact>(Signature(xorstr_("40 53 48 83 EC ? 48 8B D9 E8 ? ? ? ? 48 85 C0 74 ? 48 8B CB E8 ? ? ? ? F3 0F 10 98")).GetPointer());
 	Hook(ShotgunImpact, hkShotgunImpact);
 
-	oProcessEvent = reinterpret_cast<tProcessEvent>(Engine::FindPattern(xorstr_("SolarlandClient-Win64-Shipping.exe"), xorstr_("40 55 56 57 41 54 41 55 41 56 41 57 48 81 EC ? ? ? ? 48 8D 6C 24 ? 48 89 9D ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C5 48 89 85 ? ? ? ? 4C 8B E1")));
+	oProcessEvent = reinterpret_cast<tProcessEvent>(Signature(xorstr_("40 55 56 57 41 54 41 55 41 56 41 57 48 81 EC ? ? ? ? 48 8D 6C 24 ? 48 89 9D ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C5 48 89 85 ? ? ? ? 4C 8B E1")).GetPointer());
 	Hook(oProcessEvent, hkProcessEvent);
 
 #ifdef _DEBUG
-	ProcessRemoteFunction = reinterpret_cast<tProcessRemoteFunction>(Engine::FindPattern(xorstr_("SolarlandClient-Win64-Shipping.exe"), xorstr_("4C 89 4C 24 ? 55 53 56 57 41 55 41 57")));
+	ProcessRemoteFunction = reinterpret_cast<tProcessRemoteFunction>(Signature(xorstr_("4C 89 4C 24 ? 55 53 56 57 41 55 41 57")).GetPointer());
 	Hook(ProcessRemoteFunction, hkProcessRemoteFunction);
 #endif
 	printf(xorstr_("Cheat Loaded!\n"));

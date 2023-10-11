@@ -199,6 +199,11 @@ namespace ZyanoCheats
 						if (ImGui::Checkbox(_profiler.gIgnoreKnocked.szLabel, &_profiler.gIgnoreKnocked.Custom.bValue))
 						{
 							Menu.bWriteLog = true;
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 450.0f);
+
+						if (ImGui::Checkbox(_profiler.gVisibleCheck.szLabel, &_profiler.gVisibleCheck.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
 						} ImGui::Spacing();
 
 						if (ImGui::Checkbox(_profiler.gAimPrediction.szLabel, &_profiler.gAimPrediction.Custom.bValue))
@@ -207,6 +212,11 @@ namespace ZyanoCheats
 						} ImGui::SameLine(ImGui::GetCursorPosX() + 225.0f);
 
 						if (ImGui::Checkbox(_profiler.gIgnoreStealth.szLabel, &_profiler.gIgnoreStealth.Custom.bValue))
+						{
+							Menu.bWriteLog = true;
+						} ImGui::SameLine(ImGui::GetCursorPosX() + 450.0f);
+
+						if (ImGui::Checkbox(_profiler.gBulletPenetration.szLabel, &_profiler.gBulletPenetration.Custom.bValue))
 						{
 							Menu.bWriteLog = true;
 						} ImGui::Spacing();
@@ -542,7 +552,13 @@ namespace ZyanoCheats
 					if (ImGui::Checkbox(_profiler.gFastReload.szLabel, &_profiler.gFastReload.Custom.bValue))
 					{
 						Menu.bWriteLog = true;
+					} ImGui::SameLine(ImGui::GetCursorPosX() + 225.0f);
+
+					if (ImGui::Checkbox(_profiler.gVehicleSilentAim.szLabel, &_profiler.gVehicleSilentAim.Custom.bValue))
+					{
+						Menu.bWriteLog = true;
 					} ImGui::Spacing();
+
 
 					if (ImGui::Checkbox(_profiler.gOffscreen.szLabel, &_profiler.gOffscreen.Custom.bValue))
 					{
@@ -582,6 +598,11 @@ namespace ZyanoCheats
 					} ImGui::Spacing();
 
 					if (ImGui::Checkbox(_profiler.gShotgunDamage.szLabel, &_profiler.gShotgunDamage.Custom.bValue))
+					{
+						Menu.bWriteLog = true;
+					} ImGui::Spacing();
+
+					if (ImGui::Checkbox(_profiler.gTest.szLabel, &_profiler.gTest.Custom.bValue))
 					{
 						Menu.bWriteLog = true;
 					} ImGui::Spacing();
@@ -767,8 +788,8 @@ namespace ZyanoCheats
 		ZZZ.BypassEAC();
 
 		ZZZ.Unknown();
-		ZZZ.RemovalPlayer();
-		ZZZ.RemovalVehicle();
+		ZZZ.NoRecoil();
+		ZZZ.Vehicle();
 		ZZZ.Aimbot();
 		ZZZ.Misc();
 		ZZZ.Radar();

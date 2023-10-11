@@ -138,6 +138,8 @@ namespace ZyanoCheats
 		sCvar gHumanScale = { " Human Scale", nullptr, 1.0f, 1.0f, 20.0f };
 		sCvar gIsAiming = { " Is Aiming", nullptr, false, FALSE, TRUE };
 		sCvar gDrawFOV = { " Draw FOV", nullptr, false, FALSE, TRUE };
+		sCvar gVisibleCheck = { " Visible Check", nullptr, false, FALSE, TRUE };
+		sCvar gBulletPenetration = { " Bullet Penetration", nullptr, false, FALSE, TRUE };
 
 		sCvar gPlayerEspEnabled = { " Enabled", nullptr, false, FALSE, TRUE };
 		sCvar gTeamEsp = { " Team", nullptr, false, FALSE, TRUE };
@@ -166,6 +168,7 @@ namespace ZyanoCheats
 
 		sCvar gNoRecoil = { " No Recoil", nullptr, false, FALSE, TRUE };
 		sCvar gVehicleNoRecoil = { " Vehicle No Recoil", nullptr, false, FALSE, TRUE };
+		sCvar gVehicleSilentAim = { " Vehicle Silent Aim", nullptr, false, FALSE, TRUE };
 		sCvar gFastReload = { " Fast Reload", nullptr, false, FALSE, TRUE };
 		sCvar gOffscreen = { " Offscreen", nullptr, false, FALSE, TRUE };
 		sCvar gRadar = { " Radar", nullptr, false, FALSE, TRUE };
@@ -190,6 +193,8 @@ namespace ZyanoCheats
 		sCvar gColorHealthItems = { " Health Color", nullptr, ImVec4(0.839f, 0.682f, 0.003f, 1.0f), 0.0f, 1.0f };
 		sCvar gColorTreasureBox = { " Treasure Box Color", nullptr, ImVec4(0.85f, 0.313f, 0.188f, 1.0f), 0.0f, 1.0f };
 		sCvar gColorAirDrop = { " AirDrop Color", nullptr, ImVec4(0.258f, 0.960f, 0.784f, 1.0f), 0.0f, 1.0f };
+
+		sCvar gTest = { " _TEST", nullptr, false, FALSE, TRUE };
 
 		acut::XmlDoc<char> XML;
 

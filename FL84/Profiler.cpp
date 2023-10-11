@@ -31,6 +31,8 @@ namespace ZyanoCheats
 			XML.set("ZyanoCheats.Aimbot.HumanScale", gHumanScale.Custom.flValue);
 			XML.set("ZyanoCheats.Aimbot.IsAiming", gIsAiming.Custom.bValue);
 			XML.set("ZyanoCheats.Aimbot.DrawFOV", gDrawFOV.Custom.bValue);
+			XML.set("ZyanoCheats.Aimbot.VisibleCheck", gVisibleCheck.Custom.bValue);
+			XML.set("ZyanoCheats.Aimbot.BulletPenetration", gBulletPenetration.Custom.bValue);
 
 			XML.set("ZyanoCheats.Wallhack.PlayerEnabled", gPlayerEspEnabled.Custom.bValue);
 			XML.set("ZyanoCheats.Wallhack.Team", gTeamEsp.Custom.bValue);
@@ -62,6 +64,7 @@ namespace ZyanoCheats
 
 			XML.set("ZyanoCheats.Miscellaneous.NoRecoil", gNoRecoil.Custom.bValue);
 			XML.set("ZyanoCheats.Miscellaneous.VehicleNoRecoil", gVehicleNoRecoil.Custom.bValue);
+			XML.set("ZyanoCheats.Miscellaneous.VehicleSilentAim", gVehicleSilentAim.Custom.bValue);
 			XML.set("ZyanoCheats.Miscellaneous.FastReload", gFastReload.Custom.bValue);
 			XML.set("ZyanoCheats.Miscellaneous.Offscreen", gOffscreen.Custom.bValue);
 			XML.set("ZyanoCheats.Miscellaneous.Radar", gRadar.Custom.bValue);
@@ -157,6 +160,8 @@ namespace ZyanoCheats
 			XML.get_if_present("ZyanoCheats.Aimbot.HumanScale", gHumanScale.Custom.flValue);
 			XML.get_if_present("ZyanoCheats.Aimbot.IsAiming", gIsAiming.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Aimbot.DrawFOV", gDrawFOV.Custom.bValue);
+			XML.get_if_present("ZyanoCheats.Aimbot.VisibleCheck", gVisibleCheck.Custom.bValue);
+			XML.get_if_present("ZyanoCheats.Aimbot.BulletPenetration", gBulletPenetration.Custom.bValue);
 
 			XML.get_if_present("ZyanoCheats.Wallhack.PlayerEnabled", gPlayerEspEnabled.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Wallhack.Team", gTeamEsp.Custom.bValue);
@@ -188,6 +193,7 @@ namespace ZyanoCheats
 
 			XML.get_if_present("ZyanoCheats.Miscellaneous.NoRecoil", gNoRecoil.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Miscellaneous.VehicleNoRecoil", gVehicleNoRecoil.Custom.bValue);
+			XML.get_if_present("ZyanoCheats.Miscellaneous.VehicleSilentAim", gVehicleSilentAim.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Miscellaneous.FastReload", gFastReload.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Miscellaneous.Offscreen", gOffscreen.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Miscellaneous.Radar", gRadar.Custom.bValue);
