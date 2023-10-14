@@ -62,16 +62,16 @@ namespace Math
 		return pOut;
 	}
 
-	SDK::FVector2D WorldToRadar(SDK::FRotator LocalRotation, SDK::FVector LocalPosition, SDK::FVector EntityPosition, SDK::FVector2D RadarPosition, SDK::FVector2D RadarSize)
+	SDK::FVector2D WorldToRadar(SDK::FRotator Rotation, SDK::FVector Position, SDK::FVector EntityPosition, SDK::FVector2D RadarPosition, SDK::FVector2D RadarSize)
 	{
 		SDK::FVector2D DotPos;
 		SDK::FVector2D Direction;
 
 		// Calculate Direction
-		Direction.Y = EntityPosition.X - LocalPosition.X;
-		Direction.X = EntityPosition.Y - LocalPosition.Y;
+		Direction.X = EntityPosition.Y - Position.Y;
+		Direction.Y = EntityPosition.X - Position.X;
 
-		float Radian = DEG2RAD(LocalRotation.Yaw);
+		float Radian = DEG2RAD(Rotation.Yaw);
 
 		// Calculate Raw DotPos
 		DotPos.X = (Direction.X * (float)cos(Radian) - Direction.Y * (float)sin(Radian)) / 150.0f;
@@ -106,7 +106,7 @@ namespace Math
 	{
 		if (Forward.X == 0.f && Forward.Y == 0.f)
 		{
-			Angles.X = Forward.Z < 0.f ? -90.f : 90.f;
+			Angles.X = Forward.Z > 0.f ? -90.f : 90.f;
 			Angles.Y = 0.f;
 		}
 		else
@@ -117,7 +117,7 @@ namespace Math
 		Angles.Z = 0.f;
 	}
 
-	void RotateTriangle(std::array<SDK::FVector2D, 3>& Points, float Rotation)
+	void RotateTriangle(std::array<SDK::FVector, 3>& Points, float Rotation)
 	{
 		const auto PointsCenter = (Points.at(0) + Points.at(1) + Points.at(2)) / 3;
 		for (auto& Point : Points)

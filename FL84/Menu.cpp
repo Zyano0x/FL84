@@ -590,7 +590,33 @@ namespace ZyanoCheats
 						Menu.bWriteLog = true;
 					} ImGui::SameLine();
 					HelpMarker("Key (-)/Key (+) - Like/Dislike");
-					ImGui::Spacing();
+					ImGui::SameLine(ImGui::GetCursorPosX() + 200.0f);
+
+					if (!_profiler.gSpamLike.Custom.bValue)
+					{
+						ImGui::PushItemFlag(ImGuiItemFlags_Disabled, true);
+						ImGui::PushStyleVar(ImGuiStyleVar_Alpha, ImGui::GetStyle().Alpha * 0.5f);
+					}
+					{
+						ImGui::PushItemWidth(130);
+						ImGui::InputInt(_profiler.gLikeValue.szLabel, &_profiler.gLikeValue.Custom.iValue, 1, 100, ImGuiInputTextFlags_CharsDecimal);
+						ImGui::PopItemWidth();
+						ImGui::SameLine();
+						HelpMarker("Max 10m Likes");
+
+						ImGui::SameLine(ImGui::GetCursorPosX() + 460.0f);
+
+						ImGui::PushItemWidth(130);
+						ImGui::InputInt(_profiler.gDislikeValue.szLabel, &_profiler.gDislikeValue.Custom.iValue, 1, 100, ImGuiInputTextFlags_CharsDecimal);
+						ImGui::PopItemWidth();
+						ImGui::SameLine();
+						HelpMarker("Max 10m Dislikes");
+					}
+					if (!_profiler.gSpamLike.Custom.bValue)
+					{
+						ImGui::PopItemFlag();
+						ImGui::PopStyleVar();
+					}
 
 					if (ImGui::Checkbox(_profiler.gStopSpectator.szLabel, &_profiler.gStopSpectator.Custom.bValue))
 					{
@@ -610,7 +636,9 @@ namespace ZyanoCheats
 					if (ImGui::Checkbox(_profiler.gVehicleSpeed.szLabel, &_profiler.gVehicleSpeed.Custom.bValue))
 					{
 						Menu.bWriteLog = true;
-					} ImGui::Spacing();
+					} ImGui::SameLine();
+					HelpMarker("High Risk Ban");
+					ImGui::Spacing();
 
 					if (!_profiler.gVehicleSpeed.Custom.bValue)
 					{

@@ -12,5 +12,5 @@ namespace Math
 	SDK::FVector2D WorldToRadar(SDK::FRotator Rotation, SDK::FVector CameraLocation, SDK::FVector Origin, SDK::FVector2D RadarPosition, SDK::FVector2D RadarSize);
 	SDK::FVector GetDirectionUnitVector(SDK::FVector From, SDK::FVector To);
 	void VectorAnglesRadar(SDK::FVector& Forward, SDK::FVector& Angles);
-	void RotateTriangle(std::array<SDK::FVector2D, 3>& Points, float Rotation);
+	void RotateTriangle(std::array<SDK::FVector, 3>& Points, float Rotation);
 }

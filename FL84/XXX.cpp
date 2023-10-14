@@ -301,7 +301,7 @@ void XXX::Unknown()
 				if (!_profiler.gOffscreen.Custom.bValue) // TODO: Fix Offscreen ESP
 					continue;
 
-				SDK::FVector2D EntityPos = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), SDK::FVector2D(0, 0), SDK::FVector2D(ScreenWidth, ScreenHeight));
+				SDK::FVector2D EntityPos = Math::WorldToRadar(CameraManager->CameraCache.POV.Rotation, CameraManager->CameraCache.POV.Location, Enemy->RootComponent->RelativeLocation, SDK::FVector2D(0, 0), SDK::FVector2D(ScreenWidth, ScreenHeight));
 				int RadarRange = 50;
 
 				SDK::FVector Angles = SDK::FVector();
@@ -313,18 +313,18 @@ void XXX::Unknown()
 				const float PointX = (ScreenWidth / 2) + RadarRange / 2 * 8 * cosf(Yaw);
 				const float PointY = (ScreenHeight / 2) + RadarRange / 2 * 8 * sinf(Yaw);
 
-				std::array<SDK::FVector2D, 3> Points
+				std::array<SDK::FVector, 3> Points
 				{
-					SDK::FVector2D(PointX - 10, PointY - 10),
-					SDK::FVector2D(PointX + 15, PointY),
-					SDK::FVector2D(PointX - 10, PointY + 10)
+					SDK::FVector(PointX - ((90) / 4 + 3.5f) / 2, PointY - ((50) / 4 + 3.5f) / 2, 0.f),
+					SDK::FVector(PointX + ((90) / 4 + 3.5f) / 4, PointY, 0.f),
+					SDK::FVector(PointX - ((90) / 4 + 3.5f) / 2, PointY + ((50) / 4 + 3.5f) / 2, 0.f)
 				};
 
-				Math::RotateTriangle(Points, Angles.Y + 180);
+				Math::RotateTriangle(Points, Angles.Y + 180.f);
 				Draw::DrawTriangle(Points.at(0).X, Points.at(0).Y, Points.at(1).X, Points.at(1).Y, Points.at(2).X, Points.at(2).Y, ImVec4(1.0f, 0.874f, 0.0f, 1.0f));
 			}
 		}
-
+		 
 		if (Actor->IsA(SDK::ASolarItemActor::StaticClass()) || Actor->IsA(SDK::ASolarGroundPreviewActor::StaticClass()))
 		{
 			if (!_profiler.gItemEspEnabled.Custom.bValue)
@@ -332,7 +332,7 @@ void XXX::Unknown()
 
 			SDK::ASolarItemActor* Item = static_cast<SDK::ASolarItemActor*>(Actor);
 
-			SDK::FVector ItemLocation = Item->K2_GetActorLocation();
+			SDK::FVector ItemLocation = Item->RootComponent->RelativeLocation;
 
 			PlayerController->ProjectWorldLocationToScreen(ItemLocation, &ItemPos, false);
 
@@ -471,7 +471,7 @@ void XXX::Unknown()
 
 			SDK::ASolarVehiclePawn* Vehicle = static_cast<SDK::ASolarVehiclePawn*>(Actor);
 
-			SDK::FVector VehicleLocation = Vehicle->K2_GetActorLocation();
+			SDK::FVector VehicleLocation = Vehicle->RootComponent->RelativeLocation;
 
 			PlayerController->ProjectWorldLocationToScreen(VehicleLocation, &VehiclePos, false);
 
@@ -506,7 +506,7 @@ void XXX::NoRecoil()
 
 		uint64_t* VTable = *(uint64_t**)(CachedCurrentWeapon + 0x0);
 
-		printf("0x%llX\n", VTable[235]);
+		printf("0x%llX\n", VTable[206]);
 	}*/
 
 	if (_profiler.gFastReload.Custom.bValue)
@@ -824,13 +824,12 @@ void XXX::Misc()
 	{
 		if (_mainGUI.GetKeyPress(VK_OEM_PLUS, false))
 		{
-			SpectateInfo->ServerChangeLikeValue(50, 2, SDK::ESocialActionType::Like);
-			SpectateInfo->ServerChangeLikeValue(50, 2, SDK::ESocialActionType::Gift);
+			SpectateInfo->ServerChangeLikeValue(_profiler.gLikeValue.Custom.iValue, 2, SDK::ESocialActionType::Like);
 		}
 
 		if (_mainGUI.GetKeyPress(VK_OEM_MINUS, false))
 		{
-			SpectateInfo->ServerChangeLikeValue(-20, -1, SDK::ESocialActionType::Unlike);
+			SpectateInfo->ServerChangeLikeValue(_profiler.gDislikeValue.Custom.iValue, -1, SDK::ESocialActionType::Unlike);
 		}
 	}
 
@@ -839,12 +838,15 @@ void XXX::Misc()
 		SDK::TArray<SDK::ASolarPlayerState*> Spectators = SpectateInfo->PlayersSpectatingMe;
 		for (int i = 0; i < Spectators.Count(); i++)
 		{
-			SDK::ASolarSpectateInfo* Spectator = Spectators[i]->SpectateInfo;
+			SDK::ASolarCharacter* SpectatorCharacter = Spectators[i]->GetSolarCharacter();
+			if (!SpectatorCharacter)
+				continue;
+
+			SDK::ASolarSpectateInfo* Spectator = SpectatorCharacter->GetSpectateInfo();
 			if (!Spectator)
 				continue;
 
 			Spectator->ServerStopSpectateOtherPlayer();
-			Spectator->ServerSpectateNextPlayer();
 		}
 	}
 }

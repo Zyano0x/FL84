@@ -55,6 +55,22 @@ __int64 HOOKCALL hkShotgunImpact(SDK::ASolarPlayerWeapon* Weapon)
 	return Result;
 }
 
+int TargetFunctionIndex = -1;
+void HOOKCALL hkProcessEvent(void* Object, SDK::UFunction* Function, void* Params)
+{
+	if (TargetFunctionIndex == -1)
+		if (Function->GetFullName().compare("Function Solarland.SolarPlayerController.AntiCheatDataSchedulerUpload") == 0)
+			TargetFunctionIndex = Function->Index;
+
+	if (Function->Index == TargetFunctionIndex)
+	{
+		if (SDK::UObject::FindObject<SDK::UScriptStruct>("ScriptStruct Solarland.FixedAntiCheatData") != nullptr)
+			return;
+	}
+
+	return spoof_call(oProcessEvent, Object, Function, Params);
+}
+
 std::unordered_map<SDK::UClass*, ClassInfo> m_oRpcClassInfoMap;
 void LogRPC(SDK::AActor* pActor, SDK::UFunction* pFunc)
 {
@@ -72,7 +88,7 @@ void LogRPC(SDK::AActor* pActor, SDK::UFunction* pFunc)
 
 	oFuncInfo.nCallCount++;
 }
-void HOOKCALL hkProcessRemoteFunction(SDK::UNetDriver* Driver, SDK::AActor* Actor, SDK::UFunction* Function, void* Parameters, SDK::FOutParmRec* OutParms, __int64 Stack, SDK::UObject* SubObject)
+__int64 HOOKCALL hkProcessRemoteFunction(SDK::UNetDriver* Driver, SDK::AActor* Actor, SDK::UFunction* Function, void* Parameters, SDK::FOutParmRec* OutParms, __int64 Stack, SDK::UObject* SubObject)
 {
 	LogRPC(Actor, Function);
 
@@ -86,23 +102,7 @@ void HOOKCALL hkProcessRemoteFunction(SDK::UNetDriver* Driver, SDK::AActor* Acto
 		}
 	}
 
-	spoof_call(ProcessRemoteFunction, Driver, Actor, Function, Parameters, OutParms, Stack, SubObject);
-}
-
-int TargetFunctionIndex = -1;
-void HOOKCALL hkProcessEvent(void* Object, SDK::UFunction* Function, void* Params)
-{
-	if (TargetFunctionIndex == -1)
-		if (Function->GetFullName().compare("Function Solarland.SolarPlayerController.AntiCheatDataSchedulerUpload") == 0)
-			TargetFunctionIndex = Function->Index;
-
-	if (Function->Index == TargetFunctionIndex)
-	{
-		if (SDK::UObject::FindObject<SDK::UScriptStruct>("ScriptStruct Solarland.FixedAntiCheatData") != nullptr)
-			return;
-	}
-
-	return spoof_call(oProcessEvent, Object, Function, Params);
+	return spoof_call(ProcessRemoteFunction, Driver, Actor, Function, Parameters, OutParms, Stack, SubObject);
 }
 
 void Initialize()

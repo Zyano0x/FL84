@@ -76,9 +76,11 @@ namespace ZyanoCheats
 
 			XML.set("ZyanoCheats.Exploits.StopSpectator", gStopSpectator.Custom.bValue);
 			XML.set("ZyanoCheats.Exploits.SpamLike", gSpamLike.Custom.bValue);
+			XML.set("ZyanoCheats.Exploits.LikeValue", gLikeValue.Custom.iValue);
+			XML.set("ZyanoCheats.Exploits.DislikeValue", gDislikeValue.Custom.iValue);
 			XML.set("ZyanoCheats.Exploits.ShotgunDamage", gShotgunDamage.Custom.bValue);
 			XML.set("ZyanoCheats.Exploits.VehicleSpeed", gVehicleSpeed.Custom.bValue);
-			XML.set("ZyanoCheats.Exploits.VehicleSpeed", gVehicleSpeed.Custom.flValue);
+			XML.set("ZyanoCheats.Exploits.VehicleSpeed", gVehicleSpeedMulti.Custom.flValue);
 
 			XML.set("ZyanoCheats.Styles.ColorTeammate.Red", gColorTeammate.Custom.cValue[0]);
 			XML.set("ZyanoCheats.Styles.ColorTeammate.Green", gColorTeammate.Custom.cValue[1]);
@@ -203,9 +205,11 @@ namespace ZyanoCheats
 
 			XML.get_if_present("ZyanoCheats.Exploits.StopSpectator", gStopSpectator.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Exploits.SpamLike", gSpamLike.Custom.bValue);
+			XML.get_if_present("ZyanoCheats.Exploits.LikeValue", gLikeValue.Custom.iValue);
+			XML.get_if_present("ZyanoCheats.Exploits.DislikeValue", gDislikeValue.Custom.iValue);
 			XML.get_if_present("ZyanoCheats.Exploits.ShotgunDamage", gShotgunDamage.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Exploits.VehicleSpeed", gVehicleSpeed.Custom.bValue);
-			XML.get_if_present("ZyanoCheats.Exploits.VehicleSpeed", gVehicleSpeed.Custom.flValue);
+			XML.get_if_present("ZyanoCheats.Exploits.VehicleSpeed", gVehicleSpeedMulti.Custom.flValue);
 
 			XML.get_if_present("ZyanoCheats.Styles.ColorTeammate.Red", gColorTeammate.Custom.cValue[0]);
 			XML.get_if_present("ZyanoCheats.Styles.ColorTeammate.Green", gColorTeammate.Custom.cValue[1]);
