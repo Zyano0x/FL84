@@ -139,6 +139,7 @@ namespace ZyanoCheats
 		sCvar gIsAiming = { " Is Aiming", nullptr, false, FALSE, TRUE };
 		sCvar gDrawFOV = { " Draw FOV", nullptr, false, FALSE, TRUE };
 		sCvar gVisibleCheck = { " Visible Check", nullptr, false, FALSE, TRUE };
+		sCvar gAimLine = { " Aimbot Line", nullptr, false, FALSE, TRUE };
 		sCvar gBulletPenetration = { " Bullet Penetration", nullptr, false, FALSE, TRUE };
 
 		sCvar gPlayerEspEnabled = { " Enabled", nullptr, false, FALSE, TRUE };

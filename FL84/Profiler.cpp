@@ -32,6 +32,7 @@ namespace ZyanoCheats
 			XML.set("ZyanoCheats.Aimbot.IsAiming", gIsAiming.Custom.bValue);
 			XML.set("ZyanoCheats.Aimbot.DrawFOV", gDrawFOV.Custom.bValue);
 			XML.set("ZyanoCheats.Aimbot.VisibleCheck", gVisibleCheck.Custom.bValue);
+			XML.set("ZyanoCheats.Aimbot.AimLine", gAimLine.Custom.bValue);
 			XML.set("ZyanoCheats.Aimbot.BulletPenetration", gBulletPenetration.Custom.bValue);
 
 			XML.set("ZyanoCheats.Wallhack.PlayerEnabled", gPlayerEspEnabled.Custom.bValue);
@@ -80,7 +81,7 @@ namespace ZyanoCheats
 			XML.set("ZyanoCheats.Exploits.DislikeValue", gDislikeValue.Custom.iValue);
 			XML.set("ZyanoCheats.Exploits.ShotgunDamage", gShotgunDamage.Custom.bValue);
 			XML.set("ZyanoCheats.Exploits.VehicleSpeed", gVehicleSpeed.Custom.bValue);
-			XML.set("ZyanoCheats.Exploits.VehicleSpeed", gVehicleSpeedMulti.Custom.flValue);
+			XML.set("ZyanoCheats.Exploits.VehicleSpeedMulti", gVehicleSpeedMulti.Custom.flValue);
 
 			XML.set("ZyanoCheats.Styles.ColorTeammate.Red", gColorTeammate.Custom.cValue[0]);
 			XML.set("ZyanoCheats.Styles.ColorTeammate.Green", gColorTeammate.Custom.cValue[1]);
@@ -163,6 +164,7 @@ namespace ZyanoCheats
 			XML.get_if_present("ZyanoCheats.Aimbot.IsAiming", gIsAiming.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Aimbot.DrawFOV", gDrawFOV.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Aimbot.VisibleCheck", gVisibleCheck.Custom.bValue);
+			XML.get_if_present("ZyanoCheats.Aimbot.AimLine", gAimLine.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Aimbot.BulletPenetration", gBulletPenetration.Custom.bValue);
 
 			XML.get_if_present("ZyanoCheats.Wallhack.PlayerEnabled", gPlayerEspEnabled.Custom.bValue);
@@ -209,7 +211,7 @@ namespace ZyanoCheats
 			XML.get_if_present("ZyanoCheats.Exploits.DislikeValue", gDislikeValue.Custom.iValue);
 			XML.get_if_present("ZyanoCheats.Exploits.ShotgunDamage", gShotgunDamage.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Exploits.VehicleSpeed", gVehicleSpeed.Custom.bValue);
-			XML.get_if_present("ZyanoCheats.Exploits.VehicleSpeed", gVehicleSpeedMulti.Custom.flValue);
+			XML.get_if_present("ZyanoCheats.Exploits.VehicleSpeedMulti", gVehicleSpeedMulti.Custom.flValue);
 
 			XML.get_if_present("ZyanoCheats.Styles.ColorTeammate.Red", gColorTeammate.Custom.cValue[0]);
 			XML.get_if_present("ZyanoCheats.Styles.ColorTeammate.Green", gColorTeammate.Custom.cValue[1]);

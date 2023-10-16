@@ -62,6 +62,8 @@ namespace ZyanoCheats
 		style->ScrollbarRounding = 12.f;
 		style->GrabRounding = 5.f;
 		style->GrabMinSize = 7.f;
+		style->CurveTessellationTol = 1.f;
+		style->AntiAliasedLines = true;
 
 		ImVec4* colors = ImGui::GetStyle().Colors;
 
@@ -216,7 +218,7 @@ namespace ZyanoCheats
 							Menu.bWriteLog = true;
 						} ImGui::SameLine(ImGui::GetCursorPosX() + 450.0f);
 
-						if (ImGui::Checkbox(_profiler.gBulletPenetration.szLabel, &_profiler.gBulletPenetration.Custom.bValue))
+						if (ImGui::Checkbox(_profiler.gAimLine.szLabel, &_profiler.gAimLine.Custom.bValue))
 						{
 							Menu.bWriteLog = true;
 						} ImGui::Spacing();
@@ -542,7 +544,7 @@ namespace ZyanoCheats
 					if (ImGui::Checkbox(_profiler.gNoRecoil.szLabel, &_profiler.gNoRecoil.Custom.bValue))
 					{
 						Menu.bWriteLog = true;
-					} ImGui::SameLine(ImGui::GetCursorPosX() + 225.0f);
+					} ImGui::SameLine(ImGui::GetCursorPosX() + 200.0f);
 
 					if (ImGui::Checkbox(_profiler.gVehicleNoRecoil.szLabel, &_profiler.gVehicleNoRecoil.Custom.bValue))
 					{
@@ -552,7 +554,7 @@ namespace ZyanoCheats
 					if (ImGui::Checkbox(_profiler.gFastReload.szLabel, &_profiler.gFastReload.Custom.bValue))
 					{
 						Menu.bWriteLog = true;
-					} ImGui::SameLine(ImGui::GetCursorPosX() + 225.0f);
+					} ImGui::SameLine(ImGui::GetCursorPosX() + 200.0f);
 
 					if (ImGui::Checkbox(_profiler.gVehicleSilentAim.szLabel, &_profiler.gVehicleSilentAim.Custom.bValue))
 					{
@@ -611,6 +613,8 @@ namespace ZyanoCheats
 						ImGui::PopItemWidth();
 						ImGui::SameLine();
 						HelpMarker("Max 10m Dislikes");
+
+						ImGui::Spacing();
 					}
 					if (!_profiler.gSpamLike.Custom.bValue)
 					{
@@ -621,12 +625,17 @@ namespace ZyanoCheats
 					if (ImGui::Checkbox(_profiler.gStopSpectator.szLabel, &_profiler.gStopSpectator.Custom.bValue))
 					{
 						Menu.bWriteLog = true;
-					} ImGui::Spacing();
+					} ImGui::SameLine(ImGui::GetCursorPosX() + 200.0f);
 
 					if (ImGui::Checkbox(_profiler.gShotgunDamage.szLabel, &_profiler.gShotgunDamage.Custom.bValue))
 					{
 						Menu.bWriteLog = true;
 					} ImGui::Spacing();
+
+					if (ImGui::Checkbox(_profiler.gBulletPenetration.szLabel, &_profiler.gBulletPenetration.Custom.bValue))
+					{
+						Menu.bWriteLog = true;
+					} ImGui::SameLine(ImGui::GetCursorPosX() + 200.0f);
 
 					if (ImGui::Checkbox(_profiler.gTest.szLabel, &_profiler.gTest.Custom.bValue))
 					{

@@ -9,46 +9,20 @@ namespace Aimbot
 	SDK::FVector TargetPosition = SDK::FVector();
 	SDK::FRotator TargetRotation = SDK::FRotator();
 
-	float Normalize(float angle)
+	SDK::FRotator CalcAngle(SDK::FVector src, SDK::FVector dst, SDK::FRotator oldRotation, float smoothing)
 	{
-		float out = fmodf(fmodf(angle, 360.f) + 360.f, 360.f);
-		if (out > 180.f)
-			out -= 360.f;
-		return out;
-	}
+		SDK::FVector Dir = ZZZ.MathLibrary->Subtract_VectorVector(dst, src);
+		SDK::FRotator Yaptr = ZZZ.MathLibrary->Conv_VectorToRotator(Dir);
+		SDK::FRotator CpYaT = oldRotation;
+		Yaptr.Pitch -= CpYaT.Pitch;
+		Yaptr.Yaw -= CpYaT.Yaw;
+		Yaptr.Roll = 0.f;
+		Yaptr.Clamp();
+		CpYaT.Pitch += Yaptr.Pitch / smoothing; //AIMSPEED HORIZON
+		CpYaT.Yaw += Yaptr.Yaw / smoothing; // AIMSPEED VERTICAL
+		CpYaT.Roll = 0.f;
 
-	float SmoothOutYaw(float targetYaw, float currentYaw, float smoothness)
-	{
-		if (targetYaw > 0.f && currentYaw < 0.f)
-		{
-			float dist = 180.f - targetYaw + 180.f + currentYaw;
-			if (dist < 180.f)
-				return currentYaw - dist / smoothness;
-		}
-		else if (currentYaw > 0.f && targetYaw < 0.f)
-		{
-			float dist = 180.f - currentYaw + 180.f + targetYaw;
-			if (dist < 180.f)
-				return currentYaw + dist / smoothness;
-		}
-
-		return currentYaw + (targetYaw - currentYaw) / smoothness;
-	}
-
-	SDK::FRotator CalcAngle(SDK::FVector& src, SDK::FVector& dst, SDK::FRotator& oldRotation, float& smoothing)
-	{
-		SDK::FVector delta = dst - src;
-
-		float dist = sqrtf(delta.X * delta.X + delta.Y * delta.Y + delta.Z * delta.Z);
-		float pitch = (-((acosf((delta.Z / dist)) * 180.0f / IM_PI) - 90.0f));
-		float yaw = atan2f(delta.Y, delta.X) * (180.0f / IM_PI);
-
-		SDK::FVector ret;
-		ret.X = oldRotation.Pitch + (pitch - oldRotation.Pitch) / smoothing;
-		ret.Y = SmoothOutYaw(yaw, oldRotation.Yaw, smoothing);
-		ret.Normalize(); // makes the angles work for Sword With Sauce's angle system
-
-		return { ret.X, ret.Y, 0 };
+		return CpYaT;
 	}
 
 	SDK::FVector2D Randomize(SDK::FVector2D vAngles, float HumanSpeed, float HumanScale)
@@ -182,7 +156,7 @@ namespace Aimbot
 		}
 	}
 
-	void SetRotation(SDK::APlayerCameraManager* PlayerCameraManager, SDK::APlayerController* PlayerController, SDK::FRotator TargetRotation, bool bWithRotationInput, float Smooth)
+	void SetRotation(SDK::APlayerCameraManager* PlayerCameraManager, SDK::APlayerController* PlayerController, SDK::FRotator TargetRotation, bool bWithRotationInput)
 	{
 		uint64_t v11 = reinterpret_cast<uint64_t>(PlayerController) + 0x6A0;
 		uint64_t v10 = reinterpret_cast<uint64_t>(PlayerCameraManager) + 0x299C;

@@ -67,8 +67,7 @@ public:
 	SDK::APlayerController* PlayerController;
 	SDK::APlayerCameraManager* CameraManager;
 
-	SDK::UGameplayStatics* GameplayStatics;
-
+	SDK::UKismetMathLibrary* MathLibrary;
 private:
 	bool IsTeam;
 	ImVec4 ColorVisisble;

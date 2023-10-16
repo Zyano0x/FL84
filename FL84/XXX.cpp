@@ -22,6 +22,10 @@ bool XXX::SanityCheck()
 	if (!CameraManager)
 		return false;
 
+	MathLibrary = SDK::UKismetMathLibrary::GetDefaultObj();
+	if (!MathLibrary)
+		return false;
+
 	return true;
 }
 
@@ -30,11 +34,11 @@ void XXX::Unknown()
 	if (!SanityCheck())
 		return;
 
+	PlayerController->GetViewportSize(&ScreenWidth, &ScreenHeight);
+
 	SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
 	if (!LocalCharacter)
 		return;
-
-	PlayerController->GetViewportSize(&ScreenWidth, &ScreenHeight);
 
 	SDK::TArray<SDK::AActor*> Actors = *(SDK::TArray<SDK::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
 	for (int i = 0; i < Actors.Count(); i++)
@@ -130,7 +134,7 @@ void XXX::Unknown()
 					Draw::DrawString(std::string("[" + std::to_string(Distance) + " M]"), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 
 					if (Enemy->IsInVehicle())
-						Draw::DrawString(std::string(xorstr_("[In Vehicle]")), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+						Draw::DrawString(xorstr_("[In Vehicle]"), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 				}
 				else if (!_profiler.gPlayerDistance.Custom.bValue && _profiler.gPlayerWeapon.Custom.bValue)
 				{
@@ -143,10 +147,10 @@ void XXX::Unknown()
 						AmmoClip = std::to_string(Enemy->CachedCurrentWeapon->CurrentClipAmmo);
 					}
 
-					Draw::DrawString(std::string(Weapon).append(" | ").append(AmmoClip), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+					Draw::DrawString(Weapon.append(" | ").append(AmmoClip), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 
 					if (Enemy->IsInVehicle())
-						Draw::DrawString(std::string(xorstr_("[In Vehicle]")), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+						Draw::DrawString(xorstr_("[In Vehicle]"), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 				}
 				else if (_profiler.gPlayerDistance.Custom.bValue && _profiler.gPlayerWeapon.Custom.bValue)
 				{
@@ -161,11 +165,11 @@ void XXX::Unknown()
 						AmmoClip = std::to_string(Enemy->CachedCurrentWeapon->CurrentClipAmmo);
 					}
 
-					Draw::DrawString(std::string(Weapon).append(" | ").append(AmmoClip), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+					Draw::DrawString(Weapon.append(" | ").append(AmmoClip), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 					Draw::DrawString(std::string("[" + std::to_string(Distance) + " M]"), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 
 					if (Enemy->IsInVehicle())
-						Draw::DrawString(std::string(xorstr_("[In Vehicle]")), (Left + Right) / 2, Bottom + 35, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+						Draw::DrawString(xorstr_("[In Vehicle]"), (Left + Right) / 2, Bottom + 35, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 				}
 
 				if (_profiler.gPlayerHealth.Custom.bValue)
@@ -301,7 +305,7 @@ void XXX::Unknown()
 				if (!_profiler.gOffscreen.Custom.bValue) // TODO: Fix Offscreen ESP
 					continue;
 
-				SDK::FVector2D EntityPos = Math::WorldToRadar(CameraManager->CameraCache.POV.Rotation, CameraManager->CameraCache.POV.Location, Enemy->RootComponent->RelativeLocation, SDK::FVector2D(0, 0), SDK::FVector2D(ScreenWidth, ScreenHeight));
+				SDK::FVector2D EntityPos = Math::WorldToRadar(CameraManager->CameraCache.POV.Rotation,  LocalCharacter->RootComponent->RelativeLocation, Enemy->RootComponent->RelativeLocation, SDK::FVector2D(0, 0), SDK::FVector2D(ScreenWidth, ScreenHeight));
 				int RadarRange = 50;
 
 				SDK::FVector Angles = SDK::FVector();
@@ -320,7 +324,7 @@ void XXX::Unknown()
 					SDK::FVector(PointX - ((90) / 4 + 3.5f) / 2, PointY + ((50) / 4 + 3.5f) / 2, 0.f)
 				};
 
-				Math::RotateTriangle(Points, Angles.Y + 180.f);
+				Math::RotateTriangle(Points, Angles.Y);
 				Draw::DrawTriangle(Points.at(0).X, Points.at(0).Y, Points.at(1).X, Points.at(1).Y, Points.at(2).X, Points.at(2).Y, ImVec4(1.0f, 0.874f, 0.0f, 1.0f));
 			}
 		}
@@ -506,7 +510,7 @@ void XXX::NoRecoil()
 
 		uint64_t* VTable = *(uint64_t**)(CachedCurrentWeapon + 0x0);
 
-		printf("0x%llX\n", VTable[206]);
+		printf("0x%llX\n", VTable[235]);
 	}*/
 
 	if (_profiler.gFastReload.Custom.bValue)
@@ -672,8 +676,9 @@ void XXX::Aimbot()
 	if (!LocalCharacter)
 		return;
 
+	SDK::FVector2D TargetLine = SDK::FVector2D();
 	SDK::FVector LocalLocation = LocalCharacter->GetCameraLocation();
-	SDK::FRotator OldRotation = LocalCharacter->GetControlRotation();
+	SDK::FRotator OldRotation = LocalCharacter->GetCameraRotation();
 
 	if (_profiler.gDrawFOV.Custom.bValue)
 	{
@@ -774,18 +779,23 @@ void XXX::Aimbot()
 			if (CenterDistance < Aimbot::ClosestDistance && CenterDistance <= _profiler.gAimFOV.Custom.flValue)
 			{
 				Aimbot::ClosestDistance = CenterDistance;
-				Aimbot::LockPosition = TargetPos;
-				Aimbot::TargetPosition = Aimbot::CurrentPosition;
-				Aimbot::TargetRotation = Aimbot::CalcAngle(LocalLocation, Aimbot::CurrentPosition, OldRotation, _profiler.gAimSmooth.Custom.flValue);
+				Aimbot::LockPosition = TargetPos; // Mouse Event
+				Aimbot::TargetPosition = Aimbot::CurrentPosition; // Silent
+				Aimbot::TargetRotation = Aimbot::CalcAngle(LocalLocation, Aimbot::CurrentPosition, OldRotation, _profiler.gAimSmooth.Custom.flValue); // Memory
+				TargetLine = TargetPos; // Aim Line
 			}
 		}
 	}
 
-	//Draw::DrawLine(ScreenWidth / 2, ScreenHeight / 2, Aimbot::LockPosition.X, Aimbot::LockPosition.Y, 1.f, ImVec4(1.f, 0.141f, 0.f, 1.f));
+	if (_profiler.gAimLine.Custom.bValue)
+	{
+		if (!TargetLine.IsValid())
+			Draw::DrawLine(ScreenWidth / 2, ScreenHeight / 2, TargetLine.X, TargetLine.Y, 1.f, ImVec4(1.f, 0.141f, 0.f, 1.f));
+	}
 
 	if (_profiler.gAimType.Custom.iValue == 0)
 	{
-		Aimbot::SetRotation(PlayerController->PlayerCameraManager, PlayerController, Aimbot::TargetRotation, false, _profiler.gAimSmooth.Custom.flValue);
+		Aimbot::SetRotation(PlayerController->PlayerCameraManager, PlayerController, Aimbot::TargetRotation, false);
 	}
 	else if (_profiler.gAimType.Custom.iValue == 1)
 	{
@@ -801,7 +811,7 @@ void XXX::Misc()
 	SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
 	if (!LocalCharacter)
 		return;
-
+	
 	if (_mainGUI.GetKeyPress(VK_DELETE, false))
 	{
 		LocalCharacter->Suicide();
@@ -825,6 +835,7 @@ void XXX::Misc()
 		if (_mainGUI.GetKeyPress(VK_OEM_PLUS, false))
 		{
 			SpectateInfo->ServerChangeLikeValue(_profiler.gLikeValue.Custom.iValue, 2, SDK::ESocialActionType::Like);
+			SpectateInfo->ServerChangeLikeValue(_profiler.gLikeValue.Custom.iValue, 2, SDK::ESocialActionType::Gift);
 		}
 
 		if (_mainGUI.GetKeyPress(VK_OEM_MINUS, false))
@@ -832,6 +843,10 @@ void XXX::Misc()
 			SpectateInfo->ServerChangeLikeValue(_profiler.gDislikeValue.Custom.iValue, -1, SDK::ESocialActionType::Unlike);
 		}
 	}
+
+	SDK::ASolarPlayerState* PlayerState = LocalCharacter->GetSolarPlayerState();
+	if (!PlayerState)
+		return;
 
 	if (_profiler.gStopSpectator.Custom.bValue)
 	{
@@ -847,6 +862,9 @@ void XXX::Misc()
 				continue;
 
 			Spectator->ServerStopSpectateOtherPlayer();
+			Spectator->ServerStopSpectateOtherPlayer_Internal();
+
+			PlayerState->OnOtherPlayerStopSpectateMe(Spectators[i], Spectator);
 		}
 	}
 }
