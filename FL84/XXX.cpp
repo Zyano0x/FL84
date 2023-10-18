@@ -677,8 +677,8 @@ void XXX::Aimbot()
 		return;
 
 	SDK::FVector2D TargetLine = SDK::FVector2D();
-	SDK::FVector LocalLocation = LocalCharacter->GetCameraLocation();
-	SDK::FRotator OldRotation = LocalCharacter->GetCameraRotation();
+	SDK::FVector Location = CameraManager->GetCameraLocation();
+	SDK::FRotator Rotation = CameraManager->GetCameraRotation();
 
 	if (_profiler.gDrawFOV.Custom.bValue)
 	{
@@ -733,11 +733,11 @@ void XXX::Aimbot()
 
 			case 2:
 				Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(SPINE_03);
-				Aimbot::AimPosition.Y -= 10;
+				Aimbot::AimPosition.Z -= 10;
 				break;
 
 			case 3:
-				int Point = Engine::GetNearestBone(PlayerController->PlayerCameraManager, Enemy, Engine::HitBoxes);
+				int Point = Engine::GetNearestBone(CameraManager, Enemy, Engine::HitBoxes);
 				Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(Point);
 				break;
 			}
@@ -758,10 +758,26 @@ void XXX::Aimbot()
 
 				float BulletSpeed = AmmoConfig->InitSpeed / 100.f;
 				float BulletGravity = AmmoConfig->ProjectileMaxGravity;
-				float Distance = LocalLocation.Distance(Aimbot::AimPosition) / 100.f;
+				float Distance = Location.Distance(Aimbot::AimPosition) / 100.f;
 
-				SDK::FVector Velocity = Enemy->RootComponent->ComponentVelocity;
-				Aimbot::CurrentPosition = Aimbot::AimbotPrediction(BulletSpeed, BulletGravity, Distance, Aimbot::AimPosition, Velocity);
+				if (Enemy->IsInVehicle())
+				{
+					SDK::ASolarPlayerController* SolarEnemyController = Enemy->GetSolarPlayerController(true);
+					if (!SolarEnemyController)
+						return;
+
+					SDK::ASolarVehiclePawn* EnemyVehicle = SolarEnemyController->BestInteractingVehicle;
+					if (!EnemyVehicle)
+						return;
+
+					SDK::FVector LinearVelocity = EnemyVehicle->ReplicatedMovement.LinearVelocity;
+					Aimbot::CurrentPosition = Aimbot::AimbotPrediction(BulletSpeed, BulletGravity, Distance, Aimbot::AimPosition, LinearVelocity);
+				}
+				else
+				{
+					SDK::FVector Velocity = Enemy->RootComponent->ComponentVelocity;
+					Aimbot::CurrentPosition = Aimbot::AimbotPrediction(BulletSpeed, BulletGravity, Distance, Aimbot::AimPosition, Velocity);
+				}
 			}
 			else
 			{
@@ -781,7 +797,7 @@ void XXX::Aimbot()
 				Aimbot::ClosestDistance = CenterDistance;
 				Aimbot::LockPosition = TargetPos; // Mouse Event
 				Aimbot::TargetPosition = Aimbot::CurrentPosition; // Silent
-				Aimbot::TargetRotation = Aimbot::CalcAngle(LocalLocation, Aimbot::CurrentPosition, OldRotation, _profiler.gAimSmooth.Custom.flValue); // Memory
+				Aimbot::TargetRotation = Aimbot::CalcAngle(Location, Aimbot::CurrentPosition, Rotation, _profiler.gAimSmooth.Custom.flValue); // Memory
 				TargetLine = TargetPos; // Aim Line
 			}
 		}
@@ -795,7 +811,7 @@ void XXX::Aimbot()
 
 	if (_profiler.gAimType.Custom.iValue == 0)
 	{
-		Aimbot::SetRotation(PlayerController->PlayerCameraManager, PlayerController, Aimbot::TargetRotation, false);
+		Aimbot::SetRotation(CameraManager, PlayerController, Aimbot::TargetRotation, false);
 	}
 	else if (_profiler.gAimType.Custom.iValue == 1)
 	{

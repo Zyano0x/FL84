@@ -158,8 +158,8 @@ namespace Aimbot
 
 	void SetRotation(SDK::APlayerCameraManager* PlayerCameraManager, SDK::APlayerController* PlayerController, SDK::FRotator TargetRotation, bool bWithRotationInput)
 	{
-		uint64_t v11 = reinterpret_cast<uint64_t>(PlayerController) + 0x6A0;
 		uint64_t v10 = reinterpret_cast<uint64_t>(PlayerCameraManager) + 0x299C;
+		uint64_t v11 = reinterpret_cast<uint64_t>(PlayerController) + 0x6C0;
 
 		if (!bWithRotationInput)
 			v11 = v10;
