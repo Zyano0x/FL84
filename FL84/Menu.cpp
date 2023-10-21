@@ -632,10 +632,12 @@ namespace ZyanoCheats
 						Menu.bWriteLog = true;
 					} ImGui::Spacing();
 
-					if (ImGui::Checkbox(_profiler.gBulletPenetration.szLabel, &_profiler.gBulletPenetration.Custom.bValue))
+					if (ImGui::Checkbox(_profiler.gFastSpectating.szLabel, &_profiler.gFastSpectating.Custom.bValue))
 					{
 						Menu.bWriteLog = true;
-					} ImGui::SameLine(ImGui::GetCursorPosX() + 200.0f);
+					} ImGui::SameLine();
+					HelpMarker(xorstr_("Left Arrow/Right Arrow"));
+					ImGui::SameLine(ImGui::GetCursorPosX() + 200.0f);
 
 					if (ImGui::Checkbox(_profiler.gTest.szLabel, &_profiler.gTest.Custom.bValue))
 					{

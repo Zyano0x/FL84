@@ -11,7 +11,7 @@ namespace Aimbot
 	extern SDK::FRotator TargetRotation;
 
 	SDK::FRotator CalcAngle(SDK::FVector src, SDK::FVector dst, SDK::FRotator oldRotation, float smoothing);
-	SDK::FVector AimbotPrediction(float bulletVelocity, float bulletGravity, float targetDistance, SDK::FVector targetPosition, SDK::FVector targetVelocity);
+	SDK::FVector Prediction(float bulletVelocity, float bulletGravity, float targetDistance, SDK::FVector targetPosition, SDK::FVector targetVelocity);
 	void ResetLock();
 	void LockOnTarget();
 	void SetRotation(SDK::APlayerCameraManager* PlayerCameraManager, SDK::APlayerController* PlayerController, SDK::FRotator TargetRotation, bool bWithRotationInput);

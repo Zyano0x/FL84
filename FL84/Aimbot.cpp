@@ -71,7 +71,7 @@ namespace Aimbot
 		return vAngles;
 	}
 
-	SDK::FVector AimbotPrediction(float bulletVelocity, float bulletGravity, float targetDistance, SDK::FVector targetPosition, SDK::FVector targetVelocity)
+	SDK::FVector Prediction(float bulletVelocity, float bulletGravity, float targetDistance, SDK::FVector targetPosition, SDK::FVector targetVelocity)
 	{
 		SDK::FVector recalculated = targetPosition;
 		float gravity = fabs(bulletGravity);

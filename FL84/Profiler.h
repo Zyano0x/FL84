@@ -180,6 +180,7 @@ namespace ZyanoCheats
 		sCvar gRadarSizeY = { " Radar Size Y", nullptr, 0.0f, 0.0f, FLT_MAX };
 
 		sCvar gStopSpectator = { " Stop Spectator", nullptr, false, FALSE, TRUE };
+		sCvar gFastSpectating = { " Fast Spectating", nullptr, false, FALSE, TRUE };
 		sCvar gSpamLike = { " Spam Like", nullptr, false, FALSE, TRUE };
 		sCvar gLikeValue = { " Like", nullptr, 100, 1, 10000000 };
 		sCvar gDislikeValue = { " Dislike", nullptr, -100, -1, -10000000 };

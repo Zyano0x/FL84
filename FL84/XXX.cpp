@@ -305,7 +305,7 @@ void XXX::Unknown()
 				if (!_profiler.gOffscreen.Custom.bValue) // TODO: Fix Offscreen ESP
 					continue;
 
-				SDK::FVector2D EntityPos = Math::WorldToRadar(CameraManager->CameraCache.POV.Rotation,  LocalCharacter->RootComponent->RelativeLocation, Enemy->RootComponent->RelativeLocation, SDK::FVector2D(0, 0), SDK::FVector2D(ScreenWidth, ScreenHeight));
+				SDK::FVector2D EntityPos = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->RootComponent->RelativeLocation, SDK::FVector2D(0, 0), SDK::FVector2D(ScreenWidth, ScreenHeight));
 				int RadarRange = 50;
 
 				SDK::FVector Angles = SDK::FVector();
@@ -313,7 +313,7 @@ void XXX::Unknown()
 
 				Math::VectorAnglesRadar(Forward, Angles);
 
-				const auto Yaw = DEG2RAD(Angles.Y);
+				const auto Yaw = DEG2RAD(Angles.Y + 180.f);
 				const float PointX = (ScreenWidth / 2) + RadarRange / 2 * 8 * cosf(Yaw);
 				const float PointY = (ScreenHeight / 2) + RadarRange / 2 * 8 * sinf(Yaw);
 
@@ -324,11 +324,11 @@ void XXX::Unknown()
 					SDK::FVector(PointX - ((90) / 4 + 3.5f) / 2, PointY + ((50) / 4 + 3.5f) / 2, 0.f)
 				};
 
-				Math::RotateTriangle(Points, Angles.Y);
+				Math::RotateTriangle(Points, Angles.Y + 180.f);
 				Draw::DrawTriangle(Points.at(0).X, Points.at(0).Y, Points.at(1).X, Points.at(1).Y, Points.at(2).X, Points.at(2).Y, ImVec4(1.0f, 0.874f, 0.0f, 1.0f));
 			}
 		}
-		 
+
 		if (Actor->IsA(SDK::ASolarItemActor::StaticClass()) || Actor->IsA(SDK::ASolarGroundPreviewActor::StaticClass()))
 		{
 			if (!_profiler.gItemEspEnabled.Custom.bValue)
@@ -760,24 +760,8 @@ void XXX::Aimbot()
 				float BulletGravity = AmmoConfig->ProjectileMaxGravity;
 				float Distance = Location.Distance(Aimbot::AimPosition) / 100.f;
 
-				if (Enemy->IsInVehicle())
-				{
-					SDK::ASolarPlayerController* SolarEnemyController = Enemy->GetSolarPlayerController(true);
-					if (!SolarEnemyController)
-						return;
-
-					SDK::ASolarVehiclePawn* EnemyVehicle = SolarEnemyController->BestInteractingVehicle;
-					if (!EnemyVehicle)
-						return;
-
-					SDK::FVector LinearVelocity = EnemyVehicle->ReplicatedMovement.LinearVelocity;
-					Aimbot::CurrentPosition = Aimbot::AimbotPrediction(BulletSpeed, BulletGravity, Distance, Aimbot::AimPosition, LinearVelocity);
-				}
-				else
-				{
-					SDK::FVector Velocity = Enemy->RootComponent->ComponentVelocity;
-					Aimbot::CurrentPosition = Aimbot::AimbotPrediction(BulletSpeed, BulletGravity, Distance, Aimbot::AimPosition, Velocity);
-				}
+				SDK::FVector Velocity = Enemy->RootComponent->ComponentVelocity;
+				Aimbot::CurrentPosition = Aimbot::Prediction(BulletSpeed, BulletGravity, Distance, Aimbot::AimPosition, Velocity);
 			}
 			else
 			{
@@ -827,7 +811,7 @@ void XXX::Misc()
 	SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
 	if (!LocalCharacter)
 		return;
-	
+
 	if (_mainGUI.GetKeyPress(VK_DELETE, false))
 	{
 		LocalCharacter->Suicide();
@@ -857,6 +841,19 @@ void XXX::Misc()
 		if (_mainGUI.GetKeyPress(VK_OEM_MINUS, false))
 		{
 			SpectateInfo->ServerChangeLikeValue(_profiler.gDislikeValue.Custom.iValue, -1, SDK::ESocialActionType::Unlike);
+		}
+	}
+
+	if (_profiler.gFastSpectating.Custom.bValue)
+	{
+		if (_mainGUI.GetKeyPress(VK_LEFT, false))
+		{
+			SpectateInfo->ServerSpectatePreviousPlayer();
+		}
+
+		if (_mainGUI.GetKeyPress(VK_RIGHT, false))
+		{
+			SpectateInfo->ServerSpectateNextPlayer();
 		}
 	}
 
@@ -906,7 +903,7 @@ void XXX::Radar()
 		float RadarCenterX = windowPos.x + (150.0f / 2);
 		float RadarCenterY = windowPos.y + (150.0f / 2);
 
-		ImDrawList* DrawList = ImGui::GetWindowDrawList();
+		ImDrawList* DrawList = ImGui::GetForegroundDrawList();
 		if (DrawList != nullptr)
 		{
 			DrawList->AddLine(

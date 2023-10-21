@@ -378,11 +378,6 @@ namespace SDK
 	{
 		FRotator r = { Pitch, Yaw, Roll };
 
-		while (r.Yaw > 180.0f)
-			r.Yaw -= 360.0f;
-		while (r.Yaw < -180.0f)
-			r.Yaw += 360.0f;
-
 		if (r.Pitch > 180.0f)
 			r.Pitch -= 360.0f;
 		else if (r.Pitch < -180.0f)
@@ -392,6 +387,11 @@ namespace SDK
 			r.Pitch = -89.0f;
 		else if (r.Pitch > 89.0f)
 			r.Pitch = 89.0f;
+
+		if (r.Yaw > 180.0f)
+			r.Yaw -= 360.0f;
+		else if (r.Yaw < -180.0f)
+			r.Yaw += 360.0f;
 
 		r.Roll = 0.0f;
 

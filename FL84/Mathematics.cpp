@@ -124,12 +124,12 @@ namespace Math
 		{
 			Point -= PointsCenter;
 
-			const auto TempX = Point.X;
-			const auto TempY = Point.Y;
+			const float TempX = Point.X;
+			const float TempY = Point.Y;
 
 			const auto theta = DEG2RAD(Rotation);
-			const auto c = cosf(theta);
-			const auto s = sinf(theta);
+			const float c = cosf(theta);
+			const float s = sinf(theta);
 
 			Point.X = TempX * c - TempY * s;
 			Point.Y = TempX * s + TempY * c;

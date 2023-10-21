@@ -9,7 +9,7 @@ namespace Draw
 
 	void DrawCircleFilled(float x1, float y1, float radius, ImVec4 color)
 	{
-		ImGui::GetBackgroundDrawList()->AddCircleFilled(ImVec2(x1, y1), radius, ImGui::GetColorU32(color), radius);
+		ImGui::GetForegroundDrawList()->AddCircleFilled(ImVec2(x1, y1), radius, ImGui::GetColorU32(color), radius);
 	}
 
 	void DrawTriangleFilled(float x1, float y1, float x2, float y2, float x3, float y3, ImVec4 color)
@@ -75,20 +75,20 @@ namespace Draw
 
 		if (shadow)
 		{
-			ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2 - 1.0f, y - 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
-			ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2, y - 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
+			ImGui::GetForegroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2 - 1.0f, y - 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
+			ImGui::GetForegroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2, y - 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
 
-			ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2 + 1.0f, y - 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
-			ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2 + 1.0f, y), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
+			ImGui::GetForegroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2 + 1.0f, y - 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
+			ImGui::GetForegroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2 + 1.0f, y), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
 
-			ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2 + 1.0f, y + 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
-			ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2, y + 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
+			ImGui::GetForegroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2 + 1.0f, y + 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
+			ImGui::GetForegroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2, y + 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
 
-			ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2 - 1.0f, y + 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
-			ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2 - 1.0f, y), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
+			ImGui::GetForegroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2 - 1.0f, y + 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
+			ImGui::GetForegroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2 - 1.0f, y), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
 		}
 
-		ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2, y), ImGui::GetColorU32(color), text.c_str());
+		ImGui::GetForegroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2, y), ImGui::GetColorU32(color), text.c_str());
 	}
 
 	void VerticalHealthBar(int x, int y, int w, int h, float Health, float MaxHealth, ImVec4 color)
