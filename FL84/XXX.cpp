@@ -305,7 +305,7 @@ void XXX::Unknown()
 				if (!_profiler.gOffscreen.Custom.bValue) // TODO: Fix Offscreen ESP
 					continue;
 
-				SDK::FVector2D EntityPos = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->RootComponent->RelativeLocation, SDK::FVector2D(0, 0), SDK::FVector2D(ScreenWidth, ScreenHeight));
+				SDK::FVector2D EntityPos = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), SDK::FVector2D(0, 0), SDK::FVector2D(ScreenWidth, ScreenHeight));
 				int RadarRange = 50;
 
 				SDK::FVector Angles = SDK::FVector();
@@ -336,7 +336,7 @@ void XXX::Unknown()
 
 			SDK::ASolarItemActor* Item = static_cast<SDK::ASolarItemActor*>(Actor);
 
-			SDK::FVector ItemLocation = Item->RootComponent->RelativeLocation;
+			SDK::FVector ItemLocation = Item->K2_GetActorLocation();
 
 			PlayerController->ProjectWorldLocationToScreen(ItemLocation, &ItemPos, false);
 
@@ -475,7 +475,7 @@ void XXX::Unknown()
 
 			SDK::ASolarVehiclePawn* Vehicle = static_cast<SDK::ASolarVehiclePawn*>(Actor);
 
-			SDK::FVector VehicleLocation = Vehicle->RootComponent->RelativeLocation;
+			SDK::FVector VehicleLocation = Vehicle->K2_GetActorLocation();
 
 			PlayerController->ProjectWorldLocationToScreen(VehicleLocation, &VehiclePos, false);
 
@@ -921,7 +921,7 @@ void XXX::Radar()
 		SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
 		if (!LocalCharacter)
 			return;
-
+			
 		SDK::TArray<SDK::AActor*> Actors = *(SDK::TArray<SDK::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
 		for (int i = 0; i < Actors.Count(); i++)
 		{

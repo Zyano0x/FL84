@@ -62,14 +62,14 @@ namespace Math
 		return pOut;
 	}
 
-	SDK::FVector2D WorldToRadar(SDK::FRotator Rotation, SDK::FVector Position, SDK::FVector EntityPosition, SDK::FVector2D RadarPosition, SDK::FVector2D RadarSize)
+	SDK::FVector2D WorldToRadar(SDK::FRotator Rotation, SDK::FVector Location, SDK::FVector EnemyLocation, SDK::FVector2D RadarPosition, SDK::FVector2D RadarSize)
 	{
 		SDK::FVector2D DotPos;
 		SDK::FVector2D Direction;
 
 		// Calculate Direction
-		Direction.X = EntityPosition.Y - Position.Y;
-		Direction.Y = EntityPosition.X - Position.X;
+		Direction.X = EnemyLocation.Y - Location.Y;
+		Direction.Y = EnemyLocation.X - Location.X;
 
 		float Radian = DEG2RAD(Rotation.Yaw);
 
@@ -82,17 +82,8 @@ namespace Math
 		DotPos.Y = -DotPos.Y + RadarPosition.Y + RadarSize.Y / 2.f;
 
 		// Clamp Dots To RadarSize ( Where 10 = Width/Height of the Dot)
-		if (DotPos.X < RadarPosition.X)
-			DotPos.X = RadarPosition.X + 10;
-
-		if (DotPos.X > RadarPosition.X + RadarSize.X - 10)
-			DotPos.X = RadarPosition.X + RadarSize.X - 10;
-
-		if (DotPos.Y < RadarPosition.Y)
-			DotPos.Y = RadarPosition.Y + 10;
-
-		if (DotPos.Y > RadarPosition.Y + RadarSize.Y - 10)
-			DotPos.Y = RadarPosition.Y + RadarSize.Y - 10;
+		DotPos.X = std::clamp(DotPos.X, RadarPosition.X + 10, RadarPosition.X + RadarSize.X - 10);
+		DotPos.Y = std::clamp(DotPos.Y, RadarPosition.Y + 10, RadarPosition.Y + RadarSize.Y - 10);
 
 		return DotPos;
 	}
@@ -136,5 +127,23 @@ namespace Math
 
 			Point += PointsCenter;
 		}
+	}
+
+	void RotatePoint(SDK::FVector PointToRotate, SDK::FVector MidPoint, float Angle, SDK::FVector ToSetTo)
+	{
+		// Convert our angle from degrees to radians.
+		Angle = DEG2RAD(Angle);
+
+		// Get our current angle as a cosine and sine.
+		float cosAngle = (float)cos(Angle);
+		float sinAngle = (float)sin(Angle);
+
+		// Calculate the rotation.
+		ToSetTo.X = cosAngle * (PointToRotate.X - MidPoint.X) - sinAngle * (PointToRotate.Y - MidPoint.Y);
+		ToSetTo.Y = sinAngle * (PointToRotate.X - MidPoint.X) + cosAngle * (PointToRotate.Y - MidPoint.Y);
+
+		// Add the mid-point to the calculated point.
+		ToSetTo.X += MidPoint.X;
+		ToSetTo.Y += MidPoint.Y;
 	}
 }
