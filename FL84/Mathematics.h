@@ -13,5 +13,4 @@ namespace Math
 	SDK::FVector GetDirectionUnitVector(SDK::FVector From, SDK::FVector To);
 	void VectorAnglesRadar(SDK::FVector& Forward, SDK::FVector& Angles);
 	void RotateTriangle(std::array<SDK::FVector, 3>& Points, float Rotation);
-	void RotatePoint(SDK::FVector PointToRotate, SDK::FVector MidPoint, float Angle, SDK::FVector ToSetTo);
 }

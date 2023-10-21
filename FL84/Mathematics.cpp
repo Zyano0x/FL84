@@ -128,22 +128,4 @@ namespace Math
 			Point += PointsCenter;
 		}
 	}
-
-	void RotatePoint(SDK::FVector PointToRotate, SDK::FVector MidPoint, float Angle, SDK::FVector ToSetTo)
-	{
-		// Convert our angle from degrees to radians.
-		Angle = DEG2RAD(Angle);
-
-		// Get our current angle as a cosine and sine.
-		float cosAngle = (float)cos(Angle);
-		float sinAngle = (float)sin(Angle);
-
-		// Calculate the rotation.
-		ToSetTo.X = cosAngle * (PointToRotate.X - MidPoint.X) - sinAngle * (PointToRotate.Y - MidPoint.Y);
-		ToSetTo.Y = sinAngle * (PointToRotate.X - MidPoint.X) + cosAngle * (PointToRotate.Y - MidPoint.Y);
-
-		// Add the mid-point to the calculated point.
-		ToSetTo.X += MidPoint.X;
-		ToSetTo.Y += MidPoint.Y;
-	}
 }

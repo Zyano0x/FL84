@@ -70,13 +70,10 @@ namespace ZyanoCheats
 			XML.set("ZyanoCheats.Miscellaneous.Offscreen", gOffscreen.Custom.bValue);
 			XML.set("ZyanoCheats.Miscellaneous.Radar", gRadar.Custom.bValue);
 			XML.set("ZyanoCheats.Miscellaneous.RadarDistance", gRadarDistance.Custom.flValue);
-			XML.set("ZyanoCheats.Miscellaneous.RadarPosX", gRadarPosX.Custom.flValue);
-			XML.set("ZyanoCheats.Miscellaneous.RadarPosY", gRadarPosY.Custom.flValue);
-			XML.set("ZyanoCheats.Miscellaneous.RadarSizeX", gRadarSizeX.Custom.flValue);
-			XML.set("ZyanoCheats.Miscellaneous.RadarSizeY", gRadarSizeY.Custom.flValue);
 
 			XML.set("ZyanoCheats.Exploits.StopSpectator", gStopSpectator.Custom.bValue);
 			XML.set("ZyanoCheats.Exploits.FastSpectating", gFastSpectating.Custom.bValue);
+			XML.set("ZyanoCheats.Exploits.Suicide", gSuicide.Custom.bValue);
 			XML.set("ZyanoCheats.Exploits.SpamLike", gSpamLike.Custom.bValue);
 			XML.set("ZyanoCheats.Exploits.LikeValue", gLikeValue.Custom.iValue);
 			XML.set("ZyanoCheats.Exploits.DislikeValue", gDislikeValue.Custom.iValue);
@@ -203,11 +200,10 @@ namespace ZyanoCheats
 			XML.get_if_present("ZyanoCheats.Miscellaneous.Offscreen", gOffscreen.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Miscellaneous.Radar", gRadar.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Miscellaneous.RadarDistance", gRadarDistance.Custom.flValue);
-			XML.get_if_present("ZyanoCheats.Miscellaneous.RadarPosX", gRadarPosX.Custom.flValue);
-			XML.get_if_present("ZyanoCheats.Miscellaneous.RadarPosY", gRadarPosY.Custom.flValue);
 
 			XML.get_if_present("ZyanoCheats.Exploits.StopSpectator", gStopSpectator.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Exploits.FastSpectating", gFastSpectating.Custom.bValue);
+			XML.get_if_present("ZyanoCheats.Exploits.Suicide", gSuicide.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Exploits.SpamLike", gSpamLike.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Exploits.LikeValue", gLikeValue.Custom.iValue);
 			XML.get_if_present("ZyanoCheats.Exploits.DislikeValue", gDislikeValue.Custom.iValue);

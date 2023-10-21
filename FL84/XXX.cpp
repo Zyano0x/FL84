@@ -245,7 +245,7 @@ void XXX::Unknown()
 						if (PlayerController->ProjectWorldLocationToScreen(BoneLoc1, &BoneScreen, false)
 							&& PlayerController->ProjectWorldLocationToScreen(BoneLoc2, &PrevBoneScreen, false))
 						{
-							Draw::DrawLine(BoneScreen.X, BoneScreen.Y, PrevBoneScreen.X, PrevBoneScreen.Y, 1.f, ColorVisisble);
+							Draw::DrawLine(BoneScreen.X, BoneScreen.Y, PrevBoneScreen.X, PrevBoneScreen.Y, 1.5f, ColorVisisble);
 						}
 					}
 				}
@@ -260,7 +260,7 @@ void XXX::Unknown()
 					if (PlayerController->ProjectWorldLocationToScreen(Start, &ScreenStart, false)
 						&& PlayerController->ProjectWorldLocationToScreen(End, &ScreenEnd, false))
 					{
-						Draw::DrawLine(ScreenStart.X, ScreenStart.Y, ScreenEnd.X, ScreenEnd.Y, 1.f, ColorVisisble);
+						Draw::DrawLine(ScreenStart.X, ScreenStart.Y, ScreenEnd.X, ScreenEnd.Y, 1.5f, ColorVisisble);
 						Draw::DrawCircleFilled(ScreenEnd.X, ScreenEnd.Y, 4, ColorVisisble);
 					}
 				}
@@ -270,16 +270,16 @@ void XXX::Unknown()
 					switch (_profiler.gPlayerBoxes.Custom.iValue)
 					{
 					case 1:
-						Draw::DrawBox(Left, Top, Right, Bottom, false, ImVec4(ColorVisisble.x, ColorVisisble.y, ColorVisisble.z, 1.f));
+						Draw::DrawBox(Left, Top, Right, Bottom, false, ImVec4(ColorVisisble.x, ColorVisisble.y, ColorVisisble.z, 1.5f));
 						break;
 					case 2:
-						Draw::DrawCornersBox(Left, Top, Right, Bottom, true, false, ImVec4(ColorVisisble.x, ColorVisisble.y, ColorVisisble.z, 1.f));
+						Draw::DrawCornersBox(Left, Top, Right, Bottom, true, false, ImVec4(ColorVisisble.x, ColorVisisble.y, ColorVisisble.z, 1.5f));
 						break;
 					case 3:
-						Draw::DrawBox(Left, Top, Right, Bottom, true, ImVec4(ColorVisisble.x, ColorVisisble.y, ColorVisisble.z, 1.f));
+						Draw::DrawBox(Left, Top, Right, Bottom, true, ImVec4(ColorVisisble.x, ColorVisisble.y, ColorVisisble.z, 1.5f));
 						break;
 					case 4:
-						Draw::DrawCornersBox(Left, Top, Right, Bottom, true, true, ImVec4(ColorVisisble.x, ColorVisisble.y, ColorVisisble.z, 1.f));
+						Draw::DrawCornersBox(Left, Top, Right, Bottom, true, true, ImVec4(ColorVisisble.x, ColorVisisble.y, ColorVisisble.z, 1.5f));
 						break;
 					}
 				}
@@ -289,43 +289,43 @@ void XXX::Unknown()
 					switch (_profiler.gPlayerSnaplines.Custom.iValue)
 					{
 					case 1:
-						Draw::DrawLine(ScreenWidth / 2, 0, HeadPos.X, HeadPos.Y, 1.f, ColorVisisble);
+						Draw::DrawLine(ScreenWidth / 2, 0, HeadPos.X, HeadPos.Y, 1.5f, ColorVisisble);
 						break;
 					case 2:
-						Draw::DrawLine(ScreenWidth / 2, ScreenHeight, FootPos.X, FootPos.Y, 1.f, ColorVisisble);
+						Draw::DrawLine(ScreenWidth / 2, ScreenHeight, FootPos.X, FootPos.Y, 1.5f, ColorVisisble);
 						break;
 					case 3:
-						Draw::DrawLine(ScreenWidth / 2, ScreenHeight / 2, FootPos.X, FootPos.Y, 1.f, ColorVisisble);
+						Draw::DrawLine(ScreenWidth / 2, ScreenHeight / 2, FootPos.X, FootPos.Y, 1.5f, ColorVisisble);
 						break;
 					}
 				}
 			}
 			else
 			{
-				if (!_profiler.gOffscreen.Custom.bValue) // TODO: Fix Offscreen ESP
+				if (!_profiler.gOffscreen.Custom.bValue)
 					continue;
 
 				SDK::FVector2D EntityPos = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), SDK::FVector2D(0, 0), SDK::FVector2D(ScreenWidth, ScreenHeight));
-				int RadarRange = 50;
+				int RadarRange = _profiler.gAimFOV.Custom.flValue / 3;
 
 				SDK::FVector Angles = SDK::FVector();
 				SDK::FVector Forward = SDK::FVector((float)(ScreenWidth / 2) - EntityPos.X, (float)(ScreenHeight / 2) - EntityPos.Y, 0.f);
 
 				Math::VectorAnglesRadar(Forward, Angles);
 
-				const auto Yaw = DEG2RAD(Angles.Y + 180.f);
+				const float Yaw = DEG2RAD(Angles.Y + 180.f);
 				const float PointX = (ScreenWidth / 2) + RadarRange / 2 * 8 * cosf(Yaw);
 				const float PointY = (ScreenHeight / 2) + RadarRange / 2 * 8 * sinf(Yaw);
 
 				std::array<SDK::FVector, 3> Points
 				{
-					SDK::FVector(PointX - ((90) / 4 + 3.5f) / 2, PointY - ((50) / 4 + 3.5f) / 2, 0.f),
-					SDK::FVector(PointX + ((90) / 4 + 3.5f) / 4, PointY, 0.f),
-					SDK::FVector(PointX - ((90) / 4 + 3.5f) / 2, PointY + ((50) / 4 + 3.5f) / 2, 0.f)
+					SDK::FVector(PointX - ((90) / 4 + 2.5f) / 2, PointY - ((50) / 4 + 2.5f) / 2, 0.f),
+					SDK::FVector(PointX + ((90) / 4 + 2.5f) / 4, PointY, 0.f),
+					SDK::FVector(PointX - ((90) / 4 + 2.5f) / 2, PointY + ((50) / 4 + 2.5f) / 2, 0.f)
 				};
 
 				Math::RotateTriangle(Points, Angles.Y + 180.f);
-				Draw::DrawTriangle(Points.at(0).X, Points.at(0).Y, Points.at(1).X, Points.at(1).Y, Points.at(2).X, Points.at(2).Y, ImVec4(1.0f, 0.874f, 0.0f, 1.0f));
+				Draw::DrawTriangle(Points.at(0).X, Points.at(0).Y, Points.at(1).X, Points.at(1).Y, Points.at(2).X, Points.at(2).Y, ColorVisisble, 2.5f);
 			}
 		}
 
@@ -682,7 +682,7 @@ void XXX::Aimbot()
 
 	if (_profiler.gDrawFOV.Custom.bValue)
 	{
-		ImGui::GetBackgroundDrawList()->AddCircle(ImVec2(ScreenWidth / 2, ScreenHeight / 2), _profiler.gAimFOV.Custom.flValue /** ((ScreenWidth / 2) / 90)*/, ImGui::GetColorU32(ImVec4(1.f, 0.141f, 0.f, 1.f)));
+		ImGui::GetBackgroundDrawList()->AddCircle(ImVec2(ScreenWidth / 2, ScreenHeight / 2), _profiler.gAimFOV.Custom.flValue, ImGui::GetColorU32(ImVec4(1.f, 0.141f, 0.f, 1.f)));
 	}
 
 	if (!_profiler.gAimEnabled.Custom.bValue)
@@ -782,14 +782,13 @@ void XXX::Aimbot()
 				Aimbot::LockPosition = TargetPos; // Mouse Event
 				Aimbot::TargetPosition = Aimbot::CurrentPosition; // Silent
 				Aimbot::TargetRotation = Aimbot::CalcAngle(Location, Aimbot::CurrentPosition, Rotation, _profiler.gAimSmooth.Custom.flValue); // Memory
-				TargetLine = TargetPos; // Aim Line
 			}
 		}
 	}
 
 	if (_profiler.gAimLine.Custom.bValue)
 	{
-		if (!TargetLine.IsValid())
+		if (!TargetLine.IsValid() && PlayerController->ProjectWorldLocationToScreen(Aimbot::AimPosition, &TargetLine, false))
 			Draw::DrawLine(ScreenWidth / 2, ScreenHeight / 2, TargetLine.X, TargetLine.Y, 1.f, ImVec4(1.f, 0.141f, 0.f, 1.f));
 	}
 
@@ -812,9 +811,12 @@ void XXX::Misc()
 	if (!LocalCharacter)
 		return;
 
-	if (_mainGUI.GetKeyPress(VK_DELETE, false))
+	if (_profiler.gSuicide.Custom.bValue)
 	{
-		LocalCharacter->Suicide();
+		if (_mainGUI.GetKeyPress(VK_DELETE, false))
+		{
+			LocalCharacter->Suicide();
+		}
 	}
 
 	if (_mainGUI.GetKeyPress(VK_F3, false))
@@ -887,32 +889,26 @@ void XXX::Radar()
 	if (!_profiler.gRadar.Custom.bValue)
 		return;
 
-	ImGui::SetNextWindowSize(ImVec2(150.0f, 150.0f), ImGuiCond_Appearing);
+	ImGui::SetNextWindowSize(ImVec2(200.0f, 200.0f), ImGuiCond_Appearing);
 	ImGui::PushStyleColor(ImGuiCol_WindowBg, ImVec4(0.0f, 0.0f, 0.0f, 0.45f));
 	ImGui::Begin("Radar", &_profiler.gRadar.Custom.bValue, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoTitleBar);   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked)
 	{
-		ImVec2 windowPos = ImGui::GetWindowPos();
-		ImVec2 windowSize = ImGui::GetWindowSize();
-
-		_profiler.gRadarPosX.Custom.flValue = windowPos.x;
-		_profiler.gRadarPosY.Custom.flValue = windowPos.y;
-
-		_profiler.gRadarSizeX.Custom.flValue = windowSize.x;
-		_profiler.gRadarSizeY.Custom.flValue = windowSize.y;
-
-		float RadarCenterX = windowPos.x + (150.0f / 2);
-		float RadarCenterY = windowPos.y + (150.0f / 2);
+		if (ImGui::IsWindowFocused)
+		{
+			RadarPos = ImGui::GetWindowPos();
+			RadarSize = ImGui::GetWindowSize();
+		}
 
 		ImDrawList* DrawList = ImGui::GetForegroundDrawList();
 		if (DrawList != nullptr)
 		{
 			DrawList->AddLine(
-				ImVec2(windowPos.x + (windowSize.x / 2), windowPos.y),
-				ImVec2(windowPos.x + (windowSize.x / 2), windowPos.y + windowSize.y), IM_COL32(255, 255, 255, 255), 1.0f);
+				ImVec2(RadarPos.x + (RadarSize.x / 2), RadarPos.y),
+				ImVec2(RadarPos.x + (RadarSize.x / 2), RadarPos.y + RadarSize.y), IM_COL32(255, 255, 255, 255), 1.0f);
 
 			DrawList->AddLine(
-				ImVec2(windowPos.x, windowPos.y + (windowSize.y / 2)),
-				ImVec2(windowPos.x + windowSize.x, windowPos.y + (windowSize.y / 2)), IM_COL32(255, 255, 255, 255), 1.0f);
+				ImVec2(RadarPos.x, RadarPos.y + (RadarSize.y / 2)),
+				ImVec2(RadarPos.x + RadarSize.x, RadarPos.y + (RadarSize.y / 2)), IM_COL32(255, 255, 255, 255), 1.0f);
 		}
 
 		if (!SanityCheck())
@@ -921,7 +917,7 @@ void XXX::Radar()
 		SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
 		if (!LocalCharacter)
 			return;
-			
+
 		SDK::TArray<SDK::AActor*> Actors = *(SDK::TArray<SDK::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
 		for (int i = 0; i < Actors.Count(); i++)
 		{
@@ -948,7 +944,7 @@ void XXX::Radar()
 
 				float Distance = LocalCharacter->GetDistanceTo(Enemy) / 100.0f;
 
-				SDK::FVector2D RotatePoint = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), SDK::FVector2D(windowPos.x, windowPos.y), SDK::FVector2D(windowSize.x, windowSize.y));
+				SDK::FVector2D RotatePoint = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), SDK::FVector2D(RadarPos.x, RadarPos.y), SDK::FVector2D(RadarSize.x, RadarSize.y));
 
 				if (Distance >= 0.f && Distance < _profiler.gRadarDistance.Custom.flValue)
 				{

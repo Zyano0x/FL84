@@ -66,10 +66,11 @@ public:
 	SDK::ULocalPlayer* LocalPlayer;
 	SDK::APlayerController* PlayerController;
 	SDK::APlayerCameraManager* CameraManager;
-
 	SDK::UKismetMathLibrary* MathLibrary;
+
 private:
 	bool IsTeam;
+	ImVec2 RadarPos, RadarSize;
 	ImVec4 ColorVisisble;
 	SDK::FVector2D HeadPos, FootPos, ItemPos, VehiclePos;
 	SDK::FVector Head, Root;

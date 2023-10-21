@@ -561,7 +561,6 @@ namespace ZyanoCheats
 						Menu.bWriteLog = true;
 					} ImGui::Spacing();
 
-
 					if (ImGui::Checkbox(_profiler.gOffscreen.szLabel, &_profiler.gOffscreen.Custom.bValue))
 					{
 						Menu.bWriteLog = true;
@@ -627,17 +626,24 @@ namespace ZyanoCheats
 						Menu.bWriteLog = true;
 					} ImGui::SameLine(ImGui::GetCursorPosX() + 200.0f);
 
-					if (ImGui::Checkbox(_profiler.gShotgunDamage.szLabel, &_profiler.gShotgunDamage.Custom.bValue))
-					{
-						Menu.bWriteLog = true;
-					} ImGui::Spacing();
-
 					if (ImGui::Checkbox(_profiler.gFastSpectating.szLabel, &_profiler.gFastSpectating.Custom.bValue))
 					{
 						Menu.bWriteLog = true;
 					} ImGui::SameLine();
 					HelpMarker(xorstr_("Left Arrow/Right Arrow"));
-					ImGui::SameLine(ImGui::GetCursorPosX() + 200.0f);
+					ImGui::SameLine(ImGui::GetCursorPosX() + 460.0f);
+
+					if (ImGui::Checkbox(_profiler.gSuicide.szLabel, &_profiler.gSuicide.Custom.bValue))
+					{
+						Menu.bWriteLog = true;
+					} ImGui::SameLine();
+					HelpMarker(xorstr_("Press Delete"));
+					ImGui::Spacing();
+
+					if (ImGui::Checkbox(_profiler.gShotgunDamage.szLabel, &_profiler.gShotgunDamage.Custom.bValue))
+					{
+						Menu.bWriteLog = true;
+					} ImGui::SameLine(ImGui::GetCursorPosX() + 200.0f);
 
 					if (ImGui::Checkbox(_profiler.gTest.szLabel, &_profiler.gTest.Custom.bValue))
 					{
@@ -828,10 +834,10 @@ namespace ZyanoCheats
 
 		ZZZ.Unknown();
 		ZZZ.NoRecoil();
-		ZZZ.Vehicle();
 		ZZZ.Aimbot();
-		ZZZ.Misc();
 		ZZZ.Radar();
+		ZZZ.Vehicle();
+		ZZZ.Misc();
 
 		if (Menu.bShowWindow)
 		{

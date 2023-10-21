@@ -173,14 +173,11 @@ namespace ZyanoCheats
 		sCvar gFastReload = { " Fast Reload", nullptr, false, FALSE, TRUE };
 		sCvar gOffscreen = { " Offscreen", nullptr, false, FALSE, TRUE };
 		sCvar gRadar = { " Radar", nullptr, false, FALSE, TRUE };
-		sCvar gRadarDistance = { " Radar Distance", nullptr, 300.f, 1.0f, 300.f };
-		sCvar gRadarPosX = { " Radar Position X", nullptr, 0.0f, FLT_MIN, FLT_MAX };
-		sCvar gRadarPosY = { " Radar Position Y", nullptr, 0.0f, FLT_MIN, FLT_MAX };
-		sCvar gRadarSizeX = { " Radar Size X", nullptr, 0.0f, 0.0f, FLT_MAX };
-		sCvar gRadarSizeY = { " Radar Size Y", nullptr, 0.0f, 0.0f, FLT_MAX };
+		sCvar gRadarDistance = { " Radar Distance", nullptr, 300.f, 1.0f, 500.f };
 
 		sCvar gStopSpectator = { " Stop Spectator", nullptr, false, FALSE, TRUE };
 		sCvar gFastSpectating = { " Fast Spectating", nullptr, false, FALSE, TRUE };
+		sCvar gSuicide = { " Suicide", nullptr, false, FALSE, TRUE };
 		sCvar gSpamLike = { " Spam Like", nullptr, false, FALSE, TRUE };
 		sCvar gLikeValue = { " Like", nullptr, 100, 1, 10000000 };
 		sCvar gDislikeValue = { " Dislike", nullptr, -100, -1, -10000000 };
@@ -190,7 +187,7 @@ namespace ZyanoCheats
 
 		sCvar gColorTeammate = { " Team Color", nullptr, ImVec4(0.0f, 0.909f, 0.988f, 1.0f), 0.0f, 1.0f };
 		sCvar gColorEnemyInvisible = { "Enemy Color", nullptr, ImVec4(1.0f, 0.949f, 0.0f, 1.0f), 0.0f, 1.0f };
-		sCvar gColorEnemyVisible = { " Visible Color", nullptr, ImVec4(0.725f, 0.0f, 0.764f, 1.0f), 0.0f, 1.0f };
+		sCvar gColorEnemyVisible = { " Visible Color", nullptr, ImVec4(1.0f, 0.141f, 0.0f, 1.0f), 0.0f, 1.0f };
 		sCvar gColorEnemyStealth = { " Stealth Color", nullptr, ImVec4(0.0f, 0.0f, 0.0f, 1.0f), 0.0f, 1.0f };
 		sCvar gColorWeaponItems = { " Weapon Color", nullptr, ImVec4(0.0f, 0.764f, 1.0f, 1.0f), 0.0f, 1.0f };
 		sCvar gColorAmmoItems = { " Ammo Color", nullptr, ImVec4(0.474f, 0.709f, 0.709f, 1.0f), 0.0f, 1.0f };
