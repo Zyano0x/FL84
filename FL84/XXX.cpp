@@ -676,7 +676,6 @@ void XXX::Aimbot()
 	if (!LocalCharacter)
 		return;
 
-	SDK::FVector2D TargetLine = SDK::FVector2D();
 	SDK::FVector Location = CameraManager->GetCameraLocation();
 	SDK::FRotator Rotation = CameraManager->GetCameraRotation();
 
@@ -788,7 +787,8 @@ void XXX::Aimbot()
 
 	if (_profiler.gAimLine.Custom.bValue)
 	{
-		if (!TargetLine.IsValid() && PlayerController->ProjectWorldLocationToScreen(Aimbot::AimPosition, &TargetLine, false))
+		SDK::FVector2D TargetLine = SDK::FVector2D();
+		if (PlayerController->ProjectWorldLocationToScreen(Aimbot::AimPosition, &TargetLine, false))
 			Draw::DrawLine(ScreenWidth / 2, ScreenHeight / 2, TargetLine.X, TargetLine.Y, 1.f, ImVec4(1.f, 0.141f, 0.f, 1.f));
 	}
 
@@ -933,10 +933,10 @@ void XXX::Radar()
 			{
 				SDK::ASolarCharacter* Enemy = static_cast<SDK::ASolarCharacter*>(Actor);
 
-				if (Enemy->InSameTeamWithFirstPlayerController())
+				if (Enemy == LocalCharacter)
 					continue;
 
-				if (Enemy == LocalCharacter)
+				if (Enemy->InSameTeamWithFirstPlayerController())
 					continue;
 
 				if (!Enemy->K2_IsAlive())

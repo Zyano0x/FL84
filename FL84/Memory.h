@@ -71,7 +71,7 @@ public:
 
 	Signature(const std::string& sig);
 
-	Signature Import(const std::string& module_name = ("SolarlandClient-Win64-Shipping.exe"));
+	Signature Import(const std::string& module_name = (xorstr_("SolarlandClient-Win64-Shipping.exe")));
 
 	Signature Add(uint32_t offset);
 	Signature Sub(uint32_t offset);

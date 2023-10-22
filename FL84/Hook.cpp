@@ -121,7 +121,7 @@ void Initialize()
 
 	SDK::InitSDK();
 
-	HMODULE hModule = GetModuleHandle(L"GameOverlayRenderer64.dll");
+	HMODULE hModule = LI_FN(GetModuleHandleA).safe()(xorstr_("GameOverlayRenderer64.dll"));
 	if (hModule) oPresent = *(tPresent*)((DWORD64)hModule + 0x1425F0);
 	Hook(oPresent, hkPresent);
 

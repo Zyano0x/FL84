@@ -27,10 +27,10 @@ namespace Draw
 		if (filled)
 			ImGui::GetBackgroundDrawList()->AddRectFilled(ImVec2(x, y), ImVec2(w, h), ImGui::GetColorU32(ImVec4(color.x, color.y, color.z, 0.2f)));
 
-		ImGui::GetBackgroundDrawList()->AddRect(ImVec2(x, y), ImVec2(w, y), ImGui::GetColorU32(color));
-		ImGui::GetBackgroundDrawList()->AddRect(ImVec2(x, h), ImVec2(w, h), ImGui::GetColorU32(color));
-		ImGui::GetBackgroundDrawList()->AddRect(ImVec2(x, y), ImVec2(x, h), ImGui::GetColorU32(color));
-		ImGui::GetBackgroundDrawList()->AddRect(ImVec2(w, y), ImVec2(w, h), ImGui::GetColorU32(color));
+		ImGui::GetBackgroundDrawList()->AddRect(ImVec2(x, y), ImVec2(w, y), ImGui::GetColorU32(color), 0.0f, 0, 1.5f);
+		ImGui::GetBackgroundDrawList()->AddRect(ImVec2(x, h), ImVec2(w, h), ImGui::GetColorU32(color), 0.0f, 0, 1.5f);
+		ImGui::GetBackgroundDrawList()->AddRect(ImVec2(x, y), ImVec2(x, h), ImGui::GetColorU32(color), 0.0f, 0, 1.5f);
+		ImGui::GetBackgroundDrawList()->AddRect(ImVec2(w, y), ImVec2(w, h), ImGui::GetColorU32(color), 0.0f, 0, 1.5f);
 	}
 
 	void DrawCornersBox(float x, float y, float w, float h, bool shadow, bool filled, ImVec4 color)

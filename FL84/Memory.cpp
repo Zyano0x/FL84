@@ -248,14 +248,16 @@ void SwapVirtualTable(void* obj, uint32_t index, void* func)
 bool GetKeyState(int key, int flag)
 {
 	clock_t	c = clock();
-	static BYTE			btKeyState[0x100] = { 0 };
-	static clock_t		clockKeyState[0x100] = { c };
+	static BYTE	btKeyState[0x100] = { 0 };
+	static clock_t clockKeyState[0x100] = { c };
 
-	bool	r = false;
-	BYTE	btState = (GetAsyncKeyState(key) & 0x8000U) >> 0xF;
-	short	wDelay = btKeyState[key] & 2 ? 0x50 : 0x200;
-	if (btState) {
-		if (flag & 1) {
+	bool r = false;
+	BYTE btState = (GetAsyncKeyState(key) & 0x8000U) >> 0xF;
+	short wDelay = btKeyState[key] & 2 ? 0x50 : 0x200;
+	if (btState)
+	{
+		if (flag & 1)
+		{
 			if (!(btKeyState[key] & 1) || c - clockKeyState[key] > wDelay)
 			{
 				if ((btKeyState[key] & 3) == 1)
