@@ -314,8 +314,8 @@ void XXX::Unknown()
 				Math::VectorAnglesRadar(Forward, Angles);
 
 				const float Yaw = DEG2RAD(Angles.Y + 180.f);
-				const float PointX = (ScreenWidth / 2) + RadarRange / 2 * 8 * cosf(Yaw);
-				const float PointY = (ScreenHeight / 2) + RadarRange / 2 * 8 * sinf(Yaw);
+				const float PointX = (ScreenWidth / 2) + (RadarRange / 2) * 8 * cosf(Yaw);
+				const float PointY = (ScreenHeight / 2) + (RadarRange / 2) * 8 * sinf(Yaw);
 
 				std::array<SDK::FVector, 3> Points
 				{
@@ -325,7 +325,7 @@ void XXX::Unknown()
 				};
 
 				Math::RotateTriangle(Points, Angles.Y + 180.f);
-				Draw::DrawTriangle(Points.at(0).X, Points.at(0).Y, Points.at(1).X, Points.at(1).Y, Points.at(2).X, Points.at(2).Y, ColorVisisble, 2.5f);
+				Draw::DrawTriangle(Points.at(0).X, Points.at(0).Y, Points.at(1).X, Points.at(1).Y, Points.at(2).X, Points.at(2).Y, true, ColorVisisble, 2.5f);
 			}
 		}
 
@@ -676,6 +676,8 @@ void XXX::Aimbot()
 	if (!LocalCharacter)
 		return;
 
+	bool bTargetLine = false;
+	SDK::FVector2D TargetLine = SDK::FVector2D();
 	SDK::FVector Location = CameraManager->GetCameraLocation();
 	SDK::FRotator Rotation = CameraManager->GetCameraRotation();
 
@@ -781,15 +783,15 @@ void XXX::Aimbot()
 				Aimbot::LockPosition = TargetPos; // Mouse Event
 				Aimbot::TargetPosition = Aimbot::CurrentPosition; // Silent
 				Aimbot::TargetRotation = Aimbot::CalcAngle(Location, Aimbot::CurrentPosition, Rotation, _profiler.gAimSmooth.Custom.flValue); // Memory
+				bTargetLine = PlayerController->ProjectWorldLocationToScreen(Aimbot::AimPosition, &TargetLine, false);
 			}
 		}
 	}
 
 	if (_profiler.gAimLine.Custom.bValue)
-	{
-		SDK::FVector2D TargetLine = SDK::FVector2D();
-		if (PlayerController->ProjectWorldLocationToScreen(Aimbot::AimPosition, &TargetLine, false))
-			Draw::DrawLine(ScreenWidth / 2, ScreenHeight / 2, TargetLine.X, TargetLine.Y, 1.f, ImVec4(1.f, 0.141f, 0.f, 1.f));
+	{		
+		if (bTargetLine)
+			Draw::DrawLine(ScreenWidth / 2, ScreenHeight / 2, TargetLine.X, TargetLine.Y, 1.f, ImVec4(1.f, 0.141f, 0.f, 1.5f));
 	}
 
 	if (_profiler.gAimType.Custom.iValue == 0)

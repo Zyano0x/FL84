@@ -22,14 +22,12 @@ namespace SDK
 		class FName                                  Name;                                              // (0x18[0x08]) NOT AUTO-GENERATED PROPERTY
 		class UObject* Outer;                                             // (0x20[0x08]) NOT AUTO-GENERATED PROPERTY
 
-
 		bool HasTypeFlag(EClassCastFlags TypeFlag) const;
 
 		bool IsDefaultObject() const
 		{
 			return (Flags & 0x10) == 0x10;
 		}
-
 
 		std::string GetName() const;
 
@@ -54,7 +52,6 @@ namespace SDK
 			return nullptr;
 		}
 
-
 		template<typename UEType = UObject>
 		static UEType* FindObjectFast(const std::string& Name, EClassCastFlags RequiredType = EClassCastFlags::None)
 		{
@@ -74,18 +71,15 @@ namespace SDK
 			return nullptr;
 		}
 
-
 		static class UClass* FindClass(const std::string& ClassFullName)
 		{
 			return FindObject<class UClass>(ClassFullName, EClassCastFlags::Class);
 		}
 
-
 		static class UClass* FindClassFast(const std::string& ClassName)
 		{
 			return FindObjectFast<class UClass>(ClassName, EClassCastFlags::Class);
 		}
-
 
 		bool IsA(class UClass* Clss) const;
 
@@ -116,7 +110,7 @@ namespace SDK
 	class UPackage : public UObject
 	{
 	public:
-		uint8                                        Pad_25[0x70];                                      // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_5D[0x70];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UPackage* GetDefaultObj();
@@ -140,12 +134,12 @@ namespace SDK
 	class UStruct : public UField
 	{
 	public:
-		uint8                                        Pad_26[0x10];                                      // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+		uint8                                        Pad_5E[0x10];                                      // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 		class UStruct* Super;                                             // (0x40[0x08]) NOT AUTO-GENERATED PROPERTY
 		class UField* Children;                                          // (0x48[0x08]) NOT AUTO-GENERATED PROPERTY
 		class FField* ChildProperties;                                   // (0x50[0x08]) NOT AUTO-GENERATED PROPERTY
 		int32                                        Size;                                              // (0x58[0x04]) NOT AUTO-GENERATED PROPERTY
-		uint8                                        Pad_27[0x54];                                      // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_5F[0x54];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UStruct* GetDefaultObj();
@@ -157,11 +151,11 @@ namespace SDK
 	class UClass : public UStruct
 	{
 	public:
-		uint8                                        Pad_28[0x20];                                      // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+		uint8                                        Pad_60[0x20];                                      // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 		enum class EClassCastFlags                   CastFlags;                                         // (0xD0[0x08]) NOT AUTO-GENERATED PROPERTY
-		uint8                                        Pad_29[0x40];                                      // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+		uint8                                        Pad_61[0x40];                                      // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 		class UObject* DefaultObject;                                     // (0x118[0x08]) NOT AUTO-GENERATED PROPERTY
-		uint8                                        Pad_2A[0x110];                                     // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_62[0x110];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 
 		class UFunction* GetFunction(const std::string& ClassName, const std::string& FuncName);
@@ -175,7 +169,7 @@ namespace SDK
 	class UGCObjectReferencer : public UObject
 	{
 	public:
-		uint8                                        Pad_2B[0x48];                                      // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_63[0x48];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UGCObjectReferencer* GetDefaultObj();
@@ -187,7 +181,7 @@ namespace SDK
 	class UTextBuffer : public UObject
 	{
 	public:
-		uint8                                        Pad_2C[0x28];                                      // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_64[0x28];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UTextBuffer* GetDefaultObj();
@@ -199,7 +193,7 @@ namespace SDK
 	class UScriptStruct : public UStruct
 	{
 	public:
-		uint8                                        Pad_2D[0x10];                                      // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_65[0x10];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UScriptStruct* GetDefaultObj();
@@ -213,7 +207,7 @@ namespace SDK
 	public:
 		using FNativeFuncPtr = void (*)(void* Context, void* TheStack, void* Result);                                                  // (0x00[0x00]) NOT AUTO-GENERATED PROPERTY
 		uint32                                       FunctionFlags;                                     // (0xB0[0x08]) NOT AUTO-GENERATED PROPERTY
-		uint8                                        Pad_2E[0x20];                                      // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+		uint8                                        Pad_66[0x20];                                      // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 		FNativeFuncPtr                               ExecFunction;                                      // (0xD8[0x08]) NOT AUTO-GENERATED PROPERTY
 
 		static class UClass* StaticClass();
@@ -237,7 +231,7 @@ namespace SDK
 	class USparseDelegateFunction : public UDelegateFunction
 	{
 	public:
-		uint8                                        Pad_2F[0x10];                                      // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_67[0x10];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class USparseDelegateFunction* GetDefaultObj();
@@ -249,7 +243,7 @@ namespace SDK
 	class UDynamicClass : public UClass
 	{
 	public:
-		uint8                                        Pad_30[0x80];                                      // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_68[0x80];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UDynamicClass* GetDefaultObj();
@@ -261,7 +255,7 @@ namespace SDK
 	class UPackageMap : public UObject
 	{
 	public:
-		uint8                                        Pad_31[0xB8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_69[0xB8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UPackageMap* GetDefaultObj();
@@ -273,9 +267,9 @@ namespace SDK
 	class UEnum : public UField
 	{
 	public:
-		uint8                                        Pad_32[0x10];                                      // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+		uint8                                        Pad_6A[0x10];                                      // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 		class TArray<class TPair<class FName, int64>> Names;                                             // (0x40[0x10]) NOT AUTO-GENERATED PROPERTY
-		uint8                                        Pad_33[0x10];                                      // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_6B[0x10];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UEnum* GetDefaultObj();
@@ -287,7 +281,7 @@ namespace SDK
 	class ULinkerPlaceholderClass : public UClass
 	{
 	public:
-		uint8                                        Pad_35[0x1B8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_6C[0x1B8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class ULinkerPlaceholderClass* GetDefaultObj();
@@ -299,7 +293,7 @@ namespace SDK
 	class ULinkerPlaceholderExportObject : public UObject
 	{
 	public:
-		uint8                                        Pad_36[0xC8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_6D[0xC8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class ULinkerPlaceholderExportObject* GetDefaultObj();
@@ -311,7 +305,7 @@ namespace SDK
 	class ULinkerPlaceholderFunction : public UFunction
 	{
 	public:
-		uint8                                        Pad_37[0x1B8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_6E[0x1B8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class ULinkerPlaceholderFunction* GetDefaultObj();
@@ -323,7 +317,7 @@ namespace SDK
 	class UMetaData : public UObject
 	{
 	public:
-		uint8                                        Pad_38[0xA0];                                      // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_6F[0xA0];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UMetaData* GetDefaultObj();
@@ -335,7 +329,7 @@ namespace SDK
 	class UObjectRedirector : public UObject
 	{
 	public:
-		uint8                                        Pad_39[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_70[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UObjectRedirector* GetDefaultObj();
@@ -347,7 +341,7 @@ namespace SDK
 	class UProperty : public UField
 	{
 	public:
-		uint8                                        Pad_3A[0x40];                                      // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_71[0x40];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UProperty* GetDefaultObj();
@@ -359,7 +353,7 @@ namespace SDK
 	class UEnumProperty : public UProperty
 	{
 	public:
-		uint8                                        Pad_3B[0x10];                                      // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_73[0x10];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UEnumProperty* GetDefaultObj();
@@ -371,7 +365,7 @@ namespace SDK
 	class UArrayProperty : public UProperty
 	{
 	public:
-		uint8                                        Pad_3C[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_74[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UArrayProperty* GetDefaultObj();
@@ -383,7 +377,7 @@ namespace SDK
 	class UObjectPropertyBase : public UProperty
 	{
 	public:
-		uint8                                        Pad_3D[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_75[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UObjectPropertyBase* GetDefaultObj();
@@ -395,7 +389,7 @@ namespace SDK
 	class UBoolProperty : public UProperty
 	{
 	public:
-		uint8                                        Pad_3F[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_76[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UBoolProperty* GetDefaultObj();
@@ -418,7 +412,7 @@ namespace SDK
 	class UByteProperty : public UNumericProperty
 	{
 	public:
-		uint8                                        Pad_41[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_78[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UByteProperty* GetDefaultObj();
@@ -441,7 +435,7 @@ namespace SDK
 	class UClassProperty : public UObjectProperty
 	{
 	public:
-		uint8                                        Pad_43[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_79[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UClassProperty* GetDefaultObj();
@@ -453,7 +447,7 @@ namespace SDK
 	class UDelegateProperty : public UProperty
 	{
 	public:
-		uint8                                        Pad_44[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_7C[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UDelegateProperty* GetDefaultObj();
@@ -531,7 +525,7 @@ namespace SDK
 	class UInterfaceProperty : public UProperty
 	{
 	public:
-		uint8                                        Pad_48[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_8D[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UInterfaceProperty* GetDefaultObj();
@@ -554,7 +548,7 @@ namespace SDK
 	class UMapProperty : public UProperty
 	{
 	public:
-		uint8                                        Pad_49[0x28];                                      // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_8F[0x28];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UMapProperty* GetDefaultObj();
@@ -566,7 +560,7 @@ namespace SDK
 	class UMulticastDelegateProperty : public UProperty
 	{
 	public:
-		uint8                                        Pad_4A[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_90[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UMulticastDelegateProperty* GetDefaultObj();
@@ -611,7 +605,7 @@ namespace SDK
 	class USetProperty : public UProperty
 	{
 	public:
-		uint8                                        Pad_4D[0x20];                                      // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_94[0x20];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class USetProperty* GetDefaultObj();
@@ -634,7 +628,7 @@ namespace SDK
 	class USoftClassProperty : public USoftObjectProperty
 	{
 	public:
-		uint8                                        Pad_4F[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_95[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class USoftClassProperty* GetDefaultObj();
@@ -657,7 +651,7 @@ namespace SDK
 	class UStructProperty : public UProperty
 	{
 	public:
-		uint8                                        Pad_52[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_97[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UStructProperty* GetDefaultObj();
@@ -724,7 +718,7 @@ namespace SDK
 	class UPropertyWrapper : public UObject
 	{
 	public:
-		uint8                                        Pad_54[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_9A[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 		static class UClass* StaticClass();
 		static class UPropertyWrapper* GetDefaultObj();

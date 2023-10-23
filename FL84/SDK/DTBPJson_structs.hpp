@@ -19,7 +19,7 @@ namespace SDK
 struct FDTStruct
 {
 public:
-	uint8                                        Pad_B27[0x1];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_A81[0x1];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

@@ -41,7 +41,7 @@ public:
 	struct FVector                               OtherAngularVelocity;                              // 0x58(0xC)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Mass;                                              // 0x64(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        OtherMass;                                         // 0x68(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_163C[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1D3C[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x30 - 0x0)
@@ -61,7 +61,7 @@ public:
 struct FChaosHandlerSet
 {
 public:
-	uint8                                        Pad_163F[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1D3D[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<class UObject*>                         ChaosHandlers;                                     // 0x8(0x50)(NativeAccessSpecifierPublic)
 };
 
@@ -70,7 +70,7 @@ public:
 struct FBreakEventCallbackWrapper
 {
 public:
-	uint8                                        Pad_1641[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1D3E[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x3 (0x3 - 0x0)

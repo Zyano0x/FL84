@@ -40,7 +40,7 @@ public:
 	class UReplicationGraphNode_ActorList*       AlwaysRelevantNode;                                // 0x500(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FConnectionAlwaysRelevantNodePair> AlwaysRelevantForConnectionList;                   // 0x508(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class AActor*>                        ActorsWithoutNetConnection;                        // 0x518(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4[0x8];                                        // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3[0x8];                                        // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UBasicReplicationGraph* GetDefaultObj();
@@ -53,7 +53,7 @@ class UReplicationGraphNode : public UObject
 {
 public:
 	TArray<class UReplicationGraphNode*>         AllChildNodes;                                     // 0x28(0x10)(ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_5[0x18];                                       // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4[0x18];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UReplicationGraphNode* GetDefaultObj();
@@ -65,7 +65,7 @@ public:
 class UReplicationGraphNode_ActorList : public UReplicationGraphNode
 {
 public:
-	uint8                                        Pad_6[0x80];                                       // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_5[0x80];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UReplicationGraphNode_ActorList* GetDefaultObj();
@@ -77,7 +77,7 @@ public:
 class UReplicationGraphNode_ActorListFrequencyBuckets : public UReplicationGraphNode
 {
 public:
-	uint8                                        Pad_7[0xB8];                                       // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_6[0xB8];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UReplicationGraphNode_ActorListFrequencyBuckets* GetDefaultObj();
@@ -89,7 +89,7 @@ public:
 class UReplicationGraphNode_DynamicSpatialFrequency : public UReplicationGraphNode_ActorList
 {
 public:
-	uint8                                        Pad_8[0x30];                                       // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_7[0x30];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UReplicationGraphNode_DynamicSpatialFrequency* GetDefaultObj();
@@ -101,7 +101,7 @@ public:
 class UReplicationGraphNode_ConnectionDormancyNode : public UReplicationGraphNode_ActorList
 {
 public:
-	uint8                                        Pad_9[0x78];                                       // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_8[0x78];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UReplicationGraphNode_ConnectionDormancyNode* GetDefaultObj();
@@ -113,7 +113,7 @@ public:
 class UReplicationGraphNode_DormancyNode : public UReplicationGraphNode_ActorList
 {
 public:
-	uint8                                        Pad_A[0x10];                                       // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_9[0x10];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UReplicationGraphNode_DormancyNode* GetDefaultObj();
@@ -125,7 +125,7 @@ public:
 class UReplicationGraphNode_GridCell : public UReplicationGraphNode_ActorList
 {
 public:
-	uint8                                        Pad_B[0x40];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A[0x40];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 	class UReplicationGraphNode*                 DynamicNode;                                       // 0x110(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UReplicationGraphNode_DormancyNode*    DormancyNode;                                      // 0x118(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
@@ -139,7 +139,7 @@ public:
 class UReplicationGraphNode_GridSpatialization2D : public UReplicationGraphNode
 {
 public:
-	uint8                                        Pad_C[0x1D8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_B[0x1D8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UReplicationGraphNode_GridSpatialization2D* GetDefaultObj();
@@ -152,7 +152,7 @@ class UReplicationGraphNode_AlwaysRelevant : public UReplicationGraphNode
 {
 public:
 	class UReplicationGraphNode*                 ChildNode;                                         // 0x50(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_D[0x10];                                       // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C[0x10];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UReplicationGraphNode_AlwaysRelevant* GetDefaultObj();
@@ -164,7 +164,7 @@ public:
 class UReplicationGraphNode_AlwaysRelevant_ForConnection : public UReplicationGraphNode_ActorList
 {
 public:
-	uint8                                        Pad_E[0x10];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_D[0x10];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FAlwaysRelevantActorInfo>      PastRelevantActors;                                // 0xE0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass();
@@ -178,7 +178,7 @@ class UReplicationGraphNode_TearOff_ForConnection : public UReplicationGraphNode
 {
 public:
 	TArray<struct FTearOffActorInfo>             TearOffActors;                                     // 0x50(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F[0x10];                                       // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_E[0x10];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UReplicationGraphNode_TearOff_ForConnection* GetDefaultObj();
@@ -191,14 +191,14 @@ class UNetReplicationGraphConnection : public UReplicationConnectionDriver
 {
 public:
 	class UNetConnection*                        NetConnection;                                     // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_10[0x1E0];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_F[0x1E0];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class AReplicationGraphDebugActor*           DebugActor;                                        // 0x210(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_11[0x10];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10[0x10];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FLastLocationGatherInfo>       LastGatherLocations;                               // 0x228(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_12[0x8];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_11[0x8];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UReplicationGraphNode*>         ConnectionGraphNodes;                              // 0x240(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UReplicationGraphNode_TearOff_ForConnection* TearOffNode;                                       // 0x250(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_13[0x80];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_12[0x80];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UNetReplicationGraphConnection* GetDefaultObj();

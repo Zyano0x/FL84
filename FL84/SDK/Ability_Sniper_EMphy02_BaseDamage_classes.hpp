@@ -14,7 +14,7 @@ namespace SDK
 class AAbility_Sniper_EMphy02_BaseDamage_C : public ASolarAbility
 {
 public:
-	uint8                                        Pad_1A17[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2381[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class USceneComponent*                       DefaultSceneRoot;                                  // 0x310(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

@@ -80,7 +80,7 @@ struct FKey
 {
 public:
 	class FName                                  KeyName;                                           // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1284[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_14AB[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

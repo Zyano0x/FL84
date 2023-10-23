@@ -35,7 +35,7 @@ public:
 class UPakReader : public UObject
 {
 public:
-	uint8                                        Pad_9F4[0x28];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_A22[0x28];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPakReader* GetDefaultObj();
@@ -50,7 +50,7 @@ public:
 class UPakWriter : public UObject
 {
 public:
-	uint8                                        Pad_9F5[0x98];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_A23[0x98];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPakWriter* GetDefaultObj();

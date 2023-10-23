@@ -14,7 +14,7 @@ namespace SDK
 class AAbility_VehicleWeapon_ShapedGun_C : public ASolarAbility
 {
 public:
-	uint8                                        Pad_352C[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1F58[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AAbility_VehicleWeapon_ShapedGun_C* GetDefaultObj();

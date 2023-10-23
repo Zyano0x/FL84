@@ -25,6 +25,11 @@ namespace SDK
 		return InitSDK(xorstr_(L"SolarlandClient-Win64-Shipping.exe"), 0x066B0680, 0x6697E00, 0x6807900);
 	}
 
+	void InitGObjects()
+	{
+		UObject::GObjects = reinterpret_cast<TUObjectArray*>(uintptr_t(GetModuleHandle(0)) + Offsets::GObjects);
+	}
+
 	FString FSoftObjectPtr::GetSubPathString()
 	{
 		return ObjectID.SubPathString;
@@ -45,45 +50,21 @@ namespace SDK
 
 	void Dummy() { FSoftObjectPtr().GetObjectPath(); }
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntry.GetLength
-	 * 		Flags  -> ()
-	 */
 	int32_t FNameEntry::GetLength() const
 	{
 		return Header.Len;
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntry.IsWide
-	 * 		Flags  -> ()
-	 */
 	bool FNameEntry::IsWide() const
 	{
 		return Header.bIsWide;
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntry.GetId
-	 * 		Flags  -> ()
-	 */
 	int32_t FNameEntry::GetId() const
 	{
 		throw std::exception("This game doesn't use 'FNAME_POOL_WITH_CASE_PRESERVING_NAME' so 'ComparisonId' not stored in 'FNameEntry'");
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntry.GetAnsiName
-	 * 		Flags  -> ()
-	 */
 	std::string FNameEntry::GetAnsiName() const
 	{
 		uint32_t len = GetLength();
@@ -91,48 +72,22 @@ namespace SDK
 		return std::string((const char*)AnsiName, len);
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntry.GetWideName
-	 * 		Flags  -> ()
-	 */
 	std::wstring FNameEntry::GetWideName() const
 	{
 		uint32_t len = GetLength();
 		return std::wstring((const wchar_t*)WideName, len);
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntry.GetName
-	 * 		Flags  -> ()
-	 */
 	std::string FNameEntry::GetName() const
 	{
 		return GetAnsiName();
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntryAllocator.NumBlocks
-	 * 		Flags  -> ()
-	 */
 	int32_t FNameEntryAllocator::NumBlocks() const
 	{
 		return CurrentBlock + 1;
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntryAllocator.GetById
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		int32_t                                            key
-	 */
 	FNameEntry* FNameEntryAllocator::GetById(int32_t key) const
 	{
 		int block = key >> 16;
@@ -142,14 +97,6 @@ namespace SDK
 		return reinterpret_cast<FNameEntry*>(Blocks[block] + ((uint64_t)offset * Stride));
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntryAllocator.IsValidIndex
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		int32_t                                            key
-	 */
 	bool FNameEntryAllocator::IsValidIndex(int32_t key) const
 	{
 		uint32_t block = key >> 16;
@@ -157,30 +104,11 @@ namespace SDK
 		return IsValidIndex(key, block, offset);
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction BasicTypes.FNameEntryAllocator.IsValidIndex
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		int32_t                                            key
-	 * 		uint32_t                                           block
-	 * 		uint16_t                                           offset
-	 */
 	bool FNameEntryAllocator::IsValidIndex(int32_t key, uint32_t block, uint16_t offset) const
 	{
 		return (key >= 0 && block < static_cast<uint32_t>(NumBlocks()) && offset * Stride < MaxOffset);
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction BasicTypes.FNamePool.GetNext
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		uintptr_t&                                         nextFNameAddress
-	 * 		uint32_t*                                          comparisonId
-	 */
 	FNameEntry* FNamePool::GetNext(uintptr_t& nextFNameAddress, uint32_t* comparisonId) const
 	{
 		static int lastBlock = 0;
@@ -231,54 +159,144 @@ namespace SDK
 		return ret;
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction BasicTypes.FNamePool.Count
-	 * 		Flags  -> ()
-	 */
 	int32_t FNamePool::Count() const
 	{
 		return AnsiCount;
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction BasicTypes.FNamePool.IsValidIndex
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		int32_t                                            index
-	 */
 	bool FNamePool::IsValidIndex(int32_t index) const
 	{
 		return Allocator.IsValidIndex(static_cast<int32_t>(index));
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction BasicTypes.FNamePool.GetById
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		int32_t                                            id
-	 */
 	FNameEntry* FNamePool::GetById(int32_t id) const
 	{
 		return Allocator.GetById(id);
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   -> PredefinedFunction BasicTypes.FNamePool.operator[]
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		int32_t                                            id
-	 */
 	FNameEntry* FNamePool::operator[](int32_t id) const
 	{
 		return GetById(id);
+	}
+
+	FName::FName()
+	{
+		ComparisonIndex = 0;
+		Number = 0;
+	}
+
+	FName::FName(int32_t i)
+	{
+		ComparisonIndex = i;
+		Number = 0;
+	}
+
+	FName::FName(const char* nameToFind)
+	{
+		Number = 0;
+		static std::unordered_set<int> cache;
+		for (auto i : cache)
+		{
+			if (GetGlobalNames()[i]->GetAnsiName() == nameToFind)
+			{
+				ComparisonIndex = i;
+#ifdef FNAME_POOL_WITH_CASE_PRESERVING_NAME
+				DisplayIndex = i;
+#endif
+				return;
+			}
+		}
+
+#ifdef FNAME_POOL
+		uintptr_t lastFNameAddress = NULL;
+		uint32_t curComparisonId = 0;
+		for (FNameEntry* name = GetGlobalNames().GetNext(lastFNameAddress, &curComparisonId); name != nullptr; name = GetGlobalNames().GetNext(lastFNameAddress, &curComparisonId))
+		{
+			if (name->GetAnsiName() == nameToFind)
+			{
+				cache.insert(curComparisonId);
+				ComparisonIndex = curComparisonId;
+#ifdef FNAME_POOL_WITH_CASE_PRESERVING_NAME
+				DisplayIndex = curComparisonId;
+#endif
+				return;
+			}
+		}
+#else
+		for (int32_t i = 0; i < GetGlobalNames().Count(); ++i)
+		{
+			if (GetGlobalNames()[i]->GetAnsiName() == nameToFind)
+			{
+				cache.insert(i);
+				ComparisonIndex = i;
+				return;
+			}
+		}
+#endif
+	}
+
+	FName::FName(const wchar_t* nameToFind)
+	{
+		Number = 0;
+		static std::unordered_set<int> cache;
+		for (auto i : cache)
+		{
+			if (GetGlobalNames()[i]->GetWideName() == nameToFind)
+			{
+				ComparisonIndex = i;
+#ifdef FNAME_POOL_WITH_CASE_PRESERVING_NAME
+				DisplayIndex = i;
+#endif
+				return;
+			}
+		}
+
+#ifdef FNAME_POOL
+		uintptr_t lastFNameAddress = NULL;
+		uint32_t curComparisonId = 0;
+		for (FNameEntry* name = GetGlobalNames().GetNext(lastFNameAddress, &curComparisonId); name != nullptr; name = GetGlobalNames().GetNext(lastFNameAddress, &curComparisonId))
+		{
+			if (name->GetWideName() == nameToFind)
+			{
+				cache.insert(curComparisonId);
+				ComparisonIndex = curComparisonId;
+#ifdef FNAME_POOL_WITH_CASE_PRESERVING_NAME
+				DisplayIndex = curComparisonId;
+#endif
+				return;
+			}
+		}
+#else
+		for (int32_t i = 0; i < GetGlobalNames().Count(); ++i)
+		{
+			if (GetGlobalNames()[i]->GetWideName() == nameToFind)
+			{
+				cache.insert(i);
+				ComparisonIndex = i;
+				return;
+			}
+		}
+#endif
+	}
+
+	FNamePool& FName::GetGlobalNames()
+	{
+		return *GNames;
+	}
+
+	std::string FName::GetNameA() const
+	{
+		return GetGlobalNames()[ComparisonIndex]->GetAnsiName();
+	}
+
+	std::wstring FName::GetNameW() const
+	{
+		return GetGlobalNames()[ComparisonIndex]->GetWideName();
+	}
+
+	std::string FName::GetName() const
+	{
+		return GetNameA();
 	}
 
 	class UObject* FWeakObjectPtr::Get() const

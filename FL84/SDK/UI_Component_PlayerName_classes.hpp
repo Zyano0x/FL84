@@ -18,16 +18,16 @@ public:
 	class USolarTextBlock*                       Txt_PlayerName;                                    // 0x350(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FS_VIP_TxtInfo                        DefaultTxtInfo;                                    // 0x358(0x88)(Edit, BlueprintVisible)
 	enum class E_Type_PlayerName_Vip_Color       VIP_State;                                         // 0x3E0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_358B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2079[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<enum class E_Type_PlayerName_Vip_Color, struct FS_VIP_TxtInfo> VIP_TxtInfos;                                      // 0x3E8(0x50)(Edit, BlueprintVisible)
 	bool                                         Cheater;                                           // 0x438(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_358D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_207A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_VIP_TxtInfo                        CheatTxtInfo;                                      // 0x440(0x88)(Edit, BlueprintVisible)
 	bool                                         Killed;                                            // 0x4C8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_358E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_207C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_VIP_TxtInfo                        KilledTxtInfo;                                     // 0x4D0(0x88)(Edit, BlueprintVisible)
 	bool                                         bSpecialSelf;                                      // 0x558(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_358F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_207D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FS_VIP_TxtInfo                        SpecialSelfTxtInfo;                                // 0x560(0x88)(Edit, BlueprintVisible)
 	struct FS_VIP_TxtInfo                        CurTxtInfo;                                        // 0x5E8(0x88)(Edit, BlueprintVisible)
 	class FText                                  DefaultText;                                       // 0x670(0x18)(Edit, BlueprintVisible)

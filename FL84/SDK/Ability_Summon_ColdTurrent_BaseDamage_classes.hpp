@@ -14,7 +14,7 @@ namespace SDK
 class AAbility_Summon_ColdTurrent_BaseDamage_C : public ASolarAbility
 {
 public:
-	uint8                                        Pad_1A14[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2128[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AAbility_Summon_ColdTurrent_BaseDamage_C* GetDefaultObj();

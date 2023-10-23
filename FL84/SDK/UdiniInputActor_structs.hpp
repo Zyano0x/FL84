@@ -97,7 +97,7 @@ struct FUdiniAssetData : public FTableRowBase
 public:
 	bool                                         bIsDebug;                                          // 0x8(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EUdiniTableType                   TableType;                                         // 0x9(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F3F[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_107E[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xE0 (0xE0 - 0x0)
@@ -105,7 +105,7 @@ public:
 struct FUdiniTableDatas
 {
 public:
-	uint8                                        Pad_F40[0xE0];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_107F[0xE0];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x70 (0x80 - 0x10)
@@ -136,7 +136,7 @@ public:
 	class FString                                Name;                                              // 0x0(0x10)(Edit, ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Help;                                              // 0x10(0x10)(Edit, ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EUdiniAttributeType               AttributeType;                                     // 0x20(0x1)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F45[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10A0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        TupleSize;                                         // 0x24(0x4)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<float>                                FloatValue;                                        // 0x28(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<int32>                                IntValue;                                          // 0x38(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -154,7 +154,7 @@ public:
 	bool                                         HasMax;                                            // 0xC2(0x1)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         HasUIMin;                                          // 0xC3(0x1)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         HasUIMax;                                          // 0xC4(0x1)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F46[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10A5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        UIMax;                                             // 0xC8(0x4)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        UIMin;                                             // 0xCC(0x4)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                VisibilityCondition;                               // 0xD0(0x10)(Edit, ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -173,10 +173,10 @@ public:
 	class FString                                HdaTypeName;                                       // 0x50(0x10)(Edit, ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         IsClosedCurve;                                     // 0x60(0x1)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         IsPoint;                                           // 0x61(0x1)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F49[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10AA[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        SnapGridSize;                                      // 0x64(0x4)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        SnapGridNum;                                       // 0x68(0x4)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F4A[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10AB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                OperationModeType;                                 // 0x70(0x10)(Edit, ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                OutputTypeClassName;                               // 0x80(0x10)(Edit, ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                ActorOwnerClassName;                               // 0x90(0x10)(Edit, ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -218,12 +218,12 @@ struct FInputDynamicData
 {
 public:
 	float                                        PaintScale;                                        // 0x0(0x4)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F4B[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10B5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSubOpData                            StaticSubOpData;                                   // 0x8(0x288)(NonTransactional, NativeAccessSpecifierPublic)
 	class FString                                PaintAttValue;                                     // 0x290(0x10)(ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                PaintAttName;                                      // 0x2A0(0x10)(ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsUsePaintDir;                                    // 0x2B0(0x1)(ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F4E[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_10B6[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x70 (0x80 - 0x10)
@@ -266,7 +266,7 @@ public:
 	TArray<int32>                                PolyTrianglePrimIndex;                             // 0x20(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        __Primitive_Id_;                                   // 0x30(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsHid;                                            // 0x34(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F50[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_10B8[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x70 (0x80 - 0x10)
@@ -284,7 +284,7 @@ public:
 struct FSnapPoint
 {
 public:
-	uint8                                        Pad_F52[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_10B9[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x5 (0x5 - 0x0)
@@ -306,7 +306,7 @@ struct FOneLine
 public:
 	TArray<int32>                                PolyPosIndex;                                      // 0x0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsHid;                                            // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F58[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_10BA[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -332,7 +332,7 @@ public:
 struct FUdiniInstanceData
 {
 public:
-	uint8                                        Pad_F59[0x68];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_10BC[0x68];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -340,7 +340,7 @@ public:
 struct FOutPutContext
 {
 public:
-	uint8                                        Pad_F5A[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_10BD[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -348,7 +348,7 @@ public:
 struct FHoudiniPartData
 {
 public:
-	uint8                                        Pad_F5C[0x20];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_10BE[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

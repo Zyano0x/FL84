@@ -14,7 +14,7 @@ namespace SDK
 class AAbility_Sniper_EPsm02_BaseDamage_C : public ASolarAbility
 {
 public:
-	uint8                                        Pad_195C[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_12D[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AAbility_Sniper_EPsm02_BaseDamage_C* GetDefaultObj();

@@ -28,7 +28,7 @@ public:
 	bool                                         LightChannel0_24_E3D186BA4C82C6B3BD72FB80ACF787E2; // 0x20(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         LightChannel1_25_019A668A4DD58574DE0AFDA2E4E3E9F0; // 0x21(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         LightChannel2_26_08AE8857406688F44FCD3EACD64C0879; // 0x22(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_35E0[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_27EF[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        DynamicShadowDistanceMovableLight_35_3BB5B38E40806965B2BE7FAE9A5E217E; // 0x24(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        NumDynamicShadowCascades_37_AC7F56B040BC6DBB939D1395BFD997C2; // 0x28(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        DistributionExponent_41_6B5C490B4EE217C84292669D374C18B3; // 0x2C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)

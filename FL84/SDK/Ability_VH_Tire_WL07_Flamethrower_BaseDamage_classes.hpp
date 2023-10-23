@@ -14,7 +14,7 @@ namespace SDK
 class AAbility_VH_Tire_WL07_Flamethrower_BaseDamage_C : public ASolarAbility
 {
 public:
-	uint8                                        Pad_387[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_94A[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AAbility_VH_Tire_WL07_Flamethrower_BaseDamage_C* GetDefaultObj();

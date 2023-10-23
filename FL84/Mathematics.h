@@ -1,8 +1,8 @@
 #pragma once
 
 #define M_PI 3.14159265358979323846f
-#define RAD2DEG( x )  ( (float)(x) * (float)(180.f / M_PI) )
-#define DEG2RAD( x ) ( (float)(x) * (float)(M_PI / 180.f) )
+#define RAD2DEG(x) ((float)(x) * (float)(180.f / M_PI))
+#define DEG2RAD(x) ((float)(x) * (float)(M_PI / 180.f))
 #define ImVec4Copy(i,v)	(v.x = i.x, v.y = i.y, v.z = i.z, v.w = i.w)
 
 namespace Math

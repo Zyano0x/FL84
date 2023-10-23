@@ -16,9 +16,9 @@ class UAnimationCompressionLibraryDatabase : public UObject
 public:
 	TArray<uint8>                                CookedCompressedBytes;                             // 0x28(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<uint64>                               CookedAnimSequenceMappings;                        // 0x38(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_78A[0x108];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7C1[0x108];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	uint32                                       MaxStreamRequestSizeKB;                            // 0x150(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_78B[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_7C2[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UAnimationCompressionLibraryDatabase* GetDefaultObj();

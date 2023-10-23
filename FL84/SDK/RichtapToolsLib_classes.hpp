@@ -14,9 +14,9 @@ namespace SDK
 class URichtapClip : public UObject
 {
 public:
-	uint8                                        Pad_9FA[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A1F[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ClipData;                                          // 0x30(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_9FB[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_A20[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class URichtapClip* GetDefaultObj();

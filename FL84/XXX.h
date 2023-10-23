@@ -67,6 +67,7 @@ public:
 	SDK::APlayerController* PlayerController;
 	SDK::APlayerCameraManager* CameraManager;
 	SDK::UKismetMathLibrary* MathLibrary;
+	SDK::AGameMode* GameMode;
 
 private:
 	bool IsTeam;

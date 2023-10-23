@@ -74,7 +74,7 @@ public:
 	uint32                                       RenderingSectionIndex;                             // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        MaterialIndex;                                     // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        MaxTriangles;                                      // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_45D[0x3C];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_556[0x3C];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x4 - 0x4)
@@ -90,7 +90,7 @@ struct FAdaptorPolygon
 {
 public:
 	struct FPolygonGroupID                       PolygonGroupID;                                    // 0x0(0x4)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_460[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_558[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FAdaptorTriangleID>            TriangulatedPolygonTriangleIndices;                // 0x8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -108,7 +108,7 @@ public:
 struct FMeshElementAttributeValue
 {
 public:
-	uint8                                        Pad_463[0x50];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_559[0x50];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x60 (0x60 - 0x0)
@@ -118,7 +118,7 @@ struct FMeshElementAttributeData
 public:
 	class FName                                  AttributeName;                                     // 0x0(0x8)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        AttributeIndex;                                    // 0x8(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_466[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_55A[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMeshElementAttributeValue            AttributeValue;                                    // 0x10(0x50)(BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 };
 
@@ -137,7 +137,7 @@ struct FPolygonGroupToCreate
 public:
 	struct FMeshElementAttributeList             PolygonGroupAttributes;                            // 0x0(0x10)(BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FPolygonGroupID                       OriginalPolygonGroupID;                            // 0x10(0x4)(BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_469[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_55C[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -172,7 +172,7 @@ struct FChangeVertexInstancesForPolygon
 {
 public:
 	struct FPolygonID                            PolygonID;                                         // 0x0(0x4)(BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_46F[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_55D[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FVertexIndexAndInstanceID>     PerimeterVertexIndicesAndInstanceIDs;              // 0x8(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FVertexInstancesForPolygonHole> VertexIndicesAndInstanceIDsForEachHole;            // 0x18(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -191,7 +191,7 @@ struct FVertexAttributesForPolygon
 {
 public:
 	struct FPolygonID                            PolygonID;                                         // 0x0(0x4)(BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_476[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_55E[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FMeshElementAttributeList>     PerimeterVertexAttributeLists;                     // 0x8(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FVertexAttributesForPolygonHole> VertexAttributeListsForEachHole;                   // 0x18(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -202,7 +202,7 @@ struct FAttributesForEdge
 {
 public:
 	struct FEdgeID                               EdgeID;                                            // 0x0(0x4)(BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_477[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_55F[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMeshElementAttributeList             EdgeAttributes;                                    // 0x8(0x10)(BlueprintVisible, NativeAccessSpecifierPublic)
 };
 
@@ -212,7 +212,7 @@ struct FAttributesForVertexInstance
 {
 public:
 	struct FVertexInstanceID                     VertexInstanceID;                                  // 0x0(0x4)(BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_47A[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_560[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMeshElementAttributeList             VertexInstanceAttributes;                          // 0x8(0x10)(BlueprintVisible, NativeAccessSpecifierPublic)
 };
 
@@ -222,7 +222,7 @@ struct FAttributesForVertex
 {
 public:
 	struct FVertexID                             VertexID;                                          // 0x0(0x4)(BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_47B[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_562[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMeshElementAttributeList             VertexAttributes;                                  // 0x8(0x10)(BlueprintVisible, NativeAccessSpecifierPublic)
 };
 
@@ -241,7 +241,7 @@ struct FPolygonToSplit
 {
 public:
 	struct FPolygonID                            PolygonID;                                         // 0x0(0x4)(BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_47D[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_565[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FVertexPair>                   VertexPairsToSplitAt;                              // 0x8(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -261,11 +261,11 @@ struct FPolygonToCreate
 {
 public:
 	struct FPolygonGroupID                       PolygonGroupID;                                    // 0x0(0x4)(BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_480[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_568[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FVertexAndAttributes>          PerimeterVertices;                                 // 0x8(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPolygonID                            OriginalPolygonID;                                 // 0x18(0x4)(BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EPolygonEdgeHardness              PolygonEdgeHardness;                               // 0x1C(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_481[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_569[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -277,7 +277,7 @@ public:
 	struct FVertexID                             VertexID1;                                         // 0x4(0x4)(BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMeshElementAttributeList             EdgeAttributes;                                    // 0x8(0x10)(BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FEdgeID                               OriginalEdgeID;                                    // 0x18(0x4)(BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_482[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_56A[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -286,10 +286,10 @@ struct FVertexInstanceToCreate
 {
 public:
 	struct FVertexID                             VertexID;                                          // 0x0(0x4)(BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_483[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_56C[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMeshElementAttributeList             VertexInstanceAttributes;                          // 0x8(0x10)(BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FVertexInstanceID                     OriginalVertexInstanceID;                          // 0x18(0x4)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_484[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_56D[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -299,7 +299,7 @@ struct FVertexToCreate
 public:
 	struct FMeshElementAttributeList             VertexAttributes;                                  // 0x0(0x10)(BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FVertexID                             OriginalVertexID;                                  // 0x10(0x4)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_485[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_56E[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x34 (0x34 - 0x0)
@@ -342,7 +342,7 @@ struct FSubdividedWireEdge
 public:
 	int32                                        EdgeVertex0PositionIndex;                          // 0x0(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        EdgeVertex1PositionIndex;                          // 0x4(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_489[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_571[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x30 - 0x0)
@@ -363,7 +363,7 @@ public:
 	uint32                                       RenderingSectionIndex;                             // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        MaterialIndex;                                     // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        MaxTriangles;                                      // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_48B[0x3C];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_578[0x3C];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -372,7 +372,7 @@ struct FRenderingPolygon
 {
 public:
 	struct FPolygonGroupID                       PolygonGroupID;                                    // 0x0(0x4)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_48D[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_579[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FTriangleID>                   TriangulatedPolygonTriangleIndices;                // 0x8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 

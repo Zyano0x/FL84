@@ -97,7 +97,7 @@ struct FPakMountInfo
 public:
 	class FString                                Pak;                                               // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        PakOrder;                                          // 0x10(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FBE[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1086[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -133,7 +133,7 @@ struct FPakEncryptSettings
 {
 public:
 	bool                                         bUseDefaultCryptoIni;                              // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FC2[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1087[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFilePath                             CryptoKeys;                                        // 0x8(0x10)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
 
@@ -143,7 +143,7 @@ struct FPlatformBasePak
 {
 public:
 	enum class ETargetPlatform                   Platform;                                          // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FC3[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1088[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FFilePath>                     Paks;                                              // 0x8(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -154,7 +154,7 @@ struct FMatchRule
 public:
 	enum class EMatchRule                        Rule;                                              // 0x0(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EMatchOperator                    Operator;                                          // 0x1(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FC4[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1089[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Size;                                              // 0x4(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                        Formaters;                                         // 0x8(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                        AssetTypes;                                        // 0x18(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -166,7 +166,7 @@ struct FBinariesPatchConfig
 {
 public:
 	enum class EBinariesPatchFeature             BinariesPatchType;                                 // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FC6[0x17];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_108A[0x17];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPakEncryptSettings                   EncryptSettings;                                   // 0x18(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	TArray<struct FPlatformBasePak>              BaseVersionPaks;                                   // 0x30(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FMatchRule>                    MatchRules;                                        // 0x40(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -177,7 +177,7 @@ public:
 struct FChunkAssetDescribe
 {
 public:
-	uint8                                        Pad_FC8[0x148];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_108B[0x148];                                   // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x40 (0x40 - 0x0)
@@ -185,7 +185,7 @@ public:
 struct FChunkPakCommand
 {
 public:
-	uint8                                        Pad_FCA[0x40];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_108C[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x30 - 0x0)
@@ -195,7 +195,7 @@ struct FPatcherSpecifyAsset
 public:
 	struct FSoftObjectPath                       Asset;                                             // 0x0(0x18)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAnalysisAssetDependencies;                        // 0x18(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FD0[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_108D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<enum class EAssetRegistryDependencyTypeEx> AssetRegistryDependencyTypes;                      // 0x20(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -207,7 +207,7 @@ public:
 	struct FFilePath                             FilePath;                                          // 0x0(0x10)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	class FString                                MountPath;                                         // 0x10(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                FileHash;                                          // 0x20(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FD2[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_108E[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -225,7 +225,7 @@ struct FPlatformExternAssets
 {
 public:
 	enum class ETargetPlatform                   TargetPlatform;                                    // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FD4[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_108F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FExternFileInfo>               AddExternFileToPak;                                // 0x8(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FExternDirectoryInfo>          AddExternDirectoryToPak;                           // 0x18(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -235,7 +235,7 @@ public:
 struct FPakInternalInfo
 {
 public:
-	uint8                                        Pad_FD9[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1090[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bIncludeEngineIni;                                 // 0x3(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIncludePluginIni;                                 // 0x4(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIncludeProjectIni;                                // 0x5(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -251,16 +251,16 @@ public:
 	enum class EMonolithicPathMode               MonolithicPathMode;                                // 0x11(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bStorageUnrealPakList;                             // 0x12(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bStorageIoStorePakList;                            // 0x13(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FDC[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1091[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FDirectoryPath>                AssetIncludeFilters;                               // 0x18(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FDirectoryPath>                AssetIgnoreFilters;                                // 0x28(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAnalysisFilterDependencies;                       // 0x38(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FDE[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1092[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<enum class EAssetRegistryDependencyTypeEx> AssetRegistryDependencyTypes;                      // 0x40(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FPatcherSpecifyAsset>          IncludeSpecifyAssets;                              // 0x50(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FPlatformExternAssets>         AddExternAssetsToPlatform;                         // 0x60(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPakInternalInfo                      InternalFiles;                                     // 0x70(0x6)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FE1[0x12];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1093[0x12];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x58 (0x58 - 0x0)
@@ -273,7 +273,7 @@ public:
 	class FString                                AssetPackage;                                      // 0x20(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                        PakCommands;                                       // 0x30(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                        IoStoreCommands;                                   // 0x40(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FE4[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1094[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x68 (0x68 - 0x0)
@@ -283,7 +283,7 @@ struct FPakFileProxy
 public:
 	class FString                                ChunkStoreName;                                    // 0x0(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ETargetPlatform                   Platform;                                          // 0x10(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FE7[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1095[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                StorageDirectory;                                  // 0x18(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                PakCommandSavePath;                                // 0x28(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                PakSavePath;                                       // 0x38(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -301,7 +301,7 @@ public:
 	class FString                                EngineParams;                                      // 0x20(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                        CookPlatforms;                                     // 0x30(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bCookAllMap;                                       // 0x40(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FEA[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1096[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FString>                        CookMaps;                                          // 0x48(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                        CookFilter;                                        // 0x58(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                        CookSettings;                                      // 0x68(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -313,7 +313,7 @@ public:
 struct FPatcherEntitySettingBase
 {
 public:
-	uint8                                        Pad_FEB[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1098[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x38 - 0x8)
@@ -322,10 +322,10 @@ struct FHotPatcherSettingBase : public FPatcherEntitySettingBase
 {
 public:
 	bool                                         bStorageConfig;                                    // 0x8(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FED[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1099[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDirectoryPath                        SavePath;                                          // 0x10(0x10)(Edit, NativeAccessSpecifierPublic)
 	bool                                         bStandaloneMode;                                   // 0x20(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FEF[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_109A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FString>                        AdditionalCommandletArgs;                          // 0x28(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -335,11 +335,11 @@ struct FAssetRegistryOptions
 {
 public:
 	bool                                         bSerializeAssetRegistry;                           // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FF0[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_109B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                AssetRegistryMountPointRegular;                    // 0x8(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EAssetRegistryRule                AssetRegistryRule;                                 // 0x18(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bCustomAssetRegistryName;                          // 0x19(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FF2[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_109C[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                AssetRegistryNameRegular;                          // 0x20(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -350,9 +350,9 @@ struct FCookShaderOptions
 public:
 	bool                                         bSharedShaderLibrary;                              // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bNativeShader;                                     // 0x1(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FF4[0x1];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_109E[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	enum class EShaderLibNameRule                ShaderNameRule;                                    // 0x3(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FF6[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_109F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CustomShaderName;                                  // 0x8(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                ShderLibMountPointRegular;                         // 0x18(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -364,7 +364,7 @@ struct FIoStorePlatformContainers
 public:
 	struct FDirectoryPath                        BasePackageStagedRootDir;                          // 0x0(0x10)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	bool                                         bGenerateDiffPatch;                                // 0x10(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FFB[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10A1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFilePath                             GlobalContainersOverride;                          // 0x18(0x10)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FFilePath                             PatchSourceOverride;                               // 0x28(0x10)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
@@ -376,13 +376,13 @@ struct FIoStoreSettings
 public:
 	bool                                         bIoStore;                                          // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAllowBulkDataInIoStore;                           // 0x1(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FFD[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10A2[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FString>                        IoStorePakListOptions;                             // 0x8(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                        IoStoreCommandletOptions;                          // 0x18(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<enum class ETargetPlatform, struct FIoStorePlatformContainers> PlatformContainers;                                // 0x28(0x50)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	bool                                         bStoragePakList;                                   // 0x78(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bStorageBulkDataInfo;                              // 0x79(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FFE[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_10A3[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -393,7 +393,7 @@ public:
 	TArray<class FString>                        UnrealPakListOptions;                              // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                        UnrealCommandletOptions;                           // 0x10(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bStoragePakList;                                   // 0x20(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FFF[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_10A4[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -404,7 +404,7 @@ public:
 	class FString                                From;                                              // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                To;                                                // 0x10(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ESearchCaseMode                   SearchCase;                                        // 0x20(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1000[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_10A6[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x2F0 (0x328 - 0x38)
@@ -413,42 +413,42 @@ struct FExportPatchSettings : public FHotPatcherSettingBase
 {
 public:
 	bool                                         bByBaseVersion;                                    // 0x38(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1001[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10A7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFilePath                             BaseVersion;                                       // 0x40(0x10)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	class FString                                VersionId;                                         // 0x50(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bBinariesPatch;                                    // 0x60(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1002[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10A8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FBinariesPatchConfig                  BinariesPatchConfig;                               // 0x68(0x50)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	TArray<struct FDirectoryPath>                AssetIncludeFilters;                               // 0xB8(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FDirectoryPath>                AssetIgnoreFilters;                                // 0xC8(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bForceSkipContent;                                 // 0xD8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1003[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10A9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FDirectoryPath>                ForceSkipContentRules;                             // 0xE0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FSoftObjectPath>               ForceSkipAssets;                                   // 0xF0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIncludeHasRefAssetsOnly;                          // 0x100(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAnalysisFilterDependencies;                       // 0x101(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAnalysisDiffAssetDependenciesOnly;                // 0x102(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1004[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10AC[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<enum class EAssetRegistryDependencyTypeEx> AssetRegistryDependencyTypes;                      // 0x108(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FPatcherSpecifyAsset>          IncludeSpecifyAssets;                              // 0x118(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bRecursiveWidgetTree;                              // 0x128(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bPackageTracker;                                   // 0x129(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1005[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10AD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bIncludeEngineIni;                                 // 0x12E(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIncludePluginIni;                                 // 0x12F(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIncludeProjectIni;                                // 0x130(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bEnableExternFilesDiff;                            // 0x131(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1006[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10AE[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FString>                        IgnoreDeletionModulesAsset;                        // 0x138(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1007[0x20];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10AF[0x20];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FPlatformExternAssets>         AddExternAssetsToPlatform;                         // 0x168(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1008[0x18];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10B0[0x18];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bEnableChunk;                                      // 0x190(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bCreateDefaultChunk;                               // 0x191(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1009[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10B1[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FChunkInfo>                    ChunkInfos;                                        // 0x198(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bCookPatchAssets;                                  // 0x1A8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_100A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10B2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCookShaderOptions                    CookShaderOptions;                                 // 0x1B0(0x28)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FAssetRegistryOptions                 SerializeAssetRegistryOptions;                     // 0x1D8(0x30)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FIoStoreSettings                      IoStoreSettings;                                   // 0x208(0x80)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
@@ -459,7 +459,7 @@ public:
 	TArray<struct FReplaceText>                  ReplacePakListTexts;                               // 0x2E8(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<enum class ETargetPlatform>           PakTargetPlatforms;                                // 0x2F8(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bCustomPakNameRegular;                             // 0x308(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_100B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10B3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                PakNameRegular;                                    // 0x310(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bStorageNewRelease;                                // 0x320(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bStoragePakFileInfo;                               // 0x321(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -467,7 +467,7 @@ public:
 	bool                                         bStorageDeletedAssetsToNewReleaseJson;             // 0x323(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bStorageDiffAnalysisResults;                       // 0x324(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bBackupMetadata;                                   // 0x325(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_100C[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10B4[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bEnableProfiling;                                  // 0x327(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -477,7 +477,7 @@ struct FPlatformPakListFiles
 {
 public:
 	enum class ETargetPlatform                   TargetPlatform;                                    // 0x0(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_100D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10B7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FFilePath>                     PakResponseFiles;                                  // 0x8(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FFilePath>                     PakFiles;                                          // 0x18(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                AESKey;                                            // 0x28(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -490,24 +490,24 @@ struct FExportReleaseSettings : public FHotPatcherSettingBase
 public:
 	class FString                                VersionId;                                         // 0x38(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ByPakList;                                         // 0x48(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_100F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10F6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FPlatformPakListFiles>         PlatformsPakListFiles;                             // 0x50(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FDirectoryPath>                AssetIncludeFilters;                               // 0x60(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FDirectoryPath>                AssetIgnoreFilters;                                // 0x70(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAnalysisFilterDependencies;                       // 0x80(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1010[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10F7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<enum class EAssetRegistryDependencyTypeEx> AssetRegistryDependencyTypes;                      // 0x88(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIncludeHasRefAssetsOnly;                          // 0x98(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1011[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10F8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FPatcherSpecifyAsset>          IncludeSpecifyAssets;                              // 0xA0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1012[0x20];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10F9[0x20];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FPlatformExternAssets>         AddExternAssetsToPlatform;                         // 0xD0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bBackupMetadata;                                   // 0xE0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bBackupProjectConfig;                              // 0xE1(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1013[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10FA[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<enum class ETargetPlatform>           BackupMetadataPlatforms;                           // 0xE8(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bNoShaderCompile;                                  // 0xF8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1014[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_10FB[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x38 (0x38 - 0x0)
@@ -528,7 +528,7 @@ public:
 	class FString                                VersionId;                                         // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                BaseVersionId;                                     // 0x10(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Date;                                              // 0x20(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1015[0x48];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10FC[0x48];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FAssetDependenciesInfo                AssetInfo;                                         // 0x78(0x50)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	TMap<enum class ETargetPlatform, struct FPlatformExternAssets> PlatformAssets;                                    // 0xC8(0x50)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
@@ -596,7 +596,7 @@ public:
 	class FString                                Filename;                                          // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Hash;                                              // 0x10(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        FileSize;                                          // 0x20(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1018[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_10FD[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -642,7 +642,7 @@ struct FPatchVersionExternDiff
 {
 public:
 	enum class ETargetPlatform                   Platform;                                          // 0x0(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1019[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10FE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FExternFileInfo>               AddExternalFiles;                                  // 0x8(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FExternFileInfo>               ModifyExternalFiles;                               // 0x18(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FExternFileInfo>               DeleteExternalFiles;                               // 0x28(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -663,7 +663,7 @@ struct FPlatformExternFiles
 {
 public:
 	enum class ETargetPlatform                   Platform;                                          // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_101A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10FF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FExternFileInfo>               ExternFiles;                                       // 0x8(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -672,9 +672,9 @@ public:
 struct FHotPatcherContext
 {
 public:
-	uint8                                        Pad_101B[0x40];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1100[0x40];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class UScopedSlowTaskContext*                UnrealPakSlowTask;                                 // 0x40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_101C[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1101[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x118 (0x170 - 0x58)
@@ -690,7 +690,7 @@ public:
 struct FHotPatcherPatchContext : public FHotPatcherContext
 {
 public:
-	uint8                                        Pad_101E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1102[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FHotPatcherVersion                    BaseVersion;                                       // 0x60(0x118)(Edit, NativeAccessSpecifierPublic)
 	struct FHotPatcherVersion                    CurrentVersion;                                    // 0x178(0x118)(Edit, NativeAccessSpecifierPublic)
 	struct FPatchVersionDiff                     VersionDiff;                                       // 0x290(0x140)(Edit, NativeAccessSpecifierPublic)
@@ -698,7 +698,7 @@ public:
 	struct FChunkInfo                            NewVersionChunk;                                   // 0x4E8(0x88)(Edit, NativeAccessSpecifierPublic)
 	TArray<struct FChunkInfo>                    PakChunks;                                         // 0x570(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FPakCommand>                   AdditionalFileToPak;                               // 0x580(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_101F[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1103[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

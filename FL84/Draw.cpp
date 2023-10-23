@@ -17,8 +17,11 @@ namespace Draw
 		ImGui::GetBackgroundDrawList()->AddTriangleFilled(ImVec2(x1, y1), ImVec2(x2, y2), ImVec2(x3, y3), ImGui::GetColorU32(color));
 	}
 
-	void DrawTriangle(float x1, float y1, float x2, float y2, float x3, float y3, ImVec4 color, float thickness)
+	void DrawTriangle(float x1, float y1, float x2, float y2, float x3, float y3, bool filled, ImVec4 color, float thickness)
 	{
+		if (filled)
+			ImGui::GetBackgroundDrawList()->AddTriangleFilled(ImVec2(x1, y1), ImVec2(x2, y2), ImVec2(x3, y3), ImGui::GetColorU32(ImVec4(0.0f, 0.0f, 0.0f, 0.5f)));
+
 		ImGui::GetBackgroundDrawList()->AddTriangle(ImVec2(x1, y1), ImVec2(x2, y2), ImVec2(x3, y3), ImGui::GetColorU32(color), thickness);
 	}
 

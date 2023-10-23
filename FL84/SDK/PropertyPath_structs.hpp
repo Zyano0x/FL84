@@ -21,9 +21,9 @@ struct FPropertyPathSegment
 public:
 	class FName                                  Name;                                              // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ArrayIndex;                                        // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_66E[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5D6[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UStruct*                               Struct;                                            // 0x10(0x8)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_66F[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_5D7[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -32,9 +32,9 @@ struct FCachedPropertyPath
 {
 public:
 	TArray<struct FPropertyPathSegment>          Segments;                                          // 0x0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_671[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5D8[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFunction*                             CachedFunction;                                    // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_672[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_5D9[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

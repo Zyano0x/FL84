@@ -14,7 +14,7 @@ namespace SDK
 class UAssetRegistryImpl : public UObject
 {
 public:
-	uint8                                        Pad_14F4[0x750];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_19DF[0x750];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UAssetRegistryImpl* GetDefaultObj();

@@ -14,7 +14,7 @@ namespace SDK
 class AAbility_Rifle_Mphy08_BaseDamage_C : public ASolarAbility
 {
 public:
-	uint8                                        Pad_1A28[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2352[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AAbility_Rifle_Mphy08_BaseDamage_C* GetDefaultObj();

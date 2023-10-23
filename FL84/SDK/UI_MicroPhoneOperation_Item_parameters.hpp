@@ -28,7 +28,7 @@ struct UUI_MicroPhoneOperation_Item_C_SetOrder_Params
 public:
 	int32                                        OrderId;                                           // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                             CallFunc_MakeVector2D_ReturnValue;                 // 0x4(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_356C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_264C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateBrush                           K2Node_MakeStruct_SlateBrush;                      // 0x10(0x98)(None)
 	struct FSlateBrush                           K2Node_MakeStruct_SlateBrush_1;                    // 0xA8(0x98)(None)
 	struct FSlateBrush                           K2Node_MakeStruct_SlateBrush_2;                    // 0x140(0x98)(None)

@@ -14,7 +14,7 @@ namespace SDK
 class AAbility_Rifle_BMphy01_BaseDamage_C : public ASolarAbility
 {
 public:
-	uint8                                        Pad_1A56[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_235E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class USceneComponent*                       DefaultSceneRoot;                                  // 0x310(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

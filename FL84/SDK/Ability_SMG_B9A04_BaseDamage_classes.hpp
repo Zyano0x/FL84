@@ -14,7 +14,7 @@ namespace SDK
 class AAbility_SMG_B9A04_BaseDamage_C : public ASolarAbility
 {
 public:
-	uint8                                        Pad_1A8F[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1186[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AAbility_SMG_B9A04_BaseDamage_C* GetDefaultObj();

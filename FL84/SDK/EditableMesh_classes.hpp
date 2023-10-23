@@ -28,7 +28,7 @@ public:
 	class UGeometryCollection*                   GeometryCollection;                                // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UGeometryCollection*                   OriginalGeometryCollection;                        // 0x30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                        GeometryCollectionLODIndex;                        // 0x38(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_386[0x9C];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_487[0x9C];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UEditableGeometryCollectionAdapter* GetDefaultObj();
@@ -40,14 +40,14 @@ public:
 class UEditableMesh : public UObject
 {
 public:
-	uint8                                        Pad_429[0x390];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_547[0x390];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UEditableMeshAdapter*>          Adapters;                                          // 0x3B8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42A[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_548[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        TextureCoordinateCount;                            // 0x3D0(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42B[0x148];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_549[0x148];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        PendingCompactCounter;                             // 0x51C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        SubdivisionCount;                                  // 0x520(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42C[0x1E4];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_54A[0x1E4];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UEditableMesh* GetDefaultObj();
@@ -203,7 +203,7 @@ public:
 	class UStaticMesh*                           StaticMesh;                                        // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UStaticMesh*                           OriginalStaticMesh;                                // 0x30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                        StaticMeshLODIndex;                                // 0x38(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_458[0xA4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_554[0xA4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UEditableStaticMeshAdapter* GetDefaultObj();

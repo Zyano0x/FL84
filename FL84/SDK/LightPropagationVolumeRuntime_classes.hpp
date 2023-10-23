@@ -14,10 +14,10 @@ namespace SDK
 class ULightPropagationVolumeBlendable : public UObject
 {
 public:
-	uint8                                        Pad_797[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_886[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLightPropagationVolumeSettings       Settings;                                          // 0x30(0x40)(Edit, BlueprintVisible, Interp, NoDestructor, NativeAccessSpecifierPublic)
 	float                                        BlendWeight;                                       // 0x70(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_798[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_887[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULightPropagationVolumeBlendable* GetDefaultObj();

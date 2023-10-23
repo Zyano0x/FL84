@@ -20,23 +20,23 @@ public:
 	class UCanvasPanel*                          TextPanel;                                         // 0x360(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                  Text;                                              // 0x368(0x18)(Edit, BlueprintVisible)
 	bool                                         bEnableTickering;                                  // 0x380(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3548[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_328[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        LoopIntervalDuration;                              // 0x384(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        AnimationSpeed;                                    // 0x388(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bCanTicker;                                        // 0x38C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3549[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_329[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        OriTextWidth;                                      // 0x390(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_354A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_32A[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  ShortenedText;                                     // 0x398(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FTimerHandle                          TimerHandle;                                       // 0x3B0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         bEnableLocText;                                    // 0x3B8(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_354B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_32B[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        LocTextID;                                         // 0x3BC(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bIsAnimationPlaying;                               // 0x3C0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_354C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_32C[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        TargetXVal;                                        // 0x3C4(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        DeltaTime;                                         // 0x3C8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_354D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_32D[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          TickerTimerHandle;                                 // 0x3D0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FSlateFontInfo                        Font;                                              // 0x3D8(0x60)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	struct FSlateColor                           TxtColor;                                          // 0x438(0x28)(Edit, BlueprintVisible)

@@ -19,10 +19,10 @@ public:
 	struct FRigVMByteCode                        ByteCode;                                          // 0x168(0x10)(NativeAccessSpecifierPublic)
 	struct FRigVMInstructionArray                Instructions;                                      // 0x178(0x10)(Transient, NativeAccessSpecifierPrivate)
 	TArray<class FName>                          FunctionNames;                                     // 0x188(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1765[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1EF2[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FRigVMParameter>               Parameters;                                        // 0x1A8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TMap<class FName, int32>                     ParametersNameMap;                                 // 0x1B8(0x50)(NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1766[0x38];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1EF3[0x38];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class URigVM* GetDefaultObj();

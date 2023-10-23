@@ -34,7 +34,7 @@ namespace SDK
 	struct FInSightEvent
 	{
 	public:
-		uint8                                        Pad_8D1[0x1];                                      // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_9C2[0x1];                                      // Fixing Size Of Struct [ Dumper-7 ]
 	};
 
 }

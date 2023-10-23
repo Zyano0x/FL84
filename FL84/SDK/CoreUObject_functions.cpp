@@ -61,6 +61,29 @@ namespace SDK
 		return false;
 	}
 
+	FVector2D FVector2D::operator+(const FVector2D& Other) const
+	{
+		return { X + Other.X, Y + Other.Y };
+	}
+
+	FVector2D FVector2D::operator-(const FVector2D& Other) const
+	{
+		return { X - Other.X, Y - Other.Y };
+	}
+
+	FVector2D FVector2D::operator*(decltype(X) Scalar) const
+	{
+		return { X * Scalar, Y * Scalar };
+	}
+
+	FVector2D FVector2D::operator/(decltype(X) Scalar) const
+	{
+		if (Scalar == 0.0f)
+			return FVector2D();
+
+		return { X / Scalar, Y / Scalar };
+	}
+
 	class UFunction* UClass::GetFunction(const std::string& ClassName, const std::string& FuncName)
 	{
 		for (UStruct* Clss = this; Clss; Clss = Clss->Super)
@@ -79,15 +102,215 @@ namespace SDK
 		return nullptr;
 	}
 
-	// --------------------------------------------------
-	// # Structs Functions
-	// --------------------------------------------------
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 */
+	FVector::FVector()
+	{
+		X = 0;
+		Y = 0;
+		Z = 0;
+	}
+
+	FVector::FVector(float x, float y, float z)
+	{
+		X = x;
+		Y = y;
+		Z = z;
+	}
+
+	FVector FVector::operator +(float scalar) const
+	{
+		return FVector(X + scalar, Y + scalar, Z + scalar);
+	}
+
+	FVector FVector::operator +(const FVector& other) const
+	{
+		return FVector(X + other.X, Y + other.Y, Z + other.Z);
+	}
+
+	FVector FVector::operator -(float scalar) const
+	{
+		return FVector(X - scalar, Y - scalar, Z - scalar);
+	}
+
+	FVector FVector::operator -(const FVector& other) const
+	{
+		return FVector(X - other.X, Y - other.Y, Z - other.Z);
+	}
+
+	FVector FVector::operator *(float scalar) const
+	{
+		return FVector(X * scalar, Y * scalar, Z * scalar);
+	}
+
+	FVector FVector::operator *(const FVector& other) const
+	{
+		return FVector(X * other.X, Y * other.Y, Z * other.Z);
+	}
+
+	FVector FVector::operator /(float scalar) const
+	{
+		return FVector(X / scalar, Y / scalar, Z / scalar);
+	}
+
+	FVector FVector::operator /(const FVector& other) const
+	{
+		return FVector(X / other.X, Y / other.Y, Z / other.Z);
+	}
+
+	FVector& FVector::operator =(const FVector& other)
+	{
+		X = other.X;
+		Y = other.Y;
+		Z = other.Z;
+		return *this;
+	}
+
+	FVector& FVector::operator +=(float scalar)
+	{
+		X += scalar;
+		Y += scalar;
+		Z += scalar;
+		return *this;
+	}
+
+	FVector& FVector::operator +=(const FVector& other)
+	{
+		X += other.X;
+		Y += other.Y;
+		Z += other.Z;
+		return *this;
+	}
+
+	FVector& FVector::operator -=(float scalar)
+	{
+		X -= scalar;
+		Y -= scalar;
+		Z -= scalar;
+		return *this;
+	}
+
+	FVector& FVector::operator -=(const FVector& other)
+	{
+		X -= other.X;
+		Y -= other.Y;
+		Z -= other.Z;
+		return *this;
+	}
+
+	FVector& FVector::operator *=(const FVector& other)
+	{
+		X *= other.X;
+		Y *= other.Y;
+		Z *= other.Z;
+		return *this;
+	}
+
+	FVector& FVector::operator *=(float scalar)
+	{
+		X *= scalar;
+		Y *= scalar;
+		Z *= scalar;
+		return *this;
+	}
+
+	bool FVector::IsValid()
+	{
+		return X == 0.0f && Y == 0.0f;
+	}
+
+	void FVector::Normalize360(FVector& angle)
+	{
+		const float maxX1 = 80.0f;
+
+		while (angle.X > maxX1)
+			angle.X -= 180.0f;
+		while (angle.X < -maxX1)
+			angle.X += 180.0f;
+		while (angle.Y > 180.0f)
+			angle.Y -= 360.0f;
+		while (angle.Y < -180.0f)
+			angle.Y += 360.0f;
+	}
+
+	void FVector::Normalize()
+	{
+		// pitch
+		if (X > 90.f)
+			X = 90.f;
+		else if (X < -90.f)
+			X = -90.f;
+
+		// convert to Sword With Sauce's angle system
+		if (X < 0.f)
+			X += 360.f;
+		Y = fmodf(Y + 360.f, 360.f);
+	}
+
+	float FVector::Dot(const FVector& b) const
+	{
+		return (X * b.X) + (Y * b.Y) + (Z * b.Z);
+	}
+
+	float FVector::MagnitudeSqr() const
+	{
+		return Dot(*this);
+	}
+
+	float FVector::Magnitude() const
+	{
+		return std::sqrtf(MagnitudeSqr());
+	}
+
+	float FVector::Size() const
+	{
+		return sqrt((this->X * this->X) + (this->Y * this->Y) + (this->Z * this->Z));
+	}
+
+	FVector FVector::Unit() const
+	{
+		const float fMagnitude = Magnitude();
+		return FVector(X / fMagnitude, Y / fMagnitude, Z / fMagnitude);
+	}
+
+	FRotator FVector::ToRotator() const
+	{
+		static constexpr float PI = 3.14159265359f;
+		// Pitch, Yaw, Roll
+		return FRotator(asinf(Z / Magnitude()) * 180.0f / PI, atan2f(Y, X) * 180.0f / PI, 0.0f);
+	}
+
+	float FVector::Distance(const FVector& v) const
+	{
+		return float(sqrtf(powf(v.X - X, 2.0f) + powf(v.Y - Y, 2.0f) + powf(v.Z - Z, 2.0f)));
+	}
+
+	float FVector::DistanceMeter(FVector& v) const
+	{
+		return Distance(v) * 0.01f;
+	}
+
+	FORCEINLINE float InvSqrt(float F)
+	{
+		return 1.0f / sqrtf(F);
+	}
+
+	FVector FVector::GetSafeNormal(float Tolerance) const
+	{
+		const float SquareSum = X * X + Y * Y + Z * Z;
+
+		// Not sure if it's safe to add tolerance in there. Might introduce too many errors
+		if (SquareSum == 1.f)
+		{
+			return *this;
+		}
+		else if (SquareSum < Tolerance)
+		{
+			return FVector(0, 0, 0);
+		}
+		const float Scale = InvSqrt(SquareSum);
+
+		return FVector(X * Scale, Y * Scale, Z * Scale);
+	}
+
 	FRotator::FRotator()
 	{
 		Pitch = 0.0f;
@@ -95,16 +318,6 @@ namespace SDK
 		Roll = 0.0f;
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              pitch
-	 * 		float                                              yaw
-	 * 		float                                              roll
-	 */
 	FRotator::FRotator(float pitch, float yaw, float roll)
 	{
 		Pitch = pitch;
@@ -112,131 +325,51 @@ namespace SDK
 		Roll = roll;
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
 	FRotator FRotator::operator +(float scalar) const
 	{
 		return FRotator(Pitch + scalar, Yaw + scalar, Roll + scalar);
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FRotator&                                    other
-	 */
 	FRotator FRotator::operator +(const FRotator& other) const
 	{
 		return FRotator(Pitch + other.Pitch, Yaw + other.Yaw, Roll + other.Roll);
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
 	FRotator FRotator::operator -(float scalar) const
 	{
 		return FRotator(Pitch - scalar, Yaw - scalar, Roll - scalar);
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FRotator&                                    other
-	 */
 	FRotator FRotator::operator -(const FRotator& other) const
 	{
 		return FRotator(Pitch - other.Pitch, Yaw - other.Yaw, Roll - other.Roll);
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
 	FRotator FRotator::operator *(float scalar) const
 	{
 		return FRotator(Pitch * scalar, Yaw * scalar, Roll * scalar);
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FRotator&                                    other
-	 */
 	FRotator FRotator::operator *(const FRotator& other) const
 	{
 		return FRotator(Pitch * other.Pitch, Yaw * other.Yaw, Roll * other.Roll);
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
 	FRotator FRotator::operator /(float scalar) const
 	{
 		return FRotator(Pitch / scalar, Yaw / scalar, Roll / scalar);
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FRotator&                                    other
-	 */
 	FRotator FRotator::operator /(const FRotator& other) const
 	{
 		return FRotator(Pitch / other.Pitch, Yaw / other.Yaw, Roll / other.Roll);
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FRotator&                                    other
-	 */
 	FRotator& FRotator::operator =(const FRotator& other)
 	{
 		Pitch = other.Pitch; Yaw = other.Yaw; Roll = other.Roll; return *this;
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
 	FRotator& FRotator::operator +=(float scalar)
 	{
 		Pitch += scalar;
@@ -245,14 +378,6 @@ namespace SDK
 		return *this;
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FRotator&                                    other
-	 */
 	FRotator& FRotator::operator +=(const FRotator& other)
 	{
 		Pitch += other.Pitch;
@@ -261,14 +386,6 @@ namespace SDK
 		return *this;
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
 	FRotator& FRotator::operator -=(float scalar)
 	{
 		Pitch -= scalar;
@@ -277,14 +394,6 @@ namespace SDK
 		return *this;
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FRotator&                                    other
-	 */
 	FRotator& FRotator::operator -=(const FRotator& other)
 	{
 		Pitch -= other.Pitch;
@@ -293,14 +402,6 @@ namespace SDK
 		return *this;
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FRotator&                                    other
-	 */
 	FRotator& FRotator::operator *=(const FRotator& other)
 	{
 		Pitch *= other.Pitch;
@@ -309,14 +410,6 @@ namespace SDK
 		return *this;
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const float                                        other
-	 */
 	FRotator& FRotator::operator *=(const float other)
 	{
 		Pitch *= other;
@@ -325,14 +418,6 @@ namespace SDK
 		return *this;
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FRotator&                                    other
-	 */
 	FRotator& FRotator::operator /=(const FRotator& other)
 	{
 		Pitch /= other.Pitch;
@@ -341,14 +426,6 @@ namespace SDK
 		return *this;
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const float                                        other
-	 */
 	FRotator& FRotator::operator /=(const float other)
 	{
 		Pitch /= other;
@@ -357,23 +434,11 @@ namespace SDK
 		return *this;
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 */
 	float FRotator::Size() const
 	{
 		return sqrt(Pitch * Pitch + Yaw * Yaw + Roll * Roll);
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 */
 	FRotator FRotator::Clamp() const
 	{
 		FRotator r = { Pitch, Yaw, Roll };
@@ -417,684 +482,52 @@ namespace SDK
 		return FVector(cp * cy, cp * sy, -sp);
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 */
-	FVector::FVector()
+	FVector4 FVector4::operator+(const FVector4& Other) const
 	{
-		X = 0;
-		Y = 0;
-		Z = 0;
+		return { X + Other.X, Y + Other.Y, Z + Other.Z, W + Other.W };
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              x
-	 * 		float                                              y
-	 * 		float                                              z
-	 */
-	FVector::FVector(float x, float y, float z)
+	FVector4 FVector4::operator-(const FVector4& Other) const
 	{
-		X = x;
-		Y = y;
-		Z = z;
+		return { X - Other.X, Y - Other.Y, Z - Other.Z, W - Other.W };
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
-	FVector FVector::operator +(float scalar) const
+	FVector4 FVector4::operator*(decltype(X) Scalar) const
 	{
-		return FVector(X + scalar, Y + scalar, Z + scalar);
+		return { X * Scalar, Y * Scalar, Z * Scalar, W * Scalar };
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FVector&                                     other
-	 */
-	FVector FVector::operator +(const FVector& other) const
+	FVector4 FVector4::operator/(decltype(X) Scalar) const
 	{
-		return FVector(X + other.X, Y + other.Y, Z + other.Z);
+		if (Scalar == 0.0f)
+			return FVector4();
+
+		return { X / Scalar, Y / Scalar, Z / Scalar, W / Scalar };
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
-	FVector FVector::operator -(float scalar) const
+	FQuat FQuat::operator+(const FQuat& Other) const
 	{
-		return FVector(X - scalar, Y - scalar, Z - scalar);
+		return { X + Other.X, Y + Other.Y, Z + Other.Z, W + Other.W };
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FVector&                                     other
-	 */
-	FVector FVector::operator -(const FVector& other) const
+	FQuat FQuat::operator-(const FQuat& Other) const
 	{
-		return FVector(X - other.X, Y - other.Y, Z - other.Z);
+		return { X - Other.X, Y - Other.Y, Z - Other.Z, W - Other.W };
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
-	FVector FVector::operator *(float scalar) const
+	FQuat FQuat::operator*(decltype(X) Scalar) const
 	{
-		return FVector(X * scalar, Y * scalar, Z * scalar);
+		return { X * Scalar, Y * Scalar, Z * Scalar, W * Scalar };
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FVector&                                     other
-	 */
-	FVector FVector::operator *(const FVector& other) const
+	FQuat FQuat::operator/(decltype(X) Scalar) const
 	{
-		return FVector(X * other.X, Y * other.Y, Z * other.Z);
+		if (Scalar == 0.0f)
+			return FQuat();
+
+		return { X / Scalar, Y / Scalar, Z / Scalar, W / Scalar };
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
-	FVector FVector::operator /(float scalar) const
-	{
-		return FVector(X / scalar, Y / scalar, Z / scalar);
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FVector&                                     other
-	 */
-	FVector FVector::operator /(const FVector& other) const
-	{
-		return FVector(X / other.X, Y / other.Y, Z / other.Z);
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FVector&                                     other
-	 */
-	FVector& FVector::operator =(const FVector& other)
-	{
-		X = other.X;
-		Y = other.Y;
-		Z = other.Z;
-		return *this;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
-	FVector& FVector::operator +=(float scalar)
-	{
-		X += scalar;
-		Y += scalar;
-		Z += scalar;
-		return *this;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FVector&                                     other
-	 */
-	FVector& FVector::operator +=(const FVector& other)
-	{
-		X += other.X;
-		Y += other.Y;
-		Z += other.Z;
-		return *this;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
-	FVector& FVector::operator -=(float scalar)
-	{
-		X -= scalar;
-		Y -= scalar;
-		Z -= scalar;
-		return *this;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FVector&                                     other
-	 */
-	FVector& FVector::operator -=(const FVector& other)
-	{
-		X -= other.X;
-		Y -= other.Y;
-		Z -= other.Z;
-		return *this;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FVector&                                     other
-	 */
-	FVector& FVector::operator *=(const FVector& other)
-	{
-		X *= other.X;
-		Y *= other.Y;
-		Z *= other.Z;
-		return *this;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
-	FVector& FVector::operator *=(float scalar)
-	{
-		X *= scalar;
-		Y *= scalar;
-		Z *= scalar;
-		return *this;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 */
-	bool FVector::IsValid()
-	{
-		return X == 0.0f && Y == 0.0f;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		FVector&                                           angle
-	 */
-	void FVector::Normalize360(FVector& angle)
-	{
-		const float maxX1 = 80.0f;
-
-		while (angle.X > maxX1)
-			angle.X -= 180.0f;
-		while (angle.X < -maxX1)
-			angle.X += 180.0f;
-		while (angle.Y > 180.0f)
-			angle.Y -= 360.0f;
-		while (angle.Y < -180.0f)
-			angle.Y += 360.0f;
-	}
-
-	void FVector::Normalize()
-	{
-		// pitch
-		if (X > 90.f)
-			X = 90.f;
-		else if (X < -90.f)
-			X = -90.f;
-
-		// convert to Sword With Sauce's angle system
-		if (X < 0.f)
-			X += 360.f;
-		Y = fmodf(Y + 360.f, 360.f);
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FVector&                                     b
-	 */
-	float FVector::Dot(const FVector& b) const
-	{
-		return (X * b.X) + (Y * b.Y) + (Z * b.Z);
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 */
-	float FVector::MagnitudeSqr() const
-	{
-		return Dot(*this);
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 */
-	float FVector::Magnitude() const
-	{
-		return std::sqrtf(MagnitudeSqr());
-	}
-
-	float FVector::Size() const
-	{
-		return sqrt((this->X * this->X) + (this->Y * this->Y) + (this->Z * this->Z));
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 */
-	FVector FVector::Unit() const
-	{
-		const float fMagnitude = Magnitude();
-		return FVector(X / fMagnitude, Y / fMagnitude, Z / fMagnitude);
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 */
-	FRotator FVector::ToRotator() const
-	{
-		static constexpr float PI = 3.14159265359f;
-		// Pitch, Yaw, Roll
-		return FRotator(asinf(Z / Magnitude()) * 180.0f / PI, atan2f(Y, X) * 180.0f / PI, 0.0f);
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FVector&                                     v
-	 */
-	float FVector::Distance(const FVector& v) const
-	{
-		return float(sqrtf(powf(v.X - X, 2.0f) + powf(v.Y - Y, 2.0f) + powf(v.Z - Z, 2.0f)));
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		FVector&                                           v
-	 */
-	float FVector::DistanceMeter(FVector& v) const
-	{
-		return Distance(v) * 0.01f;
-	}
-
-	FORCEINLINE float InvSqrt(float F)
-	{
-		return 1.0f / sqrtf(F);
-	}
-
-	FVector FVector::GetSafeNormal(float Tolerance) const
-	{
-		const float SquareSum = X * X + Y * Y + Z * Z;
-
-		// Not sure if it's safe to add tolerance in there. Might introduce too many errors
-		if (SquareSum == 1.f)
-		{
-			return *this;
-		}
-		else if (SquareSum < Tolerance)
-		{
-			return FVector(0, 0, 0);
-		}
-		const float Scale = InvSqrt(SquareSum);
-
-		return FVector(X * Scale, Y * Scale, Z * Scale);
-	}
-	//---------------------------------------------------------------------------------------------------------------------
-	// FUNCTIONS
-	//---------------------------------------------------------------------------------------------------------------------
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 */
-	FVector2D::FVector2D()
-	{
-		X = 0;
-		Y = 0;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              x
-	 * 		float                                              y
-	 */
-	FVector2D::FVector2D(float x, float y)
-	{
-		X = x;
-		Y = y;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 */
-	bool FVector2D::IsValid()
-	{
-		return X == 0 && Y == 0;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		FVector2D&                                         v
-	 */
-	float FVector2D::Distance(FVector2D& v) const
-	{
-		return powf(v.X - X, 2) + powf(v.Y - Y, 2);
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FVector2D&                                   other
-	 */
-	FVector2D FVector2D::operator +(const FVector2D& other) const
-	{
-		return FVector2D(X + other.X, Y + other.Y);
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
-	FVector2D FVector2D::operator +(float scalar) const
-	{
-		return FVector2D(X + scalar, Y + scalar);
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
-	FVector2D FVector2D::operator -(float scalar) const
-	{
-		return FVector2D(X - scalar, Y - scalar);
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FVector2D&                                   other
-	 */
-	FVector2D FVector2D::operator -(const FVector2D& other) const
-	{
-		return FVector2D(X - other.X, Y - other.Y);
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
-	FVector2D FVector2D::operator *(float scalar) const
-	{
-		return FVector2D(X * scalar, Y * scalar);
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FVector2D&                                   other
-	 */
-	FVector2D FVector2D::operator *(const FVector2D& other) const
-	{
-		return FVector2D(X * other.X, Y * other.Y);
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
-	FVector2D FVector2D::operator /(float scalar) const
-	{
-		return FVector2D(X / scalar, Y / scalar);
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FVector2D&                                   other
-	 */
-	FVector2D FVector2D::operator /(const FVector2D& other) const
-	{
-		return FVector2D(X / other.X, Y / other.Y);
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FVector2D&                                   other
-	 */
-	FVector2D& FVector2D::operator =(const FVector2D& other)
-	{
-		X = other.X;
-		Y = other.Y;
-		return *this;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
-	FVector2D& FVector2D::operator +=(float scalar)
-	{
-		X += scalar;
-		Y += scalar;
-		return *this;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FVector2D&                                   other
-	 */
-	FVector2D& FVector2D::operator +=(const FVector2D& other)
-	{
-		X += other.X;
-		Y += other.Y;
-		return *this;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
-	FVector2D& FVector2D::operator -=(float scalar)
-	{
-		X -= scalar;
-		Y -= scalar;
-		return *this;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FVector2D&                                   other
-	 */
-	FVector2D& FVector2D::operator -=(const FVector2D& other)
-	{
-		X -= other.X;
-		Y -= other.Y;
-		return *this;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FVector2D&                                   other
-	 */
-	FVector2D& FVector2D::operator *=(const FVector2D& other)
-	{
-		X *= other.X;
-		Y *= other.Y;
-		return *this;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		float                                              scalar
-	 */
-	FVector2D& FVector2D::operator *=(float scalar)
-	{
-		X *= scalar;
-		Y *= scalar;
-		return *this;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 * Parameters:
-	 * 		const FMatrix&                                     other
-	 */
 	FMatrix FMatrix::operator *(const FMatrix& other) const
 	{
 		FMatrix ret;
@@ -1122,12 +555,6 @@ namespace SDK
 		return ret;
 	}
 
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
-	 * 		Flags  -> ()
-	 */
 	FMatrix FTransform::ToMatrixWithScale() const
 	{
 		FMatrix OutMatrix;
@@ -1180,6 +607,11 @@ namespace SDK
 
 		return OutMatrix;
 	}
+
+	//---------------------------------------------------------------------------------------------------------------------
+	// FUNCTIONS
+	//---------------------------------------------------------------------------------------------------------------------
+
 
 	// Class CoreUObject.Object
 	// (None)
