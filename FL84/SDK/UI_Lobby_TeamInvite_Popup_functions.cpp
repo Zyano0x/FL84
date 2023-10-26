@@ -40,6 +40,78 @@ class UUI_Lobby_TeamInvite_Popup_C* UUI_Lobby_TeamInvite_Popup_C::GetDefaultObj(
 }
 
 
+// Function UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.OnClicked_ABC54BF44F210644A8791DA91E8D1376
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_TeamInvite_Popup_C::OnClicked_ABC54BF44F210644A8791DA91E8D1376()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_TeamInvite_Popup_C", "OnClicked_ABC54BF44F210644A8791DA91E8D1376");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.OnClicked_FF90BA2B4A5AFFCA569AFFA192001CD8
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Lobby_TeamInvite_Popup_C::OnClicked_FF90BA2B4A5AFFCA569AFFA192001CD8()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_TeamInvite_Popup_C", "OnClicked_FF90BA2B4A5AFFCA569AFFA192001CD8");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_TeamInvite_Popup_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_TeamInvite_Popup_C", "Destruct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_TeamInvite_Popup_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_TeamInvite_Popup_C", "Construct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.GetModuleName
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:

@@ -40,6 +40,114 @@ class UUI_Lobby_RoomInvite_Popup_C* UUI_Lobby_RoomInvite_Popup_C::GetDefaultObj(
 }
 
 
+// DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Delegate_516D39014B3E998F9FEA7EBBDEE81E2A
+// (Public, Delegate)
+// Parameters:
+
+void UUI_Lobby_RoomInvite_Popup_C::Delegate_516D39014B3E998F9FEA7EBBDEE81E2A()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_RoomInvite_Popup_C", "Delegate_516D39014B3E998F9FEA7EBBDEE81E2A");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_ABEE5A57428C50F933C06DBD5778A6A2
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Lobby_RoomInvite_Popup_C::OnClicked_ABEE5A57428C50F933C06DBD5778A6A2()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_RoomInvite_Popup_C", "OnClicked_ABEE5A57428C50F933C06DBD5778A6A2");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_3B31C26542B15F3E493A31B76E92E1FF
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Lobby_RoomInvite_Popup_C::OnClicked_3B31C26542B15F3E493A31B76E92E1FF()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_RoomInvite_Popup_C", "OnClicked_3B31C26542B15F3E493A31B76E92E1FF");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_21E9361140100D9EE53255B74835E550
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_RoomInvite_Popup_C::OnClicked_21E9361140100D9EE53255B74835E550()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_RoomInvite_Popup_C", "OnClicked_21E9361140100D9EE53255B74835E550");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_RoomInvite_Popup_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_RoomInvite_Popup_C", "Destruct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_RoomInvite_Popup_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_RoomInvite_Popup_C", "Construct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.GetModuleName
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:

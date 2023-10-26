@@ -28,7 +28,7 @@ class UActorSequenceComponent : public UActorComponent
 {
 public:
 	struct FMovieSceneSequencePlaybackSettings   PlaybackSettings;                                  // 0xB0(0x14)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_1219[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1084[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UActorSequence*                        Sequence;                                          // 0xC8(0x8)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UActorSequencePlayer*                  SequencePlayer;                                    // 0xD0(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 

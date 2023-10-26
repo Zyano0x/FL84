@@ -22,7 +22,7 @@ namespace SDK
 
 	void InitSDK()
 	{
-		return InitSDK(xorstr_(L"SolarlandClient-Win64-Shipping.exe"), 0x066B0680, 0x6697E00, 0x6807900);
+		return InitSDK(xorstr_(L"SolarlandClient-Win64-Shipping.exe"), 0x6ED40F0, 0x6EBB780, 0x7033498);
 	}
 
 	void InitGObjects()

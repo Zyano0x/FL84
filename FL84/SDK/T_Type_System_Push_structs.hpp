@@ -11,12 +11,12 @@ namespace SDK
 
 enum class ET_Type_System_Push : uint8
 {
-	Recruit                        = 0,
-	Room                           = 1,
-	Elimination1                   = 2,
-	Elimination2                   = 3,
-	BO1                            = 4,
-	Points                         = 5,
+	NewEnumerator0                 = 0,
+	NewEnumerator1                 = 1,
+	NewEnumerator2                 = 2,
+	NewEnumerator3                 = 3,
+	NewEnumerator4                 = 4,
+	NewEnumerator5                 = 5,
 	T_Type_System_MAX              = 6,
 };
 

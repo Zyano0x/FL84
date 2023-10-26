@@ -292,6 +292,27 @@ void UTickerWidget_C::OnSynchronizeProperties()
 }
 
 
+// Function TickerWidget.TickerWidget_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                               IsDesignTime                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UTickerWidget_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("TickerWidget_C", "PreConstruct");
+
+	Params::UTickerWidget_C_PreConstruct_Params Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function TickerWidget.TickerWidget_C.OnHide
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -369,46 +390,21 @@ void UTickerWidget_C::Construct()
 }
 
 
-// Function TickerWidget.TickerWidget_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function TickerWidget.TickerWidget_C.OnLocalLangChangedEx
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                               IsDesignTime                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FString                      InLang                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UTickerWidget_C::PreConstruct(bool IsDesignTime)
+void UTickerWidget_C::OnLocalLangChangedEx(const class FString& InLang)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("TickerWidget_C", "PreConstruct");
+		Func = Class->GetFunction("TickerWidget_C", "OnLocalLangChangedEx");
 
-	Params::UTickerWidget_C_PreConstruct_Params Parms{};
+	Params::UTickerWidget_C_OnLocalLangChangedEx_Params Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function TickerWidget.TickerWidget_C.CustomEvent_0
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                     Publisher                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     Payload                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class FString>              MetaData                                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-
-void UTickerWidget_C::CustomEvent_0(class UObject* Publisher, class UObject* Payload, TArray<class FString>& MetaData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("TickerWidget_C", "CustomEvent_0");
-
-	Params::UTickerWidget_C_CustomEvent_0_Params Parms{};
-
-	Parms.Publisher = Publisher;
-	Parms.Payload = Payload;
-	Parms.MetaData = MetaData;
+	Parms.InLang = InLang;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -419,16 +415,16 @@ void UTickerWidget_C::CustomEvent_0(class UObject* Publisher, class UObject* Pay
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USolarGlobalEventSystem*     CallFunc_GetGameInstanceSubsystem_ReturnValue                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
+// class FString                      K2Node_Event_InLang                                              (ZeroConstructor, HasGetValueTypeHash)
 // float                              CallFunc_Multiply_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetCurrentLang_ReturnValue                              (ZeroConstructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_X                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_Y                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsEmpty_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_Greater_FloatFloat_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_BreakVector2D_X_1                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_Y_1                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Greater_FloatFloat_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Greater_FloatFloat_ReturnValue_1                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Less_FloatFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_Multiply_FloatFloat_ReturnValue_1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -438,22 +434,18 @@ void UTickerWidget_C::CustomEvent_0(class UObject* Publisher, class UObject* Pay
 // struct FGeometry                   K2Node_Event_MyGeometry                                          (IsPlainOldData, NoDestructor)
 // float                              K2Node_Event_InDeltaTime                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector2D                   CallFunc_GetLocalSize_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USolarTables*                CallFunc_GetInstance_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_X_2                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_Y_2                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USolarTables*                CallFunc_GetInstance_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Add_FloatFloat_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Multiply_FloatFloat_ReturnValue_3                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSolarTablesData_LanguageSwitcherCallFunc_GetRowData_ReturnValue                                  (ConstParm)
-// struct FSolarTablesData_LanguageSwitcherCallFunc_GetRowData_ReturnValue_1                                (ConstParm)
+// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Conv_StringToFloat_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSolarTablesData_LanguageSwitcherCallFunc_GetRowData_ReturnValue_1                                (ConstParm)
 // float                              CallFunc_Conv_StringToFloat_ReturnValue_1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     K2Node_CustomEvent_Publisher                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     K2Node_CustomEvent_Payload                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class FString>              K2Node_CustomEvent_Metadata                                      (ConstParm, ReferenceParm, HasGetValueTypeHash)
 
-void UTickerWidget_C::ExecuteUbergraph_TickerWidget(int32 EntryPoint, class USolarGlobalEventSystem* CallFunc_GetGameInstanceSubsystem_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, float CallFunc_Multiply_FloatFloat_ReturnValue, const class FString& CallFunc_GetCurrentLang_ReturnValue, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, bool CallFunc_IsEmpty_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, float CallFunc_BreakVector2D_X_1, float CallFunc_BreakVector2D_Y_1, bool CallFunc_Greater_FloatFloat_ReturnValue_1, bool CallFunc_Less_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_2, float CallFunc_Subtract_FloatFloat_ReturnValue, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime, const struct FVector2D& CallFunc_GetLocalSize_ReturnValue, bool K2Node_Event_IsDesignTime, float CallFunc_BreakVector2D_X_2, float CallFunc_BreakVector2D_Y_2, class USolarTables* CallFunc_GetInstance_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_3, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue_1, const struct FSolarTablesData_LanguageSwitcher& CallFunc_GetRowData_ReturnValue, const struct FSolarTablesData_LanguageSwitcher& CallFunc_GetRowData_ReturnValue_1, float CallFunc_Conv_StringToFloat_ReturnValue, float CallFunc_Conv_StringToFloat_ReturnValue_1, class UObject* K2Node_CustomEvent_Publisher, class UObject* K2Node_CustomEvent_Payload, TArray<class FString>& K2Node_CustomEvent_Metadata)
+void UTickerWidget_C::ExecuteUbergraph_TickerWidget(int32 EntryPoint, const class FString& K2Node_Event_InLang, float CallFunc_Multiply_FloatFloat_ReturnValue, const class FString& CallFunc_GetCurrentLang_ReturnValue, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, bool CallFunc_IsEmpty_ReturnValue, bool K2Node_Event_IsDesignTime, float CallFunc_BreakVector2D_X_1, float CallFunc_BreakVector2D_Y_1, bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue_1, bool CallFunc_Less_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_2, float CallFunc_Subtract_FloatFloat_ReturnValue, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime, const struct FVector2D& CallFunc_GetLocalSize_ReturnValue, class USolarTables* CallFunc_GetInstance_ReturnValue, float CallFunc_BreakVector2D_X_2, float CallFunc_BreakVector2D_Y_2, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_3, const struct FSolarTablesData_LanguageSwitcher& CallFunc_GetRowData_ReturnValue, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue_1, float CallFunc_Conv_StringToFloat_ReturnValue, const struct FSolarTablesData_LanguageSwitcher& CallFunc_GetRowData_ReturnValue_1, float CallFunc_Conv_StringToFloat_ReturnValue_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -463,16 +455,16 @@ void UTickerWidget_C::ExecuteUbergraph_TickerWidget(int32 EntryPoint, class USol
 	Params::UTickerWidget_C_ExecuteUbergraph_TickerWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-	Parms.CallFunc_GetGameInstanceSubsystem_ReturnValue = CallFunc_GetGameInstanceSubsystem_ReturnValue;
-	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+	Parms.K2Node_Event_InLang = K2Node_Event_InLang;
 	Parms.CallFunc_Multiply_FloatFloat_ReturnValue = CallFunc_Multiply_FloatFloat_ReturnValue;
 	Parms.CallFunc_GetCurrentLang_ReturnValue = CallFunc_GetCurrentLang_ReturnValue;
 	Parms.CallFunc_BreakVector2D_X = CallFunc_BreakVector2D_X;
 	Parms.CallFunc_BreakVector2D_Y = CallFunc_BreakVector2D_Y;
 	Parms.CallFunc_IsEmpty_ReturnValue = CallFunc_IsEmpty_ReturnValue;
-	Parms.CallFunc_Greater_FloatFloat_ReturnValue = CallFunc_Greater_FloatFloat_ReturnValue;
+	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
 	Parms.CallFunc_BreakVector2D_X_1 = CallFunc_BreakVector2D_X_1;
 	Parms.CallFunc_BreakVector2D_Y_1 = CallFunc_BreakVector2D_Y_1;
+	Parms.CallFunc_Greater_FloatFloat_ReturnValue = CallFunc_Greater_FloatFloat_ReturnValue;
 	Parms.CallFunc_Greater_FloatFloat_ReturnValue_1 = CallFunc_Greater_FloatFloat_ReturnValue_1;
 	Parms.CallFunc_Less_FloatFloat_ReturnValue = CallFunc_Less_FloatFloat_ReturnValue;
 	Parms.CallFunc_Multiply_FloatFloat_ReturnValue_1 = CallFunc_Multiply_FloatFloat_ReturnValue_1;
@@ -482,20 +474,16 @@ void UTickerWidget_C::ExecuteUbergraph_TickerWidget(int32 EntryPoint, class USol
 	Parms.K2Node_Event_MyGeometry = K2Node_Event_MyGeometry;
 	Parms.K2Node_Event_InDeltaTime = K2Node_Event_InDeltaTime;
 	Parms.CallFunc_GetLocalSize_ReturnValue = CallFunc_GetLocalSize_ReturnValue;
-	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
+	Parms.CallFunc_GetInstance_ReturnValue = CallFunc_GetInstance_ReturnValue;
 	Parms.CallFunc_BreakVector2D_X_2 = CallFunc_BreakVector2D_X_2;
 	Parms.CallFunc_BreakVector2D_Y_2 = CallFunc_BreakVector2D_Y_2;
-	Parms.CallFunc_GetInstance_ReturnValue = CallFunc_GetInstance_ReturnValue;
 	Parms.CallFunc_Add_FloatFloat_ReturnValue = CallFunc_Add_FloatFloat_ReturnValue;
 	Parms.CallFunc_Multiply_FloatFloat_ReturnValue_3 = CallFunc_Multiply_FloatFloat_ReturnValue_3;
-	Parms.CallFunc_MakeVector2D_ReturnValue_1 = CallFunc_MakeVector2D_ReturnValue_1;
 	Parms.CallFunc_GetRowData_ReturnValue = CallFunc_GetRowData_ReturnValue;
-	Parms.CallFunc_GetRowData_ReturnValue_1 = CallFunc_GetRowData_ReturnValue_1;
+	Parms.CallFunc_MakeVector2D_ReturnValue_1 = CallFunc_MakeVector2D_ReturnValue_1;
 	Parms.CallFunc_Conv_StringToFloat_ReturnValue = CallFunc_Conv_StringToFloat_ReturnValue;
+	Parms.CallFunc_GetRowData_ReturnValue_1 = CallFunc_GetRowData_ReturnValue_1;
 	Parms.CallFunc_Conv_StringToFloat_ReturnValue_1 = CallFunc_Conv_StringToFloat_ReturnValue_1;
-	Parms.K2Node_CustomEvent_Publisher = K2Node_CustomEvent_Publisher;
-	Parms.K2Node_CustomEvent_Payload = K2Node_CustomEvent_Payload;
-	Parms.K2Node_CustomEvent_Metadata = K2Node_CustomEvent_Metadata;
 
 	UObject::ProcessEvent(Func, &Parms);
 

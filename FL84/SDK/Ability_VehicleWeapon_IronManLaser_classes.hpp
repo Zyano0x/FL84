@@ -14,7 +14,7 @@ namespace SDK
 class AAbility_VehicleWeapon_IronManLaser_C : public ASolarAbility
 {
 public:
-	uint8                                        Pad_2188[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_989[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AAbility_VehicleWeapon_IronManLaser_C* GetDefaultObj();

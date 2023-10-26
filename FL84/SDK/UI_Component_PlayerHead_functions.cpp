@@ -40,6 +40,666 @@ class UUI_Component_PlayerHead_C* UUI_Component_PlayerHead_C::GetDefaultObj()
 }
 
 
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_9CCD464C435F2E9704BB3DAB0B3C962A
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_9CCD464C435F2E9704BB3DAB0B3C962A(bool bSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_9CCD464C435F2E9704BB3DAB0B3C962A");
+
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_9CCD464C435F2E9704BB3DAB0B3C962A_Params Parms{};
+
+	Parms.bSuccess = bSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_3F56B5CF49E0F073DCBEDDA49AB232E0
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Component_PlayerHead_C::OnClicked_3F56B5CF49E0F073DCBEDDA49AB232E0()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_3F56B5CF49E0F073DCBEDDA49AB232E0");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_DC116A0D4143ED0A8C60AAB0D9A9B672
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_DC116A0D4143ED0A8C60AAB0D9A9B672(bool bSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_DC116A0D4143ED0A8C60AAB0D9A9B672");
+
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_DC116A0D4143ED0A8C60AAB0D9A9B672_Params Parms{};
+
+	Parms.bSuccess = bSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_15DAE2214B808962D70939975EFBDF0B
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Component_PlayerHead_C::OnClicked_15DAE2214B808962D70939975EFBDF0B()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_15DAE2214B808962D70939975EFBDF0B");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_F350B1B5495D29602DD00CB6E3385755
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_F350B1B5495D29602DD00CB6E3385755(bool bSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_F350B1B5495D29602DD00CB6E3385755");
+
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_F350B1B5495D29602DD00CB6E3385755_Params Parms{};
+
+	Parms.bSuccess = bSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_1A82CD4B447672DE5A02A884C5C776DF
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Component_PlayerHead_C::OnClicked_1A82CD4B447672DE5A02A884C5C776DF()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_1A82CD4B447672DE5A02A884C5C776DF");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_7E305FC846EC90DA6EAED6A6EE576468
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_7E305FC846EC90DA6EAED6A6EE576468(bool bSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_7E305FC846EC90DA6EAED6A6EE576468");
+
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_7E305FC846EC90DA6EAED6A6EE576468_Params Parms{};
+
+	Parms.bSuccess = bSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_EB5BAD8D433DB9BB9D8CF5BA327F27A1
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Component_PlayerHead_C::OnClicked_EB5BAD8D433DB9BB9D8CF5BA327F27A1()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_EB5BAD8D433DB9BB9D8CF5BA327F27A1");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_773BC0F047B9423B83EF0C980B61708F
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_773BC0F047B9423B83EF0C980B61708F(bool bSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_773BC0F047B9423B83EF0C980B61708F");
+
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_773BC0F047B9423B83EF0C980B61708F_Params Parms{};
+
+	Parms.bSuccess = bSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_2B61C5C647E2CDCBD02F369AC7617A9F
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Component_PlayerHead_C::OnClicked_2B61C5C647E2CDCBD02F369AC7617A9F()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_2B61C5C647E2CDCBD02F369AC7617A9F");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_4661E754461B4796DB5DD0A96A3D3E41
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_4661E754461B4796DB5DD0A96A3D3E41(bool bSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_4661E754461B4796DB5DD0A96A3D3E41");
+
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_4661E754461B4796DB5DD0A96A3D3E41_Params Parms{};
+
+	Parms.bSuccess = bSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_D47E828F40FEC563A9D54D9E09DE9B6F
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Component_PlayerHead_C::OnClicked_D47E828F40FEC563A9D54D9E09DE9B6F()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_D47E828F40FEC563A9D54D9E09DE9B6F");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_7084E3D24956471E0472B38D4EE95145
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_7084E3D24956471E0472B38D4EE95145(bool bSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_7084E3D24956471E0472B38D4EE95145");
+
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_7084E3D24956471E0472B38D4EE95145_Params Parms{};
+
+	Parms.bSuccess = bSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_2E3AA8214D0178D8BC22BF94F222A562
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Component_PlayerHead_C::OnClicked_2E3AA8214D0178D8BC22BF94F222A562()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_2E3AA8214D0178D8BC22BF94F222A562");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_C89D6D2743E83C1388613F95DA35A393
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_C89D6D2743E83C1388613F95DA35A393(bool bSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_C89D6D2743E83C1388613F95DA35A393");
+
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_C89D6D2743E83C1388613F95DA35A393_Params Parms{};
+
+	Parms.bSuccess = bSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_007FF82C459127F56B195CA92C9DEA63
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Component_PlayerHead_C::OnClicked_007FF82C459127F56B195CA92C9DEA63()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_007FF82C459127F56B195CA92C9DEA63");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_672D107547EBFD217AC4EF807328C964
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_672D107547EBFD217AC4EF807328C964(bool bSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_672D107547EBFD217AC4EF807328C964");
+
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_672D107547EBFD217AC4EF807328C964_Params Parms{};
+
+	Parms.bSuccess = bSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_D21F6B0B42321562B4F97598CCD30C4D
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Component_PlayerHead_C::OnClicked_D21F6B0B42321562B4F97598CCD30C4D()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_D21F6B0B42321562B4F97598CCD30C4D");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_6469D46A4198782BA0F3839D3038264B
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_6469D46A4198782BA0F3839D3038264B(bool bSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_6469D46A4198782BA0F3839D3038264B");
+
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_6469D46A4198782BA0F3839D3038264B_Params Parms{};
+
+	Parms.bSuccess = bSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_7F5B273D4DF69BF783A9CD87AFD0DE8D
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Component_PlayerHead_C::OnClicked_7F5B273D4DF69BF783A9CD87AFD0DE8D()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_7F5B273D4DF69BF783A9CD87AFD0DE8D");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_1445CEB14F681FADD260F4B967D01F85
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_1445CEB14F681FADD260F4B967D01F85(bool bSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_1445CEB14F681FADD260F4B967D01F85");
+
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_1445CEB14F681FADD260F4B967D01F85_Params Parms{};
+
+	Parms.bSuccess = bSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_CEA121B9456A37CD90E8CCA68D0D7A0B
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Component_PlayerHead_C::OnClicked_CEA121B9456A37CD90E8CCA68D0D7A0B()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_CEA121B9456A37CD90E8CCA68D0D7A0B");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_C8E3BC014C9EA6FBD4986CA5E89C9A9F
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_C8E3BC014C9EA6FBD4986CA5E89C9A9F(bool bSuccess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_C8E3BC014C9EA6FBD4986CA5E89C9A9F");
+
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_C8E3BC014C9EA6FBD4986CA5E89C9A9F_Params Parms{};
+
+	Parms.bSuccess = bSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_D9BEE10A436706675DAFD79B843D0C36
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Component_PlayerHead_C::OnClicked_D9BEE10A436706675DAFD79B843D0C36()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_D9BEE10A436706675DAFD79B843D0C36");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.RefreshByPSCopy
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASolarPlayerState*           Ps                                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               bWithoutGender                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UUI_Component_PlayerHead_C::RefreshByPSCopy(class ASolarPlayerState* Ps, bool bWithoutGender)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "RefreshByPSCopy");
+
+	Params::UUI_Component_PlayerHead_C_RefreshByPSCopy_Params Parms{};
+
+	Parms.Ps = Ps;
+	Parms.bWithoutGender = bWithoutGender;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnSolarUIOpened
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UUI_Component_PlayerHead_C::OnSolarUIOpened()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnSolarUIOpened");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Component_PlayerHead_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnInitialized");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.ForceShowFrameCopy
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                              FrameID                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUI_Component_PlayerHead_C::ForceShowFrameCopy(int32 FrameID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "ForceShowFrameCopy");
+
+	Params::UUI_Component_PlayerHead_C_ForceShowFrameCopy_Params Parms{};
+
+	Parms.FrameID = FrameID;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetAvatarCopy
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                              AvatarID                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      AvatarUrl                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UUI_Component_PlayerHead_C::SetAvatarCopy(int32 AvatarID, const class FString& AvatarUrl)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "SetAvatarCopy");
+
+	Params::UUI_Component_PlayerHead_C_SetAvatarCopy_Params Parms{};
+
+	Parms.AvatarID = AvatarID;
+	Parms.AvatarUrl = AvatarUrl;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Component_PlayerHead_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "Destruct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.ConstructCopy
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Component_PlayerHead_C::ConstructCopy()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "ConstructCopy");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnSolarUIClosed
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UUI_Component_PlayerHead_C::OnSolarUIClosed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnSolarUIClosed");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetVipTypeCopy
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// uint8                              VipType                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Conv_ByteToInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUI_Component_PlayerHead_C::SetVipTypeCopy(uint8 VipType, int32 CallFunc_Conv_ByteToInt_ReturnValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "SetVipTypeCopy");
+
+	Params::UUI_Component_PlayerHead_C_SetVipTypeCopy_Params Parms{};
+
+	Parms.VipType = VipType;
+	Parms.CallFunc_Conv_ByteToInt_ReturnValue = CallFunc_Conv_ByteToInt_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.GetModuleName
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -58,6 +718,50 @@ class FString UUI_Component_PlayerHead_C::GetModuleName()
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+
+}
+
+
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.ForceShowFrame
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                              FrameID                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUI_Component_PlayerHead_C::ForceShowFrame(int32 FrameID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "ForceShowFrame");
+
+	Params::UUI_Component_PlayerHead_C_ForceShowFrame_Params Parms{};
+
+	Parms.FrameID = FrameID;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.RefreshByPS
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASolarPlayerState*           Ps                                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               bWithoutGender                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UUI_Component_PlayerHead_C::RefreshByPS(class ASolarPlayerState* Ps, bool bWithoutGender)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "RefreshByPS");
+
+	Params::UUI_Component_PlayerHead_C_RefreshByPS_Params Parms{};
+
+	Parms.Ps = Ps;
+	Parms.bWithoutGender = bWithoutGender;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 }
 
@@ -84,6 +788,60 @@ void UUI_Component_PlayerHead_C::SetAvatarSize(bool IsCustom, bool Temp_bool_Var
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
 	Parms.Temp_struct_Variable_1 = Temp_struct_Variable_1;
+	Parms.K2Node_Select_Default = K2Node_Select_Default;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetAvatar
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                              AvatarID                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      AvatarUrl                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UUI_Component_PlayerHead_C::SetAvatar(int32 AvatarID, const class FString& AvatarUrl)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "SetAvatar");
+
+	Params::UUI_Component_PlayerHead_C_SetAvatar_Params Parms{};
+
+	Parms.AvatarID = AvatarID;
+	Parms.AvatarUrl = AvatarUrl;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetStateHD
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// enum class E_TabLobbyItemState     StateHD                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class E_TabLobbyItemState     Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUI_Component_PlayerHead_C::SetStateHD(enum class E_TabLobbyItemState StateHD, enum class E_TabLobbyItemState Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility K2Node_Select_Default)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "SetStateHD");
+
+	Params::UUI_Component_PlayerHead_C_SetStateHD_Params Parms{};
+
+	Parms.StateHD = StateHD;
+	Parms.Temp_byte_Variable = Temp_byte_Variable;
+	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
+	Parms.Temp_byte_Variable_2 = Temp_byte_Variable_2;
+	Parms.Temp_byte_Variable_3 = Temp_byte_Variable_3;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -437,6 +1195,27 @@ void UUI_Component_PlayerHead_C::Update()
 }
 
 
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                               IsDesignTime                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UUI_Component_PlayerHead_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "PreConstruct");
+
+	Params::UUI_Component_PlayerHead_C_PreConstruct_Params Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.BndEvt__Btn_PlayerInfo_K2Node_ComponentBoundEvent_1_OnButtonReleasedEvent__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -473,23 +1252,20 @@ void UUI_Component_PlayerHead_C::BndEvt__Btn_PlayerInfo_K2Node_ComponentBoundEve
 }
 
 
-// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.PreConstruct
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                               IsDesignTime                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UUI_Component_PlayerHead_C::PreConstruct(bool IsDesignTime)
+void UUI_Component_PlayerHead_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "PreConstruct");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "Construct");
 
-	Params::UUI_Component_PlayerHead_C_PreConstruct_Params Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -514,26 +1290,22 @@ void UUI_Component_PlayerHead_C::PreConstruct(bool IsDesignTime)
 // enum class ESlateVisibility        Temp_byte_Variable_8                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UOverlaySlot*                CallFunc_SlotAsOverlaySlot_ReturnValue                           (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UOverlaySlot*                CallFunc_SlotAsOverlaySlot_ReturnValue_1                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_Divide_FloatFloat_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Multiply_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Add_FloatFloat_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_Multiply_FloatFloat_ReturnValue_1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FMargin                     K2Node_MakeStruct_Margin                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_2                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default_3                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UOverlaySlot*                CallFunc_SlotAsOverlaySlot_ReturnValue_2                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UOverlaySlot*                CallFunc_SlotAsOverlaySlot_ReturnValue                           (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Divide_FloatFloat_ReturnValue_1                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_Multiply_FloatFloat_ReturnValue_2                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Multiply_FloatFloat_ReturnValue_1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default_4                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Multiply_FloatFloat_ReturnValue_2                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Multiply_FloatFloat_ReturnValue_3                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Multiply_FloatFloat_ReturnValue_4                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_Multiply_FloatFloat_ReturnValue_5                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FMargin                     K2Node_MakeStruct_Margin_1                                       (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FMargin                     K2Node_MakeStruct_Margin                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UUI_Component_PlayerHead_C::ExecuteUbergraph_UI_Component_PlayerHead(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable_4, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable_5, enum class ESlateVisibility Temp_byte_Variable_6, bool Temp_bool_Variable_4, enum class ESlateVisibility Temp_byte_Variable_7, enum class ESlateVisibility Temp_byte_Variable_8, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, const struct FMargin& K2Node_MakeStruct_Margin, enum class ESlateVisibility K2Node_Select_Default_2, enum class ESlateVisibility K2Node_Select_Default_3, bool K2Node_Event_IsDesignTime, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue_2, float CallFunc_Divide_FloatFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_2, enum class ESlateVisibility K2Node_Select_Default_4, float CallFunc_Multiply_FloatFloat_ReturnValue_3, float CallFunc_Multiply_FloatFloat_ReturnValue_4, float CallFunc_Multiply_FloatFloat_ReturnValue_5, const struct FMargin& K2Node_MakeStruct_Margin_1)
+void UUI_Component_PlayerHead_C::ExecuteUbergraph_UI_Component_PlayerHead(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable_4, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable_5, enum class ESlateVisibility Temp_byte_Variable_6, bool Temp_bool_Variable_4, enum class ESlateVisibility Temp_byte_Variable_7, enum class ESlateVisibility Temp_byte_Variable_8, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1, bool K2Node_Event_IsDesignTime, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_2, enum class ESlateVisibility K2Node_Select_Default_3, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default_4, float CallFunc_Multiply_FloatFloat_ReturnValue_2, float CallFunc_Multiply_FloatFloat_ReturnValue_3, float CallFunc_Multiply_FloatFloat_ReturnValue_4, const struct FMargin& K2Node_MakeStruct_Margin)
 {
 	static class UFunction* Func = nullptr;
 
@@ -559,24 +1331,20 @@ void UUI_Component_PlayerHead_C::ExecuteUbergraph_UI_Component_PlayerHead(int32 
 	Parms.Temp_byte_Variable_8 = Temp_byte_Variable_8;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 	Parms.K2Node_Select_Default_1 = K2Node_Select_Default_1;
-	Parms.CallFunc_SlotAsOverlaySlot_ReturnValue = CallFunc_SlotAsOverlaySlot_ReturnValue;
-	Parms.CallFunc_SlotAsOverlaySlot_ReturnValue_1 = CallFunc_SlotAsOverlaySlot_ReturnValue_1;
+	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
 	Parms.CallFunc_Divide_FloatFloat_ReturnValue = CallFunc_Divide_FloatFloat_ReturnValue;
 	Parms.CallFunc_Multiply_FloatFloat_ReturnValue = CallFunc_Multiply_FloatFloat_ReturnValue;
 	Parms.CallFunc_Add_FloatFloat_ReturnValue = CallFunc_Add_FloatFloat_ReturnValue;
-	Parms.CallFunc_Multiply_FloatFloat_ReturnValue_1 = CallFunc_Multiply_FloatFloat_ReturnValue_1;
-	Parms.K2Node_MakeStruct_Margin = K2Node_MakeStruct_Margin;
 	Parms.K2Node_Select_Default_2 = K2Node_Select_Default_2;
 	Parms.K2Node_Select_Default_3 = K2Node_Select_Default_3;
-	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
-	Parms.CallFunc_SlotAsOverlaySlot_ReturnValue_2 = CallFunc_SlotAsOverlaySlot_ReturnValue_2;
+	Parms.CallFunc_SlotAsOverlaySlot_ReturnValue = CallFunc_SlotAsOverlaySlot_ReturnValue;
 	Parms.CallFunc_Divide_FloatFloat_ReturnValue_1 = CallFunc_Divide_FloatFloat_ReturnValue_1;
-	Parms.CallFunc_Multiply_FloatFloat_ReturnValue_2 = CallFunc_Multiply_FloatFloat_ReturnValue_2;
+	Parms.CallFunc_Multiply_FloatFloat_ReturnValue_1 = CallFunc_Multiply_FloatFloat_ReturnValue_1;
 	Parms.K2Node_Select_Default_4 = K2Node_Select_Default_4;
+	Parms.CallFunc_Multiply_FloatFloat_ReturnValue_2 = CallFunc_Multiply_FloatFloat_ReturnValue_2;
 	Parms.CallFunc_Multiply_FloatFloat_ReturnValue_3 = CallFunc_Multiply_FloatFloat_ReturnValue_3;
 	Parms.CallFunc_Multiply_FloatFloat_ReturnValue_4 = CallFunc_Multiply_FloatFloat_ReturnValue_4;
-	Parms.CallFunc_Multiply_FloatFloat_ReturnValue_5 = CallFunc_Multiply_FloatFloat_ReturnValue_5;
-	Parms.K2Node_MakeStruct_Margin_1 = K2Node_MakeStruct_Margin_1;
+	Parms.K2Node_MakeStruct_Margin = K2Node_MakeStruct_Margin;
 
 	UObject::ProcessEvent(Func, &Parms);
 

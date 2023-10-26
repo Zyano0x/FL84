@@ -28,15 +28,14 @@ HRESULT WINAPI hkPresent(_In_ IDXGISwapChain* SwapChain, _In_ UINT SyncInterval,
 	return spoof_call(oPresent, SwapChain, SyncInterval, Flags);
 }
 
-__int64 HOOKCALL hkGetShotDir(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2, bool NeedSpread)
+__int64 HOOKCALL hkGetShotDir(uint64_t Weapon, uint64_t a2, bool NeedSpread)
 {
 	__int64 Result = spoof_call(GetShotDir, Weapon, a2, NeedSpread);
 
 	if (_profiler.gAimEnabled.Custom.bValue && _profiler.gAimMode.Custom.iValue == 1 && a2 && !Aimbot::TargetPosition.IsValid()
 		|| _profiler.gAimEnabled.Custom.bValue && _profiler.gAimMode.Custom.iValue == 2 && a2 && !Aimbot::TargetPosition.IsValid())
-	{
+	{		
 		// Maybe from muzzle/GetShootingTraceStartLocation instead of camera location more accurate
-
 		SDK::FVector Out = Math::GetDirectionUnitVector(ZZZ.CameraManager->GetCameraLocation() /*Weapon->GetShootingTraceStartLocation()*/, Aimbot::TargetPosition);
 
 		*(SDK::FVector*)(Result) = Out;
@@ -45,7 +44,7 @@ __int64 HOOKCALL hkGetShotDir(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2, bool
 	return Result;
 }
 
-__int64 HOOKCALL hkShotgunImpact(SDK::ASolarPlayerWeapon* Weapon)
+__int64 HOOKCALL hkShotgunImpact(uint64_t Weapon)
 {
 	__int64 Result = spoof_call(ShotgunImpact, Weapon);
 	if (_profiler.gShotgunDamage.Custom.bValue)
@@ -55,17 +54,15 @@ __int64 HOOKCALL hkShotgunImpact(SDK::ASolarPlayerWeapon* Weapon)
 	return Result;
 }
 
-int TargetFunctionIndex = -1;
+SDK::UFunction* FN_ServerShortTimeout = nullptr;
+SDK::UFunction* FN_AntiCheatDataSchedulerUpload = nullptr;
+SDK::UFunction* FN_AntiCheatLauncherCheck = nullptr;
+SDK::UFunction* FN_SendSteamAntiCheatRequest = nullptr;
 void HOOKCALL hkProcessEvent(void* Object, SDK::UFunction* Function, void* Params)
 {
-	if (TargetFunctionIndex == -1)
-		if (Function->GetFullName().compare("Function Solarland.SolarPlayerController.AntiCheatDataSchedulerUpload") == 0)
-			TargetFunctionIndex = Function->Index;
-
-	if (Function->Index == TargetFunctionIndex)
+	if (Function == FN_ServerShortTimeout || Function == FN_AntiCheatDataSchedulerUpload || Function == FN_AntiCheatLauncherCheck || Function == FN_SendSteamAntiCheatRequest)
 	{
-		if (SDK::UObject::FindObject<SDK::UScriptStruct>("ScriptStruct Solarland.FixedAntiCheatData") != nullptr)
-			return;
+		return;
 	}
 
 	return spoof_call(oProcessEvent, Object, Function, Params);
@@ -122,8 +119,13 @@ void Initialize()
 	SDK::InitSDK();
 
 	HMODULE hModule = LI_FN(GetModuleHandleA).safe()(xorstr_("GameOverlayRenderer64.dll"));
-	if (hModule) oPresent = *(tPresent*)((DWORD64)hModule + 0x1425F0);
+	if (hModule) oPresent = *(tPresent*)((DWORD64)hModule + 0x147640);
 	Hook(oPresent, hkPresent);
+
+	FN_ServerShortTimeout = SDK::UObject::FindObject<SDK::UFunction>("Function Engine.PlayerController.ServerShortTimeout");
+	FN_AntiCheatDataSchedulerUpload = SDK::UObject::FindObject<SDK::UFunction>("Function Solarland.SolarPlayerController.AntiCheatDataSchedulerUpload");
+	FN_AntiCheatLauncherCheck = SDK::UObject::FindObject<SDK::UFunction>("Function Solarland.SolarEasyAntiCheatManager.AntiCheatLauncherCheck");
+	FN_SendSteamAntiCheatRequest = SDK::UObject::FindObject<SDK::UFunction>("Function Solarland.SolarEasyAntiCheatManager.SendSteamAntiCheatRequest");
 
 	//uint64_t hkPresent_Sig = Engine::FindPattern(xorstr_("GameOverlayRenderer64.dll"), xorstr_("48 89 6C 24 ? 48 89 74 24 ? 41 56 48 83 EC ? 41 8B E8"));
 	//uint64_t CreateHook_Sig = Engine::FindPattern(xorstr_("GameOverlayRenderer64.dll"), xorstr_("48 89 5C 24 ? 57 48 83 EC ? 33 C0"));

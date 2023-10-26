@@ -62,10 +62,8 @@ void UWAT_FireLaser_VH_Hover_Soroll04_New_C::K2_ActivateRealFire()
 // (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class APlayerCameraManager*        CallFunc_GetPlayerCameraManager_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCameraShake*                CallFunc_PlayCameraShake_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWAT_FireLaser_VH_Hover_Soroll04_New_C::ExecuteUbergraph_WAT_FireLaser_VH_Hover_Soroll04_New(int32 EntryPoint, class APlayerCameraManager* CallFunc_GetPlayerCameraManager_ReturnValue, class UCameraShake* CallFunc_PlayCameraShake_ReturnValue)
+void UWAT_FireLaser_VH_Hover_Soroll04_New_C::ExecuteUbergraph_WAT_FireLaser_VH_Hover_Soroll04_New(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
@@ -75,8 +73,6 @@ void UWAT_FireLaser_VH_Hover_Soroll04_New_C::ExecuteUbergraph_WAT_FireLaser_VH_H
 	Params::UWAT_FireLaser_VH_Hover_Soroll04_New_C_ExecuteUbergraph_WAT_FireLaser_VH_Hover_Soroll04_New_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-	Parms.CallFunc_GetPlayerCameraManager_ReturnValue = CallFunc_GetPlayerCameraManager_ReturnValue;
-	Parms.CallFunc_PlayCameraShake_ReturnValue = CallFunc_PlayCameraShake_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

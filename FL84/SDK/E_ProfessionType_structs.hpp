@@ -11,10 +11,10 @@ namespace SDK
 
 enum class E_ProfessionType : uint8
 {
-	Assault                        = 0,
-	Umbra                          = 1,
-	Pulse                          = 2,
-	Position                       = 3,
+	NewEnumerator0                 = 0,
+	NewEnumerator1                 = 1,
+	NewEnumerator2                 = 2,
+	NewEnumerator3                 = 3,
 	E_MAX                          = 4,
 };
 

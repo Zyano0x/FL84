@@ -40,6 +40,34 @@ class ULLHSDKAppUtils* ULLHSDKAppUtils::GetDefaultObj()
 }
 
 
+// Function LLHSDK.LLHSDKAppUtils.ShowSteamVirtualKeyboard
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool ULLHSDKAppUtils::ShowSteamVirtualKeyboard()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKAppUtils", "ShowSteamVirtualKeyboard");
+
+	Params::ULLHSDKAppUtils_ShowSteamVirtualKeyboard_Params Parms{};
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
 // Function LLHSDK.LLHSDKAppUtils.SDKConfigIsMultiDetect
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -166,6 +194,34 @@ bool ULLHSDKAppUtils::IsSimulator()
 		Func = Class->GetFunction("LLHSDKAppUtils", "IsSimulator");
 
 	Params::ULLHSDKAppUtils_IsSimulator_Params Parms{};
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function LLHSDK.LLHSDKAppUtils.IsPlatformSteamDeck
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool ULLHSDKAppUtils::IsPlatformSteamDeck()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKAppUtils", "IsPlatformSteamDeck");
+
+	Params::ULLHSDKAppUtils_IsPlatformSteamDeck_Params Parms{};
 
 
 	auto Flgs = Func->FunctionFlags;
@@ -855,6 +911,58 @@ class FString ULLHSDKAppUtils::GetAppID()
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+
+}
+
+
+// Function LLHSDK.LLHSDKAppUtils.DoesDistributeForDomestic
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool ULLHSDKAppUtils::DoesDistributeForDomestic()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKAppUtils", "DoesDistributeForDomestic");
+
+	Params::ULLHSDKAppUtils_DoesDistributeForDomestic_Params Parms{};
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function LLHSDK.LLHSDKAppUtils.DismissSteamVirtualKeyboard
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+
+void ULLHSDKAppUtils::DismissSteamVirtualKeyboard()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKAppUtils", "DismissSteamVirtualKeyboard");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -3047,6 +3155,114 @@ void ULLHSDKLogin::OnBindFinish__DelegateSignature(bool bSuccess, const class FS
 }
 
 
+// Function LLHSDK.LLHSDKLogin.NSLogout
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+
+void ULLHSDKLogin::NSLogout()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKLogin", "NSLogout");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function LLHSDK.LLHSDKLogin.NSLoginStart
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      Params                                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool ULLHSDKLogin::NSLoginStart(const class FString& Params)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKLogin", "NSLoginStart");
+
+	Params::ULLHSDKLogin_NSLoginStart_Params Parms{};
+
+	Parms.Params = Params;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function LLHSDK.LLHSDKLogin.NSFinalize
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+
+void ULLHSDKLogin::NSFinalize()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKLogin", "NSFinalize");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function LLHSDK.LLHSDKLogin.NSAccountInfoGet
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      Params                                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool ULLHSDKLogin::NSAccountInfoGet(const class FString& Params)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKLogin", "NSAccountInfoGet");
+
+	Params::ULLHSDKLogin_NSAccountInfoGet_Params Parms{};
+
+	Parms.Params = Params;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
 // Function LLHSDK.LLHSDKLogin.LogoutLimPCSDK
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -3322,6 +3538,36 @@ bool ULLHSDKLogin::IsCurrentUserNewReg()
 
 	Params::ULLHSDKLogin_IsCurrentUserNewReg_Params Parms{};
 
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function LLHSDK.LLHSDKLogin.InitNSSDK
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      Params                                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool ULLHSDKLogin::InitNSSDK(const class FString& Params)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKLogin", "InitNSSDK");
+
+	Params::ULLHSDKLogin_InitNSSDK_Params Parms{};
+
+	Parms.Params = Params;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5248,6 +5494,246 @@ class FString ULLHSDKPay::Test_Google_SkuItemDetailsToString(const struct FLLHSD
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+
+}
+
+
+// DelegateFunction LLHSDK.LLHSDKPay.SwitchSDKPayOrdersConsume__DelegateSignature
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// class FString                      Datas                                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ULLHSDKPay::SwitchSDKPayOrdersConsume__DelegateSignature(const class FString& Datas)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKPay", "SwitchSDKPayOrdersConsume__DelegateSignature");
+
+	Params::ULLHSDKPay_SwitchSDKPayOrdersConsume__DelegateSignature_Params Parms{};
+
+	Parms.Datas = Datas;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// DelegateFunction LLHSDK.LLHSDKPay.SwitchSDKPayOrdersCheck__DelegateSignature
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// class FString                      Datas                                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ULLHSDKPay::SwitchSDKPayOrdersCheck__DelegateSignature(const class FString& Datas)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKPay", "SwitchSDKPayOrdersCheck__DelegateSignature");
+
+	Params::ULLHSDKPay_SwitchSDKPayOrdersCheck__DelegateSignature_Params Parms{};
+
+	Parms.Datas = Datas;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// DelegateFunction LLHSDK.LLHSDKPay.SwitchSDKPayGetConsumables__DelegateSignature
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// class FString                      Datas                                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ULLHSDKPay::SwitchSDKPayGetConsumables__DelegateSignature(const class FString& Datas)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKPay", "SwitchSDKPayGetConsumables__DelegateSignature");
+
+	Params::ULLHSDKPay_SwitchSDKPayGetConsumables__DelegateSignature_Params Parms{};
+
+	Parms.Datas = Datas;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// DelegateFunction LLHSDK.LLHSDKPay.SwitchSDKPayGetConsumableItems__DelegateSignature
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// class FString                      Datas                                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ULLHSDKPay::SwitchSDKPayGetConsumableItems__DelegateSignature(const class FString& Datas)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKPay", "SwitchSDKPayGetConsumableItems__DelegateSignature");
+
+	Params::ULLHSDKPay_SwitchSDKPayGetConsumableItems__DelegateSignature_Params Parms{};
+
+	Parms.Datas = Datas;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// DelegateFunction LLHSDK.LLHSDKPay.SwitchSDKPayEShopOpen__DelegateSignature
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+// class FString                      Datas                                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ULLHSDKPay::SwitchSDKPayEShopOpen__DelegateSignature(const class FString& Datas)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKPay", "SwitchSDKPayEShopOpen__DelegateSignature");
+
+	Params::ULLHSDKPay_SwitchSDKPayEShopOpen__DelegateSignature_Params Parms{};
+
+	Parms.Datas = Datas;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function LLHSDK.LLHSDKPay.Switch_OrdersConsume
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      Params                                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ULLHSDKPay::Switch_OrdersConsume(const class FString& Params)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKPay", "Switch_OrdersConsume");
+
+	Params::ULLHSDKPay_Switch_OrdersConsume_Params Parms{};
+
+	Parms.Params = Params;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function LLHSDK.LLHSDKPay.Switch_OrdersCheck
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      Params                                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ULLHSDKPay::Switch_OrdersCheck(const class FString& Params)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKPay", "Switch_OrdersCheck");
+
+	Params::ULLHSDKPay_Switch_OrdersCheck_Params Parms{};
+
+	Parms.Params = Params;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function LLHSDK.LLHSDKPay.Switch_GetConsumables
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      Params                                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ULLHSDKPay::Switch_GetConsumables(const class FString& Params)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKPay", "Switch_GetConsumables");
+
+	Params::ULLHSDKPay_Switch_GetConsumables_Params Parms{};
+
+	Parms.Params = Params;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function LLHSDK.LLHSDKPay.Switch_GetConsumableItems
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      Params                                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ULLHSDKPay::Switch_GetConsumableItems(const class FString& Params)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKPay", "Switch_GetConsumableItems");
+
+	Params::ULLHSDKPay_Switch_GetConsumableItems_Params Parms{};
+
+	Parms.Params = Params;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function LLHSDK.LLHSDKPay.Switch_EShopOpen
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      Params                                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ULLHSDKPay::Switch_EShopOpen(const class FString& Params)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LLHSDKPay", "Switch_EShopOpen");
+
+	Params::ULLHSDKPay_Switch_EShopOpen_Params Parms{};
+
+	Parms.Params = Params;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
 
 }
 

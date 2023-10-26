@@ -40,6 +40,216 @@ class UUI_Lobby_Social_Entrance_C* UUI_Lobby_Social_Entrance_C::GetDefaultObj()
 }
 
 
+// DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_B8B02E764377E48F2EA165B3B62ABC95
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Lobby_Social_Entrance_C::OnClicked_B8B02E764377E48F2EA165B3B62ABC95()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Social_Entrance_C", "OnClicked_B8B02E764377E48F2EA165B3B62ABC95");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_0E3280834FE27E714C3A6B969BD5B171
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Lobby_Social_Entrance_C::OnClicked_0E3280834FE27E714C3A6B969BD5B171()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Social_Entrance_C", "OnClicked_0E3280834FE27E714C3A6B969BD5B171");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_52699EFD47A68F557F81EEB32DE54351
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Lobby_Social_Entrance_C::OnClicked_52699EFD47A68F557F81EEB32DE54351()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Social_Entrance_C", "OnClicked_52699EFD47A68F557F81EEB32DE54351");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_12DBBBD144648453736B228DEE1C7DA8
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Lobby_Social_Entrance_C::OnClicked_12DBBBD144648453736B228DEE1C7DA8()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Social_Entrance_C", "OnClicked_12DBBBD144648453736B228DEE1C7DA8");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_B07B2D7348175597BC33B4A66F6DA6F0
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Lobby_Social_Entrance_C::OnClicked_B07B2D7348175597BC33B4A66F6DA6F0()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Social_Entrance_C", "OnClicked_B07B2D7348175597BC33B4A66F6DA6F0");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_E412EB864EB1C0E50CCDF689CF033EF9
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Lobby_Social_Entrance_C::OnClicked_E412EB864EB1C0E50CCDF689CF033EF9()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Social_Entrance_C", "OnClicked_E412EB864EB1C0E50CCDF689CF033EF9");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnSolarUIOpened
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_Social_Entrance_C::OnSolarUIOpened()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Social_Entrance_C", "OnSolarUIOpened");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_Social_Entrance_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Social_Entrance_C", "Destruct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.ConstructCopy
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_Social_Entrance_C::ConstructCopy()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Social_Entrance_C", "ConstructCopy");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnSolarUIClosed
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_Social_Entrance_C::OnSolarUIClosed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Social_Entrance_C", "OnSolarUIClosed");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_Social_Entrance_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Social_Entrance_C", "OnInitialized");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.GetModuleName
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:

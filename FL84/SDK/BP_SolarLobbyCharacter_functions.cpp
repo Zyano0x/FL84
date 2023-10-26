@@ -40,6 +40,98 @@ class ABP_SolarLobbyCharacter_C* ABP_SolarLobbyCharacter_C::GetDefaultObj()
 }
 
 
+// Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.IsCanOpenMirror
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+bool ABP_SolarLobbyCharacter_C::IsCanOpenMirror()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SolarLobbyCharacter_C", "IsCanOpenMirror");
+
+	Params::ABP_SolarLobbyCharacter_C_IsCanOpenMirror_Params Parms{};
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.ClearCharacterByLua
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+
+void ABP_SolarLobbyCharacter_C::ClearCharacterByLua()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SolarLobbyCharacter_C", "ClearCharacterByLua");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.InitCharacterByLua
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+
+void ABP_SolarLobbyCharacter_C::InitCharacterByLua()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SolarLobbyCharacter_C", "InitCharacterByLua");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.IsCanOpenChangeAnim
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+bool ABP_SolarLobbyCharacter_C::IsCanOpenChangeAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SolarLobbyCharacter_C", "IsCanOpenChangeAnim");
+
+	Params::ABP_SolarLobbyCharacter_C_IsCanOpenChangeAnim_Params Parms{};
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
 // Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.GetModuleName
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:

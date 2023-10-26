@@ -9,12 +9,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x8 (0x318 - 0x310)
+// 0x8 (0x328 - 0x320)
 // BlueprintGeneratedClass BP_PBags_BDogF_Set01.BP_PBags_BDogF_Set01_C
 class ABP_PBags_BDogF_Set01_C : public ABP_SolarBackpackActor_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x310(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x320(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
 	static class UClass* StaticClass();
 	static class ABP_PBags_BDogF_Set01_C* GetDefaultObj();

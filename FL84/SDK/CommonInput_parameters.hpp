@@ -55,6 +55,14 @@ public:
 };
 
 // 0x1 (0x1 - 0x0)
+// Function CommonInput.CommonInputSubsystem.SetCanChangeInputMethod
+struct UCommonInputSubsystem_SetCanChangeInputMethod_Params
+{
+public:
+	bool                                         bCanChange;                                        // 0x0(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x1 (0x1 - 0x0)
 // Function CommonInput.CommonInputSubsystem.IsUsingPointerInput
 struct UCommonInputSubsystem_IsUsingPointerInput_Params
 {

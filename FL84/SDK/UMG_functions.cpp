@@ -6293,6 +6293,33 @@ void UTextBlock::SetColorAndOpacity(const struct FSlateColor& InColorAndOpacity)
 }
 
 
+// Function UMG.TextBlock.SetBackgroundBrush
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// struct FSlateBrush                 InBackgroundBrush                                                (Parm, NativeAccessSpecifierPublic)
+
+void UTextBlock::SetBackgroundBrush(const struct FSlateBrush& InBackgroundBrush)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("TextBlock", "SetBackgroundBrush");
+
+	Params::UTextBlock_SetBackgroundBrush_Params Parms{};
+
+	Parms.InBackgroundBrush = InBackgroundBrush;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
 // Function UMG.TextBlock.SetAutoWrapText
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -16721,6 +16748,34 @@ class URichTextBlockImageDecorator* URichTextBlockImageDecorator::GetDefaultObj(
 
 	if (!Default)
 		Default = static_cast<URichTextBlockImageDecorator*>(URichTextBlockImageDecorator::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.RichTextBlockInlineTextDecorator
+// (None)
+
+class UClass* URichTextBlockInlineTextDecorator::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("RichTextBlockInlineTextDecorator");
+
+	return Clss;
+}
+
+
+// RichTextBlockInlineTextDecorator UMG.Default__RichTextBlockInlineTextDecorator
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class URichTextBlockInlineTextDecorator* URichTextBlockInlineTextDecorator::GetDefaultObj()
+{
+	static class URichTextBlockInlineTextDecorator* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<URichTextBlockInlineTextDecorator*>(URichTextBlockInlineTextDecorator::StaticClass()->DefaultObject);
 
 	return Default;
 }

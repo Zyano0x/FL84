@@ -40,6 +40,33 @@ class UPakHelper* UPakHelper::GetDefaultObj()
 }
 
 
+// Function FarlightPatchRuntime.PakHelper.ReloadRedirectSettingsFromIni
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      IniPath                                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UPakHelper::ReloadRedirectSettingsFromIni(const class FString& IniPath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("PakHelper", "ReloadRedirectSettingsFromIni");
+
+	Params::UPakHelper_ReloadRedirectSettingsFromIni_Params Parms{};
+
+	Parms.IniPath = IniPath;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
 // Function FarlightPatchRuntime.PakHelper.ReloadIniFile
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:

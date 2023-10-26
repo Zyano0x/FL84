@@ -19,7 +19,7 @@ namespace SDK
 struct FDummyObject
 {
 public:
-	uint8                                        Pad_11EB[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_12AA[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

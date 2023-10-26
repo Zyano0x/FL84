@@ -123,7 +123,7 @@ class UMountListener : public UObject
 public:
 	FMulticastInlineDelegateProperty_            OnMountPakDelegate;                                // 0x28(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnUnMountPakDelegate;                              // 0x38(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1083[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_EF0[0x50];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMountListener* GetDefaultObj();
@@ -136,7 +136,7 @@ public:
 class UScopedSlowTaskContext : public UObject
 {
 public:
-	uint8                                        Pad_1085[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_EF1[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UScopedSlowTaskContext* GetDefaultObj();

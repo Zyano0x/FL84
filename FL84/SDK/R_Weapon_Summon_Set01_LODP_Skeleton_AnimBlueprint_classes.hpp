@@ -26,7 +26,7 @@ public:
 	struct FAnimNode_SequencePlayer              AnimGraphNode_SequencePlayer;                      // 0x4F0(0x78)(NativeAccessSpecifierPublic)
 	struct FAnimNode_StateResult                 AnimGraphNode_StateResult;                         // 0x568(0x30)(NativeAccessSpecifierPublic)
 	struct FAnimNode_StateMachine                AnimGraphNode_StateMachine;                        // 0x598(0xB0)(NativeAccessSpecifierPublic)
-	uint8                                        Pad_21D2[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2588[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UR_Weapon_Summon_Set01_LODP_Skeleton_AnimBlueprint_C* GetDefaultObj();

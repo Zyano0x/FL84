@@ -265,6 +265,33 @@ bool UCommonInputSubsystem::SetCurrentInputType(enum class ECommonInputType NewI
 }
 
 
+// Function CommonInput.CommonInputSubsystem.SetCanChangeInputMethod
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                               bCanChange                                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UCommonInputSubsystem::SetCanChangeInputMethod(bool bCanChange)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("CommonInputSubsystem", "SetCanChangeInputMethod");
+
+	Params::UCommonInputSubsystem_SetCanChangeInputMethod_Params Parms{};
+
+	Parms.bCanChange = bCanChange;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
 // Function CommonInput.CommonInputSubsystem.IsUsingPointerInput
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:

@@ -11,11 +11,11 @@ namespace SDK
 
 enum class E_Type_PlayerName_Vip_Color : uint8
 {
-	None                           = 0,
-	Week                           = 1,
-	Month                          = 2,
-	Super                          = 3,
-	E_Type_Player_Name_Vip_MAX     = 4,
+	NewEnumerator4                 = 0,
+	NewEnumerator0                 = 1,
+	NewEnumerator1                 = 2,
+	NewEnumerator2                 = 3,
+	E_Type_PlayerName_Vip_MAX      = 4,
 };
 
 

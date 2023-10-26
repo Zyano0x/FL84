@@ -3948,6 +3948,90 @@ void ULimChatManager::GetMessage(struct FChatListConvData& TargetConv)
 }
 
 
+// Function LimNativeWidget.LimChatManager.GetLimSlssvrTest
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString ULimChatManager::GetLimSlssvrTest()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LimChatManager", "GetLimSlssvrTest");
+
+	Params::ULimChatManager_GetLimSlssvrTest_Params Parms{};
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function LimNativeWidget.LimChatManager.GetLimSlssvrDomesticTest
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString ULimChatManager::GetLimSlssvrDomesticTest()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LimChatManager", "GetLimSlssvrDomesticTest");
+
+	Params::ULimChatManager_GetLimSlssvrDomesticTest_Params Parms{};
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function LimNativeWidget.LimChatManager.GetLimSlssvrDomestic
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString ULimChatManager::GetLimSlssvrDomestic()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LimChatManager", "GetLimSlssvrDomestic");
+
+	Params::ULimChatManager_GetLimSlssvrDomestic_Params Parms{};
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
 // Function LimNativeWidget.LimChatManager.GetLimSlssvr
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -3961,6 +4045,34 @@ class FString ULimChatManager::GetLimSlssvr()
 		Func = Class->GetFunction("LimChatManager", "GetLimSlssvr");
 
 	Params::ULimChatManager_GetLimSlssvr_Params Parms{};
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function LimNativeWidget.LimChatManager.GetLimSDKRegionDomestic
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString ULimChatManager::GetLimSDKRegionDomestic()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LimChatManager", "GetLimSDKRegionDomestic");
+
+	Params::ULimChatManager_GetLimSDKRegionDomestic_Params Parms{};
 
 
 	auto Flgs = Func->FunctionFlags;
@@ -4080,6 +4192,34 @@ void ULimChatManager::GetFriendList()
 
 
 	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function LimNativeWidget.LimChatManager.GetFarlightDomainDomestic
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                              ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 ULimChatManager::GetFarlightDomainDomestic()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("LimChatManager", "GetFarlightDomainDomestic");
+
+	Params::ULimChatManager_GetFarlightDomainDomestic_Params Parms{};
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 
 }
 
@@ -5041,6 +5181,34 @@ bool UNertcManager::IsRoomEntered()
 		Func = Class->GetFunction("NertcManager", "IsRoomEntered");
 
 	Params::UNertcManager_IsRoomEntered_Params Parms{};
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function LimNativeWidget.NertcManager.IsInRTCRoom
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UNertcManager::IsInRTCRoom()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("NertcManager", "IsInRTCRoom");
+
+	Params::UNertcManager_IsInRTCRoom_Params Parms{};
 
 
 	auto Flgs = Func->FunctionFlags;

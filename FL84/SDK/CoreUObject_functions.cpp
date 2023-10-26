@@ -8,7 +8,7 @@
 namespace SDK
 {
 	//Initialize GObjects using InitGObjects()
-	class TUObjectArray* UObject::GObjects = nullptr;
+	TUObjectArray* UObject::GObjects = nullptr;
 
 	bool UObject::HasTypeFlag(EClassCastFlags TypeFlag) const
 	{

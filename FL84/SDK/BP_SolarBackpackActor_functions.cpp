@@ -40,6 +40,24 @@ class ABP_SolarBackpackActor_C* ABP_SolarBackpackActor_C::GetDefaultObj()
 }
 
 
+// Function BP_SolarBackpackActor.BP_SolarBackpackActor_C.LobbyForceSetLOD
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void ABP_SolarBackpackActor_C::LobbyForceSetLOD()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SolarBackpackActor_C", "LobbyForceSetLOD");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function BP_SolarBackpackActor.BP_SolarBackpackActor_C.TryCreateDynamicMaterialInstance
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:

@@ -22,6 +22,14 @@ public:
 };
 
 // 0x1 (0x1 - 0x0)
+// Function RichtapTools.RichtapController.SetEnableWinRichtap
+struct URichtapController_SetEnableWinRichtap_Params
+{
+public:
+	bool                                         bIsEnableWinRichtap;                               // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x1 (0x1 - 0x0)
 // Function RichtapTools.RichtapController.SetEnableRichtap
 struct URichtapController_SetEnableRichtap_Params
 {

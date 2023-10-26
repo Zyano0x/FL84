@@ -262,6 +262,14 @@ namespace SDK
 		ESearchCase_MAX = 2,
 	};
 
+	enum class EPipelineSupportLevel : uint8
+	{
+		PSL_Mobile_Forward_LDR = 0,
+		PSL_Mobile_Forward_HDR = 1,
+		PSL_PC_Deferred = 2,
+		PSL_MAX = 3,
+	};
+
 
 	//---------------------------------------------------------------------------------------------------------------------
 	// STRUCTS
@@ -286,7 +294,7 @@ namespace SDK
 	struct FUniqueNetIdWrapper
 	{
 	public:
-		uint8                                        Pad_A8[0x1];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_41[0x1];                                       // Fixing Size Of Struct [ Dumper-7 ]
 	};
 
 	// 0x10 (0x10 - 0x0)
@@ -622,7 +630,7 @@ namespace SDK
 		struct FVector                               Min;                                               // 0x0(0xC)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector                               Max;                                               // 0xC(0xC)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		uint8                                        IsValid;                                           // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_A9[0x3];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_45[0x3];                                       // Fixing Size Of Struct [ Dumper-7 ]
 	};
 
 	// 0x14 (0x14 - 0x0)
@@ -633,7 +641,7 @@ namespace SDK
 		struct FVector2D                             Min;                                               // 0x0(0x8)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                             Max;                                               // 0x8(0x8)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		uint8                                        bIsValid;                                          // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_AA[0x3];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_47[0x3];                                       // Fixing Size Of Struct [ Dumper-7 ]
 	};
 
 	// 0x1C (0x1C - 0x0)
@@ -683,7 +691,7 @@ namespace SDK
 		float                                        ArriveTangent;                                     // 0x8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		float                                        LeaveTangent;                                      // 0xC(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		enum class EInterpCurveMode                  InterpMode;                                        // 0x10(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_AB[0x3];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_49[0x3];                                       // Fixing Size Of Struct [ Dumper-7 ]
 	};
 
 	// 0x18 (0x18 - 0x0)
@@ -693,7 +701,7 @@ namespace SDK
 	public:
 		TArray<struct FInterpCurvePointFloat>        Points;                                            // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                         bIsLooped;                                         // 0x10(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_AC[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+		uint8                                        Pad_4A[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 		float                                        LoopKeyOffset;                                     // 0x14(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
@@ -707,7 +715,7 @@ namespace SDK
 		struct FVector2D                             ArriveTangent;                                     // 0xC(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector2D                             LeaveTangent;                                      // 0x14(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		enum class EInterpCurveMode                  InterpMode;                                        // 0x1C(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_AD[0x3];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_4C[0x3];                                       // Fixing Size Of Struct [ Dumper-7 ]
 	};
 
 	// 0x18 (0x18 - 0x0)
@@ -717,7 +725,7 @@ namespace SDK
 	public:
 		TArray<struct FInterpCurvePointVector2D>     Points;                                            // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                         bIsLooped;                                         // 0x10(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_AE[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+		uint8                                        Pad_4E[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 		float                                        LoopKeyOffset;                                     // 0x14(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
@@ -731,7 +739,7 @@ namespace SDK
 		struct FVector                               ArriveTangent;                                     // 0x10(0xC)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FVector                               LeaveTangent;                                      // 0x1C(0xC)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		enum class EInterpCurveMode                  InterpMode;                                        // 0x28(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_AF[0x3];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_4F[0x3];                                       // Fixing Size Of Struct [ Dumper-7 ]
 	};
 
 	// 0x18 (0x18 - 0x0)
@@ -741,7 +749,7 @@ namespace SDK
 	public:
 		TArray<struct FInterpCurvePointVector>       Points;                                            // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                         bIsLooped;                                         // 0x10(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_B0[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+		uint8                                        Pad_50[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 		float                                        LoopKeyOffset;                                     // 0x14(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
@@ -751,12 +759,12 @@ namespace SDK
 	{
 	public:
 		float                                        InVal;                                             // 0x0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_B1[0xC];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+		uint8                                        Pad_51[0xC];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 		struct FQuat                                 OutVal;                                            // 0x10(0x10)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		struct FQuat                                 ArriveTangent;                                     // 0x20(0x10)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		struct FQuat                                 LeaveTangent;                                      // 0x30(0x10)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		enum class EInterpCurveMode                  InterpMode;                                        // 0x40(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_B2[0xF];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_52[0xF];                                       // Fixing Size Of Struct [ Dumper-7 ]
 	};
 
 	// 0x18 (0x18 - 0x0)
@@ -766,7 +774,7 @@ namespace SDK
 	public:
 		TArray<struct FInterpCurvePointQuat>         Points;                                            // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                         bIsLooped;                                         // 0x10(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_B3[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+		uint8                                        Pad_53[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 		float                                        LoopKeyOffset;                                     // 0x14(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
@@ -780,7 +788,7 @@ namespace SDK
 		struct FTwoVectors                           ArriveTangent;                                     // 0x1C(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		struct FTwoVectors                           LeaveTangent;                                      // 0x34(0x18)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		enum class EInterpCurveMode                  InterpMode;                                        // 0x4C(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_B4[0x3];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_55[0x3];                                       // Fixing Size Of Struct [ Dumper-7 ]
 	};
 
 	// 0x18 (0x18 - 0x0)
@@ -790,7 +798,7 @@ namespace SDK
 	public:
 		TArray<struct FInterpCurvePointTwoVectors>   Points;                                            // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                         bIsLooped;                                         // 0x10(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_B5[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+		uint8                                        Pad_56[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 		float                                        LoopKeyOffset;                                     // 0x14(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
@@ -804,7 +812,7 @@ namespace SDK
 		struct FLinearColor                          ArriveTangent;                                     // 0x14(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FLinearColor                          LeaveTangent;                                      // 0x24(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		enum class EInterpCurveMode                  InterpMode;                                        // 0x34(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_B6[0x3];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_57[0x3];                                       // Fixing Size Of Struct [ Dumper-7 ]
 	};
 
 	// 0x18 (0x18 - 0x0)
@@ -814,7 +822,7 @@ namespace SDK
 	public:
 		TArray<struct FInterpCurvePointLinearColor>  Points;                                            // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                         bIsLooped;                                         // 0x10(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_B7[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+		uint8                                        Pad_5A[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 		float                                        LoopKeyOffset;                                     // 0x14(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
@@ -825,9 +833,9 @@ namespace SDK
 	public:
 		struct FQuat                                 Rotation;                                          // 0x0(0x10)(Edit, BlueprintVisible, SaveGame, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 		struct FVector                               Translation;                                       // 0x10(0xC)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_B8[0x4];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+		uint8                                        Pad_5B[0x4];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 		struct FVector                               Scale3D;                                           // 0x20(0xC)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_B9[0x4];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_5C[0x4];                                       // Fixing Size Of Struct [ Dumper-7 ]
 	
 		FMatrix ToMatrixWithScale() const;
 	};
@@ -846,7 +854,7 @@ namespace SDK
 	struct FDateTime
 	{
 	public:
-		uint8                                        Pad_BA[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_5D[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
 	};
 
 	// 0x4 (0x4 - 0x0)
@@ -901,7 +909,7 @@ namespace SDK
 		int32                                        Seconds;                                           // 0x8(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32                                        Frames;                                            // 0xC(0x4)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                         bDropFrameFormat;                                  // 0x10(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_BB[0x3];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_5F[0x3];                                       // Fixing Size Of Struct [ Dumper-7 ]
 	};
 
 	// 0x8 (0x8 - 0x0)
@@ -909,7 +917,7 @@ namespace SDK
 	struct FTimespan
 	{
 	public:
-		uint8                                        Pad_BC[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_60[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
 	};
 
 	// 0x18 (0x18 - 0x0)
@@ -950,7 +958,7 @@ namespace SDK
 	struct FFallbackStruct
 	{
 	public:
-		uint8                                        Pad_BD[0x1];                                       // Fixing Size Of Struct [ Dumper-7 ]
+		uint8                                        Pad_62[0x1];                                       // Fixing Size Of Struct [ Dumper-7 ]
 	};
 
 	// 0x8 (0x8 - 0x0)
@@ -959,7 +967,7 @@ namespace SDK
 	{
 	public:
 		enum class ERangeBoundTypes                  Type;                                              // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_BE[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+		uint8                                        Pad_63[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 		float                                        Value;                                             // 0x4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
@@ -978,7 +986,7 @@ namespace SDK
 	{
 	public:
 		enum class ERangeBoundTypes                  Type;                                              // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_BF[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+		uint8                                        Pad_64[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 		int32                                        Value;                                             // 0x4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
@@ -1015,14 +1023,14 @@ namespace SDK
 	{
 	public:
 		enum class ELocalizedTextSourceCategory      Category;                                          // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_C0[0x7];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+		uint8                                        Pad_65[0x7];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 		class FString                                NativeCulture;                                     // 0x8(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class FString                                Namespace;                                         // 0x18(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class FString                                Key;                                               // 0x28(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class FString                                NativeString;                                      // 0x38(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		TMap<class FString, class FString>           LocalizedStrings;                                  // 0x48(0x50)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 		bool                                         bIsMinimalPatch;                                   // 0x98(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_C1[0x7];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+		uint8                                        Pad_69[0x7];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 		class FText                                  CachedText;                                        // 0xA0(0x18)(Transient, NativeAccessSpecifierPublic)
 	};
 
@@ -1032,7 +1040,7 @@ namespace SDK
 	{
 	public:
 		enum class EAutomationEventType              Type;                                              // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_C2[0x7];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+		uint8                                        Pad_6A[0x7];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 		class FString                                Message;                                           // 0x8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class FString                                Context;                                           // 0x18(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		struct FGuid                                 Artifact;                                          // 0x28(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1046,7 +1054,7 @@ namespace SDK
 		struct FAutomationEvent                      Event;                                             // 0x0(0x38)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class FString                                Filename;                                          // 0x38(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		int32                                        LineNumber;                                        // 0x48(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		uint8                                        Pad_C3[0x4];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+		uint8                                        Pad_6B[0x4];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 		struct FDateTime                             Timestamp;                                         // 0x50(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 

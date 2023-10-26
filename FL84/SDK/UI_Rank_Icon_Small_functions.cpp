@@ -40,6 +40,114 @@ class UUI_Rank_Icon_Small_C* UUI_Rank_Icon_Small_C::GetDefaultObj()
 }
 
 
+// Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnSolarUIClosed
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UUI_Rank_Icon_Small_C::OnSolarUIClosed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Rank_Icon_Small_C", "OnSolarUIClosed");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnSolarUIOpened
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UUI_Rank_Icon_Small_C::OnSolarUIOpened()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Rank_Icon_Small_C", "OnSolarUIOpened");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.FormatViewCopy
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                              LevelID                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUI_Rank_Icon_Small_C::FormatViewCopy(int32 LevelID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Rank_Icon_Small_C", "FormatViewCopy");
+
+	Params::UUI_Rank_Icon_Small_C_FormatViewCopy_Params Parms{};
+
+	Parms.LevelID = LevelID;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.FormatViewJustIconCopy
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                              LevelID                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUI_Rank_Icon_Small_C::FormatViewJustIconCopy(int32 LevelID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Rank_Icon_Small_C", "FormatViewJustIconCopy");
+
+	Params::UUI_Rank_Icon_Small_C_FormatViewJustIconCopy_Params Parms{};
+
+	Parms.LevelID = LevelID;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Rank_Icon_Small_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Rank_Icon_Small_C", "OnInitialized");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.GetModuleName
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -86,7 +194,7 @@ void UUI_Rank_Icon_Small_C::FormatViewJustIcon(int32 LevelID)
 // Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.SetStar
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               STAR                                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               Star                                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -96,7 +204,7 @@ void UUI_Rank_Icon_Small_C::FormatViewJustIcon(int32 LevelID)
 // enum class ESlateVisibility        Temp_byte_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUI_Rank_Icon_Small_C::SetStar(bool STAR, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility K2Node_Select_Default_1)
+void UUI_Rank_Icon_Small_C::SetStar(bool Star, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility K2Node_Select_Default_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -105,7 +213,7 @@ void UUI_Rank_Icon_Small_C::SetStar(bool STAR, bool Temp_bool_Variable, enum cla
 
 	Params::UUI_Rank_Icon_Small_C_SetStar_Params Parms{};
 
-	Parms.STAR = STAR;
+	Parms.Star = Star;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;

@@ -40,6 +40,24 @@ class UUI_Component_Tips_C* UUI_Component_Tips_C::GetDefaultObj()
 }
 
 
+// Function UI_Component_Tips.UI_Component_Tips_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Component_Tips_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_Tips_C", "OnInitialized");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function UI_Component_Tips.UI_Component_Tips_C.GetModuleName
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -58,6 +76,35 @@ class FString UUI_Component_Tips_C::GetModuleName()
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+
+}
+
+
+// Function UI_Component_Tips.UI_Component_Tips_C.SetBtnVideo
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               NewParam                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
+// enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUI_Component_Tips_C::SetBtnVideo(bool NewParam, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_Tips_C", "SetBtnVideo");
+
+	Params::UUI_Component_Tips_C_SetBtnVideo_Params Parms{};
+
+	Parms.NewParam = NewParam;
+	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.Temp_byte_Variable = Temp_byte_Variable;
+	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
+	Parms.K2Node_Select_Default = K2Node_Select_Default;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 }
 
@@ -179,6 +226,24 @@ void UUI_Component_Tips_C::ChangeTipStatus()
 }
 
 
+// Function UI_Component_Tips.UI_Component_Tips_C.BndEvt__UI_Shop_Tips_Video_K2Node_ComponentBoundEvent_0_OnBtnPlayVideoClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+
+void UUI_Component_Tips_C::BndEvt__UI_Shop_Tips_Video_K2Node_ComponentBoundEvent_0_OnBtnPlayVideoClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_Tips_C", "BndEvt__UI_Shop_Tips_Video_K2Node_ComponentBoundEvent_0_OnBtnPlayVideoClicked__DelegateSignature");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function UI_Component_Tips.UI_Component_Tips_C.ExecuteUbergraph_UI_Component_Tips
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -251,6 +316,9 @@ void UUI_Component_Tips_C::ChangeTipStatus()
 // bool                               Temp_bool_Variable_25                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              Temp_float_Variable_6                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              Temp_float_Variable_7                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable_26                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
+// enum class ESlateVisibility        Temp_byte_Variable_27                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable_28                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_bIsExpanded                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_Event_bIsSelected                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -293,8 +361,9 @@ void UUI_Component_Tips_C::ChangeTipStatus()
 // float                              K2Node_Select_Default_24                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Select_Default_25                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FMargin                     K2Node_MakeStruct_Margin_4                                       (ZeroConstructor, IsPlainOldData, NoDestructor)
+// enum class ESlateVisibility        K2Node_Select_Default_26                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUI_Component_Tips_C::ExecuteUbergraph_UI_Component_Tips(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility Temp_byte_Variable_7, bool Temp_bool_Variable_4, enum class ESlateVisibility Temp_byte_Variable_8, enum class ESlateVisibility Temp_byte_Variable_9, bool Temp_bool_Variable_5, enum class ESlateVisibility Temp_byte_Variable_10, enum class ESlateVisibility Temp_byte_Variable_11, bool Temp_bool_Variable_6, enum class ESlateVisibility Temp_byte_Variable_12, enum class ESlateVisibility Temp_byte_Variable_13, bool Temp_bool_Variable_7, enum class ESlateVisibility Temp_byte_Variable_14, enum class ESlateVisibility Temp_byte_Variable_15, bool Temp_bool_Variable_8, enum class ESlateVisibility Temp_byte_Variable_16, enum class ESlateVisibility Temp_byte_Variable_17, bool Temp_bool_Variable_9, enum class ESlateVisibility Temp_byte_Variable_18, enum class ESlateVisibility Temp_byte_Variable_19, bool Temp_bool_Variable_10, enum class ESlateVisibility Temp_byte_Variable_20, enum class ESlateVisibility Temp_byte_Variable_21, bool Temp_bool_Variable_11, enum class ESlateVisibility Temp_byte_Variable_22, enum class ESlateVisibility Temp_byte_Variable_23, bool Temp_bool_Variable_12, class UObject* Temp_object_Variable, bool Temp_bool_Variable_13, class UObject* Temp_object_Variable_1, bool Temp_bool_Variable_14, float Temp_float_Variable, bool Temp_bool_Variable_15, float Temp_float_Variable_1, bool Temp_bool_Variable_16, const struct FLinearColor& Temp_struct_Variable, bool Temp_bool_Variable_17, const struct FLinearColor& Temp_struct_Variable_1, const struct FLinearColor& Temp_struct_Variable_2, bool Temp_bool_Variable_18, bool Temp_bool_Variable_19, bool Temp_bool_Variable_20, float Temp_float_Variable_2, float Temp_float_Variable_3, bool Temp_bool_Variable_21, enum class ESlateVisibility Temp_byte_Variable_24, enum class ESlateVisibility Temp_byte_Variable_25, bool Temp_bool_Variable_22, enum class ESlateVisibility Temp_byte_Variable_26, bool Temp_bool_Variable_23, class UObject* Temp_object_Variable_2, class UObject* Temp_object_Variable_3, bool Temp_bool_Variable_24, float Temp_float_Variable_4, float Temp_float_Variable_5, bool Temp_bool_Variable_25, float Temp_float_Variable_6, float Temp_float_Variable_7, bool K2Node_Event_bIsExpanded, bool K2Node_Event_bIsSelected, bool K2Node_Event_IsDesignTime, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1, enum class ESlateVisibility K2Node_Select_Default_2, enum class ESlateVisibility K2Node_Select_Default_3, enum class ESlateVisibility K2Node_Select_Default_4, enum class ESlateVisibility K2Node_Select_Default_5, const struct FMargin& K2Node_MakeStruct_Margin, const struct FMargin& K2Node_MakeStruct_Margin_1, const struct FMargin& K2Node_MakeStruct_Margin_2, enum class ESlateVisibility K2Node_Select_Default_6, enum class ESlateVisibility K2Node_Select_Default_7, enum class ESlateVisibility K2Node_Select_Default_8, enum class ESlateVisibility K2Node_Select_Default_9, enum class ESlateVisibility K2Node_Select_Default_10, bool CallFunc_BooleanXOR_ReturnValue, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_11, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue_1, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue_2, const struct FLinearColor& K2Node_Select_Default_12, const struct FLinearColor& K2Node_Select_Default_13, enum class ESlateVisibility K2Node_Select_Default_14, const struct FSlateColor& K2Node_MakeStruct_SlateColor, enum class ESlateVisibility K2Node_Select_Default_15, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue_3, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue_4, float K2Node_Select_Default_16, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UObject* K2Node_Select_Default_17, class UObject* K2Node_Select_Default_18, float K2Node_Select_Default_19, class UObject* K2Node_Select_Default_20, float K2Node_Select_Default_21, float K2Node_Select_Default_22, const struct FMargin& K2Node_MakeStruct_Margin_3, float K2Node_Select_Default_23, float K2Node_Select_Default_24, float K2Node_Select_Default_25, const struct FMargin& K2Node_MakeStruct_Margin_4)
+void UUI_Component_Tips_C::ExecuteUbergraph_UI_Component_Tips(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility Temp_byte_Variable_7, bool Temp_bool_Variable_4, enum class ESlateVisibility Temp_byte_Variable_8, enum class ESlateVisibility Temp_byte_Variable_9, bool Temp_bool_Variable_5, enum class ESlateVisibility Temp_byte_Variable_10, enum class ESlateVisibility Temp_byte_Variable_11, bool Temp_bool_Variable_6, enum class ESlateVisibility Temp_byte_Variable_12, enum class ESlateVisibility Temp_byte_Variable_13, bool Temp_bool_Variable_7, enum class ESlateVisibility Temp_byte_Variable_14, enum class ESlateVisibility Temp_byte_Variable_15, bool Temp_bool_Variable_8, enum class ESlateVisibility Temp_byte_Variable_16, enum class ESlateVisibility Temp_byte_Variable_17, bool Temp_bool_Variable_9, enum class ESlateVisibility Temp_byte_Variable_18, enum class ESlateVisibility Temp_byte_Variable_19, bool Temp_bool_Variable_10, enum class ESlateVisibility Temp_byte_Variable_20, enum class ESlateVisibility Temp_byte_Variable_21, bool Temp_bool_Variable_11, enum class ESlateVisibility Temp_byte_Variable_22, enum class ESlateVisibility Temp_byte_Variable_23, bool Temp_bool_Variable_12, class UObject* Temp_object_Variable, bool Temp_bool_Variable_13, class UObject* Temp_object_Variable_1, bool Temp_bool_Variable_14, float Temp_float_Variable, bool Temp_bool_Variable_15, float Temp_float_Variable_1, bool Temp_bool_Variable_16, const struct FLinearColor& Temp_struct_Variable, bool Temp_bool_Variable_17, const struct FLinearColor& Temp_struct_Variable_1, const struct FLinearColor& Temp_struct_Variable_2, bool Temp_bool_Variable_18, bool Temp_bool_Variable_19, bool Temp_bool_Variable_20, float Temp_float_Variable_2, float Temp_float_Variable_3, bool Temp_bool_Variable_21, enum class ESlateVisibility Temp_byte_Variable_24, enum class ESlateVisibility Temp_byte_Variable_25, bool Temp_bool_Variable_22, enum class ESlateVisibility Temp_byte_Variable_26, bool Temp_bool_Variable_23, class UObject* Temp_object_Variable_2, class UObject* Temp_object_Variable_3, bool Temp_bool_Variable_24, float Temp_float_Variable_4, float Temp_float_Variable_5, bool Temp_bool_Variable_25, float Temp_float_Variable_6, float Temp_float_Variable_7, bool Temp_bool_Variable_26, enum class ESlateVisibility Temp_byte_Variable_27, enum class ESlateVisibility Temp_byte_Variable_28, bool K2Node_Event_bIsExpanded, bool K2Node_Event_bIsSelected, bool K2Node_Event_IsDesignTime, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1, enum class ESlateVisibility K2Node_Select_Default_2, enum class ESlateVisibility K2Node_Select_Default_3, enum class ESlateVisibility K2Node_Select_Default_4, enum class ESlateVisibility K2Node_Select_Default_5, const struct FMargin& K2Node_MakeStruct_Margin, const struct FMargin& K2Node_MakeStruct_Margin_1, const struct FMargin& K2Node_MakeStruct_Margin_2, enum class ESlateVisibility K2Node_Select_Default_6, enum class ESlateVisibility K2Node_Select_Default_7, enum class ESlateVisibility K2Node_Select_Default_8, enum class ESlateVisibility K2Node_Select_Default_9, enum class ESlateVisibility K2Node_Select_Default_10, bool CallFunc_BooleanXOR_ReturnValue, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_11, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue_1, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue_2, const struct FLinearColor& K2Node_Select_Default_12, const struct FLinearColor& K2Node_Select_Default_13, enum class ESlateVisibility K2Node_Select_Default_14, const struct FSlateColor& K2Node_MakeStruct_SlateColor, enum class ESlateVisibility K2Node_Select_Default_15, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue_3, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue_4, float K2Node_Select_Default_16, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UObject* K2Node_Select_Default_17, class UObject* K2Node_Select_Default_18, float K2Node_Select_Default_19, class UObject* K2Node_Select_Default_20, float K2Node_Select_Default_21, float K2Node_Select_Default_22, const struct FMargin& K2Node_MakeStruct_Margin_3, float K2Node_Select_Default_23, float K2Node_Select_Default_24, float K2Node_Select_Default_25, const struct FMargin& K2Node_MakeStruct_Margin_4, enum class ESlateVisibility K2Node_Select_Default_26)
 {
 	static class UFunction* Func = nullptr;
 
@@ -372,6 +441,9 @@ void UUI_Component_Tips_C::ExecuteUbergraph_UI_Component_Tips(int32 EntryPoint, 
 	Parms.Temp_bool_Variable_25 = Temp_bool_Variable_25;
 	Parms.Temp_float_Variable_6 = Temp_float_Variable_6;
 	Parms.Temp_float_Variable_7 = Temp_float_Variable_7;
+	Parms.Temp_bool_Variable_26 = Temp_bool_Variable_26;
+	Parms.Temp_byte_Variable_27 = Temp_byte_Variable_27;
+	Parms.Temp_byte_Variable_28 = Temp_byte_Variable_28;
 	Parms.K2Node_Event_bIsExpanded = K2Node_Event_bIsExpanded;
 	Parms.K2Node_Event_bIsSelected = K2Node_Event_bIsSelected;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -414,6 +486,7 @@ void UUI_Component_Tips_C::ExecuteUbergraph_UI_Component_Tips(int32 EntryPoint, 
 	Parms.K2Node_Select_Default_24 = K2Node_Select_Default_24;
 	Parms.K2Node_Select_Default_25 = K2Node_Select_Default_25;
 	Parms.K2Node_MakeStruct_Margin_4 = K2Node_MakeStruct_Margin_4;
+	Parms.K2Node_Select_Default_26 = K2Node_Select_Default_26;
 
 	UObject::ProcessEvent(Func, &Parms);
 

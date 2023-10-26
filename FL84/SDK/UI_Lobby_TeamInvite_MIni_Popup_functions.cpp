@@ -40,6 +40,78 @@ class UUI_Lobby_TeamInvite_Mini_Popup_C* UUI_Lobby_TeamInvite_Mini_Popup_C::GetD
 }
 
 
+// Function UI_Lobby_TeamInvite_MIni_Popup.UI_Lobby_TeamInvite_Mini_Popup_C.OnClicked_DCD10C5C45570604335316B3C8F74E76
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_TeamInvite_Mini_Popup_C::OnClicked_DCD10C5C45570604335316B3C8F74E76()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_TeamInvite_Mini_Popup_C", "OnClicked_DCD10C5C45570604335316B3C8F74E76");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Lobby_TeamInvite_MIni_Popup.UI_Lobby_TeamInvite_Mini_Popup_C.OnClicked_A099F2E845871F7FEEA885B26B7833A9
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Lobby_TeamInvite_Mini_Popup_C::OnClicked_A099F2E845871F7FEEA885B26B7833A9()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_TeamInvite_Mini_Popup_C", "OnClicked_A099F2E845871F7FEEA885B26B7833A9");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_TeamInvite_MIni_Popup.UI_Lobby_TeamInvite_Mini_Popup_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_TeamInvite_Mini_Popup_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_TeamInvite_Mini_Popup_C", "Destruct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_TeamInvite_MIni_Popup.UI_Lobby_TeamInvite_Mini_Popup_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_TeamInvite_Mini_Popup_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_TeamInvite_Mini_Popup_C", "Construct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function UI_Lobby_TeamInvite_MIni_Popup.UI_Lobby_TeamInvite_Mini_Popup_C.GetModuleName
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:

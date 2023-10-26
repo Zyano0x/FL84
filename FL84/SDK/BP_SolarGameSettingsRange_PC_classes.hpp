@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x170 - 0x170)
+// 0x0 (0x180 - 0x180)
 // BlueprintGeneratedClass BP_SolarGameSettingsRange_PC.BP_SolarGameSettingsRange_PC_C
 class UBP_SolarGameSettingsRange_PC_C : public USolarGameSettingsRange
 {

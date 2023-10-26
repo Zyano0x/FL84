@@ -40,6 +40,42 @@ class UUI_Lobby_GameRecommend_C* UUI_Lobby_GameRecommend_C::GetDefaultObj()
 }
 
 
+// Function UI_Lobby_GameRecommend.UI_Lobby_GameRecommend_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_GameRecommend_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_GameRecommend_C", "Destruct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_GameRecommend.UI_Lobby_GameRecommend_C.ConstructCopy
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_GameRecommend_C::ConstructCopy()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_GameRecommend_C", "ConstructCopy");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function UI_Lobby_GameRecommend.UI_Lobby_GameRecommend_C.GetModuleName
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:

@@ -40,6 +40,39 @@ class UUI_Lobby_Topup_C* UUI_Lobby_Topup_C::GetDefaultObj()
 }
 
 
+// Function UI_Lobby_Topup.UI_Lobby_Topup_C.SetStateDesktop
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// enum class E_Type_State_Desktop    StateDesktop                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class E_Type_State_Desktop    Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable_1                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable_2                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
+
+void UUI_Lobby_Topup_C::SetStateDesktop(enum class E_Type_State_Desktop StateDesktop, enum class E_Type_State_Desktop Temp_byte_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, const struct FLinearColor& Temp_struct_Variable_2, const struct FLinearColor& K2Node_Select_Default, const struct FSlateColor& K2Node_MakeStruct_SlateColor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Topup_C", "SetStateDesktop");
+
+	Params::UUI_Lobby_Topup_C_SetStateDesktop_Params Parms{};
+
+	Parms.StateDesktop = StateDesktop;
+	Parms.Temp_byte_Variable = Temp_byte_Variable;
+	Parms.Temp_struct_Variable = Temp_struct_Variable;
+	Parms.Temp_struct_Variable_1 = Temp_struct_Variable_1;
+	Parms.Temp_struct_Variable_2 = Temp_struct_Variable_2;
+	Parms.K2Node_Select_Default = K2Node_Select_Default;
+	Parms.K2Node_MakeStruct_SlateColor = K2Node_MakeStruct_SlateColor;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function UI_Lobby_Topup.UI_Lobby_Topup_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:

@@ -40,6 +40,63 @@ class UUI_Lobby_Banner_Slot_C* UUI_Lobby_Banner_Slot_C::GetDefaultObj()
 }
 
 
+// Function UI_Lobby_Banner_Slot.UI_Lobby_Banner_Slot_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_Banner_Slot_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Banner_Slot_C", "Construct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_Banner_Slot.UI_Lobby_Banner_Slot_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_Banner_Slot_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Banner_Slot_C", "Destruct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_Banner_Slot.UI_Lobby_Banner_Slot_C.OnListItemObjectSetCopy
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UObject*                     ListItemObject                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUI_Lobby_Banner_Slot_C::OnListItemObjectSetCopy(class UObject* ListItemObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Banner_Slot_C", "OnListItemObjectSetCopy");
+
+	Params::UUI_Lobby_Banner_Slot_C_OnListItemObjectSetCopy_Params Parms{};
+
+	Parms.ListItemObject = ListItemObject;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function UI_Lobby_Banner_Slot.UI_Lobby_Banner_Slot_C.GetModuleName
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:

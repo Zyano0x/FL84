@@ -14,7 +14,7 @@ namespace SDK
 class UMeshWidgetUWidget : public UWidget
 {
 public:
-	uint8                                        Pad_F5E[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_992[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMeshWidgetUWidget* GetDefaultObj();
@@ -28,7 +28,7 @@ class UParticleWidget : public UMeshWidgetUWidget
 public:
 	class USlateVectorArtData*                   TrailMeshAsset;                                    // 0x148(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        MaxParticleCount;                                  // 0x150(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F5F[0x34];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_994[0x34];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UParticleWidget* GetDefaultObj();
@@ -42,7 +42,7 @@ class UMeshRectangleWidget : public UMeshWidgetUWidget
 public:
 	class UMaterialInterface*                    BaseMaterial;                                      // 0x148(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        NumFloat4PerInstance;                              // 0x150(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F60[0x1C];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_997[0x1C];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMeshRectangleWidget* GetDefaultObj();
@@ -58,7 +58,7 @@ class UTextMeshWidget : public UMeshWidgetUWidget
 {
 public:
 	class UMaterialInterface*                    BaseMaterial;                                      // 0x148(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F61[0x28];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_998[0x28];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UTextMeshWidget* GetDefaultObj();
@@ -71,7 +71,7 @@ class UProgressBarMeshWidget : public UMeshWidgetUWidget
 {
 public:
 	class UMaterialInterface*                    BaseMaterial;                                      // 0x148(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F62[0x28];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_999[0x28];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UProgressBarMeshWidget* GetDefaultObj();

@@ -11,11 +11,11 @@ namespace SDK
 
 enum class E_Platform : uint8
 {
-	None                           = 0,
-	Pc                             = 1,
-	Phone                          = 2,
-	Console                        = 3,
-	Other                          = 4,
+	NewEnumerator0                 = 0,
+	NewEnumerator1                 = 1,
+	NewEnumerator2                 = 2,
+	NewEnumerator3                 = 3,
+	NewEnumerator9                 = 4,
 	E_MAX                          = 5,
 };
 

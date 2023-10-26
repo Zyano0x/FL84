@@ -11,10 +11,10 @@ namespace SDK
 
 enum class ET_Type_Button : uint8
 {
-	Join                           = 0,
-	Join_Icon                      = 1,
-	Joining                        = 2,
-	Watch                          = 3,
+	NewEnumerator0                 = 0,
+	NewEnumerator1                 = 1,
+	NewEnumerator2                 = 2,
+	NewEnumerator3                 = 3,
 	T_Type_MAX                     = 4,
 };
 

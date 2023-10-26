@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4B8 - 0x4B8)
+// 0x0 (0x4C8 - 0x4C8)
 // BlueprintGeneratedClass ChaGABP_OpenScope.ChaGABP_OpenScope_C
 class UChaGABP_OpenScope_C : public UChaGA_OpenScope
 {

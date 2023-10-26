@@ -18,6 +18,7 @@ public:
 	static class UClass* StaticClass();
 	static class UPakHelper* GetDefaultObj();
 
+	void ReloadRedirectSettingsFromIni(const class FString& IniPath);
 	bool ReloadIniFile(const class FString& StrippedConfigFileName, const class FString& FilePath);
 	void ReloadGameUserSettings();
 	void ReloadDeviceProfiles();
@@ -35,7 +36,7 @@ public:
 class UPakReader : public UObject
 {
 public:
-	uint8                                        Pad_A22[0x28];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_BBF[0x28];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPakReader* GetDefaultObj();
@@ -50,7 +51,7 @@ public:
 class UPakWriter : public UObject
 {
 public:
-	uint8                                        Pad_A23[0x98];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_BC3[0x98];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPakWriter* GetDefaultObj();

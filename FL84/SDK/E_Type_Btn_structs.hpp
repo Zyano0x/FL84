@@ -11,15 +11,16 @@ namespace SDK
 
 enum class E_Type_Btn : uint8
 {
-	MainBtn                        = 0,
-	SecondaryBtn                   = 1,
-	ShopBtn                        = 2,
-	StrongBtn                      = 3,
-	WeakBtn                        = 4,
-	LeagueBtn                      = 5,
-	ThirdlyBtn                     = 6,
-	ThirdlyStrongBtn               = 7,
-	E_Type_MAX                     = 8,
+	NewEnumerator0                 = 0,
+	NewEnumerator1                 = 1,
+	NewEnumerator2                 = 2,
+	NewEnumerator3                 = 3,
+	NewEnumerator4                 = 4,
+	NewEnumerator5                 = 5,
+	NewEnumerator6                 = 6,
+	NewEnumerator7                 = 7,
+	NewEnumerator8                 = 8,
+	E_Type_MAX                     = 9,
 };
 
 

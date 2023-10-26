@@ -11,12 +11,12 @@ namespace SDK
 
 enum class ET_Type_Invitation : uint8
 {
-	Team_Application               = 0,
-	Team_Invitation                = 1,
-	Home_Invitation                = 2,
-	CreateRoom_Invitation          = 3,
-	Skydiving_Invitation           = 4,
-	Skydiving_Transfer             = 5,
+	NewEnumerator0                 = 0,
+	NewEnumerator1                 = 1,
+	NewEnumerator2                 = 2,
+	NewEnumerator3                 = 3,
+	NewEnumerator4                 = 4,
+	NewEnumerator5                 = 5,
 	T_Type_MAX                     = 6,
 };
 

@@ -20,7 +20,7 @@ public:
 	static class ALobby_C* GetDefaultObj();
 
 	void ReceiveBeginPlay();
-	void ExecuteUbergraph_Lobby(int32 EntryPoint, class APlayerController* CallFunc_GetPlayerController_ReturnValue, TArray<class AActor*>& CallFunc_GetAllActorsWithTag_OutActors, class AActor* CallFunc_Array_Get_Item);
+	void ExecuteUbergraph_Lobby(int32 EntryPoint, bool CallFunc_IsPlatformDesktop_ReturnValue, bool Temp_bool_Variable, class UClass* Temp_class_Variable, class UClass* Temp_class_Variable_1, class UClass* K2Node_Select_Default, class APlayerController* CallFunc_GetPlayerController_ReturnValue, TArray<class AActor*>& CallFunc_GetAllActorsWithTag_OutActors, class AActor* CallFunc_Array_Get_Item);
 };
 
 }

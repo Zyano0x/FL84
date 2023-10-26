@@ -40,143 +40,26 @@ class UR_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C* UR_Weapon_9A01_Set00_L
 }
 
 
-// Function R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C.TestAPI
-// (Native, Public, BlueprintCallable)
+// Function R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C.ExecuteUbergraph_R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint
+// (Final, Native, Public)
 // Parameters:
+// int32                              bpp__EntryPoint__pf                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UR_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C::TestAPI()
+void UR_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C::ExecuteUbergraph_R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint(int32 bpp__EntryPoint__pf)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C", "TestAPI");
+		Func = Class->GetFunction("R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C", "ExecuteUbergraph_R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint");
 
+	Params::UR_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C_ExecuteUbergraph_R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_Params Parms{};
 
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-
-	Func->FunctionFlags = Flgs;
-
-}
-
-
-// Function R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C.InterruptAnim
-// (Native, Public, BlueprintCallable)
-// Parameters:
-
-void UR_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C::InterruptAnim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C", "InterruptAnim");
-
-
+	Parms.bpp__EntryPoint__pf = bpp__EntryPoint__pf;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
-
-
-	Func->FunctionFlags = Flgs;
-
-}
-
-
-// Function R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C.AnimNotify_QuitIdle
-// (Native, Public, BlueprintCallable)
-// Parameters:
-
-void UR_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C::AnimNotify_QuitIdle()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C", "AnimNotify_QuitIdle");
-
-
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-
-	Func->FunctionFlags = Flgs;
-
-}
-
-
-// Function R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C.AnimNotify_QuitBolt
-// (Native, Public, BlueprintCallable)
-// Parameters:
-
-void UR_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C::AnimNotify_QuitBolt()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C", "AnimNotify_QuitBolt");
-
-
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-
-	Func->FunctionFlags = Flgs;
-
-}
-
-
-// Function R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C.AnimNotify_EnterIdle
-// (Native, Public, BlueprintCallable)
-// Parameters:
-
-void UR_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C::AnimNotify_EnterIdle()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C", "AnimNotify_EnterIdle");
-
-
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-
-	Func->FunctionFlags = Flgs;
-
-}
-
-
-// Function R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C.AnimNotify_EnterBolt
-// (Native, Public, BlueprintCallable)
-// Parameters:
-
-void UR_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C::AnimNotify_EnterBolt()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("R_Weapon_9A01_Set00_LODP_Skeleton_AnimBlueprint_C", "AnimNotify_EnterBolt");
-
-
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 
 
 	Func->FunctionFlags = Flgs;

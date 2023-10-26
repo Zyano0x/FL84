@@ -40,6 +40,126 @@ class UUI_ChatPanel_C* UUI_ChatPanel_C::GetDefaultObj()
 }
 
 
+// DelegateFunction UI_ChatPanel.UI_ChatPanel_C.OnClicked_74E999E445D516957FE8308CE0A84C5E
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_ChatPanel_C::OnClicked_74E999E445D516957FE8308CE0A84C5E()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_ChatPanel_C", "OnClicked_74E999E445D516957FE8308CE0A84C5E");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_ChatPanel.UI_ChatPanel_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_ChatPanel_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_ChatPanel_C", "OnInitialized");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_ChatPanel.UI_ChatPanel_C.OnSolarUIOpened
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UUI_ChatPanel_C::OnSolarUIOpened()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_ChatPanel_C", "OnSolarUIOpened");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function UI_ChatPanel.UI_ChatPanel_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_ChatPanel_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_ChatPanel_C", "Destruct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_ChatPanel.UI_ChatPanel_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_ChatPanel_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_ChatPanel_C", "Construct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_ChatPanel.UI_ChatPanel_C.OnSolarUIClosed
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UUI_ChatPanel_C::OnSolarUIClosed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_ChatPanel_C", "OnSolarUIClosed");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
 // Function UI_ChatPanel.UI_ChatPanel_C.GetModuleName
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -58,6 +178,37 @@ class FString UUI_ChatPanel_C::GetModuleName()
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+
+}
+
+
+// Function UI_ChatPanel.UI_ChatPanel_C.SetStateDesktop
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// enum class E_Type_State_Desktop    StateHD                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class E_Type_State_Desktop    Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable_1                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable_2                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUI_ChatPanel_C::SetStateDesktop(enum class E_Type_State_Desktop StateHD, enum class E_Type_State_Desktop Temp_byte_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, const struct FLinearColor& Temp_struct_Variable_2, const struct FLinearColor& K2Node_Select_Default)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_ChatPanel_C", "SetStateDesktop");
+
+	Params::UUI_ChatPanel_C_SetStateDesktop_Params Parms{};
+
+	Parms.StateHD = StateHD;
+	Parms.Temp_byte_Variable = Temp_byte_Variable;
+	Parms.Temp_struct_Variable = Temp_struct_Variable;
+	Parms.Temp_struct_Variable_1 = Temp_struct_Variable_1;
+	Parms.Temp_struct_Variable_2 = Temp_struct_Variable_2;
+	Parms.K2Node_Select_Default = K2Node_Select_Default;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 }
 
@@ -105,6 +256,50 @@ void UUI_ChatPanel_C::SetMsgText(uint8 ChatType, const class FString& PlayerName
 
 	if (OutputText != nullptr)
 		*OutputText = std::move(Parms.OutputText);
+
+}
+
+
+// Function UI_ChatPanel.UI_ChatPanel_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                               IsDesignTime                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UUI_ChatPanel_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_ChatPanel_C", "PreConstruct");
+
+	Params::UUI_ChatPanel_C_PreConstruct_Params Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function UI_ChatPanel.UI_ChatPanel_C.ExecuteUbergraph_UI_ChatPanel
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UUI_ChatPanel_C::ExecuteUbergraph_UI_ChatPanel(int32 EntryPoint, bool K2Node_Event_IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_ChatPanel_C", "ExecuteUbergraph_UI_ChatPanel");
+
+	Params::UUI_ChatPanel_C_ExecuteUbergraph_UI_ChatPanel_Params Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 }
 

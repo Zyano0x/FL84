@@ -96,6 +96,34 @@ class UMovieScenePropertyTrack* UMovieScenePropertyTrack::GetDefaultObj()
 }
 
 
+// Class MovieSceneTracks.SceneComponentTransformStandIn
+// (None)
+
+class UClass* USceneComponentTransformStandIn::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SceneComponentTransformStandIn");
+
+	return Clss;
+}
+
+
+// SceneComponentTransformStandIn MovieSceneTracks.Default__SceneComponentTransformStandIn
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USceneComponentTransformStandIn* USceneComponentTransformStandIn::GetDefaultObj()
+{
+	static class USceneComponentTransformStandIn* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USceneComponentTransformStandIn*>(USceneComponentTransformStandIn::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Class MovieSceneTracks.MovieSceneTransformOrigin
 // (None)
 

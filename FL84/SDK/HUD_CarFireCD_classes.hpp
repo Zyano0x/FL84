@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x360 - 0x360)
+// 0x0 (0x418 - 0x418)
 // WidgetBlueprintGeneratedClass HUD_CarFireCD.HUD_CarFireCD_C
 class UHUD_CarFireCD_C : public USolarWeaponRechamberWidget
 {

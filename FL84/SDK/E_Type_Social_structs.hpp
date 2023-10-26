@@ -11,9 +11,9 @@ namespace SDK
 
 enum class E_Type_Social : uint8
 {
-	None                           = 0,
-	Twitter                        = 1,
-	Facebook                       = 2,
+	NewEnumerator5                 = 0,
+	NewEnumerator0                 = 1,
+	NewEnumerator1                 = 2,
 	E_Type_MAX                     = 3,
 };
 

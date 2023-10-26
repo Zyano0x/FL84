@@ -1698,6 +1698,34 @@ int32 UAkComponent::PostAkEventAndWaitForEnd(class UAkAudioEvent* AkEvent, const
 }
 
 
+// Function AkAudio.AkComponent.GetCurrentRoom
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UAkRoomComponent*            ReturnValue                                                      (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UAkRoomComponent* UAkComponent::GetCurrentRoom()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AkComponent", "GetCurrentRoom");
+
+	Params::UAkComponent_GetCurrentRoom_Params Parms{};
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
 // Function AkAudio.AkComponent.GetAttenuationRadius
 // (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -2320,12 +2348,13 @@ void UAkGameplayStatics::UpdatePostedEventMultiPositions(class UAkComponent* AkC
 
 
 // Function AkAudio.AkGameplayStatics.UpdateDopplerEffectDatas
-// (Final, Native, Static, Public, BlueprintCallable)
+// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
 // class AActor*                      SoundingObj                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                      ListeningObj                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                     SoundingObjPos                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                     ListeningObjPos                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UAkGameplayStatics::UpdateDopplerEffectDatas(class AActor* SoundingObj, class AActor* ListeningObj)
+void UAkGameplayStatics::UpdateDopplerEffectDatas(class AActor* SoundingObj, const struct FVector& SoundingObjPos, const struct FVector& ListeningObjPos)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2335,7 +2364,8 @@ void UAkGameplayStatics::UpdateDopplerEffectDatas(class AActor* SoundingObj, cla
 	Params::UAkGameplayStatics_UpdateDopplerEffectDatas_Params Parms{};
 
 	Parms.SoundingObj = SoundingObj;
-	Parms.ListeningObj = ListeningObj;
+	Parms.SoundingObjPos = SoundingObjPos;
+	Parms.ListeningObjPos = ListeningObjPos;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -4715,15 +4745,17 @@ float UAkGameplayStatics::GetOcclusionScalingFactor()
 
 
 // Function AkAudio.AkGameplayStatics.GetDopplerEffectDatas
-// (Final, Native, Static, Public, BlueprintCallable)
+// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
 // class AActor*                      SoundingObj                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                      ListeningObj                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                              DopplerIntensity                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                     SoundingObjPos                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                     ListeningObjPos                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                              AddDopplerIntensity                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                              MinusDopplerIntensity                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                              DeltaTime                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                              ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-float UAkGameplayStatics::GetDopplerEffectDatas(class AActor* SoundingObj, class AActor* ListeningObj, float DopplerIntensity, float DeltaTime)
+float UAkGameplayStatics::GetDopplerEffectDatas(class AActor* SoundingObj, const struct FVector& SoundingObjPos, const struct FVector& ListeningObjPos, float AddDopplerIntensity, float MinusDopplerIntensity, float DeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
@@ -4733,8 +4765,10 @@ float UAkGameplayStatics::GetDopplerEffectDatas(class AActor* SoundingObj, class
 	Params::UAkGameplayStatics_GetDopplerEffectDatas_Params Parms{};
 
 	Parms.SoundingObj = SoundingObj;
-	Parms.ListeningObj = ListeningObj;
-	Parms.DopplerIntensity = DopplerIntensity;
+	Parms.SoundingObjPos = SoundingObjPos;
+	Parms.ListeningObjPos = ListeningObjPos;
+	Parms.AddDopplerIntensity = AddDopplerIntensity;
+	Parms.MinusDopplerIntensity = MinusDopplerIntensity;
 	Parms.DeltaTime = DeltaTime;
 
 	auto Flgs = Func->FunctionFlags;
@@ -4980,6 +5014,33 @@ void UAkGameplayStatics::ExecuteActionOnEvent(class UAkAudioEvent* AkEvent, enum
 }
 
 
+// Function AkAudio.AkGameplayStatics.ClearDopplerEffectDatas
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                      SoundingObj                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkGameplayStatics::ClearDopplerEffectDatas(class AActor* SoundingObj)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AkGameplayStatics", "ClearDopplerEffectDatas");
+
+	Params::UAkGameplayStatics_ClearDopplerEffectDatas_Params Parms{};
+
+	Parms.SoundingObj = SoundingObj;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
 // Function AkAudio.AkGameplayStatics.ClearBanks
 // (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -5019,6 +5080,41 @@ void UAkGameplayStatics::CancelEventCallback(FDelegateProperty_& PostEventCallba
 	Params::UAkGameplayStatics_CancelEventCallback_Params Parms{};
 
 	Parms.PostEventCallback = PostEventCallback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function AkAudio.AkGameplayStatics.ApplyDopplerEffectDatas
+// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// class AActor*                      SoundingObj                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                     ListeningObjPos                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                              AddDopplerIntensity                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                              MinusDopplerIntensity                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                              DeltaTime                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkGameplayStatics::ApplyDopplerEffectDatas(class AActor* SoundingObj, const struct FVector& ListeningObjPos, float AddDopplerIntensity, float MinusDopplerIntensity, float DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AkGameplayStatics", "ApplyDopplerEffectDatas");
+
+	Params::UAkGameplayStatics_ApplyDopplerEffectDatas_Params Parms{};
+
+	Parms.SoundingObj = SoundingObj;
+	Parms.ListeningObjPos = ListeningObjPos;
+	Parms.AddDopplerIntensity = AddDopplerIntensity;
+	Parms.MinusDopplerIntensity = MinusDopplerIntensity;
+	Parms.DeltaTime = DeltaTime;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -8940,6 +9036,891 @@ class UAkXboxOnePlatformInfo* UAkXboxOnePlatformInfo::GetDefaultObj()
 }
 
 
+// Class AkAudio.AudioManager
+// (None)
+
+class UClass* UAudioManager::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AudioManager");
+
+	return Clss;
+}
+
+
+// AudioManager AkAudio.Default__AudioManager
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UAudioManager* UAudioManager::GetDefaultObj()
+{
+	static class UAudioManager* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAudioManager*>(UAudioManager::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Function AkAudio.AudioManager.UnmuteWwiseAudio
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+
+void UAudioManager::UnmuteWwiseAudio()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "UnmuteWwiseAudio");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function AkAudio.AudioManager.SetVoiceVolume
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// float                              Volume                                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAudioManager::SetVoiceVolume(float Volume)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "SetVoiceVolume");
+
+	Params::UAudioManager_SetVoiceVolume_Params Parms{};
+
+	Parms.Volume = Volume;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function AkAudio.AudioManager.SetVoiceEnabled
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                               Enabled                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAudioManager::SetVoiceEnabled(bool Enabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "SetVoiceEnabled");
+
+	Params::UAudioManager_SetVoiceEnabled_Params Parms{};
+
+	Parms.Enabled = Enabled;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function AkAudio.AudioManager.SetSwitch
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      SwitchGroupName                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                      SwitchName                                                       (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                      TargetActor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAudioManager::SetSwitch(const class FString& SwitchGroupName, const class FString& SwitchName, class AActor* TargetActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "SetSwitch");
+
+	Params::UAudioManager_SetSwitch_Params Parms{};
+
+	Parms.SwitchGroupName = SwitchGroupName;
+	Parms.SwitchName = SwitchName;
+	Parms.TargetActor = TargetActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function AkAudio.AudioManager.SetState
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      StateGroupName                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                      StateName                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAudioManager::SetState(const class FString& StateGroupName, const class FString& StateName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "SetState");
+
+	Params::UAudioManager_SetState_Params Parms{};
+
+	Parms.StateGroupName = StateGroupName;
+	Parms.StateName = StateName;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function AkAudio.AudioManager.SetSoundVolume
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// float                              Volume                                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAudioManager::SetSoundVolume(float Volume)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "SetSoundVolume");
+
+	Params::UAudioManager_SetSoundVolume_Params Parms{};
+
+	Parms.Volume = Volume;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function AkAudio.AudioManager.SetSoundEnabled
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                               Enabled                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAudioManager::SetSoundEnabled(bool Enabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "SetSoundEnabled");
+
+	Params::UAudioManager_SetSoundEnabled_Params Parms{};
+
+	Parms.Enabled = Enabled;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function AkAudio.AudioManager.SetMusicVolume
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// float                              Volume                                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAudioManager::SetMusicVolume(float Volume)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "SetMusicVolume");
+
+	Params::UAudioManager_SetMusicVolume_Params Parms{};
+
+	Parms.Volume = Volume;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function AkAudio.AudioManager.SetMusicEnabled
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                               Enabled                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAudioManager::SetMusicEnabled(bool Enabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "SetMusicEnabled");
+
+	Params::UAudioManager_SetMusicEnabled_Params Parms{};
+
+	Parms.Enabled = Enabled;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function AkAudio.AudioManager.SetGlobalRTPC
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      ParameterName                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                              Value                                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                              UpdateTolerance                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAudioManager::SetGlobalRTPC(const class FString& ParameterName, float Value, float UpdateTolerance)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "SetGlobalRTPC");
+
+	Params::UAudioManager_SetGlobalRTPC_Params Parms{};
+
+	Parms.ParameterName = ParameterName;
+	Parms.Value = Value;
+	Parms.UpdateTolerance = UpdateTolerance;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function AkAudio.AudioManager.SetEmitterRTPC
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      ParameterName                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                              Value                                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                      Emitter                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                              UpdateTolerance                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAudioManager::SetEmitterRTPC(const class FString& ParameterName, float Value, class AActor* Emitter, float UpdateTolerance)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "SetEmitterRTPC");
+
+	Params::UAudioManager_SetEmitterRTPC_Params Parms{};
+
+	Parms.ParameterName = ParameterName;
+	Parms.Value = Value;
+	Parms.Emitter = Emitter;
+	Parms.UpdateTolerance = UpdateTolerance;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function AkAudio.AudioManager.ResetRTPCValue
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      ParameterName                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                      Emitter                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAudioManager::ResetRTPCValue(const class FString& ParameterName, class AActor* Emitter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "ResetRTPCValue");
+
+	Params::UAudioManager_ResetRTPCValue_Params Parms{};
+
+	Parms.ParameterName = ParameterName;
+	Parms.Emitter = Emitter;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function AkAudio.AudioManager.PlayEvent3D
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UAkAudioEvent*               EventReference                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                      Emitter                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                               StopOnDestroy                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                      Source                                                           (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                              ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UAudioManager::PlayEvent3D(class UAkAudioEvent* EventReference, class AActor* Emitter, bool StopOnDestroy, const class FString& Source)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "PlayEvent3D");
+
+	Params::UAudioManager_PlayEvent3D_Params Parms{};
+
+	Parms.EventReference = EventReference;
+	Parms.Emitter = Emitter;
+	Parms.StopOnDestroy = StopOnDestroy;
+	Parms.Source = Source;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function AkAudio.AudioManager.PlayEvent2D
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UAkAudioEvent*               EventReference                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                              ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UAudioManager::PlayEvent2D(class UAkAudioEvent* EventReference)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "PlayEvent2D");
+
+	Params::UAudioManager_PlayEvent2D_Params Parms{};
+
+	Parms.EventReference = EventReference;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function AkAudio.AudioManager.MuteWwiseAudio
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+
+void UAudioManager::MuteWwiseAudio()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "MuteWwiseAudio");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function AkAudio.AudioManager.IsSwitchAt
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      SwitchGroupName                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                      SwitchName                                                       (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                      TargetActor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAudioManager::IsSwitchAt(const class FString& SwitchGroupName, const class FString& SwitchName, class AActor* TargetActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "IsSwitchAt");
+
+	Params::UAudioManager_IsSwitchAt_Params Parms{};
+
+	Parms.SwitchGroupName = SwitchGroupName;
+	Parms.SwitchName = SwitchName;
+	Parms.TargetActor = TargetActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function AkAudio.AudioManager.IsStateAt
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      StateGroupName                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                      StateName                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAudioManager::IsStateAt(const class FString& StateGroupName, const class FString& StateName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "IsStateAt");
+
+	Params::UAudioManager_IsStateAt_Params Parms{};
+
+	Parms.StateGroupName = StateGroupName;
+	Parms.StateName = StateName;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function AkAudio.AudioManager.GetSwitch
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      SwitchGroupName                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                      TargetActor                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                      ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString UAudioManager::GetSwitch(const class FString& SwitchGroupName, class AActor* TargetActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "GetSwitch");
+
+	Params::UAudioManager_GetSwitch_Params Parms{};
+
+	Parms.SwitchGroupName = SwitchGroupName;
+	Parms.TargetActor = TargetActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function AkAudio.AudioManager.GetState
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      StateGroupName                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                      ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString UAudioManager::GetState(const class FString& StateGroupName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "GetState");
+
+	Params::UAudioManager_GetState_Params Parms{};
+
+	Parms.StateGroupName = StateGroupName;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function AkAudio.AudioManager.GetRTPCValue
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      ParameterName                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                      Emitter                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                              ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UAudioManager::GetRTPCValue(const class FString& ParameterName, class AActor* Emitter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "GetRTPCValue");
+
+	Params::UAudioManager_GetRTPCValue_Params Parms{};
+
+	Parms.ParameterName = ParameterName;
+	Parms.Emitter = Emitter;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function AkAudio.AudioManager.ExecuteActionOnEvent
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class FString                      EventName                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                      Emitter                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// enum class EAkActionOnEventType    ActionType                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                              FadeTime                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                              PlayingID                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAudioManager::ExecuteActionOnEvent(const class FString& EventName, class AActor* Emitter, enum class EAkActionOnEventType ActionType, float FadeTime, int32 PlayingID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("AudioManager", "ExecuteActionOnEvent");
+
+	Params::UAudioManager_ExecuteActionOnEvent_Params Parms{};
+
+	Parms.EventName = EventName;
+	Parms.Emitter = Emitter;
+	Parms.ActionType = ActionType;
+	Parms.FadeTime = FadeTime;
+	Parms.PlayingID = PlayingID;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Class AkAudio.BankManager
+// (None)
+
+class UClass* UBankManager::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BankManager");
+
+	return Clss;
+}
+
+
+// BankManager AkAudio.Default__BankManager
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UBankManager* UBankManager::GetDefaultObj()
+{
+	static class UBankManager* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBankManager*>(UBankManager::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Function AkAudio.BankManager.GetInstance
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UObject*                     WorldContextObject                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UBankManager*                ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UBankManager* UBankManager::GetInstance(class UObject* WorldContextObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BankManager", "GetInstance");
+
+	Params::UBankManager_GetInstance_Params Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Class AkAudio.EmitterManager
+// (None)
+
+class UClass* UEmitterManager::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EmitterManager");
+
+	return Clss;
+}
+
+
+// EmitterManager AkAudio.Default__EmitterManager
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UEmitterManager* UEmitterManager::GetDefaultObj()
+{
+	static class UEmitterManager* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEmitterManager*>(UEmitterManager::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Function AkAudio.EmitterManager.SetSelfEmitter
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UAkComponent*                Emitter                                                          (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UEmitterManager::SetSelfEmitter(class UAkComponent* Emitter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("EmitterManager", "SetSelfEmitter");
+
+	Params::UEmitterManager_SetSelfEmitter_Params Parms{};
+
+	Parms.Emitter = Emitter;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function AkAudio.EmitterManager.RemoveSelfEmitter
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                     WorldContextObject                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UEmitterManager::RemoveSelfEmitter(class UObject* WorldContextObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("EmitterManager", "RemoveSelfEmitter");
+
+	Params::UEmitterManager_RemoveSelfEmitter_Params Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function AkAudio.EmitterManager.IsSelfEmitter
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UAkComponent*                Emitter                                                          (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UEmitterManager::IsSelfEmitter(class UAkComponent* Emitter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("EmitterManager", "IsSelfEmitter");
+
+	Params::UEmitterManager_IsSelfEmitter_Params Parms{};
+
+	Parms.Emitter = Emitter;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function AkAudio.EmitterManager.GetSelfEmitter
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                     WorldContextObject                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkComponent*                ReturnValue                                                      (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UAkComponent* UEmitterManager::GetSelfEmitter(class UObject* WorldContextObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("EmitterManager", "GetSelfEmitter");
+
+	Params::UEmitterManager_GetSelfEmitter_Params Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function AkAudio.EmitterManager.GetInstance
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UObject*                     WorldContextObject                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UEmitterManager*             ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UEmitterManager* UEmitterManager::GetInstance(class UObject* WorldContextObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("EmitterManager", "GetInstance");
+
+	Params::UEmitterManager_GetInstance_Params Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
+}
+
+
 // Class AkAudio.InterpTrackAkAudioEvent
 // (None)
 
@@ -9049,6 +10030,64 @@ class UInterpTrackInstAkAudioRTPC* UInterpTrackInstAkAudioRTPC::GetDefaultObj()
 		Default = static_cast<UInterpTrackInstAkAudioRTPC*>(UInterpTrackInstAkAudioRTPC::StaticClass()->DefaultObject);
 
 	return Default;
+}
+
+
+// Class AkAudio.ListenerManager
+// (None)
+
+class UClass* UListenerManager::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ListenerManager");
+
+	return Clss;
+}
+
+
+// ListenerManager AkAudio.Default__ListenerManager
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UListenerManager* UListenerManager::GetDefaultObj()
+{
+	static class UListenerManager* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UListenerManager*>(UListenerManager::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Function AkAudio.ListenerManager.GetInstance
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UObject*                     WorldContextObject                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UListenerManager*            ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UListenerManager* UListenerManager::GetInstance(class UObject* WorldContextObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("ListenerManager", "GetInstance");
+
+	Params::UListenerManager_GetInstance_Params Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+
 }
 
 
@@ -9370,6 +10409,64 @@ void UPostEventAtLocationAsync::PollPostEventFuture()
 
 
 	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Class AkAudio.SpatialAudioManager
+// (None)
+
+class UClass* USpatialAudioManager::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SpatialAudioManager");
+
+	return Clss;
+}
+
+
+// SpatialAudioManager AkAudio.Default__SpatialAudioManager
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USpatialAudioManager* USpatialAudioManager::GetDefaultObj()
+{
+	static class USpatialAudioManager* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USpatialAudioManager*>(USpatialAudioManager::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Function AkAudio.SpatialAudioManager.GetInstance
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// class UObject*                     WorldContextObject                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class USpatialAudioManager*        ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class USpatialAudioManager* USpatialAudioManager::GetInstance(class UObject* WorldContextObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("SpatialAudioManager", "GetInstance");
+
+	Params::USpatialAudioManager_GetInstance_Params Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 
 }
 

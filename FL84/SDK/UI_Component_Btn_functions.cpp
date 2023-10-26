@@ -40,6 +40,24 @@ class UUI_Component_Btn_C* UUI_Component_Btn_C::GetDefaultObj()
 }
 
 
+// Function UI_Component_Btn.UI_Component_Btn_C.StopAnims
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UUI_Component_Btn_C::StopAnims()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_Btn_C", "StopAnims");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function UI_Component_Btn.UI_Component_Btn_C.IsAvailable
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -158,24 +176,6 @@ void UUI_Component_Btn_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function UI_Component_Btn.UI_Component_Btn_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Component_Btn_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Component_Btn_C", "Construct");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function UI_Component_Btn.UI_Component_Btn_C.Update
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -274,25 +274,21 @@ void UUI_Component_Btn_C::BndEvt__OperateArea_K2Node_ComponentBoundEvent_8_OnBut
 }
 
 
-// Function UI_Component_Btn.UI_Component_Btn_C.OnLocLangChanged
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function UI_Component_Btn.UI_Component_Btn_C.OnLocalLangChangedEx
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UObject*                     Publisher                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     Payload                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class FString>              MetaData                                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// class FString                      InLang                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UUI_Component_Btn_C::OnLocLangChanged(class UObject* Publisher, class UObject* Payload, TArray<class FString>& MetaData)
+void UUI_Component_Btn_C::OnLocalLangChangedEx(const class FString& InLang)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_Btn_C", "OnLocLangChanged");
+		Func = Class->GetFunction("UI_Component_Btn_C", "OnLocalLangChangedEx");
 
-	Params::UUI_Component_Btn_C_OnLocLangChanged_Params Parms{};
+	Params::UUI_Component_Btn_C_OnLocalLangChangedEx_Params Parms{};
 
-	Parms.Publisher = Publisher;
-	Parms.Payload = Payload;
-	Parms.MetaData = MetaData;
+	Parms.InLang = InLang;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -303,6 +299,7 @@ void UUI_Component_Btn_C::OnLocLangChanged(class UObject* Publisher, class UObje
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      K2Node_Event_InLang                                              (ZeroConstructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_1                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_2                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -310,12 +307,12 @@ void UUI_Component_Btn_C::OnLocLangChanged(class UObject* Publisher, class UObje
 // struct FLinearColor                Temp_struct_Variable_4                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_5                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_6                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable_7                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class E_Type_Btn              Temp_byte_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                Temp_struct_Variable_7                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_8                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_9                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_10                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -323,6 +320,8 @@ void UUI_Component_Btn_C::OnLocLangChanged(class UObject* Publisher, class UObje
 // struct FLinearColor                Temp_struct_Variable_12                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_13                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_14                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable_15                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable_16                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class E_Type_Btn              Temp_byte_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     Temp_object_Variable_1                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -332,17 +331,18 @@ void UUI_Component_Btn_C::OnLocLangChanged(class UObject* Publisher, class UObje
 // class UObject*                     Temp_object_Variable_5                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     Temp_object_Variable_6                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     Temp_object_Variable_7                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     Temp_object_Variable_8                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class E_Type_Btn              Temp_byte_Variable_4                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                Temp_struct_Variable_15                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                Temp_struct_Variable_16                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_17                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_18                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_19                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_20                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_21                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_22                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable_23                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable_24                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable_25                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class E_Type_Btn              Temp_byte_Variable_5                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     Temp_object_Variable_8                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     Temp_object_Variable_9                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     Temp_object_Variable_10                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     Temp_object_Variable_11                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -350,24 +350,25 @@ void UUI_Component_Btn_C::OnLocLangChanged(class UObject* Publisher, class UObje
 // class UObject*                     Temp_object_Variable_13                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     Temp_object_Variable_14                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     Temp_object_Variable_15                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     Temp_object_Variable_16                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     Temp_object_Variable_17                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable_6                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_7                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class E_Type_Btn              Temp_byte_Variable_8                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                Temp_struct_Variable_23                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                Temp_struct_Variable_24                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                Temp_struct_Variable_25                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_26                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_27                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_28                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_29                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_30                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable_31                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable_32                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable_33                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable_34                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable_9                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_10                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USolarGlobalEventSystem*     CallFunc_GetGameInstanceSubsystem_ReturnValue                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // bool                               K2Node_CustomEvent_IsDesignTime                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                      K2Node_CustomEvent_____                                          (ZeroConstructor, HasGetValueTypeHash)
 // enum class E_State_Btn             K2Node_CustomEvent______1                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -384,7 +385,7 @@ void UUI_Component_Btn_C::OnLocLangChanged(class UObject* Publisher, class UObje
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_1                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_2                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                Temp_struct_Variable_31                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable_35                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class E_Type_Btn              Temp_byte_Variable_11                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                K2Node_Select_Default_6                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
@@ -393,11 +394,8 @@ void UUI_Component_Btn_C::OnLocLangChanged(class UObject* Publisher, class UObje
 // float                              CallFunc_BreakVector2D_X_1                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_Y_1                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default_9                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     K2Node_CustomEvent_Publisher                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     K2Node_CustomEvent_Payload                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class FString>              K2Node_CustomEvent_Metadata                                      (ConstParm, ReferenceParm, HasGetValueTypeHash)
 
-void UUI_Component_Btn_C::ExecuteUbergraph_UI_Component_Btn(int32 EntryPoint, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, const struct FLinearColor& Temp_struct_Variable_2, const struct FLinearColor& Temp_struct_Variable_3, const struct FLinearColor& Temp_struct_Variable_4, const struct FLinearColor& Temp_struct_Variable_5, const struct FLinearColor& Temp_struct_Variable_6, bool Temp_bool_Variable, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class E_Type_Btn Temp_byte_Variable_2, const struct FLinearColor& Temp_struct_Variable_7, const struct FLinearColor& Temp_struct_Variable_8, const struct FLinearColor& Temp_struct_Variable_9, const struct FLinearColor& Temp_struct_Variable_10, const struct FLinearColor& Temp_struct_Variable_11, const struct FLinearColor& Temp_struct_Variable_12, const struct FLinearColor& Temp_struct_Variable_13, const struct FLinearColor& Temp_struct_Variable_14, enum class E_Type_Btn Temp_byte_Variable_3, class UObject* Temp_object_Variable, class UObject* Temp_object_Variable_1, class UObject* Temp_object_Variable_2, class UObject* Temp_object_Variable_3, class UObject* Temp_object_Variable_4, class UObject* Temp_object_Variable_5, class UObject* Temp_object_Variable_6, class UObject* Temp_object_Variable_7, enum class E_Type_Btn Temp_byte_Variable_4, const struct FLinearColor& Temp_struct_Variable_15, const struct FLinearColor& Temp_struct_Variable_16, const struct FLinearColor& Temp_struct_Variable_17, const struct FLinearColor& Temp_struct_Variable_18, const struct FLinearColor& Temp_struct_Variable_19, const struct FLinearColor& Temp_struct_Variable_20, const struct FLinearColor& Temp_struct_Variable_21, const struct FLinearColor& Temp_struct_Variable_22, enum class E_Type_Btn Temp_byte_Variable_5, class UObject* Temp_object_Variable_8, class UObject* Temp_object_Variable_9, class UObject* Temp_object_Variable_10, class UObject* Temp_object_Variable_11, class UObject* Temp_object_Variable_12, class UObject* Temp_object_Variable_13, class UObject* Temp_object_Variable_14, class UObject* Temp_object_Variable_15, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility Temp_byte_Variable_7, enum class E_Type_Btn Temp_byte_Variable_8, const struct FLinearColor& Temp_struct_Variable_23, const struct FLinearColor& Temp_struct_Variable_24, const struct FLinearColor& Temp_struct_Variable_25, const struct FLinearColor& Temp_struct_Variable_26, const struct FLinearColor& Temp_struct_Variable_27, const struct FLinearColor& Temp_struct_Variable_28, const struct FLinearColor& Temp_struct_Variable_29, const struct FLinearColor& Temp_struct_Variable_30, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable_9, enum class ESlateVisibility Temp_byte_Variable_10, class USolarGlobalEventSystem* CallFunc_GetGameInstanceSubsystem_ReturnValue, bool K2Node_Event_IsDesignTime, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool K2Node_CustomEvent_IsDesignTime, const class FString& K2Node_CustomEvent_____, enum class E_State_Btn K2Node_CustomEvent______1, const class FString& CallFunc_GetLocalText_ReturnValue, const class FString& K2Node_Select_Default, class FText CallFunc_Conv_StringToText_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_1, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, const struct FLinearColor& K2Node_Select_Default_2, class UObject* K2Node_Select_Default_3, const struct FLinearColor& K2Node_Select_Default_4, class UObject* K2Node_Select_Default_5, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, const struct FLinearColor& Temp_struct_Variable_31, enum class E_Type_Btn Temp_byte_Variable_11, const struct FLinearColor& K2Node_Select_Default_6, const struct FSlateColor& K2Node_MakeStruct_SlateColor, enum class ESlateVisibility K2Node_Select_Default_7, const struct FLinearColor& K2Node_Select_Default_8, float CallFunc_BreakVector2D_X_1, float CallFunc_BreakVector2D_Y_1, enum class ESlateVisibility K2Node_Select_Default_9, class UObject* K2Node_CustomEvent_Publisher, class UObject* K2Node_CustomEvent_Payload, TArray<class FString>& K2Node_CustomEvent_Metadata)
+void UUI_Component_Btn_C::ExecuteUbergraph_UI_Component_Btn(int32 EntryPoint, const class FString& K2Node_Event_InLang, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, const struct FLinearColor& Temp_struct_Variable_2, const struct FLinearColor& Temp_struct_Variable_3, const struct FLinearColor& Temp_struct_Variable_4, const struct FLinearColor& Temp_struct_Variable_5, const struct FLinearColor& Temp_struct_Variable_6, const struct FLinearColor& Temp_struct_Variable_7, bool Temp_bool_Variable, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class E_Type_Btn Temp_byte_Variable_2, const struct FLinearColor& Temp_struct_Variable_8, const struct FLinearColor& Temp_struct_Variable_9, const struct FLinearColor& Temp_struct_Variable_10, const struct FLinearColor& Temp_struct_Variable_11, const struct FLinearColor& Temp_struct_Variable_12, const struct FLinearColor& Temp_struct_Variable_13, const struct FLinearColor& Temp_struct_Variable_14, const struct FLinearColor& Temp_struct_Variable_15, const struct FLinearColor& Temp_struct_Variable_16, enum class E_Type_Btn Temp_byte_Variable_3, class UObject* Temp_object_Variable, class UObject* Temp_object_Variable_1, class UObject* Temp_object_Variable_2, class UObject* Temp_object_Variable_3, class UObject* Temp_object_Variable_4, class UObject* Temp_object_Variable_5, class UObject* Temp_object_Variable_6, class UObject* Temp_object_Variable_7, class UObject* Temp_object_Variable_8, enum class E_Type_Btn Temp_byte_Variable_4, const struct FLinearColor& Temp_struct_Variable_17, const struct FLinearColor& Temp_struct_Variable_18, const struct FLinearColor& Temp_struct_Variable_19, const struct FLinearColor& Temp_struct_Variable_20, const struct FLinearColor& Temp_struct_Variable_21, const struct FLinearColor& Temp_struct_Variable_22, const struct FLinearColor& Temp_struct_Variable_23, const struct FLinearColor& Temp_struct_Variable_24, const struct FLinearColor& Temp_struct_Variable_25, enum class E_Type_Btn Temp_byte_Variable_5, class UObject* Temp_object_Variable_9, class UObject* Temp_object_Variable_10, class UObject* Temp_object_Variable_11, class UObject* Temp_object_Variable_12, class UObject* Temp_object_Variable_13, class UObject* Temp_object_Variable_14, class UObject* Temp_object_Variable_15, class UObject* Temp_object_Variable_16, class UObject* Temp_object_Variable_17, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility Temp_byte_Variable_7, enum class E_Type_Btn Temp_byte_Variable_8, const struct FLinearColor& Temp_struct_Variable_26, const struct FLinearColor& Temp_struct_Variable_27, const struct FLinearColor& Temp_struct_Variable_28, const struct FLinearColor& Temp_struct_Variable_29, const struct FLinearColor& Temp_struct_Variable_30, const struct FLinearColor& Temp_struct_Variable_31, const struct FLinearColor& Temp_struct_Variable_32, const struct FLinearColor& Temp_struct_Variable_33, const struct FLinearColor& Temp_struct_Variable_34, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable_9, enum class ESlateVisibility Temp_byte_Variable_10, bool K2Node_Event_IsDesignTime, bool K2Node_CustomEvent_IsDesignTime, const class FString& K2Node_CustomEvent_____, enum class E_State_Btn K2Node_CustomEvent______1, const class FString& CallFunc_GetLocalText_ReturnValue, const class FString& K2Node_Select_Default, class FText CallFunc_Conv_StringToText_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_1, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, const struct FLinearColor& K2Node_Select_Default_2, class UObject* K2Node_Select_Default_3, const struct FLinearColor& K2Node_Select_Default_4, class UObject* K2Node_Select_Default_5, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, const struct FLinearColor& Temp_struct_Variable_35, enum class E_Type_Btn Temp_byte_Variable_11, const struct FLinearColor& K2Node_Select_Default_6, const struct FSlateColor& K2Node_MakeStruct_SlateColor, enum class ESlateVisibility K2Node_Select_Default_7, const struct FLinearColor& K2Node_Select_Default_8, float CallFunc_BreakVector2D_X_1, float CallFunc_BreakVector2D_Y_1, enum class ESlateVisibility K2Node_Select_Default_9)
 {
 	static class UFunction* Func = nullptr;
 
@@ -407,6 +405,7 @@ void UUI_Component_Btn_C::ExecuteUbergraph_UI_Component_Btn(int32 EntryPoint, co
 	Params::UUI_Component_Btn_C_ExecuteUbergraph_UI_Component_Btn_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+	Parms.K2Node_Event_InLang = K2Node_Event_InLang;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
 	Parms.Temp_struct_Variable_1 = Temp_struct_Variable_1;
 	Parms.Temp_struct_Variable_2 = Temp_struct_Variable_2;
@@ -414,12 +413,12 @@ void UUI_Component_Btn_C::ExecuteUbergraph_UI_Component_Btn(int32 EntryPoint, co
 	Parms.Temp_struct_Variable_4 = Temp_struct_Variable_4;
 	Parms.Temp_struct_Variable_5 = Temp_struct_Variable_5;
 	Parms.Temp_struct_Variable_6 = Temp_struct_Variable_6;
+	Parms.Temp_struct_Variable_7 = Temp_struct_Variable_7;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_bool_Variable_1 = Temp_bool_Variable_1;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
 	Parms.Temp_byte_Variable_2 = Temp_byte_Variable_2;
-	Parms.Temp_struct_Variable_7 = Temp_struct_Variable_7;
 	Parms.Temp_struct_Variable_8 = Temp_struct_Variable_8;
 	Parms.Temp_struct_Variable_9 = Temp_struct_Variable_9;
 	Parms.Temp_struct_Variable_10 = Temp_struct_Variable_10;
@@ -427,6 +426,8 @@ void UUI_Component_Btn_C::ExecuteUbergraph_UI_Component_Btn(int32 EntryPoint, co
 	Parms.Temp_struct_Variable_12 = Temp_struct_Variable_12;
 	Parms.Temp_struct_Variable_13 = Temp_struct_Variable_13;
 	Parms.Temp_struct_Variable_14 = Temp_struct_Variable_14;
+	Parms.Temp_struct_Variable_15 = Temp_struct_Variable_15;
+	Parms.Temp_struct_Variable_16 = Temp_struct_Variable_16;
 	Parms.Temp_byte_Variable_3 = Temp_byte_Variable_3;
 	Parms.Temp_object_Variable = Temp_object_Variable;
 	Parms.Temp_object_Variable_1 = Temp_object_Variable_1;
@@ -436,17 +437,18 @@ void UUI_Component_Btn_C::ExecuteUbergraph_UI_Component_Btn(int32 EntryPoint, co
 	Parms.Temp_object_Variable_5 = Temp_object_Variable_5;
 	Parms.Temp_object_Variable_6 = Temp_object_Variable_6;
 	Parms.Temp_object_Variable_7 = Temp_object_Variable_7;
+	Parms.Temp_object_Variable_8 = Temp_object_Variable_8;
 	Parms.Temp_byte_Variable_4 = Temp_byte_Variable_4;
-	Parms.Temp_struct_Variable_15 = Temp_struct_Variable_15;
-	Parms.Temp_struct_Variable_16 = Temp_struct_Variable_16;
 	Parms.Temp_struct_Variable_17 = Temp_struct_Variable_17;
 	Parms.Temp_struct_Variable_18 = Temp_struct_Variable_18;
 	Parms.Temp_struct_Variable_19 = Temp_struct_Variable_19;
 	Parms.Temp_struct_Variable_20 = Temp_struct_Variable_20;
 	Parms.Temp_struct_Variable_21 = Temp_struct_Variable_21;
 	Parms.Temp_struct_Variable_22 = Temp_struct_Variable_22;
+	Parms.Temp_struct_Variable_23 = Temp_struct_Variable_23;
+	Parms.Temp_struct_Variable_24 = Temp_struct_Variable_24;
+	Parms.Temp_struct_Variable_25 = Temp_struct_Variable_25;
 	Parms.Temp_byte_Variable_5 = Temp_byte_Variable_5;
-	Parms.Temp_object_Variable_8 = Temp_object_Variable_8;
 	Parms.Temp_object_Variable_9 = Temp_object_Variable_9;
 	Parms.Temp_object_Variable_10 = Temp_object_Variable_10;
 	Parms.Temp_object_Variable_11 = Temp_object_Variable_11;
@@ -454,24 +456,25 @@ void UUI_Component_Btn_C::ExecuteUbergraph_UI_Component_Btn(int32 EntryPoint, co
 	Parms.Temp_object_Variable_13 = Temp_object_Variable_13;
 	Parms.Temp_object_Variable_14 = Temp_object_Variable_14;
 	Parms.Temp_object_Variable_15 = Temp_object_Variable_15;
+	Parms.Temp_object_Variable_16 = Temp_object_Variable_16;
+	Parms.Temp_object_Variable_17 = Temp_object_Variable_17;
 	Parms.Temp_bool_Variable_2 = Temp_bool_Variable_2;
 	Parms.Temp_byte_Variable_6 = Temp_byte_Variable_6;
 	Parms.Temp_byte_Variable_7 = Temp_byte_Variable_7;
 	Parms.Temp_byte_Variable_8 = Temp_byte_Variable_8;
-	Parms.Temp_struct_Variable_23 = Temp_struct_Variable_23;
-	Parms.Temp_struct_Variable_24 = Temp_struct_Variable_24;
-	Parms.Temp_struct_Variable_25 = Temp_struct_Variable_25;
 	Parms.Temp_struct_Variable_26 = Temp_struct_Variable_26;
 	Parms.Temp_struct_Variable_27 = Temp_struct_Variable_27;
 	Parms.Temp_struct_Variable_28 = Temp_struct_Variable_28;
 	Parms.Temp_struct_Variable_29 = Temp_struct_Variable_29;
 	Parms.Temp_struct_Variable_30 = Temp_struct_Variable_30;
+	Parms.Temp_struct_Variable_31 = Temp_struct_Variable_31;
+	Parms.Temp_struct_Variable_32 = Temp_struct_Variable_32;
+	Parms.Temp_struct_Variable_33 = Temp_struct_Variable_33;
+	Parms.Temp_struct_Variable_34 = Temp_struct_Variable_34;
 	Parms.Temp_bool_Variable_3 = Temp_bool_Variable_3;
 	Parms.Temp_byte_Variable_9 = Temp_byte_Variable_9;
 	Parms.Temp_byte_Variable_10 = Temp_byte_Variable_10;
-	Parms.CallFunc_GetGameInstanceSubsystem_ReturnValue = CallFunc_GetGameInstanceSubsystem_ReturnValue;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
-	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CustomEvent_IsDesignTime = K2Node_CustomEvent_IsDesignTime;
 	Parms.K2Node_CustomEvent_____ = K2Node_CustomEvent_____;
 	Parms.K2Node_CustomEvent______1 = K2Node_CustomEvent______1;
@@ -488,7 +491,7 @@ void UUI_Component_Btn_C::ExecuteUbergraph_UI_Component_Btn(int32 EntryPoint, co
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 	Parms.CallFunc_PlayAnimation_ReturnValue_1 = CallFunc_PlayAnimation_ReturnValue_1;
 	Parms.CallFunc_PlayAnimation_ReturnValue_2 = CallFunc_PlayAnimation_ReturnValue_2;
-	Parms.Temp_struct_Variable_31 = Temp_struct_Variable_31;
+	Parms.Temp_struct_Variable_35 = Temp_struct_Variable_35;
 	Parms.Temp_byte_Variable_11 = Temp_byte_Variable_11;
 	Parms.K2Node_Select_Default_6 = K2Node_Select_Default_6;
 	Parms.K2Node_MakeStruct_SlateColor = K2Node_MakeStruct_SlateColor;
@@ -497,9 +500,6 @@ void UUI_Component_Btn_C::ExecuteUbergraph_UI_Component_Btn(int32 EntryPoint, co
 	Parms.CallFunc_BreakVector2D_X_1 = CallFunc_BreakVector2D_X_1;
 	Parms.CallFunc_BreakVector2D_Y_1 = CallFunc_BreakVector2D_Y_1;
 	Parms.K2Node_Select_Default_9 = K2Node_Select_Default_9;
-	Parms.K2Node_CustomEvent_Publisher = K2Node_CustomEvent_Publisher;
-	Parms.K2Node_CustomEvent_Payload = K2Node_CustomEvent_Payload;
-	Parms.K2Node_CustomEvent_Metadata = K2Node_CustomEvent_Metadata;
 
 	UObject::ProcessEvent(Func, &Parms);
 

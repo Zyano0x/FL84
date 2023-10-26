@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x5A0 - 0x5A0)
+// 0x0 (0x690 - 0x690)
 // BlueprintGeneratedClass BP_Weapon_EMP_Throw.BP_Weapon_EMP_Throw_C
 class ABP_Weapon_EMP_Throw_C : public ASolarSkill_EMP
 {

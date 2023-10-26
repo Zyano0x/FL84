@@ -258,6 +258,24 @@ void UCrosshair_CarWeapon_IronGun_New_C::OnCrosshairInNormalState()
 }
 
 
+// Function Crosshair_CarWeapon_IronGun_New.Crosshair_CarWeapon_IronGun_New_C.OnShowVehicleWeaponCrossHair
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UCrosshair_CarWeapon_IronGun_New_C::OnShowVehicleWeaponCrossHair()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("Crosshair_CarWeapon_IronGun_New_C", "OnShowVehicleWeaponCrossHair");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function Crosshair_CarWeapon_IronGun_New.Crosshair_CarWeapon_IronGun_New_C.ExecuteUbergraph_Crosshair_CarWeapon_IronGun_New
 // (Final, UbergraphFunction)
 // Parameters:
@@ -267,9 +285,8 @@ void UCrosshair_CarWeapon_IronGun_New_C::OnCrosshairInNormalState()
 // int32                              K2Node_Event_InChargeMode                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Event_InChargeProgress                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              K2Node_Event_InChargeBurstCount                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_GreaterEqual_FloatFloat_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_Greater_IntInt_ReturnValue_1                            (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -281,10 +298,14 @@ void UCrosshair_CarWeapon_IronGun_New_C::OnCrosshairInNormalState()
 // enum class ECrossHairSpecialFireStateK2Node_Event_InState                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Event_PlayRate                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidgetAnimation*            K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Greater_IntInt_ReturnValue_1                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_1                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_2                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_3                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_PlaySound2Dbyname_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      CallFunc_Conv_IntToString_ReturnValue                            (ZeroConstructor, HasGetValueTypeHash)
 
-void UCrosshair_CarWeapon_IronGun_New_C::ExecuteUbergraph_Crosshair_CarWeapon_IronGun_New(int32 EntryPoint, enum class ECrossHairSpecialFireState Temp_byte_Variable, bool K2Node_Event_InbCharging, int32 K2Node_Event_InChargeMode, float K2Node_Event_InChargeProgress, int32 K2Node_Event_InChargeBurstCount, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, float CallFunc_FClamp_ReturnValue, bool K2Node_Event_InbLockEnemy, bool CallFunc_NotEqual_BoolBool_ReturnValue, enum class ECrossHairSpecialFireState K2Node_Event_InState, float K2Node_Event_PlayRate, class UWidgetAnimation* K2Node_Select_Default, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2)
+void UCrosshair_CarWeapon_IronGun_New_C::ExecuteUbergraph_Crosshair_CarWeapon_IronGun_New(int32 EntryPoint, enum class ECrossHairSpecialFireState Temp_byte_Variable, bool K2Node_Event_InbCharging, int32 K2Node_Event_InChargeMode, float K2Node_Event_InChargeProgress, int32 K2Node_Event_InChargeBurstCount, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, float CallFunc_FClamp_ReturnValue, bool K2Node_Event_InbLockEnemy, bool CallFunc_NotEqual_BoolBool_ReturnValue, enum class ECrossHairSpecialFireState K2Node_Event_InState, float K2Node_Event_PlayRate, class UWidgetAnimation* K2Node_Select_Default, bool CallFunc_Greater_IntInt_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, int32 CallFunc_PlaySound2Dbyname_ReturnValue, const class FString& CallFunc_Conv_IntToString_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -299,9 +320,8 @@ void UCrosshair_CarWeapon_IronGun_New_C::ExecuteUbergraph_Crosshair_CarWeapon_Ir
 	Parms.K2Node_Event_InChargeMode = K2Node_Event_InChargeMode;
 	Parms.K2Node_Event_InChargeProgress = K2Node_Event_InChargeProgress;
 	Parms.K2Node_Event_InChargeBurstCount = K2Node_Event_InChargeBurstCount;
-	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
 	Parms.CallFunc_GreaterEqual_FloatFloat_ReturnValue = CallFunc_GreaterEqual_FloatFloat_ReturnValue;
-	Parms.CallFunc_Greater_IntInt_ReturnValue_1 = CallFunc_Greater_IntInt_ReturnValue_1;
+	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
 	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
 	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
@@ -313,8 +333,12 @@ void UCrosshair_CarWeapon_IronGun_New_C::ExecuteUbergraph_Crosshair_CarWeapon_Ir
 	Parms.K2Node_Event_InState = K2Node_Event_InState;
 	Parms.K2Node_Event_PlayRate = K2Node_Event_PlayRate;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
+	Parms.CallFunc_Greater_IntInt_ReturnValue_1 = CallFunc_Greater_IntInt_ReturnValue_1;
 	Parms.CallFunc_PlayAnimation_ReturnValue_1 = CallFunc_PlayAnimation_ReturnValue_1;
 	Parms.CallFunc_PlayAnimation_ReturnValue_2 = CallFunc_PlayAnimation_ReturnValue_2;
+	Parms.CallFunc_PlayAnimation_ReturnValue_3 = CallFunc_PlayAnimation_ReturnValue_3;
+	Parms.CallFunc_PlaySound2Dbyname_ReturnValue = CallFunc_PlaySound2Dbyname_ReturnValue;
+	Parms.CallFunc_Conv_IntToString_ReturnValue = CallFunc_Conv_IntToString_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

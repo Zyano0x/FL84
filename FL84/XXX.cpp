@@ -144,7 +144,7 @@ void XXX::Unknown()
 					if (Enemy->CachedCurrentWeapon)
 					{
 						Weapon = Enemy->CachedCurrentWeapon->ItemData.Name.ToString();
-						AmmoClip = std::to_string(Enemy->CachedCurrentWeapon->CurrentClipAmmo);
+						AmmoClip = std::to_string(Enemy->CachedCurrentWeapon->ClipRemainAmmoCount);
 					}
 
 					Draw::DrawString(Weapon.append(" | ").append(AmmoClip), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
@@ -162,7 +162,7 @@ void XXX::Unknown()
 					if (Enemy->CachedCurrentWeapon)
 					{
 						Weapon = Enemy->CachedCurrentWeapon->ItemData.Name.ToString();
-						AmmoClip = std::to_string(Enemy->CachedCurrentWeapon->CurrentClipAmmo);
+						AmmoClip = std::to_string(Enemy->CachedCurrentWeapon->ClipRemainAmmoCount);
 					}
 
 					Draw::DrawString(Weapon.append(" | ").append(AmmoClip), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
@@ -499,7 +499,7 @@ void XXX::NoRecoil()
 	if (!SanityCheck())
 		return;
 
-	/*if (_profiler.gTest.Custom.bValue)
+	/*if (_profiler.gBulletPenetration.Custom.bValue)
 	{
 		if (!PlayerController->Character)
 			return;
@@ -510,7 +510,7 @@ void XXX::NoRecoil()
 
 		uint64_t* VTable = *(uint64_t**)(CachedCurrentWeapon + 0x0);
 
-		printf("0x%llX\n", VTable[235]);
+		printf("0x%llX\n", VTable[286]);
 	}*/
 
 	if (_profiler.gFastReload.Custom.bValue)
@@ -542,7 +542,7 @@ void XXX::NoRecoil()
 		if (!CachedCurrentWeapon)
 			return;
 
-		SDK::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
+		SDK::USingleWeaponConfig* Config = CachedCurrentWeapon->K2_GetCurrentConfig();
 		if (!Config)
 			return;
 
@@ -560,8 +560,8 @@ void XXX::NoRecoil()
 		PrimaryAmmo->ADSRecoilCOP = 0.0f;
 		PrimaryAmmo->ADSSpreadCOP = 0.0f;
 		PrimaryAmmo->BoltActionTime = 0.0f;
-		PrimaryAmmo->FireIntervalRevertPreTime = 0.75f;
-		PrimaryAmmo->FireIntervalReavertSpeed = 0.75f;
+		PrimaryAmmo->FireIntervalRevertPreTime = 0.85f;
+		PrimaryAmmo->FireIntervalReavertSpeed = 0.85f;
 
 		SDK::FAmmonRecoilScope FAmmonRecoilScopePrimary = PrimaryAmmo->ScopeRecoil;
 		FAmmonRecoilScopePrimary.EnableScopeVibration = false;
@@ -575,15 +575,15 @@ void XXX::NoRecoil()
 		SecondaryAmmo->ADSRecoilCOP = 0.0f;
 		SecondaryAmmo->ADSSpreadCOP = 0.0f;
 		SecondaryAmmo->BoltActionTime = 0.0f;
-		SecondaryAmmo->FireIntervalRevertPreTime = 0.75f;
-		SecondaryAmmo->FireIntervalReavertSpeed = 0.75f;
+		SecondaryAmmo->FireIntervalRevertPreTime = 0.85f;
+		SecondaryAmmo->FireIntervalReavertSpeed = 0.85f;
 
 		SDK::FAmmonRecoilScope FAmmonRecoilScopeSecondary = SecondaryAmmo->ScopeRecoil;
 		FAmmonRecoilScopeSecondary.EnableScopeVibration = false;
 		FAmmonRecoilScopeSecondary.EnableCrossHairVibration = false;
 		FAmmonRecoilScopeSecondary.EnableScopeRoll = false;
 
-		SDK::UWeaponShootConfig* WeaponShootConfig = Config->WeaponShootConfig;
+		SDK::UWeaponShootConfig* WeaponShootConfig = static_cast<SDK::UWeaponHandheldConfig*>(Config)->WeaponShootConfig;
 		if (!WeaponShootConfig)
 			return;
 
@@ -593,7 +593,7 @@ void XXX::NoRecoil()
 		WeaponShootConfig->bEnableNewCameraShake = false;
 		WeaponShootConfig->BaseSpread = 0.0f;
 
-		SDK::UWeaponRecoilComponent* RecoilComponent = CachedCurrentWeapon->GetRecoilComponent();
+		SDK::UWeaponRecoilComponent* RecoilComponent = CachedCurrentWeapon->RecoilComponent;
 		if (!RecoilComponent)
 			return;
 
@@ -645,7 +645,7 @@ void XXX::Vehicle()
 		if (!VehicleWeapon)
 			return;
 
-		SDK::USingleWeaponConfig* Config = VehicleWeapon->Config;
+		SDK::USingleWeaponConfig* Config = VehicleWeapon->K2_GetCurrentConfig();
 		if (!Config)
 			return;
 
@@ -656,7 +656,7 @@ void XXX::Vehicle()
 		Config->ADSBaseSpread = 0.0f;
 		Config->VhADSBaseSpread = 0.0f;
 
-		SDK::UWeaponRecoilComponent* RecoilComponent = VehicleWeapon->GetRecoilComponent();
+		SDK::UWeaponRecoilComponent* RecoilComponent = VehicleWeapon->RecoilComponent;
 		if (!RecoilComponent)
 			return;
 
@@ -710,7 +710,7 @@ void XXX::Aimbot()
 			if (Enemy->InSameTeamWithFirstPlayerController())
 				continue;
 
-			if (!PlayerController->LineOfSightTo(Enemy, { 0.f,0.f,0.f }, false))
+			if (_profiler.gVisibleCheck.Custom.bValue && !PlayerController->LineOfSightTo(Enemy, { 0.f,0.f,0.f }, false))
 				continue;
 
 			if (!Enemy->K2_IsAlive())
@@ -794,6 +794,11 @@ void XXX::Aimbot()
 			Draw::DrawLine(ScreenWidth / 2, ScreenHeight / 2, TargetLine.X, TargetLine.Y, 1.f, ImVec4(1.f, 0.141f, 0.f, 1.5f));
 	}
 
+	if (_profiler.gBulletPenetration.Custom.bValue)
+	{
+
+	}
+
 	if (_profiler.gAimType.Custom.iValue == 0)
 	{
 		Aimbot::SetRotation(CameraManager, PlayerController, Aimbot::TargetRotation, false);
@@ -812,6 +817,8 @@ void XXX::Misc()
 	SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
 	if (!LocalCharacter)
 		return;
+
+	LocalCharacter->CustomTimeDilation = 2.0f;
 
 	if (_profiler.gSuicide.Custom.bValue)
 	{
@@ -881,6 +888,8 @@ void XXX::Misc()
 			Spectator->ServerStopSpectateOtherPlayer();
 			Spectator->ServerStopSpectateOtherPlayer_Internal();
 
+			Spectator->ServerChangeLikeValue(10, 2, SDK::ESocialActionType::Like);
+
 			PlayerState->OnOtherPlayerStopSpectateMe(Spectators[i], Spectator);
 		}
 	}
@@ -891,7 +900,7 @@ void XXX::Radar()
 	if (!_profiler.gRadar.Custom.bValue)
 		return;
 
-	ImGui::SetNextWindowSize(ImVec2(200.0f, 200.0f), ImGuiCond_Appearing);
+	ImGui::SetNextWindowSize(ImVec2(170.0f, 170.0f), ImGuiCond_Appearing);
 	ImGui::PushStyleColor(ImGuiCol_WindowBg, ImVec4(0.0f, 0.0f, 0.0f, 0.45f));
 	ImGui::Begin("Radar", &_profiler.gRadar.Custom.bValue, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoTitleBar);   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked)
 	{

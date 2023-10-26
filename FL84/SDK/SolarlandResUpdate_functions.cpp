@@ -91,33 +91,6 @@ void UDownloadFileTask::SetSaveToFile(bool InSet)
 }
 
 
-// Function SolarlandResUpdate.DownloadFileTask.SetNeedDecode
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                               InNeedDecode                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UDownloadFileTask::SetNeedDecode(bool InNeedDecode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("DownloadFileTask", "SetNeedDecode");
-
-	Params::UDownloadFileTask_SetNeedDecode_Params Parms{};
-
-	Parms.InNeedDecode = InNeedDecode;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-
-	Func->FunctionFlags = Flgs;
-
-}
-
-
 // Function SolarlandResUpdate.DownloadFileTask.SetForceRedownload
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:

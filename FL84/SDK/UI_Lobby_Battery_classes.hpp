@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x278 (0x4D8 - 0x260)
+// 0x3A0 (0x600 - 0x260)
 // WidgetBlueprintGeneratedClass UI_Lobby_Battery.UI_Lobby_Battery_C
 class UUI_Lobby_Battery_C : public UUserWidget
 {
@@ -17,10 +17,11 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x260(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UImage*                                Img_Charging;                                      // 0x268(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UProgressBar*                          ProgressBar_Battery;                               // 0x270(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateBrush                           ProgressBarBgImage;                                // 0x278(0x98)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateBrush                           ProgressBarMarqueeImage;                           // 0x310(0x98)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateBrush                           ProgressBarFillNormal;                             // 0x3A8(0x98)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateBrush                           ProgressBarFillCharging;                           // 0x440(0x98)(Edit, BlueprintVisible, DisableEditOnInstance)
+	uint8                                        Pad_171E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FSlateBrush                           ProgressBarBgImage;                                // 0x280(0xE0)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                           ProgressBarMarqueeImage;                           // 0x360(0xE0)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                           ProgressBarFillNormal;                             // 0x440(0xE0)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateBrush                           ProgressBarFillCharging;                           // 0x520(0xE0)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 	static class UClass* StaticClass();
 	static class UUI_Lobby_Battery_C* GetDefaultObj();

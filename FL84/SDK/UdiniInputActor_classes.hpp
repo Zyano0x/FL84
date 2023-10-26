@@ -14,7 +14,7 @@ namespace SDK
 class AUdiniInputActorBase : public AActor
 {
 public:
-	uint8                                        Pad_1036[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_A6D[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AUdiniInputActorBase* GetDefaultObj();
@@ -31,6 +31,17 @@ public:
 
 	static class UClass* StaticClass();
 	static class AAInputStaticmeshActorRuntime* GetDefaultObj();
+
+};
+
+// 0x0 (0x28 - 0x28)
+// Class UdiniInputActor.CurveModel_Base
+class UCurveModel_Base : public UObject
+{
+public:
+
+	static class UClass* StaticClass();
+	static class UCurveModel_Base* GetDefaultObj();
 
 };
 
@@ -67,6 +78,43 @@ public:
 
 };
 
+// 0xE8 (0x110 - 0x28)
+// Class UdiniInputActor.UdiniDataPart
+class UUdiniDataPart : public UObject
+{
+public:
+	enum class EUdiniDataPartType                PartType;                                          // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_A6F[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<struct FVector>                       VertexPosition;                                    // 0x30(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FVector>                       VertexNormal;                                      // 0x40(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FLinearColor>                  VertexColors;                                      // 0x50(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FLinearColor>                  VertexColorsCatche;                                // 0x60(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FVector2D>                     VertexUV;                                          // 0x70(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<int32>                                PointEnableDraw;                                   // 0x80(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<float>                                PointDrawSize;                                     // 0x90(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<float>                                PrimDrawLineThinkness;                             // 0xA0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<class FString, class UUdiniAttribute*>  UdiniAttributesMap;                                // 0xB0(0x50)(NativeAccessSpecifierPublic)
+	uint8                                        Pad_A70[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
+
+	static class UClass* StaticClass();
+	static class UUdiniDataPart* GetDefaultObj();
+
+};
+
+// 0x20 (0x130 - 0x110)
+// Class UdiniInputActor.UdiniAreaDataPart
+class UUdiniAreaDataPart : public UUdiniDataPart
+{
+public:
+	class UMaterialInstanceDynamic*              ViewTextureInstanceDynamic;                        // 0x110(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture2D*                            ViewTexture;                                       // 0x118(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FHeightFieldData>              HeightFieldData;                                   // 0x120(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+	static class UClass* StaticClass();
+	static class UUdiniAreaDataPart* GetDefaultObj();
+
+};
+
 // 0xE0 (0x108 - 0x28)
 // Class UdiniInputActor.UdiniAttribute
 class UUdiniAttribute : public UObject
@@ -77,7 +125,7 @@ public:
 	enum class EUdiniAttributeType               AttributeType;                                     // 0x48(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EUdiniAttributeClass              AttributeOwner;                                    // 0x49(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsHide;                                           // 0x4A(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_103B[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A72[0x1];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        AttributeCount;                                    // 0x4C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        AttributeTupleSize;                                // 0x50(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        MaxValue;                                          // 0x54(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -92,7 +140,7 @@ public:
 	bool                                         ShowAttributeValueAsDir;                           // 0x6C(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ShowAttributeValueAsText;                          // 0x6D(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         EnableShowBackGroundValue;                         // 0x6E(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1040[0x99];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_A73[0x99];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UUdiniAttribute* GetDefaultObj();
@@ -106,7 +154,7 @@ class UUdiniAttaibutFloat : public UUdiniAttribute
 public:
 	TArray<float>                                Value;                                             // 0x108(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        DefaultValue;                                      // 0x118(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1041[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_A74[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UUdiniAttaibutFloat* GetDefaultObj();
@@ -121,7 +169,7 @@ public:
 	TArray<struct FVector>                       Value;                                             // 0x108(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                               DefaultValue;                                      // 0x118(0xC)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bShowOnlyDir;                                      // 0x124(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1043[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_A75[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UUdiniAttaibutVector3* GetDefaultObj();
@@ -147,7 +195,7 @@ class UUdiniAttaibutVector4 : public UUdiniAttribute
 {
 public:
 	TArray<struct FVector4>                      Value;                                             // 0x108(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1044[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A77[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector4                              DefaultValue;                                      // 0x120(0x10)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass();
@@ -162,7 +210,7 @@ class UUdiniAttaibutIntBase : public UUdiniAttribute
 public:
 	TArray<int32>                                Value;                                             // 0x108(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        DefaultValue;                                      // 0x118(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1046[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_A78[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UUdiniAttaibutIntBase* GetDefaultObj();
@@ -215,13 +263,17 @@ public:
 
 };
 
-// 0x20 (0x148 - 0x128)
+// 0x38 (0x160 - 0x128)
 // Class UdiniInputActor.UdiniAttaibutStringChoiseList
 class UUdiniAttaibutStringChoiseList : public UUdiniAttaibutString
 {
 public:
 	TArray<class FString>                        ChoseListStringLable;                              // 0x128(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                        ChoseListStringValue;                              // 0x138(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FLinearColor>                  ChoseListStringColors;                             // 0x148(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bIsHeightFieldAtt;                                 // 0x158(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bIsBitMask;                                        // 0x159(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_A79[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UUdiniAttaibutStringChoiseList* GetDefaultObj();
@@ -263,26 +315,15 @@ public:
 
 };
 
-// 0xE8 (0x110 - 0x28)
-// Class UdiniInputActor.UdiniDataPart
-class UUdiniDataPart : public UObject
+// 0x8 (0x360 - 0x358)
+// Class UdiniInputActor.UdiniDecalComponent
+class UUdiniDecalComponent : public UDecalComponent
 {
 public:
-	enum class EUdiniDataPartType                PartType;                                          // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1048[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<struct FVector>                       VertexPosition;                                    // 0x30(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FLinearColor>                  VertexColors;                                      // 0x40(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FLinearColor>                  VertexColorsCatche;                                // 0x50(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FVector>                       VertexNormal;                                      // 0x60(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FVector2D>                     VertexUV;                                          // 0x70(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<int32>                                PointEnableDraw;                                   // 0x80(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<float>                                PointDrawSize;                                     // 0x90(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<float>                                PrimDrawLineThinkness;                             // 0xA0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<class FString, class UUdiniAttribute*>  UdiniAttributesMap;                                // 0xB0(0x50)(NativeAccessSpecifierPublic)
-	uint8                                        Pad_104E[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_A7A[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
-	static class UUdiniDataPart* GetDefaultObj();
+	static class UUdiniDecalComponent* GetDefaultObj();
 
 };
 
@@ -302,7 +343,7 @@ public:
 class AUdiniInputVolumActor : public AActor
 {
 public:
-	uint8                                        Pad_1052[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_A7B[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AUdiniInputVolumActor* GetDefaultObj();
@@ -387,10 +428,10 @@ public:
 	TArray<int32>                                bIsPrimHide;                                       // 0x150(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<int32>                                bIsPointHide;                                      // 0x160(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<float>                                PrimDrawSize;                                      // 0x170(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1057[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A7C[0x10];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         GeneraProcaduralMesh;                              // 0x190(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsMask;                                           // 0x191(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1058[0x16];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_A7D[0x16];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UUdiniMeshDataPart* GetDefaultObj();
@@ -430,12 +471,23 @@ public:
 
 };
 
-// 0x20 (0x650 - 0x630)
-// Class UdiniInputActor.UdiniSplineComponent
-class UUdiniSplineComponent : public USplineComponent
+// 0x0 (0x630 - 0x630)
+// Class UdiniInputActor.UdiniSplineComponent_Base
+class UUdiniSplineComponent_Base : public USplineComponent
 {
 public:
-	uint8                                        Pad_106C[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+
+	static class UClass* StaticClass();
+	static class UUdiniSplineComponent_Base* GetDefaultObj();
+
+};
+
+// 0x20 (0x650 - 0x630)
+// Class UdiniInputActor.UdiniSplineComponent
+class UUdiniSplineComponent : public UUdiniSplineComponent_Base
+{
+public:
+	uint8                                        Pad_A7E[0x20];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UUdiniSplineComponent* GetDefaultObj();

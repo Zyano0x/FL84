@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x398 - 0x398)
+// 0x0 (0x450 - 0x450)
 // WidgetBlueprintGeneratedClass UI_Emoji_Container.UI_Emoji_Container_C
 class UUI_Emoji_Container_C : public UUIEmojiContainer
 {

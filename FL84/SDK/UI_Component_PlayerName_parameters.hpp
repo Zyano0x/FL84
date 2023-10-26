@@ -73,8 +73,8 @@ public:
 	bool                                         bCheater;                                          // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class E_Type_PlayerName_Vip_Color       VIP_State;                                         // 0x1(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bKilled;                                           // 0x2(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_206D[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FS_VIP_TxtInfo                        CallFunc_Map_Find_Value;                           // 0x8(0x88)(None)
+	uint8                                        Pad_299C[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FS_VIP_TxtInfo                        CallFunc_Map_Find_Value;                           // 0x8(0x88)(HasGetValueTypeHash)
 	bool                                         CallFunc_Map_Find_ReturnValue;                     // 0x90(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
@@ -155,16 +155,16 @@ public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_bCheat;                               // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         K2Node_Event_IsDesignTime;                         // 0x5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2073[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_29B4[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateFontInfo                        K2Node_MakeStruct_SlateFontInfo;                   // 0x8(0x60)(HasGetValueTypeHash)
 	class FString                                K2Node_Event_NickName;                             // 0x68(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	uint8                                        K2Node_Event_VipType_2;                            // 0x78(0x1)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_bCheat_2;                             // 0x79(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         K2Node_Event_bKilled_1;                            // 0x7A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2074[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_29B5[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                K2Node_Event_Content;                              // 0x80(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	uint8                                        CallFunc_GetValidValue_ReturnValue;                // 0x90(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2075[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_29B6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateColor                           K2Node_Event_InColor;                              // 0x98(0x28)(None)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0xC0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                        K2Node_Event_VipType_1;                            // 0xC1(0x1)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

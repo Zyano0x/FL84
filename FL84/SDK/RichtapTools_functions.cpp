@@ -67,6 +67,33 @@ void URichtapController::SetRichtapEnable(bool On)
 }
 
 
+// Function RichtapTools.RichtapController.SetEnableWinRichtap
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// bool                               bIsEnableWinRichtap                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void URichtapController::SetEnableWinRichtap(bool bIsEnableWinRichtap)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("RichtapController", "SetEnableWinRichtap");
+
+	Params::URichtapController_SetEnableWinRichtap_Params Parms{};
+
+	Parms.bIsEnableWinRichtap = bIsEnableWinRichtap;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
 // Function RichtapTools.RichtapController.SetEnableRichtap
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:

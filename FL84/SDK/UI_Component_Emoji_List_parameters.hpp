@@ -13,6 +13,14 @@ namespace Params
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
 
+// 0x4 (0x4 - 0x0)
+// DelegateFunction UI_Component_Emoji_List.UI_Component_Emoji_List_C.OnStateChangedEvent_E42AC8CA48CF8CF4ED7F4F9EFF19338F
+struct UUI_Component_Emoji_List_C_OnStateChangedEvent_E42AC8CA48CF8CF4ED7F4F9EFF19338F_Params
+{
+public:
+	int32                                        InLastButtonIndex;                                 // 0x0(0x4)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // 0x10 (0x10 - 0x0)
 // Function UI_Component_Emoji_List.UI_Component_Emoji_List_C.GetModuleName
 struct UUI_Component_Emoji_List_C_GetModuleName_Params

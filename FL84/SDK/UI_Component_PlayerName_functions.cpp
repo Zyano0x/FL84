@@ -180,7 +180,7 @@ void UUI_Component_PlayerName_C::SetDefaultStyle(bool bSpecialSelf)
 // bool                               bCheater                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class E_Type_PlayerName_Vip_ColorVIP_State                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               bKilled                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FS_VIP_TxtInfo              CallFunc_Map_Find_Value                                          (None)
+// struct FS_VIP_TxtInfo              CallFunc_Map_Find_Value                                          (HasGetValueTypeHash)
 // bool                               CallFunc_Map_Find_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UUI_Component_PlayerName_C::SetNameStyle(bool bCheater, enum class E_Type_PlayerName_Vip_Color VIP_State, bool bKilled, const struct FS_VIP_TxtInfo& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue)

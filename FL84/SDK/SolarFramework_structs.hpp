@@ -33,7 +33,7 @@ struct FSolarConfigEntry
 public:
 	TSoftClassPtr<class USolarContainer>         ContainerPath;                                     // 0x0(0x28)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EScope                            Scope;                                             // 0x28(0x1)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1254[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_12BB[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

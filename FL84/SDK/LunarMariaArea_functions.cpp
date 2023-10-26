@@ -12,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class LunarMariaArea.LM_AreaTileData
+// (None)
+
+class UClass* ULM_AreaTileData::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LM_AreaTileData");
+
+	return Clss;
+}
+
+
+// LM_AreaTileData LunarMariaArea.Default__LM_AreaTileData
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ULM_AreaTileData* ULM_AreaTileData::GetDefaultObj()
+{
+	static class ULM_AreaTileData* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULM_AreaTileData*>(ULM_AreaTileData::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Class LunarMariaArea.LM_AreaData_Base
 // (None)
 

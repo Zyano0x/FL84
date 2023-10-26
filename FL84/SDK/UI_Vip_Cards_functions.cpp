@@ -40,6 +40,42 @@ class UUI_Vip_Cards_C* UUI_Vip_Cards_C::GetDefaultObj()
 }
 
 
+// DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_A6E31EF34EF877385F839D8E38BCB7A6
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Vip_Cards_C::OnClicked_A6E31EF34EF877385F839D8E38BCB7A6()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Vip_Cards_C", "OnClicked_A6E31EF34EF877385F839D8E38BCB7A6");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_0B09B94F47F3EF87E3F98BB04A02F0CD
+// (MulticastDelegate, Public, Delegate)
+// Parameters:
+
+void UUI_Vip_Cards_C::OnClicked_0B09B94F47F3EF87E3F98BB04A02F0CD()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Vip_Cards_C", "OnClicked_0B09B94F47F3EF87E3F98BB04A02F0CD");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function UI_Vip_Cards.UI_Vip_Cards_C.GetModuleName
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:

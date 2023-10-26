@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x400 - 0x400)
+// 0x0 (0x4B8 - 0x4B8)
 // WidgetBlueprintGeneratedClass HUD_StripBulletContainer.HUD_StripBulletContainer_C
 class UHUD_StripBulletContainer_C : public UStripBulletContainer
 {

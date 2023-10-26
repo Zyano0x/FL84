@@ -23,24 +23,6 @@ enum class ECommonInputType : uint8
 // STRUCTS
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x38 (0x38 - 0x0)
-// ScriptStruct CommonInput.CommonInputPlatformBaseData
-struct FCommonInputPlatformBaseData
-{
-public:
-	uint8                                        Pad_A55[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
-	bool                                         bSupported;                                        // 0x8(0x1)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	enum class ECommonInputType                  DefaultInputType;                                  // 0x9(0x1)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                         bSupportsMouseAndKeyboard;                         // 0xA(0x1)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                         bSupportsGamepad;                                  // 0xB(0x1)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                  DefaultGamepadName;                                // 0xC(0x8)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                         bCanChangeGamepadType;                             // 0x14(0x1)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                         bSupportsTouch;                                    // 0x15(0x1)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_A57[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<TSoftClassPtr<class UCommonInputBaseControllerData>> ControllerData;                                    // 0x18(0x10)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<TSubclassOf<class UCommonInputBaseControllerData>> ControllerDataClasses;                             // 0x28(0x10)(ZeroConstructor, Transient, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-};
-
 // 0x18 (0x18 - 0x0)
 // ScriptStruct CommonInput.InputDeviceIdentifierPair
 struct FInputDeviceIdentifierPair
@@ -50,22 +32,51 @@ public:
 	class FString                                HardwareDeviceIdentifier;                          // 0x8(0x10)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0xA8 (0xA8 - 0x0)
+// 0x18 (0x18 - 0x0)
+// ScriptStruct CommonInput.CommonInputControllerSimpleData
+struct FCommonInputControllerSimpleData
+{
+public:
+	class FName                                  GamepadName;                                       // 0x0(0x8)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FInputDeviceIdentifierPair>    GamepadHardwareIdMapping;                          // 0x8(0x10)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x48 (0x48 - 0x0)
+// ScriptStruct CommonInput.CommonInputPlatformBaseData
+struct FCommonInputPlatformBaseData
+{
+public:
+	uint8                                        Pad_B1F[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	bool                                         bSupported;                                        // 0x8(0x1)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	enum class ECommonInputType                  DefaultInputType;                                  // 0x9(0x1)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                         bSupportsMouseAndKeyboard;                         // 0xA(0x1)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                         bSupportsGamepad;                                  // 0xB(0x1)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                  DefaultGamepadName;                                // 0xC(0x8)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                         bCanChangeGamepadType;                             // 0x14(0x1)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                         bSupportsTouch;                                    // 0x15(0x1)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                        Pad_B20[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<TSoftClassPtr<class UCommonInputBaseControllerData>> ControllerData;                                    // 0x18(0x10)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<TSubclassOf<class UCommonInputBaseControllerData>> ControllerDataClasses;                             // 0x28(0x10)(ZeroConstructor, Transient, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<struct FCommonInputControllerSimpleData> ControllerSimpleData;                              // 0x38(0x10)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+};
+
+// 0xF0 (0xF0 - 0x0)
 // ScriptStruct CommonInput.CommonInputKeySetBrushConfiguration
 struct FCommonInputKeySetBrushConfiguration
 {
 public:
 	TArray<struct FKey>                          Keys;                                              // 0x0(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateBrush                           KeyBrush;                                          // 0x10(0x98)(Edit, NativeAccessSpecifierPublic)
+	struct FSlateBrush                           KeyBrush;                                          // 0x10(0xE0)(Edit, NativeAccessSpecifierPublic)
 };
 
-// 0xB0 (0xB0 - 0x0)
+// 0x100 (0x100 - 0x0)
 // ScriptStruct CommonInput.CommonInputKeyBrushConfiguration
 struct FCommonInputKeyBrushConfiguration
 {
 public:
 	struct FKey                                  Key;                                               // 0x0(0x18)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSlateBrush                           KeyBrush;                                          // 0x18(0x98)(Edit, NativeAccessSpecifierPublic)
+	uint8                                        Pad_B22[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FSlateBrush                           KeyBrush;                                          // 0x20(0xE0)(Edit, NativeAccessSpecifierPublic)
 };
 
 }

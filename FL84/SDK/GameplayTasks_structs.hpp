@@ -46,7 +46,7 @@ enum class EGameplayTaskState : uint8
 struct FGameplayResourceSet
 {
 public:
-	uint8                                        Pad_1E1[0x2];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_183[0x2];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

@@ -152,7 +152,7 @@ enum class ESceneSnapQueryType : uint8
 struct FBrushStampData
 {
 public:
-	uint8                                        Pad_1F06[0xA8];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1825[0xA8];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -161,7 +161,7 @@ struct FBehaviorInfo
 {
 public:
 	class UInputBehavior*                        Behavior;                                          // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1F07[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1826[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -169,7 +169,7 @@ public:
 struct FInputRayHit
 {
 public:
-	uint8                                        Pad_1F08[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1827[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x30 - 0x0)
@@ -177,7 +177,7 @@ public:
 struct FActiveGizmo
 {
 public:
-	uint8                                        Pad_1F09[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1828[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)

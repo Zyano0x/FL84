@@ -120,7 +120,7 @@ void ABP_Env_LitData_C::Toggle_Env_Lighting(bool bUseDefaultLight, class ASphere
 // Function BP_Env_LitData.BP_Env_LitData_C.SetEdgeLightSetting
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStr_EdgeLightSetting       EdgeLightSetting                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// struct FStr_EdgeLightSetting       EdgeLightSetting                                                 (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetDisplayName_ReturnValue                              (ZeroConstructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue                               (ZeroConstructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue_1                             (ZeroConstructor, HasGetValueTypeHash)
@@ -203,7 +203,7 @@ void ABP_Env_LitData_C::Add_or_Set_Light_Data_Element(class FString& Key, const 
 // class FString                      Key                                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash)
 // int32                              CallFunc_Len_ReturnValue                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_NotEqual_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FStr_LightData              CallFunc_Map_Find_Value                                          (NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
+// struct FStr_LightData              CallFunc_Map_Find_Value                                          (IsPlainOldData, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
 // bool                               CallFunc_Map_Find_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ABP_Env_LitData_C::LoadSceneLightData(class FString& Key, int32 CallFunc_Len_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, const struct FStr_LightData& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue)
@@ -229,13 +229,13 @@ void ABP_Env_LitData_C::LoadSceneLightData(class FString& Key, int32 CallFunc_Le
 // Function BP_Env_LitData.BP_Env_LitData_C.MakeLightData
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStr_SkyLightSetting        K2Node_MakeStruct_Str_SkyLightSetting                            (NoDestructor, HasGetValueTypeHash)
-// struct FStr_EdgeLightSetting       K2Node_MakeStruct_Str_EdgeLightSetting                           (NoDestructor, HasGetValueTypeHash)
+// struct FStr_SkyLightSetting        K2Node_MakeStruct_Str_SkyLightSetting                            (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStr_EdgeLightSetting       K2Node_MakeStruct_Str_EdgeLightSetting                           (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FRotator                    CallFunc_K2_GetActorRotation_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UDirectionalLightComponent*  K2Node_DynamicCast_AsDirectional_Light_Component                 (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FStr_DirectionalLightSettingK2Node_MakeStruct_Str_DirectionalLightSetting                    (NoDestructor)
-// struct FStr_LightData              K2Node_MakeStruct_Str_LightData                                  (NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
+// struct FStr_DirectionalLightSettingK2Node_MakeStruct_Str_DirectionalLightSetting                    (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStr_LightData              K2Node_MakeStruct_Str_LightData                                  (IsPlainOldData, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
 
 void ABP_Env_LitData_C::MakeLightData(const struct FStr_SkyLightSetting& K2Node_MakeStruct_Str_SkyLightSetting, const struct FStr_EdgeLightSetting& K2Node_MakeStruct_Str_EdgeLightSetting, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, class UDirectionalLightComponent* K2Node_DynamicCast_AsDirectional_Light_Component, bool K2Node_DynamicCast_bSuccess, const struct FStr_DirectionalLightSetting& K2Node_MakeStruct_Str_DirectionalLightSetting, const struct FStr_LightData& K2Node_MakeStruct_Str_LightData)
 {
@@ -304,7 +304,7 @@ void ABP_Env_LitData_C::LoadLightData(bool CallFunc_IsValid_ReturnValue, bool Ca
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ADirectionalLight*           DirectionalLight                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FStr_DirectionalLightSettingStr_DirectionalLightSetting                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// struct FStr_DirectionalLightSettingStr_DirectionalLightSetting                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UDirectionalLightComponent*  K2Node_DynamicCast_AsDirectional_Light_Component                 (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FLinearColor                CallFunc_Conv_ColorToLinearColor_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -337,7 +337,7 @@ void ABP_Env_LitData_C::SetDirectionalLightSetting(class ADirectionalLight* Dire
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ASkyLight*                   SkyLight                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FStr_SkyLightSetting        Str_SkyLightSetting                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// struct FStr_SkyLightSetting        Str_SkyLightSetting                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FLinearColor                CallFunc_Conv_ColorToLinearColor_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -382,7 +382,7 @@ void ABP_Env_LitData_C::ReceiveBeginPlay()
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FStr_LightData              CallFunc_Map_Find_Value                                          (NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
+// struct FStr_LightData              CallFunc_Map_Find_Value                                          (IsPlainOldData, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
 // bool                               CallFunc_Map_Find_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Len_ReturnValue                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_NotEqual_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)

@@ -15,7 +15,7 @@ class UAnimNotifyState_SolarLobbyAkEvent_C : public UAnimNotifyState
 {
 public:
 	bool                                         Follow;                                            // 0x30(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2821[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2BE4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Attach_Name;                                       // 0x38(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class UAkAudioEvent*                         Begin_Event;                                       // 0x48(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                Begin_Event_Name;                                  // 0x50(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)

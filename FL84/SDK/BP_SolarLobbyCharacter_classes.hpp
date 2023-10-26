@@ -20,6 +20,10 @@ public:
 	static class UClass* StaticClass();
 	static class ABP_SolarLobbyCharacter_C* GetDefaultObj();
 
+	bool IsCanOpenMirror();
+	void ClearCharacterByLua();
+	void InitCharacterByLua();
+	bool IsCanOpenChangeAnim();
 	class FString GetModuleName();
 	void ReceiveBeginPlay();
 	void ExecuteUbergraph_BP_SolarLobbyCharacter(int32 EntryPoint);

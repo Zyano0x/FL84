@@ -13,6 +13,14 @@ namespace Params
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
 
+// 0x1 (0x1 - 0x0)
+// Function Lobby_Script.Lobby_Script_C.ReceiveEndPlay
+struct ALobby_Script_C_ReceiveEndPlay_Params
+{
+public:
+	enum class EEndPlayReason                    EndPlayReason;                                     // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // 0x10 (0x10 - 0x0)
 // Function Lobby_Script.Lobby_Script_C.GetModuleName
 struct ALobby_Script_C_GetModuleName_Params

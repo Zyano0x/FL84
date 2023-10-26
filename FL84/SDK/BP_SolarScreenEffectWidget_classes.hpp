@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x350 - 0x350)
+// 0x0 (0x408 - 0x408)
 // WidgetBlueprintGeneratedClass BP_SolarScreenEffectWidget.BP_SolarScreenEffectWidget_C
 class UBP_SolarScreenEffectWidget_C : public USolarScreenEffectWidget
 {

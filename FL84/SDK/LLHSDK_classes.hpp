@@ -19,11 +19,13 @@ public:
 	static class UClass* StaticClass();
 	static class ULLHSDKAppUtils* GetDefaultObj();
 
+	bool ShowSteamVirtualKeyboard();
 	bool SDKConfigIsMultiDetect();
 	bool SDKConfigIsDebug();
 	void OnSteamUserStatesUpdate__DelegateSignature(const class FString& SteamId, bool IsFriend, bool Online, const class FString& FriendName);
 	bool IsSteamFriendOnline(const class FString& SteamId);
 	bool IsSimulator();
+	bool IsPlatformSteamDeck();
 	bool IsPackageInstalled(const class FString& InPackageName);
 	bool IsGrayRelease();
 	bool InviteSteamUserToGame(const class FString& SteamId);
@@ -48,6 +50,8 @@ public:
 	class FString GetAppName();
 	class FString GetAppIDRaw();
 	class FString GetAppID();
+	bool DoesDistributeForDomestic();
+	void DismissSteamVirtualKeyboard();
 	void DestoryInstance();
 	void BindOnlineSubsystemSteamPresence();
 };
@@ -86,7 +90,7 @@ class ULLHSDKCustomerService : public UObject
 {
 public:
 	FMulticastInlineDelegateProperty_            OnReceiveNotification;                             // 0x28(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_842[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_905[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULLHSDKCustomerService* GetDefaultObj();
@@ -157,7 +161,7 @@ public:
 	void DestoryInstance();
 };
 
-// 0x1A0 (0x1C8 - 0x28)
+// 0x1D0 (0x1F8 - 0x28)
 // Class LLHSDK.LLHSDKLogin
 class ULLHSDKLogin : public UObject
 {
@@ -178,16 +182,19 @@ public:
 	FMulticastInlineDelegateProperty_            OnSteamLoginResultSet;                             // 0xF8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnSteamGetAccountInfo;                             // 0x108(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnSteamBindFinish;                                 // 0x118(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	FMulticastInlineDelegateProperty_            OnLimPCSDKInited;                                  // 0x128(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	FMulticastInlineDelegateProperty_            OnLimPCSDKEventCallback;                           // 0x138(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	FMulticastInlineDelegateProperty_            OnLimPCSDKLogin;                                   // 0x148(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	FMulticastInlineDelegateProperty_            OnLimPCSDKLogout;                                  // 0x158(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	FMulticastInlineDelegateProperty_            OnLimPCSDKOpenAccountPage;                         // 0x168(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	FMulticastInlineDelegateProperty_            OnLimPCSDKOpenSwitchAccountPage;                   // 0x178(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	FMulticastInlineDelegateProperty_            OnLimPCSDKLanguageChange;                          // 0x188(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	FMulticastInlineDelegateProperty_            OnLimPCSDKGetUserInfo;                             // 0x198(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	FMulticastInlineDelegateProperty_            OnLimPCSDKCommonReportPoint;                       // 0x1A8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	class FString                                LimPCAlilogFields;                                 // 0x1B8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_            OnNSSDKInited;                                     // 0x128(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_            OnNSLoginStart;                                    // 0x138(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_            OnNSAccountInfoGet;                                // 0x148(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_            OnLimPCSDKInited;                                  // 0x158(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_            OnLimPCSDKEventCallback;                           // 0x168(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_            OnLimPCSDKLogin;                                   // 0x178(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_            OnLimPCSDKLogout;                                  // 0x188(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_            OnLimPCSDKOpenAccountPage;                         // 0x198(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_            OnLimPCSDKOpenSwitchAccountPage;                   // 0x1A8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_            OnLimPCSDKLanguageChange;                          // 0x1B8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_            OnLimPCSDKGetUserInfo;                             // 0x1C8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_            OnLimPCSDKCommonReportPoint;                       // 0x1D8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	class FString                                LimPCAlilogFields;                                 // 0x1E8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass();
 	static class ULLHSDKLogin* GetDefaultObj();
@@ -215,6 +222,10 @@ public:
 	void OnLoginFailed__DelegateSignature(enum class ELLHSDKLoginType LoginType, int32 ErrorCode);
 	void OnInitFinish__DelegateSignature();
 	void OnBindFinish__DelegateSignature(bool bSuccess, const class FString& AppUid, const class FString& AppToken, enum class ELLHSDKLoginType LoginType);
+	void NSLogout();
+	bool NSLoginStart(const class FString& Params);
+	void NSFinalize();
+	bool NSAccountInfoGet(const class FString& Params);
 	int32 LogoutLimPCSDK();
 	void Logout();
 	class FString LoginUserInfo_ToString(struct FLLHSDKLoginUserInfo& InUserInfo);
@@ -226,6 +237,7 @@ public:
 	void LimOnSteamLoginResultSet__DelegateSignature(const class FString& AppUid, const class FString& AppToken, const class FString& AppId);
 	bool IsInitFinish();
 	bool IsCurrentUserNewReg();
+	bool InitNSSDK(const class FString& Params);
 	bool InitLimSteamSDK(const class FString& Params);
 	int32 InitLimPCSDK(const class FString& Params);
 	class FString GetSteamToken();
@@ -252,17 +264,17 @@ class ULLHSDKMisc : public UObject
 public:
 	FMulticastInlineDelegateProperty_            OnBrowserClosed;                                   // 0x28(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
 	FMulticastInlineDelegateProperty_            OnScreenshotCaptured;                              // 0x38(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_876[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_98B[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnFacebookPhotoShared;                             // 0x50(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_877[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_98C[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnSystemShared;                                    // 0x68(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_878[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_98D[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnGetFacebookToken;                                // 0x80(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_879[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_98E[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnQueryThirdPartyUserInfo;                         // 0x98(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_87A[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_990[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnRefreshFirebaseToken;                            // 0xB0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_87B[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_991[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnHttpDiagnosisCallBack;                           // 0xC8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnPingDiagnosisCallBack;                           // 0xD8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnTcpPingDiagnosisCallBack;                        // 0xE8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -328,7 +340,7 @@ public:
 	bool CheckGyroSensorSupport();
 };
 
-// 0xE8 (0x110 - 0x28)
+// 0x138 (0x160 - 0x28)
 // Class LLHSDK.LLHSDKPay
 class ULLHSDKPay : public UObject
 {
@@ -338,20 +350,35 @@ public:
 	FMulticastInlineDelegateProperty_            OnLimPCQueryPriceLadder;                           // 0x48(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnLimPCQueryPriceLadderWithRegion;                 // 0x58(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnLimPCPayApplied;                                 // 0x68(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	FMulticastInlineDelegateProperty_            OnGooglePayFinished;                               // 0x78(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	FMulticastInlineDelegateProperty_            OnGoogleQuerySkuItemDetails;                       // 0x88(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	FMulticastInlineDelegateProperty_            OnGoogleQuerySkuItemDetailsSubscription;           // 0x98(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	FMulticastInlineDelegateProperty_            OnGetGoogleConsumeGoods;                           // 0xA8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	FMulticastInlineDelegateProperty_            OnGetGoogleConsumePointsGoods;                     // 0xB8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	FMulticastInlineDelegateProperty_            OnIOSQuerySkus;                                    // 0xC8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	FMulticastInlineDelegateProperty_            OnIOSLLHPayFinished;                               // 0xD8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	FMulticastInlineDelegateProperty_            OnGetIOSPurchaseExtNull;                           // 0xE8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_91D[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	FMulticastInlineDelegateProperty_            OnSwitchSDKPayGetConsumables;                      // 0x78(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_            OnSwitchSDKPayGetConsumableItems;                  // 0x88(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_            OnSwitchSDKPayEShopOpen;                           // 0x98(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_            OnSwitchSDKPayOrdersCheck;                         // 0xA8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_            OnSwitchSDKPayOrdersConsume;                       // 0xB8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	FMulticastInlineDelegateProperty_            OnGooglePayFinished;                               // 0xC8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
+	FMulticastInlineDelegateProperty_            OnGoogleQuerySkuItemDetails;                       // 0xD8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
+	FMulticastInlineDelegateProperty_            OnGoogleQuerySkuItemDetailsSubscription;           // 0xE8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
+	FMulticastInlineDelegateProperty_            OnGetGoogleConsumeGoods;                           // 0xF8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
+	FMulticastInlineDelegateProperty_            OnGetGoogleConsumePointsGoods;                     // 0x108(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
+	FMulticastInlineDelegateProperty_            OnIOSQuerySkus;                                    // 0x118(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
+	FMulticastInlineDelegateProperty_            OnIOSLLHPayFinished;                               // 0x128(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
+	FMulticastInlineDelegateProperty_            OnGetIOSPurchaseExtNull;                           // 0x138(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
+	uint8                                        Pad_9FF[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULLHSDKPay* GetDefaultObj();
 
 	class FString Test_Google_SkuItemDetailsToString(const struct FLLHSDKGenericSkuItemsDetailList& InDetails);
+	void SwitchSDKPayOrdersConsume__DelegateSignature(const class FString& Datas);
+	void SwitchSDKPayOrdersCheck__DelegateSignature(const class FString& Datas);
+	void SwitchSDKPayGetConsumables__DelegateSignature(const class FString& Datas);
+	void SwitchSDKPayGetConsumableItems__DelegateSignature(const class FString& Datas);
+	void SwitchSDKPayEShopOpen__DelegateSignature(const class FString& Datas);
+	void Switch_OrdersConsume(const class FString& Params);
+	void Switch_OrdersCheck(const class FString& Params);
+	void Switch_GetConsumables(const class FString& Params);
+	void Switch_GetConsumableItems(const class FString& Params);
+	void Switch_EShopOpen(const class FString& Params);
 	void SteamQuerySkus(const class FString& Params);
 	void Steam_StartPay(const class FString& SteamPayInfo);
 	void SetPayNotifyUrl(const class FString& InNotifyUrl);
@@ -414,66 +441,79 @@ public:
 	void DestoryInstance();
 };
 
-// 0x268 (0x2A0 - 0x38)
+// 0x300 (0x338 - 0x38)
 // Class LLHSDK.LLHSDKSettings
 class ULLHSDKSettings : public UDeveloperSettings
 {
 public:
-	bool                                         bHasFacebook;                                      // 0x38(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bHasTiktok;                                        // 0x39(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bHasFirebaseMessaging;                             // 0x3A(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bIsSDKDebuggable;                                  // 0x3B(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bIsGrayRelease;                                    // 0x3C(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_93B[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
-	class FString                                FacebookContentProviderForGrayRelease;             // 0x40(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                FacebookAppIDForGrayRelease;                       // 0x50(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                SDKAppIdForGrayRelease;                            // 0x60(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                SDKGameIdForGrayRelease;                           // 0x70(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                PspAppIdForGrayRelease;                            // 0x80(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                AndroidDebugParkwayEnvIdForGrayRelease;            // 0x90(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                AndroidReleaseParkwayEnvIdForGrayRelease;          // 0xA0(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                FacebookContentProvider;                           // 0xB0(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                FacebookAppID;                                     // 0xC0(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                IOSFacebookContentProvider;                        // 0xD0(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                IOSFacebookAppID;                                  // 0xE0(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                SDKAppId;                                          // 0xF0(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                SDKGameId;                                         // 0x100(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                PspAppId;                                          // 0x110(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                AndroidDebugParkwayEnvId;                          // 0x120(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                AndroidReleaseParkwayEnvId;                        // 0x130(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                IOSDebugParkwayEnvId;                              // 0x140(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                IOSReleaseParkwayEnvId;                            // 0x150(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                SteamDebugParkwayEnvId;                            // 0x160(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                SteamReleaseParkwayEnvId;                          // 0x170(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                OffcialWinDebugParkwayEnvId;                       // 0x180(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                OffcialWinReleaseParkwayEnvId;                     // 0x190(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                EpicDebugParkwayEnvId;                             // 0x1A0(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                EpicReleaseParkwayEnvId;                           // 0x1B0(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                SDKGroupName;                                      // 0x1C0(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                SDKFeatureName;                                    // 0x1D0(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                SDKVersion;                                        // 0x1E0(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bAndroidXEnabled;                                  // 0x1F0(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bMultiDexEnabled;                                  // 0x1F1(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bShouldUseOverridedConfig;                         // 0x1F2(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_93D[0x5];                                      // Fixing Size After Last Property  [ Dumper-7 ]
-	class FString                                FirebaseCoreVersion;                               // 0x1F8(0x10)(Edit, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                FirebaseMessagingVersion;                          // 0x208(0x10)(Edit, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                GoogleServicesVersion;                             // 0x218(0x10)(Edit, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                PlayServicesBasementVersion;                       // 0x228(0x10)(Edit, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	enum class ELLHSDKGravity                    PlayPhoneGravity;                                  // 0x238(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bEnableAndroidScreenshotListener;                  // 0x239(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bEnableAndroidMultipleDetect;                      // 0x23A(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bShowLogo;                                         // 0x23B(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	enum class ELLHSDKLoginUIStyle               LoginUIStyle;                                      // 0x23C(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bIOSShouldUseOverridedConfig;                      // 0x23D(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bIOSShowTermsByServer;                             // 0x23E(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_93E[0x1];                                      // Fixing Size After Last Property  [ Dumper-7 ]
-	class FString                                FacebookDisplayName;                               // 0x240(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                QQAppID;                                           // 0x250(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                WechatAppID;                                       // 0x260(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                GoogleReversedClientID;                            // 0x270(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                TwitterAPIKey;                                     // 0x280(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                DefaultNSUserTrackingUsageDescription;             // 0x290(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	enum class EDistributionRegion               DistributionRegion;                                // 0x38(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	enum class EReleaseType                      ReleaseType;                                       // 0x39(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bIsSDKDebuggable;                                  // 0x3A(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bIsGrayRelease;                                    // 0x3B(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_A31[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	class FString                                SDKGroupName;                                      // 0x40(0x10)(Edit, ZeroConstructor, Config, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                SDKFeatureName;                                    // 0x50(0x10)(Edit, ZeroConstructor, Config, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                SDKVersion;                                        // 0x60(0x10)(Edit, ZeroConstructor, Config, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bHasFacebook;                                      // 0x70(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bHasTiktok;                                        // 0x71(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bHasFirebaseMessaging;                             // 0x72(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bHasJiGuangPush;                                   // 0x73(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_A32[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	class FString                                SDKAppIdForGrayRelease;                            // 0x78(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                SDKGameIdForGrayRelease;                           // 0x88(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                PspAppIdForGrayRelease;                            // 0x98(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                AndroidDebugParkwayEnvIdForGrayRelease;            // 0xA8(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                AndroidReleaseParkwayEnvIdForGrayRelease;          // 0xB8(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                FacebookAppIDForGrayRelease;                       // 0xC8(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                FacebookContentProviderForGrayRelease;             // 0xD8(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                SDKAppId;                                          // 0xE8(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                SDKGameId;                                         // 0xF8(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                FacebookContentProvider;                           // 0x108(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                FacebookAppID;                                     // 0x118(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                IOSFacebookContentProvider;                        // 0x128(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                IOSFacebookAppID;                                  // 0x138(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                PspAppId;                                          // 0x148(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                AndroidDebugParkwayEnvId;                          // 0x158(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                AndroidReleaseParkwayEnvId;                        // 0x168(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                IOSDebugParkwayEnvId;                              // 0x178(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                IOSReleaseParkwayEnvId;                            // 0x188(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                SteamDebugParkwayEnvId;                            // 0x198(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                SteamReleaseParkwayEnvId;                          // 0x1A8(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                OffcialWinDebugParkwayEnvId;                       // 0x1B8(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                OffcialWinReleaseParkwayEnvId;                     // 0x1C8(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                EpicDebugParkwayEnvId;                             // 0x1D8(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                EpicReleaseParkwayEnvId;                           // 0x1E8(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                SDKAppIdForDomesticRelease;                        // 0x1F8(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                SDKGameIdForDomesticRelease;                       // 0x208(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                AndroidDebugParkwayEnvIdForDomesticRelease;        // 0x218(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                AndroidReleaseParkwayEnvIdForDomesticRelease;      // 0x228(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                IOSDebugParkwayEnvIdForDomesticRelease;            // 0x238(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                IOSReleaseParkwayEnvIdForDomesticRelease;          // 0x248(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                PspAppIdForDomesticRelease;                        // 0x258(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                OffcialWinDebugParkwayEnvIdForDomesticRelease;     // 0x268(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                OffcialWinReleaseParkwayEnvIdForDomesticRelease;   // 0x278(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bAndroidXEnabled;                                  // 0x288(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bMultiDexEnabled;                                  // 0x289(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bShouldUseOverridedConfig;                         // 0x28A(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_A38[0x5];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	class FString                                FirebaseCoreVersion;                               // 0x290(0x10)(Edit, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                FirebaseMessagingVersion;                          // 0x2A0(0x10)(Edit, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                GoogleServicesVersion;                             // 0x2B0(0x10)(Edit, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                PlayServicesBasementVersion;                       // 0x2C0(0x10)(Edit, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	enum class ELLHSDKGravity                    PlayPhoneGravity;                                  // 0x2D0(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bEnableAndroidScreenshotListener;                  // 0x2D1(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bEnableAndroidMultipleDetect;                      // 0x2D2(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bShowLogo;                                         // 0x2D3(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	enum class ELLHSDKLoginUIStyle               LoginUIStyle;                                      // 0x2D4(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bIOSShouldUseOverridedConfig;                      // 0x2D5(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bIOSShowTermsByServer;                             // 0x2D6(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_A39[0x1];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	class FString                                FacebookDisplayName;                               // 0x2D8(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                QQAppID;                                           // 0x2E8(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                WechatAppID;                                       // 0x2F8(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                GoogleReversedClientID;                            // 0x308(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                TwitterAPIKey;                                     // 0x318(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                DefaultNSUserTrackingUsageDescription;             // 0x328(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass();
 	static class ULLHSDKSettings* GetDefaultObj();

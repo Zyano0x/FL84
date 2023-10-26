@@ -260,6 +260,7 @@ void UUI_Component_Switch_C::BndEvt__TouchArea_K2Node_ComponentBoundEvent_0_OnBu
 // (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_PlaySound2D_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FLinearColor                Temp_struct_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_1                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -270,7 +271,7 @@ void UUI_Component_Switch_C::BndEvt__TouchArea_K2Node_ComponentBoundEvent_0_OnBu
 // float                              CallFunc_BreakVector2D_X                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_Y                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUI_Component_Switch_C::ExecuteUbergraph_UI_Component_Switch(int32 EntryPoint, bool Temp_bool_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, bool K2Node_Event_IsDesignTime, class UCanvasPanelSlot* CallFunc_SlotAsCanvasSlot_ReturnValue, const struct FLinearColor& K2Node_Select_Default, bool CallFunc_Not_PreBool_ReturnValue, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y)
+void UUI_Component_Switch_C::ExecuteUbergraph_UI_Component_Switch(int32 EntryPoint, int32 CallFunc_PlaySound2D_ReturnValue, bool Temp_bool_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, bool K2Node_Event_IsDesignTime, class UCanvasPanelSlot* CallFunc_SlotAsCanvasSlot_ReturnValue, const struct FLinearColor& K2Node_Select_Default, bool CallFunc_Not_PreBool_ReturnValue, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y)
 {
 	static class UFunction* Func = nullptr;
 
@@ -280,6 +281,7 @@ void UUI_Component_Switch_C::ExecuteUbergraph_UI_Component_Switch(int32 EntryPoi
 	Params::UUI_Component_Switch_C_ExecuteUbergraph_UI_Component_Switch_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+	Parms.CallFunc_PlaySound2D_ReturnValue = CallFunc_PlaySound2D_ReturnValue;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
 	Parms.Temp_struct_Variable_1 = Temp_struct_Variable_1;

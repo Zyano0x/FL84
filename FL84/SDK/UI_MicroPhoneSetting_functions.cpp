@@ -40,6 +40,140 @@ class UUI_MicroPhoneSetting_C* UUI_MicroPhoneSetting_C::GetDefaultObj()
 }
 
 
+// DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnMouseButtonDownEvent_2539DA814082D5444E213E80042DC8D7
+// (Public, Delegate, HasOutParams)
+// Parameters:
+// struct FGeometry                   MyGeometry                                                       (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// struct FPointerEvent               MouseEvent                                                       (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+struct FEventReply UUI_MicroPhoneSetting_C::OnMouseButtonDownEvent_2539DA814082D5444E213E80042DC8D7(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_MicroPhoneSetting_C", "OnMouseButtonDownEvent_2539DA814082D5444E213E80042DC8D7");
+
+	Params::UUI_MicroPhoneSetting_C_OnMouseButtonDownEvent_2539DA814082D5444E213E80042DC8D7_Params Parms{};
+
+	Parms.MyGeometry = MyGeometry;
+	Parms.MouseEvent = MouseEvent;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+
+}
+
+
+// DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnMouseButtonDownEvent_247B3C7F4172ABC0389C82B80906982E
+// (Public, Delegate, HasOutParams)
+// Parameters:
+// struct FGeometry                   MyGeometry                                                       (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// struct FPointerEvent               MouseEvent                                                       (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+struct FEventReply UUI_MicroPhoneSetting_C::OnMouseButtonDownEvent_247B3C7F4172ABC0389C82B80906982E(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_MicroPhoneSetting_C", "OnMouseButtonDownEvent_247B3C7F4172ABC0389C82B80906982E");
+
+	Params::UUI_MicroPhoneSetting_C_OnMouseButtonDownEvent_247B3C7F4172ABC0389C82B80906982E_Params Parms{};
+
+	Parms.MyGeometry = MyGeometry;
+	Parms.MouseEvent = MouseEvent;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+
+}
+
+
+// DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnStateChangedEvent_1316A32342D4FAAF261EEF8C727FE6EF
+// (MulticastDelegate, Public, Delegate, HasOutParams)
+// Parameters:
+// TArray<class UCheckBox*>           ChildChangedArray                                                (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                              CheckedChildIndex                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUI_MicroPhoneSetting_C::OnStateChangedEvent_1316A32342D4FAAF261EEF8C727FE6EF(TArray<class UCheckBox*>& ChildChangedArray, int32 CheckedChildIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_MicroPhoneSetting_C", "OnStateChangedEvent_1316A32342D4FAAF261EEF8C727FE6EF");
+
+	Params::UUI_MicroPhoneSetting_C_OnStateChangedEvent_1316A32342D4FAAF261EEF8C727FE6EF_Params Parms{};
+
+	Parms.ChildChangedArray = ChildChangedArray;
+	Parms.CheckedChildIndex = CheckedChildIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnStateChangedEvent_527BCE914E3788461A805F9590E86F14
+// (MulticastDelegate, Public, Delegate, HasOutParams)
+// Parameters:
+// TArray<class UCheckBox*>           ChildChangedArray                                                (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                              CheckedChildIndex                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UUI_MicroPhoneSetting_C::OnStateChangedEvent_527BCE914E3788461A805F9590E86F14(TArray<class UCheckBox*>& ChildChangedArray, int32 CheckedChildIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_MicroPhoneSetting_C", "OnStateChangedEvent_527BCE914E3788461A805F9590E86F14");
+
+	Params::UUI_MicroPhoneSetting_C_OnStateChangedEvent_527BCE914E3788461A805F9590E86F14_Params Parms{};
+
+	Parms.ChildChangedArray = ChildChangedArray;
+	Parms.CheckedChildIndex = CheckedChildIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_MicroPhoneSetting_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_MicroPhoneSetting_C", "Construct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_MicroPhoneSetting_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_MicroPhoneSetting_C", "Destruct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.GetModuleName
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:

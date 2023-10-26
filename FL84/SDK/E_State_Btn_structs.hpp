@@ -11,11 +11,12 @@ namespace SDK
 
 enum class E_State_Btn : uint8
 {
-	Normal                         = 0,
-	Hovered                        = 1,
-	Pressed                        = 2,
-	Disabled                       = 3,
-	E_State_MAX                    = 4,
+	NewEnumerator0                 = 0,
+	NewEnumerator1                 = 1,
+	NewEnumerator2                 = 2,
+	NewEnumerator3                 = 3,
+	NewEnumerator4                 = 4,
+	E_State_MAX                    = 5,
 };
 
 

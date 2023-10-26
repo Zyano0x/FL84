@@ -68,6 +68,34 @@ class AAInputStaticmeshActorRuntime* AAInputStaticmeshActorRuntime::GetDefaultOb
 }
 
 
+// Class UdiniInputActor.CurveModel_Base
+// (None)
+
+class UClass* UCurveModel_Base::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CurveModel_Base");
+
+	return Clss;
+}
+
+
+// CurveModel_Base UdiniInputActor.Default__CurveModel_Base
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UCurveModel_Base* UCurveModel_Base::GetDefaultObj()
+{
+	static class UCurveModel_Base* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCurveModel_Base*>(UCurveModel_Base::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Class UdiniInputActor.EditorMeshComponet
 // (SceneComponent, PrimitiveComponent)
 
@@ -147,6 +175,62 @@ class IIUdiniInputCoreInterface* IIUdiniInputCoreInterface::GetDefaultObj()
 
 	if (!Default)
 		Default = static_cast<IIUdiniInputCoreInterface*>(IIUdiniInputCoreInterface::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UdiniInputActor.UdiniDataPart
+// (None)
+
+class UClass* UUdiniDataPart::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UdiniDataPart");
+
+	return Clss;
+}
+
+
+// UdiniDataPart UdiniInputActor.Default__UdiniDataPart
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UUdiniDataPart* UUdiniDataPart::GetDefaultObj()
+{
+	static class UUdiniDataPart* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UUdiniDataPart*>(UUdiniDataPart::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UdiniInputActor.UdiniAreaDataPart
+// (None)
+
+class UClass* UUdiniAreaDataPart::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UdiniAreaDataPart");
+
+	return Clss;
+}
+
+
+// UdiniAreaDataPart UdiniInputActor.Default__UdiniAreaDataPart
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UUdiniAreaDataPart* UUdiniAreaDataPart::GetDefaultObj()
+{
+	static class UUdiniAreaDataPart* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UUdiniAreaDataPart*>(UUdiniAreaDataPart::StaticClass()->DefaultObject);
 
 	return Default;
 }
@@ -544,29 +628,29 @@ class AUdiniCollisionInputVolum* AUdiniCollisionInputVolum::GetDefaultObj()
 }
 
 
-// Class UdiniInputActor.UdiniDataPart
-// (None)
+// Class UdiniInputActor.UdiniDecalComponent
+// (SceneComponent)
 
-class UClass* UUdiniDataPart::StaticClass()
+class UClass* UUdiniDecalComponent::StaticClass()
 {
 	static class UClass* Clss = nullptr;
 
 	if (!Clss)
-		Clss = UObject::FindClassFast("UdiniDataPart");
+		Clss = UObject::FindClassFast("UdiniDecalComponent");
 
 	return Clss;
 }
 
 
-// UdiniDataPart UdiniInputActor.Default__UdiniDataPart
+// UdiniDecalComponent UdiniInputActor.Default__UdiniDecalComponent
 // (Public, ClassDefaultObject, ArchetypeObject)
 
-class UUdiniDataPart* UUdiniDataPart::GetDefaultObj()
+class UUdiniDecalComponent* UUdiniDecalComponent::GetDefaultObj()
 {
-	static class UUdiniDataPart* Default = nullptr;
+	static class UUdiniDecalComponent* Default = nullptr;
 
 	if (!Default)
-		Default = static_cast<UUdiniDataPart*>(UUdiniDataPart::StaticClass()->DefaultObject);
+		Default = static_cast<UUdiniDecalComponent*>(UUdiniDecalComponent::StaticClass()->DefaultObject);
 
 	return Default;
 }
@@ -903,6 +987,34 @@ class UUdiniSopAsset* UUdiniSopAsset::GetDefaultObj()
 
 	if (!Default)
 		Default = static_cast<UUdiniSopAsset*>(UUdiniSopAsset::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UdiniInputActor.UdiniSplineComponent_Base
+// (SceneComponent, PrimitiveComponent)
+
+class UClass* UUdiniSplineComponent_Base::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UdiniSplineComponent_Base");
+
+	return Clss;
+}
+
+
+// UdiniSplineComponent_Base UdiniInputActor.Default__UdiniSplineComponent_Base
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UUdiniSplineComponent_Base* UUdiniSplineComponent_Base::GetDefaultObj()
+{
+	static class UUdiniSplineComponent_Base* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UUdiniSplineComponent_Base*>(UUdiniSplineComponent_Base::StaticClass()->DefaultObject);
 
 	return Default;
 }

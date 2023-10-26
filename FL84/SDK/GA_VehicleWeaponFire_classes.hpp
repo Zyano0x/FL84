@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x508 - 0x508)
 // BlueprintGeneratedClass GA_VehicleWeaponFire.GA_VehicleWeaponFire_C
 class UGA_VehicleWeaponFire_C : public USolarVehicleGA_WeaponFire
 {

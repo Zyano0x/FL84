@@ -40,6 +40,67 @@ class UUI_Target_Card_Medal_Item_C* UUI_Target_Card_Medal_Item_C::GetDefaultObj(
 }
 
 
+// Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Target_Card_Medal_Item_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Target_Card_Medal_Item_C", "Destruct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Target_Card_Medal_Item_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Target_Card_Medal_Item_C", "OnInitialized");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.BPCalLuaInitDataCopy
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                              ID                                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Type                                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Level                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUI_Target_Card_Medal_Item_C::BPCalLuaInitDataCopy(int32 ID, int32 Type, int32 Level)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Target_Card_Medal_Item_C", "BPCalLuaInitDataCopy");
+
+	Params::UUI_Target_Card_Medal_Item_C_BPCalLuaInitDataCopy_Params Parms{};
+
+	Parms.ID = ID;
+	Parms.Type = Type;
+	Parms.Level = Level;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.GetModuleName
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
