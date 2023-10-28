@@ -645,7 +645,7 @@ namespace ZyanoCheats
 						Menu.bWriteLog = true;
 					} ImGui::SameLine(ImGui::GetCursorPosX() + 200.0f);
 
-					if (ImGui::Checkbox(_profiler.gBulletPenetration.szLabel, &_profiler.gBulletPenetration.Custom.bValue))
+					if (ImGui::Checkbox(_profiler.gTest.szLabel, &_profiler.gTest.Custom.bValue))
 					{
 						Menu.bWriteLog = true;
 					} ImGui::Spacing();
@@ -810,11 +810,11 @@ namespace ZyanoCheats
 			SwapChain->GetDesc(&sd);
 
 			hWindow = sd.OutputWindow;
-			ID3D11Texture2D* buffer;
-			SwapChain->GetBuffer(0, __uuidof(ID3D11Texture2D), (LPVOID*)&buffer);
-			pDevice->CreateRenderTargetView(buffer, NULL, &pRenderTarget);
+			ID3D11Texture2D* Buffer;
+			SwapChain->GetBuffer(0, __uuidof(ID3D11Texture2D), (LPVOID*)&Buffer);
+			pDevice->CreateRenderTargetView(Buffer, NULL, &pRenderTarget);
 
-			buffer->Release();
+			Buffer->Release();
 
 			InitGUI();
 
@@ -853,5 +853,36 @@ namespace ZyanoCheats
 		ImGui::Render();
 		pDeviceContext->OMSetRenderTargets(1, &pRenderTarget, NULL);
 		ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
+	}
+
+	HRESULT WINAPI MainGUI::ResizeBuffers(_In_ IDXGISwapChain* SwapChain, _In_ UINT BufferCount, _In_ UINT Width, _In_ UINT Height, _In_ DXGI_FORMAT NewFormat, _In_ UINT SwapChainFlags)
+	{
+		if (pRenderTarget)
+		{
+			pDeviceContext->OMSetRenderTargets(0, 0, 0);
+			pRenderTarget->Release();
+		}
+
+		HRESULT hr = spoof_call(oResizeBuffers, SwapChain, BufferCount, Width, Height, NewFormat, SwapChainFlags);
+
+		ID3D11Texture2D* Buffer;
+		SwapChain->GetBuffer(0, __uuidof(ID3D11Texture2D), (void**)&Buffer);
+		pDevice->CreateRenderTargetView(Buffer, NULL, &pRenderTarget);
+
+		Buffer->Release();
+
+		pDeviceContext->OMSetRenderTargets(1, &pRenderTarget, NULL);
+
+		// Set up the viewport.
+		D3D11_VIEWPORT vp;
+		vp.Width = Width;
+		vp.Height = Height;
+		vp.MinDepth = 0.0f;
+		vp.MaxDepth = 1.0f;
+		vp.TopLeftX = 0;
+		vp.TopLeftY = 0;
+		pDeviceContext->RSSetViewports(1, &vp);
+
+		return hr;
 	}
 }

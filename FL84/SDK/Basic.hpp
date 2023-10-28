@@ -240,13 +240,19 @@ namespace SDK
 	public:
 		// GNames - either of type TNameEntryArray [<4.23] or FNamePool [>=4.23]
 		static FNamePool* GNames;
+
+		// Members of FName - depending on configuration [WITH_CASE_PRESERVING_NAME | FNAME_OUTLINE_NUMBER]
 		int32 ComparisonIndex;
 		int32 Number;
 
 		FName();
-		FName(int32_t i);
+		FName(int32 i);
 		FName(const char* nameToFind);
 		FName(const wchar_t* nameToFind);
+		void InitGNames();
+		int32 GetDisplayIndex() const;
+		std::string GetRawString() const;
+		std::string ToString() const;
 		static FNamePool& GetGlobalNames();
 		std::string GetNameA() const;
 		std::wstring GetNameW() const;

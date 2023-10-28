@@ -309,6 +309,5 @@ namespace ZyanoCheats
 
 		gStopSpectator.Custom.bValue = gStopSpectator.Default.bValue;
 		gSpamLike.Custom.bValue = gSpamLike.Default.bValue;
-		gShotgunDamage.Custom.bValue = gShotgunDamage.Default.bValue;
 	}
 }

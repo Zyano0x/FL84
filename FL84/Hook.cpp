@@ -1,6 +1,7 @@
 #include "pch.h"
 
 tPresent oPresent;
+tResizeBuffers oResizeBuffers;
 tGetShotDir GetShotDir;
 tShotgunImpact ShotgunImpact;
 tProcessRemoteFunction ProcessRemoteFunction;
@@ -17,7 +18,7 @@ struct FuncInfo
 
 struct ClassInfo
 {
-	std::string sClassName; 
+	std::string sClassName;
 	std::unordered_map<SDK::UFunction*, FuncInfo> oRpcFuncInfoMap;
 };
 
@@ -28,13 +29,18 @@ HRESULT WINAPI hkPresent(_In_ IDXGISwapChain* SwapChain, _In_ UINT SyncInterval,
 	return spoof_call(oPresent, SwapChain, SyncInterval, Flags);
 }
 
+HRESULT WINAPI hkResizeBuffers(_In_ IDXGISwapChain* SwapChain, _In_ UINT BufferCount, _In_ UINT Width, _In_ UINT Height, _In_ DXGI_FORMAT NewFormat, _In_ UINT SwapChainFlags)
+{
+	return _mainGUI.ResizeBuffers(SwapChain, BufferCount, Width, Height, NewFormat, SwapChainFlags);
+}
+
 __int64 HOOKCALL hkGetShotDir(uint64_t Weapon, uint64_t a2, bool NeedSpread)
 {
 	__int64 Result = spoof_call(GetShotDir, Weapon, a2, NeedSpread);
 
 	if (_profiler.gAimEnabled.Custom.bValue && _profiler.gAimMode.Custom.iValue == 1 && a2 && !Aimbot::TargetPosition.IsValid()
 		|| _profiler.gAimEnabled.Custom.bValue && _profiler.gAimMode.Custom.iValue == 2 && a2 && !Aimbot::TargetPosition.IsValid())
-	{		
+	{
 		// Maybe from muzzle/GetShootingTraceStartLocation instead of camera location more accurate
 		SDK::FVector Out = Math::GetDirectionUnitVector(ZZZ.CameraManager->GetCameraLocation() /*Weapon->GetShootingTraceStartLocation()*/, Aimbot::TargetPosition);
 
@@ -47,10 +53,12 @@ __int64 HOOKCALL hkGetShotDir(uint64_t Weapon, uint64_t a2, bool NeedSpread)
 __int64 HOOKCALL hkShotgunImpact(uint64_t Weapon)
 {
 	__int64 Result = spoof_call(ShotgunImpact, Weapon);
+
 	if (_profiler.gShotgunDamage.Custom.bValue)
 	{
 		Result *= Result; // You can basically lower your dmg or maximize your dmg
 	}
+
 	return Result;
 }
 
@@ -58,9 +66,12 @@ SDK::UFunction* FN_ServerShortTimeout = nullptr;
 SDK::UFunction* FN_AntiCheatDataSchedulerUpload = nullptr;
 SDK::UFunction* FN_AntiCheatLauncherCheck = nullptr;
 SDK::UFunction* FN_SendSteamAntiCheatRequest = nullptr;
+SDK::UFunction* FN_ServerReportRPC = nullptr;
+SDK::UFunction* FN_ServerReportWaitTime = nullptr;
 void HOOKCALL hkProcessEvent(void* Object, SDK::UFunction* Function, void* Params)
 {
-	if (Function == FN_ServerShortTimeout || Function == FN_AntiCheatDataSchedulerUpload || Function == FN_AntiCheatLauncherCheck || Function == FN_SendSteamAntiCheatRequest)
+	if (Function == FN_ServerShortTimeout || Function == FN_AntiCheatDataSchedulerUpload || Function == FN_AntiCheatLauncherCheck || Function == FN_SendSteamAntiCheatRequest
+		|| Function == FN_ServerReportRPC || Function == FN_ServerReportWaitTime)
 	{
 		return;
 	}
@@ -119,12 +130,19 @@ void Initialize()
 	SDK::InitSDK();
 
 	HMODULE hModule = LI_FN(GetModuleHandleA).safe()(xorstr_("GameOverlayRenderer64.dll"));
-	if (hModule) oPresent = *(tPresent*)((DWORD64)hModule + 0x147640);
+	if (hModule)
+	{
+		oPresent = *(tPresent*)((DWORD64)hModule + 0x147640);
+		oResizeBuffers = *(tResizeBuffers*)((DWORD64)hModule + 0x147648);
+	}
 	Hook(oPresent, hkPresent);
+	Hook(oResizeBuffers, hkResizeBuffers);
 
 	FN_ServerShortTimeout = SDK::UObject::FindObject<SDK::UFunction>("Function Engine.PlayerController.ServerShortTimeout");
 	FN_AntiCheatDataSchedulerUpload = SDK::UObject::FindObject<SDK::UFunction>("Function Solarland.SolarPlayerController.AntiCheatDataSchedulerUpload");
 	FN_AntiCheatLauncherCheck = SDK::UObject::FindObject<SDK::UFunction>("Function Solarland.SolarEasyAntiCheatManager.AntiCheatLauncherCheck");
+	FN_ServerReportRPC = SDK::UObject::FindObject<SDK::UFunction>("Function Solarland.SolarMeerkatScheduleComponent.ServerReportRPC");
+	FN_ServerReportWaitTime = SDK::UObject::FindObject<SDK::UFunction>("Function Solarland.SolarPlayerState.ServerReportWaitTime");
 	FN_SendSteamAntiCheatRequest = SDK::UObject::FindObject<SDK::UFunction>("Function Solarland.SolarEasyAntiCheatManager.SendSteamAntiCheatRequest");
 
 	//uint64_t hkPresent_Sig = Engine::FindPattern(xorstr_("GameOverlayRenderer64.dll"), xorstr_("48 89 6C 24 ? 48 89 74 24 ? 41 56 48 83 EC ? 41 8B E8"));
@@ -132,7 +150,7 @@ void Initialize()
 	//uint64_t GetBoneMatrix = Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 8B C4 48 89 58 ? 48 89 70 ? 57 48 81 EC ? ? ? ? F6 81");
 	//uint64_t GetViewPointAddress = Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 8B C4 48 89 58 ? 48 89 68 ? 56 57 41 56 48 81 EC ? ? ? ? 0F 29 70 ? 0F 29 78 ? 48 8B 05");
 	//uint64_t GetPlayerViewPointAddress = Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 89 5C 24 ? 48 89 7C 24 ? 55 41 56 41 57 48 8B EC 48 83 EC ? 48 8B FA");
-	//uint64_t GetPlayerViewRotationAddress = Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 89 5C 24 ? 55 56 57 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 84 24 ? ? ? ? 48 8B F2");
+	//uint64_t GetPlayerViewRotationAddress = Engine::FindPattern("SolarlandClient-Win64-Shipping.exe", "48 89 5C 24 ? 55 56 57 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 84 24 ? ? ? ? 48 8B F2 48 8B D9");
 
 	//__int64(HOOKCALL * CreateHook)(unsigned __int64 pFuncAddress, __int64 pDetourFuncAddress, unsigned __int64* pOriginalFuncAddressOut, int a4);
 	//CreateHook = (decltype(CreateHook))CreateHook_Sig;
@@ -141,8 +159,11 @@ void Initialize()
 	GetShotDir = reinterpret_cast<tGetShotDir>(Signature(xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")).GetPointer());
 	Hook(GetShotDir, hkGetShotDir);
 
-	ShotgunImpact = reinterpret_cast<tShotgunImpact>(Signature(xorstr_("40 53 48 83 EC ? 48 8B D9 E8 ? ? ? ? 48 85 C0 74 ? 48 8B CB E8 ? ? ? ? F3 0F 10 98")).GetPointer());
+	ShotgunImpact = reinterpret_cast<tShotgunImpact>(Signature(xorstr_("40 53 48 83 EC ? 48 8B D9 E8 ? ? ? ? 48 85 C0 74 ? F3 0F 10 98")).GetPointer());
 	Hook(ShotgunImpact, hkShotgunImpact);
+
+	//GetShotStartLocation = reinterpret_cast<tGetShotStartLocation>(Signature(xorstr_("40 53 56 57 48 83 EC ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 44 24 ? 48 8B FA")).GetPointer());
+	//Hook(GetShotStartLocation, hkGetShotStartLocation);
 
 	oProcessEvent = reinterpret_cast<tProcessEvent>(Signature(xorstr_("40 55 56 57 41 54 41 55 41 56 41 57 48 81 EC ? ? ? ? 48 8D 6C 24 ? 48 89 9D ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C5 48 89 85 ? ? ? ? 4C 8B E1")).GetPointer());
 	Hook(oProcessEvent, hkProcessEvent);
@@ -161,8 +182,10 @@ void Initialize()
 void Deallocate()
 {
 	UnHook(oPresent, hkPresent);
+	UnHook(oResizeBuffers, hkResizeBuffers);
 	UnHook(GetShotDir, hkGetShotDir);
 	UnHook(ShotgunImpact, hkShotgunImpact);
+	//UnHook(GetShotStartLocation, hkGetShotStartLocation);
 	UnHook(oProcessEvent, hkProcessEvent);
 #ifdef _DEBUG
 	UnHook(ProcessRemoteFunction, hkProcessRemoteFunction);

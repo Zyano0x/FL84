@@ -48,6 +48,9 @@ void XXX::Unknown()
 		if (!Actor)
 			continue;
 
+		if (!Actor->RootComponent)
+			continue;
+
 		if (Actor->IsA(SDK::ASolarCharacter::StaticClass()))
 		{
 			SDK::ASolarCharacter* Enemy = static_cast<SDK::ASolarCharacter*>(Actor);
@@ -83,10 +86,22 @@ void XXX::Unknown()
 			if (!Enemy->K2_IsAlive())
 				continue;
 
+			if (!Enemy->GetSolarPlayerState())
+				continue;
+
 			if (Enemy == LocalCharacter)
 				continue;
 
-			Head = Enemy->Mesh->GetBoneWorldPos(HEAD);
+			switch (Enemy->GetSolarPlayerState()->CharacterId)
+			{
+			case 100027:
+				Head = Enemy->Mesh->GetBoneWorldPos(51); // HEAD = 51 (MAYCHELLE)
+				break;
+			default:
+				Head = Enemy->Mesh->GetBoneWorldPos(HEAD);
+				break;
+			}
+
 			Root = Enemy->Mesh->GetBoneWorldPos(ROOT);
 			//Head = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(HEAD));
 			//Root = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(ROOT));
@@ -206,32 +221,67 @@ void XXX::Unknown()
 
 				if (_profiler.gPlayerSkeleton.Custom.bValue)
 				{
-					std::vector<std::pair<int, int>> SkeletonConnections = {
-						{NECK_01, HEAD},
+					std::vector<std::pair<int, int>> SkeletonConnections = std::vector<std::pair<int, int>>();
 
-						{SPINE_02, NECK_01},
-						{SPINE_01, SPINE_02},
-						{SPINE_03, SPINE_01}, // STOMACH TO CHEST
-						{PELVIS, SPINE_03},
+					switch (Enemy->GetSolarPlayerState()->CharacterId)
+					{
+					case 100027:
+						SkeletonConnections = {
+							{50, 51}, // NECK -> HEAD
 
-						{CLAVICLE_R, SPINE_02},
-						{UPPERARM_R, CLAVICLE_R},
-						{LOWERARM_R, UPPERARM_R}, // RIGHT ELBOW
-						{HAND_R, LOWERARM_R},
+							{SPINE_02, 50},
+							{SPINE_01, SPINE_02},
+							{SPINE_03, SPINE_01}, // STOMACH -> CHEST
+							{PELVIS, SPINE_03},
 
-						{CLAVICLE_L, SPINE_02},
-						{UPPERARM_L, CLAVICLE_L},
-						{LOWERARM_L, UPPERARM_L}, // LEFT ELBOW
-						{HAND_L, LOWERARM_L},
+							{28, SPINE_02}, // CLAVICLE_R -> SPINE
+							{29, 28}, // UPPERARM_R -> CLAVICLE_R
+							{30, 29}, // LOWERARM_R -> CLAVICLE_R
+							{31, 30}, // HAND_R -> LOWERARM_R
 
-						{THIGH_R, PELVIS},
-						{CALF_R, THIGH_R},
-						{FOOT_R, CALF_R},
+							{CLAVICLE_L, SPINE_02},
+							{UPPERARM_L, CLAVICLE_L},
+							{LOWERARM_L, UPPERARM_L}, // LEFT ELBOW
+							{HAND_L, LOWERARM_L},
 
-						{THIGH_L, PELVIS},
-						{CALF_L, THIGH_L},
-						{FOOT_L, CALF_L},
-					};
+							{59, PELVIS}, // THIGH_R -> PELVIS
+							{60, 59}, // CALF_R -> THIGH_R
+							{61, 60}, // FOOT_R -> CALF_R
+
+							{53, PELVIS},
+							{54, 53},
+							{55,  54},
+						};
+						break;
+					default:
+						SkeletonConnections = {
+							{NECK_01, HEAD}, // NECK -> HEAD
+
+							{SPINE_02, NECK_01},
+							{SPINE_01, SPINE_02},
+							{SPINE_03, SPINE_01}, // STOMACH -> CHEST
+							{PELVIS, SPINE_03},
+
+							{CLAVICLE_R, SPINE_02},
+							{UPPERARM_R, CLAVICLE_R},
+							{LOWERARM_R, UPPERARM_R}, // RIGHT ELBOW
+							{HAND_R, LOWERARM_R},
+
+							{CLAVICLE_L, SPINE_02},
+							{UPPERARM_L, CLAVICLE_L},
+							{LOWERARM_L, UPPERARM_L}, // LEFT ELBOW
+							{HAND_L, LOWERARM_L},
+
+							{THIGH_R, PELVIS},
+							{CALF_R, THIGH_R},
+							{FOOT_R, CALF_R},
+
+							{THIGH_L, PELVIS},
+							{CALF_L, THIGH_L},
+							{FOOT_L, CALF_L},
+						};
+						break;
+					}
 
 					SDK::FVector2D BoneScreen, PrevBoneScreen;
 					for (const std::pair<int, int>& Connection : SkeletonConnections)
@@ -252,7 +302,7 @@ void XXX::Unknown()
 
 				if (_profiler.gPlayerDirectionLine.Custom.bValue)
 				{
-					SDK::FVector Start = Enemy->Mesh->GetBoneWorldPos(HEAD);
+					SDK::FVector Start = Enemy->GetSolarPlayerState()->CharacterId == 100027 ? Enemy->Mesh->GetBoneWorldPos(51) : Enemy->Mesh->GetBoneWorldPos(HEAD);
 					SDK::FVector Angles = Enemy->K2_GetActorRotation().ToVector();
 					SDK::FVector End = Angles * 250 + Start;
 					SDK::FVector2D ScreenStart, ScreenEnd;
@@ -481,7 +531,7 @@ void XXX::Unknown()
 
 			int VehicleDistance = LocalCharacter->GetDistanceTo(Vehicle) / 100;
 
-			std::string VehicleName = Engine::GetVehicleName(Vehicle->Name.GetName());
+			std::string VehicleName = Engine::GetVehicleName(Vehicle->VehicleID);
 
 			ImVec4 HPColor = ImVec4();
 
@@ -499,7 +549,7 @@ void XXX::NoRecoil()
 	if (!SanityCheck())
 		return;
 
-	/*if (_profiler.gBulletPenetration.Custom.bValue)
+	/*if (_profiler.gTest.Custom.bValue)
 	{
 		if (!PlayerController->Character)
 			return;
@@ -510,7 +560,7 @@ void XXX::NoRecoil()
 
 		uint64_t* VTable = *(uint64_t**)(CachedCurrentWeapon + 0x0);
 
-		printf("0x%llX\n", VTable[286]);
+		printf("0x%llX\n", VTable[267]);
 	}*/
 
 	if (_profiler.gFastReload.Custom.bValue)
@@ -522,7 +572,7 @@ void XXX::NoRecoil()
 		if (!CachedCurrentWeapon)
 			return;
 
-		SDK::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
+		SDK::USingleWeaponConfig* Config = CachedCurrentWeapon->K2_GetCurrentConfig();
 		if (!Config)
 			return;
 
@@ -710,11 +760,14 @@ void XXX::Aimbot()
 			if (Enemy->InSameTeamWithFirstPlayerController())
 				continue;
 
-			if (_profiler.gVisibleCheck.Custom.bValue && !PlayerController->LineOfSightTo(Enemy, { 0.f,0.f,0.f }, false))
-				continue;
-
 			if (!Enemy->K2_IsAlive())
 				continue;
+
+			if (!Enemy->GetSolarPlayerState())
+				continue;
+
+			if (_profiler.gVisibleCheck.Custom.bValue && !PlayerController->LineOfSightTo(Enemy, { 0.f,0.f,0.f }, false))
+				continue;		
 
 			if (_profiler.gIgnoreKnocked.Custom.bValue && Enemy->IsDying())
 				continue;
@@ -722,26 +775,43 @@ void XXX::Aimbot()
 			if (_profiler.gIgnoreStealth.Custom.bValue && Enemy->IsInInvisibleStatus())
 				continue;
 
-			switch (_profiler.gAimBone.Custom.iValue)
+			switch (Enemy->GetSolarPlayerState()->CharacterId)
 			{
-			case 0:
-				Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(HEAD);
-				break;
+			case 100027:
+				switch (_profiler.gAimBone.Custom.iValue)
+				{
+				case 0:
+					Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(51);
+					break;
 
-			case 1:
-				Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(NECK_01);
-				break;
+				case 1:
+					Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(50);
+					break;
 
-			case 2:
-				Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(SPINE_03);
-				Aimbot::AimPosition.Z -= 10;
+				case 2:
+					Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(SPINE_03);
+					Aimbot::AimPosition.Z -= 10;
+					break;
+				}
 				break;
+			default:
+				switch (_profiler.gAimBone.Custom.iValue)
+				{
+				case 0:
+					Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(HEAD);
+					break;
 
-			case 3:
-				int Point = Engine::GetNearestBone(CameraManager, Enemy, Engine::HitBoxes);
-				Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(Point);
+				case 1:
+					Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(NECK_01);
+					break;
+
+				case 2:
+					Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(SPINE_03);
+					Aimbot::AimPosition.Z -= 10;
+					break;
+				}
 				break;
-			}
+			}	
 
 			if (_profiler.gAimPrediction.Custom.bValue)
 			{
@@ -789,14 +859,9 @@ void XXX::Aimbot()
 	}
 
 	if (_profiler.gAimLine.Custom.bValue)
-	{		
+	{
 		if (bTargetLine)
 			Draw::DrawLine(ScreenWidth / 2, ScreenHeight / 2, TargetLine.X, TargetLine.Y, 1.f, ImVec4(1.f, 0.141f, 0.f, 1.5f));
-	}
-
-	if (_profiler.gBulletPenetration.Custom.bValue)
-	{
-
 	}
 
 	if (_profiler.gAimType.Custom.iValue == 0)
@@ -835,6 +900,7 @@ void XXX::Misc()
 
 		LocalCharacter->ServerSetJetPackModule(1140103, true);
 		LocalCharacter->ServerSetJetPackModule(1110403, false);
+		LocalCharacter->ServerInitSheildComp(1010616);
 	}
 
 	SDK::ASolarSpectateInfo* SpectateInfo = LocalCharacter->GetSpectateInfo();
@@ -868,20 +934,12 @@ void XXX::Misc()
 		}
 	}
 
-	SDK::ASolarPlayerState* PlayerState = LocalCharacter->GetSolarPlayerState();
-	if (!PlayerState)
-		return;
-
 	if (_profiler.gStopSpectator.Custom.bValue)
 	{
 		SDK::TArray<SDK::ASolarPlayerState*> Spectators = SpectateInfo->PlayersSpectatingMe;
 		for (int i = 0; i < Spectators.Count(); i++)
 		{
-			SDK::ASolarCharacter* SpectatorCharacter = Spectators[i]->GetSolarCharacter();
-			if (!SpectatorCharacter)
-				continue;
-
-			SDK::ASolarSpectateInfo* Spectator = SpectatorCharacter->GetSpectateInfo();
+			SDK::ASolarSpectateInfo* Spectator = Spectators[i]->GetSpectateInfo();
 			if (!Spectator)
 				continue;
 
@@ -889,8 +947,6 @@ void XXX::Misc()
 			Spectator->ServerStopSpectateOtherPlayer_Internal();
 
 			Spectator->ServerChangeLikeValue(10, 2, SDK::ESocialActionType::Like);
-
-			PlayerState->OnOtherPlayerStopSpectateMe(Spectators[i], Spectator);
 		}
 	}
 }
@@ -904,11 +960,8 @@ void XXX::Radar()
 	ImGui::PushStyleColor(ImGuiCol_WindowBg, ImVec4(0.0f, 0.0f, 0.0f, 0.45f));
 	ImGui::Begin("Radar", &_profiler.gRadar.Custom.bValue, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoTitleBar);   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked)
 	{
-		if (ImGui::IsWindowFocused)
-		{
-			RadarPos = ImGui::GetWindowPos();
-			RadarSize = ImGui::GetWindowSize();
-		}
+		RadarPos = ImGui::GetWindowPos();
+		RadarSize = ImGui::GetWindowSize();
 
 		ImDrawList* DrawList = ImGui::GetForegroundDrawList();
 		if (DrawList != nullptr)
@@ -921,51 +974,51 @@ void XXX::Radar()
 				ImVec2(RadarPos.x, RadarPos.y + (RadarSize.y / 2)),
 				ImVec2(RadarPos.x + RadarSize.x, RadarPos.y + (RadarSize.y / 2)), IM_COL32(255, 255, 255, 255), 1.0f);
 		}
-
-		if (!SanityCheck())
-			return;
-
-		SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
-		if (!LocalCharacter)
-			return;
-
-		SDK::TArray<SDK::AActor*> Actors = *(SDK::TArray<SDK::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
-		for (int i = 0; i < Actors.Count(); i++)
-		{
-			SDK::AActor* Actor = Actors[i];
-
-			if (!Actor)
-				continue;
-
-			if (!Actor->RootComponent)
-				continue;
-
-			if (Actor->IsA(SDK::ASolarCharacter::StaticClass()))
-			{
-				SDK::ASolarCharacter* Enemy = static_cast<SDK::ASolarCharacter*>(Actor);
-
-				if (Enemy == LocalCharacter)
-					continue;
-
-				if (Enemy->InSameTeamWithFirstPlayerController())
-					continue;
-
-				if (!Enemy->K2_IsAlive())
-					continue;
-
-				float Distance = LocalCharacter->GetDistanceTo(Enemy) / 100.0f;
-
-				SDK::FVector2D RotatePoint = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), SDK::FVector2D(RadarPos.x, RadarPos.y), SDK::FVector2D(RadarSize.x, RadarSize.y));
-
-				if (Distance >= 0.f && Distance < _profiler.gRadarDistance.Custom.flValue)
-				{
-					Draw::DrawCircleFilled(RotatePoint.X, RotatePoint.Y, 4, ImVec4(1.0f, 0.874f, 0.0f, 1.0f));
-				}
-			}
-		}
 	}
 	ImGui::PopStyleColor();
 	ImGui::End();
+
+	if (!SanityCheck())
+		return;
+
+	SDK::ASolarCharacter* LocalCharacter = static_cast<SDK::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
+	if (!LocalCharacter)
+		return;
+
+	SDK::TArray<SDK::AActor*> Actors = *(SDK::TArray<SDK::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
+	for (int i = 0; i < Actors.Count(); i++)
+	{
+		SDK::AActor* Actor = Actors[i];
+
+		if (!Actor)
+			continue;
+
+		if (!Actor->RootComponent)
+			continue;
+
+		if (Actor->IsA(SDK::ASolarCharacter::StaticClass()))
+		{
+			SDK::ASolarCharacter* Enemy = static_cast<SDK::ASolarCharacter*>(Actor);
+
+			if (Enemy == LocalCharacter)
+				continue;
+
+			if (Enemy->InSameTeamWithFirstPlayerController())
+				continue;
+
+			if (!Enemy->K2_IsAlive())
+				continue;
+
+			float Distance = LocalCharacter->GetDistanceTo(Enemy) / 100.0f;
+
+			SDK::FVector2D RotatePoint = Math::WorldToRadar(CameraManager->GetCameraRotation(), CameraManager->GetCameraLocation(), Enemy->K2_GetActorLocation(), SDK::FVector2D(RadarPos.x, RadarPos.y), SDK::FVector2D(RadarSize.x, RadarSize.y));
+
+			if (Distance >= 0.f && Distance < _profiler.gRadarDistance.Custom.flValue)
+			{
+				Draw::DrawCircleFilled(RotatePoint.X, RotatePoint.Y, 4, ImVec4(1.0f, 0.874f, 0.0f, 1.0f));
+			}
+		}
+	}
 }
 
 void XXX::BypassEAC()

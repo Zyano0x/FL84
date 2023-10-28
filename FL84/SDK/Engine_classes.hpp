@@ -535,7 +535,7 @@ namespace SDK
 		struct FTransform GetDeltaTransformFromRefPose(class FName BoneName, class FName BaseName);
 		class FName GetCurrentSkinWeightProfileName();
 		class FName GetBoneName(int32 BoneIndex);
-		int32 GetBoneIndex(class FName BoneName);
+		int32 GetBoneIndex(const class FName& BoneName);
 		class FName FindClosestBone_K2(const struct FVector& TestLocation, struct FVector* BoneLocation, float IgnoreScale, bool bRequirePhysicsAsset);
 		void ClearVertexColorOverride(int32 LODIndex);
 		void ClearSkinWeightProfile();

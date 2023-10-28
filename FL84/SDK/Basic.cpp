@@ -185,7 +185,7 @@ namespace SDK
 		Number = 0;
 	}
 
-	FName::FName(int32_t i)
+	FName::FName(int32 i)
 	{
 		ComparisonIndex = i;
 		Number = 0;
@@ -277,6 +277,44 @@ namespace SDK
 			}
 		}
 #endif
+	}
+
+	void FName::InitGNames()
+	{
+		GNames = reinterpret_cast<FNamePool*>(uint64(GetModuleHandle(0)) + Offsets::GNames);
+	}
+
+	int32 FName::GetDisplayIndex() const
+	{
+		return ComparisonIndex;
+	}
+
+	std::string FName::GetRawString() const
+	{
+		thread_local FString TempString(1024);
+		static void(*AppendString)(const FName*, FString&) = nullptr;
+
+		if (!AppendString)
+			AppendString = reinterpret_cast<void(*)(const FName*, FString&)>(uintptr_t(GetModuleHandle(0)) + Offsets::AppendString);
+
+		AppendString(this, TempString);
+
+		std::string OutputString = TempString.ToString();
+		TempString.ResetNum();
+
+		return OutputString;
+	}
+
+	std::string FName::ToString() const
+	{
+		std::string OutputString = GetRawString();
+
+		size_t pos = OutputString.rfind('/');
+
+		if (pos == std::string::npos)
+			return OutputString;
+
+		return OutputString.substr(pos + 1);
 	}
 
 	FNamePool& FName::GetGlobalNames()

@@ -11,7 +11,10 @@ extern int32_t ScreenHeight;
 typedef HRESULT(WINAPI* tPresent)(_In_ IDXGISwapChain* SwapChain, _In_ UINT SyncInterval, _In_ UINT Flags);
 extern tPresent oPresent;
 
-typedef __int64(HOOKCALL* tGetShotDir)(uint64_t Weapon, uint64_t a2, bool NeedSpread);
+typedef HRESULT(WINAPI* tResizeBuffers)(_In_ IDXGISwapChain* SwapChain, _In_ UINT BufferCount, _In_ UINT Width, _In_ UINT Height, _In_ DXGI_FORMAT NewFormat, _In_ UINT SwapChainFlags);
+extern tResizeBuffers oResizeBuffers;
+
+typedef __int64(HOOKCALL* tGetShotDir)(uint64_t Weapon, uint64_t Result, bool NeedSpread);
 extern tGetShotDir GetShotDir;
 
 typedef __int64(HOOKCALL* tShotgunImpact)(uint64_t Weapon);

@@ -78,7 +78,6 @@ namespace ZyanoCheats
 			AIMBONE_HEAD,
 			AIMBONE_NECK,
 			AIMBONE_SPINE,
-			AIMBONE_NEARESTBONE,
 			AIMBONE_MAX,
 		} eAimbone;
 
@@ -111,10 +110,10 @@ namespace ZyanoCheats
 			ITEMS_LEVEL_MAX
 		} eItemsLevel;
 
-		std::vector<LPCSTR> szAimMode = { " Aimbot FOV", " Silent Aim", " Automatic"};
+		std::vector<LPCSTR> szAimMode = { " Aimbot FOV", " Silent Aim", " Automatic" };
 		std::vector<LPCSTR> szAimType = { " Memory", " Mouse Event"};
-		std::vector<LPCSTR> szAimBone = { " Head", " Neck", " Spine", " Nearest Bone"};
-		std::vector<LPCSTR> szPlayerSnaplines = { " Off", " Top", " Bottom", " Center",};
+		std::vector<LPCSTR> szAimBone = { " Head", " Neck", " Spine" };
+		std::vector<LPCSTR> szPlayerSnaplines = { " Off", " Top", " Bottom", " Center" };
 		std::vector<LPCSTR> szPlayerBoxes = { " Off", " Border", " Corner", " Border Filled", " Corner Filled" };
 		std::vector<LPCSTR> szItemLevel = { " Level 1", " Level 2", " Level 3", " Level 4", " Level 5" };
 
