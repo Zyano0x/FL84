@@ -20,7 +20,7 @@ public:
 	TArray<class FString>                        URLKeywordWithoutNavigation;                       // 0x168(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                InitialURL;                                        // 0x178(0x10)(Edit, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                         bSupportsTransparency;                             // 0x188(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_B0D[0x17];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C61[0x17];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UWebBrowser* GetDefaultObj();
@@ -46,7 +46,7 @@ class UWebBrowserAssetManager : public UObject
 {
 public:
 	TSoftObjectPtr<class UMaterial>              DefaultMaterial;                                   // 0x28(0x28)(Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_B0E[0x28];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C62[0x28];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UWebBrowserAssetManager* GetDefaultObj();

@@ -40,16 +40,34 @@ class UUI_ChatPanel_C* UUI_ChatPanel_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_ChatPanel.UI_ChatPanel_C.OnClicked_74E999E445D516957FE8308CE0A84C5E
+// DelegateFunction UI_ChatPanel.UI_ChatPanel_C.OnClicked_671F272747CA0710A71702A13CECA861
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_ChatPanel_C::OnClicked_74E999E445D516957FE8308CE0A84C5E()
+void UUI_ChatPanel_C::OnClicked_671F272747CA0710A71702A13CECA861()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_ChatPanel_C", "OnClicked_74E999E445D516957FE8308CE0A84C5E");
+		Func = Class->GetFunction("UI_ChatPanel_C", "OnClicked_671F272747CA0710A71702A13CECA861");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_ChatPanel.UI_ChatPanel_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_ChatPanel_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_ChatPanel_C", "Construct");
 
 
 
@@ -72,6 +90,30 @@ void UUI_ChatPanel_C::OnInitialized()
 
 
 	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_ChatPanel.UI_ChatPanel_C.OnSolarUIClosed
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UUI_ChatPanel_C::OnSolarUIClosed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_ChatPanel_C", "OnSolarUIClosed");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -114,48 +156,6 @@ void UUI_ChatPanel_C::Destruct()
 
 
 	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function UI_ChatPanel.UI_ChatPanel_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_ChatPanel_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_ChatPanel_C", "Construct");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function UI_ChatPanel.UI_ChatPanel_C.OnSolarUIClosed
-// (Native, Event, Protected, BlueprintEvent)
-// Parameters:
-
-void UUI_ChatPanel_C::OnSolarUIClosed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_ChatPanel_C", "OnSolarUIClosed");
-
-
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-
-	Func->FunctionFlags = Flgs;
 
 }
 

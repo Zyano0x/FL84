@@ -18,25 +18,25 @@ public:
 	static class UClass* StaticClass();
 	static class UBP_SolarReplayManager_C* GetDefaultObj();
 
-	void OnRecordingStartedDelegate_C0EA34124EAD7B2F77A39EB7F4F11F34();
-	void OnPlayingStartedDelegate_09171EDE4609FB410EF59DA6D16337F6();
-	bool NotifyBackendPlayReplayFinished();
-	bool IsReady();
-	void LuaOnPostLoadMapWithWorld(const class FString& LevelName);
-	void OnLiveWatchTargetLost();
-	bool ReceivePlayingFinished(enum class EReplayPlayingFinishReason Reason, uint8 StreamerErrorCode, const class FString& StreamerErrorMsg);
-	class FString GetBattleIDByIndex(int32 Index);
-	void RequestWatchingLiveOfPlayer(const class FString& SolarPlayerID);
-	void LuaBindDelegates();
-	void RequestPlayReplay(const class FString& InBattleID, bool IsLive);
-	void GetStartRecordingParams(struct FStartRecordingParams* OutParams);
-	void RequestCheckpointForLiveWatch();
-	void SetRequestTryStrategy(float Interval, int32 Times);
-	void ReceivePlayingStartFailed();
-	void RequestPlayReplayOfCurrentBattle();
-	bool IsRequestingReplayDownloadInfo();
-	void SetReadyToRecord(bool bIsReady, TArray<class FString>& OBPlayerIDs);
+	void OnRecordingStartedDelegate_91627A7341B32ACFBC3B179B76F76DC7();
+	void OnPlayingStartedDelegate_9D73D9064DCCBCE70705F991C815897C();
 	void RequestBattleList(int32 PageIndex, int32 PageSize);
+	bool NotifyBackendPlayReplayFinished();
+	void ReceivePlayingStartFailed();
+	void RequestCheckpointForLiveWatch();
+	void RequestPlayReplayOfCurrentBattle();
+	void SetReadyToRecord(bool bIsReady, TArray<class FString>& OBPlayerIDs);
+	bool IsReady();
+	void LuaBindDelegates();
+	class FString GetBattleIDByIndex(int32 Index);
+	void GetStartRecordingParams(struct FStartRecordingParams* OutParams);
+	bool ReceivePlayingFinished(enum class EReplayPlayingFinishReason Reason, uint8 StreamerErrorCode, const class FString& StreamerErrorMsg);
+	void RequestWatchingLiveOfPlayer(const class FString& SolarPlayerID);
+	void LuaOnPostLoadMapWithWorld(const class FString& LevelName);
+	bool IsRequestingReplayDownloadInfo();
+	void OnLiveWatchTargetLost();
+	void RequestPlayReplay(const class FString& InBattleID, bool IsLive);
+	void SetRequestTryStrategy(float Interval, int32 Times);
 };
 
 }

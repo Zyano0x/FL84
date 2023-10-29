@@ -40,20 +40,27 @@ class UUI_Target_Card_Medal_Item_C* UUI_Target_Card_Medal_Item_C::GetDefaultObj(
 }
 
 
-// Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.BPCalLuaInitDataCopy
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// int32                              ID                                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Type                                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Level                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUI_Target_Card_Medal_Item_C::Destruct()
+void UUI_Target_Card_Medal_Item_C::BPCalLuaInitDataCopy(int32 ID, int32 Type, int32 Level)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Target_Card_Medal_Item_C", "Destruct");
+		Func = Class->GetFunction("UI_Target_Card_Medal_Item_C", "BPCalLuaInitDataCopy");
 
+	Params::UUI_Target_Card_Medal_Item_C_BPCalLuaInitDataCopy_Params Parms{};
 
+	Parms.ID = ID;
+	Parms.Type = Type;
+	Parms.Level = Level;
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 
 }
 
@@ -76,27 +83,20 @@ void UUI_Target_Card_Medal_Item_C::OnInitialized()
 }
 
 
-// Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.BPCalLuaInitDataCopy
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// int32                              ID                                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Type                                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Level                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUI_Target_Card_Medal_Item_C::BPCalLuaInitDataCopy(int32 ID, int32 Type, int32 Level)
+void UUI_Target_Card_Medal_Item_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Target_Card_Medal_Item_C", "BPCalLuaInitDataCopy");
+		Func = Class->GetFunction("UI_Target_Card_Medal_Item_C", "Destruct");
 
-	Params::UUI_Target_Card_Medal_Item_C_BPCalLuaInitDataCopy_Params Parms{};
 
-	Parms.ID = ID;
-	Parms.Type = Type;
-	Parms.Level = Level;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 

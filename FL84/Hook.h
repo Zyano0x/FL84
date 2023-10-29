@@ -14,10 +14,13 @@ extern tPresent oPresent;
 typedef HRESULT(WINAPI* tResizeBuffers)(_In_ IDXGISwapChain* SwapChain, _In_ UINT BufferCount, _In_ UINT Width, _In_ UINT Height, _In_ DXGI_FORMAT NewFormat, _In_ UINT SwapChainFlags);
 extern tResizeBuffers oResizeBuffers;
 
-typedef __int64(HOOKCALL* tGetShotDir)(uint64_t Weapon, uint64_t Result, bool NeedSpread);
+typedef __int64(HOOKCALL* tGetShotDir)(SDK::ASolarPlayerWeapon* Weapon, uint64_t Result, bool NeedSpread);
 extern tGetShotDir GetShotDir;
 
-typedef __int64(HOOKCALL* tShotgunImpact)(uint64_t Weapon);
+typedef __int64(HOOKCALL* tGetShootingTraceStartLocation)(SDK::ASolarPlayerWeapon* Weapon, uint64_t Result);
+extern tGetShootingTraceStartLocation GetShootingTraceStartLocation;
+
+typedef __int64(HOOKCALL* tShotgunImpact)(SDK::ASolarPlayerWeapon* Weapon);
 extern tShotgunImpact ShotgunImpact;
 
 typedef __int64(HOOKCALL* tProcessRemoteFunction)(SDK::UNetDriver* Driver, SDK::AActor* Actor, SDK::UFunction* Function, void* Parameters, SDK::FOutParmRec* OutParms, __int64 Stack, SDK::UObject* SubObject);

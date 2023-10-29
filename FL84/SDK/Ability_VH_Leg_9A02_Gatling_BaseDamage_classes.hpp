@@ -14,7 +14,7 @@ namespace SDK
 class AAbility_VH_Leg_9A02_Gatling_BaseDamage_C : public ASolarAbility
 {
 public:
-	uint8                                        Pad_215B[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_23BD[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AAbility_VH_Leg_9A02_Gatling_BaseDamage_C* GetDefaultObj();

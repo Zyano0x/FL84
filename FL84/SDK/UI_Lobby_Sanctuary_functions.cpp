@@ -82,24 +82,6 @@ void UUI_Lobby_Sanctuary_C::OnSolarUIOpened()
 }
 
 
-// Function UI_Lobby_Sanctuary.UI_Lobby_Sanctuary_C.ConstructCopy
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Lobby_Sanctuary_C::ConstructCopy()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Sanctuary_C", "ConstructCopy");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function UI_Lobby_Sanctuary.UI_Lobby_Sanctuary_C.OnSolarUIClosed
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
@@ -120,6 +102,24 @@ void UUI_Lobby_Sanctuary_C::OnSolarUIClosed()
 
 
 	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function UI_Lobby_Sanctuary.UI_Lobby_Sanctuary_C.ConstructCopy
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_Sanctuary_C::ConstructCopy()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Sanctuary_C", "ConstructCopy");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 

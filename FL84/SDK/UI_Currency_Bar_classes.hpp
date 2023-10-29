@@ -55,13 +55,13 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Currency_Bar_C* GetDefaultObj();
 
-	void OnClicked_CC36E6404D36617B843D8DA2E2234449();
-	void OnClicked_F0ECA147405A4BF1D9F7F78D98F2CDDD();
-	void OnClicked_41FFF16243B38FC9EDF1DEA8B5369447();
-	void OnClicked_BA56EF8C43F17E66C5413C9E8AD03BE1();
+	void OnClicked_5879825E4A6513E326A49A985BEAC8A4();
+	void OnClicked_1BACDF474E0CAD2E95F5F4B99A908487();
+	void OnClicked_22052A484DEF91EC2E9A36A30DAA2631();
+	void OnClicked_2B3C6AE445D1644BDE45CD85C0491DC8();
+	void OnSolarUIClosed();
 	void OnSolarUIOpened();
 	void Construct();
-	void OnSolarUIClosed();
 	class FString GetModuleName();
 	void SetStateDesktop(enum class E_Type_State_Desktop StateDesktopDiamond, enum class E_Type_State_Desktop StateDesktopVip, enum class E_Type_State_Desktop Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class E_Type_State_Desktop Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility Temp_byte_Variable_7, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1);
 	void PreConstruct(bool IsDesignTime);

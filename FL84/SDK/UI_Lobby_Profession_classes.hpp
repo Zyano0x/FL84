@@ -23,19 +23,19 @@ public:
 	class UOverlay*                              Overlay_1;                                         // 0x430(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         Myself;                                            // 0x438(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	enum class E_ProfessionType                  ProfessionType;                                    // 0x439(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_892[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2746[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Index;                                             // 0x43C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UUI_Lobby_Profession_C* GetDefaultObj();
 
-	void OnClicked_7FB65594453B87356E57AB88D99C80F8();
-	void OnClicked_0A98355D417A47B5B16D37A0933FF1CA();
-	void OnClicked_575CD25E45A0DBCBDBDB7FA44AC67765();
-	void OnClicked_669FDB514A75ECF2E870609E83284FB7();
+	void OnClicked_A9C5EFB04FC9F2A9FE0107BCF768794B();
+	void OnClicked_F0B4507C491A70AE2E06BFB376BD5F8C();
+	void OnClicked_9D55EFE046E97F6AA3CC61AF11C9E321();
+	void OnClicked_7FBAFD5746AFF20C9C9A658D4BF6AB32();
 	void Destruct();
-	void Construct();
 	void OnInitialized();
+	void Construct();
 	class FString GetModuleName();
 	void SetSelection(uint8 Index, uint8 CallFunc_GetValidValue_ReturnValue);
 	void UpdateState(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default);

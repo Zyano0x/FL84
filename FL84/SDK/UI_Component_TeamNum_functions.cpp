@@ -64,16 +64,16 @@ void UUI_Component_TeamNum_C::OnShow()
 }
 
 
-// Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnSolarUIOpened
+// Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnSolarUIClosed
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UUI_Component_TeamNum_C::OnSolarUIOpened()
+void UUI_Component_TeamNum_C::OnSolarUIClosed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_TeamNum_C", "OnSolarUIOpened");
+		Func = Class->GetFunction("UI_Component_TeamNum_C", "OnSolarUIClosed");
 
 
 
@@ -106,16 +106,16 @@ void UUI_Component_TeamNum_C::OnInitialized()
 }
 
 
-// Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnSolarUIClosed
+// Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnSolarUIOpened
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UUI_Component_TeamNum_C::OnSolarUIClosed()
+void UUI_Component_TeamNum_C::OnSolarUIOpened()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_TeamNum_C", "OnSolarUIClosed");
+		Func = Class->GetFunction("UI_Component_TeamNum_C", "OnSolarUIOpened");
 
 
 

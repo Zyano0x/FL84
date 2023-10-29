@@ -29,12 +29,12 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_ChatPanel_C* GetDefaultObj();
 
-	void OnClicked_74E999E445D516957FE8308CE0A84C5E();
+	void OnClicked_671F272747CA0710A71702A13CECA861();
+	void Construct();
 	void OnInitialized();
+	void OnSolarUIClosed();
 	void OnSolarUIOpened();
 	void Destruct();
-	void Construct();
-	void OnSolarUIClosed();
 	class FString GetModuleName();
 	void SetStateDesktop(enum class E_Type_State_Desktop StateHD, enum class E_Type_State_Desktop Temp_byte_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, const struct FLinearColor& Temp_struct_Variable_2, const struct FLinearColor& K2Node_Select_Default);
 	void SetMsgText(uint8 ChatType, const class FString& PlayerName, const class FString& Msg, class FString* OutputText, bool K2Node_SwitchEnum_CmpSuccess, const class FString& CallFunc_Concat_StrStr_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_1, const class FString& CallFunc_Concat_StrStr_ReturnValue_2, const class FString& CallFunc_Concat_StrStr_ReturnValue_3, const class FString& CallFunc_Concat_StrStr_ReturnValue_4, const class FString& CallFunc_Concat_StrStr_ReturnValue_5, const class FString& CallFunc_Concat_StrStr_ReturnValue_6, const class FString& CallFunc_Concat_StrStr_ReturnValue_7);

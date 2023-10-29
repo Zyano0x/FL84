@@ -40,16 +40,16 @@ class UUI_Lobby_Tips_Container_C* UUI_Lobby_Tips_Container_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnClicked_CD6B60C04C6150C6AC50B7A92FBE9557
+// DelegateFunction UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnClicked_AB1E8EE54E384692712319B630A5DF61
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_Tips_Container_C::OnClicked_CD6B60C04C6150C6AC50B7A92FBE9557()
+void UUI_Lobby_Tips_Container_C::OnClicked_AB1E8EE54E384692712319B630A5DF61()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Tips_Container_C", "OnClicked_CD6B60C04C6150C6AC50B7A92FBE9557");
+		Func = Class->GetFunction("UI_Lobby_Tips_Container_C", "OnClicked_AB1E8EE54E384692712319B630A5DF61");
 
 
 
@@ -58,20 +58,44 @@ void UUI_Lobby_Tips_Container_C::OnClicked_CD6B60C04C6150C6AC50B7A92FBE9557()
 }
 
 
-// DelegateFunction UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnPressed_640836F64CA4FF10E50508814BB2188A
+// DelegateFunction UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnPressed_51E6B1D644C6FFCB2142C980FCD18B45
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_Tips_Container_C::OnPressed_640836F64CA4FF10E50508814BB2188A()
+void UUI_Lobby_Tips_Container_C::OnPressed_51E6B1D644C6FFCB2142C980FCD18B45()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Tips_Container_C", "OnPressed_640836F64CA4FF10E50508814BB2188A");
+		Func = Class->GetFunction("UI_Lobby_Tips_Container_C", "OnPressed_51E6B1D644C6FFCB2142C980FCD18B45");
 
 
 
 	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnHide
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_Tips_Container_C::OnHide()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Tips_Container_C", "OnHide");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -132,30 +156,6 @@ void UUI_Lobby_Tips_Container_C::Construct()
 
 
 	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnHide
-// (Native, Event, Protected, BlueprintEvent)
-// Parameters:
-
-void UUI_Lobby_Tips_Container_C::OnHide()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Tips_Container_C", "OnHide");
-
-
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-
-	Func->FunctionFlags = Flgs;
 
 }
 

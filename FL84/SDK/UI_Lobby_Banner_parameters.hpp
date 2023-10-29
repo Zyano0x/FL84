@@ -14,16 +14,16 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 
 // 0x1 (0x1 - 0x0)
-// DelegateFunction UI_Lobby_Banner.UI_Lobby_Banner_C.OnURLDownloadFinish_97F3DC6F4B38ACC514F99EAB040184DA
-struct UUI_Lobby_Banner_C_OnURLDownloadFinish_97F3DC6F4B38ACC514F99EAB040184DA_Params
+// DelegateFunction UI_Lobby_Banner.UI_Lobby_Banner_C.OnURLDownloadFinish_D0B3E8F54C02B48E23F6E19AADE0C269
+struct UUI_Lobby_Banner_C_OnURLDownloadFinish_D0B3E8F54C02B48E23F6E19AADE0C269_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x160 (0x160 - 0x0)
-// Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnMouseButtonUp
-struct UUI_Lobby_Banner_C_OnMouseButtonUp_Params
+// Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnMouseButtonDown
+struct UUI_Lobby_Banner_C_OnMouseButtonDown_Params
 {
 public:
 	struct FGeometry                             MyGeometry;                                        // 0x0(0x38)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -32,8 +32,8 @@ public:
 };
 
 // 0x160 (0x160 - 0x0)
-// Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnMouseButtonDown
-struct UUI_Lobby_Banner_C_OnMouseButtonDown_Params
+// Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnMouseButtonUp
+struct UUI_Lobby_Banner_C_OnMouseButtonUp_Params
 {
 public:
 	struct FGeometry                             MyGeometry;                                        // 0x0(0x38)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -93,13 +93,13 @@ struct UUI_Lobby_Banner_C_ExecuteUbergraph_UI_Lobby_Banner_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2AC7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2200[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerEvent                         K2Node_Event_MouseEvent;                           // 0x8(0x70)(ConstParm)
 	bool                                         K2Node_Event_IsDesignTime;                         // 0x78(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsPlatformSwitch_ReturnValue;             // 0x79(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2AC8[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2201[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGeometry                             K2Node_Event_MyGeometry;                           // 0x7C(0x38)(IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2AC9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2202[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerEvent                         K2Node_Event_MouseEvent_1;                         // 0xB8(0x70)(ConstParm)
 };
 

@@ -54,7 +54,7 @@ public:
 struct FTimedDataChannelSampleTime
 {
 public:
-	uint8                                        Pad_1598[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1A4B[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

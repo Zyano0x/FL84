@@ -29,7 +29,7 @@ struct FAreaLayerData
 public:
 	class FName                                  LayerName;                                         // 0x0(0x8)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        CurrentBit;                                        // 0x8(0x4)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_16A[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1D2[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<struct FIntPoint, class UTexture2D*>    ComponentWeightMapTextures;                        // 0x10(0x50)(Edit, Transient, EditConst, NativeAccessSpecifierPublic)
 	class FName                                  GroupName;                                         // 0x60(0x8)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };

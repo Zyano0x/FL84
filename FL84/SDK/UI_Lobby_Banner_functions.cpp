@@ -40,73 +40,23 @@ class UUI_Lobby_Banner_C* UUI_Lobby_Banner_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Lobby_Banner.UI_Lobby_Banner_C.OnURLDownloadFinish_97F3DC6F4B38ACC514F99EAB040184DA
+// DelegateFunction UI_Lobby_Banner.UI_Lobby_Banner_C.OnURLDownloadFinish_D0B3E8F54C02B48E23F6E19AADE0C269
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
-void UUI_Lobby_Banner_C::OnURLDownloadFinish_97F3DC6F4B38ACC514F99EAB040184DA(bool bSuccess)
+void UUI_Lobby_Banner_C::OnURLDownloadFinish_D0B3E8F54C02B48E23F6E19AADE0C269(bool bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Banner_C", "OnURLDownloadFinish_97F3DC6F4B38ACC514F99EAB040184DA");
+		Func = Class->GetFunction("UI_Lobby_Banner_C", "OnURLDownloadFinish_D0B3E8F54C02B48E23F6E19AADE0C269");
 
-	Params::UUI_Lobby_Banner_C_OnURLDownloadFinish_97F3DC6F4B38ACC514F99EAB040184DA_Params Parms{};
+	Params::UUI_Lobby_Banner_C_OnURLDownloadFinish_D0B3E8F54C02B48E23F6E19AADE0C269_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnMouseButtonUp
-// (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// struct FGeometry                   MyGeometry                                                       (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-// struct FPointerEvent               MouseEvent                                                       (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-struct FEventReply UUI_Lobby_Banner_C::OnMouseButtonUp(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Banner_C", "OnMouseButtonUp");
-
-	Params::UUI_Lobby_Banner_C_OnMouseButtonUp_Params Parms{};
-
-	Parms.MyGeometry = MyGeometry;
-	Parms.MouseEvent = MouseEvent;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-
-}
-
-
-// Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnSolarUIOpened
-// (Native, Event, Protected, BlueprintEvent)
-// Parameters:
-
-void UUI_Lobby_Banner_C::OnSolarUIOpened()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Banner_C", "OnSolarUIOpened");
-
-
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-
-	Func->FunctionFlags = Flgs;
 
 }
 
@@ -157,6 +107,56 @@ void UUI_Lobby_Banner_C::OnSolarUIClosed()
 
 
 	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnSolarUIOpened
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_Banner_C::OnSolarUIOpened()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Banner_C", "OnSolarUIOpened");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnMouseButtonUp
+// (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// struct FGeometry                   MyGeometry                                                       (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// struct FPointerEvent               MouseEvent                                                       (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+struct FEventReply UUI_Lobby_Banner_C::OnMouseButtonUp(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Banner_C", "OnMouseButtonUp");
+
+	Params::UUI_Lobby_Banner_C_OnMouseButtonUp_Params Parms{};
+
+	Parms.MyGeometry = MyGeometry;
+	Parms.MouseEvent = MouseEvent;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 
 }
 

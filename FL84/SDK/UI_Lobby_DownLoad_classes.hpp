@@ -33,10 +33,10 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_DownLoad_C* GetDefaultObj();
 
-	void OnClicked_1995724F4EC61C618A0E6D96DE9851FE();
-	void OnSolarUIClosed();
+	void OnClicked_B3EFFA1943953EAAB2D7CD8F101C463D();
 	void OnSolarUIOpened();
 	void OnInitializedCopy();
+	void OnSolarUIClosed();
 	class FString GetModuleName();
 	void OnOpenDownloadList();
 	void OnInitialized();

@@ -19,10 +19,10 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Currency_BarPanel_C* GetDefaultObj();
 
-	void OnSolarUIOpened();
-	void Destruct();
 	void Construct();
 	void OnSolarUIClosed();
+	void OnSolarUIOpened();
+	void Destruct();
 	class FString GetModuleName();
 };
 

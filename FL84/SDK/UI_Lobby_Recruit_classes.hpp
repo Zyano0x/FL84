@@ -26,7 +26,7 @@ public:
 	class USolarTextBlock*                       Txt_Invite2;                                       // 0x448(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USolarTextBlock*                       Txt_Recruit;                                       // 0x450(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         Recruiting;                                        // 0x458(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2A84[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1F86[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Size_W;                                            // 0x45C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Size_H;                                            // 0x460(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Type_State_Desktop              StateDesktopInvite;                                // 0x464(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -35,8 +35,8 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_Recruit_C* GetDefaultObj();
 
-	void OnClicked_5E18B77945D6E33FBD2532B290A924B6();
-	void OnClicked_736126D1489DEA9D25528AABDABAC3ED();
+	void OnClicked_43842C5B4C43943549350E8BD9407C53();
+	void OnClicked_E3C06A6145013BE28F6449B93DBD4FE7();
 	void Destruct();
 	void OnSolarUIClosed();
 	void OnSolarUIOpened();

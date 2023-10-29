@@ -14,7 +14,7 @@ namespace SDK
 class UProtectBaseComponent : public UObject
 {
 public:
-	uint8                                        Pad_E56[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_F51[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UProtectBaseComponent* GetDefaultObj();
@@ -38,7 +38,7 @@ public:
 class USecDSComponent : public UObject
 {
 public:
-	uint8                                        Pad_E5D[0x98];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_F52[0x98];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class USecDSComponent* GetDefaultObj();

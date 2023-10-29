@@ -14,7 +14,7 @@ namespace SDK
 class ABP_WheeledVehicleBase_C : public ASolarWheeledVehicle
 {
 public:
-	uint8                                        Pad_27A0[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_23C7[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ABP_WheeledVehicleBase_C* GetDefaultObj();

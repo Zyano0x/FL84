@@ -40,6 +40,27 @@ class UUI_Component_Item_C* UUI_Component_Item_C::GetDefaultObj()
 }
 
 
+// Function UI_Component_Item.UI_Component_Item_C.BP_OnItemSelectionChangedCopy
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                               bIsSelected                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UUI_Component_Item_C::BP_OnItemSelectionChangedCopy(bool bIsSelected)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_Item_C", "BP_OnItemSelectionChangedCopy");
+
+	Params::UUI_Component_Item_C_BP_OnItemSelectionChangedCopy_Params Parms{};
+
+	Parms.bIsSelected = bIsSelected;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function UI_Component_Item.UI_Component_Item_C.OnListItemObjectSetCopy
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -75,27 +96,6 @@ void UUI_Component_Item_C::PlayEnterAnim()
 
 
 	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function UI_Component_Item.UI_Component_Item_C.BP_OnItemSelectionChangedCopy
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                               bIsSelected                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UUI_Component_Item_C::BP_OnItemSelectionChangedCopy(bool bIsSelected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Component_Item_C", "BP_OnItemSelectionChangedCopy");
-
-	Params::UUI_Component_Item_C_BP_OnItemSelectionChangedCopy_Params Parms{};
-
-	Parms.bIsSelected = bIsSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
 
 }
 

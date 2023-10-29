@@ -25,13 +25,13 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_Mainmenu_C* GetDefaultObj();
 
-	void OnClicked_23CC45774944B31ABA66DA93367D722A();
-	void OnClicked_B3A4D3A848E06ADF4FB7DF935B09B29F();
-	void OnClicked_E8715F264B086C3FF399AF95BBE14E4C();
+	void OnClicked_1534DCB14154388DC5E1EDB108CB6E46();
+	void OnClicked_440A34A3416189A372743CAAFD008544();
+	void OnClicked_6CD601A845F65E66FA871FA74DE41C47();
 	void Destruct();
+	void OnSolarUIClosed();
 	void OnSolarUIOpened();
 	void Construct();
-	void OnSolarUIClosed();
 	class FString GetModuleName();
 	void PreConstruct(bool IsDesignTime);
 	void ExecuteUbergraph_UI_Lobby_Mainmenu(int32 EntryPoint, bool K2Node_Event_IsDesignTime);

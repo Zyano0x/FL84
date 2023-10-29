@@ -58,24 +58,6 @@ void UUI_Component_Keyboard_C::Destruct()
 }
 
 
-// Function UI_Component_Keyboard.UI_Component_Keyboard_C.ConstructCopy
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Component_Keyboard_C::ConstructCopy()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Component_Keyboard_C", "ConstructCopy");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function UI_Component_Keyboard.UI_Component_Keyboard_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -86,6 +68,24 @@ void UUI_Component_Keyboard_C::OnInitialized()
 
 	if (!Func)
 		Func = Class->GetFunction("UI_Component_Keyboard_C", "OnInitialized");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Component_Keyboard.UI_Component_Keyboard_C.ConstructCopy
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Component_Keyboard_C::ConstructCopy()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_Keyboard_C", "ConstructCopy");
 
 
 

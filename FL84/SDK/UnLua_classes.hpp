@@ -26,7 +26,7 @@ public:
 class UUnLuaManager : public UObject
 {
 public:
-	uint8                                        Pad_A53[0x590];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_BD6[0x590];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UUnLuaManager* GetDefaultObj();
@@ -46,12 +46,12 @@ public:
 class AUnLuaPerformanceTestProxy : public AActor
 {
 public:
-	uint8                                        Pad_A5D[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_BE5[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        MeshID;                                            // 0x230(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A5E[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_BE6[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                MeshName;                                          // 0x238(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FVector                               COM;                                               // 0x248(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A5F[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_BE7[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<int32>                                Indices;                                           // 0x258(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<struct FVector>                       Positions;                                         // 0x268(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<struct FVector>                       PredictedPositions;                                // 0x278(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)

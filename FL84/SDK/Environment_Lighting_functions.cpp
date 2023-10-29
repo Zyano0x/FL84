@@ -40,24 +40,6 @@ class AEnvironment_Lighting_C* AEnvironment_Lighting_C::GetDefaultObj()
 }
 
 
-// Function Environment_Lighting.Environment_Lighting_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-
-void AEnvironment_Lighting_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("Environment_Lighting_C", "ReceiveBeginPlay");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function Environment_Lighting.Environment_Lighting_C.ReceiveEndPlay
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -75,6 +57,24 @@ void AEnvironment_Lighting_C::ReceiveEndPlay(enum class EEndPlayReason EndPlayRe
 	Parms.EndPlayReason = EndPlayReason;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function Environment_Lighting.Environment_Lighting_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+
+void AEnvironment_Lighting_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("Environment_Lighting_C", "ReceiveBeginPlay");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 

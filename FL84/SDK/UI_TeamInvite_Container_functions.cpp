@@ -40,16 +40,16 @@ class UUI_TeamInvite_Container_C* UUI_TeamInvite_Container_C::GetDefaultObj()
 }
 
 
-// Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnHide
+// Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnShow
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UUI_TeamInvite_Container_C::OnHide()
+void UUI_TeamInvite_Container_C::OnShow()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_TeamInvite_Container_C", "OnHide");
+		Func = Class->GetFunction("UI_TeamInvite_Container_C", "OnShow");
 
 
 
@@ -64,16 +64,16 @@ void UUI_TeamInvite_Container_C::OnHide()
 }
 
 
-// Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnShow
+// Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnHide
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UUI_TeamInvite_Container_C::OnShow()
+void UUI_TeamInvite_Container_C::OnHide()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_TeamInvite_Container_C", "OnShow");
+		Func = Class->GetFunction("UI_TeamInvite_Container_C", "OnHide");
 
 
 
@@ -112,24 +112,6 @@ void UUI_TeamInvite_Container_C::OnSolarUIOpened()
 }
 
 
-// Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_TeamInvite_Container_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_TeamInvite_Container_C", "OnInitialized");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnSolarUIClosed
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
@@ -150,6 +132,24 @@ void UUI_TeamInvite_Container_C::OnSolarUIClosed()
 
 
 	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_TeamInvite_Container_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_TeamInvite_Container_C", "OnInitialized");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 

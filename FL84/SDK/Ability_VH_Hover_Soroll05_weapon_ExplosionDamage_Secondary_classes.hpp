@@ -14,7 +14,7 @@ namespace SDK
 class AAbility_VH_Hover_Soroll05_weapon_ExplosionDamage_Secondary_C : public ASolarAbility
 {
 public:
-	uint8                                        Pad_19E2[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_23B6[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x310(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                         HasExploded;                                       // 0x318(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 

@@ -38,17 +38,17 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_Social_Entrance_C* GetDefaultObj();
 
-	void OnClicked_B8B02E764377E48F2EA165B3B62ABC95();
-	void OnClicked_0E3280834FE27E714C3A6B969BD5B171();
-	void OnClicked_52699EFD47A68F557F81EEB32DE54351();
-	void OnClicked_12DBBBD144648453736B228DEE1C7DA8();
-	void OnClicked_B07B2D7348175597BC33B4A66F6DA6F0();
-	void OnClicked_E412EB864EB1C0E50CCDF689CF033EF9();
+	void OnClicked_C0B1211F45B377C9525FFEB0F72AB491();
+	void OnClicked_4B3A62974846E4F2982A46910A28C0CA();
+	void OnClicked_B7A6BCD04FBCB5072A50398118104CA1();
+	void OnClicked_BAFAE0634BE74120E116B68F5BEA79CD();
+	void OnClicked_3B77D97948941FFB392CBCB723AF8F1F();
+	void OnClicked_EB35D5F84ED605566323C791108E8B57();
+	void OnInitialized();
+	void OnSolarUIClosed();
+	void ConstructCopy();
 	void OnSolarUIOpened();
 	void Destruct();
-	void ConstructCopy();
-	void OnSolarUIClosed();
-	void OnInitialized();
 	class FString GetModuleName();
 	void ShowGuide(bool ShowGuide);
 	void PreConstruct(bool IsDesignTime);

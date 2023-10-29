@@ -28,11 +28,11 @@ class USkeletalMeshComponentBudgeted : public USkeletalMeshComponent
 {
 public:
 	enum class ESkeletalMeshAnimDetailMode       AnimDetailMode;                                    // 0xC18(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_99[0x27];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_149[0x27];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	uint8                                        bAutoRegisterWithBudgetAllocator : 1;              // Mask: 0x1, PropSize: 0x10xC40(0x1)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                        bAutoCalculateSignificance : 1;                    // Mask: 0x2, PropSize: 0x10xC40(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                        bShouldUseActorRenderedFlag : 1;                   // Mask: 0x4, PropSize: 0x10xC40(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_9A[0xF];                                       // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_14B[0xF];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class USkeletalMeshComponentBudgeted* GetDefaultObj();

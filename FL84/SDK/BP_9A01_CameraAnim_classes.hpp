@@ -14,7 +14,7 @@ namespace SDK
 class UBP_9A01_CameraAnim_C : public UCameraShake
 {
 public:
-	uint8                                        Pad_1C91[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_21B3[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UBP_9A01_CameraAnim_C* GetDefaultObj();

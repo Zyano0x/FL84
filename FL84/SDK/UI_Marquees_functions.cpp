@@ -40,20 +40,25 @@ class UUI_Marquees_C* UUI_Marquees_C::GetDefaultObj()
 }
 
 
-// Function UI_Marquees.UI_Marquees_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function UI_Marquees.UI_Marquees_C.ReceiveTick
+// (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
+// struct FGeometry                   MyGeometry                                                       (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// float                              InDeltaTime                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UUI_Marquees_C::Construct()
+void UUI_Marquees_C::ReceiveTick(struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Marquees_C", "Construct");
+		Func = Class->GetFunction("UI_Marquees_C", "ReceiveTick");
 
+	Params::UUI_Marquees_C_ReceiveTick_Params Parms{};
 
+	Parms.MyGeometry = MyGeometry;
+	Parms.InDeltaTime = InDeltaTime;
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 
 }
 
@@ -106,25 +111,20 @@ void UUI_Marquees_C::OnSolarUIClosed()
 }
 
 
-// Function UI_Marquees.UI_Marquees_C.ReceiveTick
-// (Event, Public, HasOutParams, BlueprintEvent)
+// Function UI_Marquees.UI_Marquees_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry                   MyGeometry                                                       (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-// float                              InDeltaTime                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UUI_Marquees_C::ReceiveTick(struct FGeometry& MyGeometry, float InDeltaTime)
+void UUI_Marquees_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Marquees_C", "ReceiveTick");
+		Func = Class->GetFunction("UI_Marquees_C", "Construct");
 
-	Params::UUI_Marquees_C_ReceiveTick_Params Parms{};
 
-	Parms.MyGeometry = MyGeometry;
-	Parms.InDeltaTime = InDeltaTime;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 

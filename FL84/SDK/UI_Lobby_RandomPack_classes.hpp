@@ -27,10 +27,10 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_RandomPack_C* GetDefaultObj();
 
-	void OnClicked_245ECACA4402ACE2F692B5A543F408FE();
+	void OnClicked_FD92CC3842C4AA5F712FC5BE266CD140();
 	void OnInitialized();
-	void OnSolarUIOpened();
 	void OnSolarUIClosed();
+	void OnSolarUIOpened();
 	class FString GetModuleName();
 };
 

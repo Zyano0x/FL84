@@ -640,10 +640,15 @@ namespace ZyanoCheats
 					HelpMarker(xorstr_("Press Delete"));
 					ImGui::Spacing();
 
-					if (ImGui::Checkbox(_profiler.gShotgunDamage.szLabel, &_profiler.gShotgunDamage.Custom.bValue))
+					if (ImGui::Checkbox(_profiler.gBulletPenetration.szLabel, &_profiler.gBulletPenetration.Custom.bValue))
 					{
 						Menu.bWriteLog = true;
 					} ImGui::SameLine(ImGui::GetCursorPosX() + 200.0f);
+
+					if (ImGui::Checkbox(_profiler.gShotgunDamage.szLabel, &_profiler.gShotgunDamage.Custom.bValue))
+					{
+						Menu.bWriteLog = true;
+					} ImGui::SameLine(ImGui::GetCursorPosX() + 460.0f);
 
 					if (ImGui::Checkbox(_profiler.gTest.szLabel, &_profiler.gTest.Custom.bValue))
 					{

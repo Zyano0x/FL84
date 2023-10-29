@@ -47,13 +47,16 @@ void XXX::Unknown()
 
 		if (!Actor)
 			continue;
-
+		
 		if (!Actor->RootComponent)
 			continue;
 
 		if (Actor->IsA(SDK::ASolarCharacter::StaticClass()))
 		{
 			SDK::ASolarCharacter* Enemy = static_cast<SDK::ASolarCharacter*>(Actor);
+
+			if (Enemy == LocalCharacter)
+				continue;
 
 			if (Enemy->InSameTeamWithFirstPlayerController())
 				IsTeam = true;
@@ -86,22 +89,7 @@ void XXX::Unknown()
 			if (!Enemy->K2_IsAlive())
 				continue;
 
-			if (!Enemy->GetSolarPlayerState())
-				continue;
-
-			if (Enemy == LocalCharacter)
-				continue;
-
-			switch (Enemy->GetSolarPlayerState()->CharacterId)
-			{
-			case 100027:
-				Head = Enemy->Mesh->GetBoneWorldPos(51); // HEAD = 51 (MAYCHELLE)
-				break;
-			default:
-				Head = Enemy->Mesh->GetBoneWorldPos(HEAD);
-				break;
-			}
-
+			Head = Enemy->Mesh->GetBoneWorldPos(HEAD);
 			Root = Enemy->Mesh->GetBoneWorldPos(ROOT);
 			//Head = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(HEAD));
 			//Root = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(ROOT));
@@ -221,40 +209,7 @@ void XXX::Unknown()
 
 				if (_profiler.gPlayerSkeleton.Custom.bValue)
 				{
-					std::vector<std::pair<int, int>> SkeletonConnections = std::vector<std::pair<int, int>>();
-
-					switch (Enemy->GetSolarPlayerState()->CharacterId)
-					{
-					case 100027:
-						SkeletonConnections = {
-							{50, 51}, // NECK -> HEAD
-
-							{SPINE_02, 50},
-							{SPINE_01, SPINE_02},
-							{SPINE_03, SPINE_01}, // STOMACH -> CHEST
-							{PELVIS, SPINE_03},
-
-							{28, SPINE_02}, // CLAVICLE_R -> SPINE
-							{29, 28}, // UPPERARM_R -> CLAVICLE_R
-							{30, 29}, // LOWERARM_R -> CLAVICLE_R
-							{31, 30}, // HAND_R -> LOWERARM_R
-
-							{CLAVICLE_L, SPINE_02},
-							{UPPERARM_L, CLAVICLE_L},
-							{LOWERARM_L, UPPERARM_L}, // LEFT ELBOW
-							{HAND_L, LOWERARM_L},
-
-							{59, PELVIS}, // THIGH_R -> PELVIS
-							{60, 59}, // CALF_R -> THIGH_R
-							{61, 60}, // FOOT_R -> CALF_R
-
-							{53, PELVIS},
-							{54, 53},
-							{55,  54},
-						};
-						break;
-					default:
-						SkeletonConnections = {
+					std::vector<std::pair<int, int>> SkeletonConnections = {
 							{NECK_01, HEAD}, // NECK -> HEAD
 
 							{SPINE_02, NECK_01},
@@ -279,9 +234,7 @@ void XXX::Unknown()
 							{THIGH_L, PELVIS},
 							{CALF_L, THIGH_L},
 							{FOOT_L, CALF_L},
-						};
-						break;
-					}
+					};
 
 					SDK::FVector2D BoneScreen, PrevBoneScreen;
 					for (const std::pair<int, int>& Connection : SkeletonConnections)
@@ -560,7 +513,7 @@ void XXX::NoRecoil()
 
 		uint64_t* VTable = *(uint64_t**)(CachedCurrentWeapon + 0x0);
 
-		printf("0x%llX\n", VTable[267]);
+		printf("0x%llX\n", VTable[278]);
 	}*/
 
 	if (_profiler.gFastReload.Custom.bValue)
@@ -637,6 +590,7 @@ void XXX::NoRecoil()
 		if (!WeaponShootConfig)
 			return;
 
+		WeaponShootConfig->bEnableNewShootSpeed = false;
 		WeaponShootConfig->bEnableNewRecoil = false;
 		WeaponShootConfig->bEnableNewSpread = false;
 		WeaponShootConfig->bEnableNewWeaponAnim = false;
@@ -686,7 +640,7 @@ void XXX::Vehicle()
 		if (Aimbot::TargetPosition.IsValid())
 			return;
 
-		*(SDK::FVector*)(VehicleWeapon + 0xE9C) = Aimbot::TargetPosition;
+		*(SDK::FVector*)(VehicleWeapon + 0xBAC) = Aimbot::TargetPosition;
 	}
 
 	if (_profiler.gVehicleNoRecoil.Custom.bValue)
@@ -763,11 +717,8 @@ void XXX::Aimbot()
 			if (!Enemy->K2_IsAlive())
 				continue;
 
-			if (!Enemy->GetSolarPlayerState())
-				continue;
-
 			if (_profiler.gVisibleCheck.Custom.bValue && !PlayerController->LineOfSightTo(Enemy, { 0.f,0.f,0.f }, false))
-				continue;		
+				continue;
 
 			if (_profiler.gIgnoreKnocked.Custom.bValue && Enemy->IsDying())
 				continue;
@@ -775,43 +726,21 @@ void XXX::Aimbot()
 			if (_profiler.gIgnoreStealth.Custom.bValue && Enemy->IsInInvisibleStatus())
 				continue;
 
-			switch (Enemy->GetSolarPlayerState()->CharacterId)
+			switch (_profiler.gAimBone.Custom.iValue)
 			{
-			case 100027:
-				switch (_profiler.gAimBone.Custom.iValue)
-				{
-				case 0:
-					Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(51);
-					break;
-
-				case 1:
-					Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(50);
-					break;
-
-				case 2:
-					Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(SPINE_03);
-					Aimbot::AimPosition.Z -= 10;
-					break;
-				}
+			case 0:
+				Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(HEAD);
 				break;
-			default:
-				switch (_profiler.gAimBone.Custom.iValue)
-				{
-				case 0:
-					Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(HEAD);
-					break;
 
-				case 1:
-					Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(NECK_01);
-					break;
-
-				case 2:
-					Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(SPINE_03);
-					Aimbot::AimPosition.Z -= 10;
-					break;
-				}
+			case 1:
+				Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(NECK_01);
 				break;
-			}	
+
+			case 2:
+				Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(SPINE_03);
+				Aimbot::AimPosition.Z -= 10;
+				break;
+			}
 
 			if (_profiler.gAimPrediction.Custom.bValue)
 			{

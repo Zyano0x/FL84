@@ -40,16 +40,16 @@ class UBP_SolarReplayManager_C* UBP_SolarReplayManager_C::GetDefaultObj()
 }
 
 
-// DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnRecordingStartedDelegate_C0EA34124EAD7B2F77A39EB7F4F11F34
+// DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnRecordingStartedDelegate_91627A7341B32ACFBC3B179B76F76DC7
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UBP_SolarReplayManager_C::OnRecordingStartedDelegate_C0EA34124EAD7B2F77A39EB7F4F11F34()
+void UBP_SolarReplayManager_C::OnRecordingStartedDelegate_91627A7341B32ACFBC3B179B76F76DC7()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("BP_SolarReplayManager_C", "OnRecordingStartedDelegate_C0EA34124EAD7B2F77A39EB7F4F11F34");
+		Func = Class->GetFunction("BP_SolarReplayManager_C", "OnRecordingStartedDelegate_91627A7341B32ACFBC3B179B76F76DC7");
 
 
 
@@ -58,20 +58,43 @@ void UBP_SolarReplayManager_C::OnRecordingStartedDelegate_C0EA34124EAD7B2F77A39E
 }
 
 
-// DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnPlayingStartedDelegate_09171EDE4609FB410EF59DA6D16337F6
+// DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnPlayingStartedDelegate_9D73D9064DCCBCE70705F991C815897C
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UBP_SolarReplayManager_C::OnPlayingStartedDelegate_09171EDE4609FB410EF59DA6D16337F6()
+void UBP_SolarReplayManager_C::OnPlayingStartedDelegate_9D73D9064DCCBCE70705F991C815897C()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("BP_SolarReplayManager_C", "OnPlayingStartedDelegate_09171EDE4609FB410EF59DA6D16337F6");
+		Func = Class->GetFunction("BP_SolarReplayManager_C", "OnPlayingStartedDelegate_9D73D9064DCCBCE70705F991C815897C");
 
 
 
 	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestBattleList
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// int32                              PageIndex                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                              PageSize                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBP_SolarReplayManager_C::RequestBattleList(int32 PageIndex, int32 PageSize)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SolarReplayManager_C", "RequestBattleList");
+
+	Params::UBP_SolarReplayManager_C_RequestBattleList_Params Parms{};
+
+	Parms.PageIndex = PageIndex;
+	Parms.PageSize = PageSize;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 }
 
@@ -98,6 +121,83 @@ bool UBP_SolarReplayManager_C::NotifyBackendPlayReplayFinished()
 }
 
 
+// Function BP_SolarReplayManager.BP_SolarReplayManager_C.ReceivePlayingStartFailed
+// (Event, Public, BlueprintEvent)
+// Parameters:
+
+void UBP_SolarReplayManager_C::ReceivePlayingStartFailed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SolarReplayManager_C", "ReceivePlayingStartFailed");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestCheckpointForLiveWatch
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UBP_SolarReplayManager_C::RequestCheckpointForLiveWatch()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SolarReplayManager_C", "RequestCheckpointForLiveWatch");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestPlayReplayOfCurrentBattle
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UBP_SolarReplayManager_C::RequestPlayReplayOfCurrentBattle()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SolarReplayManager_C", "RequestPlayReplayOfCurrentBattle");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function BP_SolarReplayManager.BP_SolarReplayManager_C.SetReadyToRecord
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               bIsReady                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// TArray<class FString>              OBPlayerIDs                                                      (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UBP_SolarReplayManager_C::SetReadyToRecord(bool bIsReady, TArray<class FString>& OBPlayerIDs)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SolarReplayManager_C", "SetReadyToRecord");
+
+	Params::UBP_SolarReplayManager_C_SetReadyToRecord_Params Parms{};
+
+	Parms.bIsReady = bIsReady;
+	Parms.OBPlayerIDs = OBPlayerIDs;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function BP_SolarReplayManager.BP_SolarReplayManager_C.IsReady
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -120,41 +220,67 @@ bool UBP_SolarReplayManager_C::IsReady()
 }
 
 
-// Function BP_SolarReplayManager.BP_SolarReplayManager_C.LuaOnPostLoadMapWithWorld
+// Function BP_SolarReplayManager.BP_SolarReplayManager_C.LuaBindDelegates
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class FString                      LevelName                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UBP_SolarReplayManager_C::LuaOnPostLoadMapWithWorld(const class FString& LevelName)
+void UBP_SolarReplayManager_C::LuaBindDelegates()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("BP_SolarReplayManager_C", "LuaOnPostLoadMapWithWorld");
-
-	Params::UBP_SolarReplayManager_C_LuaOnPostLoadMapWithWorld_Params Parms{};
-
-	Parms.LevelName = LevelName;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function BP_SolarReplayManager.BP_SolarReplayManager_C.OnLiveWatchTargetLost
-// (Event, Public, BlueprintEvent)
-// Parameters:
-
-void UBP_SolarReplayManager_C::OnLiveWatchTargetLost()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_SolarReplayManager_C", "OnLiveWatchTargetLost");
+		Func = Class->GetFunction("BP_SolarReplayManager_C", "LuaBindDelegates");
 
 
 
 	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function BP_SolarReplayManager.BP_SolarReplayManager_C.GetBattleIDByIndex
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// int32                              Index                                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                      ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString UBP_SolarReplayManager_C::GetBattleIDByIndex(int32 Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SolarReplayManager_C", "GetBattleIDByIndex");
+
+	Params::UBP_SolarReplayManager_C_GetBattleIDByIndex_Params Parms{};
+
+	Parms.Index = Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function BP_SolarReplayManager.BP_SolarReplayManager_C.GetStartRecordingParams
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// struct FStartRecordingParams       OutParams                                                        (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UBP_SolarReplayManager_C::GetStartRecordingParams(struct FStartRecordingParams* OutParams)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SolarReplayManager_C", "GetStartRecordingParams");
+
+	Params::UBP_SolarReplayManager_C_GetStartRecordingParams_Params Parms{};
+
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutParams != nullptr)
+		*OutParams = std::move(Parms.OutParams);
 
 }
 
@@ -187,30 +313,6 @@ bool UBP_SolarReplayManager_C::ReceivePlayingFinished(enum class EReplayPlayingF
 }
 
 
-// Function BP_SolarReplayManager.BP_SolarReplayManager_C.GetBattleIDByIndex
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// int32                              Index                                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                      ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class FString UBP_SolarReplayManager_C::GetBattleIDByIndex(int32 Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_SolarReplayManager_C", "GetBattleIDByIndex");
-
-	Params::UBP_SolarReplayManager_C_GetBattleIDByIndex_Params Parms{};
-
-	Parms.Index = Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-
-}
-
-
 // Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestWatchingLiveOfPlayer
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -232,16 +334,59 @@ void UBP_SolarReplayManager_C::RequestWatchingLiveOfPlayer(const class FString& 
 }
 
 
-// Function BP_SolarReplayManager.BP_SolarReplayManager_C.LuaBindDelegates
+// Function BP_SolarReplayManager.BP_SolarReplayManager_C.LuaOnPostLoadMapWithWorld
 // (Event, Public, BlueprintEvent)
 // Parameters:
+// class FString                      LevelName                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UBP_SolarReplayManager_C::LuaBindDelegates()
+void UBP_SolarReplayManager_C::LuaOnPostLoadMapWithWorld(const class FString& LevelName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("BP_SolarReplayManager_C", "LuaBindDelegates");
+		Func = Class->GetFunction("BP_SolarReplayManager_C", "LuaOnPostLoadMapWithWorld");
+
+	Params::UBP_SolarReplayManager_C_LuaOnPostLoadMapWithWorld_Params Parms{};
+
+	Parms.LevelName = LevelName;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function BP_SolarReplayManager.BP_SolarReplayManager_C.IsRequestingReplayDownloadInfo
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+bool UBP_SolarReplayManager_C::IsRequestingReplayDownloadInfo()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SolarReplayManager_C", "IsRequestingReplayDownloadInfo");
+
+	Params::UBP_SolarReplayManager_C_IsRequestingReplayDownloadInfo_Params Parms{};
+
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function BP_SolarReplayManager.BP_SolarReplayManager_C.OnLiveWatchTargetLost
+// (Event, Public, BlueprintEvent)
+// Parameters:
+
+void UBP_SolarReplayManager_C::OnLiveWatchTargetLost()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SolarReplayManager_C", "OnLiveWatchTargetLost");
 
 
 
@@ -273,47 +418,6 @@ void UBP_SolarReplayManager_C::RequestPlayReplay(const class FString& InBattleID
 }
 
 
-// Function BP_SolarReplayManager.BP_SolarReplayManager_C.GetStartRecordingParams
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// struct FStartRecordingParams       OutParams                                                        (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-
-void UBP_SolarReplayManager_C::GetStartRecordingParams(struct FStartRecordingParams* OutParams)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_SolarReplayManager_C", "GetStartRecordingParams");
-
-	Params::UBP_SolarReplayManager_C_GetStartRecordingParams_Params Parms{};
-
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutParams != nullptr)
-		*OutParams = std::move(Parms.OutParams);
-
-}
-
-
-// Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestCheckpointForLiveWatch
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-
-void UBP_SolarReplayManager_C::RequestCheckpointForLiveWatch()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_SolarReplayManager_C", "RequestCheckpointForLiveWatch");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function BP_SolarReplayManager.BP_SolarReplayManager_C.SetRequestTryStrategy
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -331,110 +435,6 @@ void UBP_SolarReplayManager_C::SetRequestTryStrategy(float Interval, int32 Times
 
 	Parms.Interval = Interval;
 	Parms.Times = Times;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function BP_SolarReplayManager.BP_SolarReplayManager_C.ReceivePlayingStartFailed
-// (Event, Public, BlueprintEvent)
-// Parameters:
-
-void UBP_SolarReplayManager_C::ReceivePlayingStartFailed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_SolarReplayManager_C", "ReceivePlayingStartFailed");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestPlayReplayOfCurrentBattle
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void UBP_SolarReplayManager_C::RequestPlayReplayOfCurrentBattle()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_SolarReplayManager_C", "RequestPlayReplayOfCurrentBattle");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function BP_SolarReplayManager.BP_SolarReplayManager_C.IsRequestingReplayDownloadInfo
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
-bool UBP_SolarReplayManager_C::IsRequestingReplayDownloadInfo()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_SolarReplayManager_C", "IsRequestingReplayDownloadInfo");
-
-	Params::UBP_SolarReplayManager_C_IsRequestingReplayDownloadInfo_Params Parms{};
-
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-
-}
-
-
-// Function BP_SolarReplayManager.BP_SolarReplayManager_C.SetReadyToRecord
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                               bIsReady                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-// TArray<class FString>              OBPlayerIDs                                                      (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBP_SolarReplayManager_C::SetReadyToRecord(bool bIsReady, TArray<class FString>& OBPlayerIDs)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_SolarReplayManager_C", "SetReadyToRecord");
-
-	Params::UBP_SolarReplayManager_C_SetReadyToRecord_Params Parms{};
-
-	Parms.bIsReady = bIsReady;
-	Parms.OBPlayerIDs = OBPlayerIDs;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestBattleList
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// int32                              PageIndex                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                              PageSize                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UBP_SolarReplayManager_C::RequestBattleList(int32 PageIndex, int32 PageSize)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_SolarReplayManager_C", "RequestBattleList");
-
-	Params::UBP_SolarReplayManager_C_RequestBattleList_Params Parms{};
-
-	Parms.PageIndex = PageIndex;
-	Parms.PageSize = PageSize;
 
 	UObject::ProcessEvent(Func, &Parms);
 

@@ -40,41 +40,23 @@ class UUI_Component_Emoji_List_C* UUI_Component_Emoji_List_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Component_Emoji_List.UI_Component_Emoji_List_C.OnStateChangedEvent_E42AC8CA48CF8CF4ED7F4F9EFF19338F
+// DelegateFunction UI_Component_Emoji_List.UI_Component_Emoji_List_C.OnStateChangedEvent_4654B56D42B587596A7603AF5C2D5F9A
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // int32                              InLastButtonIndex                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UUI_Component_Emoji_List_C::OnStateChangedEvent_E42AC8CA48CF8CF4ED7F4F9EFF19338F(int32 InLastButtonIndex)
+void UUI_Component_Emoji_List_C::OnStateChangedEvent_4654B56D42B587596A7603AF5C2D5F9A(int32 InLastButtonIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_Emoji_List_C", "OnStateChangedEvent_E42AC8CA48CF8CF4ED7F4F9EFF19338F");
+		Func = Class->GetFunction("UI_Component_Emoji_List_C", "OnStateChangedEvent_4654B56D42B587596A7603AF5C2D5F9A");
 
-	Params::UUI_Component_Emoji_List_C_OnStateChangedEvent_E42AC8CA48CF8CF4ED7F4F9EFF19338F_Params Parms{};
+	Params::UUI_Component_Emoji_List_C_OnStateChangedEvent_4654B56D42B587596A7603AF5C2D5F9A_Params Parms{};
 
 	Parms.InLastButtonIndex = InLastButtonIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function UI_Component_Emoji_List.UI_Component_Emoji_List_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Component_Emoji_List_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Component_Emoji_List_C", "Construct");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -89,6 +71,24 @@ void UUI_Component_Emoji_List_C::Destruct()
 
 	if (!Func)
 		Func = Class->GetFunction("UI_Component_Emoji_List_C", "Destruct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Component_Emoji_List.UI_Component_Emoji_List_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Component_Emoji_List_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_Emoji_List_C", "Construct");
 
 
 

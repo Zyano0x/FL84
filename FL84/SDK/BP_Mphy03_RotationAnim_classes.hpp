@@ -14,7 +14,7 @@ namespace SDK
 class UBP_Mphy03_RotationAnim_C : public UCameraShake
 {
 public:
-	uint8                                        Pad_1EE0[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_154[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UBP_Mphy03_RotationAnim_C* GetDefaultObj();

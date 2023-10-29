@@ -23,11 +23,11 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_Mission_Reward_C* GetDefaultObj();
 
-	void OnClicked_382AA8B344B07F258A4FCC9E9306F1C1();
-	void OnSolarUIOpened();
-	void Destruct();
-	void ConstructCopy();
+	void OnClicked_245EAA0542A40521B32E4C8A54EF799F();
 	void OnSolarUIClosed();
+	void Destruct();
+	void OnSolarUIOpened();
+	void ConstructCopy();
 	class FString GetModuleName();
 	void Construct();
 	void ExecuteUbergraph_UI_Lobby_Mission_Reward(int32 EntryPoint);

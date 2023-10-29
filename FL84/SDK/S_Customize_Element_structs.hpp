@@ -24,7 +24,7 @@ public:
 	class UWidget*                               DragWidget_32_625CBF2246B0278CD18809971563076C;    // 0x18(0x8)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                               SelectedWidget_34_8DEE1E594AE75D45FD35AAA7EBB6FF14; // 0x20(0x8)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        NoticeId_45_FD5E6E5C45B1A0B2786E3B9107BABFFA;      // 0x28(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2AE1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1DAD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UWidget*>                       SelectedHideWidgets_40_E56A7010459F7BE4121B739202DA1058; // 0x30(0x10)(Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash)
 	TArray<class UWidget*>                       SelectedShowWidgets_41_3DB1ACF94FF26528168047A9A05881A1; // 0x40(0x10)(Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash)
 	class UWidget*                               PanelDisableWidget_48_9C396A2343CA316E853BC7B06F9F2901; // 0x50(0x8)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

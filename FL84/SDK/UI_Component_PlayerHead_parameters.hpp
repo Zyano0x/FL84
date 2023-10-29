@@ -14,108 +14,109 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 
 // 0x1 (0x1 - 0x0)
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_9CCD464C435F2E9704BB3DAB0B3C962A
-struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_9CCD464C435F2E9704BB3DAB0B3C962A_Params
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_09CB3A59433C3EABCD75228610239A64
+struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_09CB3A59433C3EABCD75228610239A64_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x1 (0x1 - 0x0)
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_DC116A0D4143ED0A8C60AAB0D9A9B672
-struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_DC116A0D4143ED0A8C60AAB0D9A9B672_Params
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_BE6929F84477FD3730955E94E3D6F798
+struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_BE6929F84477FD3730955E94E3D6F798_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x1 (0x1 - 0x0)
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_F350B1B5495D29602DD00CB6E3385755
-struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_F350B1B5495D29602DD00CB6E3385755_Params
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_561B74D249A24A218A0336AA5FA489FA
+struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_561B74D249A24A218A0336AA5FA489FA_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x1 (0x1 - 0x0)
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_7E305FC846EC90DA6EAED6A6EE576468
-struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_7E305FC846EC90DA6EAED6A6EE576468_Params
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_C5C714194EBEA80E044BD694BFED3003
+struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_C5C714194EBEA80E044BD694BFED3003_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x1 (0x1 - 0x0)
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_773BC0F047B9423B83EF0C980B61708F
-struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_773BC0F047B9423B83EF0C980B61708F_Params
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_5362021B48841B10E8AF38BB3D96BC46
+struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_5362021B48841B10E8AF38BB3D96BC46_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x1 (0x1 - 0x0)
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_4661E754461B4796DB5DD0A96A3D3E41
-struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_4661E754461B4796DB5DD0A96A3D3E41_Params
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_446A171247EA75195AFAFDB1355417CA
+struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_446A171247EA75195AFAFDB1355417CA_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x1 (0x1 - 0x0)
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_7084E3D24956471E0472B38D4EE95145
-struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_7084E3D24956471E0472B38D4EE95145_Params
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_4AB30C1F496FA9C4B65E70AB14A29295
+struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_4AB30C1F496FA9C4B65E70AB14A29295_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x1 (0x1 - 0x0)
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_C89D6D2743E83C1388613F95DA35A393
-struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_C89D6D2743E83C1388613F95DA35A393_Params
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_4A98C12C44A9373E366675A7D2887871
+struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_4A98C12C44A9373E366675A7D2887871_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x1 (0x1 - 0x0)
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_672D107547EBFD217AC4EF807328C964
-struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_672D107547EBFD217AC4EF807328C964_Params
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_315D87294232BC9ADD148781380865FA
+struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_315D87294232BC9ADD148781380865FA_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x1 (0x1 - 0x0)
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_6469D46A4198782BA0F3839D3038264B
-struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_6469D46A4198782BA0F3839D3038264B_Params
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_7D9E7BC94435279380A131B96DDFBD97
+struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_7D9E7BC94435279380A131B96DDFBD97_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x1 (0x1 - 0x0)
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_1445CEB14F681FADD260F4B967D01F85
-struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_1445CEB14F681FADD260F4B967D01F85_Params
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_A7C8F1524BB3D8F068BF5AB66F40B0ED
+struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_A7C8F1524BB3D8F068BF5AB66F40B0ED_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x1 (0x1 - 0x0)
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_C8E3BC014C9EA6FBD4986CA5E89C9A9F
-struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_C8E3BC014C9EA6FBD4986CA5E89C9A9F_Params
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_830D21604113AC8AD903C4BB465FA15F
+struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_830D21604113AC8AD903C4BB465FA15F_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
-// 0x9 (0x9 - 0x0)
-// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.RefreshByPSCopy
-struct UUI_Component_PlayerHead_C_RefreshByPSCopy_Params
+// 0x8 (0x8 - 0x0)
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetVipTypeCopy
+struct UUI_Component_PlayerHead_C_SetVipTypeCopy_Params
 {
 public:
-	class ASolarPlayerState*                     Ps;                                                // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         bWithoutGender;                                    // 0x8(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        VipType;                                           // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_10E6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_Conv_ByteToInt_ReturnValue;               // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x4 (0x4 - 0x0)
@@ -132,18 +133,17 @@ struct UUI_Component_PlayerHead_C_SetAvatarCopy_Params
 {
 public:
 	int32                                        AvatarID;                                          // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_12CC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10E8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                AvatarUrl;                                         // 0x8(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
 
-// 0x8 (0x8 - 0x0)
-// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetVipTypeCopy
-struct UUI_Component_PlayerHead_C_SetVipTypeCopy_Params
+// 0x9 (0x9 - 0x0)
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.RefreshByPSCopy
+struct UUI_Component_PlayerHead_C_RefreshByPSCopy_Params
 {
 public:
-	uint8                                        VipType;                                           // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_12D1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_Conv_ByteToInt_ReturnValue;               // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASolarPlayerState*                     Ps;                                                // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         bWithoutGender;                                    // 0x8(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // 0x10 (0x10 - 0x0)
@@ -178,7 +178,7 @@ struct UUI_Component_PlayerHead_C_SetAvatarSize_Params
 public:
 	bool                                         IsCustom;                                          // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Temp_bool_Variable;                                // 0x1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_12E6[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10E9[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector2D                             Temp_struct_Variable;                              // 0x4(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                             Temp_struct_Variable_1;                            // 0xC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                             K2Node_Select_Default;                             // 0x14(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -190,7 +190,7 @@ struct UUI_Component_PlayerHead_C_SetAvatar_Params
 {
 public:
 	int32                                        AvatarID;                                          // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_12E7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10EA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                AvatarUrl;                                         // 0x8(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
 
@@ -213,7 +213,7 @@ struct UUI_Component_PlayerHead_C_SetVipType_Params
 {
 public:
 	uint8                                        VipType;                                           // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_12F5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10EB[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Conv_ByteToInt_ReturnValue;               // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -246,7 +246,7 @@ struct UUI_Component_PlayerHead_C_SetAvatarIcon_Params
 {
 public:
 	int32                                        InAvatarID;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1301[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10ED[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTexture2D*                            CallFunc_GetAvatarIconWithID_OutAvatar;            // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -268,12 +268,12 @@ public:
 	bool                                         Temp_bool_Variable_2;                              // 0xA(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  K2Node_Select_Default_1;                           // 0xB(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  K2Node_Select_Default_2;                           // 0xC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_132A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10F0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_Divide_FloatFloat_ReturnValue;            // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x14(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                             CallFunc_MakeVector2D_ReturnValue;                 // 0x1C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_132E[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10F1[0xC];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateBrush                           K2Node_MakeStruct_SlateBrush;                      // 0x30(0xE0)(None)
 };
 
@@ -289,25 +289,25 @@ public:
 	bool                                         Temp_bool_Variable_1;                              // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  Temp_byte_Variable_2;                              // 0x5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Type_Gender                     Temp_byte_Variable_3;                              // 0x6(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_136C[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10F5[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          Temp_struct_Variable;                              // 0x8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Temp_struct_Variable_1;                            // 0x18(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Temp_struct_Variable_2;                            // 0x28(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Temp_struct_Variable_3;                            // 0x38(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Type_Gender                     Temp_byte_Variable_4;                              // 0x48(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_136D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10F6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          K2Node_Select_Default;                             // 0x4C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_136E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10F7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               Temp_object_Variable;                              // 0x60(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               Temp_object_Variable_1;                            // 0x68(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               Temp_object_Variable_2;                            // 0x70(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               Temp_object_Variable_3;                            // 0x78(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Type_Gender                     Temp_byte_Variable_5;                              // 0x80(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1370[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10F8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               K2Node_Select_Default_1;                           // 0x88(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable_6;                              // 0x90(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  K2Node_Select_Default_2;                           // 0x91(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1371[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10F9[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UOverlaySlot*                          CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x98(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Divide_FloatFloat_ReturnValue;            // 0xA0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0xA4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -338,7 +338,7 @@ public:
 	enum class E_Type_Social                     Temp_byte_Variable_2;                              // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable_3;                              // 0x5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Type_Social                     Temp_byte_Variable_4;                              // 0x6(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1380[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10FB[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               Temp_object_Variable;                              // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               Temp_object_Variable_1;                            // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               Temp_object_Variable_2;                            // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -351,7 +351,7 @@ public:
 	struct FMargin                               K2Node_MakeStruct_Margin;                          // 0x40(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  K2Node_Select_Default_1;                           // 0x50(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  K2Node_Select_Default_2;                           // 0x51(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1381[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10FC[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UOverlaySlot*                          CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x58(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -386,18 +386,18 @@ public:
 	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0x12(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  K2Node_Select_Default_1;                           // 0x13(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_IsDesignTime;                         // 0x14(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_138D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10FD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_Divide_FloatFloat_ReturnValue;            // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x1C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Add_FloatFloat_ReturnValue;               // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  K2Node_Select_Default_2;                           // 0x24(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  K2Node_Select_Default_3;                           // 0x25(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_138E[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10FE[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UOverlaySlot*                          CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x28(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x30(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x34(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  K2Node_Select_Default_4;                           // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1390[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10FF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x3C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Multiply_FloatFloat_ReturnValue_3;        // 0x40(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Multiply_FloatFloat_ReturnValue_4;        // 0x44(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

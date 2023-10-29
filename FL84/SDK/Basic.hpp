@@ -80,12 +80,12 @@ namespace SDK
 
 	public:
 
-		TArray()
+		inline TArray()
 			:NumElements(0), MaxElements(0), Data(nullptr)
 		{
 		}
 
-		TArray(int32 Size)
+		inline TArray(int32 Size)
 			: NumElements(0), MaxElements(Size), Data(reinterpret_cast<T*>(malloc(sizeof(T)* Size)))
 		{
 		}
@@ -189,17 +189,43 @@ namespace SDK
 		FNameEntryHeader                                           Header;                                                  // 0x0000(0x0000)
 		union
 		{
-			char                                                      AnsiName[1024];                                          // 0x0000(0x0000)
-			wchar_t                                                   WideName[1024];                                          // 0x0000(0x0000)
+			char                                                   AnsiName[1024];                                          // 0x0000(0x0000)
+			wchar_t                                                WideName[1024];                                          // 0x0000(0x0000)
 		};
 
 	public:
-		int32 GetLength() const;
-		bool IsWide() const;
-		int32 GetId() const;
-		std::string GetAnsiName() const;
-		std::wstring GetWideName() const;
-		std::string GetName() const;
+		inline int32 GetLength() const
+		{
+			return Header.Len;
+		}
+
+		inline bool IsWide() const
+		{
+			return Header.bIsWide;
+		}
+
+		inline int32 GetId() const
+		{
+			throw std::exception("This game doesn't use 'FNAME_POOL_WITH_CASE_PRESERVING_NAME' so 'ComparisonId' not stored in 'FNameEntry'");
+		}
+
+		inline std::string GetAnsiName() const
+		{
+			uint32_t len = GetLength();
+			if (len > 1024) return "[Error: Overflow]";
+			return std::string((const char*)AnsiName, len);
+		}
+
+		inline std::wstring GetWideName() const
+		{
+			uint32_t len = GetLength();
+			return std::wstring((const wchar_t*)WideName, len);
+		}
+
+		inline std::string GetName() const
+		{
+			return GetAnsiName();
+		}
 	};
 
 	class FNameEntryAllocator
@@ -214,25 +240,110 @@ namespace SDK
 		uint8* Blocks[8192];                                            // 0x0000(0x0000)
 
 	public:
-		int32 NumBlocks() const;
-		FNameEntry* GetById(int32 key) const;
-		bool IsValidIndex(int32 key) const;
-		bool IsValidIndex(int32 key, uint32 block, uint16 offset) const;
+		inline int32 NumBlocks() const
+		{
+			return CurrentBlock + 1;
+		}
+
+		inline FNameEntry* GetById(int32 key) const
+		{
+			int block = key >> 16;
+			int offset = (uint16_t)key;
+			if (!IsValidIndex(key, block, offset))
+				return reinterpret_cast<FNameEntry*>(Blocks[0] + 0); // "None"
+			return reinterpret_cast<FNameEntry*>(Blocks[block] + ((uint64_t)offset * Stride));
+		}
+
+		inline bool IsValidIndex(int32 key) const
+		{
+			uint32_t block = key >> 16;
+			uint16_t offset = key;
+			return IsValidIndex(key, block, offset);
+		}
+
+		inline bool IsValidIndex(int32 key, uint32 block, uint16 offset) const
+		{
+			return (key >= 0 && block < static_cast<uint32_t>(NumBlocks()) && offset * Stride < MaxOffset);
+		}
 	};
 
 	class FNamePool
 	{
 	public:
-		FNameEntryAllocator                                        Allocator;                                               // 0x0000(0x0000)
+		FNameEntryAllocator                                      Allocator;                                               // 0x0000(0x0000)
 		int32                                                    AnsiCount;                                               // 0x0000(0x0000)
 		int32                                                    WideCount;                                               // 0x0000(0x0000)
 
 	public:
-		FNameEntry* GetNext(uintptr_t& nextFNameAddress, uint32* comparisonId) const;
-		int32 Count() const;
-		bool IsValidIndex(int32 index) const;
-		FNameEntry* GetById(int32 id) const;
-		FNameEntry* operator[](int32 id) const;
+		inline FNameEntry* GetNext(uintptr_t& nextFNameAddress, uint32* comparisonId) const
+		{
+			static int lastBlock = 0;
+			if (!nextFNameAddress)
+			{
+				lastBlock = 0;
+				nextFNameAddress = reinterpret_cast<uintptr_t>(Allocator.Blocks[0]);
+			}
+		RePlay:
+			int32_t nextFNameComparisonId = MAKELONG((uint16_t)((nextFNameAddress - reinterpret_cast<uintptr_t>(Allocator.Blocks[lastBlock])) / 2), (uint16_t)lastBlock);
+			int32_t block = nextFNameComparisonId >> 16;
+			int32_t offset = (uint16_t)nextFNameComparisonId;
+			int32_t offsetFromBlock = static_cast<int32_t>(nextFNameAddress - reinterpret_cast<uintptr_t>(Allocator.Blocks[lastBlock]));
+
+			// Get entry information
+			const uintptr_t entryOffset = nextFNameAddress;
+			const int toAdd = 0x00 + 0x02; // HeaderOffset + HeaderSize
+			const uint16_t nameHeader = *reinterpret_cast<uint16_t*>(entryOffset);
+			int nameLength = nameHeader >> 6;
+			bool isWide = (nameHeader & 1) != 0;
+			if (isWide)
+				nameLength += nameLength;
+
+			// if odd number (odd numbers are aligned with 0x00)
+			if (!isWide && nameLength % 2 != 0)
+				nameLength += 1;
+
+			// Block end ?
+			if (offsetFromBlock + toAdd + (nameLength * 2) >= 0xFFFF * FNameEntryAllocator::Stride || nameHeader == 0x00 || block == Allocator.CurrentBlock && offset >= Allocator.CurrentByteCursor)
+			{
+				nextFNameAddress = reinterpret_cast<uintptr_t>(Allocator.Blocks[++lastBlock]);
+				goto RePlay;
+			}
+
+			// We hit last Name in last Block
+			if (lastBlock > Allocator.CurrentBlock)
+				return nullptr;
+
+			// Get next name address
+			nextFNameAddress = entryOffset + toAdd + nameLength;
+
+			// Get name
+			FNameEntry* ret = Allocator.GetById(nextFNameComparisonId);
+
+			if (comparisonId)
+				*comparisonId = nextFNameComparisonId;
+
+			return ret;
+		}
+
+		inline int32 Count() const
+		{
+			return AnsiCount;
+		}
+
+		inline bool IsValidIndex(int32 index) const
+		{
+			return Allocator.IsValidIndex(static_cast<int32_t>(index));
+		}
+
+		inline FNameEntry* GetById(int32 id) const
+		{
+			return Allocator.GetById(id);
+		}
+		
+		inline FNameEntry* operator[](int32 id) const
+		{
+			return GetById(id);
+		}
 	};
 
 	class FName
@@ -245,18 +356,176 @@ namespace SDK
 		int32 ComparisonIndex;
 		int32 Number;
 
-		FName();
-		FName(int32 i);
-		FName(const char* nameToFind);
-		FName(const wchar_t* nameToFind);
-		void InitGNames();
-		int32 GetDisplayIndex() const;
-		std::string GetRawString() const;
-		std::string ToString() const;
-		static FNamePool& GetGlobalNames();
-		std::string GetNameA() const;
-		std::wstring GetNameW() const;
-		std::string GetName() const;
+		inline FName()
+		{
+			ComparisonIndex = 0;
+			Number = 0;
+		}
+
+		inline FName(int32 i)
+		{
+			ComparisonIndex = i;
+			Number = 0;
+		}
+
+		inline FName(const char* nameToFind)
+		{
+			Number = 0;
+			static std::unordered_set<int> cache;
+			for (auto i : cache)
+			{
+				if (GetGlobalNames()[i]->GetAnsiName() == nameToFind)
+				{
+					ComparisonIndex = i;
+#ifdef FNAME_POOL_WITH_CASE_PRESERVING_NAME
+					DisplayIndex = i;
+#endif
+					return;
+				}
+			}
+
+#ifdef FNAME_POOL
+			uintptr_t lastFNameAddress = NULL;
+			uint32_t curComparisonId = 0;
+			for (FNameEntry* name = GetGlobalNames().GetNext(lastFNameAddress, &curComparisonId); name != nullptr; name = GetGlobalNames().GetNext(lastFNameAddress, &curComparisonId))
+			{
+				if (name->GetAnsiName() == nameToFind)
+				{
+					cache.insert(curComparisonId);
+					ComparisonIndex = curComparisonId;
+#ifdef FNAME_POOL_WITH_CASE_PRESERVING_NAME
+					DisplayIndex = curComparisonId;
+#endif
+					return;
+				}
+			}
+#else
+			for (int32_t i = 0; i < GetGlobalNames().Count(); ++i)
+			{
+				if (GetGlobalNames()[i]->GetAnsiName() == nameToFind)
+				{
+					cache.insert(i);
+					ComparisonIndex = i;
+					return;
+				}
+			}
+#endif
+		}
+
+		inline FName(const wchar_t* nameToFind)
+		{
+			Number = 0;
+			static std::unordered_set<int> cache;
+			for (auto i : cache)
+			{
+				if (GetGlobalNames()[i]->GetWideName() == nameToFind)
+				{
+					ComparisonIndex = i;
+#ifdef FNAME_POOL_WITH_CASE_PRESERVING_NAME
+					DisplayIndex = i;
+#endif
+					return;
+				}
+			}
+
+#ifdef FNAME_POOL
+			uintptr_t lastFNameAddress = NULL;
+			uint32_t curComparisonId = 0;
+			for (FNameEntry* name = GetGlobalNames().GetNext(lastFNameAddress, &curComparisonId); name != nullptr; name = GetGlobalNames().GetNext(lastFNameAddress, &curComparisonId))
+			{
+				if (name->GetWideName() == nameToFind)
+				{
+					cache.insert(curComparisonId);
+					ComparisonIndex = curComparisonId;
+#ifdef FNAME_POOL_WITH_CASE_PRESERVING_NAME
+					DisplayIndex = curComparisonId;
+#endif
+					return;
+				}
+			}
+#else
+			for (int32_t i = 0; i < GetGlobalNames().Count(); ++i)
+			{
+				if (GetGlobalNames()[i]->GetWideName() == nameToFind)
+				{
+					cache.insert(i);
+					ComparisonIndex = i;
+					return;
+				}
+			}
+#endif
+		}
+
+		// GetDisplayIndex - returns the Id of the string depending on the configuration [default: ComparisonIndex, WITH_CASE_PRESERVING_NAME: DisplayIndex]
+		inline int32 GetDisplayIndex() const
+		{
+			return ComparisonIndex;
+		}
+
+		// GetRawString - returns an unedited string as the engine uses it
+		inline std::string GetRawString() const
+		{
+			thread_local FString TempString(1024);
+			static void(*AppendString)(const FName*, FString&) = nullptr;
+
+			if (!AppendString)
+				AppendString = reinterpret_cast<void(*)(const FName*, FString&)>(uintptr_t(GetModuleHandle(0)) + Offsets::AppendString);
+
+			AppendString(this, TempString);
+
+			std::string OutputString = TempString.ToString();
+			TempString.ResetNum();
+
+			return OutputString;
+		}
+
+		static inline void InitGNames()
+		{
+			GNames = reinterpret_cast<FNamePool*>(uint64(GetModuleHandle(0)) + Offsets::GNames);
+		}
+
+		// ToString - returns an edited string as it's used by most SDKs ["/Script/CoreUObject" -> "CoreUObject"]
+		inline std::string ToString() const
+		{
+			std::string OutputString = GetRawString();
+
+			size_t pos = OutputString.rfind('/');
+
+			if (pos == std::string::npos)
+				return OutputString;
+
+			return OutputString.substr(pos + 1);
+		}
+
+		static inline FNamePool& GetGlobalNames()
+		{
+			return *GNames;
+		}
+
+		inline std::string GetNameA() const
+		{
+			return GetGlobalNames()[ComparisonIndex]->GetAnsiName();
+		}
+
+		inline std::wstring GetNameW() const
+		{
+			return GetGlobalNames()[ComparisonIndex]->GetWideName();
+		}
+
+		inline std::string GetName() const
+		{
+			return GetNameA();
+		}
+
+		inline bool operator==(const FName& Other) const
+		{
+			return ComparisonIndex == Other.ComparisonIndex && Number == Other.Number;
+		}
+
+		inline bool operator!=(const FName& Other) const
+		{
+			return ComparisonIndex != Other.ComparisonIndex || Number != Other.Number;
+		}
 	};
 
 	template<typename ClassType>
@@ -654,7 +923,7 @@ namespace SDK
 		uint64                                       Id;                                                // (0x08[0x08]) NOT AUTO-GENERATED PROPERTY
 		uint64                                       CastFlags;                                         // (0x10[0x08]) NOT AUTO-GENERATED PROPERTY
 		EClassFlags                                  ClassFlags;                                        // (0x18[0x04]) NOT AUTO-GENERATED PROPERTY
-		uint8                                        Pad_39E8[0x4];                                     // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+		uint8                                        Pad_39F8[0x4];                                     // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 		FFieldClass* SuperClass;                                        // (0x20[0x08]) NOT AUTO-GENERATED PROPERTY
 	};
 #ifdef _MSC_VER
@@ -704,10 +973,10 @@ namespace SDK
 	class FProperty : public FField
 	{
 	public:
-		uint8                                        Pad_39E9[0x8];                                     // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+		uint8                                        Pad_39F9[0x8];                                     // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 		int32                                        ElementSize;                                       // (0x3C[0x04]) NOT AUTO-GENERATED PROPERTY
 		uint64                                       PropertyFlags;                                     // (0x40[0x08]) NOT AUTO-GENERATED PROPERTY
-		uint8                                        Pad_39EA[0x4];                                     // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+		uint8                                        Pad_39FA[0x4];                                     // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 		int32                                        Offset;                                            // (0x4C[0x04]) NOT AUTO-GENERATED PROPERTY
 	};
 #ifdef _MSC_VER
@@ -722,7 +991,7 @@ namespace SDK
 	class FByteProperty : public FProperty
 	{
 	public:
-		uint8                                        Pad_39EB[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+		uint8                                        Pad_39FB[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 		class UEnum* Enum;                                              // (0x78[0x08]) NOT AUTO-GENERATED PROPERTY
 	};
 #ifdef _MSC_VER
@@ -737,7 +1006,7 @@ namespace SDK
 	class FBoolProperty : public FProperty
 	{
 	public:
-		uint8                                        Pad_39EC[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+		uint8                                        Pad_39FC[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 		uint8                                        FieldSize;                                         // (0x78[0x01]) NOT AUTO-GENERATED PROPERTY
 		uint8                                        ByteOffset;                                        // (0x79[0x01]) NOT AUTO-GENERATED PROPERTY
 		uint8                                        ByteMask;                                          // (0x7A[0x01]) NOT AUTO-GENERATED PROPERTY
@@ -755,7 +1024,7 @@ namespace SDK
 	class FObjectPropertyBase : public FProperty
 	{
 	public:
-		uint8                                        Pad_39ED[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+		uint8                                        Pad_39FD[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 		class UClass* PropertyClass;                                     // (0x78[0x08]) NOT AUTO-GENERATED PROPERTY
 	};
 #ifdef _MSC_VER
@@ -784,7 +1053,7 @@ namespace SDK
 	class FStructProperty : public FProperty
 	{
 	public:
-		uint8                                        Pad_39EE[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+		uint8                                        Pad_39FE[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 		class UStruct* Struct;                                            // (0x78[0x08]) NOT AUTO-GENERATED PROPERTY
 	};
 #ifdef _MSC_VER
@@ -799,7 +1068,7 @@ namespace SDK
 	class FArrayProperty : public FProperty
 	{
 	public:
-		uint8                                        Pad_39EF[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+		uint8                                        Pad_39FF[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 		class FProperty* InnerProperty;                                     // (0x78[0x08]) NOT AUTO-GENERATED PROPERTY
 	};
 #ifdef _MSC_VER
@@ -814,7 +1083,7 @@ namespace SDK
 	class FMapProperty : public FProperty
 	{
 	public:
-		uint8                                        Pad_39F0[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+		uint8                                        Pad_3A00[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 		class FProperty* KeyProperty;                                       // (0x78[0x08]) NOT AUTO-GENERATED PROPERTY
 		class FProperty* ValueProperty;                                     // (0x80[0x08]) NOT AUTO-GENERATED PROPERTY
 	};
@@ -830,7 +1099,7 @@ namespace SDK
 	class FSetProperty : public FProperty
 	{
 	public:
-		uint8                                        Pad_39F1[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+		uint8                                        Pad_3A01[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 		class FProperty* ElementProperty;                                   // (0x78[0x08]) NOT AUTO-GENERATED PROPERTY
 	};
 #ifdef _MSC_VER
@@ -845,7 +1114,7 @@ namespace SDK
 	class FEnumProperty : public FProperty
 	{
 	public:
-		uint8                                        Pad_39F2[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+		uint8                                        Pad_3A02[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 		class FProperty* UnderlayingProperty;                               // (0x78[0x08]) NOT AUTO-GENERATED PROPERTY
 		class UEnum* Enum;                                              // (0x80[0x08]) NOT AUTO-GENERATED PROPERTY
 	};

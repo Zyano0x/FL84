@@ -40,16 +40,16 @@ class UUI_Currency_Bar_C* UUI_Currency_Bar_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_CC36E6404D36617B843D8DA2E2234449
+// DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_5879825E4A6513E326A49A985BEAC8A4
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Currency_Bar_C::OnClicked_CC36E6404D36617B843D8DA2E2234449()
+void UUI_Currency_Bar_C::OnClicked_5879825E4A6513E326A49A985BEAC8A4()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Currency_Bar_C", "OnClicked_CC36E6404D36617B843D8DA2E2234449");
+		Func = Class->GetFunction("UI_Currency_Bar_C", "OnClicked_5879825E4A6513E326A49A985BEAC8A4");
 
 
 
@@ -58,16 +58,16 @@ void UUI_Currency_Bar_C::OnClicked_CC36E6404D36617B843D8DA2E2234449()
 }
 
 
-// DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_F0ECA147405A4BF1D9F7F78D98F2CDDD
+// DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_1BACDF474E0CAD2E95F5F4B99A908487
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Currency_Bar_C::OnClicked_F0ECA147405A4BF1D9F7F78D98F2CDDD()
+void UUI_Currency_Bar_C::OnClicked_1BACDF474E0CAD2E95F5F4B99A908487()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Currency_Bar_C", "OnClicked_F0ECA147405A4BF1D9F7F78D98F2CDDD");
+		Func = Class->GetFunction("UI_Currency_Bar_C", "OnClicked_1BACDF474E0CAD2E95F5F4B99A908487");
 
 
 
@@ -76,16 +76,16 @@ void UUI_Currency_Bar_C::OnClicked_F0ECA147405A4BF1D9F7F78D98F2CDDD()
 }
 
 
-// DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_41FFF16243B38FC9EDF1DEA8B5369447
+// DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_22052A484DEF91EC2E9A36A30DAA2631
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Currency_Bar_C::OnClicked_41FFF16243B38FC9EDF1DEA8B5369447()
+void UUI_Currency_Bar_C::OnClicked_22052A484DEF91EC2E9A36A30DAA2631()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Currency_Bar_C", "OnClicked_41FFF16243B38FC9EDF1DEA8B5369447");
+		Func = Class->GetFunction("UI_Currency_Bar_C", "OnClicked_22052A484DEF91EC2E9A36A30DAA2631");
 
 
 
@@ -94,20 +94,44 @@ void UUI_Currency_Bar_C::OnClicked_41FFF16243B38FC9EDF1DEA8B5369447()
 }
 
 
-// DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_BA56EF8C43F17E66C5413C9E8AD03BE1
+// DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_2B3C6AE445D1644BDE45CD85C0491DC8
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Currency_Bar_C::OnClicked_BA56EF8C43F17E66C5413C9E8AD03BE1()
+void UUI_Currency_Bar_C::OnClicked_2B3C6AE445D1644BDE45CD85C0491DC8()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Currency_Bar_C", "OnClicked_BA56EF8C43F17E66C5413C9E8AD03BE1");
+		Func = Class->GetFunction("UI_Currency_Bar_C", "OnClicked_2B3C6AE445D1644BDE45CD85C0491DC8");
 
 
 
 	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Currency_Bar.UI_Currency_Bar_C.OnSolarUIClosed
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UUI_Currency_Bar_C::OnSolarUIClosed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Currency_Bar_C", "OnSolarUIClosed");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -150,30 +174,6 @@ void UUI_Currency_Bar_C::Construct()
 
 
 	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function UI_Currency_Bar.UI_Currency_Bar_C.OnSolarUIClosed
-// (Native, Event, Protected, BlueprintEvent)
-// Parameters:
-
-void UUI_Currency_Bar_C::OnSolarUIClosed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Currency_Bar_C", "OnSolarUIClosed");
-
-
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-
-	Func->FunctionFlags = Flgs;
 
 }
 

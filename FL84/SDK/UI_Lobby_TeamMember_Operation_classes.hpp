@@ -42,17 +42,17 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_TeamMember_Operation_C* GetDefaultObj();
 
-	void OnClicked_A9E1376242A753A5F07EC58BD7B97917();
-	void OnClicked_015BE1F2463E4ADC0FDA4A89351FB895();
-	void OnClicked_A7C7081D46D906E1035AD2BC4F848389();
-	void OnClicked_316731CF45618C76E76ED3999588F3AF();
-	void OnClicked_B07615FF4D80F7B2FB33D2998E1BC2BE();
-	void OnClicked_BCC8EE9A4FD967AD4A855780CA6B5545();
-	void OnClicked_BD3DDDA64CA0EFE0B03F3EABC138602A();
-	void OnClicked_209A333945A7C1CE81E7FB8F4B5AFA35();
+	void OnClicked_4F8268374F9447AB1B8FB4A5822649B5();
+	void OnClicked_06E35EFF4C90E96B6474D194C942A007();
+	void OnClicked_86F8634C43F8650B64C386BA5B4A7332();
+	void OnClicked_A003F1D840E7DF5CB2F2D9BF0544D859();
+	void OnClicked_2425ABCA49F13C2E8DA749BCC2CB8867();
+	void OnClicked_306208A042DD99D0FFE962B742216888();
+	void OnClicked_43326617405FDE365A73DFA008A692D1();
+	void OnClicked_AF1649D041ECD0DF87713BA1B8C8FFBA();
+	void OnInitialized();
 	void Destruct();
 	void ConstructCopy();
-	void OnInitialized();
 	class FString GetModuleName();
 	void SetHD(bool IsHD, float NewLocalVar_0, bool Temp_bool_Variable, float Temp_float_Variable, float Temp_float_Variable_1, float K2Node_Select_Default, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin);
 	void SetStateQuitHD(enum class E_Type_State_Desktop StateQuitHD, enum class E_Type_State_Desktop Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility K2Node_Select_Default);

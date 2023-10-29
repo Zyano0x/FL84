@@ -58,10 +58,10 @@ public:
 	TArray<class FName>                          UsedBoneNames;                                     // 0xE8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<int32>                                UsedBoneIndices;                                   // 0xF8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ReferenceBoneIndex;                                // 0x108(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FC8[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_11D8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClothingAssetCustomData*              CustomData;                                        // 0x110(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FClothConfig_Legacy                   ClothConfig;                                       // 0x118(0xD4)(Deprecated, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FC9[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_11D9[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UClothingAssetCommon* GetDefaultObj();
@@ -76,7 +76,7 @@ public:
 	class UClothPhysicalMeshDataBase_Legacy*     PhysicalMeshData;                                  // 0x28(0x8)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FClothPhysicalMeshData                ClothPhysicalMeshData;                             // 0x30(0xF8)(NativeAccessSpecifierPublic)
 	struct FClothCollisionData                   CollisionData;                                     // 0x128(0x40)(NativeAccessSpecifierPublic)
-	uint8                                        Pad_FCA[0x20];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_11DB[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UClothLODDataCommon_Legacy* GetDefaultObj();

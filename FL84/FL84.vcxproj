@@ -190,6 +190,7 @@
     <ClInclude Include="RapidXML\rapidxml_print.hpp" />
     <ClInclude Include="RapidXML\rapidxml_utils.hpp" />
     <ClInclude Include="RapidXML\rapidxml_wrap.hpp" />
+    <ClInclude Include="Encryption\SysCall.h" />
     <ClInclude Include="SDK.hpp" />
     <ClInclude Include="Thunk.hpp" />
     <ClInclude Include="XXX.h" />
@@ -233,6 +234,7 @@
   </ItemGroup>
   <ItemGroup>
     <MASM Include="Encryption\SpoofCall.asm" />
+    <MASM Include="Encryption\NtUserSendInput.asm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -40,16 +40,16 @@ class UUI_Lobby_RedPacket_C* UUI_Lobby_RedPacket_C::GetDefaultObj()
 }
 
 
-// Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnClicked_D48740D1452E41F88FC37EAE15204FAF
+// Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnClicked_EE0BF61F4DFCD41098A07299FDD1276C
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
-void UUI_Lobby_RedPacket_C::OnClicked_D48740D1452E41F88FC37EAE15204FAF()
+void UUI_Lobby_RedPacket_C::OnClicked_EE0BF61F4DFCD41098A07299FDD1276C()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_RedPacket_C", "OnClicked_D48740D1452E41F88FC37EAE15204FAF");
+		Func = Class->GetFunction("UI_Lobby_RedPacket_C", "OnClicked_EE0BF61F4DFCD41098A07299FDD1276C");
 
 
 
@@ -72,6 +72,30 @@ void UUI_Lobby_RedPacket_C::Destruct()
 
 
 	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnSolarUIClosed
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_RedPacket_C::OnSolarUIClosed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_RedPacket_C", "OnSolarUIClosed");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -114,30 +138,6 @@ void UUI_Lobby_RedPacket_C::Construct()
 
 
 	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnSolarUIClosed
-// (Native, Event, Protected, BlueprintEvent)
-// Parameters:
-
-void UUI_Lobby_RedPacket_C::OnSolarUIClosed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_RedPacket_C", "OnSolarUIClosed");
-
-
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-
-	Func->FunctionFlags = Flgs;
 
 }
 

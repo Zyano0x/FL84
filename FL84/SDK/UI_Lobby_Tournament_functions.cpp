@@ -40,16 +40,16 @@ class UUI_Lobby_Tournament_C* UUI_Lobby_Tournament_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Lobby_Tournament.UI_Lobby_Tournament_C.OnClicked_E23CBCF7496F8A2A07A81D84FEF8A49E
+// DelegateFunction UI_Lobby_Tournament.UI_Lobby_Tournament_C.OnClicked_7DCF8BCE438E3B703FCE98BEC0EA6672
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_Tournament_C::OnClicked_E23CBCF7496F8A2A07A81D84FEF8A49E()
+void UUI_Lobby_Tournament_C::OnClicked_7DCF8BCE438E3B703FCE98BEC0EA6672()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Tournament_C", "OnClicked_E23CBCF7496F8A2A07A81D84FEF8A49E");
+		Func = Class->GetFunction("UI_Lobby_Tournament_C", "OnClicked_7DCF8BCE438E3B703FCE98BEC0EA6672");
 
 
 
@@ -76,24 +76,6 @@ void UUI_Lobby_Tournament_C::Destruct()
 }
 
 
-// Function UI_Lobby_Tournament.UI_Lobby_Tournament_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Lobby_Tournament_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Tournament_C", "Construct");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function UI_Lobby_Tournament.UI_Lobby_Tournament_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -104,6 +86,24 @@ void UUI_Lobby_Tournament_C::OnInitialized()
 
 	if (!Func)
 		Func = Class->GetFunction("UI_Lobby_Tournament_C", "OnInitialized");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_Tournament.UI_Lobby_Tournament_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_Tournament_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Tournament_C", "Construct");
 
 
 

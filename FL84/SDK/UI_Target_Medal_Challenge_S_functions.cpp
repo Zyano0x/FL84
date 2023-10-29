@@ -40,24 +40,6 @@ class UUI_Target_Medal_Challenge_S_C* UUI_Target_Medal_Challenge_S_C::GetDefault
 }
 
 
-// Function UI_Target_Medal_Challenge_S.UI_Target_Medal_Challenge_S_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Target_Medal_Challenge_S_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Target_Medal_Challenge_S_C", "Construct");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function UI_Target_Medal_Challenge_S.UI_Target_Medal_Challenge_S_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -68,6 +50,24 @@ void UUI_Target_Medal_Challenge_S_C::Destruct()
 
 	if (!Func)
 		Func = Class->GetFunction("UI_Target_Medal_Challenge_S_C", "Destruct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Target_Medal_Challenge_S.UI_Target_Medal_Challenge_S_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Target_Medal_Challenge_S_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Target_Medal_Challenge_S_C", "Construct");
 
 
 

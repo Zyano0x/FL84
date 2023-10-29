@@ -23,7 +23,7 @@ public:
 	int32                                        MaxBulletForDebug;                                 // 0x51C(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FProgressBarStyle                     NewVar_0;                                          // 0x520(0x2B0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         IsMaxAmmoChanged;                                  // 0x7D0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_1FE7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2207[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UWidget*>                       DivisorWidgetArray;                                // 0x7D8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();

@@ -51,7 +51,7 @@ struct AEnvironment_Lighting_C_ExecuteUbergraph_Environment_Lighting_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2BBD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_283D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                K2Node_CustomEvent_SceneName;                      // 0x8(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	float                                        K2Node_CustomEvent_Indensity;                      // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

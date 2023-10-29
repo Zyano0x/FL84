@@ -19,9 +19,9 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_Mention_Container_C* GetDefaultObj();
 
-	void OnInitialized();
-	void OnSolarUIOpened();
 	void OnSolarUIClosed();
+	void OnSolarUIOpened();
+	void OnInitialized();
 	class FString GetModuleName();
 };
 

@@ -40,6 +40,45 @@ class UUI_Rank_Icon_Small_C* UUI_Rank_Icon_Small_C::GetDefaultObj()
 }
 
 
+// Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.FormatViewJustIconCopy
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                              LevelID                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUI_Rank_Icon_Small_C::FormatViewJustIconCopy(int32 LevelID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Rank_Icon_Small_C", "FormatViewJustIconCopy");
+
+	Params::UUI_Rank_Icon_Small_C_FormatViewJustIconCopy_Params Parms{};
+
+	Parms.LevelID = LevelID;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Rank_Icon_Small_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Rank_Icon_Small_C", "OnInitialized");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnSolarUIClosed
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
@@ -105,45 +144,6 @@ void UUI_Rank_Icon_Small_C::FormatViewCopy(int32 LevelID)
 	Parms.LevelID = LevelID;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.FormatViewJustIconCopy
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                              LevelID                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UUI_Rank_Icon_Small_C::FormatViewJustIconCopy(int32 LevelID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Rank_Icon_Small_C", "FormatViewJustIconCopy");
-
-	Params::UUI_Rank_Icon_Small_C_FormatViewJustIconCopy_Params Parms{};
-
-	Parms.LevelID = LevelID;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Rank_Icon_Small_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Rank_Icon_Small_C", "OnInitialized");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
 
 }
 

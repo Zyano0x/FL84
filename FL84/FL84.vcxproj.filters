@@ -153,6 +153,9 @@
     <ClInclude Include="Memory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Encryption\SysCall.h">
+      <Filter>Encryption</Filter>
+    </ClInclude>
     <ClInclude Include="SDK.hpp">
       <Filter>SDK</Filter>
     </ClInclude>
@@ -221,10 +224,10 @@
     <ClCompile Include="Memory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\CoreUObject_functions.cpp">
+    <ClCompile Include="SDK\Basic.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\Basic.cpp">
+    <ClCompile Include="SDK\CoreUObject_functions.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\Engine_functions.cpp">
@@ -241,6 +244,9 @@
   </ItemGroup>
   <ItemGroup>
     <MASM Include="Encryption\SpoofCall.asm">
+      <Filter>Encryption</Filter>
+    </MASM>
+    <MASM Include="Encryption\NtUserSendInput.asm">
       <Filter>Encryption</Filter>
     </MASM>
   </ItemGroup>

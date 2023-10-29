@@ -1,4 +1,5 @@
 #include "pch.h"
+#include "Encryption/SysCall.h"
 
 namespace Aimbot
 {
@@ -148,6 +149,7 @@ namespace Aimbot
 
 				if (TargetX != 0 && TargetY != 0)
 					mouse_event(MOUSEEVENTF_MOVE, static_cast<DWORD>(OutTarget.X), static_cast<DWORD>(OutTarget.Y), NULL, NULL);
+					//SysCall::Send_Mouse_Input(MOUSEEVENTF_MOVE, static_cast<DWORD>(OutTarget.X), static_cast<DWORD>(OutTarget.Y), NULL, NULL);
 			}
 		}
 		else

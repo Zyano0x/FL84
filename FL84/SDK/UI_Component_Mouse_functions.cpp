@@ -58,24 +58,6 @@ void UUI_Component_Mouse_C::Destruct()
 }
 
 
-// Function UI_Component_Mouse.UI_Component_Mouse_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Component_Mouse_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Component_Mouse_C", "Construct");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function UI_Component_Mouse.UI_Component_Mouse_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -86,6 +68,24 @@ void UUI_Component_Mouse_C::OnInitialized()
 
 	if (!Func)
 		Func = Class->GetFunction("UI_Component_Mouse_C", "OnInitialized");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Component_Mouse.UI_Component_Mouse_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Component_Mouse_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_Mouse_C", "Construct");
 
 
 

@@ -22,8 +22,8 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Target_Medal_Challenge_S_C* GetDefaultObj();
 
-	void Construct();
 	void Destruct();
+	void Construct();
 	class FString GetModuleName();
 	void SetStateIsLocked(bool IsLock, bool Temp_bool_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, const struct FLinearColor& K2Node_Select_Default);
 	void PreConstruct(bool IsDesignTime);

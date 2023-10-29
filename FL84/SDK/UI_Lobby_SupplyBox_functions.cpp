@@ -40,34 +40,16 @@ class UUI_Lobby_SupplyBox_C* UUI_Lobby_SupplyBox_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Lobby_SupplyBox.UI_Lobby_SupplyBox_C.OnClicked_988C839B4995EDBE299AD3989D12F81F
+// DelegateFunction UI_Lobby_SupplyBox.UI_Lobby_SupplyBox_C.OnClicked_50C57C2A4F19841ABD7828BC8E4B90AD
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_SupplyBox_C::OnClicked_988C839B4995EDBE299AD3989D12F81F()
+void UUI_Lobby_SupplyBox_C::OnClicked_50C57C2A4F19841ABD7828BC8E4B90AD()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_SupplyBox_C", "OnClicked_988C839B4995EDBE299AD3989D12F81F");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function UI_Lobby_SupplyBox.UI_Lobby_SupplyBox_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Lobby_SupplyBox_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_SupplyBox_C", "Destruct");
+		Func = Class->GetFunction("UI_Lobby_SupplyBox_C", "OnClicked_50C57C2A4F19841ABD7828BC8E4B90AD");
 
 
 
@@ -86,6 +68,24 @@ void UUI_Lobby_SupplyBox_C::Construct()
 
 	if (!Func)
 		Func = Class->GetFunction("UI_Lobby_SupplyBox_C", "Construct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_SupplyBox.UI_Lobby_SupplyBox_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_SupplyBox_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_SupplyBox_C", "Destruct");
 
 
 

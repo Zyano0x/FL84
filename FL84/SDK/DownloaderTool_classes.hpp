@@ -17,7 +17,7 @@ public:
 	FMulticastInlineDelegateProperty_            OnTaskProgress;                                    // 0x28(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnTaskSuccess;                                     // 0x38(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnTaskFailed;                                      // 0x48(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_58C[0x70];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_63E[0x70];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UDownloaderHttpTask* GetDefaultObj();

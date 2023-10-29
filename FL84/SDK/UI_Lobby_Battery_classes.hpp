@@ -17,7 +17,7 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x260(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UImage*                                Img_Charging;                                      // 0x268(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UProgressBar*                          ProgressBar_Battery;                               // 0x270(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	uint8                                        Pad_171E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2787[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateBrush                           ProgressBarBgImage;                                // 0x280(0xE0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateBrush                           ProgressBarMarqueeImage;                           // 0x360(0xE0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateBrush                           ProgressBarFillNormal;                             // 0x440(0xE0)(Edit, BlueprintVisible, DisableEditOnInstance)

@@ -17,7 +17,7 @@ public:
 	FMulticastInlineDelegateProperty_            OnDownloadComplete;                                // 0x28(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnDownloadProgress;                                // 0x38(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnDownloadFailed;                                  // 0x48(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_12BE[0x70];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_169C[0x70];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UDownloadFileTask* GetDefaultObj();
@@ -35,7 +35,7 @@ public:
 class USolarlandResUpdater : public UObject
 {
 public:
-	uint8                                        Pad_12BF[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_169E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FDelegateProperty_                           OnPatchPrompt;                                     // 0x30(0x10)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, NativeAccessSpecifierPublic)
 	FDelegateProperty_                           OnPatchComplete;                                   // 0x40(0x10)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, NativeAccessSpecifierPublic)
 	FDelegateProperty_                           OnPatchFailed;                                     // 0x50(0x10)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, NativeAccessSpecifierPublic)

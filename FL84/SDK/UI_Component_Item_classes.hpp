@@ -46,7 +46,7 @@ public:
 	class UUI_Component_Item_VoiceSlot_C*        UI_Component_Item_VideoSlot;                       // 0x4E8(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                              Unlock;                                            // 0x4F0(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	enum class E_Type_Item                       ItemState;                                         // 0x4F8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2C50[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_29[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        __;                                                // 0x4FC(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Item_Quality                    Quality;                                           // 0x500(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Select;                                            // 0x501(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -55,16 +55,16 @@ public:
 	bool                                         Puzzle;                                            // 0x504(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Equiped;                                           // 0x505(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         RedHint;                                           // 0x506(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2C51[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2B[0x1];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Txt_Size;                                          // 0x508(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         NoQuality;                                         // 0x50C(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	static class UClass* StaticClass();
 	static class UUI_Component_Item_C* GetDefaultObj();
 
+	void BP_OnItemSelectionChangedCopy(bool bIsSelected);
 	void OnListItemObjectSetCopy(class UObject* ListItemObject);
 	void PlayEnterAnim();
-	void BP_OnItemSelectionChangedCopy(bool bIsSelected);
 	class FString GetModuleName();
 	void BP_OnEntryReleased();
 	void BP_OnItemExpansionChanged(bool bIsExpanded);

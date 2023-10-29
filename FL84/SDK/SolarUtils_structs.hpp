@@ -19,7 +19,7 @@ namespace SDK
 struct FSolarAggregationTickFunction : public FTickFunction
 {
 public:
-	uint8                                        Pad_AEC[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C23[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

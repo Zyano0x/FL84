@@ -34,7 +34,7 @@ public:
 	class USizeBox*                              Size_Vip;                                          // 0x488(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UUI_Vip_Icon_Type_C*                   UI_Vip;                                            // 0x490(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         ShowBusinessCardBtn;                               // 0x498(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_1397[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1100[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnClicked;                                         // 0x4A0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            OnReleased;                                        // 0x4B0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         IsNonuseFrame;                                     // 0x4C0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -42,7 +42,7 @@ public:
 	enum class E_Type_Social                     Social;                                            // 0x4C2(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         GenderOn;                                          // 0x4C3(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class E_Type_Gender                     Gender;                                            // 0x4C4(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_139A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1101[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Size;                                              // 0x4C8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Vip;                                               // 0x4CC(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class E_TabLobbyItemState               StateHD;                                           // 0x4CD(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -51,39 +51,39 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Component_PlayerHead_C* GetDefaultObj();
 
-	void OnURLDownloadFinish_9CCD464C435F2E9704BB3DAB0B3C962A(bool bSuccess);
-	void OnClicked_3F56B5CF49E0F073DCBEDDA49AB232E0();
-	void OnURLDownloadFinish_DC116A0D4143ED0A8C60AAB0D9A9B672(bool bSuccess);
-	void OnClicked_15DAE2214B808962D70939975EFBDF0B();
-	void OnURLDownloadFinish_F350B1B5495D29602DD00CB6E3385755(bool bSuccess);
-	void OnClicked_1A82CD4B447672DE5A02A884C5C776DF();
-	void OnURLDownloadFinish_7E305FC846EC90DA6EAED6A6EE576468(bool bSuccess);
-	void OnClicked_EB5BAD8D433DB9BB9D8CF5BA327F27A1();
-	void OnURLDownloadFinish_773BC0F047B9423B83EF0C980B61708F(bool bSuccess);
-	void OnClicked_2B61C5C647E2CDCBD02F369AC7617A9F();
-	void OnURLDownloadFinish_4661E754461B4796DB5DD0A96A3D3E41(bool bSuccess);
-	void OnClicked_D47E828F40FEC563A9D54D9E09DE9B6F();
-	void OnURLDownloadFinish_7084E3D24956471E0472B38D4EE95145(bool bSuccess);
-	void OnClicked_2E3AA8214D0178D8BC22BF94F222A562();
-	void OnURLDownloadFinish_C89D6D2743E83C1388613F95DA35A393(bool bSuccess);
-	void OnClicked_007FF82C459127F56B195CA92C9DEA63();
-	void OnURLDownloadFinish_672D107547EBFD217AC4EF807328C964(bool bSuccess);
-	void OnClicked_D21F6B0B42321562B4F97598CCD30C4D();
-	void OnURLDownloadFinish_6469D46A4198782BA0F3839D3038264B(bool bSuccess);
-	void OnClicked_7F5B273D4DF69BF783A9CD87AFD0DE8D();
-	void OnURLDownloadFinish_1445CEB14F681FADD260F4B967D01F85(bool bSuccess);
-	void OnClicked_CEA121B9456A37CD90E8CCA68D0D7A0B();
-	void OnURLDownloadFinish_C8E3BC014C9EA6FBD4986CA5E89C9A9F(bool bSuccess);
-	void OnClicked_D9BEE10A436706675DAFD79B843D0C36();
-	void RefreshByPSCopy(class ASolarPlayerState* Ps, bool bWithoutGender);
-	void OnSolarUIOpened();
-	void OnInitialized();
+	void OnURLDownloadFinish_09CB3A59433C3EABCD75228610239A64(bool bSuccess);
+	void OnClicked_ADF504FE454B9D66EE50E084BD8BEAAD();
+	void OnURLDownloadFinish_BE6929F84477FD3730955E94E3D6F798(bool bSuccess);
+	void OnClicked_82B2CB65408A0519B14C6FBB18691947();
+	void OnURLDownloadFinish_561B74D249A24A218A0336AA5FA489FA(bool bSuccess);
+	void OnClicked_4D9925BA45202E6FA49C64BB84BD3E90();
+	void OnURLDownloadFinish_C5C714194EBEA80E044BD694BFED3003(bool bSuccess);
+	void OnClicked_CEC598D74A5621E91118E4BCD9BAA400();
+	void OnURLDownloadFinish_5362021B48841B10E8AF38BB3D96BC46(bool bSuccess);
+	void OnClicked_8B36ECEC4D615D7DE1021E9A21B810CC();
+	void OnURLDownloadFinish_446A171247EA75195AFAFDB1355417CA(bool bSuccess);
+	void OnClicked_7201186E4B60A373A5D61C878D0BE040();
+	void OnURLDownloadFinish_4AB30C1F496FA9C4B65E70AB14A29295(bool bSuccess);
+	void OnClicked_8E28BA6F4169250A6611609E7795FF06();
+	void OnURLDownloadFinish_4A98C12C44A9373E366675A7D2887871(bool bSuccess);
+	void OnClicked_3ED9FDFC4C7F2B6235A3E8B8EDBDF760();
+	void OnURLDownloadFinish_315D87294232BC9ADD148781380865FA(bool bSuccess);
+	void OnClicked_CA3EDE0B435A58D60188E9A83D63D20A();
+	void OnURLDownloadFinish_7D9E7BC94435279380A131B96DDFBD97(bool bSuccess);
+	void OnClicked_A53551694E512C065375FAAE143D1335();
+	void OnURLDownloadFinish_A7C8F1524BB3D8F068BF5AB66F40B0ED(bool bSuccess);
+	void OnClicked_27F510AF4D099D2B687E18A7BB100D46();
+	void OnURLDownloadFinish_830D21604113AC8AD903C4BB465FA15F(bool bSuccess);
+	void OnClicked_38F91928491697C2F68025B38D842DD4();
+	void SetVipTypeCopy(uint8 VipType, int32 CallFunc_Conv_ByteToInt_ReturnValue);
+	void ConstructCopy();
 	void ForceShowFrameCopy(int32 FrameID);
 	void SetAvatarCopy(int32 AvatarID, const class FString& AvatarUrl);
-	void Destruct();
-	void ConstructCopy();
+	void OnInitialized();
 	void OnSolarUIClosed();
-	void SetVipTypeCopy(uint8 VipType, int32 CallFunc_Conv_ByteToInt_ReturnValue);
+	void OnSolarUIOpened();
+	void Destruct();
+	void RefreshByPSCopy(class ASolarPlayerState* Ps, bool bWithoutGender);
 	class FString GetModuleName();
 	void ForceShowFrame(int32 FrameID);
 	void RefreshByPS(class ASolarPlayerState* Ps, bool bWithoutGender);

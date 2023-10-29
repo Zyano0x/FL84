@@ -40,16 +40,16 @@ class UUI_Vip_Cards_C* UUI_Vip_Cards_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_A6E31EF34EF877385F839D8E38BCB7A6
+// DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_0068C3A04119DEF7A2952BB779D98216
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Vip_Cards_C::OnClicked_A6E31EF34EF877385F839D8E38BCB7A6()
+void UUI_Vip_Cards_C::OnClicked_0068C3A04119DEF7A2952BB779D98216()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Vip_Cards_C", "OnClicked_A6E31EF34EF877385F839D8E38BCB7A6");
+		Func = Class->GetFunction("UI_Vip_Cards_C", "OnClicked_0068C3A04119DEF7A2952BB779D98216");
 
 
 
@@ -58,16 +58,16 @@ void UUI_Vip_Cards_C::OnClicked_A6E31EF34EF877385F839D8E38BCB7A6()
 }
 
 
-// DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_0B09B94F47F3EF87E3F98BB04A02F0CD
+// DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_F06C90DB4C608BC781A36AA6B1150BF0
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Vip_Cards_C::OnClicked_0B09B94F47F3EF87E3F98BB04A02F0CD()
+void UUI_Vip_Cards_C::OnClicked_F06C90DB4C608BC781A36AA6B1150BF0()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Vip_Cards_C", "OnClicked_0B09B94F47F3EF87E3F98BB04A02F0CD");
+		Func = Class->GetFunction("UI_Vip_Cards_C", "OnClicked_F06C90DB4C608BC781A36AA6B1150BF0");
 
 
 

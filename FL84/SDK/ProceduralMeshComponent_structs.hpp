@@ -29,7 +29,7 @@ struct FProcMeshTangent
 public:
 	struct FVector                               TangentX;                                          // 0x0(0xC)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bFlipTangentY;                                     // 0xC(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_853[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_84E[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x4C (0x4C - 0x0)
@@ -57,7 +57,7 @@ public:
 	struct FBox                                  SectionLocalBox;                                   // 0x20(0x1C)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         bEnableCollision;                                  // 0x3C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bSectionVisible;                                   // 0x3D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_854[0x2];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_850[0x2];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

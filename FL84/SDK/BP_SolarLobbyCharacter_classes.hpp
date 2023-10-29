@@ -20,9 +20,9 @@ public:
 	static class UClass* StaticClass();
 	static class ABP_SolarLobbyCharacter_C* GetDefaultObj();
 
-	bool IsCanOpenMirror();
 	void ClearCharacterByLua();
 	void InitCharacterByLua();
+	bool IsCanOpenMirror();
 	bool IsCanOpenChangeAnim();
 	class FString GetModuleName();
 	void ReceiveBeginPlay();

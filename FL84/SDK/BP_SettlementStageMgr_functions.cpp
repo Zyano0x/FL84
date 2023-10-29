@@ -40,42 +40,6 @@ class UBP_SettlementStageMgr_C* UBP_SettlementStageMgr_C::GetDefaultObj()
 }
 
 
-// Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.ShowNextStage
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void UBP_SettlementStageMgr_C::ShowNextStage()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_SettlementStageMgr_C", "ShowNextStage");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.SkipToTarget
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void UBP_SettlementStageMgr_C::SkipToTarget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_SettlementStageMgr_C", "SkipToTarget");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.Init
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -94,16 +58,16 @@ void UBP_SettlementStageMgr_C::Init()
 }
 
 
-// Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.ShowDiePage
+// Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.ShowNextStage
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
-void UBP_SettlementStageMgr_C::ShowDiePage()
+void UBP_SettlementStageMgr_C::ShowNextStage()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("BP_SettlementStageMgr_C", "ShowDiePage");
+		Func = Class->GetFunction("BP_SettlementStageMgr_C", "ShowNextStage");
 
 
 
@@ -146,6 +110,42 @@ void UBP_SettlementStageMgr_C::CloseDiePage()
 
 	if (!Func)
 		Func = Class->GetFunction("BP_SettlementStageMgr_C", "CloseDiePage");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.ShowDiePage
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UBP_SettlementStageMgr_C::ShowDiePage()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SettlementStageMgr_C", "ShowDiePage");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.SkipToTarget
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UBP_SettlementStageMgr_C::SkipToTarget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SettlementStageMgr_C", "SkipToTarget");
 
 
 

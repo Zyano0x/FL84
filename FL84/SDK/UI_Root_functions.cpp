@@ -40,24 +40,6 @@ class UUI_Root_C* UUI_Root_C::GetDefaultObj()
 }
 
 
-// Function UI_Root.UI_Root_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Root_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Root_C", "Construct");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function UI_Root.UI_Root_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -68,6 +50,24 @@ void UUI_Root_C::OnInitialized()
 
 	if (!Func)
 		Func = Class->GetFunction("UI_Root_C", "OnInitialized");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Root.UI_Root_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Root_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Root_C", "Construct");
 
 
 

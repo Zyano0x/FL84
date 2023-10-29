@@ -40,19 +40,19 @@ class UUI_Component_PlayerHead_C* UUI_Component_PlayerHead_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_9CCD464C435F2E9704BB3DAB0B3C962A
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_09CB3A59433C3EABCD75228610239A64
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
-void UUI_Component_PlayerHead_C::OnURLDownloadFinish_9CCD464C435F2E9704BB3DAB0B3C962A(bool bSuccess)
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_09CB3A59433C3EABCD75228610239A64(bool bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_9CCD464C435F2E9704BB3DAB0B3C962A");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_09CB3A59433C3EABCD75228610239A64");
 
-	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_9CCD464C435F2E9704BB3DAB0B3C962A_Params Parms{};
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_09CB3A59433C3EABCD75228610239A64_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 
@@ -61,16 +61,16 @@ void UUI_Component_PlayerHead_C::OnURLDownloadFinish_9CCD464C435F2E9704BB3DAB0B3
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_3F56B5CF49E0F073DCBEDDA49AB232E0
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_ADF504FE454B9D66EE50E084BD8BEAAD
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Component_PlayerHead_C::OnClicked_3F56B5CF49E0F073DCBEDDA49AB232E0()
+void UUI_Component_PlayerHead_C::OnClicked_ADF504FE454B9D66EE50E084BD8BEAAD()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_3F56B5CF49E0F073DCBEDDA49AB232E0");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_ADF504FE454B9D66EE50E084BD8BEAAD");
 
 
 
@@ -79,19 +79,19 @@ void UUI_Component_PlayerHead_C::OnClicked_3F56B5CF49E0F073DCBEDDA49AB232E0()
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_DC116A0D4143ED0A8C60AAB0D9A9B672
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_BE6929F84477FD3730955E94E3D6F798
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
-void UUI_Component_PlayerHead_C::OnURLDownloadFinish_DC116A0D4143ED0A8C60AAB0D9A9B672(bool bSuccess)
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_BE6929F84477FD3730955E94E3D6F798(bool bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_DC116A0D4143ED0A8C60AAB0D9A9B672");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_BE6929F84477FD3730955E94E3D6F798");
 
-	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_DC116A0D4143ED0A8C60AAB0D9A9B672_Params Parms{};
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_BE6929F84477FD3730955E94E3D6F798_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 
@@ -100,16 +100,16 @@ void UUI_Component_PlayerHead_C::OnURLDownloadFinish_DC116A0D4143ED0A8C60AAB0D9A
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_15DAE2214B808962D70939975EFBDF0B
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_82B2CB65408A0519B14C6FBB18691947
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Component_PlayerHead_C::OnClicked_15DAE2214B808962D70939975EFBDF0B()
+void UUI_Component_PlayerHead_C::OnClicked_82B2CB65408A0519B14C6FBB18691947()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_15DAE2214B808962D70939975EFBDF0B");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_82B2CB65408A0519B14C6FBB18691947");
 
 
 
@@ -118,19 +118,19 @@ void UUI_Component_PlayerHead_C::OnClicked_15DAE2214B808962D70939975EFBDF0B()
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_F350B1B5495D29602DD00CB6E3385755
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_561B74D249A24A218A0336AA5FA489FA
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
-void UUI_Component_PlayerHead_C::OnURLDownloadFinish_F350B1B5495D29602DD00CB6E3385755(bool bSuccess)
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_561B74D249A24A218A0336AA5FA489FA(bool bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_F350B1B5495D29602DD00CB6E3385755");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_561B74D249A24A218A0336AA5FA489FA");
 
-	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_F350B1B5495D29602DD00CB6E3385755_Params Parms{};
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_561B74D249A24A218A0336AA5FA489FA_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 
@@ -139,16 +139,16 @@ void UUI_Component_PlayerHead_C::OnURLDownloadFinish_F350B1B5495D29602DD00CB6E33
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_1A82CD4B447672DE5A02A884C5C776DF
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_4D9925BA45202E6FA49C64BB84BD3E90
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Component_PlayerHead_C::OnClicked_1A82CD4B447672DE5A02A884C5C776DF()
+void UUI_Component_PlayerHead_C::OnClicked_4D9925BA45202E6FA49C64BB84BD3E90()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_1A82CD4B447672DE5A02A884C5C776DF");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_4D9925BA45202E6FA49C64BB84BD3E90");
 
 
 
@@ -157,19 +157,19 @@ void UUI_Component_PlayerHead_C::OnClicked_1A82CD4B447672DE5A02A884C5C776DF()
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_7E305FC846EC90DA6EAED6A6EE576468
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_C5C714194EBEA80E044BD694BFED3003
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
-void UUI_Component_PlayerHead_C::OnURLDownloadFinish_7E305FC846EC90DA6EAED6A6EE576468(bool bSuccess)
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_C5C714194EBEA80E044BD694BFED3003(bool bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_7E305FC846EC90DA6EAED6A6EE576468");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_C5C714194EBEA80E044BD694BFED3003");
 
-	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_7E305FC846EC90DA6EAED6A6EE576468_Params Parms{};
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_C5C714194EBEA80E044BD694BFED3003_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 
@@ -178,16 +178,16 @@ void UUI_Component_PlayerHead_C::OnURLDownloadFinish_7E305FC846EC90DA6EAED6A6EE5
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_EB5BAD8D433DB9BB9D8CF5BA327F27A1
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_CEC598D74A5621E91118E4BCD9BAA400
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Component_PlayerHead_C::OnClicked_EB5BAD8D433DB9BB9D8CF5BA327F27A1()
+void UUI_Component_PlayerHead_C::OnClicked_CEC598D74A5621E91118E4BCD9BAA400()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_EB5BAD8D433DB9BB9D8CF5BA327F27A1");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_CEC598D74A5621E91118E4BCD9BAA400");
 
 
 
@@ -196,19 +196,19 @@ void UUI_Component_PlayerHead_C::OnClicked_EB5BAD8D433DB9BB9D8CF5BA327F27A1()
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_773BC0F047B9423B83EF0C980B61708F
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_5362021B48841B10E8AF38BB3D96BC46
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
-void UUI_Component_PlayerHead_C::OnURLDownloadFinish_773BC0F047B9423B83EF0C980B61708F(bool bSuccess)
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_5362021B48841B10E8AF38BB3D96BC46(bool bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_773BC0F047B9423B83EF0C980B61708F");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_5362021B48841B10E8AF38BB3D96BC46");
 
-	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_773BC0F047B9423B83EF0C980B61708F_Params Parms{};
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_5362021B48841B10E8AF38BB3D96BC46_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 
@@ -217,16 +217,16 @@ void UUI_Component_PlayerHead_C::OnURLDownloadFinish_773BC0F047B9423B83EF0C980B6
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_2B61C5C647E2CDCBD02F369AC7617A9F
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_8B36ECEC4D615D7DE1021E9A21B810CC
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Component_PlayerHead_C::OnClicked_2B61C5C647E2CDCBD02F369AC7617A9F()
+void UUI_Component_PlayerHead_C::OnClicked_8B36ECEC4D615D7DE1021E9A21B810CC()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_2B61C5C647E2CDCBD02F369AC7617A9F");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_8B36ECEC4D615D7DE1021E9A21B810CC");
 
 
 
@@ -235,19 +235,19 @@ void UUI_Component_PlayerHead_C::OnClicked_2B61C5C647E2CDCBD02F369AC7617A9F()
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_4661E754461B4796DB5DD0A96A3D3E41
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_446A171247EA75195AFAFDB1355417CA
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
-void UUI_Component_PlayerHead_C::OnURLDownloadFinish_4661E754461B4796DB5DD0A96A3D3E41(bool bSuccess)
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_446A171247EA75195AFAFDB1355417CA(bool bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_4661E754461B4796DB5DD0A96A3D3E41");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_446A171247EA75195AFAFDB1355417CA");
 
-	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_4661E754461B4796DB5DD0A96A3D3E41_Params Parms{};
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_446A171247EA75195AFAFDB1355417CA_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 
@@ -256,16 +256,16 @@ void UUI_Component_PlayerHead_C::OnURLDownloadFinish_4661E754461B4796DB5DD0A96A3
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_D47E828F40FEC563A9D54D9E09DE9B6F
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_7201186E4B60A373A5D61C878D0BE040
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Component_PlayerHead_C::OnClicked_D47E828F40FEC563A9D54D9E09DE9B6F()
+void UUI_Component_PlayerHead_C::OnClicked_7201186E4B60A373A5D61C878D0BE040()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_D47E828F40FEC563A9D54D9E09DE9B6F");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_7201186E4B60A373A5D61C878D0BE040");
 
 
 
@@ -274,19 +274,19 @@ void UUI_Component_PlayerHead_C::OnClicked_D47E828F40FEC563A9D54D9E09DE9B6F()
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_7084E3D24956471E0472B38D4EE95145
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_4AB30C1F496FA9C4B65E70AB14A29295
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
-void UUI_Component_PlayerHead_C::OnURLDownloadFinish_7084E3D24956471E0472B38D4EE95145(bool bSuccess)
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_4AB30C1F496FA9C4B65E70AB14A29295(bool bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_7084E3D24956471E0472B38D4EE95145");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_4AB30C1F496FA9C4B65E70AB14A29295");
 
-	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_7084E3D24956471E0472B38D4EE95145_Params Parms{};
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_4AB30C1F496FA9C4B65E70AB14A29295_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 
@@ -295,16 +295,16 @@ void UUI_Component_PlayerHead_C::OnURLDownloadFinish_7084E3D24956471E0472B38D4EE
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_2E3AA8214D0178D8BC22BF94F222A562
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_8E28BA6F4169250A6611609E7795FF06
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Component_PlayerHead_C::OnClicked_2E3AA8214D0178D8BC22BF94F222A562()
+void UUI_Component_PlayerHead_C::OnClicked_8E28BA6F4169250A6611609E7795FF06()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_2E3AA8214D0178D8BC22BF94F222A562");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_8E28BA6F4169250A6611609E7795FF06");
 
 
 
@@ -313,19 +313,19 @@ void UUI_Component_PlayerHead_C::OnClicked_2E3AA8214D0178D8BC22BF94F222A562()
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_C89D6D2743E83C1388613F95DA35A393
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_4A98C12C44A9373E366675A7D2887871
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
-void UUI_Component_PlayerHead_C::OnURLDownloadFinish_C89D6D2743E83C1388613F95DA35A393(bool bSuccess)
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_4A98C12C44A9373E366675A7D2887871(bool bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_C89D6D2743E83C1388613F95DA35A393");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_4A98C12C44A9373E366675A7D2887871");
 
-	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_C89D6D2743E83C1388613F95DA35A393_Params Parms{};
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_4A98C12C44A9373E366675A7D2887871_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 
@@ -334,16 +334,16 @@ void UUI_Component_PlayerHead_C::OnURLDownloadFinish_C89D6D2743E83C1388613F95DA3
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_007FF82C459127F56B195CA92C9DEA63
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_3ED9FDFC4C7F2B6235A3E8B8EDBDF760
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Component_PlayerHead_C::OnClicked_007FF82C459127F56B195CA92C9DEA63()
+void UUI_Component_PlayerHead_C::OnClicked_3ED9FDFC4C7F2B6235A3E8B8EDBDF760()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_007FF82C459127F56B195CA92C9DEA63");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_3ED9FDFC4C7F2B6235A3E8B8EDBDF760");
 
 
 
@@ -352,19 +352,19 @@ void UUI_Component_PlayerHead_C::OnClicked_007FF82C459127F56B195CA92C9DEA63()
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_672D107547EBFD217AC4EF807328C964
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_315D87294232BC9ADD148781380865FA
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
-void UUI_Component_PlayerHead_C::OnURLDownloadFinish_672D107547EBFD217AC4EF807328C964(bool bSuccess)
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_315D87294232BC9ADD148781380865FA(bool bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_672D107547EBFD217AC4EF807328C964");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_315D87294232BC9ADD148781380865FA");
 
-	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_672D107547EBFD217AC4EF807328C964_Params Parms{};
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_315D87294232BC9ADD148781380865FA_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 
@@ -373,16 +373,16 @@ void UUI_Component_PlayerHead_C::OnURLDownloadFinish_672D107547EBFD217AC4EF80732
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_D21F6B0B42321562B4F97598CCD30C4D
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_CA3EDE0B435A58D60188E9A83D63D20A
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Component_PlayerHead_C::OnClicked_D21F6B0B42321562B4F97598CCD30C4D()
+void UUI_Component_PlayerHead_C::OnClicked_CA3EDE0B435A58D60188E9A83D63D20A()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_D21F6B0B42321562B4F97598CCD30C4D");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_CA3EDE0B435A58D60188E9A83D63D20A");
 
 
 
@@ -391,19 +391,19 @@ void UUI_Component_PlayerHead_C::OnClicked_D21F6B0B42321562B4F97598CCD30C4D()
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_6469D46A4198782BA0F3839D3038264B
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_7D9E7BC94435279380A131B96DDFBD97
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
-void UUI_Component_PlayerHead_C::OnURLDownloadFinish_6469D46A4198782BA0F3839D3038264B(bool bSuccess)
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_7D9E7BC94435279380A131B96DDFBD97(bool bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_6469D46A4198782BA0F3839D3038264B");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_7D9E7BC94435279380A131B96DDFBD97");
 
-	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_6469D46A4198782BA0F3839D3038264B_Params Parms{};
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_7D9E7BC94435279380A131B96DDFBD97_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 
@@ -412,16 +412,16 @@ void UUI_Component_PlayerHead_C::OnURLDownloadFinish_6469D46A4198782BA0F3839D303
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_7F5B273D4DF69BF783A9CD87AFD0DE8D
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_A53551694E512C065375FAAE143D1335
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Component_PlayerHead_C::OnClicked_7F5B273D4DF69BF783A9CD87AFD0DE8D()
+void UUI_Component_PlayerHead_C::OnClicked_A53551694E512C065375FAAE143D1335()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_7F5B273D4DF69BF783A9CD87AFD0DE8D");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_A53551694E512C065375FAAE143D1335");
 
 
 
@@ -430,19 +430,19 @@ void UUI_Component_PlayerHead_C::OnClicked_7F5B273D4DF69BF783A9CD87AFD0DE8D()
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_1445CEB14F681FADD260F4B967D01F85
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_A7C8F1524BB3D8F068BF5AB66F40B0ED
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
-void UUI_Component_PlayerHead_C::OnURLDownloadFinish_1445CEB14F681FADD260F4B967D01F85(bool bSuccess)
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_A7C8F1524BB3D8F068BF5AB66F40B0ED(bool bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_1445CEB14F681FADD260F4B967D01F85");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_A7C8F1524BB3D8F068BF5AB66F40B0ED");
 
-	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_1445CEB14F681FADD260F4B967D01F85_Params Parms{};
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_A7C8F1524BB3D8F068BF5AB66F40B0ED_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 
@@ -451,16 +451,16 @@ void UUI_Component_PlayerHead_C::OnURLDownloadFinish_1445CEB14F681FADD260F4B967D
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_CEA121B9456A37CD90E8CCA68D0D7A0B
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_27F510AF4D099D2B687E18A7BB100D46
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Component_PlayerHead_C::OnClicked_CEA121B9456A37CD90E8CCA68D0D7A0B()
+void UUI_Component_PlayerHead_C::OnClicked_27F510AF4D099D2B687E18A7BB100D46()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_CEA121B9456A37CD90E8CCA68D0D7A0B");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_27F510AF4D099D2B687E18A7BB100D46");
 
 
 
@@ -469,19 +469,19 @@ void UUI_Component_PlayerHead_C::OnClicked_CEA121B9456A37CD90E8CCA68D0D7A0B()
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_C8E3BC014C9EA6FBD4986CA5E89C9A9F
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_830D21604113AC8AD903C4BB465FA15F
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
-void UUI_Component_PlayerHead_C::OnURLDownloadFinish_C8E3BC014C9EA6FBD4986CA5E89C9A9F(bool bSuccess)
+void UUI_Component_PlayerHead_C::OnURLDownloadFinish_830D21604113AC8AD903C4BB465FA15F(bool bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_C8E3BC014C9EA6FBD4986CA5E89C9A9F");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnURLDownloadFinish_830D21604113AC8AD903C4BB465FA15F");
 
-	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_C8E3BC014C9EA6FBD4986CA5E89C9A9F_Params Parms{};
+	Params::UUI_Component_PlayerHead_C_OnURLDownloadFinish_830D21604113AC8AD903C4BB465FA15F_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 
@@ -490,16 +490,16 @@ void UUI_Component_PlayerHead_C::OnURLDownloadFinish_C8E3BC014C9EA6FBD4986CA5E89
 }
 
 
-// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_D9BEE10A436706675DAFD79B843D0C36
+// DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_38F91928491697C2F68025B38D842DD4
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Component_PlayerHead_C::OnClicked_D9BEE10A436706675DAFD79B843D0C36()
+void UUI_Component_PlayerHead_C::OnClicked_38F91928491697C2F68025B38D842DD4()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_D9BEE10A436706675DAFD79B843D0C36");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnClicked_38F91928491697C2F68025B38D842DD4");
 
 
 
@@ -508,63 +508,39 @@ void UUI_Component_PlayerHead_C::OnClicked_D9BEE10A436706675DAFD79B843D0C36()
 }
 
 
-// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.RefreshByPSCopy
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetVipTypeCopy
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ASolarPlayerState*           Ps                                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               bWithoutGender                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// uint8                              VipType                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Conv_ByteToInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUI_Component_PlayerHead_C::RefreshByPSCopy(class ASolarPlayerState* Ps, bool bWithoutGender)
+void UUI_Component_PlayerHead_C::SetVipTypeCopy(uint8 VipType, int32 CallFunc_Conv_ByteToInt_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "RefreshByPSCopy");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "SetVipTypeCopy");
 
-	Params::UUI_Component_PlayerHead_C_RefreshByPSCopy_Params Parms{};
+	Params::UUI_Component_PlayerHead_C_SetVipTypeCopy_Params Parms{};
 
-	Parms.Ps = Ps;
-	Parms.bWithoutGender = bWithoutGender;
+	Parms.VipType = VipType;
+	Parms.CallFunc_Conv_ByteToInt_ReturnValue = CallFunc_Conv_ByteToInt_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnSolarUIOpened
-// (Native, Event, Protected, BlueprintEvent)
-// Parameters:
-
-void UUI_Component_PlayerHead_C::OnSolarUIOpened()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnSolarUIOpened");
-
-
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-
-	Func->FunctionFlags = Flgs;
-
-}
-
-
-// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnInitialized
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.ConstructCopy
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
-void UUI_Component_PlayerHead_C::OnInitialized()
+void UUI_Component_PlayerHead_C::ConstructCopy()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnInitialized");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "ConstructCopy");
 
 
 
@@ -617,34 +593,16 @@ void UUI_Component_PlayerHead_C::SetAvatarCopy(int32 AvatarID, const class FStri
 }
 
 
-// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.Destruct
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
-void UUI_Component_PlayerHead_C::Destruct()
+void UUI_Component_PlayerHead_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "Destruct");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.ConstructCopy
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Component_PlayerHead_C::ConstructCopy()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "ConstructCopy");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnInitialized");
 
 
 
@@ -677,23 +635,65 @@ void UUI_Component_PlayerHead_C::OnSolarUIClosed()
 }
 
 
-// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetVipTypeCopy
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnSolarUIOpened
+// (Native, Event, Protected, BlueprintEvent)
 // Parameters:
-// uint8                              VipType                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Conv_ByteToInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UUI_Component_PlayerHead_C::SetVipTypeCopy(uint8 VipType, int32 CallFunc_Conv_ByteToInt_ReturnValue)
+void UUI_Component_PlayerHead_C::OnSolarUIOpened()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_PlayerHead_C", "SetVipTypeCopy");
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "OnSolarUIOpened");
 
-	Params::UUI_Component_PlayerHead_C_SetVipTypeCopy_Params Parms{};
 
-	Parms.VipType = VipType;
-	Parms.CallFunc_Conv_ByteToInt_ReturnValue = CallFunc_Conv_ByteToInt_ReturnValue;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Component_PlayerHead_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "Destruct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.RefreshByPSCopy
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASolarPlayerState*           Ps                                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               bWithoutGender                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UUI_Component_PlayerHead_C::RefreshByPSCopy(class ASolarPlayerState* Ps, bool bWithoutGender)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_PlayerHead_C", "RefreshByPSCopy");
+
+	Params::UUI_Component_PlayerHead_C_RefreshByPSCopy_Params Parms{};
+
+	Parms.Ps = Ps;
+	Parms.bWithoutGender = bWithoutGender;
 
 	UObject::ProcessEvent(Func, &Parms);
 

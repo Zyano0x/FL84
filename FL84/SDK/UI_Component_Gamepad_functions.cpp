@@ -58,24 +58,6 @@ void UUI_Component_Gamepad_C::Destruct()
 }
 
 
-// Function UI_Component_Gamepad.UI_Component_Gamepad_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Component_Gamepad_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Component_Gamepad_C", "Construct");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function UI_Component_Gamepad.UI_Component_Gamepad_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -86,6 +68,24 @@ void UUI_Component_Gamepad_C::OnInitialized()
 
 	if (!Func)
 		Func = Class->GetFunction("UI_Component_Gamepad_C", "OnInitialized");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Component_Gamepad.UI_Component_Gamepad_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Component_Gamepad_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_Gamepad_C", "Construct");
 
 
 

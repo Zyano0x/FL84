@@ -40,16 +40,16 @@ class UUI_Lobby_Profession_C* UUI_Lobby_Profession_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_7FB65594453B87356E57AB88D99C80F8
+// DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_A9C5EFB04FC9F2A9FE0107BCF768794B
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_Profession_C::OnClicked_7FB65594453B87356E57AB88D99C80F8()
+void UUI_Lobby_Profession_C::OnClicked_A9C5EFB04FC9F2A9FE0107BCF768794B()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Profession_C", "OnClicked_7FB65594453B87356E57AB88D99C80F8");
+		Func = Class->GetFunction("UI_Lobby_Profession_C", "OnClicked_A9C5EFB04FC9F2A9FE0107BCF768794B");
 
 
 
@@ -58,16 +58,16 @@ void UUI_Lobby_Profession_C::OnClicked_7FB65594453B87356E57AB88D99C80F8()
 }
 
 
-// DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_0A98355D417A47B5B16D37A0933FF1CA
+// DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_F0B4507C491A70AE2E06BFB376BD5F8C
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_Profession_C::OnClicked_0A98355D417A47B5B16D37A0933FF1CA()
+void UUI_Lobby_Profession_C::OnClicked_F0B4507C491A70AE2E06BFB376BD5F8C()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Profession_C", "OnClicked_0A98355D417A47B5B16D37A0933FF1CA");
+		Func = Class->GetFunction("UI_Lobby_Profession_C", "OnClicked_F0B4507C491A70AE2E06BFB376BD5F8C");
 
 
 
@@ -76,16 +76,16 @@ void UUI_Lobby_Profession_C::OnClicked_0A98355D417A47B5B16D37A0933FF1CA()
 }
 
 
-// DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_575CD25E45A0DBCBDBDB7FA44AC67765
+// DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_9D55EFE046E97F6AA3CC61AF11C9E321
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_Profession_C::OnClicked_575CD25E45A0DBCBDBDB7FA44AC67765()
+void UUI_Lobby_Profession_C::OnClicked_9D55EFE046E97F6AA3CC61AF11C9E321()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Profession_C", "OnClicked_575CD25E45A0DBCBDBDB7FA44AC67765");
+		Func = Class->GetFunction("UI_Lobby_Profession_C", "OnClicked_9D55EFE046E97F6AA3CC61AF11C9E321");
 
 
 
@@ -94,16 +94,16 @@ void UUI_Lobby_Profession_C::OnClicked_575CD25E45A0DBCBDBDB7FA44AC67765()
 }
 
 
-// DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_669FDB514A75ECF2E870609E83284FB7
+// DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_7FBAFD5746AFF20C9C9A658D4BF6AB32
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_Profession_C::OnClicked_669FDB514A75ECF2E870609E83284FB7()
+void UUI_Lobby_Profession_C::OnClicked_7FBAFD5746AFF20C9C9A658D4BF6AB32()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Profession_C", "OnClicked_669FDB514A75ECF2E870609E83284FB7");
+		Func = Class->GetFunction("UI_Lobby_Profession_C", "OnClicked_7FBAFD5746AFF20C9C9A658D4BF6AB32");
 
 
 
@@ -130,24 +130,6 @@ void UUI_Lobby_Profession_C::Destruct()
 }
 
 
-// Function UI_Lobby_Profession.UI_Lobby_Profession_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Lobby_Profession_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Profession_C", "Construct");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function UI_Lobby_Profession.UI_Lobby_Profession_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -158,6 +140,24 @@ void UUI_Lobby_Profession_C::OnInitialized()
 
 	if (!Func)
 		Func = Class->GetFunction("UI_Lobby_Profession_C", "OnInitialized");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_Profession.UI_Lobby_Profession_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_Profession_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Profession_C", "Construct");
 
 
 

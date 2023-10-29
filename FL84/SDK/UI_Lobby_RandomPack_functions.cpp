@@ -40,16 +40,16 @@ class UUI_Lobby_RandomPack_C* UUI_Lobby_RandomPack_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnClicked_245ECACA4402ACE2F692B5A543F408FE
+// DelegateFunction UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnClicked_FD92CC3842C4AA5F712FC5BE266CD140
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_RandomPack_C::OnClicked_245ECACA4402ACE2F692B5A543F408FE()
+void UUI_Lobby_RandomPack_C::OnClicked_FD92CC3842C4AA5F712FC5BE266CD140()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_RandomPack_C", "OnClicked_245ECACA4402ACE2F692B5A543F408FE");
+		Func = Class->GetFunction("UI_Lobby_RandomPack_C", "OnClicked_FD92CC3842C4AA5F712FC5BE266CD140");
 
 
 
@@ -76,16 +76,16 @@ void UUI_Lobby_RandomPack_C::OnInitialized()
 }
 
 
-// Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnSolarUIOpened
+// Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnSolarUIClosed
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UUI_Lobby_RandomPack_C::OnSolarUIOpened()
+void UUI_Lobby_RandomPack_C::OnSolarUIClosed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_RandomPack_C", "OnSolarUIOpened");
+		Func = Class->GetFunction("UI_Lobby_RandomPack_C", "OnSolarUIClosed");
 
 
 
@@ -100,16 +100,16 @@ void UUI_Lobby_RandomPack_C::OnSolarUIOpened()
 }
 
 
-// Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnSolarUIClosed
+// Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnSolarUIOpened
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UUI_Lobby_RandomPack_C::OnSolarUIClosed()
+void UUI_Lobby_RandomPack_C::OnSolarUIOpened()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_RandomPack_C", "OnSolarUIClosed");
+		Func = Class->GetFunction("UI_Lobby_RandomPack_C", "OnSolarUIOpened");
 
 
 

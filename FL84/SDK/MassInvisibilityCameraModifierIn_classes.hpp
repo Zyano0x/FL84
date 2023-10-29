@@ -14,7 +14,7 @@ namespace SDK
 class UMassInvisibilityCameraModifierIn_C : public UCameraShake
 {
 public:
-	uint8                                        Pad_EA4[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_23D8[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMassInvisibilityCameraModifierIn_C* GetDefaultObj();

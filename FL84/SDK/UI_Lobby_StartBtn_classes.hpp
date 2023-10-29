@@ -112,7 +112,7 @@ public:
 	bool                                         Ready;                                             // 0x6EA(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Disable;                                           // 0x6EB(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         PC;                                                // 0x6EC(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2A6F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_274A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          StartBtnLinearColorWordSolid;                      // 0x6F0(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          StartBtnLinearColorTimeSolid;                      // 0x700(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          StartBtnLinearColorWordGreyout;                    // 0x710(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -123,17 +123,17 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_StartBtn_C* GetDefaultObj();
 
-	void OnClicked_7DDC555F4C5B4A7EB230E3BD0D80712D();
-	void OnClicked_279598BC4E3F5345E0B55A83791A21B8();
-	void OnClicked_430B5AB94778D321395075B0130CC296();
-	void OnClicked_BEBFED144E29AC1A583302B6BE616049();
-	void OnClicked_E9B368854CD62960E3260FA779B32EA7();
-	void OnClicked_3ED95BE54C62742C4EDF38A962900A8E();
-	void OnClicked_C92275874DC65F3A778A29ACF050A382();
+	void OnClicked_7A9892274E334F583EE333A5C00DE927();
+	void OnClicked_6563084549B1B2A01A78C2858DF3DA4A();
+	void OnClicked_C6E4142E4FCA5F55C0D4AEBFF9553D9E();
+	void OnClicked_D8158A1249CEADCED2A48F86DE27173F();
+	void OnClicked_01AF56374EA935DB9937A3A25C4B9EEB();
+	void OnClicked_FCDA494C4143DEA19099688AB7B506FB();
+	void OnClicked_7A1D7B2348F2865C669CD093C0DDF601();
 	void Destruct();
 	void ConstructCopy();
-	void OnSolarUIOpened();
 	void OnSolarUIClosed();
+	void OnSolarUIOpened();
 	class FString GetModuleName();
 	void SetStateDesktop(enum class E_Type_State_Desktop StateDesktopStart, bool IsDesktop, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class E_Type_State_Desktop Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility Temp_byte_Variable_7, bool Temp_bool_Variable_1, enum class ESlateVisibility K2Node_Select_Default_1, enum class ESlateVisibility K2Node_Select_Default_2);
 	void UpdatePlatformBlendState(bool NewParam, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1);

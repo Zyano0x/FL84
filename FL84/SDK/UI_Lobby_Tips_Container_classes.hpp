@@ -24,12 +24,12 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_Tips_Container_C* GetDefaultObj();
 
-	void OnClicked_CD6B60C04C6150C6AC50B7A92FBE9557();
-	void OnPressed_640836F64CA4FF10E50508814BB2188A();
+	void OnClicked_AB1E8EE54E384692712319B630A5DF61();
+	void OnPressed_51E6B1D644C6FFCB2142C980FCD18B45();
+	void OnHide();
 	void OnShow();
 	void Destruct();
 	void Construct();
-	void OnHide();
 	class FString GetModuleName();
 };
 
