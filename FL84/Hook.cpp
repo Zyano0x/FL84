@@ -27,7 +27,7 @@ HRESULT WINAPI hkPresent(_In_ IDXGISwapChain* SwapChain, _In_ UINT SyncInterval,
 {
 	_mainGUI.Present(SwapChain, SyncInterval, Flags);
 
-	return oPresent(SwapChain, SyncInterval, Flags);
+	return spoof_call(oPresent, SwapChain, SyncInterval, Flags);
 }
 
 HRESULT WINAPI hkResizeBuffers(_In_ IDXGISwapChain* SwapChain, _In_ UINT BufferCount, _In_ UINT Width, _In_ UINT Height, _In_ DXGI_FORMAT NewFormat, _In_ UINT SwapChainFlags)
