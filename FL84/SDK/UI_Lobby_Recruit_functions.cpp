@@ -40,16 +40,16 @@ class UUI_Lobby_Recruit_C* UUI_Lobby_Recruit_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_43842C5B4C43943549350E8BD9407C53
+// DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_06B0480C465ED8193BED7C87E5240159
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_Recruit_C::OnClicked_43842C5B4C43943549350E8BD9407C53()
+void UUI_Lobby_Recruit_C::OnClicked_06B0480C465ED8193BED7C87E5240159()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Recruit_C", "OnClicked_43842C5B4C43943549350E8BD9407C53");
+		Func = Class->GetFunction("UI_Lobby_Recruit_C", "OnClicked_06B0480C465ED8193BED7C87E5240159");
 
 
 
@@ -58,16 +58,16 @@ void UUI_Lobby_Recruit_C::OnClicked_43842C5B4C43943549350E8BD9407C53()
 }
 
 
-// DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_E3C06A6145013BE28F6449B93DBD4FE7
+// DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_CEB8DABE4A89673D6A05F5A9855B0B5B
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_Recruit_C::OnClicked_E3C06A6145013BE28F6449B93DBD4FE7()
+void UUI_Lobby_Recruit_C::OnClicked_CEB8DABE4A89673D6A05F5A9855B0B5B()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Recruit_C", "OnClicked_E3C06A6145013BE28F6449B93DBD4FE7");
+		Func = Class->GetFunction("UI_Lobby_Recruit_C", "OnClicked_CEB8DABE4A89673D6A05F5A9855B0B5B");
 
 
 
@@ -94,16 +94,16 @@ void UUI_Lobby_Recruit_C::Destruct()
 }
 
 
-// Function UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnSolarUIClosed
+// Function UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnSolarUIOpened
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UUI_Lobby_Recruit_C::OnSolarUIClosed()
+void UUI_Lobby_Recruit_C::OnSolarUIOpened()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Recruit_C", "OnSolarUIClosed");
+		Func = Class->GetFunction("UI_Lobby_Recruit_C", "OnSolarUIOpened");
 
 
 
@@ -118,16 +118,16 @@ void UUI_Lobby_Recruit_C::OnSolarUIClosed()
 }
 
 
-// Function UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnSolarUIOpened
+// Function UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnSolarUIClosed
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UUI_Lobby_Recruit_C::OnSolarUIOpened()
+void UUI_Lobby_Recruit_C::OnSolarUIClosed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Recruit_C", "OnSolarUIOpened");
+		Func = Class->GetFunction("UI_Lobby_Recruit_C", "OnSolarUIClosed");
 
 
 

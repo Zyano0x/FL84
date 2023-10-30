@@ -26,9 +26,9 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_MatchRoom_C* GetDefaultObj();
 
-	void OnClicked_6D1BCCC0495910AA6FB8FDBA3DBF74E8();
-	void Construct();
+	void OnClicked_AE48E846466B4AF8913D808CF22698C6();
 	void Destruct();
+	void Construct();
 	void OnInitialized();
 	class FString GetModuleName();
 	void PreConstruct(bool IsDesignTime);

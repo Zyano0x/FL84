@@ -14,7 +14,7 @@ namespace SDK
 class URichtapController : public UObject
 {
 public:
-	uint8                                        Pad_A51[0x48];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8C0[0x48];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<class FString, class URichtapClip*>     HeDataMap;                                         // 0x70(0x50)(NativeAccessSpecifierPrivate)
 
 	static class UClass* StaticClass();

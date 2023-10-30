@@ -14,19 +14,19 @@ namespace SDK
 class UControlRig : public UObject
 {
 public:
-	uint8                                        Pad_C68[0x4C];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_B48[0x4C];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	enum class ERigExecutionType                 ExecutionType;                                     // 0x74(0x1)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_C69[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_B49[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class URigVM*                                VM;                                                // 0x78(0x8)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FRigHierarchyContainer                Hierarchy;                                         // 0x80(0x1B0)(Edit, DisableEditOnInstance, EditConst, NativeAccessSpecifierPrivate)
 	TSoftObjectPtr<class UControlRigGizmoLibrary> GizmoLibrary;                                      // 0x230(0x28)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_C6A[0x10];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_B4A[0x10];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<class FName, struct FCachedPropertyPath> InputProperties;                                   // 0x268(0x50)(Deprecated, NativeAccessSpecifierPrivate)
 	TMap<class FName, struct FCachedPropertyPath> OutputProperties;                                  // 0x2B8(0x50)(Deprecated, NativeAccessSpecifierPrivate)
 	struct FControlRigDrawContainer              DrawContainer;                                     // 0x308(0x10)(NativeAccessSpecifierPrivate)
-	uint8                                        Pad_C6B[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_B4B[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UAnimationDataSourceRegistry*          DataSourceRegistry;                                // 0x320(0x8)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_C6C[0x38];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_B4C[0x38];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UControlRig* GetDefaultObj();
@@ -38,7 +38,7 @@ public:
 class UAdditiveControlRig : public UControlRig
 {
 public:
-	uint8                                        Pad_C6D[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_B4D[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UAdditiveControlRig* GetDefaultObj();
@@ -93,12 +93,12 @@ public:
 class UControlRigGizmoLibrary : public UObject
 {
 public:
-	uint8                                        Pad_C71[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_B4F[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FControlRigGizmoDefinition            DefaultGizmo;                                      // 0x30(0x60)(Edit, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UMaterial>              DefaultMaterial;                                   // 0x90(0x28)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                  MaterialColorParameter;                            // 0xB8(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FControlRigGizmoDefinition>    Gizmos;                                            // 0xC0(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_C72[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_B50[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UControlRigGizmoLibrary* GetDefaultObj();
@@ -110,7 +110,7 @@ public:
 class UControlRigLayerInstance : public UAnimInstance
 {
 public:
-	uint8                                        Pad_C7D[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_B52[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UControlRigLayerInstance* GetDefaultObj();
@@ -137,7 +137,7 @@ public:
 	TSoftObjectPtr<class UAnimSequence>          LastExportedToAnimationSequence;                   // 0x498(0x28)(AssetRegistrySearchable, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class USkeletalMesh>          LastExportedUsingSkeletalMesh;                     // 0x4C0(0x28)(AssetRegistrySearchable, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        LastExportedFrameRate;                             // 0x4E8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_C80[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_B59[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UControlRigSequence* GetDefaultObj();
@@ -149,7 +149,7 @@ public:
 class UControlRigSequencerAnimInstance : public UAnimSequencerInstance
 {
 public:
-	uint8                                        Pad_C83[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_B5A[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UControlRigSequencerAnimInstance* GetDefaultObj();
@@ -188,11 +188,11 @@ public:
 	struct FMovieSceneTransformMask              TransformMask;                                     // 0x158(0x4)(NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         bAdditive;                                         // 0x15C(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bApplyBoneFilter;                                  // 0x15D(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_C85[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_B5C[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInputBlendPose                       BoneFilter;                                        // 0x160(0x10)(Edit, NativeAccessSpecifierPublic)
 	struct FMovieSceneFloatChannel               Weight;                                            // 0x170(0xA0)(NativeAccessSpecifierPublic)
 	TMap<class FName, struct FChannelMapInfo>    ControlChannelMap;                                 // 0x210(0x50)(NativeAccessSpecifierPublic)
-	uint8                                        Pad_C86[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_B5D[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMovieSceneControlRigParameterSection* GetDefaultObj();
@@ -221,7 +221,7 @@ class UMovieSceneControlRigSection : public UMovieSceneSubSection
 public:
 	bool                                         bAdditive;                                         // 0x158(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bApplyBoneFilter;                                  // 0x159(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_C87[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_B5E[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FInputBlendPose                       BoneFilter;                                        // 0x160(0x10)(Edit, NativeAccessSpecifierPublic)
 	struct FMovieSceneFloatChannel               Weight;                                            // 0x170(0xA0)(NativeAccessSpecifierPublic)
 

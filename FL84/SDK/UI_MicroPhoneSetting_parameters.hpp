@@ -14,8 +14,8 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 
 // 0x160 (0x160 - 0x0)
-// DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnMouseButtonDownEvent_ACC56C1C4E2B3B86E3E607A67414A2BD
-struct UUI_MicroPhoneSetting_C_OnMouseButtonDownEvent_ACC56C1C4E2B3B86E3E607A67414A2BD_Params
+// DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnMouseButtonDownEvent_05B47BCE48C6A3D3D0742B8368BE5233
+struct UUI_MicroPhoneSetting_C_OnMouseButtonDownEvent_05B47BCE48C6A3D3D0742B8368BE5233_Params
 {
 public:
 	struct FGeometry                             MyGeometry;                                        // 0x0(0x38)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -24,8 +24,8 @@ public:
 };
 
 // 0x160 (0x160 - 0x0)
-// DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnMouseButtonDownEvent_C836F08C459FCBEBAA4B2E9ECF100EDB
-struct UUI_MicroPhoneSetting_C_OnMouseButtonDownEvent_C836F08C459FCBEBAA4B2E9ECF100EDB_Params
+// DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnMouseButtonDownEvent_97C520054638839AC04DA09E428D852B
+struct UUI_MicroPhoneSetting_C_OnMouseButtonDownEvent_97C520054638839AC04DA09E428D852B_Params
 {
 public:
 	struct FGeometry                             MyGeometry;                                        // 0x0(0x38)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -34,8 +34,8 @@ public:
 };
 
 // 0x14 (0x14 - 0x0)
-// DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnStateChangedEvent_DE7B70464E9CEF68D34BCABA5428BB6A
-struct UUI_MicroPhoneSetting_C_OnStateChangedEvent_DE7B70464E9CEF68D34BCABA5428BB6A_Params
+// DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnStateChangedEvent_96C2646842B1DEA359BF4F8978541153
+struct UUI_MicroPhoneSetting_C_OnStateChangedEvent_96C2646842B1DEA359BF4F8978541153_Params
 {
 public:
 	TArray<class UCheckBox*>                     ChildChangedArray;                                 // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -43,8 +43,8 @@ public:
 };
 
 // 0x14 (0x14 - 0x0)
-// DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnStateChangedEvent_0AA4018E4F3334D025F8AD87FBC592E1
-struct UUI_MicroPhoneSetting_C_OnStateChangedEvent_0AA4018E4F3334D025F8AD87FBC592E1_Params
+// DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnStateChangedEvent_6959C0B34EA4D373B18F5BB915CD7ADA
+struct UUI_MicroPhoneSetting_C_OnStateChangedEvent_6959C0B34EA4D373B18F5BB915CD7ADA_Params
 {
 public:
 	TArray<class UCheckBox*>                     ChildChangedArray;                                 // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)

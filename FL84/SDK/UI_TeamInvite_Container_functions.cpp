@@ -40,16 +40,16 @@ class UUI_TeamInvite_Container_C* UUI_TeamInvite_Container_C::GetDefaultObj()
 }
 
 
-// Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnShow
+// Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnSolarUIClosed
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UUI_TeamInvite_Container_C::OnShow()
+void UUI_TeamInvite_Container_C::OnSolarUIClosed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_TeamInvite_Container_C", "OnShow");
+		Func = Class->GetFunction("UI_TeamInvite_Container_C", "OnSolarUIClosed");
 
 
 
@@ -112,16 +112,16 @@ void UUI_TeamInvite_Container_C::OnSolarUIOpened()
 }
 
 
-// Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnSolarUIClosed
+// Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnShow
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UUI_TeamInvite_Container_C::OnSolarUIClosed()
+void UUI_TeamInvite_Container_C::OnShow()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_TeamInvite_Container_C", "OnSolarUIClosed");
+		Func = Class->GetFunction("UI_TeamInvite_Container_C", "OnShow");
 
 
 

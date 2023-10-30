@@ -31,22 +31,22 @@ public:
 	class UNamedSlot*                            WidgetSlot;                                        // 0x478(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	enum class E_Type_Btn                        BtnType;                                           // 0x480(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_State_Btn                       BtnState;                                          // 0x481(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_234C[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_365E[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector2D                             BtnSize;                                           // 0x484(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsUseBtnImag;                                      // 0x48C(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         IsUseText;                                         // 0x48D(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_234D[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_365F[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Text;                                              // 0x490(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	bool                                         IsUseLocID;                                        // 0x4A0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_234E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3660[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        LocID;                                             // 0x4A4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESolarSupportLanguages            PreviewLang;                                       // 0x4A8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_234F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3661[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnClicked;                                         // 0x4B0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            OnPressed;                                         // 0x4C0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_            OnReleased;                                        // 0x4D0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         IsIcon;                                            // 0x4E0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2350[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3662[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               Icon;                                              // 0x4E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                             Icon_Size;                                         // 0x4F0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

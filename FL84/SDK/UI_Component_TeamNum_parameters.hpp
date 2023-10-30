@@ -28,7 +28,7 @@ struct UUI_Component_TeamNum_C_Set_Team_Num_Params
 public:
 	enum class E_Type_TeamNum                    Index;                                             // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Type_TeamNum                    Temp_byte_Variable;                                // 0x1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1D83[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DA2[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               Temp_object_Variable;                              // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               Temp_object_Variable_1;                            // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               Temp_object_Variable_2;                            // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -43,7 +43,7 @@ public:
 	bool                                         Selected;                                          // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class E_Type_TeamNum                    Temp_byte_Variable;                                // 0x1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Type_TeamNum                    Temp_byte_Variable_1;                              // 0x2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1D8A[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DA3[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateColor                           K2Node_Select_Default;                             // 0x8(0x28)(None)
 	struct FSlateColor                           K2Node_Select_Default_1;                           // 0x30(0x28)(None)
 };

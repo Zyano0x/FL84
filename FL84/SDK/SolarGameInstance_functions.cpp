@@ -40,19 +40,19 @@ class USolarGameInstance_C* USolarGameInstance_C::GetDefaultObj()
 }
 
 
-// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnRefreshFirebaseToken_D26330CF4A5C97D39ED4019104AB1CED
+// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnRefreshFirebaseToken_621E0299461CEA370A1831B504104270
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // class FString                      FirebaseToken                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void USolarGameInstance_C::OnRefreshFirebaseToken_D26330CF4A5C97D39ED4019104AB1CED(const class FString& FirebaseToken)
+void USolarGameInstance_C::OnRefreshFirebaseToken_621E0299461CEA370A1831B504104270(const class FString& FirebaseToken)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "OnRefreshFirebaseToken_D26330CF4A5C97D39ED4019104AB1CED");
+		Func = Class->GetFunction("SolarGameInstance_C", "OnRefreshFirebaseToken_621E0299461CEA370A1831B504104270");
 
-	Params::USolarGameInstance_C_OnRefreshFirebaseToken_D26330CF4A5C97D39ED4019104AB1CED_Params Parms{};
+	Params::USolarGameInstance_C_OnRefreshFirebaseToken_621E0299461CEA370A1831B504104270_Params Parms{};
 
 	Parms.FirebaseToken = FirebaseToken;
 
@@ -61,19 +61,19 @@ void USolarGameInstance_C::OnRefreshFirebaseToken_D26330CF4A5C97D39ED4019104AB1C
 }
 
 
-// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnClearCommunityRedhint_CA7AD73F4695A3CA84A8B1A4B37BDBE3
+// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnClearCommunityRedhint_8BB4D7814B20E67649CD17AEDA337DE7
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // class FString                      ResultStr                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void USolarGameInstance_C::OnClearCommunityRedhint_CA7AD73F4695A3CA84A8B1A4B37BDBE3(const class FString& ResultStr)
+void USolarGameInstance_C::OnClearCommunityRedhint_8BB4D7814B20E67649CD17AEDA337DE7(const class FString& ResultStr)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "OnClearCommunityRedhint_CA7AD73F4695A3CA84A8B1A4B37BDBE3");
+		Func = Class->GetFunction("SolarGameInstance_C", "OnClearCommunityRedhint_8BB4D7814B20E67649CD17AEDA337DE7");
 
-	Params::USolarGameInstance_C_OnClearCommunityRedhint_CA7AD73F4695A3CA84A8B1A4B37BDBE3_Params Parms{};
+	Params::USolarGameInstance_C_OnClearCommunityRedhint_8BB4D7814B20E67649CD17AEDA337DE7_Params Parms{};
 
 	Parms.ResultStr = ResultStr;
 
@@ -82,19 +82,19 @@ void USolarGameInstance_C::OnClearCommunityRedhint_CA7AD73F4695A3CA84A8B1A4B37BD
 }
 
 
-// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnGetCommunityRedhint_29CA0E08465BB67B379E3C9372923A34
+// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnGetCommunityRedhint_40DF37424B99C37CB85715830F6CB18B
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // class FString                      ResultStr                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void USolarGameInstance_C::OnGetCommunityRedhint_29CA0E08465BB67B379E3C9372923A34(const class FString& ResultStr)
+void USolarGameInstance_C::OnGetCommunityRedhint_40DF37424B99C37CB85715830F6CB18B(const class FString& ResultStr)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "OnGetCommunityRedhint_29CA0E08465BB67B379E3C9372923A34");
+		Func = Class->GetFunction("SolarGameInstance_C", "OnGetCommunityRedhint_40DF37424B99C37CB85715830F6CB18B");
 
-	Params::USolarGameInstance_C_OnGetCommunityRedhint_29CA0E08465BB67B379E3C9372923A34_Params Parms{};
+	Params::USolarGameInstance_C_OnGetCommunityRedhint_40DF37424B99C37CB85715830F6CB18B_Params Parms{};
 
 	Parms.ResultStr = ResultStr;
 
@@ -103,19 +103,19 @@ void USolarGameInstance_C::OnGetCommunityRedhint_29CA0E08465BB67B379E3C9372923A3
 }
 
 
-// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnExitCommunity_97313330486EFD85E3699EA253488B31
+// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnExitCommunity_1A59F2F7403F2B37C9280A95C732B7A4
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // class FString                      ResultStr                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void USolarGameInstance_C::OnExitCommunity_97313330486EFD85E3699EA253488B31(const class FString& ResultStr)
+void USolarGameInstance_C::OnExitCommunity_1A59F2F7403F2B37C9280A95C732B7A4(const class FString& ResultStr)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "OnExitCommunity_97313330486EFD85E3699EA253488B31");
+		Func = Class->GetFunction("SolarGameInstance_C", "OnExitCommunity_1A59F2F7403F2B37C9280A95C732B7A4");
 
-	Params::USolarGameInstance_C_OnExitCommunity_97313330486EFD85E3699EA253488B31_Params Parms{};
+	Params::USolarGameInstance_C_OnExitCommunity_1A59F2F7403F2B37C9280A95C732B7A4_Params Parms{};
 
 	Parms.ResultStr = ResultStr;
 
@@ -124,19 +124,19 @@ void USolarGameInstance_C::OnExitCommunity_97313330486EFD85E3699EA253488B31(cons
 }
 
 
-// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnInitCommunity_0DA9F6D14D84C412ACB88BB308FFEC66
+// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnInitCommunity_9E05EFE04B312BA7D4851796B95BA672
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // class FString                      ResultStr                                                        (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void USolarGameInstance_C::OnInitCommunity_0DA9F6D14D84C412ACB88BB308FFEC66(const class FString& ResultStr)
+void USolarGameInstance_C::OnInitCommunity_9E05EFE04B312BA7D4851796B95BA672(const class FString& ResultStr)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "OnInitCommunity_0DA9F6D14D84C412ACB88BB308FFEC66");
+		Func = Class->GetFunction("SolarGameInstance_C", "OnInitCommunity_9E05EFE04B312BA7D4851796B95BA672");
 
-	Params::USolarGameInstance_C_OnInitCommunity_0DA9F6D14D84C412ACB88BB308FFEC66_Params Parms{};
+	Params::USolarGameInstance_C_OnInitCommunity_9E05EFE04B312BA7D4851796B95BA672_Params Parms{};
 
 	Parms.ResultStr = ResultStr;
 
@@ -145,21 +145,21 @@ void USolarGameInstance_C::OnInitCommunity_0DA9F6D14D84C412ACB88BB308FFEC66(cons
 }
 
 
-// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnQueryThirdPartyUserInfo_91CD94704EE345E09768829F654CA0D0
+// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnQueryThirdPartyUserInfo_49364EA644970E82B95B4BA0887A8063
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // bool                               Success                                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 // int32                              ErrorCode                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // TArray<struct FSDKSocialUserInfo>  SocialUserInfoList                                               (Parm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void USolarGameInstance_C::OnQueryThirdPartyUserInfo_91CD94704EE345E09768829F654CA0D0(bool Success, int32 ErrorCode, const TArray<struct FSDKSocialUserInfo>& SocialUserInfoList)
+void USolarGameInstance_C::OnQueryThirdPartyUserInfo_49364EA644970E82B95B4BA0887A8063(bool Success, int32 ErrorCode, const TArray<struct FSDKSocialUserInfo>& SocialUserInfoList)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "OnQueryThirdPartyUserInfo_91CD94704EE345E09768829F654CA0D0");
+		Func = Class->GetFunction("SolarGameInstance_C", "OnQueryThirdPartyUserInfo_49364EA644970E82B95B4BA0887A8063");
 
-	Params::USolarGameInstance_C_OnQueryThirdPartyUserInfo_91CD94704EE345E09768829F654CA0D0_Params Parms{};
+	Params::USolarGameInstance_C_OnQueryThirdPartyUserInfo_49364EA644970E82B95B4BA0887A8063_Params Parms{};
 
 	Parms.Success = Success;
 	Parms.ErrorCode = ErrorCode;
@@ -170,20 +170,20 @@ void USolarGameInstance_C::OnQueryThirdPartyUserInfo_91CD94704EE345E09768829F654
 }
 
 
-// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnSwitchAccountFailed_91DC53B9427B177E164AD7B40100BFD9
+// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnSwitchAccountFailed_E24BA23E4FBBB28CA3CF539073DF99F0
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // enum class ELLHSDKLoginType        LoginType                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                              ErrorCode                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void USolarGameInstance_C::OnSwitchAccountFailed_91DC53B9427B177E164AD7B40100BFD9(enum class ELLHSDKLoginType LoginType, int32 ErrorCode)
+void USolarGameInstance_C::OnSwitchAccountFailed_E24BA23E4FBBB28CA3CF539073DF99F0(enum class ELLHSDKLoginType LoginType, int32 ErrorCode)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "OnSwitchAccountFailed_91DC53B9427B177E164AD7B40100BFD9");
+		Func = Class->GetFunction("SolarGameInstance_C", "OnSwitchAccountFailed_E24BA23E4FBBB28CA3CF539073DF99F0");
 
-	Params::USolarGameInstance_C_OnSwitchAccountFailed_91DC53B9427B177E164AD7B40100BFD9_Params Parms{};
+	Params::USolarGameInstance_C_OnSwitchAccountFailed_E24BA23E4FBBB28CA3CF539073DF99F0_Params Parms{};
 
 	Parms.LoginType = LoginType;
 	Parms.ErrorCode = ErrorCode;
@@ -193,21 +193,21 @@ void USolarGameInstance_C::OnSwitchAccountFailed_91DC53B9427B177E164AD7B40100BFD
 }
 
 
-// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnSwitchAccountFinish_E3ED595249623D73F22AE8A7EB1D871F
+// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnSwitchAccountFinish_E2F904F54301309EAF38E1B8F2CE8C49
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // class FString                      AppUid                                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FString                      AppToken                                                         (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // enum class ELLHSDKLoginType        LoginType                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void USolarGameInstance_C::OnSwitchAccountFinish_E3ED595249623D73F22AE8A7EB1D871F(const class FString& AppUid, const class FString& AppToken, enum class ELLHSDKLoginType LoginType)
+void USolarGameInstance_C::OnSwitchAccountFinish_E2F904F54301309EAF38E1B8F2CE8C49(const class FString& AppUid, const class FString& AppToken, enum class ELLHSDKLoginType LoginType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "OnSwitchAccountFinish_E3ED595249623D73F22AE8A7EB1D871F");
+		Func = Class->GetFunction("SolarGameInstance_C", "OnSwitchAccountFinish_E2F904F54301309EAF38E1B8F2CE8C49");
 
-	Params::USolarGameInstance_C_OnSwitchAccountFinish_E3ED595249623D73F22AE8A7EB1D871F_Params Parms{};
+	Params::USolarGameInstance_C_OnSwitchAccountFinish_E2F904F54301309EAF38E1B8F2CE8C49_Params Parms{};
 
 	Parms.AppUid = AppUid;
 	Parms.AppToken = AppToken;
@@ -218,7 +218,7 @@ void USolarGameInstance_C::OnSwitchAccountFinish_E3ED595249623D73F22AE8A7EB1D871
 }
 
 
-// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnBindFinish_D15B146942898A4B0ABC16A3D3467930
+// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnBindFinish_02FFE6684C62791BB58028BE578ED4BB
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -226,14 +226,14 @@ void USolarGameInstance_C::OnSwitchAccountFinish_E3ED595249623D73F22AE8A7EB1D871
 // class FString                      AppToken                                                         (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // enum class ELLHSDKLoginType        LoginType                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void USolarGameInstance_C::OnBindFinish_D15B146942898A4B0ABC16A3D3467930(bool bSuccess, const class FString& AppUid, const class FString& AppToken, enum class ELLHSDKLoginType LoginType)
+void USolarGameInstance_C::OnBindFinish_02FFE6684C62791BB58028BE578ED4BB(bool bSuccess, const class FString& AppUid, const class FString& AppToken, enum class ELLHSDKLoginType LoginType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "OnBindFinish_D15B146942898A4B0ABC16A3D3467930");
+		Func = Class->GetFunction("SolarGameInstance_C", "OnBindFinish_02FFE6684C62791BB58028BE578ED4BB");
 
-	Params::USolarGameInstance_C_OnBindFinish_D15B146942898A4B0ABC16A3D3467930_Params Parms{};
+	Params::USolarGameInstance_C_OnBindFinish_02FFE6684C62791BB58028BE578ED4BB_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 	Parms.AppUid = AppUid;
@@ -245,19 +245,19 @@ void USolarGameInstance_C::OnBindFinish_D15B146942898A4B0ABC16A3D3467930(bool bS
 }
 
 
-// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnLSteamSDKPayApplied_3EFCFFBD4B3473EEF02CA1B667556C6D
+// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnLSteamSDKPayApplied_C8AAE6AA48716E13C24C5A8D858BCBF6
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // class FString                      Datas                                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void USolarGameInstance_C::OnLSteamSDKPayApplied_3EFCFFBD4B3473EEF02CA1B667556C6D(const class FString& Datas)
+void USolarGameInstance_C::OnLSteamSDKPayApplied_C8AAE6AA48716E13C24C5A8D858BCBF6(const class FString& Datas)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "OnLSteamSDKPayApplied_3EFCFFBD4B3473EEF02CA1B667556C6D");
+		Func = Class->GetFunction("SolarGameInstance_C", "OnLSteamSDKPayApplied_C8AAE6AA48716E13C24C5A8D858BCBF6");
 
-	Params::USolarGameInstance_C_OnLSteamSDKPayApplied_3EFCFFBD4B3473EEF02CA1B667556C6D_Params Parms{};
+	Params::USolarGameInstance_C_OnLSteamSDKPayApplied_C8AAE6AA48716E13C24C5A8D858BCBF6_Params Parms{};
 
 	Parms.Datas = Datas;
 
@@ -266,19 +266,19 @@ void USolarGameInstance_C::OnLSteamSDKPayApplied_3EFCFFBD4B3473EEF02CA1B667556C6
 }
 
 
-// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnLSteamQuerySkus_F2AB076C4AEA7BD472FBA18C46F5F4D1
+// DelegateFunction SolarGameInstance.SolarGameInstance_C.OnLSteamQuerySkus_D53824DB445B32677B3020B13F104D90
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // class FString                      Datas                                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void USolarGameInstance_C::OnLSteamQuerySkus_F2AB076C4AEA7BD472FBA18C46F5F4D1(const class FString& Datas)
+void USolarGameInstance_C::OnLSteamQuerySkus_D53824DB445B32677B3020B13F104D90(const class FString& Datas)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "OnLSteamQuerySkus_F2AB076C4AEA7BD472FBA18C46F5F4D1");
+		Func = Class->GetFunction("SolarGameInstance_C", "OnLSteamQuerySkus_D53824DB445B32677B3020B13F104D90");
 
-	Params::USolarGameInstance_C_OnLSteamQuerySkus_F2AB076C4AEA7BD472FBA18C46F5F4D1_Params Parms{};
+	Params::USolarGameInstance_C_OnLSteamQuerySkus_D53824DB445B32677B3020B13F104D90_Params Parms{};
 
 	Parms.Datas = Datas;
 
@@ -287,16 +287,16 @@ void USolarGameInstance_C::OnLSteamQuerySkus_F2AB076C4AEA7BD472FBA18C46F5F4D1(co
 }
 
 
-// Function SolarGameInstance.SolarGameInstance_C.GoHomeLuaCall
+// Function SolarGameInstance.SolarGameInstance_C.ReceiveShutdown
 // (Event, Public, BlueprintEvent)
 // Parameters:
 
-void USolarGameInstance_C::GoHomeLuaCall()
+void USolarGameInstance_C::ReceiveShutdown()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "GoHomeLuaCall");
+		Func = Class->GetFunction("SolarGameInstance_C", "ReceiveShutdown");
 
 
 
@@ -305,25 +305,43 @@ void USolarGameInstance_C::GoHomeLuaCall()
 }
 
 
-// Function SolarGameInstance.SolarGameInstance_C.SolarGM_AddWeaponExpLua
-// (Event, Public, BlueprintEvent)
+// Function SolarGameInstance.SolarGameInstance_C.SolarGM_LobbyLua
+// (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// int32                              Weaponid                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                              Count                                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                      CmdName                                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<class FString>              Params                                                           (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void USolarGameInstance_C::SolarGM_AddWeaponExpLua(int32 Weaponid, int32 Count)
+void USolarGameInstance_C::SolarGM_LobbyLua(const class FString& CmdName, TArray<class FString>& Params)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "SolarGM_AddWeaponExpLua");
+		Func = Class->GetFunction("SolarGameInstance_C", "SolarGM_LobbyLua");
 
-	Params::USolarGameInstance_C_SolarGM_AddWeaponExpLua_Params Parms{};
+	Params::USolarGameInstance_C_SolarGM_LobbyLua_Params Parms{};
 
-	Parms.Weaponid = Weaponid;
-	Parms.Count = Count;
+	Parms.CmdName = CmdName;
+	Parms.Params = Params;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function SolarGameInstance.SolarGameInstance_C.LuaInitGameFrameWork
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+
+void USolarGameInstance_C::LuaInitGameFrameWork()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("SolarGameInstance_C", "LuaInitGameFrameWork");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -346,16 +364,111 @@ void USolarGameInstance_C::ExecuteBackKeyLuaCall()
 }
 
 
-// Function SolarGameInstance.SolarGameInstance_C.ShutDownPCSDK
-// (Event, Protected, BlueprintEvent)
+// Function SolarGameInstance.SolarGameInstance_C.HandleNetworkError
+// (Event, Public, BlueprintEvent)
 // Parameters:
+// enum class ENetworkFailure         FailureType                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                               bIsServer                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
-void USolarGameInstance_C::ShutDownPCSDK()
+void USolarGameInstance_C::HandleNetworkError(enum class ENetworkFailure FailureType, bool bIsServer)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "ShutDownPCSDK");
+		Func = Class->GetFunction("SolarGameInstance_C", "HandleNetworkError");
+
+	Params::USolarGameInstance_C_HandleNetworkError_Params Parms{};
+
+	Parms.FailureType = FailureType;
+	Parms.bIsServer = bIsServer;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function SolarGameInstance.SolarGameInstance_C.LuaStartGameFrameWork
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+
+void USolarGameInstance_C::LuaStartGameFrameWork()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("SolarGameInstance_C", "LuaStartGameFrameWork");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function SolarGameInstance.SolarGameInstance_C.OnDisconnect
+// (Event, Public, BlueprintEvent)
+// Parameters:
+
+void USolarGameInstance_C::OnDisconnect()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("SolarGameInstance_C", "OnDisconnect");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function SolarGameInstance.SolarGameInstance_C.RegisterNetworkManager
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+
+void USolarGameInstance_C::RegisterNetworkManager()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("SolarGameInstance_C", "RegisterNetworkManager");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function SolarGameInstance.SolarGameInstance_C.ShutDownLimSdk
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+
+void USolarGameInstance_C::ShutDownLimSdk()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("SolarGameInstance_C", "ShutDownLimSdk");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function SolarGameInstance.SolarGameInstance_C.GoHomeLuaCall
+// (Event, Public, BlueprintEvent)
+// Parameters:
+
+void USolarGameInstance_C::GoHomeLuaCall()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("SolarGameInstance_C", "GoHomeLuaCall");
 
 
 
@@ -387,86 +500,25 @@ void USolarGameInstance_C::CheckSavedDirFiles(TArray<class FString>* Files)
 }
 
 
-// Function SolarGameInstance.SolarGameInstance_C.LuaStartGameFrameWork
-// (Event, Protected, BlueprintEvent)
+// Function SolarGameInstance.SolarGameInstance_C.SolarGM_TransmitGMLua
+// (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
+// class FString                      PlayerName                                                       (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<class FString>              GmArray                                                          (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void USolarGameInstance_C::LuaStartGameFrameWork()
+void USolarGameInstance_C::SolarGM_TransmitGMLua(const class FString& PlayerName, TArray<class FString>& GmArray)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "LuaStartGameFrameWork");
+		Func = Class->GetFunction("SolarGameInstance_C", "SolarGM_TransmitGMLua");
 
+	Params::USolarGameInstance_C_SolarGM_TransmitGMLua_Params Parms{};
 
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function SolarGameInstance.SolarGameInstance_C.LuaInitGameFrameWork
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-
-void USolarGameInstance_C::LuaInitGameFrameWork()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "LuaInitGameFrameWork");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function SolarGameInstance.SolarGameInstance_C.SolarGM_AddItemLua
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// int32                              ItemID                                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                              Count                                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void USolarGameInstance_C::SolarGM_AddItemLua(int32 ItemID, int32 Count)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "SolarGM_AddItemLua");
-
-	Params::USolarGameInstance_C_SolarGM_AddItemLua_Params Parms{};
-
-	Parms.ItemID = ItemID;
-	Parms.Count = Count;
+	Parms.PlayerName = PlayerName;
+	Parms.GmArray = GmArray;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function SolarGameInstance.SolarGameInstance_C.LuaGetBroadcastHeroNameCopy
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                      SolarPlayerID                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// class FString                      BroadcastPlayerName                                              (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-
-void USolarGameInstance_C::LuaGetBroadcastHeroNameCopy(const class FString& SolarPlayerID, class FString* BroadcastPlayerName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "LuaGetBroadcastHeroNameCopy");
-
-	Params::USolarGameInstance_C_LuaGetBroadcastHeroNameCopy_Params Parms{};
-
-	Parms.SolarPlayerID = SolarPlayerID;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (BroadcastPlayerName != nullptr)
-		*BroadcastPlayerName = std::move(Parms.BroadcastPlayerName);
 
 }
 
@@ -492,16 +544,16 @@ void USolarGameInstance_C::ExecuteChangeAudioModeLuaCall(bool bTurnOn)
 }
 
 
-// Function SolarGameInstance.SolarGameInstance_C.OnDisconnect
-// (Event, Public, BlueprintEvent)
+// Function SolarGameInstance.SolarGameInstance_C.ShutdownAnoSDK
+// (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void USolarGameInstance_C::OnDisconnect()
+void USolarGameInstance_C::ShutdownAnoSDK()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "OnDisconnect");
+		Func = Class->GetFunction("SolarGameInstance_C", "ShutdownAnoSDK");
 
 
 
@@ -535,29 +587,6 @@ void USolarGameInstance_C::LuaGetBroadcastPlayerNameCopy(const class FString& So
 }
 
 
-// Function SolarGameInstance.SolarGameInstance_C.HandleNetworkError
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// enum class ENetworkFailure         FailureType                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                               bIsServer                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-
-void USolarGameInstance_C::HandleNetworkError(enum class ENetworkFailure FailureType, bool bIsServer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "HandleNetworkError");
-
-	Params::USolarGameInstance_C_HandleNetworkError_Params Parms{};
-
-	Parms.FailureType = FailureType;
-	Parms.bIsServer = bIsServer;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function SolarGameInstance.SolarGameInstance_C.InitLuaClasses
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -576,82 +605,23 @@ void USolarGameInstance_C::InitLuaClasses()
 }
 
 
-// Function SolarGameInstance.SolarGameInstance_C.ShutdownAnoSDK
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-
-void USolarGameInstance_C::ShutdownAnoSDK()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "ShutdownAnoSDK");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function SolarGameInstance.SolarGameInstance_C.OnScopeChanged
+// Function SolarGameInstance.SolarGameInstance_C.SolarGM_AddItemLua
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// enum class EScope                  InLastScope                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// enum class EScope                  InCurScope                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                              ItemID                                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                              Count                                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void USolarGameInstance_C::OnScopeChanged(enum class EScope InLastScope, enum class EScope InCurScope)
+void USolarGameInstance_C::SolarGM_AddItemLua(int32 ItemID, int32 Count)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "OnScopeChanged");
+		Func = Class->GetFunction("SolarGameInstance_C", "SolarGM_AddItemLua");
 
-	Params::USolarGameInstance_C_OnScopeChanged_Params Parms{};
+	Params::USolarGameInstance_C_SolarGM_AddItemLua_Params Parms{};
 
-	Parms.InLastScope = InLastScope;
-	Parms.InCurScope = InCurScope;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function SolarGameInstance.SolarGameInstance_C.ReceiveShutdown
-// (Event, Public, BlueprintEvent)
-// Parameters:
-
-void USolarGameInstance_C::ReceiveShutdown()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "ReceiveShutdown");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function SolarGameInstance.SolarGameInstance_C.SolarGM_TransmitGMLua
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// class FString                      PlayerName                                                       (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<class FString>              GmArray                                                          (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void USolarGameInstance_C::SolarGM_TransmitGMLua(const class FString& PlayerName, TArray<class FString>& GmArray)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "SolarGM_TransmitGMLua");
-
-	Params::USolarGameInstance_C_SolarGM_TransmitGMLua_Params Parms{};
-
-	Parms.PlayerName = PlayerName;
-	Parms.GmArray = GmArray;
+	Parms.ItemID = ItemID;
+	Parms.Count = Count;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -685,61 +655,91 @@ void USolarGameInstance_C::ReportLoadingInfoToBI(TArray<class FString>* LoadingI
 }
 
 
-// Function SolarGameInstance.SolarGameInstance_C.SolarGM_LobbyLua
-// (Event, Public, HasOutParams, BlueprintEvent)
+// Function SolarGameInstance.SolarGameInstance_C.LuaGetBroadcastHeroNameCopy
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                      CmdName                                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<class FString>              Params                                                           (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                      SolarPlayerID                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// class FString                      BroadcastPlayerName                                              (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 
-void USolarGameInstance_C::SolarGM_LobbyLua(const class FString& CmdName, TArray<class FString>& Params)
+void USolarGameInstance_C::LuaGetBroadcastHeroNameCopy(const class FString& SolarPlayerID, class FString* BroadcastPlayerName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "SolarGM_LobbyLua");
+		Func = Class->GetFunction("SolarGameInstance_C", "LuaGetBroadcastHeroNameCopy");
 
-	Params::USolarGameInstance_C_SolarGM_LobbyLua_Params Parms{};
+	Params::USolarGameInstance_C_LuaGetBroadcastHeroNameCopy_Params Parms{};
 
-	Parms.CmdName = CmdName;
-	Parms.Params = Params;
+	Parms.SolarPlayerID = SolarPlayerID;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (BroadcastPlayerName != nullptr)
+		*BroadcastPlayerName = std::move(Parms.BroadcastPlayerName);
+
+}
+
+
+// Function SolarGameInstance.SolarGameInstance_C.ShutDownPCSDK
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+
+void USolarGameInstance_C::ShutDownPCSDK()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("SolarGameInstance_C", "ShutDownPCSDK");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function SolarGameInstance.SolarGameInstance_C.OnScopeChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// enum class EScope                  InLastScope                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// enum class EScope                  InCurScope                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void USolarGameInstance_C::OnScopeChanged(enum class EScope InLastScope, enum class EScope InCurScope)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("SolarGameInstance_C", "OnScopeChanged");
+
+	Params::USolarGameInstance_C_OnScopeChanged_Params Parms{};
+
+	Parms.InLastScope = InLastScope;
+	Parms.InCurScope = InCurScope;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function SolarGameInstance.SolarGameInstance_C.ShutDownLimSdk
-// (Event, Protected, BlueprintEvent)
+// Function SolarGameInstance.SolarGameInstance_C.SolarGM_AddWeaponExpLua
+// (Event, Public, BlueprintEvent)
 // Parameters:
+// int32                              Weaponid                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                              Count                                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void USolarGameInstance_C::ShutDownLimSdk()
+void USolarGameInstance_C::SolarGM_AddWeaponExpLua(int32 Weaponid, int32 Count)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "ShutDownLimSdk");
+		Func = Class->GetFunction("SolarGameInstance_C", "SolarGM_AddWeaponExpLua");
 
+	Params::USolarGameInstance_C_SolarGM_AddWeaponExpLua_Params Parms{};
 
+	Parms.Weaponid = Weaponid;
+	Parms.Count = Count;
 
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function SolarGameInstance.SolarGameInstance_C.RegisterNetworkManager
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-
-void USolarGameInstance_C::RegisterNetworkManager()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("SolarGameInstance_C", "RegisterNetworkManager");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 
 }
 

@@ -78,8 +78,8 @@ namespace Engine
 			return { 0.f, 0.f, 0.f };
 
 		SDK::FMatrix matrix{};
-		tGetBoneMatrix oGetBoneMatrix = reinterpret_cast<tGetBoneMatrix>((uintptr_t)GetModuleHandleW(NULL) + Offsets::GetBoneMatrix);
-		oGetBoneMatrix(mesh, &matrix, index);
+		tGetBoneMatrix GetBoneMatrix = reinterpret_cast<tGetBoneMatrix>((uintptr_t)GetModuleHandleW(0) + Offsets::GetBoneMatrix);
+		GetBoneMatrix(mesh, &matrix, index);
 
 		return matrix.WPlane;
 	}

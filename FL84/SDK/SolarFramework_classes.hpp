@@ -50,7 +50,7 @@ class USolarArchitecture : public UGameInstance
 {
 public:
 	FMulticastInlineDelegateProperty_            OnOnScopeChangeDelegate;                           // 0x1A0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1640[0x198];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_132B[0x198];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class USolarArchitecture* GetDefaultObj();

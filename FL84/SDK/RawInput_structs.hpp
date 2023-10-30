@@ -22,7 +22,7 @@ public:
 	int32                                        Handle;                                            // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        VendorID;                                          // 0x4(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ProductID;                                         // 0x8(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_75F[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5A0[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                DeviceName;                                        // 0x10(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -32,7 +32,7 @@ struct FRawInputDeadzoneConfiguration
 {
 public:
 	float                                        Deadzone;                                          // 0x0(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_760[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5A2[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FKey>                          Keys;                                              // 0x8(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -42,13 +42,13 @@ struct FRawInputDeviceAxisProperties
 {
 public:
 	uint8                                        bEnabled : 1;                                      // Mask: 0x1, PropSize: 0x10x0(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_5F : 7;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_761[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        BitPad_3A : 7;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_5A4[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FKey                                  Key;                                               // 0x8(0x18)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bInverted : 1;                                     // Mask: 0x1, PropSize: 0x10x20(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bGamepadStick : 1;                                 // Mask: 0x2, PropSize: 0x10x20(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_60 : 6;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_762[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        BitPad_3B : 6;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_5A5[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Offset;                                            // 0x24(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -58,8 +58,8 @@ struct FRawInputDeviceButtonProperties
 {
 public:
 	uint8                                        bEnabled : 1;                                      // Mask: 0x1, PropSize: 0x10x0(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_61 : 7;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_763[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        BitPad_3C : 7;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_5A6[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FKey                                  Key;                                               // 0x8(0x18)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 

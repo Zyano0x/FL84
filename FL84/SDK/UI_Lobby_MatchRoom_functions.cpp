@@ -40,34 +40,16 @@ class UUI_Lobby_MatchRoom_C* UUI_Lobby_MatchRoom_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.OnClicked_6D1BCCC0495910AA6FB8FDBA3DBF74E8
+// DelegateFunction UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.OnClicked_AE48E846466B4AF8913D808CF22698C6
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_MatchRoom_C::OnClicked_6D1BCCC0495910AA6FB8FDBA3DBF74E8()
+void UUI_Lobby_MatchRoom_C::OnClicked_AE48E846466B4AF8913D808CF22698C6()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_MatchRoom_C", "OnClicked_6D1BCCC0495910AA6FB8FDBA3DBF74E8");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Lobby_MatchRoom_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_MatchRoom_C", "Construct");
+		Func = Class->GetFunction("UI_Lobby_MatchRoom_C", "OnClicked_AE48E846466B4AF8913D808CF22698C6");
 
 
 
@@ -86,6 +68,24 @@ void UUI_Lobby_MatchRoom_C::Destruct()
 
 	if (!Func)
 		Func = Class->GetFunction("UI_Lobby_MatchRoom_C", "Destruct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_MatchRoom_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_MatchRoom_C", "Construct");
 
 
 

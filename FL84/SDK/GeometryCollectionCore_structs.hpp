@@ -82,7 +82,7 @@ public:
 	TArray<struct FSolverBreakingData>           Breakings;                                         // 0x50(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSet<struct FSolverTrailingData>             Trailings;                                         // 0x60(0x50)(NativeAccessSpecifierPublic)
 	float                                        Timestamp;                                         // 0xB0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1EBF[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1E21[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)

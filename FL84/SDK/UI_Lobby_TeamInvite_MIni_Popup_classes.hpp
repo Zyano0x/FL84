@@ -56,15 +56,15 @@ public:
 	class UUI_Component_PlayerHead_C*            UI_Component_PlayerHead_1;                         // 0x538(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UUI_Component_PlayerHead_C*            UI_Component_PlayerHead_2;                         // 0x540(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	enum class ET_Type_Invitation                Pop_Type;                                          // 0x548(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_28E0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3252[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Player;                                            // 0x54C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsNeedShow;                                        // 0x550(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	static class UClass* StaticClass();
 	static class UUI_Lobby_TeamInvite_Mini_Popup_C* GetDefaultObj();
 
-	void OnClicked_C512E9C44F6A92E8D8ED6BAB1E3AD8D2();
-	void OnClicked_9DD56296417E3FB2112C2FB5A0C22818();
+	void OnClicked_7BD670B743C423CCB6EC2EBB0163D2ED();
+	void OnClicked_286769C84B834D2E3D38C18DB58CA6E2();
 	void Destruct();
 	void Construct();
 	class FString GetModuleName();

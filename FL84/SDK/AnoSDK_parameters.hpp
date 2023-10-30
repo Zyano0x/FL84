@@ -27,7 +27,7 @@ struct UAnoSDK_OnAnoRecvAntiData__DelegateSignature_Params
 {
 public:
 	int32                                        Type;                                              // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FF9[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_ECA[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                AntiData;                                          // 0x8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -45,7 +45,7 @@ struct UAnoSDK_AnoUESDKSetUserInfo_Params
 {
 public:
 	enum class ETssSDKEntryId                    EntryId;                                           // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FFA[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_ECC[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                OpenId;                                            // 0x8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -90,7 +90,7 @@ struct UAnoSDK_AnoUESDKIoctl_Params
 {
 public:
 	int32                                        Request;                                           // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FFD[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_ED1[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Cmd;                                               // 0x8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -100,7 +100,7 @@ struct UAnoSDK_AnoUESDKInit_Params
 {
 public:
 	int32                                        GameID;                                            // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FFF[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_ED3[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Appkey;                                            // 0x8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 

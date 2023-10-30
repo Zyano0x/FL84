@@ -24,18 +24,18 @@ public:
 	class UWidgetSwitcher*                       WidgetSwitcher_Detail;                             // 0x438(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                        LevelID;                                           // 0x440(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Star;                                              // 0x444(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_1A86[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1E0E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        IconSize;                                          // 0x448(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                             TxtSize;                                           // 0x44C(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UUI_Rank_Icon_Small_C* GetDefaultObj();
 
-	void FormatViewJustIconCopy(int32 LevelID);
-	void OnInitialized();
 	void OnSolarUIClosed();
-	void OnSolarUIOpened();
 	void FormatViewCopy(int32 LevelID);
+	void FormatViewJustIconCopy(int32 LevelID);
+	void OnSolarUIOpened();
+	void OnInitialized();
 	class FString GetModuleName();
 	void FormatViewJustIcon(int32 LevelID);
 	void SetStar(bool Star, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility K2Node_Select_Default_1);

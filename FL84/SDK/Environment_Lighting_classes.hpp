@@ -21,8 +21,8 @@ public:
 	static class UClass* StaticClass();
 	static class AEnvironment_Lighting_C* GetDefaultObj();
 
-	void ReceiveEndPlay(enum class EEndPlayReason EndPlayReason);
 	void ReceiveBeginPlay();
+	void ReceiveEndPlay(enum class EEndPlayReason EndPlayReason);
 	class FString GetModuleName();
 	void SetLight(const class FString& SceneName);
 	void SetCardSkyLightData(float Indensity);

@@ -45,7 +45,7 @@ public:
 	class FString                                SteamId;                                           // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         IsFriend;                                          // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         Online;                                            // 0x11(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_9DA[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7FC[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                FriendName;                                        // 0x18(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -56,7 +56,7 @@ struct ULLHSDKAppUtils_IsSteamFriendOnline_Params
 public:
 	class FString                                SteamId;                                           // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_9DB[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_7FF[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -82,7 +82,7 @@ struct ULLHSDKAppUtils_IsPackageInstalled_Params
 public:
 	class FString                                InPackageName;                                     // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_9DD[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_805[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -100,7 +100,7 @@ struct ULLHSDKAppUtils_InviteSteamUserToGame_Params
 public:
 	class FString                                SteamId;                                           // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_9E0[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_807[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -391,7 +391,7 @@ struct ULLHSDKCustomerService_SetCustomerServiceDebug_Params
 {
 public:
 	bool                                         bIsPspDebug;                                       // 0x0(0x1)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_9F3[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_830[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                PlayerId;                                          // 0x8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int64                                        ServerId;                                          // 0x18(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -667,7 +667,7 @@ struct ULLHSDKLogin_SteamRegister_Params
 public:
 	class FString                                Params;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A11[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_84E[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -677,7 +677,7 @@ struct ULLHSDKLogin_SteamLoginResultSet_Params
 public:
 	class FString                                Params;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A12[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_850[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -687,7 +687,7 @@ struct ULLHSDKLogin_SteamGetAccountInfo_Params
 public:
 	class FString                                Params;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A13[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_851[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -697,7 +697,7 @@ struct ULLHSDKLogin_SteamBindUrlGet_Params
 public:
 	class FString                                Params;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A14[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_854[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -707,7 +707,7 @@ struct ULLHSDKLogin_SteamAutoLogin_Params
 public:
 	class FString                                Params;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A15[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_858[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x4 (0x4 - 0x0)
@@ -757,7 +757,7 @@ struct ULLHSDKLogin_OpenSteamBindPage_Params
 public:
 	class FString                                URL;                                               // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A16[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_867[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x4 (0x4 - 0x0)
@@ -775,7 +775,7 @@ struct ULLHSDKLogin_OpenLIMPCAccountPage_Params
 public:
 	class FString                                Params;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ReturnValue;                                       // 0x10(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A17[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_870[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -794,7 +794,7 @@ public:
 	class FString                                AppUid;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                AppToken;                                          // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELLHSDKLoginType                  LoginType;                                         // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A18[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_877[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)
@@ -803,7 +803,7 @@ struct ULLHSDKLogin_OnLoginFailed__DelegateSignature_Params
 {
 public:
 	enum class ELLHSDKLoginType                  LoginType;                                         // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A19[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_884[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        ErrorCode;                                         // 0x4(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -813,11 +813,11 @@ struct ULLHSDKLogin_OnBindFinish__DelegateSignature_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A1A[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_886[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                AppUid;                                            // 0x8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                AppToken;                                          // 0x18(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELLHSDKLoginType                  LoginType;                                         // 0x28(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A1B[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_887[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -827,7 +827,7 @@ struct ULLHSDKLogin_NSLoginStart_Params
 public:
 	class FString                                Params;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A1C[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_888[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -837,7 +837,7 @@ struct ULLHSDKLogin_NSAccountInfoGet_Params
 public:
 	class FString                                Params;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A1E[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_889[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x4 (0x4 - 0x0)
@@ -873,7 +873,7 @@ struct ULLHSDKLogin_LoginLimPCSDK_Params
 public:
 	class FString                                Params;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ReturnValue;                                       // 0x10(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A21[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_88D[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -925,7 +925,7 @@ struct ULLHSDKLogin_InitNSSDK_Params
 public:
 	class FString                                Params;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A22[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_88E[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -935,7 +935,7 @@ struct ULLHSDKLogin_InitLimSteamSDK_Params
 public:
 	class FString                                Params;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A23[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_88F[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -945,7 +945,7 @@ struct ULLHSDKLogin_InitLimPCSDK_Params
 public:
 	class FString                                Params;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ReturnValue;                                       // 0x10(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A24[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_892[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -963,7 +963,7 @@ struct ULLHSDKLogin_GetSteamRegisterUrl_Params
 public:
 	class FString                                Params;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A25[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_896[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -973,7 +973,7 @@ struct ULLHSDKLogin_GetLimPCUserInfo_Params
 public:
 	class FString                                Params;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ReturnValue;                                       // 0x10(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A26[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_897[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -1007,7 +1007,7 @@ struct ULLHSDKLogin_DoSteamBind_Params
 public:
 	class FString                                URL;                                               // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A2A[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_8A1[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -1025,7 +1025,7 @@ struct ULLHSDKLogin_CommonReportLimPCPoint_Params
 public:
 	class FString                                Params;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ReturnValue;                                       // 0x10(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A2B[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_8A2[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1043,7 +1043,7 @@ struct ULLHSDKLogin_ChangeLIMPCLanguage_Params
 public:
 	class FString                                Params;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ReturnValue;                                       // 0x10(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A2D[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_8A7[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1087,7 +1087,7 @@ struct ULLHSDKMisc_TcpPingDetect_Params
 public:
 	class FString                                InDomain;                                          // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        Port;                                              // 0x10(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A31[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_8BA[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -1096,7 +1096,7 @@ struct ULLHSDKMisc_SystemShare_Params
 {
 public:
 	int32                                        ShareType;                                         // 0x0(0x4)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A33[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8BB[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Description;                                       // 0x8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                FilePath;                                          // 0x18(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1109,7 +1109,7 @@ public:
 	class FString                                URL;                                               // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Title;                                             // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELLHSDKScreenOrientation          Orientation;                                       // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A34[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_8BE[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -1120,7 +1120,7 @@ public:
 	class FString                                URL;                                               // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Title;                                             // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELLHSDKScreenOrientation          Orientation;                                       // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A35[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_8C3[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -1226,7 +1226,7 @@ struct ULLHSDKMisc_OnQueryThirdPartUserInfo__DelegateSignature_Params
 {
 public:
 	bool                                         Success;                                           // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A38[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8CB[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        ErrorCode;                                         // 0x4(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FSDKSocialUserInfo>            SocialUserInfoList;                                // 0x8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1238,7 +1238,7 @@ struct ULLHSDKMisc_OnPickFileFromAlbumFinishEvent__DelegateSignature_Params
 public:
 	class FString                                PickFilePath;                                      // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ErrorCode;                                         // 0x10(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A39[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_8CD[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -1263,7 +1263,7 @@ struct ULLHSDKMisc_OnGetFacebookToken__DelegateSignature_Params
 {
 public:
 	bool                                         Result;                                            // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A3B[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8D6[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Token;                                             // 0x8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                ApplicationId;                                     // 0x18(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                UserId;                                            // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1277,7 +1277,7 @@ struct ULLHSDKMisc_OnFacebookPhotoShared__DelegateSignature_Params
 public:
 	class FString                                FilePath;                                          // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bSuccess;                                          // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A43[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_8D7[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -1557,14 +1557,14 @@ struct ULLHSDKPay_OnLLHPayFinished__DelegateSignature_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A82[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_908[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        ErrorCode;                                         // 0x4(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                ErrorMsg;                                          // 0x8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        PayValue;                                          // 0x18(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A84[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_909[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ProductID;                                         // 0x20(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELLHSDKPayType                    PayType;                                           // 0x30(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A86[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_90A[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -1573,7 +1573,7 @@ struct ULLHSDKPay_OnGoogleQuerySkuSubItemDetails__DelegateSignature_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A8B[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_90B[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        ErrorCode;                                         // 0x4(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                ItemsDetailListJsonString;                         // 0x8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1584,7 +1584,7 @@ struct ULLHSDKPay_OnGoogleQuerySkuItemDetails__DelegateSignature_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A8D[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_90C[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        ErrorCode;                                         // 0x4(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                ItemsDetailListJsonString;                         // 0x8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1595,13 +1595,13 @@ struct ULLHSDKPay_OnGooglePayFinished__DelegateSignature_Params
 {
 public:
 	bool                                         bSuccess;                                          // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A92[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_90F[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        ErrorCode;                                         // 0x4(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        Price;                                             // 0x8(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A93[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_911[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ItemID;                                            // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELLHSDKPayType                    PayType;                                           // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A94[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_912[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -1811,7 +1811,7 @@ public:
 	class FString                                Parameter1;                                        // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Parameter2;                                        // 0x20(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x30(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_AB8[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_938[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x48 (0x48 - 0x0)
@@ -1824,7 +1824,7 @@ public:
 	class FString                                Parameter2;                                        // 0x20(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Parameter3;                                        // 0x30(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x40(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_AB9[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_93A[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -1835,7 +1835,7 @@ public:
 	class FString                                EventName;                                         // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Parameter;                                         // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x20(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ABB[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_93C[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x58 (0x58 - 0x0)
@@ -1849,7 +1849,7 @@ public:
 	class FString                                Parameter3;                                        // 0x30(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Parameter4;                                        // 0x40(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x50(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ABC[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_93F[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x68 (0x68 - 0x0)
@@ -1864,7 +1864,7 @@ public:
 	class FString                                Parameter4;                                        // 0x40(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Parameter5;                                        // 0x50(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x60(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ABF[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_948[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -1874,7 +1874,7 @@ struct ULLHSDKReport_ReportToThirdParty_Params
 public:
 	class FString                                EventName;                                         // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_AC1[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_950[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x50 (0x50 - 0x0)
@@ -1884,12 +1884,12 @@ struct ULLHSDKReport_ReportRevenueToThirdParty_TwoParams_Params
 public:
 	class FString                                EventName;                                         // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELLHSDKReportCurrencyType         Currency;                                          // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_AC4[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_954[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Revenue;                                           // 0x18(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Parameter1;                                        // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Parameter2;                                        // 0x38(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x48(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_AC6[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_955[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x60 (0x60 - 0x0)
@@ -1899,13 +1899,13 @@ struct ULLHSDKReport_ReportRevenueToThirdParty_ThreeParams_Params
 public:
 	class FString                                EventName;                                         // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELLHSDKReportCurrencyType         Currency;                                          // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ACA[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_95E[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Revenue;                                           // 0x18(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Parameter1;                                        // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Parameter2;                                        // 0x38(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Parameter3;                                        // 0x48(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x58(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ACB[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_95F[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x40 (0x40 - 0x0)
@@ -1915,11 +1915,11 @@ struct ULLHSDKReport_ReportRevenueToThirdParty_OneParam_Params
 public:
 	class FString                                EventName;                                         // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELLHSDKReportCurrencyType         Currency;                                          // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ACE[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_961[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Revenue;                                           // 0x18(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Parameter;                                         // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x38(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_AD0[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_962[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x70 (0x70 - 0x0)
@@ -1929,14 +1929,14 @@ struct ULLHSDKReport_ReportRevenueToThirdParty_FourParams_Params
 public:
 	class FString                                EventName;                                         // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELLHSDKReportCurrencyType         Currency;                                          // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_AD5[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_966[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Revenue;                                           // 0x18(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Parameter1;                                        // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Parameter2;                                        // 0x38(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Parameter3;                                        // 0x48(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Parameter4;                                        // 0x58(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x68(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_AD6[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_967[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x80 (0x80 - 0x0)
@@ -1946,7 +1946,7 @@ struct ULLHSDKReport_ReportRevenueToThirdParty_FiveParams_Params
 public:
 	class FString                                EventName;                                         // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELLHSDKReportCurrencyType         Currency;                                          // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_AD8[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_96B[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Revenue;                                           // 0x18(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Parameter1;                                        // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Parameter2;                                        // 0x38(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1954,7 +1954,7 @@ public:
 	class FString                                Parameter4;                                        // 0x58(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Parameter5;                                        // 0x68(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x78(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ADA[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_96C[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x30 - 0x0)
@@ -1964,10 +1964,10 @@ struct ULLHSDKReport_ReportRevenueToThirdParty_Params
 public:
 	class FString                                EventName;                                         // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELLHSDKReportCurrencyType         Currency;                                          // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ADC[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_96E[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Revenue;                                           // 0x18(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x28(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ADD[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_96F[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -1978,7 +1978,7 @@ public:
 	class FString                                EventName;                                         // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                JsonContentStr;                                    // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x20(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ADE[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_973[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)

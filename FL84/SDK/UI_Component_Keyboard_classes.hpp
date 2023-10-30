@@ -28,18 +28,18 @@ public:
 	class UTextBlock*                            Txt_Key_1;                                         // 0x2F8(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         Red;                                               // 0x300(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Yellow;                                            // 0x301(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_212A[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1104[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Font_Size;                                         // 0x304(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                             BG_Size;                                           // 0x308(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bCustomRefresh;                                    // 0x310(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_212B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1105[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTextBlock*                            NewVar_0;                                          // 0x318(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UUI_Component_Keyboard_C* GetDefaultObj();
 
-	void Destruct();
 	void OnInitialized();
+	void Destruct();
 	void ConstructCopy();
 	class FString GetModuleName();
 	void BP_RefreshKeyboardUI(class UTextBlock* InTxtKey, class UImage* InImgBg, class USizeBox* InSizeBox, class UImage* LocalImgBg, class USizeBox* LocalSizeBox, class UTextBlock* LocalTxtKey, bool Temp_bool_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, bool Temp_bool_Variable_1, const struct FLinearColor& Temp_struct_Variable_2, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, const struct FSlateFontInfo& K2Node_MakeStruct_SlateFontInfo, const struct FLinearColor& K2Node_Select_Default, const struct FLinearColor& K2Node_Select_Default_1, class FText CallFunc_Conv_StringToText_ReturnValue);

@@ -48,10 +48,10 @@ public:
 	bool                                         Temp_bool_Variable;                                // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  Temp_byte_Variable;                                // 0x5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable_1;                              // 0x6(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2120[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1F62[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class USolarGlobalEventSystem*               CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_IsDesignTime;                         // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2121[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1F63[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               K2Node_CustomEvent_Publisher;                      // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               K2Node_CustomEvent_Payload;                        // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FString>                        K2Node_CustomEvent_Metadata;                       // 0x28(0x10)(ConstParm, ReferenceParm, HasGetValueTypeHash)

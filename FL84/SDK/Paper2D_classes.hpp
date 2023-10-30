@@ -15,7 +15,7 @@ class UMaterialExpressionSpriteTextureSampler : public UMaterialExpressionTextur
 {
 public:
 	bool                                         bSampleAdditionalTextures;                         // 0xF0(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_62C[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_38F[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        AdditionalSlotIndex;                               // 0xF4(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                  SlotDisplayName;                                   // 0xF8(0x18)(Edit, NativeAccessSpecifierPublic)
 
@@ -42,11 +42,11 @@ class UPaperFlipbook : public UObject
 {
 public:
 	float                                        FramesPerSecond;                                   // 0x28(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_63A[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3B7[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FPaperFlipbookKeyFrame>        KeyFrames;                                         // 0x30(0x10)(Edit, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UMaterialInterface*                    DefaultMaterial;                                   // 0x40(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	enum class EFlipbookCollisionMode            CollisionSource;                                   // 0x48(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_63B[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3B9[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPaperFlipbook* GetDefaultObj();
@@ -83,8 +83,8 @@ public:
 	uint8                                        bLooping : 1;                                      // Mask: 0x1, PropSize: 0x10x58C(0x1)(NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                        bReversePlayback : 1;                              // Mask: 0x2, PropSize: 0x10x58C(0x1)(NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                        bPlaying : 1;                                      // Mask: 0x4, PropSize: 0x10x58C(0x1)(NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        BitPad_53 : 5;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_672[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        BitPad_2C : 5;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_3F2[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        AccumulatedTime;                                   // 0x590(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                        CachedFrameIndex;                                  // 0x594(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FLinearColor                          SpriteColor;                                       // 0x598(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -138,7 +138,7 @@ class UPaperGroupedSpriteComponent : public UMeshComponent
 public:
 	TArray<class UMaterialInterface*>            InstanceMaterials;                                 // 0x578(0x10)(ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<struct FSpriteInstanceData>           PerInstanceSpriteData;                             // 0x588(0x10)(Edit, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_690[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_437[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPaperGroupedSpriteComponent* GetDefaultObj();
@@ -161,7 +161,7 @@ public:
 	bool                                         bEnableSpriteAtlasGroups;                          // 0x28(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bEnableTerrainSplineEditing;                       // 0x29(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bResizeSpriteDataToMatchTextures;                  // 0x2A(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_69D[0x5];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_440[0x5];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPaperRuntimeSettings* GetDefaultObj();
@@ -173,7 +173,7 @@ public:
 class UPaperSprite : public UObject
 {
 public:
-	uint8                                        Pad_69E[0x10];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_442[0x10];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UTexture*>                      AdditionalSourceTextures;                          // 0x38(0x10)(Edit, ZeroConstructor, AssetRegistrySearchable, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FVector2D                             BakedSourceUV;                                     // 0x48(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FVector2D                             BakedSourceDimension;                              // 0x50(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -182,11 +182,11 @@ public:
 	class UMaterialInterface*                    AlternateMaterial;                                 // 0x68(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<struct FPaperSpriteSocket>            Sockets;                                           // 0x70(0x10)(Edit, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	enum class ESpriteCollisionMode              SpriteCollisionDomain;                             // 0x80(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_6A1[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_445[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        PixelsPerUnrealUnit;                               // 0x84(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UBodySetup*                            BodySetup;                                         // 0x88(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        AlternateMaterialSplitIndex;                       // 0x90(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_6A3[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_447[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FVector4>                      BakedRenderData;                                   // 0x98(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass();
@@ -237,7 +237,7 @@ public:
 	class UPaperSprite*                          SourceSprite;                                      // 0x578(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UMaterialInterface*                    MaterialOverride;                                  // 0x580(0x8)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FLinearColor                          SpriteColor;                                       // 0x588(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_6B8[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_467[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPaperSpriteComponent* GetDefaultObj();
@@ -269,18 +269,18 @@ public:
 	class UPaperTerrainMaterial*                 TerrainMaterial;                                   // 0x540(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bClosedSpline;                                     // 0x548(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bFilledSpline;                                     // 0x549(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_6BC[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_473[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UPaperTerrainSplineComponent*          AssociatedSpline;                                  // 0x550(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        RandomSeed;                                        // 0x558(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        SegmentOverlapAmount;                              // 0x55C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                          TerrainColor;                                      // 0x560(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                        ReparamStepsPerSegment;                            // 0x570(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	enum class ESpriteCollisionMode              SpriteCollisionDomain;                             // 0x574(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_6C0[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_475[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CollisionThickness;                                // 0x578(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_6C2[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_476[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBodySetup*                            CachedBodySetup;                                   // 0x580(0x8)(ZeroConstructor, Transient, DuplicateTransient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_6C3[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_477[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPaperTerrainComponent* GetDefaultObj();
@@ -306,7 +306,7 @@ public:
 class UPaperTerrainSplineComponent : public USplineComponent
 {
 public:
-	uint8                                        Pad_6C6[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_491[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPaperTerrainSplineComponent* GetDefaultObj();
@@ -325,14 +325,14 @@ public:
 	uint8                                        bLayerCollides : 1;                                // Mask: 0x2, PropSize: 0x10x48(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                        bOverrideCollisionThickness : 1;                   // Mask: 0x4, PropSize: 0x10x48(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                        bOverrideCollisionOffset : 1;                      // Mask: 0x8, PropSize: 0x10x48(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        BitPad_57 : 4;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_6C9[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        BitPad_32 : 4;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_495[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CollisionThicknessOverride;                        // 0x4C(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                        CollisionOffsetOverride;                           // 0x50(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FLinearColor                          LayerColor;                                        // 0x54(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                        AllocatedWidth;                                    // 0x64(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                        AllocatedHeight;                                   // 0x68(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_6CA[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_496[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FPaperTileInfo>                AllocatedCells;                                    // 0x70(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UPaperTileSet*                         TileSet;                                           // 0x80(0x8)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<int32>                                AllocatedGrid;                                     // 0x88(0x10)(ZeroConstructor, Deprecated, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -361,12 +361,12 @@ public:
 	float                                        CollisionThickness;                                // 0x88(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	enum class ESpriteCollisionMode              SpriteCollisionDomain;                             // 0x8C(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	enum class ETileMapProjectionMode            ProjectionMode;                                    // 0x8D(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_6D2[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_49B[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        HexSideLength;                                     // 0x90(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_6D3[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_49C[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBodySetup*                            BodySetup;                                         // 0x98(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        LayerNameIndex;                                    // 0xA0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_6D4[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_49D[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPaperTileMap* GetDefaultObj();
@@ -400,9 +400,9 @@ public:
 	struct FLinearColor                          TileMapColor;                                      // 0x5A8(0x10)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                        UseSingleLayerIndex;                               // 0x5B8(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         bUseSingleLayer;                                   // 0x5BC(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_6FA[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E1[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UPaperTileMap*                         TileMap;                                           // 0x5C0(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_6FB[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E2[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UPaperTileMapComponent* GetDefaultObj();

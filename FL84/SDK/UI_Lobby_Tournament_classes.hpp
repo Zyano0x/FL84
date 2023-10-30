@@ -31,10 +31,10 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_Tournament_C* GetDefaultObj();
 
-	void OnClicked_7DCF8BCE438E3B703FCE98BEC0EA6672();
+	void OnClicked_CBFB36454DD64E981CA4D7A7763B10D7();
 	void Destruct();
-	void OnInitialized();
 	void Construct();
+	void OnInitialized();
 	class FString GetModuleName();
 	void PreConstruct(bool IsDesignTime);
 	void ExecuteUbergraph_UI_Lobby_Tournament(int32 EntryPoint, bool K2Node_Event_IsDesignTime);

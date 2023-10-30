@@ -71,7 +71,7 @@ class UEditableGameplayTagQuery : public UObject
 {
 public:
 	class FString                                UserDescription;                                   // 0x28(0x10)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1AB4[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_17E0[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class UEditableGameplayTagQueryExpression*   RootExpression;                                    // 0x48(0x8)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGameplayTagQuery                     TagQueryExportText_Helper;                         // 0x50(0x48)(NativeAccessSpecifierPrivate)
 
@@ -168,11 +168,11 @@ public:
 class UGameplayTagsManager : public UObject
 {
 public:
-	uint8                                        Pad_1AB9[0x98];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_17EB[0x98];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FGameplayTagSource>            TagSources;                                        // 0xC0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1ABA[0xE0];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_17EC[0xE0];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UDataTable*>                    GameplayTagTables;                                 // 0x1B0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1ABB[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_17ED[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UGameplayTagsManager* GetDefaultObj();
@@ -213,7 +213,7 @@ public:
 	bool                                         ImportTagsFromConfig;                              // 0x48(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         WarnOnInvalidTags;                                 // 0x49(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         FastReplication;                                   // 0x4A(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1ABD[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_17EF[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                InvalidTagCharacters;                              // 0x50(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FGameplayTagCategoryRemap>     CategoryRemapping;                                 // 0x60(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FSoftObjectPath>               GameplayTagTableList;                              // 0x70(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)

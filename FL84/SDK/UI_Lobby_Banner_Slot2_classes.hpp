@@ -22,8 +22,8 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_Banner_Slot2_C* GetDefaultObj();
 
-	void BP_OnItemSelectionChangedCopy(bool bIsSelected);
 	void OnListItemObjectSetCopy(class UObject* ListItemObject);
+	void BP_OnItemSelectionChangedCopy(bool bIsSelected);
 	class FString GetModuleName();
 	void BP_OnEntryReleased();
 	void BP_OnItemExpansionChanged(bool bIsExpanded);

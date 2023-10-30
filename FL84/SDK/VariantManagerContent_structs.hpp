@@ -43,7 +43,7 @@ struct FCapturedPropSegment
 public:
 	class FString                                PropertyName;                                      // 0x0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        PropertyIndex;                                     // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_91F[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7E6[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ComponentName;                                     // 0x18(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 

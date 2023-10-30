@@ -40,66 +40,6 @@ class UBP_SettlementStageMgr_C* UBP_SettlementStageMgr_C::GetDefaultObj()
 }
 
 
-// Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.Init
-// (Event, Public, BlueprintEvent)
-// Parameters:
-
-void UBP_SettlementStageMgr_C::Init()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_SettlementStageMgr_C", "Init");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.ShowNextStage
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void UBP_SettlementStageMgr_C::ShowNextStage()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_SettlementStageMgr_C", "ShowNextStage");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.GetClassRelativePathName
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class UClass*                      InClass                                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                      ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class FString UBP_SettlementStageMgr_C::GetClassRelativePathName(class UClass* InClass)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("BP_SettlementStageMgr_C", "GetClassRelativePathName");
-
-	Params::UBP_SettlementStageMgr_C_GetClassRelativePathName_Params Parms{};
-
-	Parms.InClass = InClass;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-
-}
-
-
 // Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.CloseDiePage
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -136,6 +76,42 @@ void UBP_SettlementStageMgr_C::ShowDiePage()
 }
 
 
+// Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.Init
+// (Event, Public, BlueprintEvent)
+// Parameters:
+
+void UBP_SettlementStageMgr_C::Init()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SettlementStageMgr_C", "Init");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.ShowNextStage
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UBP_SettlementStageMgr_C::ShowNextStage()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SettlementStageMgr_C", "ShowNextStage");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.SkipToTarget
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -150,6 +126,30 @@ void UBP_SettlementStageMgr_C::SkipToTarget()
 
 
 	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.GetClassRelativePathName
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class UClass*                      InClass                                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                      ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FString UBP_SettlementStageMgr_C::GetClassRelativePathName(class UClass* InClass)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("BP_SettlementStageMgr_C", "GetClassRelativePathName");
+
+	Params::UBP_SettlementStageMgr_C_GetClassRelativePathName_Params Parms{};
+
+	Parms.InClass = InClass;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 
 }
 

@@ -28,8 +28,8 @@ public:
 	static class UClass* StaticClass();
 	static class ALobby_Script_C* GetDefaultObj();
 
-	void ReceiveBeginPlayCopy();
 	void ReceiveEndPlay(enum class EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlayCopy();
 	class FString GetModuleName();
 	void ReceiveBeginPlay();
 	void ExecuteUbergraph_Lobby_Script(int32 EntryPoint);

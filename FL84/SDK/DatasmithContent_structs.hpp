@@ -118,8 +118,8 @@ struct FDatasmithCameraLookatTrackingSettingsTemplate
 public:
 	uint8                                        bEnableLookAtTracking : 1;                         // Mask: 0x1, PropSize: 0x10x0(0x1)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bAllowRoll : 1;                                    // Mask: 0x2, PropSize: 0x10x0(0x1)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_6E : 6;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_8C4[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        BitPad_5F : 6;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_7D1[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class AActor>                 ActorToTrack;                                      // 0x8(0x28)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -135,17 +135,17 @@ public:
 	uint8                                        bOverride_AutoExposureMethod : 1;                  // Mask: 0x10, PropSize: 0x10x0(0x1)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bOverride_CameraISO : 1;                           // Mask: 0x20, PropSize: 0x10x0(0x1)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bOverride_CameraShutterSpeed : 1;                  // Mask: 0x40, PropSize: 0x10x0(0x1)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_6F : 1;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_8C7[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        BitPad_60 : 1;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_7D2[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	uint8                                        bOverride_DepthOfFieldFstop : 1;                   // Mask: 0x1, PropSize: 0x10x4(0x1)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_70 : 7;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_8C8[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        BitPad_61 : 7;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_7D3[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        WhiteTemp;                                         // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        VignetteIntensity;                                 // 0xC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                          FilmWhitePoint;                                    // 0x10(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector4                              ColorSaturation;                                   // 0x20(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EAutoExposureMethod               AutoExposureMethod;                                // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_8C9[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7D4[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CameraISO;                                         // 0x34(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        CameraShutterSpeed;                                // 0x38(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        DepthOfFieldFstop;                                 // 0x3C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -157,7 +157,7 @@ struct FDatasmithCameraFocusSettingsTemplate
 {
 public:
 	enum class ECameraFocusMethod                FocusMethod;                                       // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_8CB[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7D5[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        ManualFocusDistance;                               // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -187,7 +187,7 @@ public:
 	float                                        MaxEdgeLength;                                     // 0x4(0x4)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        NormalTolerance;                                   // 0x8(0x4)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EDatasmithCADStitchingTechnique   StitchingTechnique;                                // 0xC(0x1)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_8CD[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_7D9[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x4 (0x4 - 0x0)
@@ -220,7 +220,7 @@ public:
 	bool                                         bIncludeLight;                                     // 0x3(0x1)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIncludeCamera;                                    // 0x4(0x1)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIncludeAnimation;                                 // 0x5(0x1)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_8CE[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7DD[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDatasmithAssetImportOptions          AssetOptions;                                      // 0x8(0x8)(BlueprintVisible, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	struct FDatasmithStaticMeshImportOptions     StaticMeshOptions;                                 // 0x10(0x4)(Edit, BlueprintVisible, Config, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 };
@@ -280,7 +280,7 @@ public:
 	uint8                                        bUseHighPrecisionTangentBasis : 1;                 // Mask: 0x20, PropSize: 0x10x0(0x1)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bUseFullPrecisionUVs : 1;                          // Mask: 0x40, PropSize: 0x10x0(0x1)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bGenerateLightmapUVs : 1;                          // Mask: 0x80, PropSize: 0x10x0(0x1)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_8CF[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7E1[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        MinLightmapResolution;                             // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        SrcLightmapIndex;                                  // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        DstLightmapIndex;                                  // 0xC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)

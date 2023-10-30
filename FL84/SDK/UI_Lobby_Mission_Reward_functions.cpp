@@ -40,16 +40,34 @@ class UUI_Lobby_Mission_Reward_C* UUI_Lobby_Mission_Reward_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.OnClicked_245EAA0542A40521B32E4C8A54EF799F
+// DelegateFunction UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.OnClicked_6923DC3A46460AD1756C4BADB0854821
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_Mission_Reward_C::OnClicked_245EAA0542A40521B32E4C8A54EF799F()
+void UUI_Lobby_Mission_Reward_C::OnClicked_6923DC3A46460AD1756C4BADB0854821()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Mission_Reward_C", "OnClicked_245EAA0542A40521B32E4C8A54EF799F");
+		Func = Class->GetFunction("UI_Lobby_Mission_Reward_C", "OnClicked_6923DC3A46460AD1756C4BADB0854821");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_Mission_Reward_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Mission_Reward_C", "Destruct");
 
 
 
@@ -78,24 +96,6 @@ void UUI_Lobby_Mission_Reward_C::OnSolarUIClosed()
 
 
 	Func->FunctionFlags = Flgs;
-
-}
-
-
-// Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Lobby_Mission_Reward_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Mission_Reward_C", "Destruct");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
 
 }
 

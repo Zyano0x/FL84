@@ -25,7 +25,7 @@ public:
 class UMeshDescriptionBase : public UObject
 {
 public:
-	uint8                                        Pad_1B9C[0x368];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1827[0x368];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMeshDescriptionBase* GetDefaultObj();

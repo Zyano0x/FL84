@@ -40,6 +40,24 @@ class UUI_Component_NationalFlag_C* UUI_Component_NationalFlag_C::GetDefaultObj(
 }
 
 
+// Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Component_NationalFlag_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_NationalFlag_C", "OnInitialized");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -58,42 +76,68 @@ void UUI_Component_NationalFlag_C::Destruct()
 }
 
 
-// Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.IsBroadCastMode
+// Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.LoadClanFlagByUrl
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
-bool UUI_Component_NationalFlag_C::IsBroadCastMode()
+void UUI_Component_NationalFlag_C::LoadClanFlagByUrl()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_NationalFlag_C", "IsBroadCastMode");
-
-	Params::UUI_Component_NationalFlag_C_IsBroadCastMode_Params Parms{};
-
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-
-}
-
-
-// Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.SetDefaultNationalFlag
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void UUI_Component_NationalFlag_C::SetDefaultNationalFlag()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Component_NationalFlag_C", "SetDefaultNationalFlag");
+		Func = Class->GetFunction("UI_Component_NationalFlag_C", "LoadClanFlagByUrl");
 
 
 
 	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.OnSolarUIOpened
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UUI_Component_NationalFlag_C::OnSolarUIOpened()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_NationalFlag_C", "OnSolarUIOpened");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.IsExclusiveFlagId
+// (Event, Protected, BlueprintEvent, Const)
+// Parameters:
+// int32                              InFlagID                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+bool UUI_Component_NationalFlag_C::IsExclusiveFlagId(int32 InFlagID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_NationalFlag_C", "IsExclusiveFlagId");
+
+	Params::UUI_Component_NationalFlag_C_IsExclusiveFlagId_Params Parms{};
+
+	Parms.InFlagID = InFlagID;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 
 }
 
@@ -108,24 +152,6 @@ void UUI_Component_NationalFlag_C::SetDefaultClanFlag()
 
 	if (!Func)
 		Func = Class->GetFunction("UI_Component_NationalFlag_C", "SetDefaultClanFlag");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Component_NationalFlag_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Component_NationalFlag_C", "OnInitialized");
 
 
 
@@ -158,48 +184,6 @@ void UUI_Component_NationalFlag_C::OnSolarUIClosed()
 }
 
 
-// Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.OnSolarUIOpened
-// (Native, Event, Protected, BlueprintEvent)
-// Parameters:
-
-void UUI_Component_NationalFlag_C::OnSolarUIOpened()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Component_NationalFlag_C", "OnSolarUIOpened");
-
-
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-
-	Func->FunctionFlags = Flgs;
-
-}
-
-
-// Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.LoadClanFlagByUrl
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void UUI_Component_NationalFlag_C::LoadClanFlagByUrl()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Component_NationalFlag_C", "LoadClanFlagByUrl");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -218,22 +202,38 @@ void UUI_Component_NationalFlag_C::Construct()
 }
 
 
-// Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.IsExclusiveFlagId
-// (Event, Protected, BlueprintEvent, Const)
+// Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.SetDefaultNationalFlag
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                              InFlagID                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
-bool UUI_Component_NationalFlag_C::IsExclusiveFlagId(int32 InFlagID)
+void UUI_Component_NationalFlag_C::SetDefaultNationalFlag()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_NationalFlag_C", "IsExclusiveFlagId");
+		Func = Class->GetFunction("UI_Component_NationalFlag_C", "SetDefaultNationalFlag");
 
-	Params::UUI_Component_NationalFlag_C_IsExclusiveFlagId_Params Parms{};
 
-	Parms.InFlagID = InFlagID;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.IsBroadCastMode
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+
+bool UUI_Component_NationalFlag_C::IsBroadCastMode()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_NationalFlag_C", "IsBroadCastMode");
+
+	Params::UUI_Component_NationalFlag_C_IsBroadCastMode_Params Parms{};
+
 
 	UObject::ProcessEvent(Func, &Parms);
 

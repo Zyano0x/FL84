@@ -123,7 +123,7 @@ class USlateSettings : public UObject
 {
 public:
 	bool                                         bExplicitCanvasChildZOrder;                        // 0x28(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_169F[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_14B0[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class USlateSettings* GetDefaultObj();

@@ -147,9 +147,6 @@
     <ClInclude Include="FileUtility\FileUtility.h">
       <Filter>Profiler\RapidXML\Utilities</Filter>
     </ClInclude>
-    <ClInclude Include="SDK.hpp">
-      <Filter>SDK</Filter>
-    </ClInclude>
     <ClInclude Include="Draw.h">
       <Filter>Draw</Filter>
     </ClInclude>
@@ -164,6 +161,9 @@
     </ClInclude>
     <ClInclude Include="Memory.h">
       <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK.hpp">
+      <Filter>SDK</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -221,18 +221,6 @@
     <ClCompile Include="FileUtility\FileUtility.cpp">
       <Filter>Profiler\RapidXML\Utilities</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\Basic.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\CoreUObject_functions.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\Engine_functions.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\Solarland_functions.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
     <ClCompile Include="Engine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -241,6 +229,18 @@
     </ClCompile>
     <ClCompile Include="Memory.cpp">
       <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\CoreUObject_functions.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Basic.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Engine_functions.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Solarland_functions.cpp">
+      <Filter>SDK</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

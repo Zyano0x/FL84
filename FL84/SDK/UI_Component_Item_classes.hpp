@@ -46,7 +46,7 @@ public:
 	class UUI_Component_Item_VoiceSlot_C*        UI_Component_Item_VideoSlot;                       // 0x4E8(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                              Unlock;                                            // 0x4F0(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	enum class E_Type_Item                       ItemState;                                         // 0x4F8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_29[0x3];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2D99[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        __;                                                // 0x4FC(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Item_Quality                    Quality;                                           // 0x500(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Select;                                            // 0x501(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -55,16 +55,90 @@ public:
 	bool                                         Puzzle;                                            // 0x504(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Equiped;                                           // 0x505(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         RedHint;                                           // 0x506(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2B[0x1];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2D9B[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Txt_Size;                                          // 0x508(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         NoQuality;                                         // 0x50C(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 	static class UClass* StaticClass();
 	static class UUI_Component_Item_C* GetDefaultObj();
 
+	void OnClicked_723C67DD400B66B736FD0CBDC510A2DD();
+	void OnClicked_AA1454A9469261F6CCC1DD98BBFD7F82();
+	void OnClicked_CB7466DC444AF13C708B1C9E37A6950B();
+	void OnClicked_C928AC644E794D11589D68AAA5414153();
+	void OnClicked_FBC578EB48477967BC6043B13EF0C839();
+	void OnClicked_B842C32E48BD5FD4CB078C98B7EEEFE8();
+	void OnClicked_919FFA81433A98552AA9C98FE75F3FA8();
+	void OnClicked_4C1640E14D551E3F66DDFC98EBC29593();
+	void OnClicked_761AE6E449DB82C1C41BAD982FF6C479();
+	void OnClicked_D8100847440BA75C5B48CEB629894A73();
+	void OnClicked_87315C8443738EAEEC20EFA9F8E8E1B0();
+	void OnClicked_278AE97F4E63F3AFFCB1B0AE99F29BD5();
+	void OnClicked_5179EFCC4C432259FFA958A11AF6EE65();
+	void OnClicked_7B94023A406D4C3742B0E68C208423B9();
+	void OnClicked_6DE342C1479DB8A03AA73FA264A153B2();
+	void OnClicked_DDDC654C4981476C6EAD6D819957EB1C();
+	void OnClicked_D2CFB50A42F1C0D50658839FCBCFA9DD();
+	void OnClicked_A504C1B241DA08F689EAE091A2C0EC65();
+	void OnClicked_A3803B3143D22762C8FCC583A68AD973();
+	void OnClicked_08B584CA495AEB40715414910CADF1DB();
+	void OnClicked_8A4D14324F42FBD639768A970F72028E();
+	void OnClicked_81049F6A42D6C026883A4386C48374E2();
+	void OnClicked_925F580046CDEACEB20DA2A9FFBD26F5();
+	void OnClicked_69C0D3634514B4FB11C37FACB99F0047();
+	void OnClicked_EFC1B65941C637A23D22F5BB61E26B5A();
+	void OnClicked_77B6E8F9412546618F9A93A524F856D3();
+	void OnClicked_FF03E4E044F4BBD0B1CF479D00640F05();
+	void OnClicked_3BB5106646C237DF00A6DBAF581BBB55();
+	void OnClicked_0FFAEAEB4786B6827F4ED89377745435();
+	void OnClicked_6577459A45CA702ED92E459B17F09F10();
+	void OnClicked_F2CB0AB04C4FB6C0AB04AA8563A1D55D();
+	void OnClicked_C52674BB4BB5DC6C532EAEA3A0C9420F();
+	void OnClicked_DF81FBBD404C03487BD8A6AAFC708FC5();
+	void OnClicked_D3D119094CADA9EE0034D3882FBC0A53();
+	void OnClicked_1C989F6B421187D3616FDEB2A6C31C44();
+	void OnClicked_6C1C771046F28CA9B5FE1880E92DFA2C();
+	void OnClicked_39EB712D4A6375A41EF1C791D3D7F7A1();
+	void OnClicked_AF70AEF4457120B0484CC6A716A3E62F();
+	void OnClicked_5B94B5B54DAC8C51626AE988E883120D();
+	void OnClicked_8652EDD74E97941F49F19CB5677BF15C();
+	void OnClicked_8F5B09504062C4388F150DBFF5A21ACD();
+	void OnClicked_7279E455424565564AACED96154A3053();
+	void OnClicked_3E8B899B4A42FAD4D400EBA2A354842D();
+	void OnClicked_1A0D71A741F478A005B06097CAF5A6B5();
+	void OnClicked_BEB338C247C7D164CFC594A117C0819F();
+	void OnClicked_4CC6B8614E0B2D8367B6F4B9B7419779();
+	void OnClicked_035E06974FF768D2E5F353920F3213C2();
+	void OnClicked_9167598E47B2E7F69D115BB564B2A5B3();
+	void OnClicked_C7D6CA6842630DA31A1F719BBDEA8681();
+	void OnClicked_00A4237E461988EE07E10CA67C453AE2();
+	void OnClicked_C5EBFFA14213384EB831E28272A30662();
+	void OnClicked_72ABC91A4B1E5D22513549AAA4FBEF22();
+	void OnClicked_B887BE70441F5F98D57696B9AD77AB90();
+	void OnClicked_E3A0FA87430CB21FBB8AB9A9D66E6982();
+	void OnClicked_AE80A7AB4388DAA642D146B81D0F3342();
+	void OnClicked_E4AF98474C40FED97BF836BCBB0C4A88();
+	void OnClicked_156660874F9876B4C84D41B4A6FA37D6();
+	void OnClicked_4A8CA25A455CD1059B29418098AE6AC4();
+	void OnClicked_BF30FBDD412BE237AE518694E3991D17();
+	void OnClicked_0A4D207A43739DBF9F02ED9AC577ECD6();
+	void OnClicked_1745FCA34C100BD2938B97A561D7458D();
+	void OnClicked_2D0F86AD4E9A2277FDBF36BB21A5FBE3();
+	void OnClicked_AC010B8F4753C56F092D3EAD7152FE5E();
+	void OnClicked_84DEE1344D80111645B2E8955A12A0D2();
+	void OnClicked_A83E6B18468D941E50D2F993C5AD66A2();
+	void OnClicked_1C62AA0B4465A7EADBB84EBEAEFF971C();
+	void OnClicked_C33D994A4C3B37DF6EB71099256DC314();
+	void OnClicked_D015F40F4DF935130B1089AFEE35E1F3();
+	void OnClicked_982702DA4AD8D9D5E0F8B4BD5495A142();
+	void OnClicked_8394DF9C4F23145D5519168A873CA64A();
+	void OnClicked_DF5E44084FCAFDA9C798D29FC28FCDCE();
+	void OnClicked_D92DD94F43C45ACFEA5A24B4C4DF5778();
+	void OnClicked_E15133D745F1A3008753DCB599AD57F0();
+	void OnClicked_BD7421FE4E7D296B995BEF9146819075();
 	void BP_OnItemSelectionChangedCopy(bool bIsSelected);
-	void OnListItemObjectSetCopy(class UObject* ListItemObject);
 	void PlayEnterAnim();
+	void OnListItemObjectSetCopy(class UObject* ListItemObject);
 	class FString GetModuleName();
 	void BP_OnEntryReleased();
 	void BP_OnItemExpansionChanged(bool bIsExpanded);

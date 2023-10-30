@@ -36,7 +36,7 @@ struct UWheeledVehicleMovementComponent_SetTargetGear_Params
 public:
 	int32                                        GearNum;                                           // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bImmediate;                                        // 0x4(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DD5[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1D0C[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x4 (0x4 - 0x0)

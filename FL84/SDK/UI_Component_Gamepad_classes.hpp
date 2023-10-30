@@ -24,15 +24,15 @@ public:
 	class USizeBox*                              SizeBox_MainKey;                                   // 0x438(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                              SizeBox_ModifierKey;                               // 0x440(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         bCustomRefresh;                                    // 0x448(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_25EB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_20BF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ActionName;                                        // 0x450(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	float                                        Size;                                              // 0x460(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UUI_Component_Gamepad_C* GetDefaultObj();
 
-	void Destruct();
 	void OnInitialized();
+	void Destruct();
 	void Construct();
 	class FString GetModuleName();
 	void SetMainKeySelection();

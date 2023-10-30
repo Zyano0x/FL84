@@ -19,18 +19,18 @@ public:
 	class UImage*                                Img_Bg;                                            // 0x410(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                Img_Medal;                                         // 0x418(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         bLargeMedal;                                       // 0x420(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_17F5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2286[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               MedalIcon;                                         // 0x428(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bSmallMedal;                                       // 0x430(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_17F6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2287[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTexture2D*                            Medal;                                             // 0x438(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UUI_Target_Card_Medal_Item_C* GetDefaultObj();
 
+	void Destruct();
 	void BPCalLuaInitDataCopy(int32 ID, int32 Type, int32 Level);
 	void OnInitialized();
-	void Destruct();
 	class FString GetModuleName();
 	void BPCalLuaInitData(int32 ID, int32 Type, int32 Level);
 	void SetSmallIcon(class UTexture2D* NewParam, bool NewParam1, enum class ESlateVisibility Temp_byte_Variable, bool CallFunc_Not_PreBool_ReturnValue, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, const struct FVector2D& Temp_struct_Variable, bool Temp_bool_Variable_2, float Temp_float_Variable, float Temp_float_Variable_1, bool Temp_bool_Variable_3, float K2Node_Select_Default, const struct FVector2D& Temp_struct_Variable_1, const struct FMargin& K2Node_MakeStruct_Margin, const struct FVector2D& Temp_struct_Variable_2, enum class ESlateVisibility Temp_byte_Variable_2, const struct FVector2D& K2Node_Select_Default_1, const struct FVector2D& K2Node_Select_Default_2, bool Temp_bool_Variable_4, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, enum class ESlateVisibility K2Node_Select_Default_3, enum class ESlateVisibility K2Node_Select_Default_4, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue);

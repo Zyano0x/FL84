@@ -14,7 +14,7 @@ namespace SDK
 class UAudioPermissionHelperProxy : public UObject
 {
 public:
-	uint8                                        Pad_9D[0x20];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_83[0x20];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UAudioPermissionHelperProxy* GetDefaultObj();
@@ -31,96 +31,96 @@ public:
 class UChatGMEManager : public UObject
 {
 public:
-	uint8                                        Pad_D8[0x8];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_C2[0x8];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLimNativeLowLevelWrapper             Ctx;                                               // 0x30(0x10)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnEnterRoom;                                       // 0x40(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D9[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_C3[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnExitRoom;                                        // 0x68(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_DA[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_C4[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnRoomDisconnect;                                  // 0x90(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_DB[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_C5[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnUserUpdate;                                      // 0xB8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_DD[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_C6[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnNumberOfUsersUpdate;                             // 0xE0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_DE[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_C7[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnNumberOfAudioStreamsUpdate;                      // 0x108(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_DF[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_C8[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnReconnectStart;                                  // 0x130(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E0[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_C9[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnReconnectSuccess;                                // 0x158(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E1[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_CA[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnSwitchRoom;                                      // 0x180(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E2[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_CB[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnChangeRoomType;                                  // 0x1A8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E3[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_CC[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnAudioDataEmpty;                                  // 0x1D0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E4[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_CD[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnRoomSharingStart;                                // 0x1F8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E5[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_CE[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnRoomSharingStop;                                 // 0x220(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E6[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_CF[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnRecordCompleted;                                 // 0x248(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E7[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_D0[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnRecordPreviewCompleted;                          // 0x270(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E8[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_D1[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnRecordMixCompleted;                              // 0x298(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E9[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_D3[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnAudioRouteUpdate;                                // 0x2C0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EA[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_D5[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnSpeakerDefaultDeviceChanged;                     // 0x2E8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EB[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_D6[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnSpeakerNewDevice;                                // 0x310(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EC[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_D7[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnSpeakerLostDevice;                               // 0x338(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ED[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_D8[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnMicNewDevice;                                    // 0x360(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EE[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_D9[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnMicLostDevice;                                   // 0x388(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EF[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_DA[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnMicDefaultDeviceChanged;                         // 0x3B0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F0[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_DB[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnAudioRouteChanged;                               // 0x3D8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F1[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_DC[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnUserVolumes;                                     // 0x400(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F2[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_DD[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnChangeRoomQuality;                               // 0x428(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F3[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_DE[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnAccompanyFinish;                                 // 0x450(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F4[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_DF[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnServerAudioRouteEvent;                           // 0x478(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F5[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_E0[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnCustomDataUpdate;                                // 0x4A0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F6[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_E1[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnRealtimeASR;                                     // 0x4C8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F7[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_E3[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnChorusEvent;                                     // 0x4F0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F8[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_E5[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnChangeTeamId;                                    // 0x518(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F9[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_E6[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnAudioReady;                                      // 0x540(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FA[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_E7[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnHardwareTestRecordFinish;                        // 0x568(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FB[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_E8[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnHardwareTestPreviewFinish;                       // 0x590(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FC[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_E9[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnPTTRecordComplete;                               // 0x5B8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FD[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_EA[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnPTTUploadComplete;                               // 0x5E0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FE[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_EB[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnPTTDownloadComplete;                             // 0x608(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_FF[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_EC[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnPTTPlayComplete;                                 // 0x630(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_101[0x18];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_ED[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnPTTSpeech2TextComplete;                          // 0x658(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_102[0x18];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_EE[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnPTTStreamingRecognitionComplete;                 // 0x680(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_103[0x18];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_EF[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnPTTStreamingRecognitionIsRunning;                // 0x6A8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_104[0x18];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_F0[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnRoomManagementOperator;                          // 0x6D0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_105[0x18];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_F1[0x18];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnPermissionResult;                                // 0x6F8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_106[0x90];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_F2[0x90];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UChatGMEManager* GetDefaultObj();
@@ -204,7 +204,7 @@ class UChatListEmojiEntryData : public UObject
 {
 public:
 	class FString                                Tag;                                               // 0x28(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_10E[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_F7[0x8];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateBrush                           Image;                                             // 0x40(0xE0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass();
@@ -218,16 +218,16 @@ class UChatListEntryDataBase : public UObject
 {
 public:
 	enum class ELimNativeMsgContentType          MessageType;                                       // 0x28(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_111[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_F8[0x7];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDateTime                             Timestamp;                                         // 0x30(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                SenderId;                                          // 0x38(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                SenderName;                                        // 0x48(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                SenderAvatarUrl;                                   // 0x58(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeMsgState                MsgState;                                          // 0x68(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_112[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_F9[0x7];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ConvID;                                            // 0x70(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0x80(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_113[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_FB[0x7];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                MsgId;                                             // 0x88(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass();
@@ -268,7 +268,7 @@ public:
 	class FString                                URL;                                               // 0xA8(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Size;                                              // 0xB8(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        Duration;                                          // 0xC8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_114[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_FD[0x4];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UChatListEntryDataVoice* GetDefaultObj();
@@ -299,7 +299,7 @@ class UChatListEntryDataCustomEmotion : public UChatListEntryDataBase
 public:
 	class FString                                PackName;                                          // 0x98(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativePackType                PackType;                                          // 0xA8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_115[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_FF[0x7];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                EmotionName;                                       // 0xB0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                EmotionId;                                         // 0xC0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                EmotionUrl;                                        // 0xD0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -316,7 +316,7 @@ class UChatListEntryDataShaderedGameCard : public UChatListEntryDataBase
 {
 public:
 	int32                                        Type;                                              // 0x98(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_118[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_100[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Text;                                              // 0xA0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Title;                                             // 0xB0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Detail;                                            // 0xC0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -339,11 +339,11 @@ public:
 	class FString                                AvatarUrl;                                         // 0x48(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                AvatarFrameUrl;                                    // 0x58(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeUserSexType             Sex;                                               // 0x68(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_11C[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_101[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        VipLevel;                                          // 0x6C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         IsShowVip;                                         // 0x70(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeFriendStateType         OnlineState;                                       // 0x71(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_11E[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_102[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        UnreadCount;                                       // 0x74(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass();
@@ -356,7 +356,7 @@ public:
 class ULimChatManager : public UObject
 {
 public:
-	uint8                                        Pad_1BD[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_143[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class ULimNative*                            LimNativeInstance;                                 // 0x30(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLimNativeLowLevelWrapper             Ctx;                                               // 0x38(0x10)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	class FString                                CurrentLanguage;                                   // 0x48(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -390,7 +390,7 @@ public:
 	FMulticastInlineDelegateProperty_            OnGetUserListStateHandle;                          // 0x2D0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnRedHintUpdateHandle;                             // 0x2E0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnInputBoxChangeHandle;                            // 0x2F0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1BF[0x20];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_147[0x20];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULimChatManager* GetDefaultObj();
@@ -492,15 +492,15 @@ public:
 	class FString                                GME_Test_AppId;                                    // 0xA0(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                GME_Test_PrivateKey;                               // 0xB0(0x10)(Edit, ZeroConstructor, Config, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bTestGmeEnv;                                       // 0xC0(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1C9[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_151[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        GME_EventTick;                                     // 0xC4(0x4)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        MaxRecordingTime;                                  // 0xC8(0x4)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bShowLimSdkLog;                                    // 0xCC(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1CE[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_152[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Lim_SDKRegion;                                     // 0xD0(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Lim_SDKRegion_Domestic;                            // 0xE0(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        Lim_GameID;                                        // 0xF0(0x4)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1D0[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_153[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Lim_Slssvr;                                        // 0xF8(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Lim_Slssvr_Test;                                   // 0x108(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Lim_Slssvr_Domestic;                               // 0x118(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -516,7 +516,7 @@ public:
 	class FString                                Agora_Test_AppKey;                                 // 0x1A0(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Agora_Test_AppToken;                               // 0x1B0(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bEnvOversea;                                       // 0x1C0(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1D3[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_156[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULimNativeWidgetSettings* GetDefaultObj();
@@ -529,7 +529,7 @@ public:
 class UNertcManager : public UObject
 {
 public:
-	uint8                                        Pad_214[0x10];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_187[0x10];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnPermissionResult;                                // 0x38(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnEnterRoom;                                       // 0x48(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnExitRoom;                                        // 0x58(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -539,7 +539,7 @@ public:
 	FMulticastInlineDelegateProperty_            OnUserRoomStateChange;                             // 0x98(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnAudioStateChanged;                               // 0xA8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TArray<int32>                                MuteUIDList;                                       // 0xB8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_216[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_188[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UNertcManager* GetDefaultObj();

@@ -25,8 +25,8 @@ public:
 	static class UClass* StaticClass();
 	static class USolarRedHint_General_C* GetDefaultObj();
 
-	void Destruct();
 	void OnSetHintDataCompleteCopy();
+	void Destruct();
 	void ConstructCopy();
 	void OnInitialized();
 	class FString GetModuleName();

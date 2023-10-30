@@ -40,26 +40,20 @@ class UUI_Component_TeamNum_C* UUI_Component_TeamNum_C::GetDefaultObj()
 }
 
 
-// Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnShow
-// (Native, Event, Protected, BlueprintEvent)
+// Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
-void UUI_Component_TeamNum_C::OnShow()
+void UUI_Component_TeamNum_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Component_TeamNum_C", "OnShow");
+		Func = Class->GetFunction("UI_Component_TeamNum_C", "OnInitialized");
 
 
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
-
-
-	Func->FunctionFlags = Flgs;
 
 }
 
@@ -88,24 +82,6 @@ void UUI_Component_TeamNum_C::OnSolarUIClosed()
 }
 
 
-// Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Component_TeamNum_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Component_TeamNum_C", "OnInitialized");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnSolarUIOpened
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
@@ -116,6 +92,30 @@ void UUI_Component_TeamNum_C::OnSolarUIOpened()
 
 	if (!Func)
 		Func = Class->GetFunction("UI_Component_TeamNum_C", "OnSolarUIOpened");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnShow
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UUI_Component_TeamNum_C::OnShow()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_TeamNum_C", "OnShow");
 
 
 

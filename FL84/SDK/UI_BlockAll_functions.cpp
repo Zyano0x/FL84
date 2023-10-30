@@ -40,24 +40,6 @@ class UUI_BlockAll_C* UUI_BlockAll_C::GetDefaultObj()
 }
 
 
-// Function UI_BlockAll.UI_BlockAll_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_BlockAll_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_BlockAll_C", "Construct");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function UI_BlockAll.UI_BlockAll_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -68,6 +50,24 @@ void UUI_BlockAll_C::Destruct()
 
 	if (!Func)
 		Func = Class->GetFunction("UI_BlockAll_C", "Destruct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_BlockAll.UI_BlockAll_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_BlockAll_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_BlockAll_C", "Construct");
 
 
 

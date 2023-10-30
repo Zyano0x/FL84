@@ -15,7 +15,7 @@ class ULoadingScreenSubsystem : public UGameInstanceSubsystem
 {
 public:
 	class ULoadingWidgetBase*                    LoadingWidget;                                     // 0x30(0x8)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_164[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_84[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ULoadingScreenSubsystem* GetDefaultObj();

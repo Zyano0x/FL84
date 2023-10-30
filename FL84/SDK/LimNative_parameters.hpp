@@ -21,7 +21,7 @@ public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                InText;                                            // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeSupportedLanguage       InLang;                                            // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_987[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7EB[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ExtraInfo;                                         // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -58,7 +58,7 @@ struct ULimNative_SetLanguage_Params
 public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	enum class ELimNativeSupportedLanguage       InLanguage;                                        // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_988[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_7EE[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x40 (0x40 - 0x0)
@@ -88,7 +88,7 @@ public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                ConvID;                                            // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0x20(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_98E[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7F4[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                InMsgID;                                           // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Extra;                                             // 0x38(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -111,7 +111,7 @@ public:
 	struct FLimNativeIMVoiceMessage              VoiceMsg;                                          // 0x10(0x90)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                ConvID;                                            // 0xA0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0xB0(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_990[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_7FE[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Nonce;                                             // 0xB8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Timestamp;                                         // 0xC8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Extra;                                             // 0xD8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -126,7 +126,7 @@ public:
 	struct FLimNativeIMTextWithAtMessage         TextWithAtMsg;                                     // 0x10(0x68)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                ConvID;                                            // 0x78(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0x88(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_995[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_804[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Nonce;                                             // 0x90(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Timestamp;                                         // 0xA0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Extra;                                             // 0xB0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -141,7 +141,7 @@ public:
 	struct FLimNativeIMTextMessage               TextMsg;                                           // 0x10(0x68)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                ConvID;                                            // 0x78(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0x88(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_99B[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_808[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Nonce;                                             // 0x90(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Timestamp;                                         // 0xA0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Extra;                                             // 0xB0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -156,7 +156,7 @@ public:
 	struct FLimNativeIMShareMessage              ShareMsg;                                          // 0x10(0xC0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                ConvID;                                            // 0xD0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0xE0(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_9A1[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_857[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Nonce;                                             // 0xE8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Timestamp;                                         // 0xF8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Extra;                                             // 0x108(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -171,7 +171,7 @@ public:
 	struct FLimNativeIMImageMessage              ImageMsg;                                          // 0x10(0xA0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                ConvID;                                            // 0xB0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0xC0(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_9AA[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_85D[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Nonce;                                             // 0xC8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Timestamp;                                         // 0xD8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Extra;                                             // 0xE8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -186,7 +186,7 @@ public:
 	struct FLimNativeIMEmotionMessage            EmotionMsg;                                        // 0x10(0xB0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                ConvID;                                            // 0xC0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0xD0(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_9B2[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_862[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Nonce;                                             // 0xD8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Timestamp;                                         // 0xE8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Extra;                                             // 0xF8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -201,7 +201,7 @@ public:
 	struct FLimNativeIMVoiceMessage              VoiceMsg;                                          // 0x10(0x90)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                ConvID;                                            // 0xA0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0xB0(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_9BE[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_86D[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Nonce;                                             // 0xB8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Timestamp;                                         // 0xC8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -215,7 +215,7 @@ public:
 	struct FLimNativeIMTextWithAtMessage         TextWithAtMsg;                                     // 0x10(0x68)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                ConvID;                                            // 0x78(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0x88(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_9BF[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_876[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Nonce;                                             // 0x90(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Timestamp;                                         // 0xA0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -229,7 +229,7 @@ public:
 	struct FLimNativeIMTextMessage               TextMsg;                                           // 0x10(0x68)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                ConvID;                                            // 0x78(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0x88(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_9C1[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_87B[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Nonce;                                             // 0x90(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Timestamp;                                         // 0xA0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -243,7 +243,7 @@ public:
 	struct FLimNativeIMShareMessage              ShareMsg;                                          // 0x10(0xC0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                ConvID;                                            // 0xD0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0xE0(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_9C5[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_880[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Nonce;                                             // 0xE8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Timestamp;                                         // 0xF8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -257,7 +257,7 @@ public:
 	struct FLimNativeIMImageMessage              ImageMsg;                                          // 0x10(0xA0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                ConvID;                                            // 0xB0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0xC0(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_9D0[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_883[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Nonce;                                             // 0xC8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Timestamp;                                         // 0xD8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -271,7 +271,7 @@ public:
 	struct FLimNativeIMEmotionMessage            EmotionMsg;                                        // 0x10(0xB0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                ConvID;                                            // 0xC0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0xD0(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_9D3[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_885[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Nonce;                                             // 0xD8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Timestamp;                                         // 0xE8(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -543,7 +543,7 @@ struct ULimNative_LIMOnNetConnectStateDynamicDelegate__DelegateSignature_Params
 public:
 	struct FLimNativeLowLevelWrapper             InWrapper;                                         // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                        EventCode;                                         // 0x10(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_9F1[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_8B7[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x70 (0x70 - 0x0)
@@ -966,7 +966,7 @@ public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                InConvID;                                          // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                InConvType;                                        // 0x20(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A20[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_907[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                InFromMsgID;                                       // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                InToMsgID;                                         // 0x38(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1062,7 +1062,7 @@ struct ULimNative_GetFriendsV2_Params
 public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                         InNeedPresence;                                    // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A27[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_91B[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x38 (0x38 - 0x0)
@@ -1072,7 +1072,7 @@ struct ULimNative_GetFriends_Params
 public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                        InTag;                                             // 0x10(0x4)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A28[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_91F[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                InSize;                                            // 0x18(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                InExtra;                                           // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1084,7 +1084,7 @@ struct ULimNative_GetFriendRequests_Params
 public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                        InTag;                                             // 0x10(0x4)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A29[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_921[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                InSize;                                            // 0x18(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                InExtra;                                           // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1112,7 +1112,7 @@ struct ULimNative_GetBlockees_Params
 public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                        InTag;                                             // 0x10(0x4)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A2C[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_927[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                InSize;                                            // 0x18(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                InExtra;                                           // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1125,7 +1125,7 @@ public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                ConvID;                                            // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0x20(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A2E[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_929[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        MsgId;                                             // 0x24(0x4)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -1137,7 +1137,7 @@ public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                ConvID;                                            // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0x20(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A2F[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_92B[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        MsgId;                                             // 0x24(0x4)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -1187,7 +1187,7 @@ struct ULimNative_ConversationsGet_Params
 public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                        Size;                                              // 0x10(0x4)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A30[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_934[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Extra;                                             // 0x18(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -1199,7 +1199,7 @@ public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                ConvID;                                            // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0x20(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A32[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_936[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -1319,7 +1319,7 @@ public:
 	class FString                                Enum;                                              // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                EnumName;                                          // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ReturnValue;                                       // 0x20(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A68[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_98A[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -1387,7 +1387,7 @@ struct ULimNativeHelper_EnumToStringArray_Params
 public:
 	class FString                                Enum;                                              // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bExcludeHidden;                                    // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A6D[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_99A[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FString>                        ReturnValue;                                       // 0x18(0x10)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -1398,7 +1398,7 @@ struct ULimNativeHelper_EnumToString_Params
 public:
 	class FString                                Enum;                                              // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        EnumValue;                                         // 0x10(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A71[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_99F[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ReturnValue;                                       // 0x18(0x10)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -1409,7 +1409,7 @@ struct ULimNativeHelper_EnumToNameStringArray_Params
 public:
 	class FString                                Enum;                                              // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bExcludeHidden;                                    // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A73[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9A2[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FString>                        ReturnValue;                                       // 0x18(0x10)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -1420,7 +1420,7 @@ struct ULimNativeHelper_EnumToNameString_Params
 public:
 	class FString                                Enum;                                              // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        EnumValue;                                         // 0x10(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A76[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9A6[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ReturnValue;                                       // 0x18(0x10)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -1432,7 +1432,7 @@ public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                InText;                                            // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeSupportedLanguage       InLang;                                            // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A7B[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9B4[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ExtraInfo;                                         // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -1453,7 +1453,7 @@ public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                InConvID;                                          // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                InConvType;                                        // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A8A[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9BE[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                InMsgID;                                           // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                InExtra;                                           // 0x38(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1505,7 +1505,7 @@ public:
 	class FString                                InConvID;                                          // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                InConvType;                                        // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bSticky;                                           // 0x21(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A9A[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_9D4[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x48 (0x48 - 0x0)
@@ -1516,7 +1516,7 @@ public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                InConvID;                                          // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                InConvType;                                        // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A9F[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9D6[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                InMsgID;                                           // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                InExtra;                                           // 0x38(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1530,7 +1530,7 @@ public:
 	class FString                                InConvID;                                          // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                InConvType;                                        // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bMute;                                             // 0x21(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_AA2[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_9D7[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x48 (0x48 - 0x0)
@@ -1541,7 +1541,7 @@ public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                InConvID;                                          // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                InConvType;                                        // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_AA4[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_9D9[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                InKey;                                             // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                InValue;                                           // 0x38(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1756,7 +1756,7 @@ public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                InConvID;                                          // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                InConvType;                                        // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_AC2[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A0E[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                InFromMsgID;                                       // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                InToMsgID;                                         // 0x38(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1770,7 +1770,7 @@ public:
 	class FString                                InConvID;                                          // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                InConvType;                                        // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeMsgDirType              InDir;                                             // 0x21(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_AC8[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A13[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                InMsgID;                                           // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                InExtra;                                           // 0x38(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1900,7 +1900,7 @@ struct ULimNativeLowLevel_GetConvs_Params
 public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                        InSize;                                            // 0x10(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_AF7[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A24[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                InExtra;                                           // 0x18(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -1920,7 +1920,7 @@ public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                InConvID;                                          // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                InConvType;                                        // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_B00[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A26[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                InKey;                                             // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -1932,7 +1932,7 @@ public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                InConvID;                                          // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                InConvType;                                        // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_B02[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_A2C[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -1943,7 +1943,7 @@ public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                InConvID;                                          // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                InConvType;                                        // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_B04[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_A2F[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -1990,7 +1990,7 @@ public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                InConvID;                                          // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                InConvType;                                        // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_B0D[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_A3C[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -2031,7 +2031,7 @@ public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                InConvID;                                          // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                InConvType;                                        // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_B18[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_A3F[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                InExtra;                                           // 0x28(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -2043,7 +2043,7 @@ public:
 	struct FLimNativeLowLevelWrapper             InCtx;                                             // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                InConvID;                                          // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                InConvType;                                        // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_B1F[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_A43[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)

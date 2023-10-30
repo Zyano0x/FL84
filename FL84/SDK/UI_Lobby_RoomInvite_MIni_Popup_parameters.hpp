@@ -54,7 +54,7 @@ struct UUI_Lobby_RoomInvite_MIni_Popup_C_SetType_Params
 public:
 	enum class ET_Type_System_Push               Type;                                              // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ET_Type_System_Push               Temp_byte_Variable;                                // 0x1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_28D3[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_23AA[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          Temp_struct_Variable;                              // 0x4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Temp_struct_Variable_1;                            // 0x14(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Temp_struct_Variable_2;                            // 0x24(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -62,7 +62,7 @@ public:
 	struct FLinearColor                          Temp_struct_Variable_4;                            // 0x44(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Temp_struct_Variable_5;                            // 0x54(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ET_Type_System_Push               Temp_byte_Variable_1;                              // 0x64(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_28D5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_23AB[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          K2Node_Select_Default;                             // 0x68(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Temp_struct_Variable_6;                            // 0x78(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Temp_struct_Variable_7;                            // 0x88(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -71,7 +71,7 @@ public:
 	struct FLinearColor                          Temp_struct_Variable_10;                           // 0xB8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Temp_struct_Variable_11;                           // 0xC8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ET_Type_System_Push               Temp_byte_Variable_2;                              // 0xD8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_28D8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_23AE[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          K2Node_Select_Default_1;                           // 0xDC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable_3;                              // 0xEC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable_4;                              // 0xED(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -112,7 +112,7 @@ public:
 	struct FLinearColor                          Temp_struct_Variable_16;                           // 0x14C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Temp_struct_Variable_17;                           // 0x15C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ET_Type_System_Push               Temp_byte_Variable_31;                             // 0x16C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_28DB[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_23B5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          K2Node_Select_Default_6;                           // 0x170(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Temp_struct_Variable_18;                           // 0x180(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Temp_struct_Variable_19;                           // 0x190(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -121,9 +121,9 @@ public:
 	struct FLinearColor                          Temp_struct_Variable_22;                           // 0x1C0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Temp_struct_Variable_23;                           // 0x1D0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ET_Type_System_Push               Temp_byte_Variable_32;                             // 0x1E0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_28DC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_23B6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          K2Node_Select_Default_7;                           // 0x1E4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_28DD[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_23B7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateColor                           K2Node_MakeStruct_SlateColor;                      // 0x1F8(0x28)(None)
 	enum class ESlateVisibility                  Temp_byte_Variable_33;                             // 0x220(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable_34;                             // 0x221(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

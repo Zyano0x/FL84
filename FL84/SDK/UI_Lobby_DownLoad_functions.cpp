@@ -40,16 +40,34 @@ class UUI_Lobby_DownLoad_C* UUI_Lobby_DownLoad_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnClicked_B3EFFA1943953EAAB2D7CD8F101C463D
+// DelegateFunction UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnClicked_4974D5654BD8A5E5E6CCE1B429AECA2C
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_DownLoad_C::OnClicked_B3EFFA1943953EAAB2D7CD8F101C463D()
+void UUI_Lobby_DownLoad_C::OnClicked_4974D5654BD8A5E5E6CCE1B429AECA2C()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_DownLoad_C", "OnClicked_B3EFFA1943953EAAB2D7CD8F101C463D");
+		Func = Class->GetFunction("UI_Lobby_DownLoad_C", "OnClicked_4974D5654BD8A5E5E6CCE1B429AECA2C");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnInitializedCopy
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_DownLoad_C::OnInitializedCopy()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_DownLoad_C", "OnInitializedCopy");
 
 
 
@@ -78,24 +96,6 @@ void UUI_Lobby_DownLoad_C::OnSolarUIOpened()
 
 
 	Func->FunctionFlags = Flgs;
-
-}
-
-
-// Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnInitializedCopy
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Lobby_DownLoad_C::OnInitializedCopy()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_DownLoad_C", "OnInitializedCopy");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
 
 }
 

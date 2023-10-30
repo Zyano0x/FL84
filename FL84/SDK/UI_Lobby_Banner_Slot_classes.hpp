@@ -22,8 +22,8 @@ public:
 	static class UUI_Lobby_Banner_Slot_C* GetDefaultObj();
 
 	void Destruct();
-	void OnListItemObjectSetCopy(class UObject* ListItemObject);
 	void Construct();
+	void OnListItemObjectSetCopy(class UObject* ListItemObject);
 	class FString GetModuleName();
 	void BP_OnEntryReleased();
 	void BP_OnItemExpansionChanged(bool bIsExpanded);

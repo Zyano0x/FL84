@@ -40,6 +40,32 @@ class UUI_Warehouse_DragPanel_C* UUI_Warehouse_DragPanel_C::GetDefaultObj()
 }
 
 
+// Function UI_Warehouse_DragPanel.UI_Warehouse_DragPanel_C.OnMouseButtonUp
+// (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// struct FGeometry                   MyGeometry                                                       (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// struct FPointerEvent               MouseEvent                                                       (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+
+struct FEventReply UUI_Warehouse_DragPanel_C::OnMouseButtonUp(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Warehouse_DragPanel_C", "OnMouseButtonUp");
+
+	Params::UUI_Warehouse_DragPanel_C_OnMouseButtonUp_Params Parms{};
+
+	Parms.MyGeometry = MyGeometry;
+	Parms.MouseEvent = MouseEvent;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+
+}
+
+
 // Function UI_Warehouse_DragPanel.UI_Warehouse_DragPanel_C.OnMouseButtonDown
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -106,32 +132,6 @@ void UUI_Warehouse_DragPanel_C::Construct()
 
 
 	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function UI_Warehouse_DragPanel.UI_Warehouse_DragPanel_C.OnMouseButtonUp
-// (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// struct FGeometry                   MyGeometry                                                       (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-// struct FPointerEvent               MouseEvent                                                       (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-
-struct FEventReply UUI_Warehouse_DragPanel_C::OnMouseButtonUp(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Warehouse_DragPanel_C", "OnMouseButtonUp");
-
-	Params::UUI_Warehouse_DragPanel_C_OnMouseButtonUp_Params Parms{};
-
-	Parms.MyGeometry = MyGeometry;
-	Parms.MouseEvent = MouseEvent;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 
 }
 

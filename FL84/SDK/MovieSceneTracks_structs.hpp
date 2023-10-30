@@ -145,7 +145,7 @@ public:
 	enum class EDetachmentRule                   DetachmentLocationRule;                            // 0x4B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EDetachmentRule                   DetachmentRotationRule;                            // 0x4C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EDetachmentRule                   DetachmentScaleRule;                               // 0x4D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D25[0x2];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C4E[0x2];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xC0 (0xE0 - 0x20)
@@ -157,11 +157,11 @@ public:
 	struct FMovieSceneFloatChannel               TimingCurve;                                       // 0x38(0xA0)(NativeAccessSpecifierPublic)
 	enum class EMovieScene3DPathSection_Axis     FrontAxisEnum;                                     // 0xD8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EMovieScene3DPathSection_Axis     UpAxisEnum;                                        // 0xD9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D27[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_C51[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	uint8                                        bFollow : 1;                                       // Mask: 0x1, PropSize: 0x10xDC(0x1)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bReverse : 1;                                      // Mask: 0x2, PropSize: 0x10xDC(0x1)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bForceUpright : 1;                                 // Mask: 0x4, PropSize: 0x10xDC(0x1)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D28[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C53[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x4 (0x4 - 0x0)
@@ -181,7 +181,7 @@ public:
 	struct FRotator                              Rotation;                                          // 0x14(0xC)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FVector                               Scale;                                             // 0x20(0xC)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFrameNumber                          Time;                                              // 0x2C(0x4)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D2E[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C57[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x30 - 0x8)
@@ -191,7 +191,7 @@ struct FMovieScene3DScaleKeyStruct : public FMovieSceneKeyStruct
 public:
 	struct FVector                               Scale;                                             // 0x8(0xC)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFrameNumber                          Time;                                              // 0x14(0x4)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D30[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C59[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x30 - 0x8)
@@ -201,7 +201,7 @@ struct FMovieScene3DRotationKeyStruct : public FMovieSceneKeyStruct
 public:
 	struct FRotator                              Rotation;                                          // 0x8(0xC)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FFrameNumber                          Time;                                              // 0x14(0x4)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D31[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C5A[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x30 - 0x8)
@@ -211,7 +211,7 @@ struct FMovieScene3DLocationKeyStruct : public FMovieSceneKeyStruct
 public:
 	struct FVector                               Location;                                          // 0x8(0xC)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFrameNumber                          Time;                                              // 0x14(0x4)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D32[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C5B[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x650 (0x650 - 0x0)
@@ -224,10 +224,10 @@ public:
 	struct FMovieSceneFloatChannel               ScaleCurve[0x3];                                   // 0x3C0(0x1E0)(NativeAccessSpecifierPublic)
 	struct FMovieSceneFloatChannel               ManualWeight;                                      // 0x5A0(0xA0)(NativeAccessSpecifierPublic)
 	enum class EMovieSceneBlendType              BlendType;                                         // 0x640(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D34[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_C5F[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMovieSceneTransformMask              Mask;                                              // 0x644(0x4)(NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         bUseQuaternionInterpolation;                       // 0x648(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D35[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C61[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x650 (0x670 - 0x20)
@@ -254,9 +254,9 @@ struct FMovieSceneActorReferenceData : public FMovieSceneChannel
 {
 public:
 	TArray<struct FFrameNumber>                  KeyTimes;                                          // 0x8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_D37[0x28];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_C68[0x28];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FMovieSceneActorReferenceKey>  KeyValues;                                         // 0x40(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_D38[0x60];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C69[0x60];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xD8 (0xF8 - 0x20)
@@ -287,7 +287,7 @@ public:
 	float                                        BlendInTime;                                       // 0x10(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        BlendOutTime;                                      // 0x14(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bLooping;                                          // 0x18(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D3A[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C6F[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x20 - 0x20)
@@ -305,9 +305,9 @@ public:
 	TSubclassOf<class UCameraShake>              ShakeClass;                                        // 0x0(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        PlayScale;                                         // 0x8(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ECameraAnimPlaySpace              PlaySpace;                                         // 0xC(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D40[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_C78[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRotator                              UserDefinedPlaySpace;                              // 0x10(0xC)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D41[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C79[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x48 - 0x20)
@@ -317,7 +317,7 @@ struct FMovieSceneCameraShakeSectionTemplate : public FMovieSceneAdditiveCameraA
 public:
 	struct FMovieSceneCameraShakeSectionData     SourceData;                                        // 0x20(0x20)(NoDestructor, NativeAccessSpecifierPrivate)
 	struct FFrameNumber                          SectionStartTime;                                  // 0x40(0x4)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_D44[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C7E[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x48 - 0x20)
@@ -327,7 +327,7 @@ struct FMovieSceneCameraAnimSectionTemplate : public FMovieSceneAdditiveCameraAn
 public:
 	struct FMovieSceneCameraAnimSectionData      SourceData;                                        // 0x20(0x20)(NoDestructor, NativeAccessSpecifierPrivate)
 	struct FFrameNumber                          SectionStartTime;                                  // 0x40(0x4)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_D47[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C83[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x60 (0x80 - 0x20)
@@ -336,11 +336,11 @@ struct FMovieSceneCameraCutSectionTemplate : public FMovieSceneEvalTemplate
 {
 public:
 	struct FMovieSceneObjectBindingID            CameraBindingID;                                   // 0x20(0x18)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D4B[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_C87[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            CutTransform;                                      // 0x40(0x30)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         bHasCutTransform;                                  // 0x70(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsFinalSection;                                   // 0x71(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D4C[0xE];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C89[0xE];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x38 - 0x8)
@@ -350,7 +350,7 @@ struct FMovieSceneColorKeyStruct : public FMovieSceneKeyStruct
 public:
 	struct FLinearColor                          Color;                                             // 0x8(0x10)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFrameNumber                          Time;                                              // 0x18(0x4)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D4E[0x1C];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C8A[0x1C];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x288 (0x2D0 - 0x48)
@@ -360,7 +360,7 @@ struct FMovieSceneColorSectionTemplate : public FMovieScenePropertySectionTempla
 public:
 	struct FMovieSceneFloatChannel               Curves[0x4];                                       // 0x48(0x280)(NativeAccessSpecifierPublic)
 	enum class EMovieSceneBlendType              BlendType;                                         // 0x2C8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D4F[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C8D[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -395,7 +395,7 @@ struct FMovieSceneEventChannel : public FMovieSceneChannel
 public:
 	TArray<struct FFrameNumber>                  KeyTimes;                                          // 0x8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<struct FMovieSceneEvent>              KeyValues;                                         // 0x18(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_D53[0x60];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C95[0x60];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -403,7 +403,7 @@ public:
 struct FMovieSceneEventParameters
 {
 public:
-	uint8                                        Pad_D54[0x28];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C96[0x28];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x30 - 0x0)
@@ -422,7 +422,7 @@ struct FMovieSceneEventSectionData : public FMovieSceneChannel
 public:
 	TArray<struct FFrameNumber>                  Times;                                             // 0x8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<struct FEventPayload>                 KeyValues;                                         // 0x18(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_D57[0x60];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C98[0x60];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x38 - 0x20)
@@ -433,7 +433,7 @@ public:
 	TArray<struct FMovieSceneObjectBindingID>    EventReceivers;                                    // 0x20(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bFireEventsWhenForwards : 1;                       // Mask: 0x1, PropSize: 0x10x30(0x1)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bFireEventsWhenBackwards : 1;                      // Mask: 0x2, PropSize: 0x10x30(0x1)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D5A[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C9A[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x60 - 0x38)
@@ -469,7 +469,7 @@ public:
 	struct FMovieSceneFloatChannel               FadeCurve;                                         // 0x20(0xA0)(NativeAccessSpecifierPrivate)
 	struct FLinearColor                          FadeColor;                                         // 0xC0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                        bFadeAudio : 1;                                    // Mask: 0x1, PropSize: 0x10xD0(0x1)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_D5D[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C9F[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x38 - 0x20)
@@ -478,7 +478,7 @@ struct FMovieSceneLevelVisibilitySectionTemplate : public FMovieSceneEvalTemplat
 {
 public:
 	enum class ELevelVisibility                  Visibility;                                        // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_D5F[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_CA3[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          LevelNames;                                        // 0x28(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
 
@@ -504,7 +504,7 @@ struct FMovieSceneComponentMaterialSectionTemplate : public FMovieSceneParameter
 {
 public:
 	int32                                        MaterialIndex;                                     // 0x80(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_D61[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_CAA[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x80 - 0x80)
@@ -535,7 +535,7 @@ struct FMovieScenePrimitiveMaterialTemplate : public FMovieSceneEvalTemplate
 {
 public:
 	int32                                        MaterialIndex;                                     // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_D68[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_CAF[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMovieSceneObjectPathChannel          MaterialChannel;                                   // 0x28(0xC0)(NativeAccessSpecifierPrivate)
 };
 
@@ -563,7 +563,7 @@ public:
 	struct FMovieSceneFloatChannel               ComponentCurves[0x4];                              // 0x48(0x280)(Protected, NativeAccessSpecifierProtected)
 	int32                                        NumChannelsUsed;                                   // 0x2C8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	enum class EMovieSceneBlendType              BlendType;                                         // 0x2CC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_D6B[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_CB3[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x98 (0xA0 - 0x8)
@@ -575,7 +575,7 @@ public:
 	TArray<class FString>                        Values;                                            // 0x18(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class FString                                DefaultValue;                                      // 0x28(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         bHasDefaultValue;                                  // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_D6E[0x67];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_CB5[0x67];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xA0 (0xE8 - 0x48)
@@ -593,7 +593,7 @@ struct FMovieSceneIntegerPropertySectionTemplate : public FMovieScenePropertySec
 public:
 	struct FMovieSceneIntegerChannel             IntegerCurve;                                      // 0x48(0x90)(Protected, NativeAccessSpecifierProtected)
 	enum class EMovieSceneBlendType              BlendType;                                         // 0xD8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_D72[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_CB7[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x98 (0xE0 - 0x48)
@@ -619,7 +619,7 @@ struct FMovieSceneFloatPropertySectionTemplate : public FMovieScenePropertySecti
 public:
 	struct FMovieSceneFloatChannel               FloatFunction;                                     // 0x48(0xA0)(Protected, NativeAccessSpecifierProtected)
 	enum class EMovieSceneBlendType              BlendType;                                         // 0xE8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_D75[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_CBC[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x90 (0xD8 - 0x48)
@@ -641,17 +641,17 @@ public:
 	struct FFrameNumber                          EndFrameOffset;                                    // 0x10(0x4)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        PlayRate;                                          // 0x14(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bReverse : 1;                                      // Mask: 0x1, PropSize: 0x10x18(0x1)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_B0 : 7;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_D7B[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        BitPad_8A : 7;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_CC7[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  SlotName;                                          // 0x1C(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D7C[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_CC8[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMovieSceneFloatChannel               Weight;                                            // 0x28(0xA0)(NativeAccessSpecifierPublic)
 	bool                                         bSkipAnimNotifiers;                                // 0xC8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bForceCustomMode;                                  // 0xC9(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D7E[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_CCA[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        StartOffset;                                       // 0xCC(0x4)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        EndOffset;                                         // 0xD0(0x4)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D80[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_CCB[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0xE0 - 0xD8)
@@ -685,7 +685,7 @@ struct FMovieSceneVectorKeyStructBase : public FMovieSceneKeyStruct
 {
 public:
 	struct FFrameNumber                          Time;                                              // 0x8(0x4)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D85[0x1C];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_CD1[0x1C];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x40 - 0x28)
@@ -693,7 +693,7 @@ public:
 struct FMovieSceneVector4KeyStruct : public FMovieSceneVectorKeyStructBase
 {
 public:
-	uint8                                        Pad_D86[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_CD4[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector4                              Vector;                                            // 0x30(0x10)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -703,7 +703,7 @@ struct FMovieSceneVectorKeyStruct : public FMovieSceneVectorKeyStructBase
 {
 public:
 	struct FVector                               Vector;                                            // 0x28(0xC)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_D89[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_CD5[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x30 - 0x28)

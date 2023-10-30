@@ -18,12 +18,12 @@ public:
 	static class UClass* StaticClass();
 	static class UBP_SettlementStageMgr_C* GetDefaultObj();
 
-	void Init();
-	void ShowNextStage();
-	class FString GetClassRelativePathName(class UClass* InClass);
 	void CloseDiePage();
 	void ShowDiePage();
+	void Init();
+	void ShowNextStage();
 	void SkipToTarget();
+	class FString GetClassRelativePathName(class UClass* InClass);
 };
 
 }

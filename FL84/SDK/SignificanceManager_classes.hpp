@@ -14,7 +14,7 @@ namespace SDK
 class USignificanceManager : public UObject
 {
 public:
-	uint8                                        Pad_11C3[0xF8];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_FDE[0xF8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSoftClassPath                        SignificanceManagerClassName;                      // 0x120(0x18)(Edit, ZeroConstructor, Config, GlobalConfig, NoClear, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 	static class UClass* StaticClass();

@@ -33,9 +33,9 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_DownLoad_C* GetDefaultObj();
 
-	void OnClicked_B3EFFA1943953EAAB2D7CD8F101C463D();
-	void OnSolarUIOpened();
+	void OnClicked_4974D5654BD8A5E5E6CCE1B429AECA2C();
 	void OnInitializedCopy();
+	void OnSolarUIOpened();
 	void OnSolarUIClosed();
 	class FString GetModuleName();
 	void OnOpenDownloadList();

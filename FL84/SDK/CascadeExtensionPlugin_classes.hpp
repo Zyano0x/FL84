@@ -18,7 +18,7 @@ public:
 	int32                                        StartDelay;                                        // 0x50(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        MaxDuration;                                       // 0x54(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        LoopAfter;                                         // 0x58(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A37[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_88C[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UAbstractParticleModule* GetDefaultObj();
@@ -71,7 +71,7 @@ public:
 	int32                                        ModuleID;                                          // 0x358(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        TimeLeftUntilDestruction;                          // 0x35C(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                               BaseScale;                                         // 0x360(0xC)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_A3D[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_891[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UParticleDecalComponent* GetDefaultObj();
@@ -85,14 +85,14 @@ class UParticleModuleColorTexture : public UAbstractParticleModule
 public:
 	class UTexture2D*                            ColorIndexTexture;                                 // 0x60(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         UpdateWithTick;                                    // 0x68(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A42[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_893[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FBox                                  MapBounds;                                         // 0x6C(0x1C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
 	enum class ESpaceAxis                        ParticleAxisToTextureX;                            // 0x88(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	enum class ESpaceAxis                        ParticleAxisToTextureY;                            // 0x89(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A44[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_894[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Intensity;                                         // 0x8C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         UseTextureAlpha;                                   // 0x90(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A45[0x1F];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_895[0x1F];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UParticleModuleColorTexture* GetDefaultObj();
@@ -127,15 +127,15 @@ public:
 	TArray<class UMaterialInterface*>            DecalMaterials;                                    // 0x60(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FRawDistributionVector                DecalScale;                                        // 0x70(0x48)(Edit, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 	bool                                         ScaleWithParticleSize;                             // 0xB8(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A46[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_898[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRawDistributionVector                DecalRotation;                                     // 0xC0(0x48)(Edit, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 	bool                                         RotateToParticleVelocity;                          // 0x108(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A47[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_899[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        SortOrder;                                         // 0x10C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         OptimizeDecalComponentUsage;                       // 0x110(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A48[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_89A[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  MaterialColorParameter;                            // 0x114(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A49[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_89B[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UParticleModuleDecalComponent* GetDefaultObj();
@@ -148,10 +148,10 @@ class UParticleModuleForcePoints : public UAbstractParticleModule
 {
 public:
 	float                                        Intensity;                                         // 0x60(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A4A[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_89C[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FVector>                       Points;                                            // 0x68(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	enum class EDistanceWeight                   SeparationDistanceWeight;                          // 0x78(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A4B[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_89D[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        DistanceScale;                                     // 0x7C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class FName                                  DynamicForcePointProviderName;                     // 0x80(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
@@ -170,7 +170,7 @@ public:
 	float                                        MaxRadius;                                         // 0x70(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         SurfaceOnly;                                       // 0x74(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         IsFlat;                                            // 0x75(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A4D[0x2];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_89E[0x2];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UParticleModuleLocationDonut* GetDefaultObj();
@@ -185,10 +185,10 @@ public:
 	class UTexture2D*                            HeightmapTexture;                                  // 0x60(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         UpdateWithTick;                                    // 0x68(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         SmoothUpdate;                                      // 0x69(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A4E[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_89F[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FBox                                  MapBounds;                                         // 0x6C(0x1C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
 	float                                        Intensity;                                         // 0x88(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A50[0x1C];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_8A0[0x1C];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UParticleModuleLocationHeightmap* GetDefaultObj();
@@ -216,9 +216,9 @@ public:
 	class FName                                  DynamicMeshParameterName;                          // 0x68(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FTransform                            MeshTransform;                                     // 0x70(0x30)(Edit, IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
 	bool                                         EqualTriangeWeight;                                // 0xA0(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A53[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8A5[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRawDistributionFloat                 VelocityScale;                                     // 0xA8(0x30)(Edit, ContainsInstancedReference, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A54[0x78];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_8A6[0x78];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UParticleModuleLocationMesh* GetDefaultObj();
@@ -236,10 +236,10 @@ public:
 	float                                        DeltaAngle;                                        // 0xD8(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                        EllipseA;                                          // 0xDC(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                        EllipseB;                                          // 0xE0(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A56[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8A8[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRawDistributionFloat                 DiscHeight;                                        // 0xE8(0x30)(Edit, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 	float                                        FalloffFactor;                                     // 0x118(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A57[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_8A9[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UParticleModuleLocationSpiral* GetDefaultObj();
@@ -253,10 +253,10 @@ class UParticleModuleSizeBySpeedOverTime : public UAbstractParticleModule
 public:
 	struct FRawDistributionVector                Size;                                              // 0x60(0x48)(Edit, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 	bool                                         InvertSpeed;                                       // 0xA8(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A59[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8AA[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               MaxSize;                                           // 0xAC(0xC)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FVector                               MinSize;                                           // 0xB8(0xC)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A5A[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_8AB[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UParticleModuleSizeBySpeedOverTime* GetDefaultObj();
@@ -269,7 +269,7 @@ class UParticleModuleSortOrder : public UAbstractParticleModule
 {
 public:
 	int32                                        SortOrder;                                         // 0x60(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A5C[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_8AC[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UParticleModuleSortOrder* GetDefaultObj();
@@ -289,11 +289,11 @@ public:
 	float                                        CohesionWeight;                                    // 0x74(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                        BlindspotAngleDeg;                                 // 0x78(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	enum class EDistanceWeight                   SeparationDistanceWeight;                          // 0x7C(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A5D[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8AD[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FVector>                       SteeringTargets;                                   // 0x80(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                        SteeringWeight;                                    // 0x90(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	enum class EDistanceWeight                   SteeringTargetDistanceWeight;                      // 0x94(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A5E[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_8AE[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  DynamicSteeringPointProviderName;                  // 0x98(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 	static class UClass* StaticClass();
@@ -311,7 +311,7 @@ public:
 	float                                        Tightness;                                         // 0x70(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                        MaxAcceleration;                                   // 0x74(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                        MaxVelocity;                                       // 0x78(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_A5F[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_8AF[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UParticleModuleVelocityTurbulence* GetDefaultObj();

@@ -40,24 +40,6 @@ class ALobby_Script_C* ALobby_Script_C::GetDefaultObj()
 }
 
 
-// Function Lobby_Script.Lobby_Script_C.ReceiveBeginPlayCopy
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-
-void ALobby_Script_C::ReceiveBeginPlayCopy()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("Lobby_Script_C", "ReceiveBeginPlayCopy");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function Lobby_Script.Lobby_Script_C.ReceiveEndPlay
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -75,6 +57,24 @@ void ALobby_Script_C::ReceiveEndPlay(enum class EEndPlayReason EndPlayReason)
 	Parms.EndPlayReason = EndPlayReason;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function Lobby_Script.Lobby_Script_C.ReceiveBeginPlayCopy
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+
+void ALobby_Script_C::ReceiveBeginPlayCopy()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("Lobby_Script_C", "ReceiveBeginPlayCopy");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 

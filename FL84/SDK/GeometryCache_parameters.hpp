@@ -30,7 +30,7 @@ public:
 	bool                                         bInIsRunning;                                      // 0x4(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bInBackwards;                                      // 0x5(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bInIsLooping;                                      // 0x6(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1226[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1028[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x4 (0x4 - 0x0)
@@ -64,7 +64,7 @@ struct UGeometryCacheComponent_SetGeometryCache_Params
 public:
 	class UGeometryCache*                        NewGeomCache;                                      // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x8(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1227[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_102A[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -146,7 +146,7 @@ struct UGeometryCacheTrack_FlipbookAnimation_AddMeshSample_Params
 public:
 	struct FGeometryCacheMeshData                MeshData;                                          // 0x0(0xA8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	float                                        SampleTime;                                        // 0xA8(0x4)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_122C[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1033[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xA8 (0xA8 - 0x0)

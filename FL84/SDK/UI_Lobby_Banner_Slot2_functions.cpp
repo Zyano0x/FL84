@@ -40,27 +40,6 @@ class UUI_Lobby_Banner_Slot2_C* UUI_Lobby_Banner_Slot2_C::GetDefaultObj()
 }
 
 
-// Function UI_Lobby_Banner_Slot2.UI_Lobby_Banner_Slot2_C.BP_OnItemSelectionChangedCopy
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                               bIsSelected                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UUI_Lobby_Banner_Slot2_C::BP_OnItemSelectionChangedCopy(bool bIsSelected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Banner_Slot2_C", "BP_OnItemSelectionChangedCopy");
-
-	Params::UUI_Lobby_Banner_Slot2_C_BP_OnItemSelectionChangedCopy_Params Parms{};
-
-	Parms.bIsSelected = bIsSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function UI_Lobby_Banner_Slot2.UI_Lobby_Banner_Slot2_C.OnListItemObjectSetCopy
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -76,6 +55,27 @@ void UUI_Lobby_Banner_Slot2_C::OnListItemObjectSetCopy(class UObject* ListItemOb
 	Params::UUI_Lobby_Banner_Slot2_C_OnListItemObjectSetCopy_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function UI_Lobby_Banner_Slot2.UI_Lobby_Banner_Slot2_C.BP_OnItemSelectionChangedCopy
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                               bIsSelected                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UUI_Lobby_Banner_Slot2_C::BP_OnItemSelectionChangedCopy(bool bIsSelected)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Banner_Slot2_C", "BP_OnItemSelectionChangedCopy");
+
+	Params::UUI_Lobby_Banner_Slot2_C_BP_OnItemSelectionChangedCopy_Params Parms{};
+
+	Parms.bIsSelected = bIsSelected;
 
 	UObject::ProcessEvent(Func, &Parms);
 

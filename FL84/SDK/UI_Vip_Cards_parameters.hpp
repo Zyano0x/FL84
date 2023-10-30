@@ -52,9 +52,9 @@ public:
 	float                                        CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0xC4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          K2Node_Select_Default;                             // 0xC8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  K2Node_Select_Default_1;                           // 0xD8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2610[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DE2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          K2Node_Select_Default_2;                           // 0xDC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2611[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2DE3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               K2Node_Select_Default_3;                           // 0xF0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 

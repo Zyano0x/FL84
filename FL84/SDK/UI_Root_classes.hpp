@@ -33,15 +33,15 @@ public:
 	float                                        AdapterOffsetLeft;                                 // 0x480(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        AdapterOffsetRight;                                // 0x484(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         EnableAutoAdaptation;                              // 0x488(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2122[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1F67[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        AdapterOffsetLeftDesktop;                          // 0x48C(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        AdapterOffsetRightDesktop;                         // 0x490(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UUI_Root_C* GetDefaultObj();
 
-	void OnInitialized();
 	void Construct();
+	void OnInitialized();
 	class FString GetModuleName();
 	void PreConstruct(bool IsDesignTime);
 	void CustomEvent_0(class UObject* Publisher, class UObject* Payload, TArray<class FString>& MetaData);

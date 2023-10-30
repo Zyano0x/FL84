@@ -37,15 +37,15 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_KeyMappingPrompt_C* GetDefaultObj();
 
-	void OnInputDeviceChanged_54C6DCEC48D1AC66600C978EC9D7F5F6(const struct FInputDeviceProxy& InputDeviceProxy);
-	void OnInputMappingUpdate_621E727E408B6E136CFD61BC290A87B5();
-	void OnInputDeviceChanged_7A3202CC449CC9973C2709A87DEF560B(const struct FInputDeviceProxy& InputDeviceProxy);
-	void OnInputMappingUpdate_EAECA3CA469D51A1B98AC790CEB8DB32();
-	void OnInputDeviceChanged_749455784513D6BBB525B6B3AE4583B6(const struct FInputDeviceProxy& InputDeviceProxy);
-	void OnInputMappingUpdate_AC2871C144EB61F1F144D295B1D765BD();
-	void OnChangeAdapterSlotWidgetParametersCopy(TArray<struct FWidgetOverrideParam>& Params);
+	void OnInputDeviceChanged_32249EEC4425047317C65FBD8D8E4B99(const struct FInputDeviceProxy& InputDeviceProxy);
+	void OnInputMappingUpdate_C92FDE2E464291B6BCBAAC93163D7A3C();
+	void OnInputDeviceChanged_9F60CD7C4DBC9B88103818B4B6C13858(const struct FInputDeviceProxy& InputDeviceProxy);
+	void OnInputMappingUpdate_ACF521D44B06BD987E67CFB70952AA12();
+	void OnInputDeviceChanged_16D4ECF54591CFCDC3FC4BB0BA155013(const struct FInputDeviceProxy& InputDeviceProxy);
+	void OnInputMappingUpdate_7F87AD5043ED7E47A24B7A9A4576BAF4();
 	void Construct();
 	void Destruct();
+	void OnChangeAdapterSlotWidgetParametersCopy(TArray<struct FWidgetOverrideParam>& Params);
 	void OnInitialized();
 	class FString GetModuleName();
 	void SetEnableInputSettingHide(bool bEnable);

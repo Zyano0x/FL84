@@ -40,16 +40,16 @@ class UUI_Lobby_PlayerInfo_C* UUI_Lobby_PlayerInfo_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnClicked_BCD2275142E8069585D68186EB5AA378
+// DelegateFunction UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnClicked_5520A9704C211E9002979A90F8BB172E
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_PlayerInfo_C::OnClicked_BCD2275142E8069585D68186EB5AA378()
+void UUI_Lobby_PlayerInfo_C::OnClicked_5520A9704C211E9002979A90F8BB172E()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_PlayerInfo_C", "OnClicked_BCD2275142E8069585D68186EB5AA378");
+		Func = Class->GetFunction("UI_Lobby_PlayerInfo_C", "OnClicked_5520A9704C211E9002979A90F8BB172E");
 
 
 
@@ -76,16 +76,16 @@ void UUI_Lobby_PlayerInfo_C::Destruct()
 }
 
 
-// Function UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnSolarUIClosed
+// Function UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnSolarUIOpened
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UUI_Lobby_PlayerInfo_C::OnSolarUIClosed()
+void UUI_Lobby_PlayerInfo_C::OnSolarUIOpened()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_PlayerInfo_C", "OnSolarUIClosed");
+		Func = Class->GetFunction("UI_Lobby_PlayerInfo_C", "OnSolarUIOpened");
 
 
 
@@ -100,16 +100,16 @@ void UUI_Lobby_PlayerInfo_C::OnSolarUIClosed()
 }
 
 
-// Function UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnSolarUIOpened
+// Function UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnSolarUIClosed
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UUI_Lobby_PlayerInfo_C::OnSolarUIOpened()
+void UUI_Lobby_PlayerInfo_C::OnSolarUIClosed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_PlayerInfo_C", "OnSolarUIOpened");
+		Func = Class->GetFunction("UI_Lobby_PlayerInfo_C", "OnSolarUIClosed");
 
 
 

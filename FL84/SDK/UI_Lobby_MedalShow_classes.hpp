@@ -23,8 +23,8 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_MedalShow_C* GetDefaultObj();
 
-	void Construct();
 	void Destruct();
+	void Construct();
 	class FString GetModuleName();
 };
 

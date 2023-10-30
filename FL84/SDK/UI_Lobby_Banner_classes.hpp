@@ -27,11 +27,11 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_Banner_C* GetDefaultObj();
 
-	void OnURLDownloadFinish_D0B3E8F54C02B48E23F6E19AADE0C269(bool bSuccess);
+	void OnURLDownloadFinish_B24BF2B3471CEF56727EF88B2A8D37E3(bool bSuccess);
 	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent);
-	void OnSolarUIClosed();
 	void OnSolarUIOpened();
 	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent);
+	void OnSolarUIClosed();
 	class FString GetModuleName();
 	void SetStateHD(enum class E_TabLobbyItemState State, enum class E_TabLobbyItemState Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility K2Node_Select_Default);
 	void PreConstruct(bool IsDesignTime);

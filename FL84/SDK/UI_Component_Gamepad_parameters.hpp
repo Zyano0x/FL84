@@ -41,7 +41,7 @@ public:
 	struct FKey                                  LocalModifierKey;                                  // 0x48(0x18)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	class UPaperSprite*                          CallFunc_GetGamepadIconByKey_GamepadIcon;          // 0x60(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x68(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_25E9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_20B8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UPaperSprite*                          CallFunc_GetGamepadIconByKey_GamepadIcon_1;        // 0x70(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_KeyKey_ReturnValue_1;          // 0x78(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };

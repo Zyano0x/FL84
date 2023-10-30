@@ -40,16 +40,16 @@ class UUI_Currency_Bar_C* UUI_Currency_Bar_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_5879825E4A6513E326A49A985BEAC8A4
+// DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_6B09B2174F316CE0B145C8BFF277B5F2
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Currency_Bar_C::OnClicked_5879825E4A6513E326A49A985BEAC8A4()
+void UUI_Currency_Bar_C::OnClicked_6B09B2174F316CE0B145C8BFF277B5F2()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Currency_Bar_C", "OnClicked_5879825E4A6513E326A49A985BEAC8A4");
+		Func = Class->GetFunction("UI_Currency_Bar_C", "OnClicked_6B09B2174F316CE0B145C8BFF277B5F2");
 
 
 
@@ -58,16 +58,16 @@ void UUI_Currency_Bar_C::OnClicked_5879825E4A6513E326A49A985BEAC8A4()
 }
 
 
-// DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_1BACDF474E0CAD2E95F5F4B99A908487
+// DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_D197804C45DE5ED3FD83FD9299D53A64
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Currency_Bar_C::OnClicked_1BACDF474E0CAD2E95F5F4B99A908487()
+void UUI_Currency_Bar_C::OnClicked_D197804C45DE5ED3FD83FD9299D53A64()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Currency_Bar_C", "OnClicked_1BACDF474E0CAD2E95F5F4B99A908487");
+		Func = Class->GetFunction("UI_Currency_Bar_C", "OnClicked_D197804C45DE5ED3FD83FD9299D53A64");
 
 
 
@@ -76,16 +76,16 @@ void UUI_Currency_Bar_C::OnClicked_1BACDF474E0CAD2E95F5F4B99A908487()
 }
 
 
-// DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_22052A484DEF91EC2E9A36A30DAA2631
+// DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_EB2766254C8F7ED90296198E81D7A2B7
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Currency_Bar_C::OnClicked_22052A484DEF91EC2E9A36A30DAA2631()
+void UUI_Currency_Bar_C::OnClicked_EB2766254C8F7ED90296198E81D7A2B7()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Currency_Bar_C", "OnClicked_22052A484DEF91EC2E9A36A30DAA2631");
+		Func = Class->GetFunction("UI_Currency_Bar_C", "OnClicked_EB2766254C8F7ED90296198E81D7A2B7");
 
 
 
@@ -94,44 +94,20 @@ void UUI_Currency_Bar_C::OnClicked_22052A484DEF91EC2E9A36A30DAA2631()
 }
 
 
-// DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_2B3C6AE445D1644BDE45CD85C0491DC8
+// DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_74EE3F98440B94E3B613429617FBA0D7
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Currency_Bar_C::OnClicked_2B3C6AE445D1644BDE45CD85C0491DC8()
+void UUI_Currency_Bar_C::OnClicked_74EE3F98440B94E3B613429617FBA0D7()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Currency_Bar_C", "OnClicked_2B3C6AE445D1644BDE45CD85C0491DC8");
+		Func = Class->GetFunction("UI_Currency_Bar_C", "OnClicked_74EE3F98440B94E3B613429617FBA0D7");
 
 
 
 	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function UI_Currency_Bar.UI_Currency_Bar_C.OnSolarUIClosed
-// (Native, Event, Protected, BlueprintEvent)
-// Parameters:
-
-void UUI_Currency_Bar_C::OnSolarUIClosed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Currency_Bar_C", "OnSolarUIClosed");
-
-
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-
-	Func->FunctionFlags = Flgs;
 
 }
 
@@ -146,6 +122,30 @@ void UUI_Currency_Bar_C::OnSolarUIOpened()
 
 	if (!Func)
 		Func = Class->GetFunction("UI_Currency_Bar_C", "OnSolarUIOpened");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function UI_Currency_Bar.UI_Currency_Bar_C.OnSolarUIClosed
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UUI_Currency_Bar_C::OnSolarUIClosed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Currency_Bar_C", "OnSolarUIClosed");
 
 
 

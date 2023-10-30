@@ -20,7 +20,7 @@ struct UAnimationBudgetBlueprintLibrary_SetAnimationBudgetParameters_Params
 public:
 	class UObject*                               WorldContextObject;                                // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAnimationBudgetAllocatorParameters   InParameters;                                      // 0x8(0x54)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_146[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_B4[0x4];                                       // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -30,7 +30,7 @@ struct UAnimationBudgetBlueprintLibrary_EnableAnimationBudget_Params
 public:
 	class UObject*                               WorldContextObject;                                // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bEnabled;                                          // 0x8(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_148[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_B8[0x7];                                       // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)

@@ -40,19 +40,19 @@ class UUI_Lobby_Banner_C* UUI_Lobby_Banner_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Lobby_Banner.UI_Lobby_Banner_C.OnURLDownloadFinish_D0B3E8F54C02B48E23F6E19AADE0C269
+// DelegateFunction UI_Lobby_Banner.UI_Lobby_Banner_C.OnURLDownloadFinish_B24BF2B3471CEF56727EF88B2A8D37E3
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // bool                               bSuccess                                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
-void UUI_Lobby_Banner_C::OnURLDownloadFinish_D0B3E8F54C02B48E23F6E19AADE0C269(bool bSuccess)
+void UUI_Lobby_Banner_C::OnURLDownloadFinish_B24BF2B3471CEF56727EF88B2A8D37E3(bool bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Banner_C", "OnURLDownloadFinish_D0B3E8F54C02B48E23F6E19AADE0C269");
+		Func = Class->GetFunction("UI_Lobby_Banner_C", "OnURLDownloadFinish_B24BF2B3471CEF56727EF88B2A8D37E3");
 
-	Params::UUI_Lobby_Banner_C_OnURLDownloadFinish_D0B3E8F54C02B48E23F6E19AADE0C269_Params Parms{};
+	Params::UUI_Lobby_Banner_C_OnURLDownloadFinish_B24BF2B3471CEF56727EF88B2A8D37E3_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 
@@ -83,30 +83,6 @@ struct FEventReply UUI_Lobby_Banner_C::OnMouseButtonDown(const struct FGeometry&
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
-
-}
-
-
-// Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnSolarUIClosed
-// (Native, Event, Protected, BlueprintEvent)
-// Parameters:
-
-void UUI_Lobby_Banner_C::OnSolarUIClosed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Banner_C", "OnSolarUIClosed");
-
-
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-
-	Func->FunctionFlags = Flgs;
 
 }
 
@@ -157,6 +133,30 @@ struct FEventReply UUI_Lobby_Banner_C::OnMouseButtonUp(const struct FGeometry& M
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+
+}
+
+
+// Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnSolarUIClosed
+// (Native, Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_Banner_C::OnSolarUIClosed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Banner_C", "OnSolarUIClosed");
+
+
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+
+	Func->FunctionFlags = Flgs;
 
 }
 

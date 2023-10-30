@@ -23,16 +23,16 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Component_NationalFlag_C* GetDefaultObj();
 
-	void Destruct();
-	bool IsBroadCastMode();
-	void SetDefaultNationalFlag();
-	void SetDefaultClanFlag();
 	void OnInitialized();
-	void OnSolarUIClosed();
-	void OnSolarUIOpened();
+	void Destruct();
 	void LoadClanFlagByUrl();
-	void Construct();
+	void OnSolarUIOpened();
 	bool IsExclusiveFlagId(int32 InFlagID);
+	void SetDefaultClanFlag();
+	void OnSolarUIClosed();
+	void Construct();
+	void SetDefaultNationalFlag();
+	bool IsBroadCastMode();
 	class FString GetModuleName();
 	void SetEmptyClan();
 	void SetFlagType(enum class E_FlagType FlagType, int32 CallFunc_Conv_ByteToInt_ReturnValue);

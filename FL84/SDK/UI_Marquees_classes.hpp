@@ -23,9 +23,9 @@ public:
 	static class UUI_Marquees_C* GetDefaultObj();
 
 	void ReceiveTick(struct FGeometry& MyGeometry, float InDeltaTime);
-	void OnSolarUIOpened();
 	void OnSolarUIClosed();
 	void Construct();
+	void OnSolarUIOpened();
 	class FString GetModuleName();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void ExecuteUbergraph_UI_Marquees(int32 EntryPoint, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime);

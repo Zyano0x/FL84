@@ -26,7 +26,7 @@ public:
 	class USolarTextBlock*                       Txt_Invite2;                                       // 0x448(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USolarTextBlock*                       Txt_Recruit;                                       // 0x450(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         Recruiting;                                        // 0x458(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_1F86[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_310D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Size_W;                                            // 0x45C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Size_H;                                            // 0x460(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class E_Type_State_Desktop              StateDesktopInvite;                                // 0x464(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -35,11 +35,11 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_Recruit_C* GetDefaultObj();
 
-	void OnClicked_43842C5B4C43943549350E8BD9407C53();
-	void OnClicked_E3C06A6145013BE28F6449B93DBD4FE7();
+	void OnClicked_06B0480C465ED8193BED7C87E5240159();
+	void OnClicked_CEB8DABE4A89673D6A05F5A9855B0B5B();
 	void Destruct();
-	void OnSolarUIClosed();
 	void OnSolarUIOpened();
+	void OnSolarUIClosed();
 	void ConstructCopy();
 	class FString GetModuleName();
 	void SetSize(int32 Size_H, int32 Size_W, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_1);

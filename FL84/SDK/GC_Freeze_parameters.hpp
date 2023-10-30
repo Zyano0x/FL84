@@ -23,7 +23,7 @@ public:
 	class FString                                CallFunc_Concat_StrStr_ReturnValue;                // 0x18(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class UActorMaterialSubsystem*               CallFunc_GetWorldSubsystem_ReturnValue;            // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_RemoveMaterialChange_ReturnValue;         // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_244B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2229[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_Conv_BoolToString_ReturnValue;            // 0x38(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                CallFunc_Concat_StrStr_ReturnValue_1;              // 0x48(0x10)(ZeroConstructor, HasGetValueTypeHash)
 };
@@ -44,7 +44,7 @@ public:
 	struct FMaterialChangeHandle                 CallFunc_K2_AddMaterialChange_ReturnValue;         // 0x70(0x8)(NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x78(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_ContainsMaterialChange_ReturnValue;       // 0x79(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_245E[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_222C[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_Conv_BoolToString_ReturnValue;            // 0x80(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                CallFunc_Concat_StrStr_ReturnValue_1;              // 0x90(0x10)(ZeroConstructor, HasGetValueTypeHash)
 };
@@ -58,11 +58,11 @@ public:
 	class AActor*                                Actor2;                                            // 0x8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsTeammate;                                        // 0x10(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         bIsTeammate;                                       // 0x11(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2462[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2234[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ASolarVehiclePawn*                     K2Node_DynamicCast_AsSolar_Vehicle_Pawn;           // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsTeammateWith_ReturnValue;               // 0x21(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2463[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2235[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ASolarCharacter*                       K2Node_DynamicCast_AsSolar_Character;              // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess_1;                     // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsTeammateWith_ReturnValue_1;             // 0x31(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -75,7 +75,7 @@ struct AGC_Freeze_C_PlaySoundEvent_Params
 public:
 	class AActor*                                TargetActor;                                       // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bPlay;                                             // 0x8(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2467[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_223B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_Replace_ReturnValue;                      // 0x10(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                        CallFunc_PlaySoundbyname_ReturnValue;              // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_PlaySoundbyname_ReturnValue_1;            // 0x24(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -40,34 +40,16 @@ class UUI_Lobby_RandomPack_C* UUI_Lobby_RandomPack_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnClicked_FD92CC3842C4AA5F712FC5BE266CD140
+// DelegateFunction UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnClicked_4327C7D64010BD8FAE1E62B53B445B4B
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_RandomPack_C::OnClicked_FD92CC3842C4AA5F712FC5BE266CD140()
+void UUI_Lobby_RandomPack_C::OnClicked_4327C7D64010BD8FAE1E62B53B445B4B()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_RandomPack_C", "OnClicked_FD92CC3842C4AA5F712FC5BE266CD140");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Lobby_RandomPack_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_RandomPack_C", "OnInitialized");
+		Func = Class->GetFunction("UI_Lobby_RandomPack_C", "OnClicked_4327C7D64010BD8FAE1E62B53B445B4B");
 
 
 
@@ -96,6 +78,24 @@ void UUI_Lobby_RandomPack_C::OnSolarUIClosed()
 
 
 	Func->FunctionFlags = Flgs;
+
+}
+
+
+// Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_RandomPack_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_RandomPack_C", "OnInitialized");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 

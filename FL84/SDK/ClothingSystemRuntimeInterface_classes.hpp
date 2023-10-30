@@ -60,7 +60,7 @@ public:
 class UClothingSimulationInteractor : public UObject
 {
 public:
-	uint8                                        Pad_1BB2[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1831[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UClothingSimulationInteractor* GetDefaultObj();
@@ -85,7 +85,7 @@ public:
 	int32                                        NumFixedVerts;                                     // 0x78(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        MaxBoneWeights;                                    // 0x7C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<uint32>                               SelfCollisionIndices;                              // 0x80(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1BB4[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1832[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UClothPhysicalMeshDataBase_Legacy* GetDefaultObj();

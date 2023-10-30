@@ -60,8 +60,8 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_TeamInvite_Popup_C* GetDefaultObj();
 
-	void OnClicked_D2F9736B4CFB77B864C968AE2536EAC6();
-	void OnClicked_EE1D79FB4DA2F6114589C5839D83DE7B();
+	void OnClicked_407F51CE4BF95DCD8813E2A9CF022024();
+	void OnClicked_2FB02B26463D0EBD8EB33B9D49BAC95A();
 	void Destruct();
 	void Construct();
 	class FString GetModuleName();

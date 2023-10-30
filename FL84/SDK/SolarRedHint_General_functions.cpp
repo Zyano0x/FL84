@@ -40,24 +40,6 @@ class USolarRedHint_General_C* USolarRedHint_General_C::GetDefaultObj()
 }
 
 
-// Function SolarRedHint_General.SolarRedHint_General_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void USolarRedHint_General_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("SolarRedHint_General_C", "Destruct");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function SolarRedHint_General.SolarRedHint_General_C.OnSetHintDataCompleteCopy
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -68,6 +50,24 @@ void USolarRedHint_General_C::OnSetHintDataCompleteCopy()
 
 	if (!Func)
 		Func = Class->GetFunction("SolarRedHint_General_C", "OnSetHintDataCompleteCopy");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function SolarRedHint_General.SolarRedHint_General_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void USolarRedHint_General_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("SolarRedHint_General_C", "Destruct");
 
 
 

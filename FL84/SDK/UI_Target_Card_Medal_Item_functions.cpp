@@ -40,6 +40,24 @@ class UUI_Target_Card_Medal_Item_C* UUI_Target_Card_Medal_Item_C::GetDefaultObj(
 }
 
 
+// Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Target_Card_Medal_Item_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Target_Card_Medal_Item_C", "Destruct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.BPCalLuaInitDataCopy
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -75,24 +93,6 @@ void UUI_Target_Card_Medal_Item_C::OnInitialized()
 
 	if (!Func)
 		Func = Class->GetFunction("UI_Target_Card_Medal_Item_C", "OnInitialized");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Target_Card_Medal_Item_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Target_Card_Medal_Item_C", "Destruct");
 
 
 

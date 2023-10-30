@@ -23,10 +23,10 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_TeamInvite_Container_C* GetDefaultObj();
 
-	void OnShow();
+	void OnSolarUIClosed();
 	void OnHide();
 	void OnSolarUIOpened();
-	void OnSolarUIClosed();
+	void OnShow();
 	void OnInitialized();
 	class FString GetModuleName();
 };

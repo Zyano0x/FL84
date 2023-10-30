@@ -14,7 +14,7 @@ namespace SDK
 class AAbility_VH_Hover_Soroll02_AutoGun_BaseDamage_C : public ASolarAbility
 {
 public:
-	uint8                                        Pad_1089[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_218E[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AAbility_VH_Hover_Soroll02_AutoGun_BaseDamage_C* GetDefaultObj();

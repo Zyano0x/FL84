@@ -23,11 +23,11 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_RedPacket_C* GetDefaultObj();
 
-	void OnClicked_EE0BF61F4DFCD41098A07299FDD1276C();
+	void OnClicked_337937AA40604EF180A9D89F2E2DD4AC();
 	void Destruct();
 	void OnSolarUIClosed();
-	void OnSolarUIOpened();
 	void Construct();
+	void OnSolarUIOpened();
 	class FString GetModuleName();
 };
 

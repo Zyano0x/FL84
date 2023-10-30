@@ -14,12 +14,12 @@ namespace SDK
 class UAppleImageUtilsBaseAsyncTaskBlueprintProxy : public UObject
 {
 public:
-	uint8                                        Pad_13B9[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_118D[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	FMulticastInlineDelegateProperty_            OnSuccess;                                         // 0x38(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_            OnFailure;                                         // 0x48(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_13BA[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_118E[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FAppleImageUtilsImageConversionResult ConversionResult;                                  // 0x68(0x20)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	uint8                                        Pad_13BB[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_118F[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UAppleImageUtilsBaseAsyncTaskBlueprintProxy* GetDefaultObj();

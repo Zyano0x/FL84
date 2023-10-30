@@ -14,10 +14,10 @@ namespace SDK
 class UGeometryCache : public UObject
 {
 public:
-	uint8                                        Pad_1222[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1023[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UMaterialInterface*>            Materials;                                         // 0x30(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class UGeometryCacheTrack*>           Tracks;                                            // 0x40(0x10)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1223[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1024[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        StartFrame;                                        // 0x60(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                        EndFrame;                                          // 0x64(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
@@ -57,7 +57,7 @@ class UGeometryCacheCodecRaw : public UGeometryCacheCodecBase
 {
 public:
 	int32                                        DummyProperty;                                     // 0x38(0x4)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1224[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1026[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UGeometryCacheCodecRaw* GetDefaultObj();
@@ -69,7 +69,7 @@ public:
 class UGeometryCacheCodecV1 : public UGeometryCacheCodecBase
 {
 public:
-	uint8                                        Pad_1225[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1027[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UGeometryCacheCodecV1* GetDefaultObj();
@@ -84,15 +84,15 @@ public:
 	class UGeometryCache*                        GeometryCache;                                     // 0x578(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bRunning;                                          // 0x580(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                         bLooping;                                          // 0x581(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_1228[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_102C[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        StartTimeOffset;                                   // 0x584(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                        PlaybackSpeed;                                     // 0x588(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                        NumTracks;                                         // 0x58C(0x4)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                        ElapsedTime;                                       // 0x590(0x4)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_1229[0x30];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_102D[0x30];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Duration;                                          // 0x5C4(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                         bManualTick;                                       // 0x5C8(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_122A[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_102E[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UGeometryCacheComponent* GetDefaultObj();
@@ -125,7 +125,7 @@ class UGeometryCacheTrack : public UObject
 {
 public:
 	float                                        Duration;                                          // 0x28(0x4)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_122B[0x2C];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_102F[0x2C];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UGeometryCacheTrack* GetDefaultObj();
@@ -138,7 +138,7 @@ class UGeometryCacheTrack_FlipbookAnimation : public UGeometryCacheTrack
 {
 public:
 	uint32                                       NumMeshSamples;                                    // 0x58(0x4)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_122D[0x24];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1034[0x24];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UGeometryCacheTrack_FlipbookAnimation* GetDefaultObj();
@@ -152,9 +152,9 @@ class UGeometryCacheTrackStreamable : public UGeometryCacheTrack
 {
 public:
 	class UGeometryCacheCodecBase*               Codec;                                             // 0x58(0x8)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_122E[0x68];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1035[0x68];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        StartSampleTime;                                   // 0xC8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_122F[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1036[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UGeometryCacheTrackStreamable* GetDefaultObj();
@@ -166,7 +166,7 @@ public:
 class UGeometryCacheTrack_TransformAnimation : public UGeometryCacheTrack
 {
 public:
-	uint8                                        Pad_1230[0xA8];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_103B[0xA8];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UGeometryCacheTrack_TransformAnimation* GetDefaultObj();
@@ -179,7 +179,7 @@ public:
 class UGeometryCacheTrack_TransformGroupAnimation : public UGeometryCacheTrack
 {
 public:
-	uint8                                        Pad_1231[0xA8];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_103E[0xA8];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UGeometryCacheTrack_TransformGroupAnimation* GetDefaultObj();

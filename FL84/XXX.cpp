@@ -89,10 +89,10 @@ void XXX::Unknown()
 			if (!Enemy->K2_IsAlive())
 				continue;
 
-			Head = Enemy->Mesh->GetBoneWorldPos(HEAD);
-			Root = Enemy->Mesh->GetBoneWorldPos(ROOT);
-			//Head = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(HEAD));
-			//Root = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(ROOT));
+			//Head = Enemy->Mesh->GetBoneWorldPos(HEAD);
+			//Root = Enemy->Mesh->GetBoneWorldPos(ROOT);
+			Head = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(HEAD));
+			Root = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(ROOT));
 
 			if (PlayerController->ProjectWorldLocationToScreen(Head, &HeadPos, false)
 				&& PlayerController->ProjectWorldLocationToScreen(Root, &FootPos, false))
@@ -242,8 +242,10 @@ void XXX::Unknown()
 						int Bone1 = Connection.first;
 						int Bone2 = Connection.second;
 
-						SDK::FVector BoneLoc1 = Enemy->Mesh->GetBoneWorldPos(Bone1);
-						SDK::FVector BoneLoc2 = Enemy->Mesh->GetBoneWorldPos(Bone2);
+						//SDK::FVector BoneLoc1 = Enemy->Mesh->GetBoneWorldPos(Bone1);
+						//SDK::FVector BoneLoc2 = Enemy->Mesh->GetBoneWorldPos(Bone2);
+						SDK::FVector BoneLoc1 = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(Bone1));
+						SDK::FVector BoneLoc2 = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(Bone2));
 
 						if (PlayerController->ProjectWorldLocationToScreen(BoneLoc1, &BoneScreen, false)
 							&& PlayerController->ProjectWorldLocationToScreen(BoneLoc2, &PrevBoneScreen, false))
@@ -255,7 +257,7 @@ void XXX::Unknown()
 
 				if (_profiler.gPlayerDirectionLine.Custom.bValue)
 				{
-					SDK::FVector Start = Enemy->GetSolarPlayerState()->CharacterId == 100027 ? Enemy->Mesh->GetBoneWorldPos(51) : Enemy->Mesh->GetBoneWorldPos(HEAD);
+					SDK::FVector Start = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(HEAD));
 					SDK::FVector Angles = Enemy->K2_GetActorRotation().ToVector();
 					SDK::FVector End = Angles * 250 + Start;
 					SDK::FVector2D ScreenStart, ScreenEnd;
@@ -729,15 +731,15 @@ void XXX::Aimbot()
 			switch (_profiler.gAimBone.Custom.iValue)
 			{
 			case 0:
-				Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(HEAD);
+				Aimbot::AimPosition = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(HEAD));
 				break;
 
 			case 1:
-				Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(NECK_01);
+				Aimbot::AimPosition = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(NECK_01));
 				break;
 
 			case 2:
-				Aimbot::AimPosition = Enemy->Mesh->GetBoneWorldPos(SPINE_03);
+				Aimbot::AimPosition = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(SPINE_03));
 				Aimbot::AimPosition.Z -= 10;
 				break;
 			}

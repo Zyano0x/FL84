@@ -40,13 +40,13 @@ public:
 class ATemplateSequenceActor : public AActor
 {
 public:
-	uint8                                        Pad_13AE[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_116E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMovieSceneSequencePlaybackSettings   PlaybackSettings;                                  // 0x230(0x14)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_13AF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_116F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTemplateSequencePlayer*               SequencePlayer;                                    // 0x248(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, Net, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSoftObjectPath                       TemplateSequence;                                  // 0x250(0x18)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTemplateSequenceBindingOverrideData  BindingOverride;                                   // 0x268(0xC)(BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_13B0[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1171[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class ATemplateSequenceActor* GetDefaultObj();
@@ -63,7 +63,7 @@ public:
 class UTemplateSequencePlayer : public UMovieSceneSequencePlayer
 {
 public:
-	uint8                                        Pad_13B4[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_117C[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UTemplateSequencePlayer* GetDefaultObj();

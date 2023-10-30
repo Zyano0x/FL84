@@ -241,12 +241,12 @@ enum class EChatGMERecordPermission : uint8
 struct FChatGMEDataResult
 {
 public:
-	uint8                                        Pad_221[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_18A[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bSuccess;                                          // 0x8(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_223[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_18B[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ErrorInfo;                                         // 0x10(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ErrorCode;                                         // 0x20(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_224[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_18C[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x50 - 0x28)
@@ -258,7 +258,7 @@ public:
 	class FString                                DeviceName;                                        // 0x38(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bNewDevice;                                        // 0x48(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUsedDevice;                                       // 0x49(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_227[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_18E[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -266,11 +266,11 @@ public:
 struct FChatGMEDataRoomQuality
 {
 public:
-	uint8                                        Pad_228[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_18F[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Weight;                                            // 0x8(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Loss;                                              // 0xC(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        Delay;                                             // 0x10(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_229[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_190[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x30 - 0x28)
@@ -279,7 +279,7 @@ struct FChatGMEDataChangeRoomType : public FChatGMEDataResult
 {
 public:
 	enum class EChatGMERoomTypeSubEvent          NewRoomType;                                       // 0x28(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_22A[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_191[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x58 - 0x28)
@@ -297,9 +297,9 @@ public:
 struct FChatGMEDataNumberOfAudioStreamsUpdate
 {
 public:
-	uint8                                        Pad_22B[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_193[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        AudioStreamsNum;                                   // 0x8(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_22C[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_194[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -307,11 +307,11 @@ public:
 struct FChatGMEDataNumberOfUserUpdate
 {
 public:
-	uint8                                        Pad_22D[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_195[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        AllUserNum;                                        // 0x8(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        AccUserNum;                                        // 0xC(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ProxyUserNum;                                      // 0x10(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_22E[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_196[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x48 - 0x28)
@@ -332,7 +332,7 @@ public:
 	class FString                                ReceiverId;                                        // 0x38(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EChatGMERoomManagementOp          OperateType;                                       // 0x48(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bOpenCmd;                                          // 0x49(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_22F[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_197[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -340,9 +340,9 @@ public:
 struct FChatGMEDataUserUpdate
 {
 public:
-	uint8                                        Pad_230[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_199[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	enum class EChatGMEEventIDUserUpdate         EventId;                                           // 0x8(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_231[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_19B[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FString>                        UserList;                                          // 0x10(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -351,7 +351,7 @@ public:
 struct FChatGMEDataUserVolumes
 {
 public:
-	uint8                                        Pad_233[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1A1[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<class FString, float>                   Volumes;                                           // 0x8(0x50)(Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NativeAccessSpecifierPublic)
 };
 
@@ -362,7 +362,7 @@ struct FChatListConvData
 public:
 	class FString                                ConvID;                                            // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0x10(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_234[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1A3[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x50 (0x50 - 0x0)
@@ -375,11 +375,11 @@ public:
 	class FString                                AvatarUrl;                                         // 0x20(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                AvatarFrameUrl;                                    // 0x30(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeUserSexType             Sex;                                               // 0x40(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_235[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1A4[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        VipLevel;                                          // 0x44(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         IsShowVip;                                         // 0x48(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeFriendStateType         OnlineState;                                       // 0x49(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_236[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1A6[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x178 (0x178 - 0x0)
@@ -390,19 +390,19 @@ public:
 	class FString                                SendId;                                            // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                MsgId;                                             // 0x10(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeMsgState                MsgState;                                          // 0x20(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_237[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1A9[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                MsgContent;                                        // 0x28(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                UUID;                                              // 0x38(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                URL;                                               // 0x48(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Size;                                              // 0x58(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        Duration;                                          // 0x68(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_238[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1AA[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Ext;                                               // 0x70(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeMsgContentType          MsgType;                                           // 0x80(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_239[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1AB[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ConvID;                                            // 0x88(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeConvType                ConvType;                                          // 0x98(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_23A[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1AD[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Timestamp;                                         // 0xA0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLimNativeIMChatMessage               MsgData;                                           // 0xB0(0x70)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	struct FLimNativeIMChatMessageBase           MsgBase;                                           // 0x120(0x58)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
@@ -416,7 +416,7 @@ public:
 	class FString                                SendId;                                            // 0x0(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                MsgId;                                             // 0x10(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELimNativeMsgState                MsgState;                                          // 0x20(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_23C[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1AF[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLimNativeIMChatMessage               MsgData;                                           // 0x28(0x70)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
 
@@ -434,7 +434,7 @@ struct FChatLogicMessageData
 {
 public:
 	int32                                        Type;                                              // 0x0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_23D[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_21A[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLimNativeDataObjectBase              BizObj;                                            // 0x8(0x8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
 

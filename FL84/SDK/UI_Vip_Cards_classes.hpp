@@ -30,8 +30,8 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Vip_Cards_C* GetDefaultObj();
 
-	void OnClicked_0068C3A04119DEF7A2952BB779D98216();
-	void OnClicked_F06C90DB4C608BC781A36AA6B1150BF0();
+	void OnClicked_81BFBE244DF6BEC91EF791A7D1EFAB12();
+	void OnClicked_B88DE78A44F9FA802380BB9ACD8CD109();
 	class FString GetModuleName();
 	void SetCardType(int32 CardType, int32 Temp_int_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, const struct FLinearColor& Temp_struct_Variable_2, const struct FLinearColor& Temp_struct_Variable_3, int32 Temp_int_Variable_1, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, int32 Temp_int_Variable_2, const struct FLinearColor& Temp_struct_Variable_4, const struct FLinearColor& Temp_struct_Variable_5, const struct FLinearColor& Temp_struct_Variable_6, const struct FLinearColor& Temp_struct_Variable_7, int32 Temp_int_Variable_3, class UObject* Temp_object_Variable, class UObject* Temp_object_Variable_1, class UObject* Temp_object_Variable_2, class UObject* Temp_object_Variable_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_1, const struct FLinearColor& K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1, const struct FLinearColor& K2Node_Select_Default_2, class UObject* K2Node_Select_Default_3);
 	void PreConstruct(bool IsDesignTime);

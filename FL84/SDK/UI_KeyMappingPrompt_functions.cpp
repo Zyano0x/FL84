@@ -40,19 +40,19 @@ class UUI_KeyMappingPrompt_C* UUI_KeyMappingPrompt_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_54C6DCEC48D1AC66600C978EC9D7F5F6
+// DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_32249EEC4425047317C65FBD8D8E4B99
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // struct FInputDeviceProxy           InputDeviceProxy                                                 (Parm, NoDestructor, NativeAccessSpecifierPublic)
 
-void UUI_KeyMappingPrompt_C::OnInputDeviceChanged_54C6DCEC48D1AC66600C978EC9D7F5F6(const struct FInputDeviceProxy& InputDeviceProxy)
+void UUI_KeyMappingPrompt_C::OnInputDeviceChanged_32249EEC4425047317C65FBD8D8E4B99(const struct FInputDeviceProxy& InputDeviceProxy)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_KeyMappingPrompt_C", "OnInputDeviceChanged_54C6DCEC48D1AC66600C978EC9D7F5F6");
+		Func = Class->GetFunction("UI_KeyMappingPrompt_C", "OnInputDeviceChanged_32249EEC4425047317C65FBD8D8E4B99");
 
-	Params::UUI_KeyMappingPrompt_C_OnInputDeviceChanged_54C6DCEC48D1AC66600C978EC9D7F5F6_Params Parms{};
+	Params::UUI_KeyMappingPrompt_C_OnInputDeviceChanged_32249EEC4425047317C65FBD8D8E4B99_Params Parms{};
 
 	Parms.InputDeviceProxy = InputDeviceProxy;
 
@@ -61,16 +61,16 @@ void UUI_KeyMappingPrompt_C::OnInputDeviceChanged_54C6DCEC48D1AC66600C978EC9D7F5
 }
 
 
-// DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_621E727E408B6E136CFD61BC290A87B5
+// DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_C92FDE2E464291B6BCBAAC93163D7A3C
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_KeyMappingPrompt_C::OnInputMappingUpdate_621E727E408B6E136CFD61BC290A87B5()
+void UUI_KeyMappingPrompt_C::OnInputMappingUpdate_C92FDE2E464291B6BCBAAC93163D7A3C()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_KeyMappingPrompt_C", "OnInputMappingUpdate_621E727E408B6E136CFD61BC290A87B5");
+		Func = Class->GetFunction("UI_KeyMappingPrompt_C", "OnInputMappingUpdate_C92FDE2E464291B6BCBAAC93163D7A3C");
 
 
 
@@ -79,19 +79,19 @@ void UUI_KeyMappingPrompt_C::OnInputMappingUpdate_621E727E408B6E136CFD61BC290A87
 }
 
 
-// DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_7A3202CC449CC9973C2709A87DEF560B
+// DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_9F60CD7C4DBC9B88103818B4B6C13858
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // struct FInputDeviceProxy           InputDeviceProxy                                                 (Parm, NoDestructor, NativeAccessSpecifierPublic)
 
-void UUI_KeyMappingPrompt_C::OnInputDeviceChanged_7A3202CC449CC9973C2709A87DEF560B(const struct FInputDeviceProxy& InputDeviceProxy)
+void UUI_KeyMappingPrompt_C::OnInputDeviceChanged_9F60CD7C4DBC9B88103818B4B6C13858(const struct FInputDeviceProxy& InputDeviceProxy)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_KeyMappingPrompt_C", "OnInputDeviceChanged_7A3202CC449CC9973C2709A87DEF560B");
+		Func = Class->GetFunction("UI_KeyMappingPrompt_C", "OnInputDeviceChanged_9F60CD7C4DBC9B88103818B4B6C13858");
 
-	Params::UUI_KeyMappingPrompt_C_OnInputDeviceChanged_7A3202CC449CC9973C2709A87DEF560B_Params Parms{};
+	Params::UUI_KeyMappingPrompt_C_OnInputDeviceChanged_9F60CD7C4DBC9B88103818B4B6C13858_Params Parms{};
 
 	Parms.InputDeviceProxy = InputDeviceProxy;
 
@@ -100,16 +100,16 @@ void UUI_KeyMappingPrompt_C::OnInputDeviceChanged_7A3202CC449CC9973C2709A87DEF56
 }
 
 
-// DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_EAECA3CA469D51A1B98AC790CEB8DB32
+// DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_ACF521D44B06BD987E67CFB70952AA12
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_KeyMappingPrompt_C::OnInputMappingUpdate_EAECA3CA469D51A1B98AC790CEB8DB32()
+void UUI_KeyMappingPrompt_C::OnInputMappingUpdate_ACF521D44B06BD987E67CFB70952AA12()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_KeyMappingPrompt_C", "OnInputMappingUpdate_EAECA3CA469D51A1B98AC790CEB8DB32");
+		Func = Class->GetFunction("UI_KeyMappingPrompt_C", "OnInputMappingUpdate_ACF521D44B06BD987E67CFB70952AA12");
 
 
 
@@ -118,19 +118,19 @@ void UUI_KeyMappingPrompt_C::OnInputMappingUpdate_EAECA3CA469D51A1B98AC790CEB8DB
 }
 
 
-// DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_749455784513D6BBB525B6B3AE4583B6
+// DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_16D4ECF54591CFCDC3FC4BB0BA155013
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // struct FInputDeviceProxy           InputDeviceProxy                                                 (Parm, NoDestructor, NativeAccessSpecifierPublic)
 
-void UUI_KeyMappingPrompt_C::OnInputDeviceChanged_749455784513D6BBB525B6B3AE4583B6(const struct FInputDeviceProxy& InputDeviceProxy)
+void UUI_KeyMappingPrompt_C::OnInputDeviceChanged_16D4ECF54591CFCDC3FC4BB0BA155013(const struct FInputDeviceProxy& InputDeviceProxy)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_KeyMappingPrompt_C", "OnInputDeviceChanged_749455784513D6BBB525B6B3AE4583B6");
+		Func = Class->GetFunction("UI_KeyMappingPrompt_C", "OnInputDeviceChanged_16D4ECF54591CFCDC3FC4BB0BA155013");
 
-	Params::UUI_KeyMappingPrompt_C_OnInputDeviceChanged_749455784513D6BBB525B6B3AE4583B6_Params Parms{};
+	Params::UUI_KeyMappingPrompt_C_OnInputDeviceChanged_16D4ECF54591CFCDC3FC4BB0BA155013_Params Parms{};
 
 	Parms.InputDeviceProxy = InputDeviceProxy;
 
@@ -139,41 +139,20 @@ void UUI_KeyMappingPrompt_C::OnInputDeviceChanged_749455784513D6BBB525B6B3AE4583
 }
 
 
-// DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_AC2871C144EB61F1F144D295B1D765BD
+// DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_7F87AD5043ED7E47A24B7A9A4576BAF4
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_KeyMappingPrompt_C::OnInputMappingUpdate_AC2871C144EB61F1F144D295B1D765BD()
+void UUI_KeyMappingPrompt_C::OnInputMappingUpdate_7F87AD5043ED7E47A24B7A9A4576BAF4()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_KeyMappingPrompt_C", "OnInputMappingUpdate_AC2871C144EB61F1F144D295B1D765BD");
+		Func = Class->GetFunction("UI_KeyMappingPrompt_C", "OnInputMappingUpdate_7F87AD5043ED7E47A24B7A9A4576BAF4");
 
 
 
 	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
-// Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnChangeAdapterSlotWidgetParametersCopy
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<struct FWidgetOverrideParam>Params                                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-
-void UUI_KeyMappingPrompt_C::OnChangeAdapterSlotWidgetParametersCopy(TArray<struct FWidgetOverrideParam>& Params)
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_KeyMappingPrompt_C", "OnChangeAdapterSlotWidgetParametersCopy");
-
-	Params::UUI_KeyMappingPrompt_C_OnChangeAdapterSlotWidgetParametersCopy_Params Parms{};
-
-	Parms.Params = Params;
-
-	UObject::ProcessEvent(Func, &Parms);
 
 }
 
@@ -210,6 +189,27 @@ void UUI_KeyMappingPrompt_C::Destruct()
 
 
 	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnChangeAdapterSlotWidgetParametersCopy
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<struct FWidgetOverrideParam>Params                                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+
+void UUI_KeyMappingPrompt_C::OnChangeAdapterSlotWidgetParametersCopy(TArray<struct FWidgetOverrideParam>& Params)
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_KeyMappingPrompt_C", "OnChangeAdapterSlotWidgetParametersCopy");
+
+	Params::UUI_KeyMappingPrompt_C_OnChangeAdapterSlotWidgetParametersCopy_Params Parms{};
+
+	Parms.Params = Params;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 }
 

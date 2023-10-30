@@ -425,12 +425,12 @@ public:
 	int32                                        ObjectId;                                          // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        GeoId;                                             // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        PartID;                                            // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5C8[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4D5[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                SplitIdentifier;                                   // 0x10(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                PartName;                                          // 0x20(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        PrimitiveIndex;                                    // 0x30(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        PointIndex;                                        // 0x34(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5C9[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4D6[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xC (0xC - 0x0)
@@ -439,12 +439,12 @@ struct FHoudiniCurveOutputProperties
 {
 public:
 	enum class EHoudiniCurveOutputType           CurveOutputType;                                   // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5CA[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4D8[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        NumPoints;                                         // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bClosed;                                           // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EHoudiniCurveType                 CurveType;                                         // 0x9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EHoudiniCurveMethod               CurveMethod;                                       // 0xA(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5CB[0x1];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4DB[0x1];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xF8 (0xF8 - 0x0)
@@ -459,11 +459,11 @@ public:
 	bool                                         bProxyIsCurrent;                                   // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsImplicit;                                       // 0x21(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsGeometryCollectionPiece;                        // 0x22(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5CE[0x5];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4DC[0x5];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                GeometryCollectionPieceName;                       // 0x28(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                BakeName;                                          // 0x38(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FHoudiniCurveOutputProperties         CurveOutputProperty;                               // 0x48(0xC)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5CF[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4DD[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<class FString, class FString>           CachedAttributes;                                  // 0x58(0x50)(NativeAccessSpecifierPublic)
 	TMap<class FString, class FString>           CachedTokens;                                      // 0xA8(0x50)(NativeAccessSpecifierPublic)
 };
@@ -474,7 +474,7 @@ struct FHoudiniAssetBlueprintOutput
 {
 public:
 	int32                                        OutputIndex;                                       // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5D0[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4DE[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FHoudiniOutputObject                  OutputObject;                                      // 0x8(0xF8)(NativeAccessSpecifierPublic)
 };
 
@@ -486,7 +486,7 @@ public:
 	class UHoudiniAsset*                         HoudiniAsset;                                      // 0x58(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        AssetId;                                           // 0x60(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EHoudiniAssetState                AssetState;                                        // 0x64(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5D3[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E3[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	uint32                                       SubAssetIndex;                                     // 0x68(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                       AssetCookCount;                                    // 0x6C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bHasBeenLoaded;                                    // 0x70(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -500,7 +500,7 @@ public:
 	struct FGuid                                 ComponentGUID;                                     // 0x78(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGuid                                 HapiGUID;                                          // 0x88(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bRegisteredComponentTemplate;                      // 0x98(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5D6[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E5[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                SourceName;                                        // 0xA0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<struct FHoudiniOutputObjectIdentifier, struct FHoudiniAssetBlueprintOutput> Outputs;                                           // 0xB0(0x50)(NativeAccessSpecifierPublic)
 	TArray<class UHoudiniInput*>                 Inputs;                                            // 0x100(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -514,10 +514,10 @@ public:
 	class FString                                AttributeName;                                     // 0x0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EAttribStorageType                AttributeType;                                     // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EAttribOwner                      AttributeOwner;                                    // 0x11(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5D8[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E6[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        AttributeCount;                                    // 0x14(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        AttributeTupleSize;                                // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5DA[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E7[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<double>                               DoubleValues;                                      // 0x20(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<int64>                                IntValues;                                         // 0x30(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                        StringValues;                                      // 0x40(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -529,7 +529,7 @@ struct FHoudiniGenericAttributeChangedProperty
 {
 public:
 	class UObject*                               Object;                                            // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5DB[0x90];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E8[0x90];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x60 (0x60 - 0x0)
@@ -537,7 +537,7 @@ public:
 struct FHoudiniMeshSocket
 {
 public:
-	uint8                                        Pad_5DC[0x60];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E9[0x60];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x230 (0x230 - 0x0)
@@ -546,25 +546,25 @@ struct FHoudiniGeoPartObject
 {
 public:
 	int32                                        AssetId;                                           // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5DE[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4EA[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                AssetName;                                         // 0x8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ObjectId;                                          // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5DF[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4EB[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ObjectName;                                        // 0x20(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        GeoId;                                             // 0x30(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        PartID;                                            // 0x34(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                PartName;                                          // 0x38(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bHasCustomPartName;                                // 0x48(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5E0[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4EC[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FString>                        SplitGroups;                                       // 0x50(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTransform                            TransformMatrix;                                   // 0x60(0x30)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                NodePath;                                          // 0x90(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EHoudiniPartType                  Type;                                              // 0xA0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EHoudiniInstancerType             InstancerType;                                     // 0xA1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5EB[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4ED[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                VolumeName;                                        // 0xA8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bHasEditLayers;                                    // 0xB8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5EC[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4EF[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                VolumeLayerName;                                   // 0xC0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        VolumeTileIndex;                                   // 0xD0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsVisible;                                        // 0xD4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -575,7 +575,7 @@ public:
 	bool                                         bHasPartChanged;                                   // 0xD9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bHasTransformChanged;                              // 0xDA(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bHasMaterialsChanged;                              // 0xDB(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5EE[0x144];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4F3[0x144];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FHoudiniMeshSocket>            AllMeshSockets;                                    // 0x220(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -584,7 +584,7 @@ public:
 struct FHoudiniCurveInfo
 {
 public:
-	uint8                                        Pad_5F2[0x1C];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4F5[0x1C];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x80 (0x80 - 0x0)
@@ -592,7 +592,7 @@ public:
 struct FHoudiniVolumeInfo
 {
 public:
-	uint8                                        Pad_5F3[0x80];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4F6[0x80];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x48 (0x48 - 0x0)
@@ -600,7 +600,7 @@ public:
 struct FHoudiniPartInfo
 {
 public:
-	uint8                                        Pad_5F4[0x48];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4F7[0x48];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x30 - 0x0)
@@ -608,7 +608,7 @@ public:
 struct FHoudiniGeoInfo
 {
 public:
-	uint8                                        Pad_5F5[0x30];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4F8[0x30];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -616,7 +616,7 @@ public:
 struct FHoudiniObjectInfo
 {
 public:
-	uint8                                        Pad_5F6[0x28];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4F9[0x28];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x70 (0x70 - 0x0)
@@ -625,14 +625,14 @@ struct FHoudiniBrushInfo
 {
 public:
 	TWeakObjectPtr<class ABrush>                 BrushActor;                                        // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5F7[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4FA[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            CachedTransform;                                   // 0x10(0x30)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FVector                               CachedOrigin;                                      // 0x40(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                               CachedExtent;                                      // 0x4C(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EBrushType                        CachedBrushType;                                   // 0x58(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5F9[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4FB[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	uint64                                       CachedSurfaceHash;                                 // 0x60(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5FA[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4FC[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xC8 (0xC8 - 0x0)
@@ -641,15 +641,15 @@ struct FHoudiniInputLandscapeTransferParams
 {
 public:
 	enum class ETransferHeightMode               TransferHeightMode;                                // 0x0(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5FB[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4FD[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<class FName>                            HeightSpecifiedLayerNames;                         // 0x8(0x50)(Edit, NativeAccessSpecifierPublic)
 	class FName                                  HeightUnderSpecifiedLayerName;                     // 0x58(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ETransferLayerMode                TransferLayerMode;                                 // 0x60(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5FC[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4FE[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<class FName>                            LayerSpecifiedLayerNames;                          // 0x68(0x50)(Edit, NativeAccessSpecifierPublic)
 	class FName                                  LayerUnderSpecifiedLayerName;                      // 0xB8(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bTransferWeightmap;                                // 0xC0(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5FD[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_500[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -658,7 +658,7 @@ struct FHoudiniBakedOutputObjectIdentifier
 {
 public:
 	int32                                        PartID;                                            // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5FE[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_501[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                SplitIdentifier;                                   // 0x8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -692,7 +692,7 @@ struct FHoudiniInstancedOutput
 public:
 	TSoftObjectPtr<class UObject>                OriginalObject;                                    // 0x0(0x28)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        OriginalObjectIndex;                               // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_5FF[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_504[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FTransform>                    OriginalTransforms;                                // 0x30(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<TSoftObjectPtr<class UObject>>        VariationObjects;                                  // 0x40(0x10)(ZeroConstructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FTransform>                    VariationTransformOffsets;                         // 0x50(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -700,7 +700,7 @@ public:
 	TArray<int32>                                OriginalInstanceIndices;                           // 0x70(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bChanged;                                          // 0x80(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bStale;                                            // 0x81(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_600[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_506[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -716,7 +716,7 @@ public:
 struct FWorkItemTallyBase
 {
 public:
-	uint8                                        Pad_601[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_507[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x28 - 0x8)
@@ -731,7 +731,7 @@ public:
 	int32                                        CookedWorkItems;                                   // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                        ErroredWorkItems;                                  // 0x1C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                        CookCancelledWorkItems;                            // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_602[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_508[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x230 (0x238 - 0x8)
@@ -753,7 +753,7 @@ public:
 struct FOutputActorOwner
 {
 public:
-	uint8                                        Pad_603[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_509[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                OutputActor;                                       // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
 
@@ -762,15 +762,15 @@ public:
 struct FTOPWorkResultObject
 {
 public:
-	uint8                                        Pad_604[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_50A[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Name;                                              // 0x8(0x10)(ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                FilePath;                                          // 0x18(0x10)(ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EPDGWorkResultState               State;                                             // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_605[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_50B[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        WorkItemResultInfoIndex;                           // 0x2C(0x4)(ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class UHoudiniOutput*>                ResultOutputs;                                     // 0x30(0x10)(ZeroConstructor, NonTransactional, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                         bAutoBakedSinceLastLoad;                           // 0x40(0x1)(ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_606[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_50C[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FOutputActorOwner                     OutputActorOwner;                                  // 0x48(0x10)(NonTransactional, NativeAccessSpecifierPrivate)
 };
 
@@ -790,20 +790,20 @@ struct FHoudiniStaticMeshGenerationProperties
 {
 public:
 	uint8                                        bGeneratedDoubleSidedGeometry : 1;                 // Mask: 0x1, PropSize: 0x10x0(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_50 : 7;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_608[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        BitPad_33 : 7;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_50D[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UPhysicalMaterial*                     GeneratedPhysMaterial;                             // 0x8(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBodyInstance                         DefaultBodyInstance;                               // 0x10(0x130)(Edit, NativeAccessSpecifierPublic)
 	enum class ECollisionTraceFlag               GeneratedCollisionTraceFlag;                       // 0x140(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_609[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_50E[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        GeneratedLightMapResolution;                       // 0x144(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FWalkableSlopeOverride                GeneratedWalkableSlopeOverride;                    // 0x148(0x10)(Edit, IsPlainOldData, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	int32                                        GeneratedLightMapCoordinateIndex;                  // 0x158(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bGeneratedUseMaximumStreamingTexelRatio : 1;       // Mask: 0x1, PropSize: 0x10x15C(0x1)(Edit, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_51 : 7;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_60B[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        BitPad_34 : 7;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_50F[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        GeneratedStreamingDistanceMultiplier;              // 0x160(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_60C[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_510[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFoliageType_InstancedStaticMesh*      GeneratedFoliageDefaultSettings;                   // 0x168(0x8)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, AdvancedDisplay, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class UAssetUserData*>                GeneratedAssetUserData;                            // 0x170(0x10)(Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };

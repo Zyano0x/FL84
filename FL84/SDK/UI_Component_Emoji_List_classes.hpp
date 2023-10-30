@@ -28,7 +28,7 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Component_Emoji_List_C* GetDefaultObj();
 
-	void OnStateChangedEvent_4654B56D42B587596A7603AF5C2D5F9A(int32 InLastButtonIndex);
+	void OnStateChangedEvent_32E7260345C5E568ECDADEB70EBF2AF6(int32 InLastButtonIndex);
 	void Destruct();
 	void Construct();
 	class FString GetModuleName();

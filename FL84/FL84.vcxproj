@@ -190,8 +190,8 @@
     <ClInclude Include="RapidXML\rapidxml_print.hpp" />
     <ClInclude Include="RapidXML\rapidxml_utils.hpp" />
     <ClInclude Include="RapidXML\rapidxml_wrap.hpp" />
-    <ClInclude Include="SDK.hpp" />
     <ClInclude Include="Encryption\Thunk.hpp" />
+    <ClInclude Include="SDK.hpp" />
     <ClInclude Include="XXX.h" />
     <ClInclude Include="Hook.h" />
     <ClInclude Include="pch.h" />

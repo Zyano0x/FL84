@@ -40,16 +40,16 @@ class UUI_Lobby_Mainmenu_C* UUI_Lobby_Mainmenu_C::GetDefaultObj()
 }
 
 
-// DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_1534DCB14154388DC5E1EDB108CB6E46
+// DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_5739383A4C7CDEA32EACD398F8DBFA0E
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_Mainmenu_C::OnClicked_1534DCB14154388DC5E1EDB108CB6E46()
+void UUI_Lobby_Mainmenu_C::OnClicked_5739383A4C7CDEA32EACD398F8DBFA0E()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Mainmenu_C", "OnClicked_1534DCB14154388DC5E1EDB108CB6E46");
+		Func = Class->GetFunction("UI_Lobby_Mainmenu_C", "OnClicked_5739383A4C7CDEA32EACD398F8DBFA0E");
 
 
 
@@ -58,16 +58,16 @@ void UUI_Lobby_Mainmenu_C::OnClicked_1534DCB14154388DC5E1EDB108CB6E46()
 }
 
 
-// DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_440A34A3416189A372743CAAFD008544
+// DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_1A90491740E4F8B614F2CEAF18A1B2BF
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_Mainmenu_C::OnClicked_440A34A3416189A372743CAAFD008544()
+void UUI_Lobby_Mainmenu_C::OnClicked_1A90491740E4F8B614F2CEAF18A1B2BF()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Mainmenu_C", "OnClicked_440A34A3416189A372743CAAFD008544");
+		Func = Class->GetFunction("UI_Lobby_Mainmenu_C", "OnClicked_1A90491740E4F8B614F2CEAF18A1B2BF");
 
 
 
@@ -76,16 +76,16 @@ void UUI_Lobby_Mainmenu_C::OnClicked_440A34A3416189A372743CAAFD008544()
 }
 
 
-// DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_6CD601A845F65E66FA871FA74DE41C47
+// DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_68718F914402053907A5F8AA44044A32
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_Mainmenu_C::OnClicked_6CD601A845F65E66FA871FA74DE41C47()
+void UUI_Lobby_Mainmenu_C::OnClicked_68718F914402053907A5F8AA44044A32()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Mainmenu_C", "OnClicked_6CD601A845F65E66FA871FA74DE41C47");
+		Func = Class->GetFunction("UI_Lobby_Mainmenu_C", "OnClicked_68718F914402053907A5F8AA44044A32");
 
 
 
@@ -136,6 +136,24 @@ void UUI_Lobby_Mainmenu_C::OnSolarUIClosed()
 }
 
 
+// Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_Mainmenu_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_Mainmenu_C", "Construct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnSolarUIOpened
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
@@ -156,24 +174,6 @@ void UUI_Lobby_Mainmenu_C::OnSolarUIOpened()
 
 
 	Func->FunctionFlags = Flgs;
-
-}
-
-
-// Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Lobby_Mainmenu_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_Mainmenu_C", "Construct");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
 
 }
 

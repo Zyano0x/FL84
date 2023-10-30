@@ -20,17 +20,17 @@ public:
 	class USizeBox*                              SizeBox_0;                                         // 0x278(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	enum class E_Type_Mouse                      Mouse;                                             // 0x280(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         HUD;                                               // 0x281(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2686[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_879[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ActionName;                                        // 0x288(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	bool                                         bCustomRefresh;                                    // 0x298(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2687[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_87A[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector2D                             Size;                                              // 0x29C(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UUI_Component_Mouse_C* GetDefaultObj();
 
-	void Destruct();
 	void OnInitialized();
+	void Destruct();
 	void Construct();
 	class FString GetModuleName();
 	void SetData(const struct FKey& KeySetting, enum class E_Type_Mouse* Type, bool* Succeed, bool CallFunc_EqualEqual_KeyKey_ReturnValue, bool CallFunc_EqualEqual_KeyKey_ReturnValue_1, bool CallFunc_EqualEqual_KeyKey_ReturnValue_2, bool CallFunc_EqualEqual_KeyKey_ReturnValue_3, bool CallFunc_EqualEqual_KeyKey_ReturnValue_4, bool CallFunc_EqualEqual_KeyKey_ReturnValue_5, bool CallFunc_EqualEqual_KeyKey_ReturnValue_6, bool CallFunc_EqualEqual_KeyKey_ReturnValue_7, bool CallFunc_Key_IsMouseButton_ReturnValue);

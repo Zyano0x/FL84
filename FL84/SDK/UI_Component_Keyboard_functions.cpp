@@ -40,24 +40,6 @@ class UUI_Component_Keyboard_C* UUI_Component_Keyboard_C::GetDefaultObj()
 }
 
 
-// Function UI_Component_Keyboard.UI_Component_Keyboard_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Component_Keyboard_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Component_Keyboard_C", "Destruct");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
-
-}
-
-
 // Function UI_Component_Keyboard.UI_Component_Keyboard_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -68,6 +50,24 @@ void UUI_Component_Keyboard_C::OnInitialized()
 
 	if (!Func)
 		Func = Class->GetFunction("UI_Component_Keyboard_C", "OnInitialized");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Function UI_Component_Keyboard.UI_Component_Keyboard_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Component_Keyboard_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Component_Keyboard_C", "Destruct");
 
 
 

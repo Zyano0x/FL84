@@ -14,7 +14,7 @@ namespace SDK
 class AAbility_VH_Tire_9A04_TurretA1_ExplosionDamage_man_C : public ASolarAbility
 {
 public:
-	uint8                                        Pad_238D[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2471[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x310(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                         HasExploded;                                       // 0x318(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 

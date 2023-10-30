@@ -40,16 +40,16 @@ class UUI_Lobby_TeamInvite_Mini_Popup_C* UUI_Lobby_TeamInvite_Mini_Popup_C::GetD
 }
 
 
-// Function UI_Lobby_TeamInvite_MIni_Popup.UI_Lobby_TeamInvite_Mini_Popup_C.OnClicked_C512E9C44F6A92E8D8ED6BAB1E3AD8D2
+// Function UI_Lobby_TeamInvite_MIni_Popup.UI_Lobby_TeamInvite_Mini_Popup_C.OnClicked_7BD670B743C423CCB6EC2EBB0163D2ED
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
-void UUI_Lobby_TeamInvite_Mini_Popup_C::OnClicked_C512E9C44F6A92E8D8ED6BAB1E3AD8D2()
+void UUI_Lobby_TeamInvite_Mini_Popup_C::OnClicked_7BD670B743C423CCB6EC2EBB0163D2ED()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_TeamInvite_Mini_Popup_C", "OnClicked_C512E9C44F6A92E8D8ED6BAB1E3AD8D2");
+		Func = Class->GetFunction("UI_Lobby_TeamInvite_Mini_Popup_C", "OnClicked_7BD670B743C423CCB6EC2EBB0163D2ED");
 
 
 
@@ -58,16 +58,16 @@ void UUI_Lobby_TeamInvite_Mini_Popup_C::OnClicked_C512E9C44F6A92E8D8ED6BAB1E3AD8
 }
 
 
-// DelegateFunction UI_Lobby_TeamInvite_MIni_Popup.UI_Lobby_TeamInvite_Mini_Popup_C.OnClicked_9DD56296417E3FB2112C2FB5A0C22818
+// DelegateFunction UI_Lobby_TeamInvite_MIni_Popup.UI_Lobby_TeamInvite_Mini_Popup_C.OnClicked_286769C84B834D2E3D38C18DB58CA6E2
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 
-void UUI_Lobby_TeamInvite_Mini_Popup_C::OnClicked_9DD56296417E3FB2112C2FB5A0C22818()
+void UUI_Lobby_TeamInvite_Mini_Popup_C::OnClicked_286769C84B834D2E3D38C18DB58CA6E2()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_TeamInvite_Mini_Popup_C", "OnClicked_9DD56296417E3FB2112C2FB5A0C22818");
+		Func = Class->GetFunction("UI_Lobby_TeamInvite_Mini_Popup_C", "OnClicked_286769C84B834D2E3D38C18DB58CA6E2");
 
 
 

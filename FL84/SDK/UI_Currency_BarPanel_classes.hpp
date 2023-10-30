@@ -20,9 +20,9 @@ public:
 	static class UUI_Currency_BarPanel_C* GetDefaultObj();
 
 	void Construct();
+	void Destruct();
 	void OnSolarUIClosed();
 	void OnSolarUIOpened();
-	void Destruct();
 	class FString GetModuleName();
 };
 

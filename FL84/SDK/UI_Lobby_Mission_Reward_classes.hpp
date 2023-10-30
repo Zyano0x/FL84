@@ -23,9 +23,9 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_Mission_Reward_C* GetDefaultObj();
 
-	void OnClicked_245EAA0542A40521B32E4C8A54EF799F();
-	void OnSolarUIClosed();
+	void OnClicked_6923DC3A46460AD1756C4BADB0854821();
 	void Destruct();
+	void OnSolarUIClosed();
 	void OnSolarUIOpened();
 	void ConstructCopy();
 	class FString GetModuleName();

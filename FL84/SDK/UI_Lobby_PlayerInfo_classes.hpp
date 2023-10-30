@@ -26,10 +26,10 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Lobby_PlayerInfo_C* GetDefaultObj();
 
-	void OnClicked_BCD2275142E8069585D68186EB5AA378();
+	void OnClicked_5520A9704C211E9002979A90F8BB172E();
 	void Destruct();
-	void OnSolarUIClosed();
 	void OnSolarUIOpened();
+	void OnSolarUIClosed();
 	void Construct();
 	class FString GetModuleName();
 };

@@ -19,8 +19,8 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_BlockAll_C* GetDefaultObj();
 
-	void Construct();
 	void Destruct();
+	void Construct();
 	class FString GetModuleName();
 };
 

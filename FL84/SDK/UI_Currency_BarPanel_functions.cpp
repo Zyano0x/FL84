@@ -58,6 +58,24 @@ void UUI_Currency_BarPanel_C::Construct()
 }
 
 
+// Function UI_Currency_BarPanel.UI_Currency_BarPanel_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Currency_BarPanel_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Currency_BarPanel_C", "Destruct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function UI_Currency_BarPanel.UI_Currency_BarPanel_C.OnSolarUIClosed
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
@@ -102,24 +120,6 @@ void UUI_Currency_BarPanel_C::OnSolarUIOpened()
 
 
 	Func->FunctionFlags = Flgs;
-
-}
-
-
-// Function UI_Currency_BarPanel.UI_Currency_BarPanel_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Currency_BarPanel_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Currency_BarPanel_C", "Destruct");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
 
 }
 

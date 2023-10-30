@@ -18,10 +18,10 @@ public:
 	static class UClass* StaticClass();
 	static class UUI_Warehouse_DragPanel_C* GetDefaultObj();
 
+	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent);
 	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent);
 	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent);
 	void Construct();
-	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent);
 	class FString GetModuleName();
 };
 

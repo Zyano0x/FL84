@@ -40,16 +40,16 @@ class UUI_Lobby_RedPacket_C* UUI_Lobby_RedPacket_C::GetDefaultObj()
 }
 
 
-// Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnClicked_EE0BF61F4DFCD41098A07299FDD1276C
+// Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnClicked_337937AA40604EF180A9D89F2E2DD4AC
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
-void UUI_Lobby_RedPacket_C::OnClicked_EE0BF61F4DFCD41098A07299FDD1276C()
+void UUI_Lobby_RedPacket_C::OnClicked_337937AA40604EF180A9D89F2E2DD4AC()
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_RedPacket_C", "OnClicked_EE0BF61F4DFCD41098A07299FDD1276C");
+		Func = Class->GetFunction("UI_Lobby_RedPacket_C", "OnClicked_337937AA40604EF180A9D89F2E2DD4AC");
 
 
 
@@ -100,6 +100,24 @@ void UUI_Lobby_RedPacket_C::OnSolarUIClosed()
 }
 
 
+// Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UUI_Lobby_RedPacket_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (!Func)
+		Func = Class->GetFunction("UI_Lobby_RedPacket_C", "Construct");
+
+
+
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
 // Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnSolarUIOpened
 // (Native, Event, Protected, BlueprintEvent)
 // Parameters:
@@ -120,24 +138,6 @@ void UUI_Lobby_RedPacket_C::OnSolarUIOpened()
 
 
 	Func->FunctionFlags = Flgs;
-
-}
-
-
-// Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UUI_Lobby_RedPacket_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (!Func)
-		Func = Class->GetFunction("UI_Lobby_RedPacket_C", "Construct");
-
-
-
-	UObject::ProcessEvent(Func, nullptr);
 
 }
 
