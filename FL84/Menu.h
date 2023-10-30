@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Thunk.hpp"
+#include "Encryption/Thunk.hpp"
 
 #define MAX_VIRTUALKEYS 0x100
 

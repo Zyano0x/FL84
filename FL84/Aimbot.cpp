@@ -1,5 +1,4 @@
 #include "pch.h"
-#include "Encryption/SysCall.h"
 
 namespace Aimbot
 {
@@ -12,8 +11,8 @@ namespace Aimbot
 
 	SDK::FRotator CalcAngle(SDK::FVector src, SDK::FVector dst, SDK::FRotator oldRotation, float smoothing)
 	{
-		SDK::FVector Dir = ZZZ.MathLibrary->Subtract_VectorVector(dst, src);
-		SDK::FRotator Yaptr = ZZZ.MathLibrary->Conv_VectorToRotator(Dir);
+		SDK::FVector Dir = ZXC.MathLibrary->Subtract_VectorVector(dst, src);
+		SDK::FRotator Yaptr = ZXC.MathLibrary->Conv_VectorToRotator(Dir);
 		SDK::FRotator CpYaT = oldRotation;
 		Yaptr.Pitch -= CpYaT.Pitch;
 		Yaptr.Yaw -= CpYaT.Yaw;

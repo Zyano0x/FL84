@@ -835,14 +835,14 @@ namespace ZyanoCheats
 		if (!_profiler.gIsAiming.Custom.bValue)
 			Aimbot::ResetLock();
 
-		ZZZ.BypassEAC();
+		ZXC.BypassEAC();
 
-		ZZZ.Unknown();
-		ZZZ.NoRecoil();
-		ZZZ.Aimbot();
-		ZZZ.Radar();
-		ZZZ.Vehicle();
-		ZZZ.Misc();
+		ZXC.Unknown();
+		ZXC.NoRecoil();
+		ZXC.Aimbot();
+		ZXC.Radar();
+		ZXC.Vehicle();
+		ZXC.Misc();
 
 		if (Menu.bShowWindow)
 		{

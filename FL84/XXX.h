@@ -76,4 +76,4 @@ private:
 	SDK::FVector Head, Root;
 };
 
-extern XXX ZZZ;
+extern XXX ZXC;

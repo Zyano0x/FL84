@@ -27,7 +27,7 @@ HRESULT WINAPI hkPresent(_In_ IDXGISwapChain* SwapChain, _In_ UINT SyncInterval,
 {
 	_mainGUI.Present(SwapChain, SyncInterval, Flags);
 
-	return spoof_call(oPresent, SwapChain, SyncInterval, Flags);
+	return oPresent(SwapChain, SyncInterval, Flags);
 }
 
 HRESULT WINAPI hkResizeBuffers(_In_ IDXGISwapChain* SwapChain, _In_ UINT BufferCount, _In_ UINT Width, _In_ UINT Height, _In_ DXGI_FORMAT NewFormat, _In_ UINT SwapChainFlags)
@@ -43,7 +43,7 @@ __int64 HOOKCALL hkGetShotDir(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2, bool
 		|| _profiler.gAimEnabled.Custom.bValue && _profiler.gAimMode.Custom.iValue == 2 && a2 && !Aimbot::TargetPosition.IsValid())
 	{
 		// Maybe from muzzle/GetShootingTraceStartLocation instead of camera location more accurate
-		SDK::FVector Out = Math::GetDirectionUnitVector(ZZZ.CameraManager->GetCameraLocation() /*Weapon->GetShootingTraceStartLocation()*/, Aimbot::TargetPosition);
+		SDK::FVector Out = Math::GetDirectionUnitVector(ZXC.CameraManager->GetCameraLocation() /*Weapon->GetShootingTraceStartLocation()*/, Aimbot::TargetPosition);
 
 		*(SDK::FVector*)(Result) = Out;
 	}
@@ -170,11 +170,11 @@ void Initialize()
 	GetShotDir = reinterpret_cast<tGetShotDir>(Signature(xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")).GetPointer());
 	Hook(GetShotDir, hkGetShotDir);
 
-	ShotgunImpact = reinterpret_cast<tShotgunImpact>(Signature(xorstr_("44 0F B6 81 ? ? ? ? BA ? ? ? ? 48 8B 89 ? ? ? ? F3 0F 10 1D ? ? ? ? E9 ? ? ? ? CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC 48 89 5C 24")).GetPointer());
-	Hook(ShotgunImpact, hkShotgunImpact);
-
 	GetShootingTraceStartLocation = reinterpret_cast<tGetShootingTraceStartLocation>(Signature(xorstr_("48 89 5C 24 ? 55 56 57 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 01 48 8B FA")).GetPointer());
 	Hook(GetShootingTraceStartLocation, hkGetShootingTraceStartLocation);
+
+	ShotgunImpact = reinterpret_cast<tShotgunImpact>(Signature(xorstr_("44 0F B6 81 ? ? ? ? BA ? ? ? ? 48 8B 89 ? ? ? ? F3 0F 10 1D ? ? ? ? E9 ? ? ? ? CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC 40 53")).GetPointer());
+	Hook(ShotgunImpact, hkShotgunImpact);
 
 	//GetShotStartLocation = reinterpret_cast<tGetShotStartLocation>(Signature(xorstr_("40 53 56 57 48 83 EC ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 44 24 ? 48 8B FA")).GetPointer());
 	//Hook(GetShotStartLocation, hkGetShotStartLocation);

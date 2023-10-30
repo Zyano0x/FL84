@@ -46,15 +46,21 @@
     <Filter Include="ImGUI\Custom">
       <UniqueIdentifier>{5fd407ae-058a-4b5c-81f7-bc20c7692976}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Draw">
+      <UniqueIdentifier>{271056d8-176a-482e-b870-2c59119a3063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Icons &amp; Fonts">
+      <UniqueIdentifier>{15394754-32bf-43f7-976c-4746ef4fbfeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{ee3afadf-f551-43cc-a5eb-43ecdd9ca48e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Hook.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Draw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ImGUI\imconfig.h">
@@ -81,14 +87,8 @@
     <ClInclude Include="ImGUI\imstb_truetype.h">
       <Filter>ImGUI</Filter>
     </ClInclude>
-    <ClInclude Include="Icons.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Menu.h">
       <Filter>Menu</Filter>
-    </ClInclude>
-    <ClInclude Include="Fonts.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="XXX.h">
       <Filter>Features</Filter>
@@ -132,9 +132,6 @@
     <ClInclude Include="RapidXML\rapidxml_wrap.hpp">
       <Filter>Profiler\RapidXML</Filter>
     </ClInclude>
-    <ClInclude Include="Thunk.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="dirent.h">
       <Filter>ImGUI\FileSystem</Filter>
     </ClInclude>
@@ -150,14 +147,23 @@
     <ClInclude Include="FileUtility\FileUtility.h">
       <Filter>Profiler\RapidXML\Utilities</Filter>
     </ClInclude>
-    <ClInclude Include="Memory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Encryption\SysCall.h">
-      <Filter>Encryption</Filter>
-    </ClInclude>
     <ClInclude Include="SDK.hpp">
       <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw.h">
+      <Filter>Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Fonts.h">
+      <Filter>Menu\Icons &amp; Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="Icons.h">
+      <Filter>Menu\Icons &amp; Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="Encryption\Thunk.hpp">
+      <Filter>Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Memory</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -168,9 +174,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Hook.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Draw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ImGUI\imgui.cpp">
@@ -203,9 +206,6 @@
     <ClCompile Include="Aimbot.cpp">
       <Filter>Features</Filter>
     </ClCompile>
-    <ClCompile Include="Engine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Mathematics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -221,9 +221,6 @@
     <ClCompile Include="FileUtility\FileUtility.cpp">
       <Filter>Profiler\RapidXML\Utilities</Filter>
     </ClCompile>
-    <ClCompile Include="Memory.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\Basic.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
@@ -236,6 +233,15 @@
     <ClCompile Include="SDK\Solarland_functions.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw.cpp">
+      <Filter>Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Library Include="Detours\detours.lib">
@@ -244,9 +250,6 @@
   </ItemGroup>
   <ItemGroup>
     <MASM Include="Encryption\SpoofCall.asm">
-      <Filter>Encryption</Filter>
-    </MASM>
-    <MASM Include="Encryption\NtUserSendInput.asm">
       <Filter>Encryption</Filter>
     </MASM>
   </ItemGroup>
