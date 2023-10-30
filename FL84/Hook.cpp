@@ -28,7 +28,7 @@ HRESULT WINAPI hkPresent(_In_ IDXGISwapChain* SwapChain, _In_ UINT SyncInterval,
 {
 	_mainGUI.Present(SwapChain, SyncInterval, Flags);
 
-	return spoof_call(oPresent, SwapChain, SyncInterval, Flags);
+	return oPresent(SwapChain, SyncInterval, Flags);
 }
 
 HRESULT WINAPI hkResizeBuffers(_In_ IDXGISwapChain* SwapChain, _In_ UINT BufferCount, _In_ UINT Width, _In_ UINT Height, _In_ DXGI_FORMAT NewFormat, _In_ UINT SwapChainFlags)
@@ -38,7 +38,7 @@ HRESULT WINAPI hkResizeBuffers(_In_ IDXGISwapChain* SwapChain, _In_ UINT BufferC
 
 __int64 HOOKCALL hkGetShotDir(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2, bool NeedSpread)
 {
-	__int64 Result = spoof_call(GetShotDir, Weapon, a2, NeedSpread);
+	__int64 Result = GetShotDir(Weapon, a2, NeedSpread);
 
 	if (_profiler.gAimEnabled.Custom.bValue && _profiler.gAimMode.Custom.iValue == 1 && a2 && !Aimbot::TargetPosition.IsValid()
 		|| _profiler.gAimEnabled.Custom.bValue && _profiler.gAimMode.Custom.iValue == 2 && a2 && !Aimbot::TargetPosition.IsValid())
@@ -54,7 +54,7 @@ __int64 HOOKCALL hkGetShotDir(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2, bool
 
 __int64 HOOKCALL hkGetShotStartLocation(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2)
 {
-	__int64 Result = spoof_call(GetShotStartLocation, Weapon, a2);
+	__int64 Result = GetShotStartLocation(Weapon, a2);
 
 	if (_profiler.gShotgunSilent.Custom.bValue && a2 && !Aimbot::TargetPosition.IsValid())
 	{
@@ -66,7 +66,7 @@ __int64 HOOKCALL hkGetShotStartLocation(SDK::ASolarPlayerWeapon* Weapon, uint64_
 
 __int64 HOOKCALL hkBulletPenetration(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2, uint64_t a3, uint64_t a4, uint8_t a5)
 {
-	__int64 Result = spoof_call(BulletPenetration, Weapon, a2, a3, a4, a5);
+	__int64 Result = BulletPenetration(Weapon, a2, a3, a4, a5);
 
 	if (_profiler.gBulletPenetration.Custom.bValue && a3 && a4 && !Aimbot::TargetPosition.IsValid())
 	{
@@ -78,7 +78,7 @@ __int64 HOOKCALL hkBulletPenetration(SDK::ASolarPlayerWeapon* Weapon, uint64_t a
 
 __int64 HOOKCALL hkShotgunImpact(SDK::ASolarPlayerWeapon* Weapon)
 {
-	__int64 Result = spoof_call(ShotgunImpact, Weapon);
+	__int64 Result = ShotgunImpact(Weapon);
 
 	if (_profiler.gShotgunDamage.Custom.bValue)
 	{
@@ -101,7 +101,7 @@ void HOOKCALL hkProcessEvent(void* Object, SDK::UFunction* Function, void* Param
 		return;
 	}
 
-	return spoof_call(ProcessEvent, Object, Function, Params);
+	return ProcessEvent(Object, Function, Params);
 }
 
 std::unordered_map<SDK::UClass*, ClassInfo> m_oRpcClassInfoMap;
@@ -135,7 +135,7 @@ __int64 HOOKCALL hkProcessRemoteFunction(SDK::UNetDriver* Driver, SDK::AActor* A
 		}
 	}
 
-	return spoof_call(ProcessRemoteFunction, Driver, Actor, Function, Parameters, OutParms, Stack, SubObject);
+	return ProcessRemoteFunction(Driver, Actor, Function, Parameters, OutParms, Stack, SubObject);
 }
 
 void Initialize()
@@ -177,11 +177,11 @@ void Initialize()
 	GetShotDir = reinterpret_cast<tGetShotDir>(Signature(xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")).GetPointer());
 	Hook(GetShotDir, hkGetShotDir); // Silent Aim
 
-	BulletPenetration = reinterpret_cast<tBulletPenetration>(Signature(xorstr_("48 89 5C 24 ? 55 56 57 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 01 48 8B FA")).GetPointer());
-	Hook(BulletPenetration, hkBulletPenetration); // Bullet Penetration
-
 	GetShotStartLocation = reinterpret_cast<tGetShotStartLocation>(Signature(xorstr_("40 53 56 57 48 83 EC ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 44 24 ? 48 8B FA")).GetPointer());
 	Hook(GetShotStartLocation, hkGetShotStartLocation); // Shotgun Silent 
+
+	BulletPenetration = reinterpret_cast<tBulletPenetration>(Signature(xorstr_("48 89 5C 24 ? 55 56 57 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 01 48 8B FA")).GetPointer());
+	Hook(BulletPenetration, hkBulletPenetration); // Bullet Penetration
 
 	ShotgunImpact = reinterpret_cast<tShotgunImpact>(Signature(xorstr_("44 0F B6 81 ? ? ? ? BA ? ? ? ? 48 8B 89 ? ? ? ? F3 0F 10 1D ? ? ? ? E9 ? ? ? ? CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC 40 53")).GetPointer());
 	Hook(ShotgunImpact, hkShotgunImpact); // Shotgun Impact

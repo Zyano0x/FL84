@@ -165,7 +165,6 @@
     <ClInclude Include="Draw.h" />
     <ClInclude Include="Elements.h" />
     <ClInclude Include="Encryption\LazyImporter.hpp" />
-    <ClInclude Include="Encryption\SpoofCall.h" />
     <ClInclude Include="Encryption\XOR.hpp" />
     <ClInclude Include="Engine.h" />
     <ClInclude Include="FileUtility\FileUtility.h" />
@@ -230,9 +229,6 @@
   </ItemGroup>
   <ItemGroup>
     <Library Include="Detours\detours.lib" />
-  </ItemGroup>
-  <ItemGroup>
-    <MASM Include="Encryption\SpoofCall.asm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

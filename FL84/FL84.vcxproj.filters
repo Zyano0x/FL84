@@ -108,9 +108,6 @@
     <ClInclude Include="Encryption\LazyImporter.hpp">
       <Filter>Encryption</Filter>
     </ClInclude>
-    <ClInclude Include="Encryption\SpoofCall.h">
-      <Filter>Encryption</Filter>
-    </ClInclude>
     <ClInclude Include="Encryption\XOR.hpp">
       <Filter>Encryption</Filter>
     </ClInclude>
@@ -247,10 +244,5 @@
     <Library Include="Detours\detours.lib">
       <Filter>Detours</Filter>
     </Library>
-  </ItemGroup>
-  <ItemGroup>
-    <MASM Include="Encryption\SpoofCall.asm">
-      <Filter>Encryption</Filter>
-    </MASM>
   </ItemGroup>
 </Project>

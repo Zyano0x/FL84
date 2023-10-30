@@ -807,7 +807,7 @@ namespace ZyanoCheats
 		if (bInitialized && Menu.bShowWindow && ImGui_ImplWin32_WndProcHandler(hWnd, uMsg, wParam, lParam))
 			return TRUE;
 
-		return spoof_call(CallWindowProc, oWindowProcess, hWnd, uMsg, wParam, lParam);
+		return CallWindowProc(oWindowProcess, hWnd, uMsg, wParam, lParam);
 	}
 
 	void WINAPI MainGUI::Present(_In_ IDXGISwapChain* SwapChain, _In_ UINT SyncInterval, _In_ UINT Flags)
@@ -871,7 +871,7 @@ namespace ZyanoCheats
 			pRenderTarget->Release();
 		}
 
-		HRESULT hr = spoof_call(oResizeBuffers, SwapChain, BufferCount, Width, Height, NewFormat, SwapChainFlags);
+		HRESULT hr = oResizeBuffers(SwapChain, BufferCount, Width, Height, NewFormat, SwapChainFlags);
 
 		ID3D11Texture2D* Buffer;
 		SwapChain->GetBuffer(0, __uuidof(ID3D11Texture2D), (void**)&Buffer);

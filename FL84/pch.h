@@ -39,7 +39,6 @@
 
 #include "Encryption/XOR.hpp"
 #include "Encryption/LazyImporter.hpp"
-#include "Encryption/SpoofCall.h"
 #include "Encryption/Thunk.hpp"
 
 #include "SDK.hpp"
