@@ -841,7 +841,7 @@ namespace ZyanoCheats
 			Aimbot::ResetLock();
 
 		ZXC.Unknown();
-		ZXC.NoRecoil();
+		ZXC.Removals();
 		ZXC.Aimbot();
 		ZXC.Radar();
 		ZXC.Vehicle();

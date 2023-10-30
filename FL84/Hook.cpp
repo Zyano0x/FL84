@@ -82,7 +82,7 @@ __int64 HOOKCALL hkShotgunImpact(SDK::ASolarPlayerWeapon* Weapon)
 
 	if (_profiler.gShotgunDamage.Custom.bValue)
 	{
-		Result *= Result; // You can basically lower your dmg or maximize your dmg
+		Result *= 2; // You can basically lower your dmg or maximize your dmg
 	}
 
 	return Result;

@@ -54,12 +54,11 @@ public:
 
 	bool SanityCheck();
 	void Unknown();
-	void NoRecoil();
+	void Removals();
 	void Vehicle();
 	void Aimbot();
 	void Misc();
 	void Radar();
-	void BypassEAC();
 
 public:
 	SDK::UWorld* World;

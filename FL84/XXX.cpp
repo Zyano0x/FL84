@@ -499,7 +499,7 @@ void XXX::Unknown()
 	}
 }
 
-void XXX::NoRecoil()
+void XXX::Removals()
 {
 	if (!SanityCheck())
 		return;
