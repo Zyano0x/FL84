@@ -8,7 +8,6 @@ static uintptr_t __cdecl I_beginthreadex(
 	unsigned                 _InitFlag,
 	unsigned*				 _ThrdAddr)
 {
-
 	return LI_FN(_beginthreadex).get()(_Security, _StackSize, _StartAddress, _ArgList, _InitFlag, _ThrdAddr);
 }
 

@@ -949,28 +949,3 @@ void XXX::Radar()
 		}
 	}
 }
-
-void XXX::BypassEAC()
-{
-	SDK::USolarEasyAntiCheatManager* EAC_ = SDK::USolarEasyAntiCheatManager::GetDefaultObj();
-	if (!EAC_)
-		return;
-
-	EAC_->EnableAntiCheat = false;
-	EAC_->bEnableAntiCheatLauncherCheck = false;
-
-	SDK::UWorld* World = *SDK::UWorld::GWorld;
-	if (!World)
-		return;
-
-	SDK::USolarGameInstanceBase* GameInstance = static_cast<SDK::USolarGameInstanceBase*>(World->OwningGameInstance);
-	if (!GameInstance)
-		return;
-
-	SDK::USolarEasyAntiCheatManager* EAC__ = GameInstance->GetSolarEasyAntiCheatManager();
-	if (!EAC__)
-		return;
-
-	EAC__->EnableAntiCheat = false;
-	EAC__->bEnableAntiCheatLauncherCheck = false;
-}

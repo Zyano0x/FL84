@@ -8,6 +8,7 @@ namespace Aimbot
 	SDK::FVector CurrentPosition = SDK::FVector();
 	SDK::FVector TargetPosition = SDK::FVector();
 	SDK::FRotator TargetRotation = SDK::FRotator();
+	SDK::FVector ShotgunSilent = SDK::FVector();
 
 	SDK::FRotator CalcAngle(SDK::FVector src, SDK::FVector dst, SDK::FRotator oldRotation, float smoothing)
 	{

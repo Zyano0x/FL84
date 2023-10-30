@@ -17,8 +17,11 @@ extern tResizeBuffers oResizeBuffers;
 typedef __int64(HOOKCALL* tGetShotDir)(SDK::ASolarPlayerWeapon* Weapon, uint64_t Result, bool NeedSpread);
 extern tGetShotDir GetShotDir;
 
-typedef __int64(HOOKCALL* tGetShootingTraceStartLocation)(SDK::ASolarPlayerWeapon* Weapon, uint64_t Result);
-extern tGetShootingTraceStartLocation GetShootingTraceStartLocation;
+typedef __int64(HOOKCALL* tGetShotStartLocation)(SDK::ASolarPlayerWeapon* Weapon, uint64_t Result);
+extern tGetShotStartLocation GetShotStartLocation;
+
+typedef __int64(HOOKCALL* tBulletPenetration)(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2, uint64_t a3, uint64_t a4, uint8_t a5);
+extern tBulletPenetration BulletPenetration;
 
 typedef __int64(HOOKCALL* tShotgunImpact)(SDK::ASolarPlayerWeapon* Weapon);
 extern tShotgunImpact ShotgunImpact;
@@ -27,7 +30,7 @@ typedef __int64(HOOKCALL* tProcessRemoteFunction)(SDK::UNetDriver* Driver, SDK::
 extern tProcessRemoteFunction ProcessRemoteFunction;
 
 typedef void(HOOKCALL* tProcessEvent)(void* Object, SDK::UFunction* Function, void* Params);
-extern tProcessEvent oProcessEvent;
+extern tProcessEvent ProcessEvent;
 
 void Initialize();
 void Deallocate();

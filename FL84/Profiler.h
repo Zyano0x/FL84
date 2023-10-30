@@ -181,6 +181,7 @@ namespace ZyanoCheats
 		sCvar gLikeValue = { " Like", nullptr, 100, 1, 10000000 };
 		sCvar gDislikeValue = { " Dislike", nullptr, -100, -1, -10000000 };
 		sCvar gShotgunDamage = { " Shotgun High Damage", nullptr, false, FALSE, TRUE };
+		sCvar gShotgunSilent = { " Shotgun Silent", nullptr, false, FALSE, TRUE };
 		sCvar gVehicleSpeed = { " Vehicle Speed", nullptr, false, FALSE, TRUE };
 		sCvar gVehicleSpeedMulti = { " Speed", nullptr, 1.0f, 1.0f, 5.0f };
 
