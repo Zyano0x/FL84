@@ -18,6 +18,7 @@
 #include <cmath>
 #include <vector>
 #include <string>
+#include <xstring>
 #include <cstdio>
 #include <random>
 #include <dxgi.h>	
@@ -43,6 +44,7 @@
 
 #include "SDK.hpp"
 #include "Fonts.h"
+#include "FarsiType.h"
 #include "Icons.h"
 #include "Profiler.h"
 #include "Elements.h"

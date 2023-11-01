@@ -20,7 +20,7 @@ extern tGetShotDir GetShotDir;
 typedef __int64(HOOKCALL* tGetShotStartLocation)(SDK::ASolarPlayerWeapon* Weapon, uint64_t Result);
 extern tGetShotStartLocation GetShotStartLocation;
 
-typedef __int64(HOOKCALL* tBulletPenetration)(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2, uint64_t a3, uint64_t a4, uint8_t a5);
+typedef __int64(HOOKCALL* tBulletPenetration)(SDK::ASolarPlayerWeapon* Weapon, uint64_t Result);
 extern tBulletPenetration BulletPenetration;
 
 typedef __int64(HOOKCALL* tShotgunImpact)(SDK::ASolarPlayerWeapon* Weapon);

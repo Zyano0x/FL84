@@ -162,6 +162,9 @@
     <ClInclude Include="SDK.hpp">
       <Filter>SDK</Filter>
     </ClInclude>
+    <ClInclude Include="FarsiType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -238,6 +241,9 @@
     </ClCompile>
     <ClCompile Include="SDK\Solarland_functions.cpp">
       <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="FarsiType.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

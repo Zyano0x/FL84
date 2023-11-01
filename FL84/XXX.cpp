@@ -124,7 +124,7 @@ void XXX::Unknown()
 						SDK::FString PlayerName = Enemy->PlayerState->PlayerNamePrivate;
 
 						if (PlayerName.IsValid())
-							Name = std::string(PlayerName.ToString());
+							Name = PlayerName.ToString();
 					}
 
 					Draw::DrawString(Name, (Left + Right) / 2, Top - 17, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));

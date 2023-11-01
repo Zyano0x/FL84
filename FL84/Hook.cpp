@@ -58,17 +58,20 @@ __int64 HOOKCALL hkGetShotStartLocation(SDK::ASolarPlayerWeapon* Weapon, uint64_
 
 	if (_profiler.gShotgunSilent.Custom.bValue && a2 && !Aimbot::TargetPosition.IsValid())
 	{
-		*(SDK::FVector*)(Result) = Aimbot::TargetPosition;
+		// Maybe from muzzle/GetShootingTraceStartLocation instead of camera location more accurate
+		SDK::FVector Out = Math::GetDirectionUnitVector(ZXC.CameraManager->GetCameraLocation() /*Weapon->GetShootingTraceStartLocation()*/, Aimbot::TargetPosition);
+
+		*(SDK::FVector*)(Result) = Out;
 	}
 
 	return Result;
 }
 
-__int64 HOOKCALL hkBulletPenetration(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2, uint64_t a3, uint64_t a4, uint8_t a5)
+__int64 HOOKCALL hkBulletPenetration(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2)
 {
-	__int64 Result = BulletPenetration(Weapon, a2, a3, a4, a5);
+	__int64 Result = BulletPenetration(Weapon, a2);
 
-	if (_profiler.gBulletPenetration.Custom.bValue && a3 && a4 && !Aimbot::TargetPosition.IsValid())
+	if (_profiler.gBulletPenetration.Custom.bValue && !Aimbot::TargetPosition.IsValid())
 	{
 		*(SDK::FVector*)(Result) = Aimbot::TargetPosition;
 	}
@@ -159,6 +162,8 @@ void Initialize()
 
 	SDK::InitSDK();
 
+	HMODULE hModule = LI_FN(GetModuleHandleW).safe()(NULL);
+
 	uint64_t hkPresent_Sig = Signature(xorstr_("48 89 6C 24 ? 48 89 74 24 ? 41 56 48 83 EC ? 41 8B E8")).Import(xorstr_("GameOverlayRenderer64.dll")).GetPointer();
 	uint64_t hkResizeBuffers_Sig = Signature(xorstr_("48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 41 56 41 57 48 83 EC ? 44 8B FA")).Import(xorstr_("GameOverlayRenderer64.dll")).GetPointer();
 	uint64_t CreateHook_Sig = Signature(xorstr_("48 89 5C 24 ? 57 48 83 EC ? 33 C0 48 89 44 24")).Import(xorstr_("GameOverlayRenderer64.dll")).GetPointer();
@@ -177,13 +182,14 @@ void Initialize()
 	GetShotDir = reinterpret_cast<tGetShotDir>(Signature(xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")).GetPointer());
 	Hook(GetShotDir, hkGetShotDir); // Silent Aim
 
-	GetShotStartLocation = reinterpret_cast<tGetShotStartLocation>(Signature(xorstr_("40 53 56 57 48 83 EC ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 44 24 ? 48 8B FA")).GetPointer());
+	GetShotStartLocation = reinterpret_cast<tGetShotStartLocation>(Signature(xorstr_("40 53 56 57 48 83 EC ?? 48 8B 05 ?? ?? ?? ?? 48 33 C4 48 89 44 24 ?? 48 8B FA")).GetPointer());
 	Hook(GetShotStartLocation, hkGetShotStartLocation); // Shotgun Silent 
 
-	BulletPenetration = reinterpret_cast<tBulletPenetration>(Signature(xorstr_("48 89 5C 24 ? 55 56 57 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 01 48 8B FA")).GetPointer());
+	BulletPenetration = reinterpret_cast<tBulletPenetration>(Signature(xorstr_("48 89 5C 24 ? 57 48 83 EC ? 48 83 B9 ? ? ? ? ? 48 8B DA 48 8B F9 74 ? E8 ? ? ? ? 84 C0 75 ? 48 8B 8F ? ? ? ? 48 8B D3 48 8B 01 FF 90 ? ? ? ? 48 8B C3 48 8B 5C 24 ? 48 83 C4 ? 5F C3 48 8B D3 48 8B CF E8 ? ? ? ? 48 8B C3 48 8B 5C 24 ? 48 83 C4 ? 5F C3 CC CC CC 40 55")).GetPointer());
 	Hook(BulletPenetration, hkBulletPenetration); // Bullet Penetration
 
-	ShotgunImpact = reinterpret_cast<tShotgunImpact>(Signature(xorstr_("44 0F B6 81 ? ? ? ? BA ? ? ? ? 48 8B 89 ? ? ? ? F3 0F 10 1D ? ? ? ? E9 ? ? ? ? CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC 40 53")).GetPointer());
+	//ShotgunImpact = reinterpret_cast<tShotgunImpact>(Signature(xorstr_("44 0F B6 81 ? ? ? ? BA ? ? ? ? 48 8B 89 ? ? ? ? F3 0F 10 1D ? ? ? ? E9 ? ? ? ? CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC 40 53")).GetPointer());
+	ShotgunImpact = reinterpret_cast<tShotgunImpact>((DWORD64)hModule + 0x26407A0);
 	Hook(ShotgunImpact, hkShotgunImpact); // Shotgun Impact
 
 	ProcessEvent = reinterpret_cast<tProcessEvent>(Signature(xorstr_("40 55 56 57 41 54 41 55 41 56 41 57 48 81 EC ? ? ? ? 48 8D 6C 24 ? 48 89 9D ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C5 48 89 85 ? ? ? ? 4C 8B E1")).GetPointer());
