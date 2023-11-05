@@ -9,7 +9,6 @@ namespace Aimbot
 	CG::FVector CurrentPosition = CG::FVector();
 	CG::FVector TargetPosition = CG::FVector();
 	CG::FRotator TargetRotation = CG::FRotator();
-	CG::FVector ShotgunSilent = CG::FVector();
 	CG::ASolarCharacter* Target = nullptr;
 
 	CG::FRotator CalcAngle(CG::FVector src, CG::FVector dst, CG::FRotator oldRotation, float smoothing)

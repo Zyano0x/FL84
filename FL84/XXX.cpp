@@ -123,27 +123,27 @@ void XXX::Unknown()
 
 					if (PlayerType == CG::ESCMPlayerType::BotAI)
 					{
-						Draw::DrawString(xorstr_("BOT"), (Left + Right) / 2, Top - 17, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+						Draw::DrawString(ImGui::GetIO().FontDefault, xorstr_("BOT"), (Left + Right) / 2, Top - 17, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 					}
 					else
 					{
 						CG::FString PlayerName = Enemy->PlayerState->PlayerNamePrivate;
 
 						if (PlayerName.IsValid())
-							Name = Engine::ReverseWord(Engine::WString_UTF8(PlayerName.ToStringW()));
+							Name = Engine::WString_UTF8(PlayerName.ToStringW());
 					}
 
-					Draw::DrawString(Name, (Left + Right) / 2, Top - 17, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+					Draw::DrawString(ImGui::GetIO().FontDefault, Name, (Left + Right) / 2, Top - 17, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 				}
 
 				if (_profiler.gPlayerDistance.Custom.bValue && !_profiler.gPlayerWeapon.Custom.bValue)
 				{
 					int Distance = LocalCharacter->GetDistanceTo(Enemy) / 100;
 
-					Draw::DrawString(std::string("[" + std::to_string(Distance) + " M]"), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+					Draw::DrawString(ImGui::GetIO().FontDefault, std::string("[" + std::to_string(Distance) + " M]"), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 
 					if (Enemy->IsInVehicle())
-						Draw::DrawString(xorstr_("[In Vehicle]"), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+						Draw::DrawString(ImGui::GetIO().FontDefault, xorstr_("[In Vehicle]"), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 				}
 				else if (!_profiler.gPlayerDistance.Custom.bValue && _profiler.gPlayerWeapon.Custom.bValue)
 				{
@@ -156,10 +156,10 @@ void XXX::Unknown()
 						AmmoClip = std::to_string(Enemy->CachedCurrentWeapon->ClipRemainAmmoCount);
 					}
 
-					Draw::DrawString(Weapon.append(" | ").append(AmmoClip), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+					Draw::DrawString(ImGui::GetIO().FontDefault, Weapon.append(" | ").append(AmmoClip), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 
 					if (Enemy->IsInVehicle())
-						Draw::DrawString(xorstr_("[In Vehicle]"), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+						Draw::DrawString(ImGui::GetIO().FontDefault, xorstr_("[In Vehicle]"), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 				}
 				else if (_profiler.gPlayerDistance.Custom.bValue && _profiler.gPlayerWeapon.Custom.bValue)
 				{
@@ -174,11 +174,11 @@ void XXX::Unknown()
 						AmmoClip = std::to_string(Enemy->CachedCurrentWeapon->ClipRemainAmmoCount);
 					}
 
-					Draw::DrawString(Weapon.append(" | ").append(AmmoClip), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
-					Draw::DrawString(std::string("[" + std::to_string(Distance) + " M]"), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+					Draw::DrawString(ImGui::GetIO().FontDefault, Weapon.append(" | ").append(AmmoClip), (Left + Right) / 2, Bottom + 5, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+					Draw::DrawString(ImGui::GetIO().FontDefault, std::string("[" + std::to_string(Distance) + " M]"), (Left + Right) / 2, Bottom + 20, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 
 					if (Enemy->IsInVehicle())
-						Draw::DrawString(xorstr_("[In Vehicle]"), (Left + Right) / 2, Bottom + 35, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+						Draw::DrawString(ImGui::GetIO().FontDefault, xorstr_("[In Vehicle]"), (Left + Right) / 2, Bottom + 35, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 				}
 
 				if (_profiler.gPlayerHealth.Custom.bValue)
@@ -358,7 +358,7 @@ void XXX::Unknown()
 
 			int32_t ItemQuality = Item->GetQuality();
 
-			std::string PickupName = Engine::ReverseWord(Engine::WString_UTF8(Item->ItemData.Name.ToStringW()));
+			std::string PickupName = Engine::WString_UTF8(Item->ItemData.Name.ToStringW());
 
 			ImVec4 ItemColor = ImVec4();
 
@@ -394,55 +394,55 @@ void XXX::Unknown()
 				std::string WeaponType = Engine::GetWeaponType(ItemID);
 
 				if (_profiler.gWeaponItems.Custom.bValue && ItemDistance < _profiler.gItemDistance.Custom.flValue)
-					Draw::DrawString(WeaponType.append(" ").append(PickupName).append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, _profiler.gColorWeaponItems.Custom.cValue);
+					Draw::DrawString(ImGui::GetIO().FontDefault, WeaponType.append(" ").append(PickupName).append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, _profiler.gColorWeaponItems.Custom.cValue);
 			}
 
 			if (ItemType == CG::EItemType::BULLET)
 			{
 				if (_profiler.gAmmoItems.Custom.bValue && ItemDistance < _profiler.gItemDistance.Custom.flValue)
-					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, _profiler.gColorAmmoItems.Custom.cValue);
+					Draw::DrawString(ImGui::GetIO().FontDefault, PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, _profiler.gColorAmmoItems.Custom.cValue);
 			}
 
 			if (ItemType == CG::EItemType::WEAPON_PARTS)
 			{
 				if (_profiler.gAttachmentsItems.Custom.bValue && ItemDistance < _profiler.gItemDistance.Custom.flValue && ItemQuality >= _profiler.gItemLevel.Custom.iValue + 1)
-					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
+					Draw::DrawString(ImGui::GetIO().FontDefault, PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
 			}
 
 			if (ItemType == CG::EItemType::SHIELD)
 			{
 				if (_profiler.gShieldItems.Custom.bValue && ItemDistance < _profiler.gItemDistance.Custom.flValue && ItemQuality >= _profiler.gItemLevel.Custom.iValue + 1)
-					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
+					Draw::DrawString(ImGui::GetIO().FontDefault, PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
 			}
 
 			if (ItemType == CG::EItemType::SHIELD_UPGRADE_MATERIAL || ItemType == CG::EItemType::EXP_ITEM)
 			{
 				if (_profiler.gShieldUpgrItems.Custom.bValue && ItemDistance < _profiler.gItemDistance.Custom.flValue)
-					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
+					Draw::DrawString(ImGui::GetIO().FontDefault, PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
 			}
 
 			if (ItemType == CG::EItemType::JETPACK_MODULE_HORIZONTAL)
 			{
 				if (_profiler.gHJetPackItems.Custom.bValue && ItemDistance < _profiler.gItemDistance.Custom.flValue && ItemQuality >= _profiler.gItemLevel.Custom.iValue + 1)
-					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
+					Draw::DrawString(ImGui::GetIO().FontDefault, PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
 			}
 
 			if (ItemType == CG::EItemType::JETPACK_MODULE_VERTICAL)
 			{
 				if (_profiler.gVJetPackItems.Custom.bValue && ItemDistance < _profiler.gItemDistance.Custom.flValue && ItemQuality >= _profiler.gItemLevel.Custom.iValue + 1)
-					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
+					Draw::DrawString(ImGui::GetIO().FontDefault, PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ItemColor);
 			}
 
 			if (ItemType == CG::EItemType::CARIRIDGE_BAG)
 			{
 				if (_profiler.gHealthItems.Custom.bValue && ItemDistance < _profiler.gItemDistance.Custom.flValue)
-					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, _profiler.gColorHealthItems.Custom.cValue);
+					Draw::DrawString(ImGui::GetIO().FontDefault, PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, _profiler.gColorHealthItems.Custom.cValue);
 			}
 
 			if (ItemType == CG::EItemType::DEATHBOX)
 			{
 				if (_profiler.gDeathBox.Custom.bValue && ItemDistance < _profiler.gItemDistance.Custom.flValue)
-					Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+					Draw::DrawString(ImGui::GetIO().FontDefault, PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 			}
 
 			if (ItemType == CG::EItemType::TREASUREBOX)
@@ -452,11 +452,11 @@ void XXX::Unknown()
 				{
 					if (TreausureBox->BOpened())
 					{
-						Draw::DrawString(PickupName.append(" [Opened] ").append("[").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, _profiler.gColorTreasureBox.Custom.cValue);
+						Draw::DrawString(ImGui::GetIO().FontDefault, PickupName.append(" [Opened] ").append("[").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, _profiler.gColorTreasureBox.Custom.cValue);
 					}
 					else
 					{
-						Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, _profiler.gColorTreasureBox.Custom.cValue);
+						Draw::DrawString(ImGui::GetIO().FontDefault, PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, _profiler.gColorTreasureBox.Custom.cValue);
 					}
 				}
 			}
@@ -468,11 +468,11 @@ void XXX::Unknown()
 				{
 					if (AirDropBox->BOpened())
 					{
-						Draw::DrawString(PickupName.append(" [Opened] ").append("[").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, _profiler.gColorAirDrop.Custom.cValue);
+						Draw::DrawString(ImGui::GetIO().FontDefault, PickupName.append(" [Opened] ").append("[").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, _profiler.gColorAirDrop.Custom.cValue);
 					}
 					else
 					{
-						Draw::DrawString(PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, _profiler.gColorAirDrop.Custom.cValue);
+						Draw::DrawString(ImGui::GetIO().FontDefault, PickupName.append(" [").append(std::to_string(ItemDistance)).append(" M]"), ItemPos.X, ItemPos.Y, 15.f, true, _profiler.gColorAirDrop.Custom.cValue);
 					}
 				}
 			}
@@ -499,7 +499,7 @@ void XXX::Unknown()
 				HPColor = ImVec4(.90f, .90f, .90f, 1.f);
 
 			Draw::HorizontalHealthBar(VehiclePos.X - 55, VehiclePos.Y, 100, 10, (int)Vehicle->GetCurrentHealth(), (int)Vehicle->GetMaxHealth(), HPColor);
-			Draw::DrawString(VehicleName.append(" [").append(std::to_string(VehicleDistance)).append(" M]"), VehiclePos.X, VehiclePos.Y + 10, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
+			Draw::DrawString(ImGui::GetIO().FontDefault, VehicleName.append(" [").append(std::to_string(VehicleDistance)).append(" M]"), VehiclePos.X, VehiclePos.Y + 10, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
 		}
 	}
 }

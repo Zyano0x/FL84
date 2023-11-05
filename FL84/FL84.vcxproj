@@ -167,7 +167,6 @@
     <ClInclude Include="Encryption\LazyImporter.hpp" />
     <ClInclude Include="Encryption\XOR.hpp" />
     <ClInclude Include="Engine.h" />
-    <ClInclude Include="FarsiType.h" />
     <ClInclude Include="FileUtility\FileUtility.h" />
     <ClInclude Include="FileUtility\StringUtility.h" />
     <ClInclude Include="Fonts.h" />
@@ -202,7 +201,6 @@
     <ClCompile Include="Draw.cpp" />
     <ClCompile Include="Elements.cpp" />
     <ClCompile Include="Engine.cpp" />
-    <ClCompile Include="FarsiType.cpp" />
     <ClCompile Include="FileUtility\FileUtility.cpp" />
     <ClCompile Include="ImGUI\imgui.cpp" />
     <ClCompile Include="ImGUI\imgui_demo.cpp" />

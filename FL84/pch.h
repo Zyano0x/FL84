@@ -47,7 +47,6 @@
 
 #include "SDK.h"
 #include "Fonts.h"
-#include "FarsiType.h"
 #include "Icons.h"
 #include "Profiler.h"
 #include "Elements.h"

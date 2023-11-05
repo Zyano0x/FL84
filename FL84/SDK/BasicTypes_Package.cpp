@@ -133,8 +133,7 @@ namespace CG
 	{
 		if (IsValid())
 		{
-			std::wstring str(_data);
-			return str;
+			return _data;
 		}
 
 		return L"?";

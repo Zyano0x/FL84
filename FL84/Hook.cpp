@@ -3,8 +3,6 @@
 tPresent oPresent;
 tResizeBuffers oResizeBuffers;
 tGetShotDir GetShotDir;
-tGetShotStartLocation GetShotStartLocation;
-tBulletPenetration BulletPenetration;
 tProcessEvent ProcessEvent;
 tProcessRemoteFunction ProcessRemoteFunction;
 

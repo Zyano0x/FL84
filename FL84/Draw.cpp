@@ -72,26 +72,26 @@ namespace Draw
 		ImGui::GetBackgroundDrawList()->AddRectFilled(ImVec2(w - 1.0f, h - vlength), ImVec2(w, h), ImGui::GetColorU32(color));
 	}
 
-	void DrawString(std::string text, float x, float y, float size, bool shadow, ImVec4 color)
+	void DrawString(ImFont* font, std::string text, float x, float y, float size, bool shadow, ImVec4 color)
 	{
 		float textWidth = ImGui::CalcTextSize(text.c_str()).x;
 
 		if (shadow)
 		{
-			ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2 - 1.0f, y - 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
-			ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2, y - 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
+			ImGui::GetBackgroundDrawList()->AddText(font, size, ImVec2(x - textWidth / 2 - 1.0f, y - 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
+			ImGui::GetBackgroundDrawList()->AddText(font, size, ImVec2(x - textWidth / 2, y - 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
 
-			ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2 + 1.0f, y - 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
-			ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2 + 1.0f, y), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
+			ImGui::GetBackgroundDrawList()->AddText(font, size, ImVec2(x - textWidth / 2 + 1.0f, y - 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
+			ImGui::GetBackgroundDrawList()->AddText(font, size, ImVec2(x - textWidth / 2 + 1.0f, y), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
 
-			ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2 + 1.0f, y + 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
-			ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2, y + 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
+			ImGui::GetBackgroundDrawList()->AddText(font, size, ImVec2(x - textWidth / 2 + 1.0f, y + 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
+			ImGui::GetBackgroundDrawList()->AddText(font, size, ImVec2(x - textWidth / 2, y + 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
 
-			ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2 - 1.0f, y + 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
-			ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2 - 1.0f, y), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
+			ImGui::GetBackgroundDrawList()->AddText(font, size, ImVec2(x - textWidth / 2 - 1.0f, y + 1.0f), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
+			ImGui::GetBackgroundDrawList()->AddText(font, size, ImVec2(x - textWidth / 2 - 1.0f, y), ImGui::GetColorU32(ImGui::GetColorU32(ImVec4(0.000000f, 0.000000f, 0.000000f, 1.000000f))), text.c_str());
 		}
 
-		ImGui::GetBackgroundDrawList()->AddText(ImGui::GetIO().FontDefault, size, ImVec2(x - textWidth / 2, y), ImGui::GetColorU32(color), text.c_str());
+		ImGui::GetBackgroundDrawList()->AddText(font, size, ImVec2(x - textWidth / 2, y), ImGui::GetColorU32(color), text.c_str());
 	}
 
 	void VerticalHealthBar(int x, int y, int w, int h, float Health, float MaxHealth, ImVec4 color)

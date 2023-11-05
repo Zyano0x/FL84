@@ -159,9 +159,6 @@
     <ClInclude Include="Memory.h">
       <Filter>Memory</Filter>
     </ClInclude>
-    <ClInclude Include="FarsiType.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SDK.h">
       <Filter>SDK</Filter>
     </ClInclude>
@@ -229,9 +226,6 @@
     </ClCompile>
     <ClCompile Include="Memory.cpp">
       <Filter>Memory</Filter>
-    </ClCompile>
-    <ClCompile Include="FarsiType.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SDK\BasicTypes_Package.cpp">
       <Filter>SDK</Filter>
