@@ -3,18 +3,20 @@
 namespace Aimbot
 {
 	float ClosestDistance = InitCenterDistance;
-	SDK::FVector2D LockPosition = SDK::FVector2D();
-	SDK::FVector AimPosition = SDK::FVector();
-	SDK::FVector CurrentPosition = SDK::FVector();
-	SDK::FVector TargetPosition = SDK::FVector();
-	SDK::FRotator TargetRotation = SDK::FRotator();
-	SDK::FVector ShotgunSilent = SDK::FVector();
+	CG::FVector2D LockPosition = CG::FVector2D();
+	CG::FVector BestBone = CG::FVector();
+	CG::FVector AimPosition = CG::FVector();
+	CG::FVector CurrentPosition = CG::FVector();
+	CG::FVector TargetPosition = CG::FVector();
+	CG::FRotator TargetRotation = CG::FRotator();
+	CG::FVector ShotgunSilent = CG::FVector();
+	CG::ASolarCharacter* Target = nullptr;
 
-	SDK::FRotator CalcAngle(SDK::FVector src, SDK::FVector dst, SDK::FRotator oldRotation, float smoothing)
+	CG::FRotator CalcAngle(CG::FVector src, CG::FVector dst, CG::FRotator oldRotation, float smoothing)
 	{
-		SDK::FVector Dir = ZXC.MathLibrary->Subtract_VectorVector(dst, src);
-		SDK::FRotator Yaptr = ZXC.MathLibrary->Conv_VectorToRotator(Dir);
-		SDK::FRotator CpYaT = oldRotation;
+		CG::FVector Dir = ZXC.MathLibrary->STATIC_Subtract_VectorVector(dst, src);
+		CG::FRotator Yaptr = ZXC.MathLibrary->STATIC_Conv_VectorToRotator(Dir);
+		CG::FRotator CpYaT = oldRotation;
 		Yaptr.Pitch -= CpYaT.Pitch;
 		Yaptr.Yaw -= CpYaT.Yaw;
 		Yaptr.Roll = 0.f;
@@ -26,7 +28,7 @@ namespace Aimbot
 		return CpYaT;
 	}
 
-	SDK::FVector2D Randomize(SDK::FVector2D vAngles, float HumanSpeed, float HumanScale)
+	CG::FVector2D Randomize(CG::FVector2D vAngles, float HumanSpeed, float HumanScale)
 	{
 		float lastX = 0.f;
 
@@ -72,9 +74,9 @@ namespace Aimbot
 		return vAngles;
 	}
 
-	SDK::FVector Prediction(float bulletVelocity, float bulletGravity, float targetDistance, SDK::FVector targetPosition, SDK::FVector targetVelocity)
+	CG::FVector Prediction(float bulletVelocity, float bulletGravity, float targetDistance, CG::FVector targetPosition, CG::FVector targetVelocity)
 	{
-		SDK::FVector recalculated = targetPosition;
+		CG::FVector recalculated = targetPosition;
 		float gravity = fabs(bulletGravity);
 		float time = targetDistance / fabs(bulletVelocity);
 		float bulletDrop = gravity * time * time;
@@ -88,7 +90,7 @@ namespace Aimbot
 	void ResetLock()
 	{
 		ClosestDistance = InitCenterDistance;
-		TargetPosition = SDK::FVector();
+		TargetPosition = CG::FVector();
 	}
 
 	void LockOnTarget()
@@ -144,12 +146,12 @@ namespace Aimbot
 					}
 				}
 
-				SDK::FVector2D GetTarget = SDK::FVector2D(TargetX, TargetY);
-				SDK::FVector2D OutTarget = Randomize(GetTarget, _profiler.gHumanSpeed.Custom.flValue, _profiler.gHumanScale.Custom.flValue);
+				CG::FVector2D GetTarget = CG::FVector2D(TargetX, TargetY);
+				CG::FVector2D OutTarget = Randomize(GetTarget, _profiler.gHumanSpeed.Custom.flValue, _profiler.gHumanScale.Custom.flValue);
 
 				if (TargetX != 0 && TargetY != 0)
 					mouse_event(MOUSEEVENTF_MOVE, static_cast<DWORD>(OutTarget.X), static_cast<DWORD>(OutTarget.Y), NULL, NULL);
-					//SysCall::Send_Mouse_Input(MOUSEEVENTF_MOVE, static_cast<DWORD>(OutTarget.X), static_cast<DWORD>(OutTarget.Y), NULL, NULL);
+				//SysCall::Send_Mouse_Input(MOUSEEVENTF_MOVE, static_cast<DWORD>(OutTarget.X), static_cast<DWORD>(OutTarget.Y), NULL, NULL);
 			}
 		}
 		else
@@ -158,7 +160,7 @@ namespace Aimbot
 		}
 	}
 
-	void SetRotation(SDK::APlayerCameraManager* PlayerCameraManager, SDK::APlayerController* PlayerController, SDK::FRotator TargetRotation, bool bWithRotationInput)
+	void SetRotation(CG::APlayerCameraManager* PlayerCameraManager, CG::APlayerController* PlayerController, CG::FRotator TargetRotation, bool bWithRotationInput)
 	{
 		uint64_t v10 = reinterpret_cast<uint64_t>(PlayerCameraManager) + 0x2A5C;
 		uint64_t v11 = reinterpret_cast<uint64_t>(PlayerController) + 0x6B0;
@@ -171,12 +173,175 @@ namespace Aimbot
 		{
 			if (ClosestDistance != InitCenterDistance)
 			{
-				*(SDK::FRotator*)(v11) = TargetRotation;
+				*(CG::FRotator*)(v11) = TargetRotation;
 			}
 		}
 		else
 		{
 			_profiler.gIsAiming.Custom.bValue = false;
+		}
+	}
+
+	bool VisibilityMethod(CG::ASolarCharacter* Enemy)
+	{
+		tDamageInfo DamageInfo;
+		std::vector<tDamageInfo> vDamageInfo;
+
+		if (_profiler.gAimBone.Custom.iValue == cProfiler::AIMBONE_HEAD)
+		{
+			std::vector<int> AIMBOT_Bones;
+			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("head")));
+			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("Neck_01")));
+
+			for (int x = 0; x < AIMBOT_Bones.size(); ++x)
+			{
+				BestBone = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(AIMBOT_Bones[x]));
+				if (BestBone.IsValid())
+				{
+					FVectorCopy(BestBone, DamageInfo.BestBone);
+					vDamageInfo.push_back(DamageInfo);
+				}
+			}
+
+			if (!vDamageInfo.empty())
+			{
+				std::random_device Random_Device;
+				std::mt19937 Gen(Random_Device());
+
+				std::shuffle(vDamageInfo.begin(), vDamageInfo.end(), Gen);
+
+				FVectorCopy(vDamageInfo.front().BestBone, AimPosition);
+
+				return true;
+			}
+		}
+		else if (_profiler.gAimBone.Custom.iValue == cProfiler::AIMBONE_SPINE)
+		{
+			std::vector<int> AIMBOT_Bones;
+			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("spine_03")));
+			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("spine_01")));
+			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("spine_02")));
+
+			for (int x = 0; x < AIMBOT_Bones.size(); ++x)
+			{
+				BestBone = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(AIMBOT_Bones[x]));
+				if (BestBone.IsValid())
+				{
+					FVectorCopy(BestBone, DamageInfo.BestBone);
+					vDamageInfo.push_back(DamageInfo);
+				}
+			}
+
+			if (!vDamageInfo.empty())
+			{
+				std::random_device Random_Device;
+				std::mt19937 Gen(Random_Device());
+
+				std::shuffle(vDamageInfo.begin(), vDamageInfo.end(), Gen);
+
+				FVectorCopy(vDamageInfo.front().BestBone, AimPosition);
+
+				return true;
+			}
+		}
+		else if (_profiler.gAimBone.Custom.iValue == cProfiler::AIMBONE_RANDOM)
+		{
+			std::vector<int> AIMBOT_Bones;
+			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("head")));
+			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("Neck_01")));
+			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("spine_03")));
+			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("spine_01")));
+			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("spine_02")));
+
+			for (int x = 0; x < AIMBOT_Bones.size(); ++x)
+			{
+				BestBone = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(AIMBOT_Bones[x]));
+
+				if (BestBone.IsValid())
+				{
+					FVectorCopy(BestBone, DamageInfo.BestBone);
+					vDamageInfo.push_back(DamageInfo);
+				}
+			}
+
+			if (!vDamageInfo.empty())
+			{
+				std::random_device Random_Device;
+				std::mt19937 Gen(Random_Device());
+
+				std::shuffle(vDamageInfo.begin(), vDamageInfo.end(), Gen);
+
+				FVectorCopy(vDamageInfo.front().BestBone, AimPosition);
+
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	void GetBoneMethod()
+	{
+		tTargetInfo TargetInfo;
+		std::vector<tTargetInfo> vTargetInfo;
+
+		CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(ZXC.PlayerController->Character);
+		if (!LocalCharacter)
+			return;
+
+		CG::TArray<CG::AActor*> Actors = CG::TArray<CG::AActor*>();
+		ZXC.GameplayStatics->STATIC_GetAllActorsOfClass(ZXC.World, CG::ASolarCharacter::StaticClass(), &Actors);
+		for (int i = 0; i < Actors.Count(); i++)
+		{
+			CG::ASolarCharacter* Enemy = static_cast<CG::ASolarCharacter*>(Actors[i]);
+
+			if (!Enemy)
+				continue;
+
+			if (!Enemy->RootComponent)
+				continue;
+
+			if (Enemy == LocalCharacter)
+				continue;
+
+			if (Enemy->InSameTeamWithFirstPlayerController())
+				continue;
+
+			if (!Enemy->K2_IsAlive())
+				continue;
+
+			if (_profiler.gVisibleCheck.Custom.bValue && !ZXC.PlayerController->LineOfSightTo(Enemy, { 0.f,0.f,0.f }, false))
+				continue;
+
+			if (_profiler.gIgnoreKnocked.Custom.bValue && Enemy->IsDying())
+				continue;
+
+			if (_profiler.gIgnoreStealth.Custom.bValue && Enemy->IsInInvisibleStatus())
+				continue;
+
+			if (VisibilityMethod(Enemy))
+			{
+				TargetInfo.Enemy = Enemy;
+				TargetInfo.Distance = LocalCharacter->GetDistanceTo(Enemy) / 100.f;
+				FVectorCopy(AimPosition, TargetInfo.AimPosition);
+				vTargetInfo.push_back(TargetInfo);
+			}
+		}
+
+		if (!vTargetInfo.empty())
+		{
+			std::sort(vTargetInfo.begin(), vTargetInfo.end(), [&](const tTargetInfo& a, const tTargetInfo& b)
+				{
+					if (ZXC.PlayerController->LineOfSightTo(a.Enemy, { 0.f,0.f,0.f }, false)
+						&& ZXC.PlayerController->LineOfSightTo(b.Enemy, { 0.f,0.f,0.f }, false))
+					{
+						return (Math::GetFOV(LocalCharacter->K2_GetActorRotation(), a.AimPosition, LocalCharacter->K2_GetActorLocation())
+							<= Math::GetFOV(LocalCharacter->K2_GetActorRotation(), b.AimPosition, LocalCharacter->K2_GetActorLocation()));
+					}
+				});
+
+			Target = vTargetInfo.front().Enemy;
+			FVectorCopy(vTargetInfo.front().AimPosition, AimPosition);
 		}
 	}
 }

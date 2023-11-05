@@ -10,5 +10,5 @@ namespace Engine
 	std::string ReverseWord(std::string word);
 	bool IsArabic(std::string str);
 	bool IsKeyDown(int VK_Key);
-	SDK::FVector GetBonePosition(SDK::USkeletalMeshComponent* mesh, int index);
+	CG::FVector GetBonePosition(CG::USkeletalMeshComponent* mesh, int index);
 }

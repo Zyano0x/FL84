@@ -121,8 +121,7 @@ namespace ZyanoCheats
 		io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
 		io.Fonts->AddFontFromMemoryTTF(RudaFont, sizeof(RudaFont), 17.0f);
 
-		static const ImWchar Ranges[] =
-		{
+		static const ImWchar Ranges[] = {
 			0x0020, 0x00FF, // Basic Latin + Latin Supplement
 			0x0400, 0x052F, // Cyrillic + Cyrillic Supplement
 			0x2DE0, 0x2DFF, // Cyrillic Extended-A
@@ -141,11 +140,12 @@ namespace ZyanoCheats
 
 		io.Fonts->AddFontFromMemoryTTF(FASolid, sizeof(FASolid), 15.0f, &Font_Config, Ranges);
 		Elements::RudaFont = io.Fonts->AddFontFromMemoryTTF(RudaFont, sizeof(RudaFont), 15.0f, &Font_Config, Ranges);
-		Elements::Weapon_Icon = io.Fonts->AddFontFromMemoryCompressedTTF(WeaponsCompressedData, sizeof(WeaponsCompressedData), 30);
+		Elements::NotoSans = io.Fonts->AddFontFromMemoryCompressedTTF(NotoSans_Compressed_Data, NotoSans_Compressed_Size, 17.0f, &Font_Config, io.Fonts->GetGlyphRangesCyrillic());
+		Elements::Weapon_Icon = io.Fonts->AddFontFromMemoryCompressedTTF(Weapons_Compressed_Data, sizeof(Weapons_Compressed_Data), 30);
 		Elements::Tab_Icon = io.Fonts->AddFontFromMemoryTTF(ClarityFont, sizeof(ClarityFont), 15.0f, &Font_Config, Ranges);
 
 		StyleMenu();
-	
+
 		ImGui_ImplWin32_Init(hWindow);
 		ImGui_ImplDX11_Init(pDevice, pDeviceContext);
 	}
@@ -729,7 +729,7 @@ namespace ZyanoCheats
 					ImGui::InputText("##", Menu.szProfile, sizeof(Menu.szProfile), ImGuiInputTextFlags_ReadOnly);
 					ImGui::PopItemWidth();
 				}
-				ImGui::EndChild();		
+				ImGui::EndChild();
 				break;
 			}
 		}
@@ -839,6 +839,8 @@ namespace ZyanoCheats
 
 		if (!_profiler.gIsAiming.Custom.bValue)
 			Aimbot::ResetLock();
+
+		ZXC.BypassEAC();
 
 		ZXC.Unknown();
 		ZXC.Removals();

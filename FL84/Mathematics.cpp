@@ -2,7 +2,7 @@
 
 namespace Math
 {
-	D3DXMATRIX Matrix(SDK::FRotator Rotation, SDK::FRotator Origin)
+	D3DXMATRIX Matrix(CG::FRotator Rotation, CG::FRotator Origin)
 	{
 		float radPitch = (Rotation.Pitch * float(M_PI) / 180.f);
 		float radYaw = (Rotation.Yaw * float(M_PI) / 180.f);
@@ -62,10 +62,10 @@ namespace Math
 		return pOut;
 	}
 
-	SDK::FVector2D WorldToRadar(SDK::FRotator Rotation, SDK::FVector Location, SDK::FVector EnemyLocation, SDK::FVector2D RadarPosition, SDK::FVector2D RadarSize)
+	CG::FVector2D WorldToRadar(CG::FRotator Rotation, CG::FVector Location, CG::FVector EnemyLocation, CG::FVector2D RadarPosition, CG::FVector2D RadarSize)
 	{
-		SDK::FVector2D DotPos;
-		SDK::FVector2D Direction;
+		CG::FVector2D DotPos;
+		CG::FVector2D Direction;
 
 		// Calculate Direction
 		Direction.X = EnemyLocation.Y - Location.Y;
@@ -88,12 +88,12 @@ namespace Math
 		return DotPos;
 	}
 
-	SDK::FVector GetDirectionUnitVector(SDK::FVector From, SDK::FVector To)
+	CG::FVector GetDirectionUnitVector(CG::FVector From, CG::FVector To)
 	{
 		return (To - From).GetSafeNormal();
 	}
 
-	void VectorAnglesRadar(SDK::FVector& Forward, SDK::FVector& Angles)
+	void VectorAnglesRadar(CG::FVector& Forward, CG::FVector& Angles)
 	{
 		if (Forward.X == 0.f && Forward.Y == 0.f)
 		{
@@ -102,13 +102,13 @@ namespace Math
 		}
 		else
 		{
-			Angles.X = RAD2DEG(atan2(-Forward.Z, Forward.Size()));
+			Angles.X = RAD2DEG(atan2(-Forward.Z, Forward.Magnitude()));
 			Angles.Y = RAD2DEG(atan2(Forward.Y, Forward.X));
 		}
 		Angles.Z = 0.f;
 	}
 
-	void RotateTriangle(std::array<SDK::FVector, 3>& Points, float Rotation)
+	void RotateTriangle(std::array<CG::FVector, 3>& Points, float Rotation)
 	{
 		const auto PointsCenter = (Points.at(0) + Points.at(1) + Points.at(2)) / 3;
 		for (auto& Point : Points)
@@ -127,5 +127,21 @@ namespace Math
 
 			Point += PointsCenter;
 		}
+	}
+
+	float GetFOV(CG::FRotator Angle, CG::FVector Src, CG::FVector Dst)
+	{
+		CG::FVector Aim = ZXC.MathLibrary->STATIC_MakeVector(Angle.Pitch, Angle.Yaw, Angle.Roll);
+
+		CG::FVector Delta = ZXC.MathLibrary->STATIC_Subtract_VectorVector(Src, Dst);
+		CG::FRotator Angles = Delta.ToRotator();
+
+		CG::FVector _Qang = ZXC.MathLibrary->STATIC_MakeVector(Angles.Pitch, Angles.Yaw, Angles.Roll);
+
+		float Mag_D = sqrtf((Aim.X * Aim.X) + (Aim.Y * Aim.Y) + (Aim.Z * Aim.Z));
+		float Mag_S = sqrtf((Aim.X * Aim.X) + (Aim.Y * Aim.Y) + (Aim.Z * Aim.Z));
+		float U_Dot_V = (Aim.X * _Qang.X) + (Aim.Y * _Qang.Y) + (Aim.Z * _Qang.Z);
+
+		return acosf(U_Dot_V / (Mag_S * Mag_D)) * 57.29577951308232087f;
 	}
 }

@@ -5,7 +5,6 @@ tResizeBuffers oResizeBuffers;
 tGetShotDir GetShotDir;
 tGetShotStartLocation GetShotStartLocation;
 tBulletPenetration BulletPenetration;
-tShotgunImpact ShotgunImpact;
 tProcessEvent ProcessEvent;
 tProcessRemoteFunction ProcessRemoteFunction;
 
@@ -21,7 +20,7 @@ struct FuncInfo
 struct ClassInfo
 {
 	std::string sClassName;
-	std::unordered_map<SDK::UFunction*, FuncInfo> oRpcFuncInfoMap;
+	std::unordered_map<CG::UFunction*, FuncInfo> oRpcFuncInfoMap;
 };
 
 HRESULT WINAPI hkPresent(_In_ IDXGISwapChain* SwapChain, _In_ UINT SyncInterval, _In_ UINT Flags)
@@ -36,67 +35,28 @@ HRESULT WINAPI hkResizeBuffers(_In_ IDXGISwapChain* SwapChain, _In_ UINT BufferC
 	return _mainGUI.ResizeBuffers(SwapChain, BufferCount, Width, Height, NewFormat, SwapChainFlags);
 }
 
-__int64 HOOKCALL hkGetShotDir(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2, bool NeedSpread)
+__int64 HOOKCALL hkGetShotDir(CG::ASolarPlayerWeapon* Weapon, uint64_t a2, bool NeedSpread)
 {
 	__int64 Result = GetShotDir(Weapon, a2, NeedSpread);
 
-	if (_profiler.gAimEnabled.Custom.bValue && _profiler.gAimMode.Custom.iValue == 1 && a2 && !Aimbot::TargetPosition.IsValid()
-		|| _profiler.gAimEnabled.Custom.bValue && _profiler.gAimMode.Custom.iValue == 2 && a2 && !Aimbot::TargetPosition.IsValid())
+	if (_profiler.gAimEnabled.Custom.bValue && _profiler.gAimMode.Custom.iValue == cProfiler::AIMMODE_SILENT && a2 && Aimbot::TargetPosition.IsValid()
+		|| _profiler.gAimEnabled.Custom.bValue && _profiler.gAimMode.Custom.iValue == cProfiler::AIMMODE_AUTOMATIC && a2 && Aimbot::TargetPosition.IsValid())
 	{
 		// Maybe from muzzle/GetShootingTraceStartLocation instead of camera location more accurate
-		SDK::FVector Out = Math::GetDirectionUnitVector(ZXC.CameraManager->GetCameraLocation() /*Weapon->GetShootingTraceStartLocation()*/, Aimbot::TargetPosition);
+		CG::FVector Out = Math::GetDirectionUnitVector(ZXC.CameraManager->GetCameraLocation(), Aimbot::TargetPosition);
 
-		*(SDK::FVector*)(Result) = Out;
+		*(CG::FVector*)(Result) = Out;
 	}
 
 	return Result;
 }
 
-__int64 HOOKCALL hkGetShotStartLocation(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2)
-{
-	__int64 Result = GetShotStartLocation(Weapon, a2);
-
-	if (_profiler.gShotgunSilent.Custom.bValue && a2 && !Aimbot::TargetPosition.IsValid())
-	{
-		// Maybe from muzzle/GetShootingTraceStartLocation instead of camera location more accurate
-		SDK::FVector Out = Math::GetDirectionUnitVector(ZXC.CameraManager->GetCameraLocation() /*Weapon->GetShootingTraceStartLocation()*/, Aimbot::TargetPosition);
-
-		*(SDK::FVector*)(Result) = Out;
-	}
-
-	return Result;
-}
-
-__int64 HOOKCALL hkBulletPenetration(SDK::ASolarPlayerWeapon* Weapon, uint64_t a2)
-{
-	__int64 Result = BulletPenetration(Weapon, a2);
-
-	if (_profiler.gBulletPenetration.Custom.bValue && !Aimbot::TargetPosition.IsValid())
-	{
-		*(SDK::FVector*)(Result) = Aimbot::TargetPosition;
-	}
-
-	return Result;
-}
-
-__int64 HOOKCALL hkShotgunImpact(SDK::ASolarPlayerWeapon* Weapon)
-{
-	__int64 Result = ShotgunImpact(Weapon);
-
-	if (_profiler.gShotgunDamage.Custom.bValue)
-	{
-		Result *= 2; // You can basically lower your dmg or maximize your dmg
-	}
-
-	return Result;
-}
-
-SDK::UFunction* FN_ServerShortTimeout = nullptr;
-SDK::UFunction* FN_AntiCheatDataSchedulerUpload = nullptr;
-SDK::UFunction* FN_AntiCheatLauncherCheck = nullptr;
-SDK::UFunction* FN_ServerReportRPC = nullptr;
-SDK::UFunction* FN_ServerReportWaitTime = nullptr;
-void HOOKCALL hkProcessEvent(void* Object, SDK::UFunction* Function, void* Params)
+CG::UFunction* FN_ServerShortTimeout = nullptr;
+CG::UFunction* FN_AntiCheatDataSchedulerUpload = nullptr;
+CG::UFunction* FN_AntiCheatLauncherCheck = nullptr;
+CG::UFunction* FN_ServerReportRPC = nullptr;
+CG::UFunction* FN_ServerReportWaitTime = nullptr;
+void HOOKCALL hkProcessEvent(void* Object, CG::UFunction* Function, void* Params)
 {
 	if (Function == FN_ServerShortTimeout || Function == FN_AntiCheatDataSchedulerUpload || Function == FN_AntiCheatLauncherCheck
 		|| Function == FN_ServerReportRPC || Function == FN_ServerReportWaitTime)
@@ -107,8 +67,8 @@ void HOOKCALL hkProcessEvent(void* Object, SDK::UFunction* Function, void* Param
 	return ProcessEvent(Object, Function, Params);
 }
 
-std::unordered_map<SDK::UClass*, ClassInfo> m_oRpcClassInfoMap;
-void LogRPC(SDK::AActor* pActor, SDK::UFunction* pFunc)
+std::unordered_map<CG::UClass*, ClassInfo> m_oRpcClassInfoMap;
+void LogRPC(CG::AActor* pActor, CG::UFunction* pFunc)
 {
 	auto& oClassInfo = m_oRpcClassInfoMap[pActor->Class];
 	if (oClassInfo.sClassName.empty())
@@ -124,7 +84,7 @@ void LogRPC(SDK::AActor* pActor, SDK::UFunction* pFunc)
 
 	oFuncInfo.nCallCount++;
 }
-__int64 HOOKCALL hkProcessRemoteFunction(SDK::UNetDriver* Driver, SDK::AActor* Actor, SDK::UFunction* Function, void* Parameters, SDK::FOutParmRec* OutParms, __int64 Stack, SDK::UObject* SubObject)
+__int64 HOOKCALL hkProcessRemoteFunction(CG::UNetDriver* Driver, CG::AActor* Actor, CG::UFunction* Function, void* Parameters, CG::FOutParmRec* OutParms, __int64 Stack, CG::UObject* SubObject)
 {
 	LogRPC(Actor, Function);
 
@@ -160,37 +120,37 @@ void Initialize()
 
 	printf(xorstr_("Injecting\n"));
 
-	SDK::InitSDK();
+	CG::InitSDK();
 
-	HMODULE hModule = LI_FN(GetModuleHandleW).safe()(NULL);
-
-	uint64_t hkPresent_Sig = Signature(xorstr_("48 89 6C 24 ? 48 89 74 24 ? 41 56 48 83 EC ? 41 8B E8")).Import(xorstr_("GameOverlayRenderer64.dll")).GetPointer();
+	/*uint64_t hkPresent_Sig = Signature(xorstr_("48 89 6C 24 ? 48 89 74 24 ? 41 56 48 83 EC ? 41 8B E8")).Import(xorstr_("GameOverlayRenderer64.dll")).GetPointer();
 	uint64_t hkResizeBuffers_Sig = Signature(xorstr_("48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 41 56 41 57 48 83 EC ? 44 8B FA")).Import(xorstr_("GameOverlayRenderer64.dll")).GetPointer();
 	uint64_t CreateHook_Sig = Signature(xorstr_("48 89 5C 24 ? 57 48 83 EC ? 33 C0 48 89 44 24")).Import(xorstr_("GameOverlayRenderer64.dll")).GetPointer();
 
 	__int64(HOOKCALL * CreateHook)(unsigned __int64 pFuncAddress, __int64 pDetourFuncAddress, unsigned __int64* pOriginalFuncAddressOut, int a4);
 	CreateHook = (decltype(CreateHook))CreateHook_Sig;
 	CreateHook(hkPresent_Sig, (__int64)&hkPresent, (unsigned __int64*)&oPresent, 1);
-	CreateHook(hkResizeBuffers_Sig, (__int64)&hkResizeBuffers, (unsigned __int64*)&oResizeBuffers, 1);
+	CreateHook(hkResizeBuffers_Sig, (__int64)&hkResizeBuffers, (unsigned __int64*)&oResizeBuffers, 1);*/
 
-	FN_ServerShortTimeout = SDK::UObject::FindObject<SDK::UFunction>("Function Engine.PlayerController.ServerShortTimeout");
-	FN_AntiCheatDataSchedulerUpload = SDK::UObject::FindObject<SDK::UFunction>("Function Solarland.SolarPlayerController.AntiCheatDataSchedulerUpload");
-	FN_AntiCheatLauncherCheck = SDK::UObject::FindObject<SDK::UFunction>("Function Solarland.SolarEasyAntiCheatManager.AntiCheatLauncherCheck");
-	FN_ServerReportRPC = SDK::UObject::FindObject<SDK::UFunction>("Function Solarland.SolarMeerkatScheduleComponent.ServerReportRPC");
-	FN_ServerReportWaitTime = SDK::UObject::FindObject<SDK::UFunction>("Function Solarland.SolarPlayerState.ServerReportWaitTime");
+	uint64_t PresentAddr = (uint64_t)(GetModuleHandleA(xorstr_("GameOverlayRenderer64.dll"))) + 0x147640;
+	uint64_t ResizeBuffersAddr = (uint64_t)(GetModuleHandleA(xorstr_("GameOverlayRenderer64.dll"))) + 0x147648;
+
+	tPresent* Steam_Present = (tPresent*)PresentAddr;
+	oPresent = *Steam_Present;
+
+	tResizeBuffers* Steam_ResizeBuffers = (tResizeBuffers*)PresentAddr;
+	oResizeBuffers = *Steam_ResizeBuffers;
+
+	_InterlockedExchangePointer((volatile PVOID*)PresentAddr, hkPresent);
+	_InterlockedExchangePointer((volatile PVOID*)ResizeBuffersAddr, hkResizeBuffers);
+
+	FN_ServerShortTimeout = CG::UObject::FindObject<CG::UFunction>("Function Engine.PlayerController.ServerShortTimeout");
+	FN_AntiCheatDataSchedulerUpload = CG::UObject::FindObject<CG::UFunction>("Function Solarland.SolarPlayerController.AntiCheatDataSchedulerUpload");
+	FN_AntiCheatLauncherCheck = CG::UObject::FindObject<CG::UFunction>("Function Solarland.SolarEasyAntiCheatManager.AntiCheatLauncherCheck");
+	FN_ServerReportRPC = CG::UObject::FindObject<CG::UFunction>("Function Solarland.SolarMeerkatScheduleComponent.ServerReportRPC");
+	FN_ServerReportWaitTime = CG::UObject::FindObject<CG::UFunction>("Function Solarland.SolarPlayerState.ServerReportWaitTime");
 
 	GetShotDir = reinterpret_cast<tGetShotDir>(Signature(xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")).GetPointer());
 	Hook(GetShotDir, hkGetShotDir); // Silent Aim
-
-	GetShotStartLocation = reinterpret_cast<tGetShotStartLocation>(Signature(xorstr_("40 53 56 57 48 83 EC ?? 48 8B 05 ?? ?? ?? ?? 48 33 C4 48 89 44 24 ?? 48 8B FA")).GetPointer());
-	Hook(GetShotStartLocation, hkGetShotStartLocation); // Shotgun Silent 
-
-	BulletPenetration = reinterpret_cast<tBulletPenetration>(Signature(xorstr_("48 89 5C 24 ? 57 48 83 EC ? 48 83 B9 ? ? ? ? ? 48 8B DA 48 8B F9 74 ? E8 ? ? ? ? 84 C0 75 ? 48 8B 8F ? ? ? ? 48 8B D3 48 8B 01 FF 90 ? ? ? ? 48 8B C3 48 8B 5C 24 ? 48 83 C4 ? 5F C3 48 8B D3 48 8B CF E8 ? ? ? ? 48 8B C3 48 8B 5C 24 ? 48 83 C4 ? 5F C3 CC CC CC 40 55")).GetPointer());
-	Hook(BulletPenetration, hkBulletPenetration); // Bullet Penetration
-
-	//ShotgunImpact = reinterpret_cast<tShotgunImpact>(Signature(xorstr_("44 0F B6 81 ? ? ? ? BA ? ? ? ? 48 8B 89 ? ? ? ? F3 0F 10 1D ? ? ? ? E9 ? ? ? ? CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC 40 53")).GetPointer());
-	ShotgunImpact = reinterpret_cast<tShotgunImpact>((DWORD64)hModule + 0x26407A0);
-	Hook(ShotgunImpact, hkShotgunImpact); // Shotgun Impact
 
 	ProcessEvent = reinterpret_cast<tProcessEvent>(Signature(xorstr_("40 55 56 57 41 54 41 55 41 56 41 57 48 81 EC ? ? ? ? 48 8D 6C 24 ? 48 89 9D ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C5 48 89 85 ? ? ? ? 4C 8B E1")).GetPointer());
 	Hook(ProcessEvent, hkProcessEvent);
@@ -209,9 +169,6 @@ void Initialize()
 void Deallocate()
 {
 	UnHook(GetShotDir, hkGetShotDir);
-	UnHook(BulletPenetration, hkBulletPenetration);
-	UnHook(GetShotStartLocation, hkGetShotStartLocation);
-	UnHook(ShotgunImpact, hkShotgunImpact);
 	UnHook(ProcessEvent, hkProcessEvent);
 #ifdef _DEBUG
 	UnHook(ProcessRemoteFunction, hkProcessRemoteFunction);

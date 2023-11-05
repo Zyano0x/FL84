@@ -3,6 +3,7 @@
 namespace Elements
 {
     extern ImFont* RudaFont;
+    extern ImFont* NotoSans;
     extern ImFont* Weapon_Icon;
     extern ImFont* Tab_Icon;
 

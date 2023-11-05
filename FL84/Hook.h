@@ -14,22 +14,13 @@ extern tPresent oPresent;
 typedef HRESULT(WINAPI* tResizeBuffers)(_In_ IDXGISwapChain* SwapChain, _In_ UINT BufferCount, _In_ UINT Width, _In_ UINT Height, _In_ DXGI_FORMAT NewFormat, _In_ UINT SwapChainFlags);
 extern tResizeBuffers oResizeBuffers;
 
-typedef __int64(HOOKCALL* tGetShotDir)(SDK::ASolarPlayerWeapon* Weapon, uint64_t Result, bool NeedSpread);
+typedef __int64(HOOKCALL* tGetShotDir)(CG::ASolarPlayerWeapon* Weapon, uint64_t Result, bool NeedSpread);
 extern tGetShotDir GetShotDir;
 
-typedef __int64(HOOKCALL* tGetShotStartLocation)(SDK::ASolarPlayerWeapon* Weapon, uint64_t Result);
-extern tGetShotStartLocation GetShotStartLocation;
-
-typedef __int64(HOOKCALL* tBulletPenetration)(SDK::ASolarPlayerWeapon* Weapon, uint64_t Result);
-extern tBulletPenetration BulletPenetration;
-
-typedef __int64(HOOKCALL* tShotgunImpact)(SDK::ASolarPlayerWeapon* Weapon);
-extern tShotgunImpact ShotgunImpact;
-
-typedef __int64(HOOKCALL* tProcessRemoteFunction)(SDK::UNetDriver* Driver, SDK::AActor* Actor, SDK::UFunction* Function, void* Parameters, SDK::FOutParmRec* OutParms, __int64 Stack, SDK::UObject* SubObject);
+typedef __int64(HOOKCALL* tProcessRemoteFunction)(CG::UNetDriver* Driver, CG::AActor* Actor, CG::UFunction* Function, void* Parameters, CG::FOutParmRec* OutParms, __int64 Stack, CG::UObject* SubObject);
 extern tProcessRemoteFunction ProcessRemoteFunction;
 
-typedef void(HOOKCALL* tProcessEvent)(void* Object, SDK::UFunction* Function, void* Params);
+typedef void(HOOKCALL* tProcessEvent)(void* Object, CG::UFunction* Function, void* Params);
 extern tProcessEvent ProcessEvent;
 
 void Initialize();

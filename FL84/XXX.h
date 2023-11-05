@@ -41,13 +41,13 @@ public:
 	{
 		IsTeam = false;
 
-		HeadPos = SDK::FVector2D(0.0f, 0.0f);
-		FootPos = SDK::FVector2D(0.0f, 0.0f);
-		ItemPos = SDK::FVector2D(0.0f, 0.0f);
-		VehiclePos = SDK::FVector2D(0.0f, 0.0f);
+		HeadPos = CG::FVector2D(0.0f, 0.0f);
+		FootPos = CG::FVector2D(0.0f, 0.0f);
+		ItemPos = CG::FVector2D(0.0f, 0.0f);
+		VehiclePos = CG::FVector2D(0.0f, 0.0f);
 
-		Head = SDK::FVector(0.0f, 0.0f, 0.0f);
-		Root = SDK::FVector(0.0f, 0.0f, 0.0f);
+		Head = CG::FVector(0.0f, 0.0f, 0.0f);
+		Root = CG::FVector(0.0f, 0.0f, 0.0f);
 
 		ColorVisisble = ImVec4(0.0f, 0.0f, 0.0f, 0.0f);
 	}
@@ -59,20 +59,22 @@ public:
 	void Aimbot();
 	void Misc();
 	void Radar();
+	void BypassEAC();
 
 public:
-	SDK::UWorld* World;
-	SDK::ULocalPlayer* LocalPlayer;
-	SDK::APlayerController* PlayerController;
-	SDK::APlayerCameraManager* CameraManager;
-	SDK::UKismetMathLibrary* MathLibrary;
+	CG::UWorld* World;
+	CG::ULocalPlayer* LocalPlayer;
+	CG::APlayerController* PlayerController;
+	CG::APlayerCameraManager* CameraManager;
+	CG::UKismetMathLibrary* MathLibrary;
+	CG::UGameplayStatics* GameplayStatics;
 
 private:
 	bool IsTeam;
 	ImVec2 RadarPos, RadarSize;
 	ImVec4 ColorVisisble;
-	SDK::FVector2D HeadPos, FootPos, ItemPos, VehiclePos;
-	SDK::FVector Head, Root;
+	CG::FVector2D HeadPos, FootPos, ItemPos, VehiclePos;
+	CG::FVector Head, Root;
 };
 
 extern XXX ZXC;

@@ -76,8 +76,8 @@ namespace ZyanoCheats
 		typedef enum
 		{
 			AIMBONE_HEAD,
-			AIMBONE_NECK,
 			AIMBONE_SPINE,
+			AIMBONE_RANDOM,
 			AIMBONE_MAX,
 		} eAimbone;
 
@@ -111,14 +111,14 @@ namespace ZyanoCheats
 		} eItemsLevel;
 
 		std::vector<LPCSTR> szAimMode = { " Aimbot FOV", " Silent Aim", " Automatic" };
-		std::vector<LPCSTR> szAimType = { " Memory", " Mouse Event"};
-		std::vector<LPCSTR> szAimBone = { " Head", " Neck", " Spine" };
+		std::vector<LPCSTR> szAimType = { " Memory", " Mouse Event" };
+		std::vector<LPCSTR> szAimBone = { " Head", " Spine", " Random" };
 		std::vector<LPCSTR> szPlayerSnaplines = { " Off", " Top", " Bottom", " Center" };
 		std::vector<LPCSTR> szPlayerBoxes = { " Off", " Border", " Corner", " Border Filled", " Corner Filled" };
 		std::vector<LPCSTR> szItemLevel = { " Level 1", " Level 2", " Level 3", " Level 4", " Level 5" };
 
 		sCvar gAimMode = { " Aim Mode", szAimMode.data(), AIMMODE_FOV, AIMMODE_FOV, AIMMODE_MAX };
-		sCvar gAimType = { " Aim Type", szAimType.data(), AIMTYPE_MEMORY, AIMTYPE_MOUSE_EVENT, AIMTYPE_MAX };
+		sCvar gAimType = { " Aim Type", szAimType.data(), AIMTYPE_MEMORY, AIMTYPE_MEMORY, AIMTYPE_MAX };
 		sCvar gAimBone = { " Aim Bone", szAimBone.data(), AIMBONE_HEAD, AIMBONE_HEAD, AIMBONE_MAX };
 
 		sCvar gPlayerSnaplines = { " Player Snaplines", szPlayerSnaplines.data(), PLAYER_SNAPLINES_OFF, PLAYER_SNAPLINES_OFF, PLAYER_SNAPLINES_MAX };
@@ -128,7 +128,7 @@ namespace ZyanoCheats
 
 		sCvar gAimEnabled = { " Enabled", nullptr, false, FALSE, TRUE };
 		sCvar gAimPrediction = { " Aim Prediction", nullptr, false, FALSE, TRUE };
-		sCvar gAimFOV = { " Aimbot FOV", nullptr, 100.f, 1.0f, 150.f };
+		sCvar gAimFOV = { " Aimbot FOV", nullptr, 150.f, 1.0f, 250.f };
 		sCvar gAimSmooth = { " Aimbot Smooth", nullptr, 5.0f, 1.0f, 10.0f };
 		sCvar gAimKey = { " Aimbot Key", nullptr, 1, 1, 166 };
 		sCvar gIgnoreKnocked = { " Ignore Knocked", nullptr, false, FALSE, TRUE };

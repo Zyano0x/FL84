@@ -16,12 +16,15 @@
 #include <array>
 #include <mutex>
 #include <cmath>
+#include <random>
 #include <vector>
 #include <string>
-#include <xstring>
+#include <locale>
 #include <cstdio>
 #include <random>
 #include <dxgi.h>	
+#include <codecvt>
+#include <xstring>
 #include <sstream>
 #include <iomanip>
 #include <d3d11.h>
@@ -42,7 +45,7 @@
 #include "Encryption/LazyImporter.hpp"
 #include "Encryption/Thunk.hpp"
 
-#include "SDK.hpp"
+#include "SDK.h"
 #include "Fonts.h"
 #include "FarsiType.h"
 #include "Icons.h"

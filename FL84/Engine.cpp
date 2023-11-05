@@ -98,6 +98,9 @@ namespace Engine
 
 	std::string WString_UTF8(const std::wstring& wide_string)
 	{
+		/*std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> converter;
+		return converter.to_bytes(wide_string);*/
+
 		if (wide_string.empty()) return "";
 		const auto size_needed = WideCharToMultiByte(CP_UTF8, 0, &wide_string.at(0), (int)wide_string.size(), nullptr, 0, nullptr, nullptr);
 		if (size_needed <= 0)
@@ -112,10 +115,10 @@ namespace Engine
 		std::string temp_word = "";
 		if (IsArabic(Word))
 		{
-			std::string English = _English(Word);
-			std::string Arabic = __English(Word);
-			std::string Arab = FarsiType::ConvertToFAGlyphs(Arabic);
-			temp_word = English.append(Arab);
+			std::string FEnglish = _English(Word);
+			std::string FArabic = __English(Word);
+			std::string Arabic = FarsiType::ConvertToFAGlyphs(FArabic);
+			temp_word = FEnglish.append(Arabic);
 		}
 		else
 			temp_word = Word;
@@ -186,14 +189,14 @@ namespace Engine
 		return ((GetAsyncKeyState(VK_Key) & 0x8000) ? 1 : 0);
 	}
 
-	typedef SDK::FMatrix* (__thiscall* tGetBoneMatrix)(SDK::USkeletalMeshComponent* mesh, SDK::FMatrix* result, int index);
-	SDK::FVector GetBonePosition(SDK::USkeletalMeshComponent* mesh, int index)
+	typedef CG::FMatrix* (__thiscall* tGetBoneMatrix)(CG::USkeletalMeshComponent* mesh, CG::FMatrix* result, int index);
+	CG::FVector GetBonePosition(CG::USkeletalMeshComponent* mesh, int index)
 	{
 		if (!mesh)
 			return { 0.f, 0.f, 0.f };
 
-		SDK::FMatrix matrix{};
-		tGetBoneMatrix GetBoneMatrix = reinterpret_cast<tGetBoneMatrix>((uintptr_t)GetModuleHandleW(0) + Offsets::GetBoneMatrix);
+		CG::FMatrix matrix{};
+		tGetBoneMatrix GetBoneMatrix = reinterpret_cast<tGetBoneMatrix>((uintptr_t)GetModuleHandleW(0) + GET_BONE_MATRIX_OFFSET);
 		GetBoneMatrix(mesh, &matrix, index);
 
 		return matrix.WPlane;

@@ -8,6 +8,7 @@ struct Tab_Element
 namespace Elements
 {
     ImFont* RudaFont = NULL;
+    ImFont* NotoSans = NULL;
     ImFont* Weapon_Icon = NULL;
     ImFont* Tab_Icon = NULL;
 

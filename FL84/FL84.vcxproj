@@ -161,7 +161,7 @@
   <ItemGroup>
     <ClInclude Include="Aimbot.h" />
     <ClInclude Include="Detours\detours.h" />
-    <ClInclude Include="dirent.h" />
+    <ClInclude Include="ImGUI\dirent.h" />
     <ClInclude Include="Draw.h" />
     <ClInclude Include="Elements.h" />
     <ClInclude Include="Encryption\LazyImporter.hpp" />
@@ -191,7 +191,7 @@
     <ClInclude Include="RapidXML\rapidxml_utils.hpp" />
     <ClInclude Include="RapidXML\rapidxml_wrap.hpp" />
     <ClInclude Include="Encryption\Thunk.hpp" />
-    <ClInclude Include="SDK.hpp" />
+    <ClInclude Include="SDK.h" />
     <ClInclude Include="XXX.h" />
     <ClInclude Include="Hook.h" />
     <ClInclude Include="pch.h" />
@@ -216,10 +216,10 @@
     <ClCompile Include="Memory.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Profiler.cpp" />
-    <ClCompile Include="SDK\Basic.cpp" />
-    <ClCompile Include="SDK\CoreUObject_functions.cpp" />
-    <ClCompile Include="SDK\Engine_functions.cpp" />
-    <ClCompile Include="SDK\Solarland_functions.cpp" />
+    <ClCompile Include="SDK\BasicTypes_Package.cpp" />
+    <ClCompile Include="SDK\CoreUObject_Package.cpp" />
+    <ClCompile Include="SDK\Engine_Package.cpp" />
+    <ClCompile Include="SDK\Solarland_Package.cpp" />
     <ClCompile Include="XXX.cpp" />
     <ClCompile Include="Hook.cpp" />
     <ClCompile Include="pch.cpp">

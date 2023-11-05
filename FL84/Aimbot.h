@@ -1,18 +1,34 @@
 #pragma once
 
+typedef struct
+{
+	CG::FVector BestBone;
+}tDamageInfo;
+
+typedef struct
+{
+	CG::ASolarCharacter* Enemy;
+	CG::FVector AimPosition;
+	float Distance;
+}tTargetInfo;
+
 namespace Aimbot
 {
 	constexpr float InitCenterDistance = 10000.0f;
 	extern float ClosestDistance;
-	extern SDK::FVector2D LockPosition;
-	extern SDK::FVector AimPosition;
-	extern SDK::FVector CurrentPosition;
-	extern SDK::FVector TargetPosition;
-	extern SDK::FRotator TargetRotation;
+	extern CG::FVector2D LockPosition;
+	extern CG::FVector BestBone;
+	extern CG::FVector AimPosition;
+	extern CG::FVector CurrentPosition;
+	extern CG::FVector TargetPosition;
+	extern CG::FRotator TargetRotation;
+	extern CG::ASolarCharacter* Target;
 
-	SDK::FRotator CalcAngle(SDK::FVector src, SDK::FVector dst, SDK::FRotator oldRotation, float smoothing);
-	SDK::FVector Prediction(float bulletVelocity, float bulletGravity, float targetDistance, SDK::FVector targetPosition, SDK::FVector targetVelocity);
+	CG::FRotator CalcAngle(CG::FVector src, CG::FVector dst, CG::FRotator oldRotation, float smoothing);
+	CG::FVector Prediction(float bulletVelocity, float bulletGravity, float targetDistance, CG::FVector targetPosition, CG::FVector targetVelocity);
+	bool VisibilityMethod(CG::ASolarCharacter* Enemy);
+	void GetBoneMethod();
 	void ResetLock();
 	void LockOnTarget();
-	void SetRotation(SDK::APlayerCameraManager* PlayerCameraManager, SDK::APlayerController* PlayerController, SDK::FRotator TargetRotation, bool bWithRotationInput);
+	void SetRotation(CG::APlayerCameraManager* PlayerCameraManager, CG::APlayerController* PlayerController, CG::FRotator TargetRotation, bool bWithRotationInput);
 }

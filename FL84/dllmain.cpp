@@ -4,17 +4,16 @@ static uintptr_t __cdecl I_beginthreadex(
 	void* _Security,
 	unsigned                 _StackSize,
 	_beginthreadex_proc_type _StartAddress,
-	void*					 _ArgList,
+	void* _ArgList,
 	unsigned                 _InitFlag,
-	unsigned*				 _ThrdAddr)
+	unsigned* _ThrdAddr)
 {
 	return LI_FN(_beginthreadex).get()(_Security, _StackSize, _StartAddress, _ArgList, _InitFlag, _ThrdAddr);
 }
 
 BOOL APIENTRY DllMain(_In_ HINSTANCE hInstance,
 					  _In_ DWORD  ul_reason_for_call,
-					  _In_ LPVOID lpReserved
-)
+					  _In_ LPVOID lpReserved)
 {
 	DisableThreadLibraryCalls(hInstance);
 
