@@ -331,12 +331,8 @@ namespace Aimbot
 		{
 			std::sort(vTargetInfo.begin(), vTargetInfo.end(), [&](const tTargetInfo& a, const tTargetInfo& b)
 				{
-					if (ZXC.PlayerController->LineOfSightTo(a.Enemy, { 0.f,0.f,0.f }, false)
-						&& ZXC.PlayerController->LineOfSightTo(b.Enemy, { 0.f,0.f,0.f }, false))
-					{
-						return (Math::GetFOV(LocalCharacter->K2_GetActorRotation(), a.AimPosition, LocalCharacter->K2_GetActorLocation())
-							<= Math::GetFOV(LocalCharacter->K2_GetActorRotation(), b.AimPosition, LocalCharacter->K2_GetActorLocation()));
-					}
+					return (Math::GetFOV(LocalCharacter->K2_GetActorRotation(), a.AimPosition, LocalCharacter->K2_GetActorLocation())
+						< Math::GetFOV(LocalCharacter->K2_GetActorRotation(), b.AimPosition, LocalCharacter->K2_GetActorLocation()));
 				});
 
 			Target = vTargetInfo.front().Enemy;

@@ -640,7 +640,7 @@ void XXX::Vehicle()
 		if (Aimbot::TargetPosition.IsValid())
 			return;
 
-		*(CG::FVector*)(VehicleWeapon + 0xBAC) = Aimbot::TargetPosition;
+		*(CG::FVector*)(VehicleWeapon + 0xBAC) = Aimbot::TargetPosition; // GetShotTargetLocation
 	}
 
 	if (_profiler.gVehicleNoRecoil.Custom.bValue)
