@@ -650,11 +650,6 @@ namespace ZyanoCheats
 						Menu.bWriteLog = true;
 					} ImGui::SameLine(ImGui::GetCursorPosX() + 460.0f);
 
-					if (ImGui::Checkbox(_profiler.gShotgunSilent.szLabel, &_profiler.gShotgunSilent.Custom.bValue))
-					{
-						Menu.bWriteLog = true;
-					} ImGui::Spacing();
-
 					if (ImGui::Checkbox(_profiler.gTest.szLabel, &_profiler.gTest.Custom.bValue))
 					{
 						Menu.bWriteLog = true;

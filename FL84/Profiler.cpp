@@ -78,7 +78,6 @@ namespace ZyanoCheats
 			XML.set("ZyanoCheats.Exploits.LikeValue", gLikeValue.Custom.iValue);
 			XML.set("ZyanoCheats.Exploits.DislikeValue", gDislikeValue.Custom.iValue);
 			XML.set("ZyanoCheats.Exploits.ShotgunDamage", gShotgunDamage.Custom.bValue);
-			XML.set("ZyanoCheats.Exploits.ShotgunSilent", gShotgunSilent.Custom.bValue);
 			XML.set("ZyanoCheats.Exploits.VehicleSpeed", gVehicleSpeed.Custom.bValue);
 			XML.set("ZyanoCheats.Exploits.VehicleSpeedMulti", gVehicleSpeedMulti.Custom.flValue);
 
@@ -209,7 +208,6 @@ namespace ZyanoCheats
 			XML.get_if_present("ZyanoCheats.Exploits.LikeValue", gLikeValue.Custom.iValue);
 			XML.get_if_present("ZyanoCheats.Exploits.DislikeValue", gDislikeValue.Custom.iValue);
 			XML.get_if_present("ZyanoCheats.Exploits.ShotgunDamage", gShotgunDamage.Custom.bValue);
-			XML.get_if_present("ZyanoCheats.Exploits.ShotgunSilent", gShotgunSilent.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Exploits.VehicleSpeed", gVehicleSpeed.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Exploits.VehicleSpeedMulti", gVehicleSpeedMulti.Custom.flValue);
 

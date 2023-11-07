@@ -310,19 +310,24 @@ namespace CG
 	FRotator FRotator::Clamp() const
 	{
 		FRotator r = { Pitch, Yaw, Roll };
-		if (r.Yaw > 180.0f)
-			r.Yaw -= 360.0f;
-		else if (r.Yaw < -180.0f)
-			r.Yaw += 360.0f;
+
 		if (r.Pitch > 180.0f)
 			r.Pitch -= 360.0f;
 		else if (r.Pitch < -180.0f)
 			r.Pitch += 360.0f;
+
 		if (r.Pitch < -89.0f)
 			r.Pitch = -89.0f;
 		else if (r.Pitch > 89.0f)
 			r.Pitch = 89.0f;
+
+		if (r.Yaw > 180.0f)
+			r.Yaw -= 360.0f;
+		else if (r.Yaw < -180.0f)
+			r.Yaw += 360.0f;
+
 		r.Roll = 0.0f;
+
 		return r;
 	}
 

@@ -3,6 +3,8 @@
 tPresent oPresent;
 tResizeBuffers oResizeBuffers;
 tGetShotDir GetShotDir;
+tGetBulletSocketLocation GetBulletSocketLocation;
+tSetAppearance SetAppearance;
 tProcessEvent ProcessEvent;
 tProcessRemoteFunction ProcessRemoteFunction;
 
@@ -49,15 +51,40 @@ __int64 HOOKCALL hkGetShotDir(CG::ASolarPlayerWeapon* Weapon, uint64_t a2, bool 
 	return Result;
 }
 
+__int64 HOOKCALL hkGetBulletSocketLocation(CG::ASolarPlayerWeapon* Weapon, uint64_t a2)
+{
+	__int64 Result = GetBulletSocketLocation(Weapon, a2);
+
+	if (_profiler.gAimEnabled.Custom.bValue && _profiler.gAimMode.Custom.iValue == cProfiler::AIMMODE_SILENT && a2 && Aimbot::TargetPosition.IsValid()
+		|| _profiler.gAimEnabled.Custom.bValue && _profiler.gAimMode.Custom.iValue == cProfiler::AIMMODE_AUTOMATIC && a2 && Aimbot::TargetPosition.IsValid())
+	{
+		*(CG::FVector*)(Result) = Aimbot::TargetPosition;
+	}
+
+	return Result;
+}
+
+void HOOKCALL hkSetAppearance(CG::ASolarCharacter* Character, int SkinID)
+{
+	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(ZXC.PlayerController->K2_GetPawn());
+
+	if (Character == LocalCharacter)
+	{
+		SkinID = 132505;
+		return SetAppearance(Character, SkinID);
+	}
+	else
+	{
+		return SetAppearance(Character, SkinID);
+	}
+}
+
 CG::UFunction* FN_ServerShortTimeout = nullptr;
-CG::UFunction* FN_AntiCheatDataSchedulerUpload = nullptr;
-CG::UFunction* FN_AntiCheatLauncherCheck = nullptr;
 CG::UFunction* FN_ServerReportRPC = nullptr;
-CG::UFunction* FN_ServerReportWaitTime = nullptr;
+CG::UFunction* FN_AntiCheatDataSchedulerUpload = nullptr;
 void HOOKCALL hkProcessEvent(void* Object, CG::UFunction* Function, void* Params)
 {
-	if (Function == FN_ServerShortTimeout || Function == FN_AntiCheatDataSchedulerUpload || Function == FN_AntiCheatLauncherCheck
-		|| Function == FN_ServerReportRPC || Function == FN_ServerReportWaitTime)
+	if (Function == FN_ServerShortTimeout || Function == FN_AntiCheatDataSchedulerUpload || Function == FN_ServerReportRPC)
 	{
 		return;
 	}
@@ -129,26 +156,30 @@ void Initialize()
 	CreateHook(hkPresent_Sig, (__int64)&hkPresent, (unsigned __int64*)&oPresent, 1);
 	CreateHook(hkResizeBuffers_Sig, (__int64)&hkResizeBuffers, (unsigned __int64*)&oResizeBuffers, 1);*/
 
-	uint64_t PresentAddr = (uint64_t)(GetModuleHandleA(xorstr_("GameOverlayRenderer64.dll"))) + 0x147640;
-	uint64_t ResizeBuffersAddr = (uint64_t)(GetModuleHandleA(xorstr_("GameOverlayRenderer64.dll"))) + 0x147648;
+	uint64_t PresentAddr = (uint64_t)(LI_FN(GetModuleHandleW)(xorstr_(L"DiscordHook64.dll"))) + 0xE9090;
+	uint64_t ResizeBuffersAddr = (uint64_t)(LI_FN(GetModuleHandleW)(xorstr_(L"DiscordHook64.dll"))) + 0xE90B8;
 
-	tPresent* Steam_Present = (tPresent*)PresentAddr;
-	oPresent = *Steam_Present;
+	tPresent* Discord_Present = (tPresent*)PresentAddr;
+	oPresent = *Discord_Present;
 
-	tResizeBuffers* Steam_ResizeBuffers = (tResizeBuffers*)PresentAddr;
-	oResizeBuffers = *Steam_ResizeBuffers;
+	tResizeBuffers* Discord_ResizeBuffers = (tResizeBuffers*)ResizeBuffersAddr;
+	oResizeBuffers = *Discord_ResizeBuffers;
 
 	_InterlockedExchangePointer((volatile PVOID*)PresentAddr, hkPresent);
 	_InterlockedExchangePointer((volatile PVOID*)ResizeBuffersAddr, hkResizeBuffers);
 
 	FN_ServerShortTimeout = CG::UObject::FindObject<CG::UFunction>("Function Engine.PlayerController.ServerShortTimeout");
-	FN_AntiCheatDataSchedulerUpload = CG::UObject::FindObject<CG::UFunction>("Function Solarland.SolarPlayerController.AntiCheatDataSchedulerUpload");
-	FN_AntiCheatLauncherCheck = CG::UObject::FindObject<CG::UFunction>("Function Solarland.SolarEasyAntiCheatManager.AntiCheatLauncherCheck");
 	FN_ServerReportRPC = CG::UObject::FindObject<CG::UFunction>("Function Solarland.SolarMeerkatScheduleComponent.ServerReportRPC");
-	FN_ServerReportWaitTime = CG::UObject::FindObject<CG::UFunction>("Function Solarland.SolarPlayerState.ServerReportWaitTime");
+	FN_AntiCheatDataSchedulerUpload = CG::UObject::FindObject<CG::UFunction>("Function Solarland.SolarPlayerController.AntiCheatDataSchedulerUpload");
 
 	GetShotDir = reinterpret_cast<tGetShotDir>(Signature(xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")).GetPointer());
 	Hook(GetShotDir, hkGetShotDir); // Silent Aim
+
+	GetBulletSocketLocation = reinterpret_cast<tGetBulletSocketLocation>((uint64_t)LI_FN(GetModuleHandleW)(xorstr_(L"SolarlandClient-Win64-Shipping.exe")) + 0x2641930);
+	Hook(GetBulletSocketLocation, hkGetBulletSocketLocation); // Silent Shotgun
+
+	SetAppearance = reinterpret_cast<tSetAppearance>(Signature(xorstr_("40 55 53 57 48 8D 6C 24 F0 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 E0")).GetPointer());
+	Hook(SetAppearance, hkSetAppearance);
 
 	ProcessEvent = reinterpret_cast<tProcessEvent>(Signature(xorstr_("40 55 56 57 41 54 41 55 41 56 41 57 48 81 EC ? ? ? ? 48 8D 6C 24 ? 48 89 9D ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C5 48 89 85 ? ? ? ? 4C 8B E1")).GetPointer());
 	Hook(ProcessEvent, hkProcessEvent);
@@ -167,6 +198,8 @@ void Initialize()
 void Deallocate()
 {
 	UnHook(GetShotDir, hkGetShotDir);
+	UnHook(GetBulletSocketLocation, hkGetBulletSocketLocation);
+	UnHook(SetAppearance, hkSetAppearance);
 	UnHook(ProcessEvent, hkProcessEvent);
 #ifdef _DEBUG
 	UnHook(ProcessRemoteFunction, hkProcessRemoteFunction);

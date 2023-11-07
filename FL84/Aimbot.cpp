@@ -9,7 +9,6 @@ namespace Aimbot
 	CG::FVector CurrentPosition = CG::FVector();
 	CG::FVector TargetPosition = CG::FVector();
 	CG::FRotator TargetRotation = CG::FRotator();
-	CG::ASolarCharacter* Target = nullptr;
 
 	CG::FRotator CalcAngle(CG::FVector src, CG::FVector dst, CG::FRotator oldRotation, float smoothing)
 	{
@@ -246,11 +245,11 @@ namespace Aimbot
 		else if (_profiler.gAimBone.Custom.iValue == cProfiler::AIMBONE_RANDOM)
 		{
 			std::vector<int> AIMBOT_Bones;
-			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("head")));
-			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("Neck_01")));
 			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("spine_03")));
-			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("spine_01")));
+			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("head")));
 			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("spine_02")));
+			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("Neck_01")));
+			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("spine_01")));
 
 			for (int x = 0; x < AIMBOT_Bones.size(); ++x)
 			{
@@ -279,14 +278,16 @@ namespace Aimbot
 		return false;
 	}
 
-	void GetBoneMethod()
+	void GetBoneMethod(std::vector<tTargetInfo>& vTargetInfo)
 	{
 		tTargetInfo TargetInfo;
-		std::vector<tTargetInfo> vTargetInfo;
 
 		CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(ZXC.PlayerController->Character);
 		if (!LocalCharacter)
 			return;
+
+		CG::FVector Location = ZXC.CameraManager->GetCameraLocation();
+		CG::FRotator Rotation = ZXC.CameraManager->GetCameraRotation();
 
 		CG::TArray<CG::AActor*> Actors = CG::TArray<CG::AActor*>();
 		ZXC.GameplayStatics->STATIC_GetAllActorsOfClass(ZXC.World, CG::ASolarCharacter::StaticClass(), &Actors);
@@ -320,9 +321,34 @@ namespace Aimbot
 
 			if (VisibilityMethod(Enemy))
 			{
+				if (_profiler.gAimPrediction.Custom.bValue)
+				{
+					CG::ASolarPlayerWeapon* CachedCurrentWeapon = LocalCharacter->CachedCurrentWeapon;
+					if (!CachedCurrentWeapon)
+						return;
+
+					CG::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
+					if (!Config)
+						return;
+
+					CG::UAmmoConfig* AmmoConfig = Config->PrimaryAmmo;
+					if (!AmmoConfig)
+						return;
+
+					float BulletSpeed = AmmoConfig->InitSpeed / 100.f;
+					float BulletGravity = AmmoConfig->ProjectileMaxGravity;
+					float Distance = Location.Distance(AimPosition) / 100.f;
+
+					CG::FVector Velocity = Enemy->RootComponent->ComponentVelocity;
+					CurrentPosition = Prediction(BulletSpeed, BulletGravity, Distance, AimPosition, Velocity);
+				}
+				else
+				{
+					CurrentPosition = AimPosition;
+				}
+
 				TargetInfo.Enemy = Enemy;
-				TargetInfo.Distance = LocalCharacter->GetDistanceTo(Enemy) / 100.f;
-				FVectorCopy(AimPosition, TargetInfo.AimPosition);
+				FVectorCopy(CurrentPosition, TargetInfo.AimPosition);
 				vTargetInfo.push_back(TargetInfo);
 			}
 		}
@@ -330,17 +356,22 @@ namespace Aimbot
 		if (!vTargetInfo.empty())
 		{
 			std::sort(vTargetInfo.begin(), vTargetInfo.end(), [&](const tTargetInfo& a, const tTargetInfo& b)
-				{
-					if (ZXC.PlayerController->LineOfSightTo(a.Enemy, { 0.f,0.f,0.f }, false)
-						&& ZXC.PlayerController->LineOfSightTo(b.Enemy, { 0.f,0.f,0.f }, false))
-					{
-						return (Math::GetFOV(LocalCharacter->K2_GetActorRotation(), a.AimPosition, LocalCharacter->K2_GetActorLocation())
-							<= Math::GetFOV(LocalCharacter->K2_GetActorRotation(), b.AimPosition, LocalCharacter->K2_GetActorLocation()));
-					}
-				});
+				{	
+					CG::FVector2D TargetPosA;
+					CG::FVector2D TargetPosB;
 
-			Target = vTargetInfo.front().Enemy;
-			FVectorCopy(vTargetInfo.front().AimPosition, AimPosition);
+					// Calculate screen positions for targets 'a' and 'b'
+					if (!ZXC.PlayerController->ProjectWorldLocationToScreen(a.AimPosition, &TargetPosA, false))
+						return false;
+
+					if (!ZXC.PlayerController->ProjectWorldLocationToScreen(b.AimPosition, &TargetPosB, false))
+						return true;
+
+					float distanceA = std::sqrt(std::pow(TargetPosA.X - (ScreenWidth / 2), 2) + std::pow(TargetPosA.Y - (ScreenHeight / 2), 2));
+					float distanceB = std::sqrt(std::pow(TargetPosB.X - (ScreenWidth / 2), 2) + std::pow(TargetPosB.Y - (ScreenHeight / 2), 2));
+
+					return distanceA < distanceB;
+				});
 		}
 	}
 }

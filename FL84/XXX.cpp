@@ -40,7 +40,7 @@ void XXX::Unknown()
 
 	PlayerController->GetViewportSize(&ScreenWidth, &ScreenHeight);
 
-	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
+	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(PlayerController->K2_GetPawn());
 	if (!LocalCharacter)
 		return;
 
@@ -613,7 +613,7 @@ void XXX::Vehicle()
 	if (!SanityCheck())
 		return;
 
-	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
+	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(PlayerController->K2_GetPawn());
 	if (!LocalCharacter)
 		return;
 
@@ -638,9 +638,7 @@ void XXX::Vehicle()
 			return;
 
 		if (Aimbot::TargetPosition.IsValid())
-			return;
-
-		*(CG::FVector*)(VehicleWeapon + 0xBAC) = Aimbot::TargetPosition;
+			*(CG::FVector*)(VehicleWeapon + 0xBAC) = Aimbot::TargetPosition;
 	}
 
 	if (_profiler.gVehicleNoRecoil.Custom.bValue)
@@ -678,8 +676,9 @@ void XXX::Aimbot()
 
 	bool bTargetLine = false;
 	CG::FVector2D TargetLine = CG::FVector2D();
-	CG::FVector Location = CameraManager->GetCameraLocation();
-	CG::FRotator Rotation = CameraManager->GetCameraRotation();
+	CG::FVector Location = ZXC.CameraManager->GetCameraLocation();
+	CG::FRotator Rotation = ZXC.CameraManager->GetCameraRotation();
+	std::vector<tTargetInfo> vTargetInfo;
 
 	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(ZXC.PlayerController->Character);
 	if (!LocalCharacter)
@@ -690,52 +689,29 @@ void XXX::Aimbot()
 
 	if (!_profiler.gAimEnabled.Custom.bValue)
 		return;
-	
-	Aimbot::GetBoneMethod();
 
-	if (Aimbot::Target)
+	Aimbot::GetBoneMethod(vTargetInfo);
+
+	if (!vTargetInfo.empty())
 	{
-		if (_profiler.gAimPrediction.Custom.bValue)
+		for (int i = 0; i < vTargetInfo.size(); i++)
 		{
-			CG::ASolarPlayerWeapon* CachedCurrentWeapon = LocalCharacter->CachedCurrentWeapon;
-			if (!CachedCurrentWeapon)
-				return;
+			CG::FVector2D TargetPos = CG::FVector2D();
+			if (!PlayerController->ProjectWorldLocationToScreen(vTargetInfo.front().AimPosition, &TargetPos, false))
+				continue;
 
-			CG::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
-			if (!Config)
-				return;
+			const float x = TargetPos.X - (ScreenWidth / 2);
+			const float y = TargetPos.Y - (ScreenHeight / 2);
+			float CenterDistance = sqrt(pow(y, 2) + pow(x, 2));
 
-			CG::UAmmoConfig* AmmoConfig = Config->PrimaryAmmo;
-			if (!AmmoConfig)
-				return;
-
-			float BulletSpeed = AmmoConfig->InitSpeed / 100.f;
-			float BulletGravity = AmmoConfig->ProjectileMaxGravity;
-			float Distance = Location.Distance(Aimbot::AimPosition) / 100.f;
-
-			CG::FVector Velocity = Aimbot::Target->RootComponent->ComponentVelocity;
-			Aimbot::CurrentPosition = Aimbot::Prediction(BulletSpeed, BulletGravity, Distance, Aimbot::AimPosition, Velocity);
-		}
-		else
-		{
-			Aimbot::CurrentPosition = Aimbot::AimPosition;
-		}
-
-		CG::FVector2D TargetPos = CG::FVector2D();
-		if (!PlayerController->ProjectWorldLocationToScreen(Aimbot::CurrentPosition, &TargetPos, false))
-			return;
-
-		const float x = TargetPos.X - (ScreenWidth / 2);
-		const float y = TargetPos.Y - (ScreenHeight / 2);
-		float CenterDistance = sqrt(pow(y, 2) + pow(x, 2));
-
-		if (CenterDistance < Aimbot::ClosestDistance && CenterDistance <= _profiler.gAimFOV.Custom.flValue)
-		{
-			Aimbot::ClosestDistance = CenterDistance;
-			Aimbot::LockPosition = TargetPos; // Mouse Event
-			Aimbot::TargetPosition = Aimbot::CurrentPosition; // Silent
-			Aimbot::TargetRotation = Aimbot::CalcAngle(Location, Aimbot::CurrentPosition, Rotation, _profiler.gAimSmooth.Custom.flValue); // Memory
-			bTargetLine = PlayerController->ProjectWorldLocationToScreen(Aimbot::AimPosition, &TargetLine, false);
+			if (CenterDistance < Aimbot::ClosestDistance && CenterDistance <= _profiler.gAimFOV.Custom.flValue)
+			{
+				Aimbot::ClosestDistance = CenterDistance;
+				Aimbot::LockPosition = TargetPos; // Mouse Event
+				Aimbot::TargetPosition = vTargetInfo.front().AimPosition; // Silent
+				Aimbot::TargetRotation = Aimbot::CalcAngle(Location, vTargetInfo.front().AimPosition, Rotation, _profiler.gAimSmooth.Custom.flValue); // Memory
+				bTargetLine = PlayerController->ProjectWorldLocationToScreen(Aimbot::AimPosition, &TargetLine, false);
+			}
 		}
 	}
 
@@ -751,7 +727,7 @@ void XXX::Misc()
 	if (!SanityCheck())
 		return;
 
-	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
+	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(PlayerController->K2_GetPawn());
 	if (!LocalCharacter)
 		return;
 
@@ -851,7 +827,7 @@ void XXX::Radar()
 	if (!SanityCheck())
 		return;
 
-	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(PlayerController->AcknowledgedPawn);
+	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(PlayerController->K2_GetPawn());
 	if (!LocalCharacter)
 		return;
 

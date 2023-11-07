@@ -36,7 +36,7 @@ namespace CG
 	 */
 	bool InitSDK()
 	{
-		return InitSDK(xorstr_(L"SolarlandClient-Win64-Shipping.exe"), 0x6ED4B80, 0x6EBC200, 0x7033E98);
+		return InitSDK(xorstr_(L"SolarlandClient-Win64-Shipping.exe"), 0x6ED2BC0, 0x6EBA240, 0x7031EF8);
 	}
 
 	// --------------------------------------------------
