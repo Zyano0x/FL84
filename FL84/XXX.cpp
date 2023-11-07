@@ -638,7 +638,7 @@ void XXX::Vehicle()
 			return;
 
 		if (Aimbot::TargetPosition.IsValid())
-			*(CG::FVector*)(VehicleWeapon + 0xBAC) = Aimbot::TargetPosition;
+			*(CG::FVector*)(VehicleWeapon + 0xBAC) = Aimbot::TargetPosition; // GetShotTargetLocation
 	}
 
 	if (_profiler.gVehicleNoRecoil.Custom.bValue)
@@ -676,8 +676,6 @@ void XXX::Aimbot()
 
 	bool bTargetLine = false;
 	CG::FVector2D TargetLine = CG::FVector2D();
-	CG::FVector Location = ZXC.CameraManager->GetCameraLocation();
-	CG::FRotator Rotation = ZXC.CameraManager->GetCameraRotation();
 	std::vector<tTargetInfo> vTargetInfo;
 
 	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(ZXC.PlayerController->Character);
@@ -709,7 +707,7 @@ void XXX::Aimbot()
 				Aimbot::ClosestDistance = CenterDistance;
 				Aimbot::LockPosition = TargetPos; // Mouse Event
 				Aimbot::TargetPosition = vTargetInfo.front().AimPosition; // Silent
-				Aimbot::TargetRotation = Aimbot::CalcAngle(Location, vTargetInfo.front().AimPosition, Rotation, _profiler.gAimSmooth.Custom.flValue); // Memory
+				Aimbot::TargetRotation = Aimbot::CalcAngle(ZXC.CameraManager->GetCameraLocation(), vTargetInfo.front().AimPosition, ZXC.CameraManager->GetCameraRotation(), _profiler.gAimSmooth.Custom.flValue); // Memory
 				bTargetLine = PlayerController->ProjectWorldLocationToScreen(Aimbot::AimPosition, &TargetLine, false);
 			}
 		}

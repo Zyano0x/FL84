@@ -184,6 +184,8 @@ namespace Aimbot
 	{
 		tDamageInfo DamageInfo;
 		std::vector<tDamageInfo> vDamageInfo;
+		std::random_device Random_Device;
+		std::mt19937 Gen(Random_Device());
 
 		if (_profiler.gAimBone.Custom.iValue == cProfiler::AIMBONE_HEAD)
 		{
@@ -203,9 +205,6 @@ namespace Aimbot
 
 			if (!vDamageInfo.empty())
 			{
-				std::random_device Random_Device;
-				std::mt19937 Gen(Random_Device());
-
 				std::shuffle(vDamageInfo.begin(), vDamageInfo.end(), Gen);
 
 				FVectorCopy(vDamageInfo.front().BestBone, AimPosition);
@@ -232,9 +231,6 @@ namespace Aimbot
 
 			if (!vDamageInfo.empty())
 			{
-				std::random_device Random_Device;
-				std::mt19937 Gen(Random_Device());
-
 				std::shuffle(vDamageInfo.begin(), vDamageInfo.end(), Gen);
 
 				FVectorCopy(vDamageInfo.front().BestBone, AimPosition);
@@ -245,10 +241,10 @@ namespace Aimbot
 		else if (_profiler.gAimBone.Custom.iValue == cProfiler::AIMBONE_RANDOM)
 		{
 			std::vector<int> AIMBOT_Bones;
-			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("spine_03")));
 			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("head")));
-			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("spine_02")));
 			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("Neck_01")));
+			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("spine_03")));
+			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("spine_02")));
 			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("spine_01")));
 
 			for (int x = 0; x < AIMBOT_Bones.size(); ++x)
@@ -264,9 +260,6 @@ namespace Aimbot
 
 			if (!vDamageInfo.empty())
 			{
-				std::random_device Random_Device;
-				std::mt19937 Gen(Random_Device());
-
 				std::shuffle(vDamageInfo.begin(), vDamageInfo.end(), Gen);
 
 				FVectorCopy(vDamageInfo.front().BestBone, AimPosition);

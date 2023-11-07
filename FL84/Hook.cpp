@@ -79,12 +79,11 @@ void HOOKCALL hkSetAppearance(CG::ASolarCharacter* Character, int SkinID)
 	}
 }
 
-CG::UFunction* FN_ServerShortTimeout = nullptr;
 CG::UFunction* FN_ServerReportRPC = nullptr;
 CG::UFunction* FN_AntiCheatDataSchedulerUpload = nullptr;
 void HOOKCALL hkProcessEvent(void* Object, CG::UFunction* Function, void* Params)
 {
-	if (Function == FN_ServerShortTimeout || Function == FN_AntiCheatDataSchedulerUpload || Function == FN_ServerReportRPC)
+	if (Function == FN_AntiCheatDataSchedulerUpload || Function == FN_ServerReportRPC)
 	{
 		return;
 	}
@@ -168,18 +167,18 @@ void Initialize()
 	_InterlockedExchangePointer((volatile PVOID*)PresentAddr, hkPresent);
 	_InterlockedExchangePointer((volatile PVOID*)ResizeBuffersAddr, hkResizeBuffers);
 
-	FN_ServerShortTimeout = CG::UObject::FindObject<CG::UFunction>("Function Engine.PlayerController.ServerShortTimeout");
 	FN_ServerReportRPC = CG::UObject::FindObject<CG::UFunction>("Function Solarland.SolarMeerkatScheduleComponent.ServerReportRPC");
 	FN_AntiCheatDataSchedulerUpload = CG::UObject::FindObject<CG::UFunction>("Function Solarland.SolarPlayerController.AntiCheatDataSchedulerUpload");
 
 	GetShotDir = reinterpret_cast<tGetShotDir>(Signature(xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")).GetPointer());
 	Hook(GetShotDir, hkGetShotDir); // Silent Aim
 
-	GetBulletSocketLocation = reinterpret_cast<tGetBulletSocketLocation>((uint64_t)LI_FN(GetModuleHandleW)(xorstr_(L"SolarlandClient-Win64-Shipping.exe")) + 0x2641930);
+	//GetBulletSocketLocation = reinterpret_cast<tGetBulletSocketLocation>((uint64_t)LI_FN(GetModuleHandleW)(xorstr_(L"SolarlandClient-Win64-Shipping.exe")) + 0x2641930);
+	GetBulletSocketLocation = reinterpret_cast<tGetBulletSocketLocation>(Signature(xorstr_("48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 48 8B 01 48 8B DA 48 8B F9 FF 90 ? ? ? ? 48 8B F0 48 85 C0 0F")).GetPointer());
 	Hook(GetBulletSocketLocation, hkGetBulletSocketLocation); // Silent Shotgun
 
 	SetAppearance = reinterpret_cast<tSetAppearance>(Signature(xorstr_("40 55 53 57 48 8D 6C 24 F0 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 E0")).GetPointer());
-	Hook(SetAppearance, hkSetAppearance);
+	Hook(SetAppearance, hkSetAppearance); // Skin
 
 	ProcessEvent = reinterpret_cast<tProcessEvent>(Signature(xorstr_("40 55 56 57 41 54 41 55 41 56 41 57 48 81 EC ? ? ? ? 48 8D 6C 24 ? 48 89 9D ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C5 48 89 85 ? ? ? ? 4C 8B E1")).GetPointer());
 	Hook(ProcessEvent, hkProcessEvent);
