@@ -757,6 +757,8 @@ namespace ZyanoCheats
 
 	LRESULT CALLBACK MainGUI::WindowProcess(_In_ HWND hWnd, _In_ UINT uMsg, _In_ WPARAM wParam, _In_ LPARAM lParam)
 	{
+		SPOOF_FUNC;
+
 		switch (uMsg)
 		{
 		case WM_LBUTTONDOWN:

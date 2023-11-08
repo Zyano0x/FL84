@@ -41,6 +41,8 @@ HRESULT WINAPI hkResizeBuffers(_In_ IDXGISwapChain* SwapChain, _In_ UINT BufferC
 
 __int64 HOOKCALL hkGetShotDir(CG::ASolarPlayerWeapon* Weapon, uint64_t a2, bool NeedSpread)
 {
+	SPOOF_FUNC;
+
 	__int64 Result = GetShotDir(Weapon, a2, NeedSpread);
 
 	if (_profiler.gAimEnabled.Custom.bValue && _profiler.gAimMode.Custom.iValue == cProfiler::AIMMODE_SILENT && a2 && Aimbot::TargetPosition.IsValid()
@@ -57,6 +59,8 @@ __int64 HOOKCALL hkGetShotDir(CG::ASolarPlayerWeapon* Weapon, uint64_t a2, bool 
 
 __int64 HOOKCALL hkGetBulletSocketLocation(CG::ASolarPlayerWeapon* Weapon, uint64_t a2)
 {
+	SPOOF_FUNC;
+
 	__int64 Result = GetBulletSocketLocation(Weapon, a2);
 
 	if (_profiler.gAimEnabled.Custom.bValue && _profiler.gAimMode.Custom.iValue == cProfiler::AIMMODE_SILENT && a2 && Aimbot::TargetPosition.IsValid()
@@ -70,6 +74,8 @@ __int64 HOOKCALL hkGetBulletSocketLocation(CG::ASolarPlayerWeapon* Weapon, uint6
 
 void HOOKCALL hkSetAppearance(CG::ASolarCharacter* Character, int SkinID)
 {
+	SPOOF_FUNC;
+
 	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(ZXC.PlayerController->K2_GetPawn());
 
 	if (Character == LocalCharacter)
@@ -87,6 +93,8 @@ CG::UFunction* FN_ServerReportRPC = nullptr;
 CG::UFunction* FN_AntiCheatDataSchedulerUpload = nullptr;
 void HOOKCALL hkProcessEvent(void* Object, CG::UFunction* Function, void* Params)
 {
+	SPOOF_FUNC;
+
 	if (Function == FN_AntiCheatDataSchedulerUpload || Function == FN_ServerReportRPC)
 	{
 		return;
@@ -95,6 +103,7 @@ void HOOKCALL hkProcessEvent(void* Object, CG::UFunction* Function, void* Params
 	return ProcessEvent(Object, Function, Params);
 }
 
+#ifdef _DEBUG
 std::unordered_map<CG::UClass*, ClassInfo> m_oRpcClassInfoMap;
 void LogRPC(CG::AActor* pActor, CG::UFunction* pFunc)
 {
@@ -114,6 +123,8 @@ void LogRPC(CG::AActor* pActor, CG::UFunction* pFunc)
 }
 __int64 HOOKCALL hkProcessRemoteFunction(CG::UNetDriver* Driver, CG::AActor* Actor, CG::UFunction* Function, void* Parameters, CG::FOutParmRec* OutParms, __int64 Stack, CG::UObject* SubObject)
 {
+	SPOOF_FUNC;
+
 	LogRPC(Actor, Function);
 
 	for (const auto& oClassInfoIt : m_oRpcClassInfoMap)
@@ -128,6 +139,7 @@ __int64 HOOKCALL hkProcessRemoteFunction(CG::UNetDriver* Driver, CG::AActor* Act
 
 	return ProcessRemoteFunction(Driver, Actor, Function, Parameters, OutParms, Stack, SubObject);
 }
+#endif
 
 void Initialize()
 {

@@ -49,6 +49,9 @@ public:
 		Head = CG::FVector(0.0f, 0.0f, 0.0f);
 		Root = CG::FVector(0.0f, 0.0f, 0.0f);
 
+		RadarPos = ImVec2(0.0f, 0.0f);
+		RadarSize = ImVec2(0.0f, 0.0f);
+
 		ColorVisisble = ImVec4(0.0f, 0.0f, 0.0f, 0.0f);
 	}
 
