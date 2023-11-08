@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function ChaGCBP_RescueSuccceed.ChaGCBP_RescueSuccceed_C.OnRemove
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -38,7 +38,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function ChaGCBP_RescueSuccceed.ChaGCBP_RescueSuccceed_C.OnActive
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:

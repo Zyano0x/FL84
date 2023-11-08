@@ -21,7 +21,7 @@ namespace CG
 	class AAbility_VH_Tire_WL01_Flamethrower_BaseDamage_C : public ASolarAbility
 	{
 	public:
-		unsigned char                                              UnknownData_QIEO[0x8];                                   // 0x0308(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_5UF4[0x8];                                   // 0x0308(0x0008) Fix Super Size
 
 	public:
 		static UClass* StaticClass();

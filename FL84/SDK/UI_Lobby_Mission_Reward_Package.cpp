@@ -12,17 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5E720
-	 * 		Name   -> DelegateFunction UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.OnClicked_78B16D7449D058FC1A5BA4ADA54E7CF9
+	 * 		RVA    -> 0x00B5D930
+	 * 		Name   -> DelegateFunction UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.OnClicked_7D4963554D3D6BD794AC46944B155009
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_Mission_Reward_C::OnClicked_78B16D7449D058FC1A5BA4ADA54E7CF9()
+	void UUI_Lobby_Mission_Reward_C::OnClicked_7D4963554D3D6BD794AC46944B155009()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.OnClicked_78B16D7449D058FC1A5BA4ADA54E7CF9"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.OnClicked_7D4963554D3D6BD794AC46944B155009"));
 		
-		UUI_Lobby_Mission_Reward_C_OnClicked_78B16D7449D058FC1A5BA4ADA54E7CF9_Params params {};
+		UUI_Lobby_Mission_Reward_C_OnClicked_7D4963554D3D6BD794AC46944B155009_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -31,65 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.OnSolarUIClosed
-	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
-	 */
-	void UUI_Lobby_Mission_Reward_C::OnSolarUIClosed()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.OnSolarUIClosed"));
-		
-		UUI_Lobby_Mission_Reward_C_OnSolarUIClosed_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x02D64C70
-	 * 		Name   -> Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.ConstructCopy
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Lobby_Mission_Reward_C::ConstructCopy()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.ConstructCopy"));
-		
-		UUI_Lobby_Mission_Reward_C_ConstructCopy_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.Destruct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Lobby_Mission_Reward_C::Destruct()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.Destruct"));
-		
-		UUI_Lobby_Mission_Reward_C_Destruct_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.OnSolarUIOpened
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -109,7 +51,65 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.OnSolarUIClosed
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 */
+	void UUI_Lobby_Mission_Reward_C::OnSolarUIClosed()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.OnSolarUIClosed"));
+		
+		UUI_Lobby_Mission_Reward_C_OnSolarUIClosed_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.Destruct
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_Lobby_Mission_Reward_C::Destruct()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.Destruct"));
+		
+		UUI_Lobby_Mission_Reward_C_Destruct_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D63E80
+	 * 		Name   -> Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.ConstructCopy
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_Lobby_Mission_Reward_C::ConstructCopy()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.ConstructCopy"));
+		
+		UUI_Lobby_Mission_Reward_C_ConstructCopy_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -130,7 +130,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -149,7 +149,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.ExecuteUbergraph_UI_Lobby_Mission_Reward
 	 * 		Flags  -> (Final)
 	 * Parameters:

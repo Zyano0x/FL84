@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Switch.UI_Component_Switch_C.SetType
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Switch.UI_Component_Switch_C.InitValue
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -56,7 +56,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Switch.UI_Component_Switch_C.SetValue
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -82,7 +82,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Switch.UI_Component_Switch_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -104,7 +104,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Switch.UI_Component_Switch_C.BndEvt__TouchArea_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -123,7 +123,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Switch.UI_Component_Switch_C.ExecuteUbergraph_UI_Component_Switch
 	 * 		Flags  -> (Final)
 	 * Parameters:
@@ -145,7 +145,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Switch.UI_Component_Switch_C.OnSwitchClicked__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */
@@ -164,7 +164,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Switch.UI_Component_Switch_C.OnStateChanged__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 * Parameters:

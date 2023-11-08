@@ -68,7 +68,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6AA0
+	 * 		RVA    -> 0x007E6AE0
 	 * 		Name   -> Function ControlRig.ControlRigComponent.OnPreInitialize
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */
@@ -88,7 +88,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C6F920
+	 * 		RVA    -> 0x00C6EB60
 	 * 		Name   -> Function ControlRig.ControlRigComponent.OnPreEvaluate
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */
@@ -108,7 +108,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C6F900
+	 * 		RVA    -> 0x00C6EB40
 	 * 		Name   -> Function ControlRig.ControlRigComponent.OnPostInitialize
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */
@@ -128,7 +128,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C6F8E0
+	 * 		RVA    -> 0x00C6EB20
 	 * 		Name   -> Function ControlRig.ControlRigComponent.OnPostEvaluate
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */
@@ -148,7 +148,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C6F8B0
+	 * 		RVA    -> 0x00C6EAF0
 	 * 		Name   -> Function ControlRig.ControlRigComponent.BP_GetControlRig
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

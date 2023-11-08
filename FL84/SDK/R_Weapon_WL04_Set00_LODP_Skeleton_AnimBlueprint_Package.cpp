@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B3BCD0
+	 * 		RVA    -> 0x01B3AF10
 	 * 		Name   -> Function R_Weapon_WL04_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL04_Set00_LODP_Skeleton_AnimBlueprint_C.TestAPI
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -32,7 +32,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B497F0
+	 * 		RVA    -> 0x01B48A30
 	 * 		Name   -> Function R_Weapon_WL04_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL04_Set00_LODP_Skeleton_AnimBlueprint_C.InterruptAnim
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -52,7 +52,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B3BE00
+	 * 		RVA    -> 0x01B3B040
 	 * 		Name   -> Function R_Weapon_WL04_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL04_Set00_LODP_Skeleton_AnimBlueprint_C.AnimNotify_QuitIdle
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -72,7 +72,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B3BDC0
+	 * 		RVA    -> 0x01B3B000
 	 * 		Name   -> Function R_Weapon_WL04_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL04_Set00_LODP_Skeleton_AnimBlueprint_C.AnimNotify_QuitFire
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -92,7 +92,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B496D0
+	 * 		RVA    -> 0x01B48910
 	 * 		Name   -> Function R_Weapon_WL04_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL04_Set00_LODP_Skeleton_AnimBlueprint_C.AnimNotify_EnterIdle
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -112,7 +112,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B3BDE0
+	 * 		RVA    -> 0x01B3B020
 	 * 		Name   -> Function R_Weapon_WL04_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL04_Set00_LODP_Skeleton_AnimBlueprint_C.AnimNotify_EnterFire
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -132,7 +132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B49590
+	 * 		RVA    -> 0x01B487D0
 	 * 		Name   -> Function R_Weapon_WL04_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL04_Set00_LODP_Skeleton_AnimBlueprint_C.AnimGraph
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

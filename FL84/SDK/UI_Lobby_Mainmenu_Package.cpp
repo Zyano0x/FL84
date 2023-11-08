@@ -12,17 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5E720
-	 * 		Name   -> DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_A7A85BA04CD795E1EEEE77A8BCB48C30
+	 * 		RVA    -> 0x00B5D930
+	 * 		Name   -> DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_5DFA0112438A6356A25291A8F67FBBED
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_Mainmenu_C::OnClicked_A7A85BA04CD795E1EEEE77A8BCB48C30()
+	void UUI_Lobby_Mainmenu_C::OnClicked_5DFA0112438A6356A25291A8F67FBBED()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_A7A85BA04CD795E1EEEE77A8BCB48C30"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_5DFA0112438A6356A25291A8F67FBBED"));
 		
-		UUI_Lobby_Mainmenu_C_OnClicked_A7A85BA04CD795E1EEEE77A8BCB48C30_Params params {};
+		UUI_Lobby_Mainmenu_C_OnClicked_5DFA0112438A6356A25291A8F67FBBED_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -31,17 +31,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5E720
-	 * 		Name   -> DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_A80D89E14877A60DA15C68A65558B774
+	 * 		RVA    -> 0x00B5D930
+	 * 		Name   -> DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_C01224C840506574E9EDC2A45B152913
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_Mainmenu_C::OnClicked_A80D89E14877A60DA15C68A65558B774()
+	void UUI_Lobby_Mainmenu_C::OnClicked_C01224C840506574E9EDC2A45B152913()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_A80D89E14877A60DA15C68A65558B774"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_C01224C840506574E9EDC2A45B152913"));
 		
-		UUI_Lobby_Mainmenu_C_OnClicked_A80D89E14877A60DA15C68A65558B774_Params params {};
+		UUI_Lobby_Mainmenu_C_OnClicked_C01224C840506574E9EDC2A45B152913_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -50,17 +50,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5E720
-	 * 		Name   -> DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_406BF8FF4351F1C8FE007292EF8E3985
+	 * 		RVA    -> 0x00B5D930
+	 * 		Name   -> DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_E8CA90AF401D24CBD5478BA3DCC28CCD
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_Mainmenu_C::OnClicked_406BF8FF4351F1C8FE007292EF8E3985()
+	void UUI_Lobby_Mainmenu_C::OnClicked_E8CA90AF401D24CBD5478BA3DCC28CCD()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_406BF8FF4351F1C8FE007292EF8E3985"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_E8CA90AF401D24CBD5478BA3DCC28CCD"));
 		
-		UUI_Lobby_Mainmenu_C_OnClicked_406BF8FF4351F1C8FE007292EF8E3985_Params params {};
+		UUI_Lobby_Mainmenu_C_OnClicked_E8CA90AF401D24CBD5478BA3DCC28CCD_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -69,7 +69,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.Destruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -88,7 +88,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnSolarUIClosed
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -108,7 +108,26 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.Construct
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_Lobby_Mainmenu_C::Construct()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.Construct"));
+		
+		UUI_Lobby_Mainmenu_C_Construct_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnSolarUIOpened
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -128,26 +147,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.Construct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Lobby_Mainmenu_C::Construct()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.Construct"));
-		
-		UUI_Lobby_Mainmenu_C_Construct_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -168,7 +168,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -190,7 +190,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.ExecuteUbergraph_UI_Lobby_Mainmenu
 	 * 		Flags  -> (Final)
 	 * Parameters:

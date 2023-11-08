@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B4B9D0
+	 * 		RVA    -> 0x01B4AC10
 	 * 		Name   -> Function MeshWidget.MeshRectangleWidget.SetInstanceNum
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -63,7 +63,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B4B9D0
+	 * 		RVA    -> 0x01B4AC10
 	 * 		Name   -> Function MeshWidget.MeshRectangleWidget.ModifyInstanceNum
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -86,7 +86,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00909800
+	 * 		RVA    -> 0x00909840
 	 * 		Name   -> Function MeshWidget.MeshRectangleWidget.InitUnitTestProvider
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */

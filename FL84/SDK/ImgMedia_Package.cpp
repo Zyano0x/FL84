@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D3B4F0
+	 * 		RVA    -> 0x01D3A730
 	 * 		Name   -> Function ImgMedia.ImgMediaSource.SetSequencePath
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -35,7 +35,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D3B420
+	 * 		RVA    -> 0x01D3A660
 	 * 		Name   -> Function ImgMedia.ImgMediaSource.GetSequencePath
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -57,7 +57,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D3B350
+	 * 		RVA    -> 0x01D3A590
 	 * 		Name   -> Function ImgMedia.ImgMediaSource.GetProxies
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:

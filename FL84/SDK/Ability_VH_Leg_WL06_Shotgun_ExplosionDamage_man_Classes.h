@@ -21,7 +21,7 @@ namespace CG
 	class AAbility_VH_Leg_WL06_Shotgun_ExplosionDamage_man_C : public ASolarAbility
 	{
 	public:
-		unsigned char                                              UnknownData_108X[0x8];                                   // 0x0308(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_8H4A[0x8];                                   // 0x0308(0x0008) Fix Super Size
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0310(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		bool                                                       HasExploded;                                             // 0x0318(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Component_Mouse.UI_Component_Mouse_C.Destruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -31,26 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function UI_Component_Mouse.UI_Component_Mouse_C.Construct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Component_Mouse_C::Construct()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_Mouse.UI_Component_Mouse_C.Construct"));
-		
-		UUI_Component_Mouse_C_Construct_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Component_Mouse.UI_Component_Mouse_C.OnInitialized
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -69,7 +50,26 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function UI_Component_Mouse.UI_Component_Mouse_C.Construct
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_Component_Mouse_C::Construct()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_Mouse.UI_Component_Mouse_C.Construct"));
+		
+		UUI_Component_Mouse_C_Construct_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Mouse.UI_Component_Mouse_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -90,7 +90,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Mouse.UI_Component_Mouse_C.SetData
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -119,7 +119,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Mouse.UI_Component_Mouse_C.UpdateImage
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -138,7 +138,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Mouse.UI_Component_Mouse_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -160,7 +160,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Mouse.UI_Component_Mouse_C.ExecuteUbergraph_UI_Component_Mouse
 	 * 		Flags  -> (Final)
 	 * Parameters:

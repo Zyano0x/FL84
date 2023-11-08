@@ -12,17 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5E720
-	 * 		Name   -> DelegateFunction UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnClicked_7448812F4DDEEFF2850F28859D70B023
+	 * 		RVA    -> 0x00B5D930
+	 * 		Name   -> DelegateFunction UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnClicked_0A99827A496E213AB78AC7B4CB8CB582
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_Tips_Container_C::OnClicked_7448812F4DDEEFF2850F28859D70B023()
+	void UUI_Lobby_Tips_Container_C::OnClicked_0A99827A496E213AB78AC7B4CB8CB582()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnClicked_7448812F4DDEEFF2850F28859D70B023"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnClicked_0A99827A496E213AB78AC7B4CB8CB582"));
 		
-		UUI_Lobby_Tips_Container_C_OnClicked_7448812F4DDEEFF2850F28859D70B023_Params params {};
+		UUI_Lobby_Tips_Container_C_OnClicked_0A99827A496E213AB78AC7B4CB8CB582_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -31,17 +31,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5E720
-	 * 		Name   -> DelegateFunction UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnPressed_E51569124397344114C3D3AA7232B453
+	 * 		RVA    -> 0x00B5D930
+	 * 		Name   -> DelegateFunction UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnPressed_71C02F5D49CAA3C49895809FCA48BC4F
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_Tips_Container_C::OnPressed_E51569124397344114C3D3AA7232B453()
+	void UUI_Lobby_Tips_Container_C::OnPressed_71C02F5D49CAA3C49895809FCA48BC4F()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnPressed_E51569124397344114C3D3AA7232B453"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnPressed_71C02F5D49CAA3C49895809FCA48BC4F"));
 		
-		UUI_Lobby_Tips_Container_C_OnPressed_E51569124397344114C3D3AA7232B453_Params params {};
+		UUI_Lobby_Tips_Container_C_OnPressed_71C02F5D49CAA3C49895809FCA48BC4F_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -50,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.Destruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -69,26 +69,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.Construct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Lobby_Tips_Container_C::Construct()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.Construct"));
-		
-		UUI_Lobby_Tips_Container_C_Construct_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnHide
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -108,7 +89,26 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.Construct
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_Lobby_Tips_Container_C::Construct()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.Construct"));
+		
+		UUI_Lobby_Tips_Container_C_Construct_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnShow
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -128,7 +128,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */

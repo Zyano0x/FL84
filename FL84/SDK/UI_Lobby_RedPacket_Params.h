@@ -15,9 +15,21 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnClicked_1C2F27A844E618A50E3F8D9CC511953E
+	 * Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnClicked_98ACEF644FA69430CD0506BA61D0DDDC
 	 */
-	struct UUI_Lobby_RedPacket_C_OnClicked_1C2F27A844E618A50E3F8D9CC511953E_Params
+	struct UUI_Lobby_RedPacket_C_OnClicked_98ACEF644FA69430CD0506BA61D0DDDC_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.Destruct
+	 */
+	struct UUI_Lobby_RedPacket_C_Destruct_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnSolarUIOpened
+	 */
+	struct UUI_Lobby_RedPacket_C_OnSolarUIOpened_Params
 	{	};
 
 	/**
@@ -30,18 +42,6 @@ namespace CG
 	 * Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnSolarUIClosed
 	 */
 	struct UUI_Lobby_RedPacket_C_OnSolarUIClosed_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnSolarUIOpened
-	 */
-	struct UUI_Lobby_RedPacket_C_OnSolarUIOpened_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.Destruct
-	 */
-	struct UUI_Lobby_RedPacket_C_Destruct_Params
 	{	};
 
 	/**

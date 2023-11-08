@@ -22,11 +22,11 @@ namespace CG
 	{
 	public:
 		void SkipToTarget();
-		void CloseDiePage();
 		void ShowDiePage();
-		class FString GetClassRelativePathName(class UClass* InClass);
 		void Init();
+		void CloseDiePage();
 		void ShowNextStage();
+		class FString GetClassRelativePathName(class UClass* InClass);
 		static UClass* StaticClass();
 	};
 

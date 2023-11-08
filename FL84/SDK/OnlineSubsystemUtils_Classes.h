@@ -21,9 +21,9 @@ namespace CG
 	class UIpConnection : public UNetConnection
 	{
 	public:
-		unsigned char                                              UnknownData_MFYG[0x50];                                  // 0x1B10(0x0050) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_RG7H[0x50];                                  // 0x1B10(0x0050) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      SocketErrorDisconnectDelay;                              // 0x1B60(0x0004) ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_PQSN[0x4C];                                  // 0x1B64(0x004C) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_VPK1[0x4C];                                  // 0x1B64(0x004C) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -38,18 +38,18 @@ namespace CG
 	public:
 		bool                                                       LogPortUnreach : 1;                                      // 0x0758(0x0001) BIT_FIELD Config, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       AllowPlayerPortUnreach : 1;                              // 0x0758(0x0001) BIT_FIELD Config, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_8G17[0x3];                                   // 0x0759(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_TKU4[0x3];                                   // 0x0759(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		uint32_t                                                   MaxPortCountToTry;                                       // 0x075C(0x0004) ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_KV2T[0xC];                                   // 0x0760(0x000C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_EFOY[0xC];                                   // 0x0760(0x000C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		uint32_t                                                   ServerDesiredSocketReceiveBufferBytes;                   // 0x076C(0x0004) ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		uint32_t                                                   ServerDesiredSocketSendBufferBytes;                      // 0x0770(0x0004) ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		uint32_t                                                   ClientDesiredSocketReceiveBufferBytes;                   // 0x0774(0x0004) ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		uint32_t                                                   ClientDesiredSocketSendBufferBytes;                      // 0x0778(0x0004) ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_H5F8[0x4];                                   // 0x077C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6LKJ[0x4];                                   // 0x077C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		double                                                     MaxSecondsInReceive;                                     // 0x0780(0x0008) ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		int32_t                                                    NbPacketsBetweenReceiveTimeTest;                         // 0x0788(0x0004) ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		float                                                      ResolutionConnectionTimeout;                             // 0x078C(0x0004) ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_F7HX[0x38];                                  // 0x0790(0x0038) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_ED7G[0x38];                                  // 0x0790(0x0038) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -76,7 +76,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0030(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0040(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_48OP[0x18];                                  // 0x0050(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_SYFX[0x18];                                  // 0x0050(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		class UAchievementQueryCallbackProxy* STATIC_CacheAchievements(class UObject* WorldContextObject, class APlayerController* PlayerController);
@@ -93,7 +93,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0030(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0040(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ASUT[0x30];                                  // 0x0050(0x0030) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_OCY5[0x30];                                  // 0x0050(0x0030) MISSED OFFSET (PADDING)
 
 	public:
 		class UAchievementWriteCallbackProxy* STATIC_WriteAchievementProgress(class UObject* WorldContextObject, class APlayerController* PlayerController, const class FName& AchievementName, float Progress, int32_t UserTag);
@@ -109,7 +109,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0030(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0040(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_VD6P[0x28];                                  // 0x0050(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_961O[0x28];                                  // 0x0050(0x0028) MISSED OFFSET (PADDING)
 
 	public:
 		class UConnectionCallbackProxy* STATIC_ConnectToService(class UObject* WorldContextObject, class APlayerController* PlayerController);
@@ -125,7 +125,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0030(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0040(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ZBIZ[0x48];                                  // 0x0050(0x0048) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_AK5F[0x48];                                  // 0x0050(0x0048) MISSED OFFSET (PADDING)
 
 	public:
 		class UCreateSessionCallbackProxy* STATIC_CreateSession(class UObject* WorldContextObject, class APlayerController* PlayerController, int32_t PublicConnections, bool bUseLAN);
@@ -141,7 +141,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0030(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0040(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_19QL[0x28];                                  // 0x0050(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_TKHM[0x28];                                  // 0x0050(0x0028) MISSED OFFSET (PADDING)
 
 	public:
 		class UDestroySessionCallbackProxy* STATIC_DestroySession(class UObject* WorldContextObject, class APlayerController* PlayerController);
@@ -157,7 +157,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0030(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0040(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_Y8BX[0x30];                                  // 0x0050(0x0030) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_7PUB[0x30];                                  // 0x0050(0x0030) MISSED OFFSET (PADDING)
 
 	public:
 		class UEndMatchCallbackProxy* STATIC_EndMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, const class FString& MatchID, EMPMatchOutcome LocalPlayerOutcome, EMPMatchOutcome OtherPlayersOutcome);
@@ -173,7 +173,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0030(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0040(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_L6D7[0x28];                                  // 0x0050(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_0BGW[0x28];                                  // 0x0050(0x0028) MISSED OFFSET (PADDING)
 
 	public:
 		class UEndTurnCallbackProxy* STATIC_EndTurn(class UObject* WorldContextObject, class APlayerController* PlayerController, const class FString& MatchID);
@@ -189,7 +189,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0030(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0040(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_6T67[0x40];                                  // 0x0050(0x0040) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_TK7S[0x40];                                  // 0x0050(0x0040) MISSED OFFSET (PADDING)
 
 	public:
 		class FString STATIC_GetServerName(const struct FBlueprintSessionResult& Result);
@@ -209,7 +209,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0030(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0040(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_TZWD[0x38];                                  // 0x0050(0x0038) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_M2RP[0x38];                                  // 0x0050(0x0038) MISSED OFFSET (PADDING)
 
 	public:
 		class UFindTurnBasedMatchCallbackProxy* STATIC_FindTurnBasedMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, int32_t MinPlayers, int32_t MaxPlayers, int32_t PlayerGroup, bool ShowExistingMatches);
@@ -225,7 +225,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0028(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0038(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_J0IE[0x38];                                  // 0x0048(0x0038) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_VD7V[0x38];                                  // 0x0048(0x0038) MISSED OFFSET (PADDING)
 
 	public:
 		class UInAppPurchaseCallbackProxy* STATIC_CreateProxyObjectForInAppPurchase(class APlayerController* PlayerController, const struct FInAppPurchaseProductRequest& ProductRequest);
@@ -241,7 +241,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0028(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0038(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_621I[0x60];                                  // 0x0048(0x0060) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_3FGZ[0x60];                                  // 0x0048(0x0060) MISSED OFFSET (PADDING)
 
 	public:
 		class UInAppPurchaseCallbackProxy2* STATIC_CreateProxyObjectForInAppPurchaseUnprocessedPurchases(class APlayerController* PlayerController);
@@ -259,7 +259,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0028(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0038(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_AWHH[0x48];                                  // 0x0048(0x0048) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_HCIU[0x48];                                  // 0x0048(0x0048) MISSED OFFSET (PADDING)
 
 	public:
 		class UInAppPurchaseQueryCallbackProxy* STATIC_CreateProxyObjectForInAppPurchaseQuery(class APlayerController* PlayerController, TArray<class FString> ProductIdentifiers);
@@ -275,7 +275,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0028(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0038(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_L9MU[0x20];                                  // 0x0048(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_M699[0x20];                                  // 0x0048(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		class UInAppPurchaseQueryCallbackProxy2* STATIC_CreateProxyObjectForInAppPurchaseQuery(class APlayerController* PlayerController, TArray<class FString> ProductIdentifiers);
@@ -291,7 +291,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0028(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0038(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_V8CT[0x48];                                  // 0x0048(0x0048) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_FX7K[0x48];                                  // 0x0048(0x0048) MISSED OFFSET (PADDING)
 
 	public:
 		class UInAppPurchaseRestoreCallbackProxy* STATIC_CreateProxyObjectForInAppPurchaseRestore(TArray<struct FInAppPurchaseProductRequest> ConsumableProductFlags, class APlayerController* PlayerController);
@@ -307,7 +307,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0028(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0038(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_6HWJ[0x60];                                  // 0x0048(0x0060) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_IQW1[0x60];                                  // 0x0048(0x0060) MISSED OFFSET (PADDING)
 
 	public:
 		class UInAppPurchaseRestoreCallbackProxy2* STATIC_CreateProxyObjectForInAppPurchaseRestore(TArray<struct FInAppPurchaseProductRequest2> ConsumableProductFlags, class APlayerController* PlayerController);
@@ -323,7 +323,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0030(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0040(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_IPR5[0x130];                                 // 0x0050(0x0130) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_9X3A[0x130];                                 // 0x0050(0x0130) MISSED OFFSET (PADDING)
 
 	public:
 		class UJoinSessionCallbackProxy* STATIC_JoinSession(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FBlueprintSessionResult& SearchResult);
@@ -350,7 +350,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0028(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0038(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_IN00[0x20];                                  // 0x0048(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_5G4U[0x20];                                  // 0x0048(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		class ULeaderboardFlushCallbackProxy* STATIC_CreateProxyObjectForFlush(class APlayerController* PlayerController, const class FName& SessionName);
@@ -366,7 +366,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0028(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0038(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_N3E8[0x50];                                  // 0x0048(0x0050) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_I24C[0x50];                                  // 0x0048(0x0050) MISSED OFFSET (PADDING)
 
 	public:
 		class ULeaderboardQueryCallbackProxy* STATIC_CreateProxyObjectForIntQuery(class APlayerController* PlayerController, const class FName& StatName);
@@ -382,7 +382,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0030(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0040(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_NCJX[0x18];                                  // 0x0050(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_6LYJ[0x18];                                  // 0x0050(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		class ULogoutCallbackProxy* STATIC_Logout(class UObject* WorldContextObject, class APlayerController* PlayerController);
@@ -396,11 +396,11 @@ namespace CG
 	class AOnlineBeacon : public AActor
 	{
 	public:
-		unsigned char                                              UnknownData_7GWN[0x8];                                   // 0x0228(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_BC5A[0x8];                                   // 0x0228(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      BeaconConnectionInitialTimeout;                          // 0x0230(0x0004) ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		float                                                      BeaconConnectionTimeout;                                 // 0x0234(0x0004) ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		class UNetDriver*                                          NetDriver;                                               // 0x0238(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_85UE[0x18];                                  // 0x0240(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_02ZR[0x18];                                  // 0x0240(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -416,7 +416,7 @@ namespace CG
 		class AOnlineBeaconHostObject*                             BeaconOwner;                                             // 0x0258(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		class UNetConnection*                                      BeaconConnection;                                        // 0x0260(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		EBeaconConnectionState                                     ConnectionState;                                         // 0x0268(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_RTBU[0x4F];                                  // 0x0269(0x004F) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_C6UC[0x4F];                                  // 0x0269(0x004F) MISSED OFFSET (PADDING)
 
 	public:
 		void ClientOnConnected();
@@ -431,9 +431,9 @@ namespace CG
 	{
 	public:
 		int32_t                                                    ListenPort;                                              // 0x0258(0x0004) ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_GW85[0x4];                                   // 0x025C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_0YCT[0x4];                                   // 0x025C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class AOnlineBeaconClient*>                         ClientActors;                                            // 0x0260(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_0XVI[0xA0];                                  // 0x0270(0x00A0) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_6L1O[0xA0];                                  // 0x0270(0x00A0) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -462,7 +462,7 @@ namespace CG
 	{
 	public:
 		class FName                                                VoiceSubsystemNameOverride;                              // 0x0028(0x0008) ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_IUD7[0xF8];                                  // 0x0030(0x00F8) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_RT02[0xF8];                                  // 0x0030(0x00F8) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -476,7 +476,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bOnlinePIEEnabled;                                       // 0x0038(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_PA83[0x7];                                   // 0x0039(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_ZWR3[0x7];                                   // 0x0039(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FPIELoginSettingsInternal>                   Logins;                                                  // 0x0040(0x0010) Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
 	public:
@@ -490,10 +490,10 @@ namespace CG
 	class UOnlineSessionClient : public UOnlineSession
 	{
 	public:
-		unsigned char                                              UnknownData_G3VT[0x1B0];                                 // 0x0028(0x01B0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6ZH7[0x1B0];                                 // 0x0028(0x01B0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		bool                                                       bIsFromInvite;                                           // 0x01D8(0x0001) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		bool                                                       bHandlingDisconnect;                                     // 0x01D9(0x0001) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_U4P9[0x6];                                   // 0x01DA(0x0006) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_6SSK[0x6];                                   // 0x01DA(0x0006) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -506,13 +506,13 @@ namespace CG
 	class APartyBeaconClient : public AOnlineBeaconClient
 	{
 	public:
-		unsigned char                                              UnknownData_UZZB[0x30];                                  // 0x02B8(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_J5OH[0x30];                                  // 0x02B8(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              DestSessionId;                                           // 0x02E8(0x0010) ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		struct FPartyReservation                                   PendingReservation;                                      // 0x02F8(0x0050) Protected, NativeAccessSpecifierProtected
 		EClientRequestType                                         RequestType;                                             // 0x0348(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		bool                                                       bPendingReservationSent;                                 // 0x0349(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		bool                                                       bCancelReservation;                                      // 0x034A(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_6PTA[0x2D];                                  // 0x034B(0x002D) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_DEI0[0x2D];                                  // 0x034B(0x002D) MISSED OFFSET (PADDING)
 
 	public:
 		void ServerUpdateReservationRequest(const class FString& SessionId, const struct FPartyReservation& ReservationUpdate);
@@ -534,12 +534,12 @@ namespace CG
 	{
 	public:
 		class UPartyBeaconState*                                   State;                                                   // 0x0250(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_KPET[0x60];                                  // 0x0258(0x0060) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_0MJ3[0x60];                                  // 0x0258(0x0060) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		bool                                                       bLogoutOnSessionTimeout;                                 // 0x02B8(0x0001) ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_WJM5[0x3];                                   // 0x02B9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_CKBV[0x3];                                   // 0x02B9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      SessionTimeoutSecs;                                      // 0x02BC(0x0004) ZeroConstructor, Transient, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		float                                                      TravelSessionTimeoutSecs;                                // 0x02C0(0x0004) ZeroConstructor, Transient, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_9320[0x4];                                   // 0x02C4(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_SK9J[0x4];                                   // 0x02C4(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -562,9 +562,9 @@ namespace CG
 		int32_t                                                    ForceTeamNum;                                            // 0x004C(0x0004) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		bool                                                       bRestrictCrossConsole;                                   // 0x0050(0x0001) ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		bool                                                       bEnableRemovalRequests;                                  // 0x0051(0x0001) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_OCFL[0x6];                                   // 0x0052(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_Z11A[0x6];                                   // 0x0052(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FPartyReservation>                           Reservations;                                            // 0x0058(0x0010) ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_S53N[0x10];                                  // 0x0068(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_QOI5[0x10];                                  // 0x0068(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -579,7 +579,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0030(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0040(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_R3IU[0x28];                                  // 0x0050(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_FXYY[0x28];                                  // 0x0050(0x0028) MISSED OFFSET (PADDING)
 
 	public:
 		class UQuitMatchCallbackProxy* STATIC_QuitMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, const class FString& MatchID, EMPMatchOutcome Outcome, int32_t TurnTimeoutInSeconds);
@@ -595,7 +595,7 @@ namespace CG
 	public:
 		class FScriptMulticastDelegate                             OnSuccess;                                               // 0x0030(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnFailure;                                               // 0x0040(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_V2HK[0x10];                                  // 0x0050(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_NKKJ[0x10];                                  // 0x0050(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		class UShowLoginUICallbackProxy* STATIC_ShowExternalLoginUI(class UObject* WorldContextObject, class APlayerController* InPlayerController);
@@ -609,13 +609,13 @@ namespace CG
 	class ASpectatorBeaconClient : public AOnlineBeaconClient
 	{
 	public:
-		unsigned char                                              UnknownData_LNIP[0x30];                                  // 0x02B8(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7W8E[0x30];                                  // 0x02B8(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              DestSessionId;                                           // 0x02E8(0x0010) ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		struct FSpectatorReservation                               PendingReservation;                                      // 0x02F8(0x0078) Protected, NativeAccessSpecifierProtected
 		ESpectatorClientRequestType                                RequestType;                                             // 0x0370(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		bool                                                       bPendingReservationSent;                                 // 0x0371(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		bool                                                       bCancelReservation;                                      // 0x0372(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_J1C4[0x2D];                                  // 0x0373(0x002D) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_1HLE[0x2D];                                  // 0x0373(0x002D) MISSED OFFSET (PADDING)
 
 	public:
 		void ServerReservationRequest(const class FString& SessionId, const struct FSpectatorReservation& Reservation);
@@ -635,12 +635,12 @@ namespace CG
 	{
 	public:
 		class USpectatorBeaconState*                               State;                                                   // 0x0250(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_K8SK[0x60];                                  // 0x0258(0x0060) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_AJ1L[0x60];                                  // 0x0258(0x0060) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		bool                                                       bLogoutOnSessionTimeout;                                 // 0x02B8(0x0001) ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_LDKA[0x3];                                   // 0x02B9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_Q1VM[0x3];                                   // 0x02B9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      SessionTimeoutSecs;                                      // 0x02BC(0x0004) ZeroConstructor, Transient, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		float                                                      TravelSessionTimeoutSecs;                                // 0x02C0(0x0004) ZeroConstructor, Transient, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_FVKJ[0x4];                                   // 0x02C4(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_X7J9[0x4];                                   // 0x02C4(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -657,9 +657,9 @@ namespace CG
 		int32_t                                                    NumConsumedReservations;                                 // 0x0030(0x0004) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		int32_t                                                    MaxReservations;                                         // 0x0034(0x0004) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		bool                                                       bRestrictCrossConsole;                                   // 0x0038(0x0001) ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_KMVZ[0x7];                                   // 0x0039(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_J3XC[0x7];                                   // 0x0039(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FSpectatorReservation>                       Reservations;                                            // 0x0040(0x0010) ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_JCL1[0x10];                                  // 0x0050(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_PQ0R[0x10];                                  // 0x0050(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -708,7 +708,7 @@ namespace CG
 	class UVoipListenerSynthComponent : public USynthComponent
 	{
 	public:
-		unsigned char                                              UnknownData_F0F0[0x60];                                  // 0x07F0(0x0060) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_LJ8L[0x60];                                  // 0x07F0(0x0060) MISSED OFFSET (PADDING)
 
 	public:
 		bool IsIdling();

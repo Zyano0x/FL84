@@ -28,11 +28,11 @@ namespace CG
 		class UUI_Lobby_TeamInvite_Mini_Popup_C*                   UI_Lobby_TeamInvite_Mini_Popup;                          // 0x0420(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnSolarUIClosed();
 		void OnHide();
 		void OnInitialized();
 		void OnSolarUIOpened();
 		void OnShow();
+		void OnSolarUIClosed();
 		class FString GetModuleName();
 		static UClass* StaticClass();
 	};

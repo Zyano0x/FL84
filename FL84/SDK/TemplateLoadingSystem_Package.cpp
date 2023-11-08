@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0083A490
+	 * 		RVA    -> 0x0083A4D0
 	 * 		Name   -> Function TemplateLoadingSystem.LoadingScreenSubsystem.StopLoadingScreen
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -32,7 +32,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0083A3F0
+	 * 		RVA    -> 0x0083A430
 	 * 		Name   -> Function TemplateLoadingSystem.LoadingScreenSubsystem.StartLoadingScreen
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -57,7 +57,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0083A320
+	 * 		RVA    -> 0x0083A360
 	 * 		Name   -> Function TemplateLoadingSystem.LoadingScreenSubsystem.Get
 	 * 		Flags  -> (Final, Native, Static, Private)
 	 * Parameters:
@@ -96,7 +96,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0083A3D0
+	 * 		RVA    -> 0x0083A410
 	 * 		Name   -> Function TemplateLoadingSystem.LoadingWidgetBase.LoadingStarted
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -116,7 +116,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0083A3B0
+	 * 		RVA    -> 0x0083A3F0
 	 * 		Name   -> Function TemplateLoadingSystem.LoadingWidgetBase.LoadingFinished
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */

@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D23660
+	 * 		RVA    -> 0x03D22840
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.ToSoftObjectPath
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -51,7 +51,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D23340
+	 * 		RVA    -> 0x03D22520
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.SetFilterTagsAndValues
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -78,7 +78,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D22800
+	 * 		RVA    -> 0x03D219E0
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.IsValid
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -103,7 +103,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D22710
+	 * 		RVA    -> 0x03D218F0
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.IsUAsset
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -128,7 +128,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D22620
+	 * 		RVA    -> 0x03D21800
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.IsRedirector
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -153,7 +153,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D22500
+	 * 		RVA    -> 0x03D216E0
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.IsAssetLoaded
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -178,7 +178,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D22280
+	 * 		RVA    -> 0x03D21460
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.GetTagValue
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -209,7 +209,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D21FC0
+	 * 		RVA    -> 0x03D211A0
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.GetFullName
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -234,7 +234,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D21E80
+	 * 		RVA    -> 0x03D21060
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.GetExportTextName
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -259,7 +259,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D21D90
+	 * 		RVA    -> 0x03D20F70
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.GetClass
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -284,7 +284,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D214E0
+	 * 		RVA    -> 0x03D206C0
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.GetAssetRegistry
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -304,7 +304,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D212C0
+	 * 		RVA    -> 0x03D204A0
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.GetAsset
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -329,7 +329,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D20F60
+	 * 		RVA    -> 0x03D20140
 	 * 		Name   -> Function AssetRegistry.AssetRegistryHelpers.CreateAssetData
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -370,7 +370,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D237A0
+	 * 		RVA    -> 0x03D22980
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.UseFilterToExcludeAssets
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -397,7 +397,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D232B0
+	 * 		RVA    -> 0x03D22490
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.SearchAllAssets
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -420,7 +420,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D23180
+	 * 		RVA    -> 0x03D22360
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.ScanPathsSynchronous
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -445,7 +445,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D230B0
+	 * 		RVA    -> 0x03D22290
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.ScanModifiedAssetFiles
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -468,7 +468,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D22F80
+	 * 		RVA    -> 0x03D22160
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.ScanFilesSynchronous
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -493,7 +493,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D22C40
+	 * 		RVA    -> 0x03D21E20
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.RunAssetsThroughFilter
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -520,7 +520,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D22BA0
+	 * 		RVA    -> 0x03D21D80
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.PrioritizeSearchPath
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -543,7 +543,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D22A40
+	 * 		RVA    -> 0x03D21C20
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.K2_GetReferencers
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -574,7 +574,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D228F0
+	 * 		RVA    -> 0x03D21AD0
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.K2_GetDependencies
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -605,7 +605,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D225F0
+	 * 		RVA    -> 0x03D217D0
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.IsLoadingAssets
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -627,7 +627,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D22430
+	 * 		RVA    -> 0x03D21610
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.HasAssets
 	 * 		Flags  -> (Native, Public, BlueprintCallable, Const)
 	 * Parameters:
@@ -654,7 +654,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D22100
+	 * 		RVA    -> 0x03D212E0
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.GetSubPaths
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -683,7 +683,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D21BA0
+	 * 		RVA    -> 0x03D20D80
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.GetAssetsByPath
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -716,7 +716,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D21A00
+	 * 		RVA    -> 0x03D20BE0
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.GetAssetsByPackageName
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -747,7 +747,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D21860
+	 * 		RVA    -> 0x03D20A40
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.GetAssetsByClass
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -778,7 +778,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D21520
+	 * 		RVA    -> 0x03D20700
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.GetAssets
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -807,7 +807,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D213B0
+	 * 		RVA    -> 0x03D20590
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.GetAssetByObjectPath
 	 * 		Flags  -> (Native, Public, BlueprintCallable, Const)
 	 * Parameters:
@@ -834,7 +834,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D211F0
+	 * 		RVA    -> 0x03D203D0
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.GetAllCachedPaths
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -859,7 +859,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03D21090
+	 * 		RVA    -> 0x03D20270
 	 * 		Name   -> Function AssetRegistry.AssetRegistry.GetAllAssets
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:

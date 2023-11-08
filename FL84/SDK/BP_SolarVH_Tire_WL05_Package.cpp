@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function BP_SolarVH_Tire_WL05.BP_SolarVH_Tire_WL05_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function BP_SolarVH_Tire_WL05.BP_SolarVH_Tire_WL05_C.ExecuteUbergraph_BP_SolarVH_Tire_WL05
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF05E0
+	 * 		RVA    -> 0x03DEF7C0
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureProtocolBase.IsCapturing
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03847CC0
+	 * 		RVA    -> 0x03846EA0
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureProtocolBase.GetState
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -252,7 +252,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF08D0
+	 * 		RVA    -> 0x03DEFAB0
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCapture.SetImageCaptureProtocolType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -275,7 +275,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF0840
+	 * 		RVA    -> 0x03DEFA20
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCapture.SetAudioCaptureProtocolType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -298,7 +298,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF0590
+	 * 		RVA    -> 0x03DEF770
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCapture.GetImageCaptureProtocol
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -320,7 +320,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF04F0
+	 * 		RVA    -> 0x03DEF6D0
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCapture.GetAudioCaptureProtocol
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -370,7 +370,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF05B0
+	 * 		RVA    -> 0x03DEF790
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureEnvironment.IsCaptureInProgress
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -392,7 +392,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF0540
+	 * 		RVA    -> 0x03DEF720
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureEnvironment.GetCaptureFrameNumber
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -414,7 +414,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF0510
+	 * 		RVA    -> 0x03DEF6F0
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureEnvironment.GetCaptureElapsedTime
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -436,7 +436,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF0140
+	 * 		RVA    -> 0x03DEF320
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureEnvironment.FindImageCaptureProtocol
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -458,7 +458,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF0110
+	 * 		RVA    -> 0x03DEF2F0
 	 * 		Name   -> Function MovieSceneCapture.MovieSceneCaptureEnvironment.FindAudioCaptureProtocol
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -494,7 +494,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF0AE0
+	 * 		RVA    -> 0x03DEFCC0
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.StopCapturingFinalPixels
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -514,7 +514,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF0960
+	 * 		RVA    -> 0x03DEFB40
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.StartCapturingFinalPixels
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -537,7 +537,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF0680
+	 * 		RVA    -> 0x03DEF860
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.ResolveBuffer
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -562,7 +562,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnWarmUp
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -581,7 +581,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnTick
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -600,7 +600,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnStartCapture
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -619,7 +619,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF0650
+	 * 		RVA    -> 0x03DEF830
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnSetup
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -641,7 +641,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPreTick
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -660,7 +660,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPixelsReceived
 	 * 		Flags  -> (Event, Protected, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -686,7 +686,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPauseCapture
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -705,7 +705,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnFinalize
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -724,7 +724,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnCaptureFrame
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -743,7 +743,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF0620
+	 * 		RVA    -> 0x03DEF800
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnCanFinalize
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent, Const)
 	 */
@@ -765,7 +765,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.OnBeginFinalize
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -784,7 +784,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF0570
+	 * 		RVA    -> 0x03DEF750
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.GetCurrentFrameMetrics
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -806,7 +806,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF0170
+	 * 		RVA    -> 0x03DEF350
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedCaptureProtocol.GenerateFilename
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -845,7 +845,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF0B00
+	 * 		RVA    -> 0x03DEFCE0
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedImageCaptureProtocol.WriteImageToDisk
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -874,7 +874,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF0470
+	 * 		RVA    -> 0x03DEF650
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForCurrentFrame
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -896,7 +896,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DF0260
+	 * 		RVA    -> 0x03DEF440
 	 * 		Name   -> Function MovieSceneCapture.UserDefinedImageCaptureProtocol.GenerateFilenameForBuffer
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

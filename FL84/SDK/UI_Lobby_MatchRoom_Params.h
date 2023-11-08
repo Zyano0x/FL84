@@ -15,9 +15,9 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.OnClicked_23397D41406E71F20F80C89D59947F32
+	 * DelegateFunction UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.OnClicked_0EAE309B4FCC1565DC2324A3C6556152
 	 */
-	struct UUI_Lobby_MatchRoom_C_OnClicked_23397D41406E71F20F80C89D59947F32_Params
+	struct UUI_Lobby_MatchRoom_C_OnClicked_0EAE309B4FCC1565DC2324A3C6556152_Params
 	{	};
 
 	/**
@@ -27,15 +27,15 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.OnInitialized
-	 */
-	struct UUI_Lobby_MatchRoom_C_OnInitialized_Params
-	{	};
-
-	/**
 	 * Function UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.Construct
 	 */
 	struct UUI_Lobby_MatchRoom_C_Construct_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.OnInitialized
+	 */
+	struct UUI_Lobby_MatchRoom_C_OnInitialized_Params
 	{	};
 
 	/**

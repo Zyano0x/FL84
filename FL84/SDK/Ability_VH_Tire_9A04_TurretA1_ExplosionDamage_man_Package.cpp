@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function Ability_VH_Tire_9A04_TurretA1_ExplosionDamage_man.Ability_VH_Tire_9A04_TurretA1_ExplosionDamage_man_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function Ability_VH_Tire_9A04_TurretA1_ExplosionDamage_man.Ability_VH_Tire_9A04_TurretA1_ExplosionDamage_man_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -53,7 +53,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function Ability_VH_Tire_9A04_TurretA1_ExplosionDamage_man.Ability_VH_Tire_9A04_TurretA1_ExplosionDamage_man_C.ExecuteUbergraph_Ability_VH_Tire_9A04_TurretA1_ExplosionDamage_man
 	 * 		Flags  -> (Final)
 	 * Parameters:

@@ -34,12 +34,12 @@ namespace CG
 		E_Type_State_Desktop                                       StateDesktop;                                            // 0x0450(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnClicked_99D13E6F43EDD0FD240D55A6D328D5C1();
-		void Construct();
-		void OnSolarUIClosed();
-		void OnInitialized();
-		void Destruct();
+		void OnClicked_23E705E846F8D02FAE67ACAF9141D27F();
 		void OnSolarUIOpened();
+		void OnInitialized();
+		void OnSolarUIClosed();
+		void Destruct();
+		void Construct();
 		class FString GetModuleName();
 		void SetStateDesktop(E_Type_State_Desktop StateHD);
 		void SetMsgText(unsigned char ChatType, const class FString& playerName, const class FString& Msg, class FString* OutputText);

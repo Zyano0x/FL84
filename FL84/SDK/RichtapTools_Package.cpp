@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B76490
+	 * 		RVA    -> 0x00B756A0
 	 * 		Name   -> Function RichtapTools.RichtapController.SetRichtapEnable
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -35,7 +35,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B76410
+	 * 		RVA    -> 0x00B75620
 	 * 		Name   -> Function RichtapTools.RichtapController.SetEnableWinRichtap
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -58,7 +58,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B76390
+	 * 		RVA    -> 0x00B755A0
 	 * 		Name   -> Function RichtapTools.RichtapController.SetEnableRichtap
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:

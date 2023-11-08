@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D97200
+	 * 		RVA    -> 0x01D96440
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetCollectionsContainingAssetPtr
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -37,7 +37,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D970C0
+	 * 		RVA    -> 0x01D96300
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetCollectionsContainingAssetData
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -62,7 +62,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D96FE0
+	 * 		RVA    -> 0x01D96220
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetCollectionsContainingAsset
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -87,7 +87,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D96F60
+	 * 		RVA    -> 0x01D961A0
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetCollections
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -109,7 +109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D96DD0
+	 * 		RVA    -> 0x01D96010
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetAssetsInCollection
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -134,7 +134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D96D30
+	 * 		RVA    -> 0x01D95F70
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.CollectionExists
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:

@@ -12,48 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.IsCanOpenMirror
-	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
-	 */
-	bool ABP_SolarLobbyCharacter_C::IsCanOpenMirror()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.IsCanOpenMirror"));
-		
-		ABP_SolarLobbyCharacter_C_IsCanOpenMirror_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.ClearCharacterByLua
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
-	 */
-	void ABP_SolarLobbyCharacter_C::ClearCharacterByLua()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.ClearCharacterByLua"));
-		
-		ABP_SolarLobbyCharacter_C_ClearCharacterByLua_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.InitCharacterByLua
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -72,7 +31,26 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.ClearCharacterByLua
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 */
+	void ABP_SolarLobbyCharacter_C::ClearCharacterByLua()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.ClearCharacterByLua"));
+		
+		ABP_SolarLobbyCharacter_C_ClearCharacterByLua_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.IsCanOpenChangeAnim
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */
@@ -94,7 +72,29 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.IsCanOpenMirror
+	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
+	 */
+	bool ABP_SolarLobbyCharacter_C::IsCanOpenMirror()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.IsCanOpenMirror"));
+		
+		ABP_SolarLobbyCharacter_C_IsCanOpenMirror_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -115,7 +115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -134,7 +134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.ExecuteUbergraph_BP_SolarLobbyCharacter
 	 * 		Flags  -> (Final)
 	 * Parameters:

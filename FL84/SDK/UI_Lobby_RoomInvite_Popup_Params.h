@@ -15,27 +15,27 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Delegate_6D3D6D96433D56574B5FD9B6D280E355
+	 * DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Delegate_257BA2E4401D20AEF310968CC4EE53D9
 	 */
-	struct UUI_Lobby_RoomInvite_Popup_C_Delegate_6D3D6D96433D56574B5FD9B6D280E355_Params
+	struct UUI_Lobby_RoomInvite_Popup_C_Delegate_257BA2E4401D20AEF310968CC4EE53D9_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_6A75F7CC449982DDDBE4FD8F1631F1CF
+	 * DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_A1D0FCCF4892234C795311B8817A78FE
 	 */
-	struct UUI_Lobby_RoomInvite_Popup_C_OnClicked_6A75F7CC449982DDDBE4FD8F1631F1CF_Params
+	struct UUI_Lobby_RoomInvite_Popup_C_OnClicked_A1D0FCCF4892234C795311B8817A78FE_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_86DFE1F6453C35F72017A79692C294BC
+	 * DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_46E616AD487DEAF1E1461B96E3AE8E87
 	 */
-	struct UUI_Lobby_RoomInvite_Popup_C_OnClicked_86DFE1F6453C35F72017A79692C294BC_Params
+	struct UUI_Lobby_RoomInvite_Popup_C_OnClicked_46E616AD487DEAF1E1461B96E3AE8E87_Params
 	{	};
 
 	/**
-	 * Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_4D9EC44D4274412EF22E44B59F45EC29
+	 * Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_36FB118F4F2F59E29F990D927862CC21
 	 */
-	struct UUI_Lobby_RoomInvite_Popup_C_OnClicked_4D9EC44D4274412EF22E44B59F45EC29_Params
+	struct UUI_Lobby_RoomInvite_Popup_C_OnClicked_36FB118F4F2F59E29F990D927862CC21_Params
 	{	};
 
 	/**

@@ -15,15 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Root.UI_Root_C.Construct
-	 */
-	struct UUI_Root_C_Construct_Params
-	{	};
-
-	/**
 	 * Function UI_Root.UI_Root_C.OnInitialized
 	 */
 	struct UUI_Root_C_OnInitialized_Params
+	{	};
+
+	/**
+	 * Function UI_Root.UI_Root_C.Construct
+	 */
+	struct UUI_Root_C_Construct_Params
 	{	};
 
 	/**

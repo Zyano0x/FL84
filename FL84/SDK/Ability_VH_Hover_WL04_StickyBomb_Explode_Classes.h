@@ -21,7 +21,7 @@ namespace CG
 	class AAbility_VH_Hover_WL04_StickyBomb_Explode_C : public ASolarAbility
 	{
 	public:
-		unsigned char                                              UnknownData_ZUV3[0x8];                                   // 0x0308(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_TKRY[0x8];                                   // 0x0308(0x0008) Fix Super Size
 		class UParticleSystemComponent*                            FX_Hover_WL04_Hit;                                       // 0x0310(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 
 	public:

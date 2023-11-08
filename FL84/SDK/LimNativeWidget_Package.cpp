@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00961450
+	 * 		RVA    -> 0x00961490
 	 * 		Name   -> Function LimNativeWidget.AudioPermissionHelperProxy.OnAndroidPermissionResult
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -37,7 +37,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0095FF20
+	 * 		RVA    -> 0x0095FF60
 	 * 		Name   -> Function LimNativeWidget.AudioPermissionHelperProxy.CheckIOSAudioPermission
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -59,7 +59,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0095FF20
+	 * 		RVA    -> 0x0095FF60
 	 * 		Name   -> Function LimNativeWidget.AudioPermissionHelperProxy.CheckAndroidAudioPermission
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -81,7 +81,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00909800
+	 * 		RVA    -> 0x00909840
 	 * 		Name   -> Function LimNativeWidget.AudioPermissionHelperProxy.AcquireIOSAudioPermission
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -101,7 +101,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00909800
+	 * 		RVA    -> 0x00909840
 	 * 		Name   -> Function LimNativeWidget.AudioPermissionHelperProxy.AcquireAndroidAudioPermission
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -135,7 +135,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00961F00
+	 * 		RVA    -> 0x00961F40
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.UpdateSelfPosition
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -158,7 +158,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00961E70
+	 * 		RVA    -> 0x00961EB0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.UpdateAudioRecvRange
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -181,7 +181,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.UnRegisterLuaEvent
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -200,7 +200,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00961E50
+	 * 		RVA    -> 0x00961E90
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.Uninit
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -220,7 +220,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00961D50
+	 * 		RVA    -> 0x00961D90
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.SwitchRoomCompatible
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -247,7 +247,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00961CA0
+	 * 		RVA    -> 0x00961CE0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.SwitchRoom
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -272,7 +272,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00961C10
+	 * 		RVA    -> 0x00961C50
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.SetRangeAudioTeamID
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -295,7 +295,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00961B90
+	 * 		RVA    -> 0x00961BD0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.SetRangeAudioMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -318,7 +318,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009618A0
+	 * 		RVA    -> 0x009618E0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.SetAudioSendAndRecvRules
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -347,7 +347,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00961800
+	 * 		RVA    -> 0x00961840
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.SelectSpeak
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -370,7 +370,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00961760
+	 * 		RVA    -> 0x009617A0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.SelectMic
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -393,7 +393,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00961740
+	 * 		RVA    -> 0x00961780
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.PreInit
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -413,7 +413,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.ChatGMEManager.OnUserVolumesDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -435,7 +435,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.ChatGMEManager.OnUserUpdateDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -457,7 +457,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.ChatGMEManager.OnRoomManagementOperatorDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -479,7 +479,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.ChatGMEManager.OnResultDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -501,7 +501,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.ChatGMEManager.OnRecordCompletedDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -523,7 +523,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.ChatGMEManager.OnNumberOfUsersUpdateDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -545,7 +545,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.ChatGMEManager.OnNumberOfAudioStreamsUpdateDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -567,7 +567,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.ChatGMEManager.OnNotifyFileInfoDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -589,7 +589,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.ChatGMEManager.OnNotifyDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -611,7 +611,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00961590
+	 * 		RVA    -> 0x009615D0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.OnGetAuthBuffer
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -636,7 +636,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.ChatGMEManager.OnDeviceChangedDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -658,7 +658,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.ChatGMEManager.OnChangeRoomTypeDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -680,7 +680,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.ChatGMEManager.OnChangeRoomQualityDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -702,7 +702,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.ChatGMEManager.OnAndroidPermissionResult__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -724,7 +724,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00961370
+	 * 		RVA    -> 0x009613B0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.MediaMute
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -749,7 +749,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00961340
+	 * 		RVA    -> 0x00961380
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.IsRoomEntered
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -771,7 +771,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00961310
+	 * 		RVA    -> 0x00961350
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.IsAudioSendEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -793,7 +793,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009612E0
+	 * 		RVA    -> 0x00961320
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.IsAudioRecvEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -815,7 +815,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009612B0
+	 * 		RVA    -> 0x009612F0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.IsAudioPlayDeviceEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -837,7 +837,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00961280
+	 * 		RVA    -> 0x009612C0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.IsAudioCaptureDeviceEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -859,7 +859,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960200
+	 * 		RVA    -> 0x00960240
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.InnerEnableMic
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -882,7 +882,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00961100
+	 * 		RVA    -> 0x00961140
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.InitGME
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -907,7 +907,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960F70
+	 * 		RVA    -> 0x00960FB0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.Init
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -934,7 +934,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960F40
+	 * 		RVA    -> 0x00960F80
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GetSpeakerState
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -956,7 +956,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960EF0
+	 * 		RVA    -> 0x00960F30
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GetSpeakerList
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -978,7 +978,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960E70
+	 * 		RVA    -> 0x00960EB0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GetRecordingLocalFilePath
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1000,7 +1000,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960E40
+	 * 		RVA    -> 0x00960E80
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GetMicState
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1022,7 +1022,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960DF0
+	 * 		RVA    -> 0x00960E30
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GetMicList
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1044,7 +1044,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960DC0
+	 * 		RVA    -> 0x00960E00
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1066,7 +1066,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960CC0
+	 * 		RVA    -> 0x00960D00
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GameUploadRecordedFileCompatible
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1091,7 +1091,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960C20
+	 * 		RVA    -> 0x00960C60
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GameUploadRecordedFile
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1114,7 +1114,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960C00
+	 * 		RVA    -> 0x00960C40
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GameStopRecording
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1134,7 +1134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960BE0
+	 * 		RVA    -> 0x00960C20
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GameStopPlayFile
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1154,7 +1154,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960B40
+	 * 		RVA    -> 0x00960B80
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GameStartRecording
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1177,7 +1177,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960AA0
+	 * 		RVA    -> 0x00960AE0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GameSetSpeakerVolume
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1202,7 +1202,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960A00
+	 * 		RVA    -> 0x00960A40
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GameSetMicVolume
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1227,7 +1227,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009609E0
+	 * 		RVA    -> 0x00960A20
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GameResumeRecording
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1247,7 +1247,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960940
+	 * 		RVA    -> 0x00960980
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GamePlayRecordedFile
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1270,7 +1270,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960920
+	 * 		RVA    -> 0x00960960
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GamePauseRecording
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1290,7 +1290,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960870
+	 * 		RVA    -> 0x009608B0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GameGetVoiceFileDuration
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1315,7 +1315,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960840
+	 * 		RVA    -> 0x00960880
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GameGetSpeakerVolume
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1337,7 +1337,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960810
+	 * 		RVA    -> 0x00960850
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GameGetSpeakerLevel
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1359,7 +1359,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009607E0
+	 * 		RVA    -> 0x00960820
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GameGetMicVolume
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1381,7 +1381,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009607B0
+	 * 		RVA    -> 0x009607F0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GameGetMicLevel
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1403,7 +1403,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960660
+	 * 		RVA    -> 0x009606A0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GameDownloadRecordedFileeCompatible
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1430,7 +1430,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960560
+	 * 		RVA    -> 0x009605A0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GameDownloadRecordedFile
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1455,7 +1455,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960540
+	 * 		RVA    -> 0x00960580
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.GameCancleRecording
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1475,7 +1475,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960510
+	 * 		RVA    -> 0x00960550
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.ExitRoom
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1497,7 +1497,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960410
+	 * 		RVA    -> 0x00960450
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.EnterRoomCompatible
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1524,7 +1524,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960320
+	 * 		RVA    -> 0x00960360
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.EnterRoom
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1551,7 +1551,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960290
+	 * 		RVA    -> 0x009602D0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.EnableSpeaker
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1574,7 +1574,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960200
+	 * 		RVA    -> 0x00960240
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.EnableMic
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1597,7 +1597,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960170
+	 * 		RVA    -> 0x009601B0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.EnableAudioSend
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1620,7 +1620,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009600E0
+	 * 		RVA    -> 0x00960120
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.EnableAudioRecv
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1643,7 +1643,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00960050
+	 * 		RVA    -> 0x00960090
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.EnableAudioPlayDevice
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1666,7 +1666,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0095FFC0
+	 * 		RVA    -> 0x00960000
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.EnableAudioCaptureDevice
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1689,7 +1689,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0095FFA0
+	 * 		RVA    -> 0x0095FFE0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.DestroyInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1709,7 +1709,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0095FF80
+	 * 		RVA    -> 0x0095FFC0
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.DeleteCacheFiles
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1729,7 +1729,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0095FF50
+	 * 		RVA    -> 0x0095FF90
 	 * 		Name   -> Function LimNativeWidget.ChatGMEManager.CheckPlatformMicPermission
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1891,7 +1891,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.UnRegisterLuaEvent
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -1910,7 +1910,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096A7B0
+	 * 		RVA    -> 0x0096A7F0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.UnInitChatManager
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1930,7 +1930,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096A660
+	 * 		RVA    -> 0x0096A6A0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.TranslateText
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -1957,7 +1957,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096A560
+	 * 		RVA    -> 0x0096A5A0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.SwitchConvTo
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1982,7 +1982,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096A4C0
+	 * 		RVA    -> 0x0096A500
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.SetCtxLanguage
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2005,7 +2005,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096A410
+	 * 		RVA    -> 0x0096A450
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.SetConvRead
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2028,7 +2028,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096A280
+	 * 		RVA    -> 0x0096A2C0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.SetConvMsgRead
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2057,7 +2057,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096A0A0
+	 * 		RVA    -> 0x0096A0E0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.SendVoiceMessageToConv
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2086,7 +2086,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00969EC0
+	 * 		RVA    -> 0x00969F00
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.SendTextMessageToConv
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2115,7 +2115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00969DC0
+	 * 		RVA    -> 0x00969E00
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.SendTextMessage
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2140,7 +2140,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00969680
+	 * 		RVA    -> 0x009696C0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.PostInitChatManager
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2165,7 +2165,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00969500
+	 * 		RVA    -> 0x00969540
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OpenChatUI
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2194,7 +2194,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnTextTranslateDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -2222,7 +2222,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnSendMessageCallBackDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2244,7 +2244,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnRedHintUpdateDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
@@ -2263,7 +2263,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnReceiveMessageDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2285,7 +2285,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnReceiveLogicMessageDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2309,7 +2309,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00909800
+	 * 		RVA    -> 0x00909840
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnOpenChatUI
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -2329,7 +2329,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnNewSendMessageCallBackDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2355,7 +2355,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnNewReceiveMessageDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2377,7 +2377,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00969350
+	 * 		RVA    -> 0x00969390
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnMiscConfigInfoHandle
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -2402,7 +2402,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00969110
+	 * 		RVA    -> 0x00969150
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnMessageSend
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -2427,7 +2427,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00968F20
+	 * 		RVA    -> 0x00968F60
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnMessageReceived
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -2452,7 +2452,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnLoginDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -2478,7 +2478,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00968DB0
+	 * 		RVA    -> 0x00968DF0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnLogin
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -2503,7 +2503,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00968C30
+	 * 		RVA    -> 0x00968C70
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnLogicMsgReceived
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -2528,7 +2528,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00968B00
+	 * 		RVA    -> 0x00968B40
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnLog
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -2553,7 +2553,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnInputBoxStateChangeDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -2583,7 +2583,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnGetUsersStateCallBackDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
@@ -2602,7 +2602,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnGetUsersCallBackDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2624,7 +2624,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009688E0
+	 * 		RVA    -> 0x00968920
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnGetUserListState
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -2649,7 +2649,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00968610
+	 * 		RVA    -> 0x00968650
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnGetUserListInfo
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -2674,7 +2674,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009684B0
+	 * 		RVA    -> 0x009684F0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnGetUserInfo
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -2699,7 +2699,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnGetUserCallBackDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2721,7 +2721,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009682D0
+	 * 		RVA    -> 0x00968310
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnGetTextTranslateHandle
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -2746,7 +2746,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009681C0
+	 * 		RVA    -> 0x00968200
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnGetNetStatHandle
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -2771,7 +2771,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnGetNetStatDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -2793,7 +2793,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00968000
+	 * 		RVA    -> 0x00968040
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnGetMessageInRange
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -2818,7 +2818,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnGetMessageDataDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -2844,7 +2844,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnGetFriendsCallBackDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -2866,7 +2866,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00967D30
+	 * 		RVA    -> 0x00967D70
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnGetFriends
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -2891,7 +2891,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00967BB0
+	 * 		RVA    -> 0x00967BF0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnGetConnStateHandle
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -2916,7 +2916,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnGetConnStatDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -2940,7 +2940,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnConvsGetDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -2962,7 +2962,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00967A40
+	 * 		RVA    -> 0x00967A80
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnConvRead
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -2987,7 +2987,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00967800
+	 * 		RVA    -> 0x00967840
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnConvListGet
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -3012,7 +3012,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnConvHandleDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -3036,7 +3036,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00967650
+	 * 		RVA    -> 0x00967690
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnConvHandle
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -3061,7 +3061,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00967480
+	 * 		RVA    -> 0x009674C0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.OnConvChatLevelConfig
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -3086,7 +3086,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnConfigInfoHandleDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -3110,7 +3110,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.LimChatManager.OnConfigGetChatLevlDynamicDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -3132,7 +3132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00967460
+	 * 		RVA    -> 0x009674A0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.Logout
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -3152,7 +3152,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00967260
+	 * 		RVA    -> 0x009672A0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.Login
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3183,7 +3183,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00966EA0
+	 * 		RVA    -> 0x00966EE0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.InitChatManager
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3210,7 +3210,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00966DD0
+	 * 		RVA    -> 0x00966E10
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetUserListState
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3233,7 +3233,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00966C60
+	 * 		RVA    -> 0x00966CA0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetUserListInfo
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3256,7 +3256,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00966BC0
+	 * 		RVA    -> 0x00966C00
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetUserInfo
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3279,7 +3279,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00966BA0
+	 * 		RVA    -> 0x00966BE0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetMiscConfigInfo
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -3299,7 +3299,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00966A10
+	 * 		RVA    -> 0x00966A50
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetMessageInRange
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -3328,7 +3328,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00966960
+	 * 		RVA    -> 0x009669A0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetMessage
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3351,7 +3351,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009668E0
+	 * 		RVA    -> 0x00966920
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetLimSlssvrTest
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3373,7 +3373,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00966860
+	 * 		RVA    -> 0x009668A0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetLimSlssvrDomesticTest
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3395,7 +3395,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009667E0
+	 * 		RVA    -> 0x00966820
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetLimSlssvrDomestic
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3417,7 +3417,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00966760
+	 * 		RVA    -> 0x009667A0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetLimSlssvr
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3439,7 +3439,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009666E0
+	 * 		RVA    -> 0x00966720
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetLimSDKRegionDomestic
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3461,7 +3461,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00966660
+	 * 		RVA    -> 0x009666A0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetLimSDKRegion
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3483,7 +3483,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00966630
+	 * 		RVA    -> 0x00966670
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetLimGameID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3505,7 +3505,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00966600
+	 * 		RVA    -> 0x00966640
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3527,7 +3527,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009665E0
+	 * 		RVA    -> 0x00966620
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetFriendList
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -3547,7 +3547,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009665B0
+	 * 		RVA    -> 0x009665F0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetFarlightDomainDomestic
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3569,7 +3569,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00966580
+	 * 		RVA    -> 0x009665C0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetFarlightDomain
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3591,7 +3591,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00966330
+	 * 		RVA    -> 0x00966370
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetConvMessage
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3620,7 +3620,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00966310
+	 * 		RVA    -> 0x00966350
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetConvList
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -3640,7 +3640,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009662F0
+	 * 		RVA    -> 0x00966330
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetConvChatLevelConfig
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -3660,7 +3660,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009662D0
+	 * 		RVA    -> 0x00966310
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.GetConnState
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -3680,7 +3680,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009661A0
+	 * 		RVA    -> 0x009661E0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.DiscardConv
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3705,7 +3705,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00966180
+	 * 		RVA    -> 0x009661C0
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.DestroyInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3725,7 +3725,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009660C0
+	 * 		RVA    -> 0x00966100
 	 * 		Name   -> Function LimNativeWidget.LimChatManager.CheckTargetIsContainIn
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -3764,7 +3764,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096BA90
+	 * 		RVA    -> 0x0096BAD0
 	 * 		Name   -> Function LimNativeWidget.LimNativeWidgetSettings.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3800,7 +3800,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096C820
+	 * 		RVA    -> 0x0096C860
 	 * 		Name   -> Function LimNativeWidget.NertcManager.UpdateSelfPosition
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3825,7 +3825,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096C790
+	 * 		RVA    -> 0x0096C7D0
 	 * 		Name   -> Function LimNativeWidget.NertcManager.UpdateAudioRecvRange
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3848,7 +3848,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function LimNativeWidget.NertcManager.UnRegisterLuaEvent
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -3867,7 +3867,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096C770
+	 * 		RVA    -> 0x0096C7B0
 	 * 		Name   -> Function LimNativeWidget.NertcManager.Uninit
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -3887,7 +3887,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096C5C0
+	 * 		RVA    -> 0x0096C600
 	 * 		Name   -> Function LimNativeWidget.NertcManager.SwitchRoom
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3918,7 +3918,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096C510
+	 * 		RVA    -> 0x0096C550
 	 * 		Name   -> Function LimNativeWidget.NertcManager.SetSubscribeAudioOnlyBy
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3941,7 +3941,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096C460
+	 * 		RVA    -> 0x0096C4A0
 	 * 		Name   -> Function LimNativeWidget.NertcManager.SetSubscribeAudioBlocklist
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3964,7 +3964,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096C3B0
+	 * 		RVA    -> 0x0096C3F0
 	 * 		Name   -> Function LimNativeWidget.NertcManager.SetSubscribeAudioAllowlist
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3987,7 +3987,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096C320
+	 * 		RVA    -> 0x0096C360
 	 * 		Name   -> Function LimNativeWidget.NertcManager.SetRangeAudioTeamID
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4010,7 +4010,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096C2A0
+	 * 		RVA    -> 0x0096C2E0
 	 * 		Name   -> Function LimNativeWidget.NertcManager.SetRangeAudioMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4033,7 +4033,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096C210
+	 * 		RVA    -> 0x0096C250
 	 * 		Name   -> Function LimNativeWidget.NertcManager.SetClientRole
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4056,7 +4056,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00909800
+	 * 		RVA    -> 0x00909840
 	 * 		Name   -> Function LimNativeWidget.NertcManager.SetAudioSessionRestriction
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4076,7 +4076,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096C070
+	 * 		RVA    -> 0x0096C0B0
 	 * 		Name   -> Function LimNativeWidget.NertcManager.SetAudioSendAndRecvRules
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4105,7 +4105,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096BFD0
+	 * 		RVA    -> 0x0096C010
 	 * 		Name   -> Function LimNativeWidget.NertcManager.SelectSpeak
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4128,7 +4128,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096BF30
+	 * 		RVA    -> 0x0096BF70
 	 * 		Name   -> Function LimNativeWidget.NertcManager.SelectMic
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4151,7 +4151,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.NertcManager.OnUserRoomStateChange__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4175,7 +4175,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.NertcManager.OnUserInfoUpdateDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4197,7 +4197,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.NertcManager.OnNertcConnectionChange__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4221,7 +4221,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.NertcManager.OnLocalUserVolumeChanged__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4245,7 +4245,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.NertcManager.OnExitRoomDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4269,7 +4269,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.NertcManager.OnEnterRoomDelegate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4297,7 +4297,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.NertcManager.OnAudioDeviceStateChanged__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4319,7 +4319,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LimNativeWidget.NertcManager.OnAndroidPermissionResult__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4341,7 +4341,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096BEA0
+	 * 		RVA    -> 0x0096BEE0
 	 * 		Name   -> Function LimNativeWidget.NertcManager.MuteLocalStream
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4364,7 +4364,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096BDD0
+	 * 		RVA    -> 0x0096BE10
 	 * 		Name   -> Function LimNativeWidget.NertcManager.MediaMute
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4389,7 +4389,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096BDA0
+	 * 		RVA    -> 0x0096BDE0
 	 * 		Name   -> Function LimNativeWidget.NertcManager.IsRoomEntered
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4411,7 +4411,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096BD70
+	 * 		RVA    -> 0x0096BDB0
 	 * 		Name   -> Function LimNativeWidget.NertcManager.IsInRTCRoom
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4433,7 +4433,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096BC30
+	 * 		RVA    -> 0x0096BC70
 	 * 		Name   -> Function LimNativeWidget.NertcManager.InnerEnterRoom
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4460,7 +4460,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096B640
+	 * 		RVA    -> 0x0096B680
 	 * 		Name   -> Function LimNativeWidget.NertcManager.InnerEnableMic
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4483,7 +4483,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096BB90
+	 * 		RVA    -> 0x0096BBD0
 	 * 		Name   -> Function LimNativeWidget.NertcManager.Init
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4506,7 +4506,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096BB40
+	 * 		RVA    -> 0x0096BB80
 	 * 		Name   -> Function LimNativeWidget.NertcManager.GetSpeakerList
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4528,7 +4528,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096BAF0
+	 * 		RVA    -> 0x0096BB30
 	 * 		Name   -> Function LimNativeWidget.NertcManager.GetMicList
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4550,7 +4550,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096BAC0
+	 * 		RVA    -> 0x0096BB00
 	 * 		Name   -> Function LimNativeWidget.NertcManager.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -4572,7 +4572,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096B9F0
+	 * 		RVA    -> 0x0096BA30
 	 * 		Name   -> Function LimNativeWidget.NertcManager.GameSetSpeakerVolume
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4597,7 +4597,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096B950
+	 * 		RVA    -> 0x0096B990
 	 * 		Name   -> Function LimNativeWidget.NertcManager.GameSetMicVolume
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4622,7 +4622,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096B930
+	 * 		RVA    -> 0x0096B970
 	 * 		Name   -> Function LimNativeWidget.NertcManager.ExitRoom
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4642,7 +4642,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096B7F0
+	 * 		RVA    -> 0x0096B830
 	 * 		Name   -> Function LimNativeWidget.NertcManager.EnterRoom
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4669,7 +4669,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096B760
+	 * 		RVA    -> 0x0096B7A0
 	 * 		Name   -> Function LimNativeWidget.NertcManager.EnableSpeaker
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4692,7 +4692,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096B6D0
+	 * 		RVA    -> 0x0096B710
 	 * 		Name   -> Function LimNativeWidget.NertcManager.EnableRangeVoice
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4715,7 +4715,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096B640
+	 * 		RVA    -> 0x0096B680
 	 * 		Name   -> Function LimNativeWidget.NertcManager.EnableMic
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4738,7 +4738,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096B530
+	 * 		RVA    -> 0x0096B570
 	 * 		Name   -> Function LimNativeWidget.NertcManager.EnabelAudioIndication
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4765,7 +4765,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0096B510
+	 * 		RVA    -> 0x0096B550
 	 * 		Name   -> Function LimNativeWidget.NertcManager.DestroyInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */

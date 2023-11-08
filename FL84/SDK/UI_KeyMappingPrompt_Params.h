@@ -15,60 +15,54 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_3B18AEA748D0BC94A55A7C95C3E725FE
+	 * DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_0F6C92144F870E3E4F56858A7FCCF46C
 	 */
-	struct UUI_KeyMappingPrompt_C_OnInputDeviceChanged_3B18AEA748D0BC94A55A7C95C3E725FE_Params
+	struct UUI_KeyMappingPrompt_C_OnInputDeviceChanged_0F6C92144F870E3E4F56858A7FCCF46C_Params
 	{
 	public:
 		struct FInputDeviceProxy                                   InputDeviceProxy;                                        // 0x0000(0x000C)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_EAC59A254B6BD9DC6A2AB2841E4E5C89
+	 * DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_17C85B91478BCFD6205F60BDFC2DD0FD
 	 */
-	struct UUI_KeyMappingPrompt_C_OnInputMappingUpdate_EAC59A254B6BD9DC6A2AB2841E4E5C89_Params
+	struct UUI_KeyMappingPrompt_C_OnInputMappingUpdate_17C85B91478BCFD6205F60BDFC2DD0FD_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_618569A04EDE70942E0FB8BFE9A9B961
+	 * DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_FFD76035401DCA3110A96A890641B01C
 	 */
-	struct UUI_KeyMappingPrompt_C_OnInputDeviceChanged_618569A04EDE70942E0FB8BFE9A9B961_Params
+	struct UUI_KeyMappingPrompt_C_OnInputDeviceChanged_FFD76035401DCA3110A96A890641B01C_Params
 	{
 	public:
 		struct FInputDeviceProxy                                   InputDeviceProxy;                                        // 0x0000(0x000C)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_949B0B0D47016B1ECAA162AFEAB51540
+	 * DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_AADA585B45BD0201195463961CF27848
 	 */
-	struct UUI_KeyMappingPrompt_C_OnInputMappingUpdate_949B0B0D47016B1ECAA162AFEAB51540_Params
+	struct UUI_KeyMappingPrompt_C_OnInputMappingUpdate_AADA585B45BD0201195463961CF27848_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_AA9B2C7B4F9171E250C6C18CEE7E5124
+	 * DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_8E2579504242415EBEF7EFA277C27E28
 	 */
-	struct UUI_KeyMappingPrompt_C_OnInputDeviceChanged_AA9B2C7B4F9171E250C6C18CEE7E5124_Params
+	struct UUI_KeyMappingPrompt_C_OnInputDeviceChanged_8E2579504242415EBEF7EFA277C27E28_Params
 	{
 	public:
 		struct FInputDeviceProxy                                   InputDeviceProxy;                                        // 0x0000(0x000C)  (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_AE28FA464D84D9F3062135AD18B99769
+	 * DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_D27E20B44C5E37D2D68ADA972BA868FD
 	 */
-	struct UUI_KeyMappingPrompt_C_OnInputMappingUpdate_AE28FA464D84D9F3062135AD18B99769_Params
+	struct UUI_KeyMappingPrompt_C_OnInputMappingUpdate_D27E20B44C5E37D2D68ADA972BA868FD_Params
 	{	};
 
 	/**
 	 * Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.Destruct
 	 */
 	struct UUI_KeyMappingPrompt_C_Destruct_Params
-	{	};
-
-	/**
-	 * Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.Construct
-	 */
-	struct UUI_KeyMappingPrompt_C_Construct_Params
 	{	};
 
 	/**
@@ -84,6 +78,12 @@ namespace CG
 	 * Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInitialized
 	 */
 	struct UUI_KeyMappingPrompt_C_OnInitialized_Params
+	{	};
+
+	/**
+	 * Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.Construct
+	 */
+	struct UUI_KeyMappingPrompt_C_Construct_Params
 	{	};
 
 	/**
@@ -120,7 +120,7 @@ namespace CG
 	{
 	public:
 		bool                                                       bInEmpty;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-		unsigned char                                              UnknownData_C115[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_W84O[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -139,7 +139,7 @@ namespace CG
 	{
 	public:
 		E_KeyPromptStyle                                           Style;                                                   // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_3GZM[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_JAEH[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**

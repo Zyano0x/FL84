@@ -15,6 +15,12 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function Lobby_Script.Lobby_Script_C.ReceiveBeginPlayCopy
+	 */
+	struct ALobby_Script_C_ReceiveBeginPlayCopy_Params
+	{	};
+
+	/**
 	 * Function Lobby_Script.Lobby_Script_C.ReceiveEndPlay
 	 */
 	struct ALobby_Script_C_ReceiveEndPlay_Params
@@ -22,12 +28,6 @@ namespace CG
 	public:
 		EEndPlayReason                                             EndPlayReason;                                           // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
-
-	/**
-	 * Function Lobby_Script.Lobby_Script_C.ReceiveBeginPlayCopy
-	 */
-	struct ALobby_Script_C_ReceiveBeginPlayCopy_Params
-	{	};
 
 	/**
 	 * Function Lobby_Script.Lobby_Script_C.GetModuleName

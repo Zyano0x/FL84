@@ -24,7 +24,7 @@ namespace CG
 		struct FAnimNode_Root                                      AnimGraphNode_Root;                                      // 0x0268(0x0030) NativeAccessSpecifierPublic
 		struct FAnimNode_Slot                                      AnimGraphNode_Slot;                                      // 0x0298(0x0048) NativeAccessSpecifierPublic
 		int32_t                                                    PoseIndex;                                               // 0x02E0(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_WW4A[0xC];                                   // 0x02E4(0x000C) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_9O3P[0xC];                                   // 0x02E4(0x000C) MISSED OFFSET (PADDING)
 
 	public:
 		void ExecuteUbergraph_ABP_MCP_Skill_DuckRollingMesh(int32_t bpp__EntryPoint__pf);

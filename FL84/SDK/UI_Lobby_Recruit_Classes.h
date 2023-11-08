@@ -33,18 +33,18 @@ namespace CG
 		class USolarTextBlock*                                     Txt_Invite2;                                             // 0x0448(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class USolarTextBlock*                                     Txt_Recruit;                                             // 0x0450(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		bool                                                       Recruiting;                                              // 0x0458(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_94Z2[0x3];                                   // 0x0459(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_V78H[0x3];                                   // 0x0459(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    SizeW;                                                   // 0x045C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		int32_t                                                    SizeH;                                                   // 0x0460(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		E_Type_State_Desktop                                       StateDesktopInvite;                                      // 0x0464(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		E_Type_State_Desktop                                       StateDesktopRecruit;                                     // 0x0465(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnClicked_78E6CD0E43B9E390CD7C76ADDF6DB13A();
-		void OnClicked_111A44CA48B888B8E34DD2B967A106D8();
+		void OnClicked_C51664094BC3B4868B9E7BBAA3B0CB00();
+		void OnClicked_67DF9DD446BBBAD588FA1E8E9B92ADC1();
 		void Destruct();
-		void OnSolarUIClosed();
 		void OnSolarUIOpened();
+		void OnSolarUIClosed();
 		void ConstructCopy();
 		class FString GetModuleName();
 		void SetSize(int32_t SizeH, int32_t SizeW);

@@ -68,7 +68,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DAF200
+	 * 		RVA    -> 0x03DAE3E0
 	 * 		Name   -> Function ClothingSystemRuntimeInterface.ClothingSimulationInteractor.SetAnimDriveSpringStiffness
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -91,7 +91,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x026A09B0
+	 * 		RVA    -> 0x0269FBC0
 	 * 		Name   -> Function ClothingSystemRuntimeInterface.ClothingSimulationInteractor.PhysicsAssetUpdated
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -111,7 +111,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DAF170
+	 * 		RVA    -> 0x03DAE350
 	 * 		Name   -> Function ClothingSystemRuntimeInterface.ClothingSimulationInteractor.EnableGravityOverride
 	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -134,7 +134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02900AF0
+	 * 		RVA    -> 0x028FFD00
 	 * 		Name   -> Function ClothingSystemRuntimeInterface.ClothingSimulationInteractor.DisableGravityOverride
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -154,7 +154,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03833D50
+	 * 		RVA    -> 0x03832F30
 	 * 		Name   -> Function ClothingSystemRuntimeInterface.ClothingSimulationInteractor.ClothConfigUpdated
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */

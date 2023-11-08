@@ -12,46 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnInitialized
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Component_TeamNum_C::OnInitialized()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnInitialized"));
-		
-		UUI_Component_TeamNum_C_OnInitialized_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnSolarUIClosed
-	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
-	 */
-	void UUI_Component_TeamNum_C::OnSolarUIClosed()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnSolarUIClosed"));
-		
-		UUI_Component_TeamNum_C_OnSolarUIClosed_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnSolarUIOpened
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -71,7 +32,26 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnInitialized
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_Component_TeamNum_C::OnInitialized()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnInitialized"));
+		
+		UUI_Component_TeamNum_C_OnInitialized_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnShow
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -91,7 +71,27 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnSolarUIClosed
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 */
+	void UUI_Component_TeamNum_C::OnSolarUIClosed()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnSolarUIClosed"));
+		
+		UUI_Component_TeamNum_C_OnSolarUIClosed_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_TeamNum.UI_Component_TeamNum_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -112,7 +112,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_TeamNum.UI_Component_TeamNum_C.Set Team Num
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -134,7 +134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_TeamNum.UI_Component_TeamNum_C.SetSelected
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -156,7 +156,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_TeamNum.UI_Component_TeamNum_C.SetColor
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -178,7 +178,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_TeamNum.UI_Component_TeamNum_C.SetType
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -197,7 +197,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_TeamNum.UI_Component_TeamNum_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -219,7 +219,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_TeamNum.UI_Component_TeamNum_C.ExecuteUbergraph_UI_Component_TeamNum
 	 * 		Flags  -> (Final)
 	 * Parameters:

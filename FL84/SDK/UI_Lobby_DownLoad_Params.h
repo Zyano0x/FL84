@@ -15,15 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnClicked_81067EEF45EF75531A97009EDDA94C89
+	 * DelegateFunction UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnClicked_8A85330B433EC0A7AF613FB865C81B1D
 	 */
-	struct UUI_Lobby_DownLoad_C_OnClicked_81067EEF45EF75531A97009EDDA94C89_Params
+	struct UUI_Lobby_DownLoad_C_OnClicked_8A85330B433EC0A7AF613FB865C81B1D_Params
 	{	};
 
 	/**
-	 * Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnInitializedCopy
+	 * Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnSolarUIOpened
 	 */
-	struct UUI_Lobby_DownLoad_C_OnInitializedCopy_Params
+	struct UUI_Lobby_DownLoad_C_OnSolarUIOpened_Params
 	{	};
 
 	/**
@@ -33,9 +33,9 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnSolarUIOpened
+	 * Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnInitializedCopy
 	 */
-	struct UUI_Lobby_DownLoad_C_OnSolarUIOpened_Params
+	struct UUI_Lobby_DownLoad_C_OnInitializedCopy_Params
 	{	};
 
 	/**

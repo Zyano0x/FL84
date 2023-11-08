@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9BD30
+	 * 		RVA    -> 0x01D9AF70
 	 * 		Name   -> Function CableComponent.CableComponent.SetAttachEndToComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -51,7 +51,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9BC20
+	 * 		RVA    -> 0x01D9AE60
 	 * 		Name   -> Function CableComponent.CableComponent.SetAttachEndTo
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -78,7 +78,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9BB70
+	 * 		RVA    -> 0x01D9ADB0
 	 * 		Name   -> Function CableComponent.CableComponent.GetCableParticleLocations
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -103,7 +103,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9BB40
+	 * 		RVA    -> 0x01D9AD80
 	 * 		Name   -> Function CableComponent.CableComponent.GetAttachedComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -125,7 +125,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9BB10
+	 * 		RVA    -> 0x01D9AD50
 	 * 		Name   -> Function CableComponent.CableComponent.GetAttachedActor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

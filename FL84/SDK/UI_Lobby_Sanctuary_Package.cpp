@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Lobby_Sanctuary.UI_Lobby_Sanctuary_C.Destruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -31,46 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function UI_Lobby_Sanctuary.UI_Lobby_Sanctuary_C.OnSolarUIClosed
-	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
-	 */
-	void UUI_Lobby_Sanctuary_C::OnSolarUIClosed()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Sanctuary.UI_Lobby_Sanctuary_C.OnSolarUIClosed"));
-		
-		UUI_Lobby_Sanctuary_C_OnSolarUIClosed_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x02D64C70
-	 * 		Name   -> Function UI_Lobby_Sanctuary.UI_Lobby_Sanctuary_C.ConstructCopy
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Lobby_Sanctuary_C::ConstructCopy()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Sanctuary.UI_Lobby_Sanctuary_C.ConstructCopy"));
-		
-		UUI_Lobby_Sanctuary_C_ConstructCopy_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Lobby_Sanctuary.UI_Lobby_Sanctuary_C.OnSolarUIOpened
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -90,7 +51,46 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function UI_Lobby_Sanctuary.UI_Lobby_Sanctuary_C.OnSolarUIClosed
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 */
+	void UUI_Lobby_Sanctuary_C::OnSolarUIClosed()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Sanctuary.UI_Lobby_Sanctuary_C.OnSolarUIClosed"));
+		
+		UUI_Lobby_Sanctuary_C_OnSolarUIClosed_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D63E80
+	 * 		Name   -> Function UI_Lobby_Sanctuary.UI_Lobby_Sanctuary_C.ConstructCopy
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_Lobby_Sanctuary_C::ConstructCopy()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Sanctuary.UI_Lobby_Sanctuary_C.ConstructCopy"));
+		
+		UUI_Lobby_Sanctuary_C_ConstructCopy_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Lobby_Sanctuary.UI_Lobby_Sanctuary_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -111,7 +111,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Lobby_Sanctuary.UI_Lobby_Sanctuary_C.BP_RefreshSanctuaryUI
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -135,7 +135,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Lobby_Sanctuary.UI_Lobby_Sanctuary_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -157,7 +157,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Lobby_Sanctuary.UI_Lobby_Sanctuary_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -176,7 +176,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Lobby_Sanctuary.UI_Lobby_Sanctuary_C.ExecuteUbergraph_UI_Lobby_Sanctuary
 	 * 		Flags  -> (Final)
 	 * Parameters:

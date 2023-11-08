@@ -36,10 +36,10 @@ namespace CG
 		class UWidgetSwitcher*                                     WidgetSwitcher_Tournament;                               // 0x0460(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnClicked_D3BE780D4FDD35FDB067879F65AD1CA4();
+		void OnClicked_5993CE8D45D09D4154C8A8AEAD92A824();
 		void Destruct();
-		void Construct();
 		void OnInitialized();
+		void Construct();
 		class FString GetModuleName();
 		void PreConstruct(bool IsDesignTime);
 		void ExecuteUbergraph_UI_Lobby_Tournament(int32_t EntryPoint);

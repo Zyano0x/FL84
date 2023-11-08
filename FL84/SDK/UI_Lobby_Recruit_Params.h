@@ -15,15 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_78E6CD0E43B9E390CD7C76ADDF6DB13A
+	 * DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_C51664094BC3B4868B9E7BBAA3B0CB00
 	 */
-	struct UUI_Lobby_Recruit_C_OnClicked_78E6CD0E43B9E390CD7C76ADDF6DB13A_Params
+	struct UUI_Lobby_Recruit_C_OnClicked_C51664094BC3B4868B9E7BBAA3B0CB00_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_111A44CA48B888B8E34DD2B967A106D8
+	 * DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_67DF9DD446BBBAD588FA1E8E9B92ADC1
 	 */
-	struct UUI_Lobby_Recruit_C_OnClicked_111A44CA48B888B8E34DD2B967A106D8_Params
+	struct UUI_Lobby_Recruit_C_OnClicked_67DF9DD446BBBAD588FA1E8E9B92ADC1_Params
 	{	};
 
 	/**
@@ -33,15 +33,15 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnSolarUIClosed
-	 */
-	struct UUI_Lobby_Recruit_C_OnSolarUIClosed_Params
-	{	};
-
-	/**
 	 * Function UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnSolarUIOpened
 	 */
 	struct UUI_Lobby_Recruit_C_OnSolarUIOpened_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnSolarUIClosed
+	 */
+	struct UUI_Lobby_Recruit_C_OnSolarUIClosed_Params
 	{	};
 
 	/**
@@ -77,7 +77,7 @@ namespace CG
 	public:
 		E_Type_State_Desktop                                       StateDesktopInvite;                                      // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		E_Type_State_Desktop                                       StateDesktopRecruit;                                     // 0x0001(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_8B45[0x2];                                   // 0x0002(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_ST84[0x2];                                   // 0x0002(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**

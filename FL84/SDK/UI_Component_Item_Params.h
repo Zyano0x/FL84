@@ -15,13 +15,10 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Component_Item.UI_Component_Item_C.BP_OnItemSelectionChangedCopy
+	 * Function UI_Component_Item.UI_Component_Item_C.PlayEnterAnim
 	 */
-	struct UUI_Component_Item_C_BP_OnItemSelectionChangedCopy_Params
-	{
-	public:
-		bool                                                       bIsSelected;                                             // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	};
+	struct UUI_Component_Item_C_PlayEnterAnim_Params
+	{	};
 
 	/**
 	 * Function UI_Component_Item.UI_Component_Item_C.OnListItemObjectSetCopy
@@ -33,10 +30,13 @@ namespace CG
 	};
 
 	/**
-	 * Function UI_Component_Item.UI_Component_Item_C.PlayEnterAnim
+	 * Function UI_Component_Item.UI_Component_Item_C.BP_OnItemSelectionChangedCopy
 	 */
-	struct UUI_Component_Item_C_PlayEnterAnim_Params
-	{	};
+	struct UUI_Component_Item_C_BP_OnItemSelectionChangedCopy_Params
+	{
+	public:
+		bool                                                       bIsSelected;                                             // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	};
 
 	/**
 	 * Function UI_Component_Item.UI_Component_Item_C.GetModuleName

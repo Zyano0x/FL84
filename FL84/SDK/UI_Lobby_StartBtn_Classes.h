@@ -119,7 +119,7 @@ namespace CG
 		bool                                                       Ready;                                                   // 0x06EA(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       Disable;                                                 // 0x06EB(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       PC;                                                      // 0x06EC(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_BLPS[0x3];                                   // 0x06ED(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6CC8[0x3];                                   // 0x06ED(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FLinearColor                                        StartBtnLinearColorWordSolid;                            // 0x06F0(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FLinearColor                                        StartBtnLinearColorTimeSolid;                            // 0x0700(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FLinearColor                                        StartBtnLinearColorWordGreyout;                          // 0x0710(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -128,17 +128,17 @@ namespace CG
 		E_Type_State_Desktop                                       StateDesktopStart;                                       // 0x0725(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnClicked_471A09C94A5920C65D742F807F1FCC31();
-		void OnClicked_D11B462646F645A53234CE8E82209259();
-		void OnClicked_0D51964A40104BBF38677C9AE670BA70();
-		void OnClicked_11E2958F4FCB74419CB35990484E215F();
-		void OnClicked_B816F8704CD9EE066FB256B09908FB6D();
-		void OnClicked_43931B1B4BBB59475B001C96F7ABCDBF();
-		void OnClicked_2F49A2374C213E5D43D3BE8D8EDA3CE5();
+		void OnClicked_9810337B4848410C325E4BB8A05E1F0B();
+		void OnClicked_75752A4A43533465D2C1BBA58AB945B5();
+		void OnClicked_913A88E849C725C1A5DE1CB2F49C05C7();
+		void OnClicked_B13E006746909034205AE4BC813A3853();
+		void OnClicked_8E7F29F54A331884FC6257A41031F872();
+		void OnClicked_CA97B00D4C16620C831B66A5A5D90CF6();
+		void OnClicked_76A6C3AA485FB16E2094D0A53F547A32();
 		void Destruct();
-		void OnSolarUIClosed();
-		void OnSolarUIOpened();
 		void ConstructCopy();
+		void OnSolarUIOpened();
+		void OnSolarUIClosed();
 		class FString GetModuleName();
 		void SetStateDesktop(E_Type_State_Desktop StateDesktopStart, bool IsDesktop);
 		void UpdatePlatformBlendState(bool NewParam);

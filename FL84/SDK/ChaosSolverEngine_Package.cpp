@@ -68,7 +68,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x046EA250
+	 * 		RVA    -> 0x046E9470
 	 * 		Name   -> Function ChaosSolverEngine.ChaosSolverEngineBlueprintLibrary.ConvertPhysicsCollisionToHitResult
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -121,7 +121,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x046EA360
+	 * 		RVA    -> 0x046E9580
 	 * 		Name   -> Function ChaosSolverEngine.ChaosSolverActor.SetSolverActive
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -144,7 +144,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x046EA340
+	 * 		RVA    -> 0x046E9560
 	 * 		Name   -> Function ChaosSolverEngine.ChaosSolverActor.SetAsCurrentWorldSolver
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */

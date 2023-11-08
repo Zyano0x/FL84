@@ -21,15 +21,15 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Component_Mouse.UI_Component_Mouse_C.Construct
-	 */
-	struct UUI_Component_Mouse_C_Construct_Params
-	{	};
-
-	/**
 	 * Function UI_Component_Mouse.UI_Component_Mouse_C.OnInitialized
 	 */
 	struct UUI_Component_Mouse_C_OnInitialized_Params
+	{	};
+
+	/**
+	 * Function UI_Component_Mouse.UI_Component_Mouse_C.Construct
+	 */
+	struct UUI_Component_Mouse_C_Construct_Params
 	{	};
 
 	/**

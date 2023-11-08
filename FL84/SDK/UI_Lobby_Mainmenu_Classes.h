@@ -30,13 +30,13 @@ namespace CG
 		class USolarRedHint_General_C*                             RedHint_Warehouse;                                       // 0x0430(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnClicked_A7A85BA04CD795E1EEEE77A8BCB48C30();
-		void OnClicked_A80D89E14877A60DA15C68A65558B774();
-		void OnClicked_406BF8FF4351F1C8FE007292EF8E3985();
+		void OnClicked_5DFA0112438A6356A25291A8F67FBBED();
+		void OnClicked_C01224C840506574E9EDC2A45B152913();
+		void OnClicked_E8CA90AF401D24CBD5478BA3DCC28CCD();
 		void Destruct();
 		void OnSolarUIClosed();
-		void OnSolarUIOpened();
 		void Construct();
+		void OnSolarUIOpened();
 		class FString GetModuleName();
 		void PreConstruct(bool IsDesignTime);
 		void ExecuteUbergraph_UI_Lobby_Mainmenu(int32_t EntryPoint);

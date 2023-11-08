@@ -15,27 +15,27 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnInitialized
-	 */
-	struct UUI_Component_TeamNum_C_OnInitialized_Params
-	{	};
-
-	/**
-	 * Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnSolarUIClosed
-	 */
-	struct UUI_Component_TeamNum_C_OnSolarUIClosed_Params
-	{	};
-
-	/**
 	 * Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnSolarUIOpened
 	 */
 	struct UUI_Component_TeamNum_C_OnSolarUIOpened_Params
 	{	};
 
 	/**
+	 * Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnInitialized
+	 */
+	struct UUI_Component_TeamNum_C_OnInitialized_Params
+	{	};
+
+	/**
 	 * Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnShow
 	 */
 	struct UUI_Component_TeamNum_C_OnShow_Params
+	{	};
+
+	/**
+	 * Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnSolarUIClosed
+	 */
+	struct UUI_Component_TeamNum_C_OnSolarUIClosed_Params
 	{	};
 
 	/**

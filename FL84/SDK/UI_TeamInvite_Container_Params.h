@@ -15,12 +15,6 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnSolarUIClosed
-	 */
-	struct UUI_TeamInvite_Container_C_OnSolarUIClosed_Params
-	{	};
-
-	/**
 	 * Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnHide
 	 */
 	struct UUI_TeamInvite_Container_C_OnHide_Params
@@ -42,6 +36,12 @@ namespace CG
 	 * Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnShow
 	 */
 	struct UUI_TeamInvite_Container_C_OnShow_Params
+	{	};
+
+	/**
+	 * Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnSolarUIClosed
+	 */
+	struct UUI_TeamInvite_Container_C_OnSolarUIClosed_Params
 	{	};
 
 	/**

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D002A0
+	 * 		RVA    -> 0x01CFF4E0
 	 * 		Name   -> Function SLTA.SLTA_BPL.WriteTxt
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -39,7 +39,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D00220
+	 * 		RVA    -> 0x01CFF460
 	 * 		Name   -> Function SLTA.SLTA_BPL.SLTA_SetDetailMode
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -62,7 +62,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D001F0
+	 * 		RVA    -> 0x01CFF430
 	 * 		Name   -> Function SLTA.SLTA_BPL.SLTA_GetPrimitivesRHI
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -84,7 +84,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D00160
+	 * 		RVA    -> 0x01CFF3A0
 	 * 		Name   -> Function SLTA.SLTA_BPL.SLTA_GetLightMapIndex
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -109,7 +109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D000D0
+	 * 		RVA    -> 0x01CFF310
 	 * 		Name   -> Function SLTA.SLTA_BPL.SLTA_GetLightMapCoordinateBias
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -134,7 +134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D000A0
+	 * 		RVA    -> 0x01CFF2E0
 	 * 		Name   -> Function SLTA.SLTA_BPL.SLTA_GetDrawcalls
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -156,7 +156,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CFFFC0
+	 * 		RVA    -> 0x01CFF200
 	 * 		Name   -> Function SLTA.SLTA_BPL.SLTA_GetCustomPrimitiveData
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -181,7 +181,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CFFC40
+	 * 		RVA    -> 0x01CFEE80
 	 * 		Name   -> Function SLTA.SLTA_BPL.SLTA_ArrayToCSV
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -216,7 +216,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CFFB10
+	 * 		RVA    -> 0x01CFED50
 	 * 		Name   -> Function SLTA.SLTA_BPL.ReadTxt
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:

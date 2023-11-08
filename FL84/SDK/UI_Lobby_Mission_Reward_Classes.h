@@ -28,11 +28,11 @@ namespace CG
 		class USolarTextBlock*                                     Txt_GameRecommend;                                       // 0x0420(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnClicked_78B16D7449D058FC1A5BA4ADA54E7CF9();
-		void OnSolarUIClosed();
-		void ConstructCopy();
-		void Destruct();
+		void OnClicked_7D4963554D3D6BD794AC46944B155009();
 		void OnSolarUIOpened();
+		void OnSolarUIClosed();
+		void Destruct();
+		void ConstructCopy();
 		class FString GetModuleName();
 		void Construct();
 		void ExecuteUbergraph_UI_Lobby_Mission_Reward(int32_t EntryPoint);

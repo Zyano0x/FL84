@@ -31,10 +31,10 @@ namespace CG
 		E_Type_State_Desktop                                       StateDesktop;                                            // 0x0438(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnClicked_23397D41406E71F20F80C89D59947F32();
+		void OnClicked_0EAE309B4FCC1565DC2324A3C6556152();
 		void Destruct();
-		void OnInitialized();
 		void Construct();
+		void OnInitialized();
 		class FString GetModuleName();
 		void PreConstruct(bool IsDesignTime);
 		void ExecuteUbergraph_UI_Lobby_MatchRoom(int32_t EntryPoint);

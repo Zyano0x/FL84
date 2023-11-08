@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B4B9D0
+	 * 		RVA    -> 0x01B4AC10
 	 * 		Name   -> Function R_Weapon_B9A05_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_B9A05_Set00_LODP_Skeleton_AnimBlueprint_C.ExecuteUbergraph_R_Weapon_B9A05_Set00_LODP_Skeleton_AnimBlueprint
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -35,7 +35,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B49450
+	 * 		RVA    -> 0x01B48690
 	 * 		Name   -> Function R_Weapon_B9A05_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_B9A05_Set00_LODP_Skeleton_AnimBlueprint_C.AnimGraph
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

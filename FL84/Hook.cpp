@@ -78,9 +78,9 @@ void HOOKCALL hkSetAppearance(CG::ASolarCharacter* Character, int SkinID)
 
 	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(ZXC.PlayerController->K2_GetPawn());
 
-	if (Character == LocalCharacter)
+	if (Character == LocalCharacter && LocalCharacter->AssignedCharacterID == 100013)
 	{
-		SkinID = 120030;
+		SkinID = 130210;
 		return SetAppearance(Character, SkinID);
 	}
 	else
@@ -189,15 +189,14 @@ void Initialize()
 	GetShotDir = reinterpret_cast<tGetShotDir>(Signature(xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")).GetPointer());
 	Hook(GetShotDir, hkGetShotDir); // Silent Aim
 
-	//GetBulletSocketLocation = reinterpret_cast<tGetBulletSocketLocation>((uint64_t)LI_FN(GetModuleHandleW)(xorstr_(L"SolarlandClient-Win64-Shipping.exe")) + 0x2641930);
 	GetBulletSocketLocation = reinterpret_cast<tGetBulletSocketLocation>(Signature(xorstr_("48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 48 8B 01 48 8B DA 48 8B F9 FF 90 ? ? ? ? 48 8B F0 48 85 C0 0F")).GetPointer());
 	Hook(GetBulletSocketLocation, hkGetBulletSocketLocation); // Silent Shotgun
 
 	SetAppearance = reinterpret_cast<tSetAppearance>(Signature(xorstr_("40 55 53 57 48 8D 6C 24 F0 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 E0")).GetPointer());
 	Hook(SetAppearance, hkSetAppearance); // Skin
 
-	ProcessEvent = reinterpret_cast<tProcessEvent>(Signature(xorstr_("40 55 56 57 41 54 41 55 41 56 41 57 48 81 EC ? ? ? ? 48 8D 6C 24 ? 48 89 9D ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C5 48 89 85 ? ? ? ? 4C 8B E1")).GetPointer());
-	Hook(ProcessEvent, hkProcessEvent);
+	//ProcessEvent = reinterpret_cast<tProcessEvent>(Signature(xorstr_("40 55 56 57 41 54 41 55 41 56 41 57 48 81 EC ? ? ? ? 48 8D 6C 24 ? 48 89 9D ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C5 48 89 85 ? ? ? ? 4C 8B E1")).GetPointer());
+	//Hook(ProcessEvent, hkProcessEvent);
 
 #ifdef _DEBUG
 	ProcessRemoteFunction = reinterpret_cast<tProcessRemoteFunction>(Signature(xorstr_("4C 89 4C 24 ? 55 53 56 57 41 55 41 57")).GetPointer());
@@ -215,7 +214,7 @@ void Deallocate()
 	UnHook(GetShotDir, hkGetShotDir);
 	UnHook(GetBulletSocketLocation, hkGetBulletSocketLocation);
 	UnHook(SetAppearance, hkSetAppearance);
-	UnHook(ProcessEvent, hkProcessEvent);
+	//UnHook(ProcessEvent, hkProcessEvent);
 #ifdef _DEBUG
 	UnHook(ProcessRemoteFunction, hkProcessRemoteFunction);
 #endif

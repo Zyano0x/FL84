@@ -21,8 +21,8 @@ namespace CG
 	class UCustomMeshComponent : public UMeshComponent
 	{
 	public:
-		unsigned char                                              UnknownData_EF4K[0x8];                                   // 0x0578(0x0008) Fix Super Size
-		unsigned char                                              UnknownData_MIKY[0x10];                                  // 0x0580(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_Z1ZH[0x8];                                   // 0x0578(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_WSCH[0x10];                                  // 0x0580(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		bool SetCustomMeshTriangles(TArray<struct FCustomMeshTriangle> Triangles);

@@ -12,17 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5E720
-	 * 		Name   -> DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_34E35D0748EDD2B34A1D02B93B857BC0
+	 * 		RVA    -> 0x00B5D930
+	 * 		Name   -> DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_0EF606C447133BA916546DB0768EA4AB
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_Social_Entrance_C::OnClicked_34E35D0748EDD2B34A1D02B93B857BC0()
+	void UUI_Lobby_Social_Entrance_C::OnClicked_0EF606C447133BA916546DB0768EA4AB()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_34E35D0748EDD2B34A1D02B93B857BC0"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_0EF606C447133BA916546DB0768EA4AB"));
 		
-		UUI_Lobby_Social_Entrance_C_OnClicked_34E35D0748EDD2B34A1D02B93B857BC0_Params params {};
+		UUI_Lobby_Social_Entrance_C_OnClicked_0EF606C447133BA916546DB0768EA4AB_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -31,17 +31,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5E720
-	 * 		Name   -> DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_F97E9D5F4A611531FEA257AFB0FE88CC
+	 * 		RVA    -> 0x00B5D930
+	 * 		Name   -> DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_52CBF6FA45189F2578642BA195205B1A
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_Social_Entrance_C::OnClicked_F97E9D5F4A611531FEA257AFB0FE88CC()
+	void UUI_Lobby_Social_Entrance_C::OnClicked_52CBF6FA45189F2578642BA195205B1A()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_F97E9D5F4A611531FEA257AFB0FE88CC"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_52CBF6FA45189F2578642BA195205B1A"));
 		
-		UUI_Lobby_Social_Entrance_C_OnClicked_F97E9D5F4A611531FEA257AFB0FE88CC_Params params {};
+		UUI_Lobby_Social_Entrance_C_OnClicked_52CBF6FA45189F2578642BA195205B1A_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -50,17 +50,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5E720
-	 * 		Name   -> DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_293E63BA4A0064B0DD25E2BFB199B087
+	 * 		RVA    -> 0x00B5D930
+	 * 		Name   -> DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_08CC7383458A91B2083F20B3DAD90256
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_Social_Entrance_C::OnClicked_293E63BA4A0064B0DD25E2BFB199B087()
+	void UUI_Lobby_Social_Entrance_C::OnClicked_08CC7383458A91B2083F20B3DAD90256()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_293E63BA4A0064B0DD25E2BFB199B087"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_08CC7383458A91B2083F20B3DAD90256"));
 		
-		UUI_Lobby_Social_Entrance_C_OnClicked_293E63BA4A0064B0DD25E2BFB199B087_Params params {};
+		UUI_Lobby_Social_Entrance_C_OnClicked_08CC7383458A91B2083F20B3DAD90256_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -69,17 +69,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5E720
-	 * 		Name   -> DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_C48FBD5149BC59FAB1B1CDAB46823B37
+	 * 		RVA    -> 0x00B5D930
+	 * 		Name   -> DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_F03278524A1E412371206A92774ACE59
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_Social_Entrance_C::OnClicked_C48FBD5149BC59FAB1B1CDAB46823B37()
+	void UUI_Lobby_Social_Entrance_C::OnClicked_F03278524A1E412371206A92774ACE59()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_C48FBD5149BC59FAB1B1CDAB46823B37"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_F03278524A1E412371206A92774ACE59"));
 		
-		UUI_Lobby_Social_Entrance_C_OnClicked_C48FBD5149BC59FAB1B1CDAB46823B37_Params params {};
+		UUI_Lobby_Social_Entrance_C_OnClicked_F03278524A1E412371206A92774ACE59_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -88,17 +88,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5E720
-	 * 		Name   -> DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_F6DBFC3E4A4EE98B136A0EA7113D2613
+	 * 		RVA    -> 0x00B5D930
+	 * 		Name   -> DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_4DC584094CED3B31713F8E9EC584FD67
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_Social_Entrance_C::OnClicked_F6DBFC3E4A4EE98B136A0EA7113D2613()
+	void UUI_Lobby_Social_Entrance_C::OnClicked_4DC584094CED3B31713F8E9EC584FD67()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_F6DBFC3E4A4EE98B136A0EA7113D2613"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_4DC584094CED3B31713F8E9EC584FD67"));
 		
-		UUI_Lobby_Social_Entrance_C_OnClicked_F6DBFC3E4A4EE98B136A0EA7113D2613_Params params {};
+		UUI_Lobby_Social_Entrance_C_OnClicked_4DC584094CED3B31713F8E9EC584FD67_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -107,17 +107,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5E720
-	 * 		Name   -> DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_74D96BE647CB62F036742DBE0CC2CDDD
+	 * 		RVA    -> 0x00B5D930
+	 * 		Name   -> DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_4B29EBDE436C645E4AE5A0A41C5BA1EC
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_Social_Entrance_C::OnClicked_74D96BE647CB62F036742DBE0CC2CDDD()
+	void UUI_Lobby_Social_Entrance_C::OnClicked_4B29EBDE436C645E4AE5A0A41C5BA1EC()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_74D96BE647CB62F036742DBE0CC2CDDD"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_4B29EBDE436C645E4AE5A0A41C5BA1EC"));
 		
-		UUI_Lobby_Social_Entrance_C_OnClicked_74D96BE647CB62F036742DBE0CC2CDDD_Params params {};
+		UUI_Lobby_Social_Entrance_C_OnClicked_4B29EBDE436C645E4AE5A0A41C5BA1EC_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -126,26 +126,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
-	 * 		Name   -> Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.ConstructCopy
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Lobby_Social_Entrance_C::ConstructCopy()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.ConstructCopy"));
-		
-		UUI_Lobby_Social_Entrance_C_ConstructCopy_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnInitialized
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -164,26 +145,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.Destruct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Lobby_Social_Entrance_C::Destruct()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.Destruct"));
-		
-		UUI_Lobby_Social_Entrance_C_Destruct_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnSolarUIClosed
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -203,7 +165,45 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.Destruct
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_Lobby_Social_Entrance_C::Destruct()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.Destruct"));
+		
+		UUI_Lobby_Social_Entrance_C_Destruct_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D63E80
+	 * 		Name   -> Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.ConstructCopy
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_Lobby_Social_Entrance_C::ConstructCopy()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.ConstructCopy"));
+		
+		UUI_Lobby_Social_Entrance_C_ConstructCopy_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnSolarUIOpened
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -223,7 +223,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -244,7 +244,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.ShowGuide
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -266,7 +266,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -288,7 +288,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -307,7 +307,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.ExecuteUbergraph_UI_Lobby_Social_Entrance
 	 * 		Flags  -> (Final)
 	 * Parameters:

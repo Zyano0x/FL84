@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03A8A2F0
+	 * 		RVA    -> 0x03A894D0
 	 * 		Name   -> Function Landscape.LandscapeProxy.SetLandscapeMaterialVectorParameterValue
 	 * 		Flags  -> (Final, RequiredAPI, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -65,7 +65,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03A8A220
+	 * 		RVA    -> 0x03A89400
 	 * 		Name   -> Function Landscape.LandscapeProxy.SetLandscapeMaterialTextureParameterValue
 	 * 		Flags  -> (Final, RequiredAPI, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -90,7 +90,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03A8A150
+	 * 		RVA    -> 0x03A89330
 	 * 		Name   -> Function Landscape.LandscapeProxy.SetLandscapeMaterialScalarParameterValue
 	 * 		Flags  -> (Final, RequiredAPI, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -115,7 +115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00933690
+	 * 		RVA    -> 0x009336D0
 	 * 		Name   -> Function Landscape.LandscapeProxy.EditorSetLandscapeMaterial
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -138,7 +138,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03A89E10
+	 * 		RVA    -> 0x03A88FF0
 	 * 		Name   -> Function Landscape.LandscapeProxy.EditorApplySpline
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -181,7 +181,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x028EB820
+	 * 		RVA    -> 0x028EAA30
 	 * 		Name   -> Function Landscape.LandscapeProxy.ChangeUseTessellationComponentScreenSizeFalloff
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -204,7 +204,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0289C680
+	 * 		RVA    -> 0x0289B890
 	 * 		Name   -> Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSizeFalloff
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -227,7 +227,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0284E360
+	 * 		RVA    -> 0x0284D570
 	 * 		Name   -> Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSize
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -250,7 +250,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02819D20
+	 * 		RVA    -> 0x02818F30
 	 * 		Name   -> Function Landscape.LandscapeProxy.ChangeLODDistanceFactor
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -273,7 +273,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B771D0
+	 * 		RVA    -> 0x01B76410
 	 * 		Name   -> Function Landscape.LandscapeProxy.ChangeComponentScreenSizeToUseSubSections
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -324,7 +324,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00909800
+	 * 		RVA    -> 0x00909840
 	 * 		Name   -> Function Landscape.LandscapeBlueprintBrushBase.RequestLandscapeUpdate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -344,7 +344,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function Landscape.LandscapeBlueprintBrushBase.Render
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -372,7 +372,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function Landscape.LandscapeBlueprintBrushBase.Initialize
 	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintEvent)
 	 * Parameters:
@@ -398,7 +398,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function Landscape.LandscapeBlueprintBrushBase.GetBlueprintRenderDependencies
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -436,7 +436,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03A88610
+	 * 		RVA    -> 0x03A877F0
 	 * 		Name   -> Function Landscape.LandscapeComponent.GetMaterialInstanceDynamic
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -461,7 +461,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03A88530
+	 * 		RVA    -> 0x03A87710
 	 * 		Name   -> Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightByNameAtLocation
 	 * 		Flags  -> (Final, RequiredAPI, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -488,7 +488,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03A88450
+	 * 		RVA    -> 0x03A87630
 	 * 		Name   -> Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightAtLocation
 	 * 		Flags  -> (Final, RequiredAPI, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -585,7 +585,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03A886B0
+	 * 		RVA    -> 0x03A87890
 	 * 		Name   -> Function Landscape.LandscapeHeightfieldCollisionComponent.GetRenderComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -733,7 +733,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0281D650
+	 * 		RVA    -> 0x0281C860
 	 * 		Name   -> Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */

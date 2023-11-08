@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03A4DBA0
+	 * 		RVA    -> 0x03A4CD80
 	 * 		Name   -> Function Foliage.FoliageStatistics.FoliageOverlappingSphereCount
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -57,7 +57,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03A4DA60
+	 * 		RVA    -> 0x03A4CC40
 	 * 		Name   -> Function Foliage.FoliageStatistics.FoliageOverlappingBoxCount
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -156,7 +156,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03A4D840
+	 * 		RVA    -> 0x03A4CA20
 	 * 		Name   -> Function Foliage.InteractiveFoliageActor.CapsuleTouched
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -245,7 +245,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03A4DD00
+	 * 		RVA    -> 0x03A4CEE0
 	 * 		Name   -> Function Foliage.ProceduralFoliageSpawner.Simulate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:

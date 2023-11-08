@@ -15,27 +15,27 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.OnClicked_EC9779B7403C9519951EF29692995501
+	 * Function UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.OnClicked_12F527DE4D227465F729B1AE13A0984E
 	 */
-	struct UUI_Lobby_TeamInvite_Popup_C_OnClicked_EC9779B7403C9519951EF29692995501_Params
+	struct UUI_Lobby_TeamInvite_Popup_C_OnClicked_12F527DE4D227465F729B1AE13A0984E_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.OnClicked_8ECB7A8E4B18D01E5FD308BD466995E8
+	 * DelegateFunction UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.OnClicked_F035288B4F216D659BA60D8878770193
 	 */
-	struct UUI_Lobby_TeamInvite_Popup_C_OnClicked_8ECB7A8E4B18D01E5FD308BD466995E8_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.Construct
-	 */
-	struct UUI_Lobby_TeamInvite_Popup_C_Construct_Params
+	struct UUI_Lobby_TeamInvite_Popup_C_OnClicked_F035288B4F216D659BA60D8878770193_Params
 	{	};
 
 	/**
 	 * Function UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.Destruct
 	 */
 	struct UUI_Lobby_TeamInvite_Popup_C_Destruct_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.Construct
+	 */
+	struct UUI_Lobby_TeamInvite_Popup_C_Construct_Params
 	{	};
 
 	/**

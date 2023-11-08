@@ -32,11 +32,11 @@ namespace CG
 		E_TabLobbyItemState                                        StateHD;                                                 // 0x0440(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnURLDownloadFinish_B0CD748E409C3CA0AA95F2B3000E2186(bool bSuccess);
+		void OnURLDownloadFinish_93060E3F46F47D3F119D36942F9AF1C4(bool bSuccess);
+		void OnSolarUIOpened();
+		struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 		struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 		void OnSolarUIClosed();
-		struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-		void OnSolarUIOpened();
 		class FString GetModuleName();
 		void SetStateHD(E_TabLobbyItemState State);
 		void PreConstruct(bool IsDesignTime);

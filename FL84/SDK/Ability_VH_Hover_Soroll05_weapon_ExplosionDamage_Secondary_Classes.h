@@ -21,7 +21,7 @@ namespace CG
 	class AAbility_VH_Hover_Soroll05_weapon_ExplosionDamage_Secondary_C : public ASolarAbility
 	{
 	public:
-		unsigned char                                              UnknownData_EW2S[0x8];                                   // 0x0308(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_WUVV[0x8];                                   // 0x0308(0x0008) Fix Super Size
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0310(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		bool                                                       HasExploded;                                             // 0x0318(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 

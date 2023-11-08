@@ -21,7 +21,7 @@ namespace CG
 	class UBP_WL03_RotationAnim_C : public UCameraShake
 	{
 	public:
-		unsigned char                                              UnknownData_PHYE[0x8];                                   // 0x0158(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_EQKH[0x8];                                   // 0x0158(0x0008) Fix Super Size
 
 	public:
 		static UClass* StaticClass();

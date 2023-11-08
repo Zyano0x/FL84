@@ -31,8 +31,8 @@ namespace CG
 
 	public:
 		void Destruct();
-		void ConstructCopy();
 		void OnInitialized();
+		void ConstructCopy();
 		void OnSetHintDataCompleteCopy();
 		class FString GetModuleName();
 		void OnSetHintDataComplete();

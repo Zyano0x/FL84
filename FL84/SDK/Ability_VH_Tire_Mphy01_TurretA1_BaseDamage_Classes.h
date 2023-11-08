@@ -21,7 +21,7 @@ namespace CG
 	class AAbility_VH_Tire_Mphy01_TurretA1_BaseDamage_C : public ASolarAbility
 	{
 	public:
-		unsigned char                                              UnknownData_5UBL[0x8];                                   // 0x0308(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_F7RB[0x8];                                   // 0x0308(0x0008) Fix Super Size
 
 	public:
 		static UClass* StaticClass();

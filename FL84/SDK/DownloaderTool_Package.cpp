@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CD8DF0
+	 * 		RVA    -> 0x00CD8030
 	 * 		Name   -> Function DownloaderTool.DownloaderUtils.StringFileRawData
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -51,7 +51,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CD8BB0
+	 * 		RVA    -> 0x00CD7DF0
 	 * 		Name   -> Function DownloaderTool.DownloaderUtils.SaveResponseToCache
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -76,7 +76,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CD8A50
+	 * 		RVA    -> 0x00CD7C90
 	 * 		Name   -> Function DownloaderTool.DownloaderUtils.GetVerbFromJsonRequestStr
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -101,7 +101,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CD8800
+	 * 		RVA    -> 0x00CD7A40
 	 * 		Name   -> Function DownloaderTool.DownloaderUtils.GetResponseFromCache
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -128,7 +128,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CD8670
+	 * 		RVA    -> 0x00CD78B0
 	 * 		Name   -> Function DownloaderTool.DownloaderUtils.GetHeadersFromJsonRequestStr
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -153,7 +153,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CD8F70
+	 * 		RVA    -> 0x00CD81B0
 	 * 		Name   -> Function DownloaderTool.DownloaderUtils.execConvertRawDataToTexture
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -180,7 +180,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CD84F0
+	 * 		RVA    -> 0x00CD7730
 	 * 		Name   -> Function DownloaderTool.DownloaderUtils.DecodeFileRawData
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

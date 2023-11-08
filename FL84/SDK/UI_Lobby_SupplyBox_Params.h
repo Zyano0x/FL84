@@ -15,9 +15,9 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_SupplyBox.UI_Lobby_SupplyBox_C.OnClicked_583ABB684A6893C8BBA48AA3DD1A7D2F
+	 * DelegateFunction UI_Lobby_SupplyBox.UI_Lobby_SupplyBox_C.OnClicked_031F01D349CCC5B670A7CA8ED4F22D4E
 	 */
-	struct UUI_Lobby_SupplyBox_C_OnClicked_583ABB684A6893C8BBA48AA3DD1A7D2F_Params
+	struct UUI_Lobby_SupplyBox_C_OnClicked_031F01D349CCC5B670A7CA8ED4F22D4E_Params
 	{	};
 
 	/**
@@ -58,7 +58,7 @@ namespace CG
 	public:
 		int32_t                                                    State;                                                   // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       Claim;                                                   // 0x0004(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-		unsigned char                                              UnknownData_SZQH[0x3];                                   // 0x0005(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_KW2S[0x3];                                   // 0x0005(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**

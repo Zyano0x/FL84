@@ -12,36 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function UI_Marquees.UI_Marquees_C.Construct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Marquees_C::Construct()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Marquees.UI_Marquees_C.Construct"));
-		
-		UUI_Marquees_C_Construct_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function UI_Marquees.UI_Marquees_C.OnSolarUIClosed
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function UI_Marquees.UI_Marquees_C.OnSolarUIOpened
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
-	void UUI_Marquees_C::OnSolarUIClosed()
+	void UUI_Marquees_C::OnSolarUIOpened()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Marquees.UI_Marquees_C.OnSolarUIClosed"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Marquees.UI_Marquees_C.OnSolarUIOpened"));
 		
-		UUI_Marquees_C_OnSolarUIClosed_Params params {};
+		UUI_Marquees_C_OnSolarUIOpened_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
@@ -51,7 +32,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Marquees.UI_Marquees_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -75,17 +56,36 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function UI_Marquees.UI_Marquees_C.OnSolarUIOpened
-	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function UI_Marquees.UI_Marquees_C.Construct
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
-	void UUI_Marquees_C::OnSolarUIOpened()
+	void UUI_Marquees_C::Construct()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Marquees.UI_Marquees_C.OnSolarUIOpened"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Marquees.UI_Marquees_C.Construct"));
 		
-		UUI_Marquees_C_OnSolarUIOpened_Params params {};
+		UUI_Marquees_C_Construct_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function UI_Marquees.UI_Marquees_C.OnSolarUIClosed
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 */
+	void UUI_Marquees_C::OnSolarUIClosed()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Marquees.UI_Marquees_C.OnSolarUIClosed"));
+		
+		UUI_Marquees_C_OnSolarUIClosed_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
@@ -95,7 +95,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Marquees.UI_Marquees_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -116,7 +116,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Marquees.UI_Marquees_C.Tick
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -140,7 +140,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Marquees.UI_Marquees_C.ExecuteUbergraph_UI_Marquees
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

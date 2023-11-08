@@ -27,8 +27,6 @@ namespace CG
 		bool                                                       SelectType;                                              // 0x0418(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
-		void BP_OnItemSelectionChangedCopy(bool bIsSelected);
-		void OnListItemObjectSetCopy(class UObject* ListItemObject);
 		class FString GetModuleName();
 		void BP_OnEntryReleased();
 		void BP_OnItemExpansionChanged(bool bIsExpanded);

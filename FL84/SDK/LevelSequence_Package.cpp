@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDD020
+	 * 		RVA    -> 0x03DDC200
 	 * 		Name   -> Function LevelSequence.LevelSequence.RemoveMetaDataByClass
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -35,7 +35,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDC950
+	 * 		RVA    -> 0x03DDBB30
 	 * 		Name   -> Function LevelSequence.LevelSequence.FindOrAddMetaDataByClass
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -60,7 +60,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDC950
+	 * 		RVA    -> 0x03DDBB30
 	 * 		Name   -> Function LevelSequence.LevelSequence.FindMetaDataByClass
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -85,7 +85,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDC950
+	 * 		RVA    -> 0x03DDBB30
 	 * 		Name   -> Function LevelSequence.LevelSequence.CopyMetaData
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -124,7 +124,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDD750
+	 * 		RVA    -> 0x03DDC930
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.ShowBurnin
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -144,7 +144,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDD6C0
+	 * 		RVA    -> 0x03DDC8A0
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.SetSequence
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -167,7 +167,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDD630
+	 * 		RVA    -> 0x03DDC810
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.SetReplicatePlayback
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -190,7 +190,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDD4F0
+	 * 		RVA    -> 0x03DDC6D0
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.SetEventReceivers
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -213,7 +213,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDD2C0
+	 * 		RVA    -> 0x03DDC4A0
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.SetBindingByTag
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -240,7 +240,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDD160
+	 * 		RVA    -> 0x03DDC340
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.SetBinding
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -267,7 +267,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDD140
+	 * 		RVA    -> 0x03DDC320
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.ResetBindings
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -287,7 +287,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDD090
+	 * 		RVA    -> 0x03DDC270
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.ResetBinding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -310,7 +310,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDCF50
+	 * 		RVA    -> 0x03DDC130
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.RemoveBindingByTag
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -335,7 +335,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDCE50
+	 * 		RVA    -> 0x03DDC030
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.RemoveBinding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -360,7 +360,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction LevelSequence.LevelSequenceActor.OnLevelSequenceLoaded__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 */
@@ -379,7 +379,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDCDE0
+	 * 		RVA    -> 0x03DDBFC0
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.LoadSequence
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -401,7 +401,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDCDC0
+	 * 		RVA    -> 0x03DDBFA0
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.HideBurnin
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -421,7 +421,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDCD70
+	 * 		RVA    -> 0x03DDBF50
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.GetSequencePlayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -443,7 +443,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDCD20
+	 * 		RVA    -> 0x03DDBF00
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.GetSequence
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -465,7 +465,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDCC00
+	 * 		RVA    -> 0x03DDBDE0
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.FindNamedBindings
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -490,7 +490,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDCB50
+	 * 		RVA    -> 0x03DDBD30
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.FindNamedBinding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -515,7 +515,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDC840
+	 * 		RVA    -> 0x03DDBA20
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.AddBindingByTag
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -542,7 +542,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDC6F0
+	 * 		RVA    -> 0x03DDB8D0
 	 * 		Name   -> Function LevelSequence.LevelSequenceActor.AddBinding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -625,7 +625,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDD3F0
+	 * 		RVA    -> 0x03DDC5D0
 	 * 		Name   -> Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -662,7 +662,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function LevelSequence.LevelSequenceBurnIn.SetSettings
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -684,7 +684,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDCDA0
+	 * 		RVA    -> 0x03DDBF80
 	 * 		Name   -> Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent, Const)
 	 */
@@ -720,7 +720,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function LevelSequence.LevelSequenceDirector.OnCreated
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -767,7 +767,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDCCE0
+	 * 		RVA    -> 0x03DDBEC0
 	 * 		Name   -> Function LevelSequence.LevelSequencePlayer.GetActiveCameraComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -789,7 +789,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDC9D0
+	 * 		RVA    -> 0x03DDBBB0
 	 * 		Name   -> Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -836,7 +836,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDD770
+	 * 		RVA    -> 0x03DDC950
 	 * 		Name   -> Function LevelSequence.LevelSequenceMediaController.SynchronizeToServer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -859,7 +859,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDCE30
+	 * 		RVA    -> 0x03DDC010
 	 * 		Name   -> Function LevelSequence.LevelSequenceMediaController.Play
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -879,7 +879,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDCE10
+	 * 		RVA    -> 0x03DDBFF0
 	 * 		Name   -> Function LevelSequence.LevelSequenceMediaController.OnRep_ServerStartTimeSeconds
 	 * 		Flags  -> (Final, Native, Private)
 	 */
@@ -899,7 +899,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03DDCD50
+	 * 		RVA    -> 0x03DDBF30
 	 * 		Name   -> Function LevelSequence.LevelSequenceMediaController.GetSequence
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -921,7 +921,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03C827B0
+	 * 		RVA    -> 0x03C81990
 	 * 		Name   -> Function LevelSequence.LevelSequenceMediaController.GetMediaComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

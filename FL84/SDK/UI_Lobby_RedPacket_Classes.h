@@ -28,11 +28,11 @@ namespace CG
 		class UUI_Component_Close_C*                               UI_Component_Close;                                      // 0x0420(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnClicked_1C2F27A844E618A50E3F8D9CC511953E();
+		void OnClicked_98ACEF644FA69430CD0506BA61D0DDDC();
+		void Destruct();
+		void OnSolarUIOpened();
 		void Construct();
 		void OnSolarUIClosed();
-		void OnSolarUIOpened();
-		void Destruct();
 		class FString GetModuleName();
 		static UClass* StaticClass();
 	};

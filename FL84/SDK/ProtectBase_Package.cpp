@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CBFB90
+	 * 		RVA    -> 0x00CBEDD0
 	 * 		Name   -> Function ProtectBase.ProtectBaseComponent.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -62,7 +62,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CBFBC0
+	 * 		RVA    -> 0x00CBEE00
 	 * 		Name   -> Function ProtectBase.SecDSComponent.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */

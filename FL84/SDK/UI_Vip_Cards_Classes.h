@@ -35,8 +35,8 @@ namespace CG
 		int32_t                                                    Size_H;                                                  // 0x0450(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnClicked_24F247CE46D4AD3BA7CD49B08FEE4709();
-		void OnClicked_AA73CECF48FF618AD1A7F59AA072C574();
+		void OnClicked_58885FD44F8146EC7D89C1B4E3382524();
+		void OnClicked_32A2AD8549EC9850A09A139040259D5F();
 		class FString GetModuleName();
 		void SetCardType(int32_t CardType);
 		void PreConstruct(bool IsDesignTime);

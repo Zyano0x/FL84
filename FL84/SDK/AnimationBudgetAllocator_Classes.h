@@ -33,11 +33,11 @@ namespace CG
 	class USkeletalMeshComponentBudgeted : public USkeletalMeshComponent
 	{
 	public:
-		unsigned char                                              UnknownData_COW2[0x20];                                  // 0x0C20(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_05RS[0x20];                                  // 0x0C20(0x0020) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		bool                                                       bAutoRegisterWithBudgetAllocator : 1;                    // 0x0C40(0x0001) BIT_FIELD Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		bool                                                       bAutoCalculateSignificance : 1;                          // 0x0C40(0x0001) BIT_FIELD Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		bool                                                       bShouldUseActorRenderedFlag : 1;                         // 0x0C40(0x0001) BIT_FIELD Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_O8RQ[0xF];                                   // 0x0C41(0x000F) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_A3FU[0xF];                                   // 0x0C41(0x000F) MISSED OFFSET (PADDING)
 
 	public:
 		void SetAutoRegisterWithBudgetAllocator(bool bInAutoRegisterWithBudgetAllocator);

@@ -208,7 +208,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0082BD70
+	 * 		RVA    -> 0x0082BDB0
 	 * 		Name   -> Function ReplicationGraph.ReplicationGraphDebugActor.ServerStopDebugging
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer)
 	 */
@@ -228,7 +228,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0082BD50
+	 * 		RVA    -> 0x0082BD90
 	 * 		Name   -> Function ReplicationGraph.ReplicationGraphDebugActor.ServerStartDebugging
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer)
 	 */
@@ -248,7 +248,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0082BC80
+	 * 		RVA    -> 0x0082BCC0
 	 * 		Name   -> Function ReplicationGraph.ReplicationGraphDebugActor.ServerSetPeriodFrameForClass
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer)
 	 * Parameters:
@@ -273,7 +273,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0082BBA0
+	 * 		RVA    -> 0x0082BBE0
 	 * 		Name   -> Function ReplicationGraph.ReplicationGraphDebugActor.ServerSetCullDistanceForClass
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer)
 	 * Parameters:
@@ -298,7 +298,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0082BB10
+	 * 		RVA    -> 0x0082BB50
 	 * 		Name   -> Function ReplicationGraph.ReplicationGraphDebugActor.ServerSetConditionalActorBreakpoint
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer)
 	 * Parameters:
@@ -321,7 +321,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0082BAF0
+	 * 		RVA    -> 0x0082BB30
 	 * 		Name   -> Function ReplicationGraph.ReplicationGraphDebugActor.ServerPrintCullDistances
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer)
 	 */
@@ -341,7 +341,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0082BA50
+	 * 		RVA    -> 0x0082BA90
 	 * 		Name   -> Function ReplicationGraph.ReplicationGraphDebugActor.ServerPrintAllActorInfo
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer)
 	 * Parameters:
@@ -364,7 +364,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0082BA30
+	 * 		RVA    -> 0x0082BA70
 	 * 		Name   -> Function ReplicationGraph.ReplicationGraphDebugActor.ServerCellInfo
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer)
 	 */
@@ -384,7 +384,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0082B8E0
+	 * 		RVA    -> 0x0082B920
 	 * 		Name   -> Function ReplicationGraph.ReplicationGraphDebugActor.ClientCellInfo
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, HasDefaults, NetClient)
 	 * Parameters:

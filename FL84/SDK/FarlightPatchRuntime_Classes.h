@@ -42,7 +42,7 @@ namespace CG
 	class UPakReader : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_L06E[0x28];                                  // 0x0028(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_GNYP[0x28];                                  // 0x0028(0x0028) MISSED OFFSET (PADDING)
 
 	public:
 		int64_t GetTotalSize();
@@ -58,7 +58,7 @@ namespace CG
 	class UPakWriter : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_H27S[0x98];                                  // 0x0028(0x0098) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_58VW[0x98];                                  // 0x0028(0x0098) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

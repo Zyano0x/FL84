@@ -21,10 +21,10 @@ namespace CG
 	class UGeometryCache : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_SDQX[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_B898[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UMaterialInterface*>                          Materials;                                               // 0x0030(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<class UGeometryCacheTrack*>                         Tracks;                                                  // 0x0040(0x0010) Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_8MLE[0x10];                                  // 0x0050(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6U49[0x10];                                  // 0x0050(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    StartFrame;                                              // 0x0060(0x0004) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		int32_t                                                    EndFrame;                                                // 0x0064(0x0004) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 
@@ -67,7 +67,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    DummyProperty;                                           // 0x0038(0x0004) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_HZ5X[0x4];                                   // 0x003C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_33P5[0x4];                                   // 0x003C(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -80,7 +80,7 @@ namespace CG
 	class UGeometryCacheCodecV1 : public UGeometryCacheCodecBase
 	{
 	public:
-		unsigned char                                              UnknownData_9GIQ[0x8];                                   // 0x0038(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_TP5V[0x8];                                   // 0x0038(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -96,15 +96,15 @@ namespace CG
 		class UGeometryCache*                                      GeometryCache;                                           // 0x0578(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bRunning;                                                // 0x0580(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		bool                                                       bLooping;                                                // 0x0581(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_TQ0F[0x2];                                   // 0x0582(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_KASE[0x2];                                   // 0x0582(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      StartTimeOffset;                                         // 0x0584(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		float                                                      PlaybackSpeed;                                           // 0x0588(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		int32_t                                                    NumTracks;                                               // 0x058C(0x0004) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		float                                                      ElapsedTime;                                             // 0x0590(0x0004) Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_2L5C[0x30];                                  // 0x0594(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_RRJI[0x30];                                  // 0x0594(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      Duration;                                                // 0x05C4(0x0004) BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		bool                                                       bManualTick;                                             // 0x05C8(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_I4AL[0x7];                                   // 0x05C9(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_5892[0x7];                                   // 0x05C9(0x0007) MISSED OFFSET (PADDING)
 
 	public:
 		void TickAtThisTime(float Time, bool bInIsRunning, bool bInBackwards, bool bInIsLooping);
@@ -138,7 +138,7 @@ namespace CG
 	{
 	public:
 		float                                                      Duration;                                                // 0x0028(0x0004) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_C5MO[0x2C];                                  // 0x002C(0x002C) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_VA5M[0x2C];                                  // 0x002C(0x002C) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -152,7 +152,7 @@ namespace CG
 	{
 	public:
 		uint32_t                                                   NumMeshSamples;                                          // 0x0058(0x0004) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_EFP5[0x24];                                  // 0x005C(0x0024) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_GZ9Y[0x24];                                  // 0x005C(0x0024) MISSED OFFSET (PADDING)
 
 	public:
 		void AddMeshSample(const struct FGeometryCacheMeshData& MeshData, float SampleTime);
@@ -167,9 +167,9 @@ namespace CG
 	{
 	public:
 		class UGeometryCacheCodecBase*                             Codec;                                                   // 0x0058(0x0008) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_7PK4[0x68];                                  // 0x0060(0x0068) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_HET3[0x68];                                  // 0x0060(0x0068) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      StartSampleTime;                                         // 0x00C8(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_EC60[0x4];                                   // 0x00CC(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_O7I2[0x4];                                   // 0x00CC(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -182,7 +182,7 @@ namespace CG
 	class UGeometryCacheTrack_TransformAnimation : public UGeometryCacheTrack
 	{
 	public:
-		unsigned char                                              UnknownData_199K[0xA8];                                  // 0x0058(0x00A8) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_UU8U[0xA8];                                  // 0x0058(0x00A8) MISSED OFFSET (PADDING)
 
 	public:
 		void SetMesh(const struct FGeometryCacheMeshData& NewMeshData);
@@ -196,7 +196,7 @@ namespace CG
 	class UGeometryCacheTrack_TransformGroupAnimation : public UGeometryCacheTrack
 	{
 	public:
-		unsigned char                                              UnknownData_6J62[0xA8];                                  // 0x0058(0x00A8) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_EM10[0xA8];                                  // 0x0058(0x00A8) MISSED OFFSET (PADDING)
 
 	public:
 		void SetMesh(const struct FGeometryCacheMeshData& NewMeshData);

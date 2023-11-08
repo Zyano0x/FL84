@@ -95,13 +95,13 @@ namespace Aimbot
 	{
 		SPOOF_FUNC;
 
+		MouseController::Init();
+
 		int ScreenCenterX = ScreenWidth / 2;
 		int ScreenCenterY = ScreenHeight / 2;
 		float AimSpeed = (_profiler.gAimSmooth.Custom.flValue) * 2.f;
 		float TargetX = 0;
 		float TargetY = 0;
-
-		MouseController::Init();
 
 		if (Engine::IsKeyDown(_profiler.gAimKey.Custom.iValue) && _profiler.gAimMode.Custom.iValue == 0 && _profiler.gAimEnabled.Custom.bValue
 			|| Engine::IsKeyDown(_profiler.gAimKey.Custom.iValue) && _profiler.gAimMode.Custom.iValue == 2 && _profiler.gAimEnabled.Custom.bValue)
@@ -360,10 +360,10 @@ namespace Aimbot
 					CG::FVector2D TargetPosB;
 
 					// Calculate screen positions for targets 'a' and 'b'
-					if (!ZXC.PlayerController->ProjectWorldLocationToScreen(a.AimPosition, &TargetPosA, false))
+					if (!ZXC.GameplayStatics->STATIC_ProjectWorldToScreen(ZXC.PlayerController, a.AimPosition, &TargetPosA, false))
 						return false;
 
-					if (!ZXC.PlayerController->ProjectWorldLocationToScreen(b.AimPosition, &TargetPosB, false))
+					if (!ZXC.GameplayStatics->STATIC_ProjectWorldToScreen(ZXC.PlayerController, b.AimPosition, &TargetPosB, false))
 						return true;
 
 					float DistanceA = std::sqrt(std::pow(TargetPosA.X - (ScreenWidth / 2), 2) + std::pow(TargetPosA.Y - (ScreenHeight / 2), 2));

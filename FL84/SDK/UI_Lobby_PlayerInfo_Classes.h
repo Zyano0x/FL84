@@ -31,11 +31,11 @@ namespace CG
 		class UUI_Component_PlayerName_C*                          UI_Component_PlayerName;                                 // 0x0438(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnClicked_ADEC0AE54A433E0793B064A03452ACC3();
+		void OnClicked_F242A7F34229E7BB9792FABD95772101();
 		void Destruct();
+		void OnSolarUIOpened();
 		void OnSolarUIClosed();
 		void Construct();
-		void OnSolarUIOpened();
 		class FString GetModuleName();
 		static UClass* StaticClass();
 	};

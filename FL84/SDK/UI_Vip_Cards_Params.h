@@ -15,15 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_24F247CE46D4AD3BA7CD49B08FEE4709
+	 * DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_58885FD44F8146EC7D89C1B4E3382524
 	 */
-	struct UUI_Vip_Cards_C_OnClicked_24F247CE46D4AD3BA7CD49B08FEE4709_Params
+	struct UUI_Vip_Cards_C_OnClicked_58885FD44F8146EC7D89C1B4E3382524_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_AA73CECF48FF618AD1A7F59AA072C574
+	 * DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_32A2AD8549EC9850A09A139040259D5F
 	 */
-	struct UUI_Vip_Cards_C_OnClicked_AA73CECF48FF618AD1A7F59AA072C574_Params
+	struct UUI_Vip_Cards_C_OnClicked_32A2AD8549EC9850A09A139040259D5F_Params
 	{	};
 
 	/**

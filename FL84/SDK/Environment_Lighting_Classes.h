@@ -26,8 +26,8 @@ namespace CG
 		class ABP_Env_LitData_C*                                   BP_Env_LitData_2_ExecuteUbergraph_Environment_Lighting_RefProperty; // 0x0240(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void ReceiveBeginPlay();
 		void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+		void ReceiveBeginPlay();
 		class FString GetModuleName();
 		void SetLight(const class FString& SceneName);
 		void SetCardSkyLightData(float Indensity);

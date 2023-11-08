@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function FX_Widget_Buff_AbilityIncrease.FX_Widget_Buff_AbilityIncrease_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function FX_Widget_Buff_AbilityIncrease.FX_Widget_Buff_AbilityIncrease_C.ExecuteUbergraph_FX_Widget_Buff_AbilityIncrease
 	 * 		Flags  -> (Final)
 	 * Parameters:

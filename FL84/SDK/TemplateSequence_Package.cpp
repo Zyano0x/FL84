@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D80700
+	 * 		RVA    -> 0x01D7F940
 	 * 		Name   -> Function TemplateSequence.TemplateSequenceActor.SetSequence
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -63,7 +63,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D80670
+	 * 		RVA    -> 0x01D7F8B0
 	 * 		Name   -> Function TemplateSequence.TemplateSequenceActor.SetBinding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -86,7 +86,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D80640
+	 * 		RVA    -> 0x01D7F880
 	 * 		Name   -> Function TemplateSequence.TemplateSequenceActor.LoadSequence
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -108,7 +108,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D80610
+	 * 		RVA    -> 0x01D7F850
 	 * 		Name   -> Function TemplateSequence.TemplateSequenceActor.GetSequencePlayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -130,7 +130,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D805E0
+	 * 		RVA    -> 0x01D7F820
 	 * 		Name   -> Function TemplateSequence.TemplateSequenceActor.GetSequence
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -166,7 +166,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D80460
+	 * 		RVA    -> 0x01D7F6A0
 	 * 		Name   -> Function TemplateSequence.TemplateSequencePlayer.CreateTemplateSequencePlayer
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

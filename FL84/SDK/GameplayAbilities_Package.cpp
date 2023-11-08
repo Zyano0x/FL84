@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CE9F0
+	 * 		RVA    -> 0x007CEA30
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.TargetDataHasOrigin
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -39,7 +39,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CE890
+	 * 		RVA    -> 0x007CE8D0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.TargetDataHasHitResult
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -66,7 +66,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CE730
+	 * 		RVA    -> 0x007CE770
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.TargetDataHasEndPoint
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -93,7 +93,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CE5D0
+	 * 		RVA    -> 0x007CE610
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.TargetDataHasActor
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -120,7 +120,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CE4C0
+	 * 		RVA    -> 0x007CE500
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.SetStackCountToMax
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -145,7 +145,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CE370
+	 * 		RVA    -> 0x007CE3B0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.SetStackCount
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -172,7 +172,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CE220
+	 * 		RVA    -> 0x007CE260
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.SetDuration
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -199,7 +199,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CDF10
+	 * 		RVA    -> 0x007CDF50
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.SendGameplayEventToActor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -226,7 +226,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CDBD0
+	 * 		RVA    -> 0x007CDC10
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.NotEqual_GameplayAttributeGameplayAttribute
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -253,7 +253,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CDA30
+	 * 		RVA    -> 0x007CDA70
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.MakeSpecHandle
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -284,7 +284,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CD2C0
+	 * 		RVA    -> 0x007CD300
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.MakeGameplayCueParameters
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -339,7 +339,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CD120
+	 * 		RVA    -> 0x007CD160
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.MakeFilterHandle
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -366,7 +366,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CCF50
+	 * 		RVA    -> 0x007CCF90
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.IsValid
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -391,7 +391,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CCDB0
+	 * 		RVA    -> 0x007CCDF0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.IsInstigatorLocallyControlledPlayer
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -416,7 +416,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CCC10
+	 * 		RVA    -> 0x007CCC50
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.IsInstigatorLocallyControlled
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -441,7 +441,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CCA70
+	 * 		RVA    -> 0x007CCAB0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.HasHitResult
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -466,7 +466,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CC8E0
+	 * 		RVA    -> 0x007CC920
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetTargetDataOrigin
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -493,7 +493,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CC750
+	 * 		RVA    -> 0x007CC790
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetTargetDataEndPointTransform
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -520,7 +520,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CC5E0
+	 * 		RVA    -> 0x007CC620
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetTargetDataEndPoint
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -547,7 +547,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CC430
+	 * 		RVA    -> 0x007CC470
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetOrigin
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -572,7 +572,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CC1D0
+	 * 		RVA    -> 0x007CC210
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetModifiedAttributeMagnitude
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -599,7 +599,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CC000
+	 * 		RVA    -> 0x007CC040
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetInstigatorTransform
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -624,7 +624,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CBE60
+	 * 		RVA    -> 0x007CBEA0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetInstigatorActor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -649,7 +649,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CBC90
+	 * 		RVA    -> 0x007CBCD0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetHitResultFromTargetData
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -676,7 +676,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CBAA0
+	 * 		RVA    -> 0x007CBAE0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetHitResult
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -701,7 +701,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CB820
+	 * 		RVA    -> 0x007CB860
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetGameplayCueEndLocationAndNormal
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -735,7 +735,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CB5E0
+	 * 		RVA    -> 0x007CB620
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetGameplayCueDirection
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -766,7 +766,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CB3A0
+	 * 		RVA    -> 0x007CB3E0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetFloatAttributeFromAbilitySystemComponent
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -797,7 +797,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CB160
+	 * 		RVA    -> 0x007CB1A0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetFloatAttributeBaseFromAbilitySystemComponent
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -828,7 +828,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CAF20
+	 * 		RVA    -> 0x007CAF60
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetFloatAttributeBase
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -859,7 +859,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CACE0
+	 * 		RVA    -> 0x007CAD20
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetFloatAttribute
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -890,7 +890,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CABD0
+	 * 		RVA    -> 0x007CAC10
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetEffectContext
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -915,7 +915,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CAAB0
+	 * 		RVA    -> 0x007CAAF0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetDataCountFromTargetData
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -940,7 +940,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CA8F0
+	 * 		RVA    -> 0x007CA930
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetAllLinkedGameplayEffectSpecHandles
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -965,7 +965,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CA780
+	 * 		RVA    -> 0x007CA7C0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetAllActorsFromTargetData
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -990,7 +990,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CA5E0
+	 * 		RVA    -> 0x007CA620
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetActorsFromTargetData
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1017,7 +1017,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CA440
+	 * 		RVA    -> 0x007CA480
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetActorCount
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1042,7 +1042,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CA260
+	 * 		RVA    -> 0x007CA2A0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetActorByIndex
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1069,7 +1069,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CA1D0
+	 * 		RVA    -> 0x007CA210
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetActiveGameplayEffectTotalDuration
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1094,7 +1094,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CA140
+	 * 		RVA    -> 0x007CA180
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetActiveGameplayEffectStartTime
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1119,7 +1119,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CA0B0
+	 * 		RVA    -> 0x007CA0F0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetActiveGameplayEffectStackLimitCount
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1144,7 +1144,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007CA020
+	 * 		RVA    -> 0x007CA060
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetActiveGameplayEffectStackCount
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1169,7 +1169,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C9F40
+	 * 		RVA    -> 0x007C9F80
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetActiveGameplayEffectRemainingDuration
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1196,7 +1196,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C9EB0
+	 * 		RVA    -> 0x007C9EF0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetActiveGameplayEffectExpectedEndTime
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1221,7 +1221,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C9DE0
+	 * 		RVA    -> 0x007C9E20
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetActiveGameplayEffectDebugString
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1246,7 +1246,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C9D50
+	 * 		RVA    -> 0x007C9D90
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.GetAbilitySystemComponent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1271,7 +1271,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C9B10
+	 * 		RVA    -> 0x007C9B50
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.ForwardGameplayCueToTarget
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1296,7 +1296,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C9930
+	 * 		RVA    -> 0x007C9970
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.FilterTargetData
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1323,7 +1323,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C95B0
+	 * 		RVA    -> 0x007C95F0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.EvaluateAttributeValueWithTagsAndBase
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1360,7 +1360,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C9280
+	 * 		RVA    -> 0x007C92C0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.EvaluateAttributeValueWithTags
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1395,7 +1395,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C8F40
+	 * 		RVA    -> 0x007C8F80
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.EqualEqual_GameplayAttributeGameplayAttribute
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1422,7 +1422,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C8E10
+	 * 		RVA    -> 0x007C8E50
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextSetOrigin
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1447,7 +1447,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C8D20
+	 * 		RVA    -> 0x007C8D60
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextIsValid
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1472,7 +1472,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C8C30
+	 * 		RVA    -> 0x007C8C70
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextIsInstigatorLocallyControlled
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1497,7 +1497,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C8B40
+	 * 		RVA    -> 0x007C8B80
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextHasHitResult
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1522,7 +1522,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C8A50
+	 * 		RVA    -> 0x007C8A90
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetSourceObject
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1547,7 +1547,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C8960
+	 * 		RVA    -> 0x007C89A0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetOriginalInstigatorActor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1572,7 +1572,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C8860
+	 * 		RVA    -> 0x007C88A0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetOrigin
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1597,7 +1597,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C8770
+	 * 		RVA    -> 0x007C87B0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetInstigatorActor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1622,7 +1622,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C8630
+	 * 		RVA    -> 0x007C8670
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetHitResult
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1647,7 +1647,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C8540
+	 * 		RVA    -> 0x007C8580
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextGetEffectCauser
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1672,7 +1672,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C8310
+	 * 		RVA    -> 0x007C8350
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.EffectContextAddHitResult
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1699,7 +1699,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C8160
+	 * 		RVA    -> 0x007C81A0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.DoesTargetDataContainActor
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1728,7 +1728,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C7E50
+	 * 		RVA    -> 0x007C7E90
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.DoesGameplayCueMeetTagRequirements
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1757,7 +1757,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C7CB0
+	 * 		RVA    -> 0x007C7CF0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.CloneSpecHandle
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1786,7 +1786,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C74F0
+	 * 		RVA    -> 0x007C7530
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.BreakGameplayCueParameters
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1858,7 +1858,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C7350
+	 * 		RVA    -> 0x007C7390
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.AssignTagSetByCallerMagnitude
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1887,7 +1887,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C71B0
+	 * 		RVA    -> 0x007C71F0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.AssignSetByCallerMagnitude
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1916,7 +1916,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C6FB0
+	 * 		RVA    -> 0x007C6FF0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.AppendTargetDataHandle
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1943,7 +1943,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C6E10
+	 * 		RVA    -> 0x007C6E50
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.AddLinkedGameplayEffectSpec
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1970,7 +1970,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C6CB0
+	 * 		RVA    -> 0x007C6CF0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.AddLinkedGameplayEffect
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1997,7 +1997,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C6B00
+	 * 		RVA    -> 0x007C6B40
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.AddGrantedTags
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2024,7 +2024,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C69A0
+	 * 		RVA    -> 0x007C69E0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.AddGrantedTag
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2051,7 +2051,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C67F0
+	 * 		RVA    -> 0x007C6830
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.AddAssetTags
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2078,7 +2078,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C6690
+	 * 		RVA    -> 0x007C66D0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.AddAssetTag
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2105,7 +2105,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C64E0
+	 * 		RVA    -> 0x007C6520
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.AbilityTargetDataFromLocations
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -2132,7 +2132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C63C0
+	 * 		RVA    -> 0x007C6400
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.AbilityTargetDataFromHitResult
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -2157,7 +2157,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C62A0
+	 * 		RVA    -> 0x007C62E0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.AbilityTargetDataFromActorArray
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -2184,7 +2184,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007C61E0
+	 * 		RVA    -> 0x007C6220
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemBlueprintLibrary.AbilityTargetDataFromActor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -2223,7 +2223,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D67E0
+	 * 		RVA    -> 0x007D6820
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.TryActivateAbilityByClass
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2250,7 +2250,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D66D0
+	 * 		RVA    -> 0x007D6710
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.TryActivateAbilitiesByTag
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2277,7 +2277,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D66B0
+	 * 		RVA    -> 0x007D66F0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.TargetConfirm
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -2297,7 +2297,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D6690
+	 * 		RVA    -> 0x007D66D0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.TargetCancel
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -2317,7 +2317,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D6600
+	 * 		RVA    -> 0x007D6640
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.SetUserAbilityActivationInhibited
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2340,7 +2340,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D64F0
+	 * 		RVA    -> 0x007D6530
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.SetActiveGameplayEffectLevelUsingQuery
 	 * 		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2365,7 +2365,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D6410
+	 * 		RVA    -> 0x007D6450
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.SetActiveGameplayEffectLevel
 	 * 		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2390,7 +2390,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D5F70
+	 * 		RVA    -> 0x007D5FB0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ServerTryActivateAbilityWithEventData
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -2419,7 +2419,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D5E00
+	 * 		RVA    -> 0x007D5E40
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ServerTryActivateAbility
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -2446,7 +2446,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D5C60
+	 * 		RVA    -> 0x007D5CA0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ServerSetReplicatedTargetDataCancelled
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 	 * Parameters:
@@ -2473,7 +2473,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D59A0
+	 * 		RVA    -> 0x007D59E0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ServerSetReplicatedTargetData
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 	 * Parameters:
@@ -2504,7 +2504,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D5750
+	 * 		RVA    -> 0x007D5790
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ServerSetReplicatedEventWithPayload
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 	 * Parameters:
@@ -2535,7 +2535,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D5570
+	 * 		RVA    -> 0x007D55B0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ServerSetReplicatedEvent
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 	 * Parameters:
@@ -2564,7 +2564,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D54C0
+	 * 		RVA    -> 0x007D5500
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ServerSetInputReleased
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 	 * Parameters:
@@ -2587,7 +2587,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D5410
+	 * 		RVA    -> 0x007D5450
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ServerSetInputPressed
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 	 * Parameters:
@@ -2610,7 +2610,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D5320
+	 * 		RVA    -> 0x007D5360
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ServerPrintDebug_RequestWithStrings
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 	 * Parameters:
@@ -2633,7 +2633,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D52D0
+	 * 		RVA    -> 0x007D5310
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ServerPrintDebug_Request
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 	 */
@@ -2653,7 +2653,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D5120
+	 * 		RVA    -> 0x007D5160
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ServerEndAbility
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -2680,7 +2680,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D5010
+	 * 		RVA    -> 0x007D5050
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ServerCurrentMontageSetPlayRate
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -2705,7 +2705,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D4E70
+	 * 		RVA    -> 0x007D4EB0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ServerCurrentMontageSetNextSectionName
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -2734,7 +2734,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D4D60
+	 * 		RVA    -> 0x007D4DA0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ServerCurrentMontageJumpToSectionName
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -2759,7 +2759,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D4C30
+	 * 		RVA    -> 0x007D4C70
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ServerCancelAbility
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -2784,7 +2784,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D4A60
+	 * 		RVA    -> 0x007D4AA0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ServerAbilityRPCBatch
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 	 * Parameters:
@@ -2807,7 +2807,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D4950
+	 * 		RVA    -> 0x007D4990
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.RemoveActiveGameplayEffectBySourceEffect
 	 * 		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2834,7 +2834,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D4870
+	 * 		RVA    -> 0x007D48B0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.RemoveActiveGameplayEffect
 	 * 		Flags  -> (BlueprintAuthorityOnly, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2861,7 +2861,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D4780
+	 * 		RVA    -> 0x007D47C0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.RemoveActiveEffectsWithTags
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2886,7 +2886,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D4690
+	 * 		RVA    -> 0x007D46D0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.RemoveActiveEffectsWithSourceTags
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2911,7 +2911,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D45A0
+	 * 		RVA    -> 0x007D45E0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.RemoveActiveEffectsWithGrantedTags
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2936,7 +2936,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D45A0
+	 * 		RVA    -> 0x007D45E0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.RemoveActiveEffectsWithAppliedTags
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2961,7 +2961,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D4580
+	 * 		RVA    -> 0x007D45C0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.OnRep_ServerDebugString
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -2981,7 +2981,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D4560
+	 * 		RVA    -> 0x007D45A0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.OnRep_ReplicatedAnimMontage
 	 * 		Flags  -> (Native, Protected)
 	 */
@@ -3001,7 +3001,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D4540
+	 * 		RVA    -> 0x007D4580
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.OnRep_OwningActor
 	 * 		Flags  -> (Final, Native, Public)
 	 */
@@ -3021,7 +3021,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D4520
+	 * 		RVA    -> 0x007D4560
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.OnRep_ClientDebugString
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -3041,7 +3041,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D4500
+	 * 		RVA    -> 0x007D4540
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.OnRep_ActivateAbilities
 	 * 		Flags  -> (Native, Protected)
 	 */
@@ -3061,7 +3061,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D4260
+	 * 		RVA    -> 0x007D42A0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCuesExecuted_WithParams
 	 * 		Flags  -> (Net, Native, Event, NetMulticast, Public)
 	 * Parameters:
@@ -3088,7 +3088,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D4060
+	 * 		RVA    -> 0x007D40A0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCuesExecuted
 	 * 		Flags  -> (Net, Native, Event, NetMulticast, Public)
 	 * Parameters:
@@ -3115,7 +3115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D3DC0
+	 * 		RVA    -> 0x007D3E00
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCuesAddedAndWhileActive_WithParams
 	 * 		Flags  -> (Net, Native, Event, NetMulticast, Public)
 	 * Parameters:
@@ -3142,7 +3142,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D3B80
+	 * 		RVA    -> 0x007D3BC0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueExecuted_WithParams
 	 * 		Flags  -> (Net, Native, Event, NetMulticast, Public)
 	 * Parameters:
@@ -3169,7 +3169,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D39D0
+	 * 		RVA    -> 0x007D3A10
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueExecuted_FromSpec
 	 * 		Flags  -> (Net, Native, Event, NetMulticast, Public)
 	 * Parameters:
@@ -3194,7 +3194,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D3840
+	 * 		RVA    -> 0x007D3880
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueExecuted
 	 * 		Flags  -> (Net, Native, Event, NetMulticast, Public)
 	 * Parameters:
@@ -3221,7 +3221,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D33C0
+	 * 		RVA    -> 0x007D3400
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueAddedAndWhileActive_WithParams
 	 * 		Flags  -> (Net, Native, Event, NetMulticast, Public)
 	 * Parameters:
@@ -3248,7 +3248,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D3230
+	 * 		RVA    -> 0x007D3270
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueAddedAndWhileActive_FromSpec
 	 * 		Flags  -> (Net, Native, Event, NetMulticast, Public)
 	 * Parameters:
@@ -3273,7 +3273,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D3600
+	 * 		RVA    -> 0x007D3640
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueAdded_WithParams
 	 * 		Flags  -> (Net, Native, Event, NetMulticast, Public)
 	 * Parameters:
@@ -3300,7 +3300,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D30A0
+	 * 		RVA    -> 0x007D30E0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.NetMulticast_InvokeGameplayCueAdded
 	 * 		Flags  -> (Net, Native, Event, NetMulticast, Public)
 	 * Parameters:
@@ -3327,7 +3327,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D2E70
+	 * 		RVA    -> 0x007D2EB0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.MakeOutgoingSpec
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3356,7 +3356,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D2DF0
+	 * 		RVA    -> 0x007D2E30
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.MakeEffectContext
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3378,7 +3378,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D2D20
+	 * 		RVA    -> 0x007D2D60
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.K2_InitStats
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3403,7 +3403,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D2C80
+	 * 		RVA    -> 0x007D2CC0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.IsGameplayCueActive
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3428,7 +3428,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D2C50
+	 * 		RVA    -> 0x007D2C90
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.GetUserAbilityActivationInhibited
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3450,7 +3450,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D2A30
+	 * 		RVA    -> 0x007D2A70
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.GetGameplayEffectMagnitude
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -3477,7 +3477,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D2920
+	 * 		RVA    -> 0x007D2960
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.GetGameplayEffectCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -3506,7 +3506,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D27F0
+	 * 		RVA    -> 0x007D2830
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.GetActiveEffectsWithAllTags
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
 	 * Parameters:
@@ -3531,7 +3531,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D26F0
+	 * 		RVA    -> 0x007D2730
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.GetActiveEffects
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, Const)
 	 * Parameters:
@@ -3556,7 +3556,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D2660
+	 * 		RVA    -> 0x007D26A0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ClientTryActivateAbility
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetClient)
 	 * Parameters:
@@ -3579,7 +3579,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D2520
+	 * 		RVA    -> 0x007D2560
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ClientSetReplicatedEvent
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
@@ -3606,7 +3606,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D2410
+	 * 		RVA    -> 0x007D2450
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ClientPrintDebug_Response
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
@@ -3631,7 +3631,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D2310
+	 * 		RVA    -> 0x007D2350
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ClientEndAbility
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetClient)
 	 * Parameters:
@@ -3656,7 +3656,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D2210
+	 * 		RVA    -> 0x007D2250
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ClientCancelAbility
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetClient)
 	 * Parameters:
@@ -3681,7 +3681,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D1EC0
+	 * 		RVA    -> 0x007D1F00
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ClientActivateAbilitySucceedWithEventData
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetClient)
 	 * Parameters:
@@ -3708,7 +3708,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D1DC0
+	 * 		RVA    -> 0x007D1E00
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ClientActivateAbilitySucceed
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetClient)
 	 * Parameters:
@@ -3733,7 +3733,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D1CE0
+	 * 		RVA    -> 0x007D1D20
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.ClientActivateAbilityFailed
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetClient)
 	 * Parameters:
@@ -3758,7 +3758,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D1B20
+	 * 		RVA    -> 0x007D1B60
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.BP_ApplyGameplayEffectToTarget
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3789,7 +3789,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D1980
+	 * 		RVA    -> 0x007D19C0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.BP_ApplyGameplayEffectToSelf
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3818,7 +3818,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D1860
+	 * 		RVA    -> 0x007D18A0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.BP_ApplyGameplayEffectSpecToTarget
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3845,7 +3845,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D1780
+	 * 		RVA    -> 0x007D17C0
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemComponent.BP_ApplyGameplayEffectSpecToSelf
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3870,7 +3870,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction GameplayAbilities.AbilitySystemComponent.AbilityConfirmOrCancel__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
@@ -3889,7 +3889,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction GameplayAbilities.AbilitySystemComponent.AbilityAbilityKey__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -3939,7 +3939,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DBA20
+	 * 		RVA    -> 0x007DBA60
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemGlobals.ToggleIgnoreAbilitySystemCosts
 	 * 		Flags  -> (Exec, Native, Public)
 	 */
@@ -3959,7 +3959,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DBA00
+	 * 		RVA    -> 0x007DBA40
 	 * 		Name   -> Function GameplayAbilities.AbilitySystemGlobals.ToggleIgnoreAbilitySystemCooldowns
 	 * 		Flags  -> (Exec, Native, Public)
 	 */
@@ -4091,7 +4091,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D9AF0
+	 * 		RVA    -> 0x007D9B30
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_ApplyRootMotionConstantForce.ApplyRootMotionConstantForce
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -4148,7 +4148,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DB830
+	 * 		RVA    -> 0x007DB870
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_ApplyRootMotionJumpForce.OnLandedCallback
 	 * 		Flags  -> (Final, Native, Public, HasOutParms)
 	 * Parameters:
@@ -4171,7 +4171,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DB630
+	 * 		RVA    -> 0x007DB670
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_ApplyRootMotionJumpForce.Finish
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4191,7 +4191,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D9DF0
+	 * 		RVA    -> 0x007D9E30
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_ApplyRootMotionJumpForce.ApplyRootMotionJumpForce
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -4254,7 +4254,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DB930
+	 * 		RVA    -> 0x007DB970
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_ApplyRootMotionMoveToActorForce.OnTargetActorSwapped
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -4279,7 +4279,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DB910
+	 * 		RVA    -> 0x007DB950
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_ApplyRootMotionMoveToActorForce.OnRep_TargetLocation
 	 * 		Flags  -> (Final, Native, Protected)
 	 */
@@ -4299,7 +4299,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DAA00
+	 * 		RVA    -> 0x007DAA40
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_ApplyRootMotionMoveToActorForce.ApplyRootMotionMoveToTargetDataActorForce
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -4360,7 +4360,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DA1C0
+	 * 		RVA    -> 0x007DA200
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_ApplyRootMotionMoveToActorForce.ApplyRootMotionMoveToActorForce
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -4431,7 +4431,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DA6B0
+	 * 		RVA    -> 0x007DA6F0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_ApplyRootMotionMoveToForce.ApplyRootMotionMoveToForce
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -4490,7 +4490,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DB120
+	 * 		RVA    -> 0x007DB160
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_ApplyRootMotionRadialForce.ApplyRootMotionRadialForce
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -4561,7 +4561,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DB650
+	 * 		RVA    -> 0x007DB690
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_MoveToLocation.MoveToLocation
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -4610,7 +4610,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E14E0
+	 * 		RVA    -> 0x007E1520
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_NetworkSyncPoint.WaitNetSync
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4637,7 +4637,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DEDD0
+	 * 		RVA    -> 0x007DEE10
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_NetworkSyncPoint.OnSignalCallback
 	 * 		Flags  -> (Final, Native, Public)
 	 */
@@ -4671,7 +4671,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DEDB0
+	 * 		RVA    -> 0x007DEDF0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_PlayMontageAndWait.OnMontageInterrupted
 	 * 		Flags  -> (Final, Native, Public)
 	 */
@@ -4691,7 +4691,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DECE0
+	 * 		RVA    -> 0x007DED20
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_PlayMontageAndWait.OnMontageEnded
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -4716,7 +4716,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DEC10
+	 * 		RVA    -> 0x007DEC50
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_PlayMontageAndWait.OnMontageBlendingOut
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -4741,7 +4741,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DE3A0
+	 * 		RVA    -> 0x007DE3E0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_PlayMontageAndWait.CreatePlayMontageAndWaitProxy
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4792,7 +4792,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DEDF0
+	 * 		RVA    -> 0x007DEE30
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_Repeat.RepeatAction
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4835,7 +4835,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DEF00
+	 * 		RVA    -> 0x007DEF40
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_SpawnActor.SpawnActor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4864,7 +4864,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DE5B0
+	 * 		RVA    -> 0x007DE5F0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_SpawnActor.FinishSpawningActor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4891,7 +4891,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DE080
+	 * 		RVA    -> 0x007DE0C0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_SpawnActor.BeginSpawningActor
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4938,7 +4938,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DF0C0
+	 * 		RVA    -> 0x007DF100
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_StartAbilityState.StartAbilityState
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4981,7 +4981,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DF310
+	 * 		RVA    -> 0x007DF350
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_VisualizeTargeting.VisualizeTargetingUsingActor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5012,7 +5012,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DF1C0
+	 * 		RVA    -> 0x007DF200
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_VisualizeTargeting.VisualizeTargeting
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5043,7 +5043,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DE770
+	 * 		RVA    -> 0x007DE7B0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_VisualizeTargeting.FinishSpawningActor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5068,7 +5068,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DE280
+	 * 		RVA    -> 0x007DE2C0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_VisualizeTargeting.BeginSpawningActor
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5113,7 +5113,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DF880
+	 * 		RVA    -> 0x007DF8C0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitAbilityActivate.WaitForAbilityActivateWithTagRequirements
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5144,7 +5144,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DFA90
+	 * 		RVA    -> 0x007DFAD0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitAbilityActivate.WaitForAbilityActivate_Query
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5175,7 +5175,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DF6E0
+	 * 		RVA    -> 0x007DF720
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitAbilityActivate.WaitForAbilityActivate
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5208,7 +5208,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DE840
+	 * 		RVA    -> 0x007DE880
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitAbilityActivate.OnAbilityActivate
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -5245,7 +5245,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DFDB0
+	 * 		RVA    -> 0x007DFDF0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitAbilityCommit.WaitForAbilityCommit_Query
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5274,7 +5274,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DFC60
+	 * 		RVA    -> 0x007DFCA0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitAbilityCommit.WaitForAbilityCommit
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5305,7 +5305,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DE8D0
+	 * 		RVA    -> 0x007DE910
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitAbilityCommit.OnAbilityCommit
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -5342,7 +5342,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E09F0
+	 * 		RVA    -> 0x007E0A30
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitAttributeChange.WaitForAttributeChangeWithComparison
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5381,7 +5381,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DFF30
+	 * 		RVA    -> 0x007DFF70
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitAttributeChange.WaitForAttributeChange
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5430,7 +5430,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E0230
+	 * 		RVA    -> 0x007E0270
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitAttributeChangeRatioThreshold.WaitForAttributeChangeRatioThreshold
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5481,7 +5481,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E06E0
+	 * 		RVA    -> 0x007E0720
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitAttributeChangeThreshold.WaitForAttributeChangeThreshold
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5530,7 +5530,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DF460
+	 * 		RVA    -> 0x007DF4A0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitCancel.WaitCancel
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5555,7 +5555,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DEBB0
+	 * 		RVA    -> 0x007DEBF0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitCancel.OnLocalCancelCallback
 	 * 		Flags  -> (Final, Native, Public)
 	 */
@@ -5575,7 +5575,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DEAC0
+	 * 		RVA    -> 0x007DEB00
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitCancel.OnCancelCallback
 	 * 		Flags  -> (Final, Native, Public)
 	 */
@@ -5609,7 +5609,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DF4F0
+	 * 		RVA    -> 0x007DF530
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitConfirm.WaitConfirm
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5634,7 +5634,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DEB00
+	 * 		RVA    -> 0x007DEB40
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitConfirm.OnConfirmCallback
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -5671,7 +5671,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DF580
+	 * 		RVA    -> 0x007DF5C0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitConfirmCancel.WaitConfirmCancel
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5696,7 +5696,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DEBF0
+	 * 		RVA    -> 0x007DEC30
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitConfirmCancel.OnLocalConfirmCallback
 	 * 		Flags  -> (Final, Native, Public)
 	 */
@@ -5716,7 +5716,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DEBD0
+	 * 		RVA    -> 0x007DEC10
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitConfirmCancel.OnLocalCancelCallback
 	 * 		Flags  -> (Final, Native, Public)
 	 */
@@ -5736,7 +5736,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DEB90
+	 * 		RVA    -> 0x007DEBD0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitConfirmCancel.OnConfirmCallback
 	 * 		Flags  -> (Final, Native, Public)
 	 */
@@ -5756,7 +5756,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DEAE0
+	 * 		RVA    -> 0x007DEB20
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitConfirmCancel.OnCancelCallback
 	 * 		Flags  -> (Final, Native, Public)
 	 */
@@ -5790,7 +5790,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DF610
+	 * 		RVA    -> 0x007DF650
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitDelay.WaitDelay
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5831,7 +5831,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007DE960
+	 * 		RVA    -> 0x007DE9A0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitGameplayEffectApplied.OnApplyGameplayEffectCallback
 	 * 		Flags  -> (Final, Native, Public, HasOutParms)
 	 * Parameters:
@@ -5872,7 +5872,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E11A0
+	 * 		RVA    -> 0x007E11E0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitGameplayEffectApplied_Self.WaitGameplayEffectAppliedToSelf_Query
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5909,7 +5909,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E0D90
+	 * 		RVA    -> 0x007E0DD0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitGameplayEffectApplied_Self.WaitGameplayEffectAppliedToSelf
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5960,7 +5960,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E8740
+	 * 		RVA    -> 0x007E8780
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitGameplayEffectApplied_Target.WaitGameplayEffectAppliedToTarget_Query
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5997,7 +5997,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E8330
+	 * 		RVA    -> 0x007E8370
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitGameplayEffectApplied_Target.WaitGameplayEffectAppliedToTarget
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -6048,7 +6048,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E8A80
+	 * 		RVA    -> 0x007E8AC0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitGameplayEffectBlockedImmunity.WaitGameplayEffectBlockedByImmunity
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -6095,7 +6095,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E80E0
+	 * 		RVA    -> 0x007E8120
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitGameplayEffectRemoved.WaitForGameplayEffectRemoved
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -6122,7 +6122,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E73E0
+	 * 		RVA    -> 0x007E7420
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitGameplayEffectRemoved.OnGameplayEffectRemoved
 	 * 		Flags  -> (Final, Native, Public, HasOutParms)
 	 * Parameters:
@@ -6159,7 +6159,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E81C0
+	 * 		RVA    -> 0x007E8200
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitGameplayEffectStackChange.WaitForGameplayEffectStackChange
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -6186,7 +6186,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E74C0
+	 * 		RVA    -> 0x007E7500
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitGameplayEffectStackChange.OnGameplayEffectStackChange
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -6227,7 +6227,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E8DA0
+	 * 		RVA    -> 0x007E8DE0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitGameplayEvent.WaitGameplayEvent
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -6274,7 +6274,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E5CE0
+	 * 		RVA    -> 0x007E5D20
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitGameplayTag.GameplayTagCallback
 	 * 		Flags  -> (Native, Public)
 	 * Parameters:
@@ -6313,7 +6313,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E8F40
+	 * 		RVA    -> 0x007E8F80
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitGameplayTagAdded.WaitGameplayTagAdd
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -6358,7 +6358,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E9090
+	 * 		RVA    -> 0x007E90D0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitGameplayTagRemoved.WaitGameplayTagRemove
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -6403,7 +6403,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E91E0
+	 * 		RVA    -> 0x007E9220
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitInputPress.WaitInputPress
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -6430,7 +6430,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E78D0
+	 * 		RVA    -> 0x007E7910
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitInputPress.OnPressCallback
 	 * 		Flags  -> (Final, Native, Public)
 	 */
@@ -6464,7 +6464,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E92B0
+	 * 		RVA    -> 0x007E92F0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitInputRelease.WaitInputRelease
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -6491,7 +6491,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E78F0
+	 * 		RVA    -> 0x007E7930
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitInputRelease.OnReleaseCallback
 	 * 		Flags  -> (Final, Native, Public)
 	 */
@@ -6525,7 +6525,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E77C0
+	 * 		RVA    -> 0x007E7800
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitMovementModeChange.OnMovementModeChange
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -6552,7 +6552,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E58F0
+	 * 		RVA    -> 0x007E5930
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitMovementModeChange.CreateWaitMovementModeChange
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -6593,7 +6593,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E82A0
+	 * 		RVA    -> 0x007E82E0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitOverlap.WaitForOverlap
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -6618,7 +6618,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E75E0
+	 * 		RVA    -> 0x007E7620
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitOverlap.OnHitCallback
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -6663,7 +6663,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E94D0
+	 * 		RVA    -> 0x007E9510
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitTargetData.WaitTargetDataUsingActor
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -6694,7 +6694,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E9380
+	 * 		RVA    -> 0x007E93C0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitTargetData.WaitTargetData
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -6725,7 +6725,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E7CB0
+	 * 		RVA    -> 0x007E7CF0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitTargetData.OnTargetDataReplicatedCancelledCallback
 	 * 		Flags  -> (Final, Native, Public)
 	 */
@@ -6745,7 +6745,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E7B50
+	 * 		RVA    -> 0x007E7B90
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitTargetData.OnTargetDataReplicatedCallback
 	 * 		Flags  -> (Final, Native, Public, HasOutParms)
 	 * Parameters:
@@ -6770,7 +6770,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E7A30
+	 * 		RVA    -> 0x007E7A70
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitTargetData.OnTargetDataReadyCallback
 	 * 		Flags  -> (Final, Native, Public, HasOutParms)
 	 * Parameters:
@@ -6793,7 +6793,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E7910
+	 * 		RVA    -> 0x007E7950
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitTargetData.OnTargetDataCancelledCallback
 	 * 		Flags  -> (Final, Native, Public, HasOutParms)
 	 * Parameters:
@@ -6816,7 +6816,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6DE0
+	 * 		RVA    -> 0x007E6E20
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitTargetData.K2_ExternalConfirm
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6839,7 +6839,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6DC0
+	 * 		RVA    -> 0x007E6E00
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitTargetData.K2_ExternalCancel
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -6859,7 +6859,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E5C10
+	 * 		RVA    -> 0x007E5C50
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitTargetData.FinishSpawningActor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6884,7 +6884,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E5670
+	 * 		RVA    -> 0x007E56B0
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitTargetData.BeginSpawningActor
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -6929,7 +6929,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E59C0
+	 * 		RVA    -> 0x007E5A00
 	 * 		Name   -> Function GameplayAbilities.AbilityTask_WaitVelocityChange.CreateWaitVelocityChange
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -6972,7 +6972,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E8050
+	 * 		RVA    -> 0x007E8090
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.SetShouldBlockOtherAbilities
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -6995,7 +6995,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E7FC0
+	 * 		RVA    -> 0x007E8000
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.SetCanBeCanceled
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7018,7 +7018,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E7CF0
+	 * 		RVA    -> 0x007E7D30
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.SendGameplayEvent
 	 * 		Flags  -> (Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -7043,7 +7043,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E7CD0
+	 * 		RVA    -> 0x007E7D10
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.RemoveGrantedByEffect
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -7063,7 +7063,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E7360
+	 * 		RVA    -> 0x007E73A0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.MontageStop
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -7086,7 +7086,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E7290
+	 * 		RVA    -> 0x007E72D0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.MontageSetNextSectionName
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -7111,7 +7111,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E7200
+	 * 		RVA    -> 0x007E7240
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.MontageJumpToSection
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -7134,7 +7134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E7100
+	 * 		RVA    -> 0x007E7140
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.MakeTargetLocationInfoFromOwnerSkeletalMeshComponent
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -7159,7 +7159,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E7060
+	 * 		RVA    -> 0x007E70A0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.MakeTargetLocationInfoFromOwnerActor
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable, BlueprintPure)
 	 */
@@ -7181,7 +7181,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6F00
+	 * 		RVA    -> 0x007E6F40
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.MakeOutgoingGameplayEffectSpec
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -7208,7 +7208,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_ShouldAbilityRespondToEvent
 	 * 		Flags  -> (Event, Protected, BlueprintEvent, Const)
 	 * Parameters:
@@ -7234,7 +7234,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6E70
+	 * 		RVA    -> 0x007E6EB0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_RemoveGameplayCue
 	 * 		Flags  -> (Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -7257,7 +7257,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_OnEndAbility
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -7279,7 +7279,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6C00
+	 * 		RVA    -> 0x007E6C40
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_ExecuteGameplayCueWithParams
 	 * 		Flags  -> (Native, Protected, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -7304,7 +7304,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6AC0
+	 * 		RVA    -> 0x007E6B00
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_ExecuteGameplayCue
 	 * 		Flags  -> (Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -7329,7 +7329,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6AA0
+	 * 		RVA    -> 0x007E6AE0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_EndAbility
 	 * 		Flags  -> (Native, Protected, BlueprintCallable)
 	 */
@@ -7349,7 +7349,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_CommitExecute
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -7368,7 +7368,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6A00
+	 * 		RVA    -> 0x007E6A40
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_CommitAbilityCost
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7393,7 +7393,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6910
+	 * 		RVA    -> 0x007E6950
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_CommitAbilityCooldown
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -7420,7 +7420,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E68E0
+	 * 		RVA    -> 0x007E6920
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_CommitAbility
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -7442,7 +7442,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E68B0
+	 * 		RVA    -> 0x007E68F0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_CheckAbilityCost
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -7464,7 +7464,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6880
+	 * 		RVA    -> 0x007E68C0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_CheckAbilityCooldown
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -7486,7 +7486,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6860
+	 * 		RVA    -> 0x007E68A0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_CancelAbility
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -7506,7 +7506,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_CanActivateAbility
 	 * 		Flags  -> (Event, Protected, HasOutParms, BlueprintEvent, Const)
 	 * Parameters:
@@ -7534,7 +7534,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6640
+	 * 		RVA    -> 0x007E6680
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_ApplyGameplayEffectSpecToTarget
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -7561,7 +7561,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6550
+	 * 		RVA    -> 0x007E6590
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_ApplyGameplayEffectSpecToOwner
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -7586,7 +7586,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6340
+	 * 		RVA    -> 0x007E6380
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_AddGameplayCueWithParams
 	 * 		Flags  -> (Native, Protected, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -7613,7 +7613,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E61C0
+	 * 		RVA    -> 0x007E6200
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_AddGameplayCue
 	 * 		Flags  -> (Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -7640,7 +7640,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_ActivateAbilityFromEvent
 	 * 		Flags  -> (Event, Protected, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -7662,7 +7662,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.K2_ActivateAbility
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -7681,7 +7681,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E61A0
+	 * 		RVA    -> 0x007E61E0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.InvalidateClientPredictionKey
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, Const)
 	 */
@@ -7701,7 +7701,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6170
+	 * 		RVA    -> 0x007E61B0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.GetOwningComponentFromActorInfo
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7723,7 +7723,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6140
+	 * 		RVA    -> 0x007E6180
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.GetOwningActorFromActorInfo
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7745,7 +7745,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E60C0
+	 * 		RVA    -> 0x007E6100
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.GetGrantedByEffectContext
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7767,7 +7767,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6090
+	 * 		RVA    -> 0x007E60D0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.GetCurrentSourceObject
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7789,7 +7789,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6060
+	 * 		RVA    -> 0x007E60A0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.GetCurrentMontage
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7811,7 +7811,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E6030
+	 * 		RVA    -> 0x007E6070
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.GetCooldownTimeRemaining
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7833,7 +7833,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E5EB0
+	 * 		RVA    -> 0x007E5EF0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.GetContextFromOwner
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -7858,7 +7858,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E5E80
+	 * 		RVA    -> 0x007E5EC0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.GetAvatarActorFromActorInfo
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7880,7 +7880,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E5E10
+	 * 		RVA    -> 0x007E5E50
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.GetActorInfo
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7902,7 +7902,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E5DE0
+	 * 		RVA    -> 0x007E5E20
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.GetAbilitySystemComponentFromActorInfo
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7924,7 +7924,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E5DB0
+	 * 		RVA    -> 0x007E5DF0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.GetAbilityLevel
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -7946,7 +7946,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E5B80
+	 * 		RVA    -> 0x007E5BC0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.EndTaskByInstanceName
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -7969,7 +7969,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E5AF0
+	 * 		RVA    -> 0x007E5B30
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.EndAbilityState
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -7992,7 +7992,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E5820
+	 * 		RVA    -> 0x007E5860
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.ConfirmTaskByInstanceName
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -8017,7 +8017,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E5790
+	 * 		RVA    -> 0x007E57D0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.CancelTaskByInstanceName
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -8040,7 +8040,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E5590
+	 * 		RVA    -> 0x007E55D0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.BP_RemoveGameplayEffectFromOwnerWithHandle
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -8065,7 +8065,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E5470
+	 * 		RVA    -> 0x007E54B0
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.BP_RemoveGameplayEffectFromOwnerWithGrantedTags
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -8090,7 +8090,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E5350
+	 * 		RVA    -> 0x007E5390
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.BP_RemoveGameplayEffectFromOwnerWithAssetTags
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -8115,7 +8115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E5120
+	 * 		RVA    -> 0x007E5160
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.BP_ApplyGameplayEffectToTarget
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -8146,7 +8146,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E5000
+	 * 		RVA    -> 0x007E5040
 	 * 		Name   -> Function GameplayAbilities.GameplayAbility.BP_ApplyGameplayEffectToOwner
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -8245,7 +8245,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007F1600
+	 * 		RVA    -> 0x007F1640
 	 * 		Name   -> Function GameplayAbilities.GameplayAbilityTargetActor.ConfirmTargeting
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -8265,7 +8265,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007F15E0
+	 * 		RVA    -> 0x007F1620
 	 * 		Name   -> Function GameplayAbilities.GameplayAbilityTargetActor.CancelTargeting
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -8369,7 +8369,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function GameplayAbilities.GameplayAbilityWorldReticle.SetReticleMaterialParamVector
 	 * 		Flags  -> (Event, Public, HasDefaults, BlueprintEvent)
 	 * Parameters:
@@ -8393,7 +8393,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function GameplayAbilities.GameplayAbilityWorldReticle.SetReticleMaterialParamFloat
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -8417,7 +8417,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function GameplayAbilities.GameplayAbilityWorldReticle.OnValidTargetChanged
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -8439,7 +8439,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function GameplayAbilities.GameplayAbilityWorldReticle.OnTargetingAnActor
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -8461,7 +8461,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function GameplayAbilities.GameplayAbilityWorldReticle.OnParametersInitialized
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -8480,7 +8480,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007F1620
+	 * 		RVA    -> 0x007F1660
 	 * 		Name   -> Function GameplayAbilities.GameplayAbilityWorldReticle.FaceTowardSource
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -8531,7 +8531,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007F8D00
+	 * 		RVA    -> 0x007F8D40
 	 * 		Name   -> Function GameplayAbilities.GameplayCueInterface.ForwardGameplayCueToParent
 	 * 		Flags  -> (BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 */
@@ -8551,7 +8551,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function GameplayAbilities.GameplayCueInterface.BlueprintCustomHandler
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -8603,7 +8603,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007F98B0
+	 * 		RVA    -> 0x007F98F0
 	 * 		Name   -> Function GameplayAbilities.GameplayCueNotify_Actor.WhileActive
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -8630,7 +8630,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007F9510
+	 * 		RVA    -> 0x007F9550
 	 * 		Name   -> Function GameplayAbilities.GameplayCueNotify_Actor.OnRemove
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -8657,7 +8657,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007F9480
+	 * 		RVA    -> 0x007F94C0
 	 * 		Name   -> Function GameplayAbilities.GameplayCueNotify_Actor.OnOwnerDestroyed
 	 * 		Flags  -> (Native, Public)
 	 * Parameters:
@@ -8680,7 +8680,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007F90E0
+	 * 		RVA    -> 0x007F9120
 	 * 		Name   -> Function GameplayAbilities.GameplayCueNotify_Actor.OnExecute
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -8707,7 +8707,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007F8D40
+	 * 		RVA    -> 0x007F8D80
 	 * 		Name   -> Function GameplayAbilities.GameplayCueNotify_Actor.OnActive
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -8734,7 +8734,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function GameplayAbilities.GameplayCueNotify_Actor.K2_HandleGameplayCue
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -8760,7 +8760,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007F8D20
+	 * 		RVA    -> 0x007F8D60
 	 * 		Name   -> Function GameplayAbilities.GameplayCueNotify_Actor.K2_EndGameplayCue
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -8794,7 +8794,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007F9A80
+	 * 		RVA    -> 0x007F9AC0
 	 * 		Name   -> Function GameplayAbilities.GameplayCueNotify_Static.WhileActive
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 * Parameters:
@@ -8821,7 +8821,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007F96E0
+	 * 		RVA    -> 0x007F9720
 	 * 		Name   -> Function GameplayAbilities.GameplayCueNotify_Static.OnRemove
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 * Parameters:
@@ -8848,7 +8848,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007F92B0
+	 * 		RVA    -> 0x007F92F0
 	 * 		Name   -> Function GameplayAbilities.GameplayCueNotify_Static.OnExecute
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 * Parameters:
@@ -8875,7 +8875,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007F8F10
+	 * 		RVA    -> 0x007F8F50
 	 * 		Name   -> Function GameplayAbilities.GameplayCueNotify_Static.OnActive
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 * Parameters:
@@ -8902,7 +8902,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function GameplayAbilities.GameplayCueNotify_Static.K2_HandleGameplayCue
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent, Const)
 	 * Parameters:
@@ -9026,7 +9026,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007FE3B0
+	 * 		RVA    -> 0x007FE3F0
 	 * 		Name   -> Function GameplayAbilities.GameplayEffectCustomApplicationRequirement.CanApplyGameplayEffect
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent, Const)
 	 * Parameters:
@@ -9069,7 +9069,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007FE510
+	 * 		RVA    -> 0x007FE550
 	 * 		Name   -> Function GameplayAbilities.GameplayEffectExecutionCalculation.Execute
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent, Const)
 	 * Parameters:
@@ -9138,7 +9138,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007FE2E0
+	 * 		RVA    -> 0x007FE320
 	 * 		Name   -> Function GameplayAbilities.GameplayModMagnitudeCalculation.CalculateBaseMagnitude
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent, Const)
 	 * Parameters:
@@ -9177,7 +9177,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007FE680
+	 * 		RVA    -> 0x007FE6C0
 	 * 		Name   -> Function GameplayAbilities.GameplayTagReponseTable.TagResponseEvent
 	 * 		Flags  -> (Final, Native, Protected)
 	 * Parameters:

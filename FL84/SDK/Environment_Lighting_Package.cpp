@@ -12,26 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function Environment_Lighting.Environment_Lighting_C.ReceiveBeginPlay
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
-	 */
-	void AEnvironment_Lighting_C::ReceiveBeginPlay()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function Environment_Lighting.Environment_Lighting_C.ReceiveBeginPlay"));
-		
-		AEnvironment_Lighting_C_ReceiveBeginPlay_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function Environment_Lighting.Environment_Lighting_C.ReceiveEndPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -53,7 +34,26 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function Environment_Lighting.Environment_Lighting_C.ReceiveBeginPlay
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 */
+	void AEnvironment_Lighting_C::ReceiveBeginPlay()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function Environment_Lighting.Environment_Lighting_C.ReceiveBeginPlay"));
+		
+		AEnvironment_Lighting_C_ReceiveBeginPlay_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function Environment_Lighting.Environment_Lighting_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -74,7 +74,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function Environment_Lighting.Environment_Lighting_C.SetLight
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -96,7 +96,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function Environment_Lighting.Environment_Lighting_C.SetCardSkyLightData
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -118,7 +118,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function Environment_Lighting.Environment_Lighting_C.ExecuteUbergraph_Environment_Lighting
 	 * 		Flags  -> (Final)
 	 * Parameters:

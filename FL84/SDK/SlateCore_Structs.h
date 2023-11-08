@@ -500,7 +500,7 @@ namespace CG
 	struct FGeometry
 	{
 	public:
-		unsigned char                                              UnknownData_E4ZV[0x38];                                  // 0x0000(0x0038) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_GZWK[0x38];                                  // 0x0000(0x0038) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -525,7 +525,7 @@ namespace CG
 	public:
 		struct FLinearColor                                        SpecifiedColor;                                          // 0x0000(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		ESlateColorStylingMode                                     ColorUseRule;                                            // 0x0010(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_3UFD[0x17];                                  // 0x0011(0x0017) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_NB36[0x17];                                  // 0x0011(0x0017) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -540,7 +540,7 @@ namespace CG
 		float                                                      Width;                                                   // 0x0038(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		ESlateBrushRoundingType                                    RoundingType;                                            // 0x003C(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bUseBrushTransparency;                                   // 0x003D(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_L6W7[0x2];                                   // 0x003E(0x0002) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_EFBI[0x2];                                   // 0x003E(0x0002) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -550,13 +550,13 @@ namespace CG
 	struct FSlateBrush
 	{
 	public:
-		unsigned char                                              UnknownData_YD1M[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_ACGA[0x10];                                  // 0x0000(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector2D                                           ImageSize;                                               // 0x0010(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bLockRatio;                                              // 0x0018(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_L7OL[0x3];                                   // 0x0019(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_WWGR[0x3];                                   // 0x0019(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector2D                                           LockedSize;                                              // 0x001C(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bUsePixelMargin;                                         // 0x0024(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_2R47[0x3];                                   // 0x0025(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_ZOC4[0x3];                                   // 0x0025(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FMargin                                             Margin;                                                  // 0x0028(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		struct FSlateColor                                         TintColor;                                               // 0x0038(0x0028) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrushOutlineSettings                          OutlineSettings;                                         // 0x0060(0x0040) Edit, BlueprintVisible, NativeAccessSpecifierPublic
@@ -567,10 +567,10 @@ namespace CG
 		ESlateBrushTileType                                        Tiling;                                                  // 0x00C5(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		ESlateBrushMirrorType                                      Mirroring;                                               // 0x00C6(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		ESlateBrushImageType                                       ImageType;                                               // 0x00C7(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_3ZFM[0x10];                                  // 0x00C8(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7FE6[0x10];                                  // 0x00C8(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		bool                                                       bIsDynamicallyLoaded : 1;                                // 0x00D8(0x0001) BIT_FIELD NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		bool                                                       bHasUObject : 1;                                         // 0x00D8(0x0001) BIT_FIELD Deprecated, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_KPOT[0x7];                                   // 0x00D9(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_5BH4[0x7];                                   // 0x00D9(0x0007) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -580,7 +580,7 @@ namespace CG
 	struct FInputEvent
 	{
 	public:
-		unsigned char                                              UnknownData_C8VI[0x18];                                  // 0x0000(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_6F4U[0x18];                                  // 0x0000(0x0018) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -590,7 +590,7 @@ namespace CG
 	struct FPointerEvent : public FInputEvent
 	{
 	public:
-		unsigned char                                              UnknownData_WYZ4[0x58];                                  // 0x0018(0x0058) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_PASC[0x58];                                  // 0x0018(0x0058) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -600,7 +600,7 @@ namespace CG
 	struct FCharacterEvent : public FInputEvent
 	{
 	public:
-		unsigned char                                              UnknownData_CU5V[0x8];                                   // 0x0018(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_E4II[0x8];                                   // 0x0018(0x0008) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -610,7 +610,7 @@ namespace CG
 	struct FKeyEvent : public FInputEvent
 	{
 	public:
-		unsigned char                                              UnknownData_C38L[0x20];                                  // 0x0018(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_FANZ[0x20];                                  // 0x0018(0x0020) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -620,7 +620,7 @@ namespace CG
 	struct FNavigationEvent : public FInputEvent
 	{
 	public:
-		unsigned char                                              UnknownData_SKWW[0x8];                                   // 0x0018(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_P86U[0x8];                                   // 0x0018(0x0008) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -630,7 +630,7 @@ namespace CG
 	struct FAnalogInputEvent : public FKeyEvent
 	{
 	public:
-		unsigned char                                              UnknownData_ZBFZ[0x8];                                   // 0x0038(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_A6UU[0x8];                                   // 0x0038(0x0008) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -644,7 +644,7 @@ namespace CG
 		int32_t                                                    OutlineBlur;                                             // 0x0004(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bSeparateFillAlpha;                                      // 0x0008(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bApplyOutlineToDropShadows;                              // 0x0009(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_QX7Y[0x6];                                   // 0x000A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_8CH9[0x6];                                   // 0x000A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UObject*                                             OutlineMaterial;                                         // 0x0010(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FLinearColor                                        OutlineColor;                                            // 0x0018(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
@@ -659,11 +659,11 @@ namespace CG
 		class UObject*                                             FontObject;                                              // 0x0000(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class UObject*                                             FontMaterial;                                            // 0x0008(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FFontOutlineSettings                                OutlineSettings;                                         // 0x0010(0x0028) Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_MHQC[0x10];                                  // 0x0038(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_30RE[0x10];                                  // 0x0038(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FName                                                TypefaceFontName;                                        // 0x0048(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    Size;                                                    // 0x0050(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    LetterSpacing;                                           // 0x0054(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_JGFJ[0x8];                                   // 0x0058(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_RS3L[0x8];                                   // 0x0058(0x0008) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -673,7 +673,7 @@ namespace CG
 	struct FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_0IMF[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_KO98[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -683,7 +683,7 @@ namespace CG
 	struct FTableRowStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_9VV0[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_ALNG[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         SelectorFocusedBrush;                                    // 0x0010(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         ActiveHoveredBrush;                                      // 0x00F0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         ActiveBrush;                                             // 0x01D0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
@@ -710,7 +710,7 @@ namespace CG
 	{
 	public:
 		class UObject*                                             ResourceObject;                                          // 0x0000(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_IZ9U[0x10];                                  // 0x0008(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_HKVI[0x10];                                  // 0x0008(0x0010) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -720,7 +720,7 @@ namespace CG
 	struct FButtonStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_1Z90[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_ONDE[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         Normal;                                                  // 0x0010(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         Hovered;                                                 // 0x00F0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         Pressed;                                                 // 0x01D0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
@@ -738,12 +738,12 @@ namespace CG
 	struct FComboButtonStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_YF9C[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_3GCJ[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FButtonStyle                                        ButtonStyle;                                             // 0x0010(0x03E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         DownArrowImage;                                          // 0x03F0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FVector2D                                           ShadowOffset;                                            // 0x04D0(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FLinearColor                                        ShadowColorAndOpacity;                                   // 0x04D8(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_59NP[0x8];                                   // 0x04E8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JI51[0x8];                                   // 0x04E8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         MenuBorderBrush;                                         // 0x04F0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FMargin                                             MenuBorderPadding;                                       // 0x05D0(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 	};
@@ -755,7 +755,7 @@ namespace CG
 	struct FComboBoxStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_CLO1[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_S2WB[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FComboButtonStyle                                   ComboButtonStyle;                                        // 0x0010(0x05E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateSound                                         PressedSlateSound;                                       // 0x05F0(0x0018) Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic
 		struct FSlateSound                                         SelectionChangeSlateSound;                               // 0x0608(0x0018) Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic
@@ -782,7 +782,7 @@ namespace CG
 	struct FScrollBarStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_IXK7[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_YS7T[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         HorizontalBackgroundImage;                               // 0x0010(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         VerticalBackgroundImage;                                 // 0x00F0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         VerticalTopSlotImage;                                    // 0x01D0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
@@ -801,7 +801,7 @@ namespace CG
 	struct FEditableTextBoxStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_EMO4[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_VMPN[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         BackgroundImageNormal;                                   // 0x0010(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         BackgroundImageHovered;                                  // 0x00F0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         BackgroundImageFocused;                                  // 0x01D0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
@@ -813,7 +813,7 @@ namespace CG
 		struct FSlateColor                                         ReadOnlyForegroundColor;                                 // 0x0450(0x0028) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FMargin                                             HScrollBarPadding;                                       // 0x0478(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		struct FMargin                                             VScrollBarPadding;                                       // 0x0488(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_RPEC[0x8];                                   // 0x0498(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_41E8[0x8];                                   // 0x0498(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FScrollBarStyle                                     ScrollBarStyle;                                          // 0x04A0(0x07F0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 	};
 
@@ -843,7 +843,7 @@ namespace CG
 	struct FSpinBoxStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_QEXJ[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_O603[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         BackgroundBrush;                                         // 0x0010(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         HoveredBackgroundBrush;                                  // 0x00F0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         ActiveFillBrush;                                         // 0x01D0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
@@ -851,7 +851,7 @@ namespace CG
 		struct FSlateBrush                                         ArrowsImage;                                             // 0x0390(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateColor                                         ForegroundColor;                                         // 0x0470(0x0028) NativeAccessSpecifierPublic
 		struct FMargin                                             TextPadding;                                             // 0x0498(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_X1XR[0x8];                                   // 0x04A8(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_MY0J[0x8];                                   // 0x04A8(0x0008) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -861,7 +861,7 @@ namespace CG
 	struct FFocusEvent
 	{
 	public:
-		unsigned char                                              UnknownData_B6VZ[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_0RC6[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -871,7 +871,7 @@ namespace CG
 	struct FMotionEvent : public FInputEvent
 	{
 	public:
-		unsigned char                                              UnknownData_VHZH[0x30];                                  // 0x0018(0x0030) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_DHGG[0x30];                                  // 0x0018(0x0030) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -881,7 +881,7 @@ namespace CG
 	struct FHyperlinkStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_HCAE[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_P8TY[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FButtonStyle                                        UnderlineStyle;                                          // 0x0010(0x03E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FTextBlockStyle                                     TextStyle;                                               // 0x03F0(0x0460) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FMargin                                             Padding;                                                 // 0x0850(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
@@ -897,7 +897,7 @@ namespace CG
 		class FString                                              FontFilename;                                            // 0x0000(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		EFontHinting                                               Hinting;                                                 // 0x0010(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		EFontLoadingPolicy                                         LoadingPolicy;                                           // 0x0011(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_Z4YK[0x2];                                   // 0x0012(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_68UA[0x2];                                   // 0x0012(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    SubFaceIndex;                                            // 0x0014(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		class UObject*                                             FontFaceAsset;                                           // 0x0018(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 	};
@@ -932,7 +932,7 @@ namespace CG
 	public:
 		struct FTypeface                                           Typeface;                                                // 0x0000(0x0010) NativeAccessSpecifierPublic
 		float                                                      ScalingFactor;                                           // 0x0010(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_QK6R[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_0DO2[0x4];                                   // 0x0014(0x0004) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -965,7 +965,7 @@ namespace CG
 	struct FCaptureLostEvent
 	{
 	public:
-		unsigned char                                              UnknownData_HGLT[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_T9L6[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -975,7 +975,7 @@ namespace CG
 	struct FWindowStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_3MB8[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_IFHY[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FButtonStyle                                        MinimizeButtonStyle;                                     // 0x0010(0x03E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FButtonStyle                                        MaximizeButtonStyle;                                     // 0x03F0(0x03E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FButtonStyle                                        RestoreButtonStyle;                                      // 0x07D0(0x03E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
@@ -985,10 +985,10 @@ namespace CG
 		struct FSlateBrush                                         InactiveTitleBrush;                                      // 0x14D0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         FlashTitleBrush;                                         // 0x15B0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateColor                                         BackgroundColor;                                         // 0x1690(0x0028) Edit, BlueprintVisible, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_XZVG[0x8];                                   // 0x16B8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_URLX[0x8];                                   // 0x16B8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         OutlineBrush;                                            // 0x16C0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateColor                                         OutlineColor;                                            // 0x17A0(0x0028) Edit, BlueprintVisible, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_OQPQ[0x8];                                   // 0x17C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_TZY2[0x8];                                   // 0x17C8(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         BorderBrush;                                             // 0x17D0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         BackgroundBrush;                                         // 0x18B0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         ChildBackgroundBrush;                                    // 0x1990(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
@@ -1001,7 +1001,7 @@ namespace CG
 	struct FScrollBorderStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_EKAT[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_MT6T[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         TopShadowBrush;                                          // 0x0010(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         BottomShadowBrush;                                       // 0x00F0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 	};
@@ -1013,7 +1013,7 @@ namespace CG
 	struct FScrollBoxStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_DQLU[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_UBPZ[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         TopShadowBrush;                                          // 0x0010(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         BottomShadowBrush;                                       // 0x00F0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         LeftShadowBrush;                                         // 0x01D0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
@@ -1027,7 +1027,7 @@ namespace CG
 	struct FDockTabStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_HU0J[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_B5FB[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FButtonStyle                                        CloseButtonStyle;                                        // 0x0010(0x03E0) Edit, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         NormalBrush;                                             // 0x03F0(0x00E0) Edit, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         ActiveBrush;                                             // 0x04D0(0x00E0) Edit, NativeAccessSpecifierPublic
@@ -1039,7 +1039,7 @@ namespace CG
 		struct FSlateBrush                                         TabWellBrush;                                            // 0x0A10(0x00E0) Edit, NativeAccessSpecifierPublic
 		struct FMargin                                             TabPadding;                                              // 0x0AF0(0x0010) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		float                                                      OverlapWidth;                                            // 0x0B00(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_3ISS[0x4];                                   // 0x0B04(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_BXRM[0x4];                                   // 0x0B04(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateColor                                         FlashColor;                                              // 0x0B08(0x0028) Edit, NativeAccessSpecifierPublic
 	};
 
@@ -1050,7 +1050,7 @@ namespace CG
 	struct FTableColumnHeaderStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_36BX[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_0FMU[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         SortPrimaryAscendingImage;                               // 0x0010(0x00E0) Edit, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         SortPrimaryDescendingImage;                              // 0x00F0(0x00E0) Edit, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         SortSecondaryAscendingImage;                             // 0x01D0(0x00E0) Edit, NativeAccessSpecifierPublic
@@ -1069,7 +1069,7 @@ namespace CG
 	struct FSplitterStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_W05D[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_2RWS[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         HandleNormalBrush;                                       // 0x0010(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         HandleHighlightBrush;                                    // 0x00F0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 	};
@@ -1081,13 +1081,13 @@ namespace CG
 	struct FHeaderRowStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_U558[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_ALRK[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FTableColumnHeaderStyle                             ColumnStyle;                                             // 0x0010(0x07F0) Edit, NativeAccessSpecifierPublic
 		struct FTableColumnHeaderStyle                             LastColumnStyle;                                         // 0x0800(0x07F0) Edit, NativeAccessSpecifierPublic
 		struct FSplitterStyle                                      ColumnSplitterStyle;                                     // 0x0FF0(0x01D0) Edit, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         BackgroundBrush;                                         // 0x11C0(0x00E0) Edit, NativeAccessSpecifierPublic
 		struct FSlateColor                                         ForegroundColor;                                         // 0x12A0(0x0028) Edit, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_9DW1[0x8];                                   // 0x12C8(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_T6TN[0x8];                                   // 0x12C8(0x0008) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -1097,10 +1097,10 @@ namespace CG
 	struct FInlineTextImageStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_5ECG[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_X3H9[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         Image;                                                   // 0x0010(0x00E0) Edit, NativeAccessSpecifierPublic
 		int16_t                                                    Baseline;                                                // 0x00F0(0x0002) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_MZQL[0xE];                                   // 0x00F2(0x000E) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_7HH3[0xE];                                   // 0x00F2(0x000E) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -1110,7 +1110,7 @@ namespace CG
 	struct FSliderStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_601I[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_8JBL[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         NormalBarImage;                                          // 0x0010(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         HoveredBarImage;                                         // 0x00F0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         DisabledBarImage;                                        // 0x01D0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
@@ -1118,7 +1118,7 @@ namespace CG
 		struct FSlateBrush                                         HoveredThumbImage;                                       // 0x0390(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         DisabledThumbImage;                                      // 0x0470(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		float                                                      BarThickness;                                            // 0x0550(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_A03S[0xC];                                   // 0x0554(0x000C) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_1DI8[0xC];                                   // 0x0554(0x000C) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -1128,7 +1128,7 @@ namespace CG
 	struct FVolumeControlStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_4SRD[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_IUH7[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSliderStyle                                        SliderStyle;                                             // 0x0010(0x0560) Edit, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         HighVolumeImage;                                         // 0x0570(0x00E0) Edit, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         MidVolumeImage;                                          // 0x0650(0x00E0) Edit, NativeAccessSpecifierPublic
@@ -1144,7 +1144,7 @@ namespace CG
 	struct FSearchBoxStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_S0TB[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_OM6W[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FEditableTextBoxStyle                               TextBoxStyle;                                            // 0x0010(0x0C90) Edit, NativeAccessSpecifierPublic
 		struct FSlateFontInfo                                      ActiveFontInfo;                                          // 0x0CA0(0x0060) Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         UpArrowImage;                                            // 0x0D00(0x00E0) Edit, NativeAccessSpecifierPublic
@@ -1153,7 +1153,7 @@ namespace CG
 		struct FSlateBrush                                         ClearImage;                                              // 0x0FA0(0x00E0) Edit, NativeAccessSpecifierPublic
 		struct FMargin                                             ImagePadding;                                            // 0x1080(0x0010) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		bool                                                       bLeftAlignButtons;                                       // 0x1090(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_8RSQ[0xF];                                   // 0x1091(0x000F) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_WYU8[0xF];                                   // 0x1091(0x000F) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -1163,11 +1163,11 @@ namespace CG
 	struct FExpandableAreaStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_5PGD[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_3SRF[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         CollapsedImage;                                          // 0x0010(0x00E0) Edit, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         ExpandedImage;                                           // 0x00F0(0x00E0) Edit, NativeAccessSpecifierPublic
 		float                                                      RolloutAnimationSeconds;                                 // 0x01D0(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_8190[0xC];                                   // 0x01D4(0x000C) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_KSUF[0xC];                                   // 0x01D4(0x000C) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -1177,7 +1177,7 @@ namespace CG
 	struct FProgressBarStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_DTVC[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_MYGB[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         BackgroundImage;                                         // 0x0010(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         FillImage;                                               // 0x00F0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         MarqueeImage;                                            // 0x01D0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
@@ -1190,7 +1190,7 @@ namespace CG
 	struct FInlineEditableTextBlockStyle : public FSlateWidgetStyle
 	{
 	public:
-		unsigned char                                              UnknownData_RKGQ[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_6RXP[0x8];                                   // 0x0008(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FEditableTextBoxStyle                               EditableTextBoxStyle;                                    // 0x0010(0x0C90) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FTextBlockStyle                                     TextStyle;                                               // 0x0CA0(0x0460) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 	};
@@ -1203,7 +1203,7 @@ namespace CG
 	{
 	public:
 		ESlateCheckBoxType                                         CheckBoxType;                                            // 0x0008(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_93NV[0x7];                                   // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_RS2S[0x7];                                   // 0x0009(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         UncheckedImage;                                          // 0x0010(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         UncheckedHoveredImage;                                   // 0x00F0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		struct FSlateBrush                                         UncheckedPressedImage;                                   // 0x01D0(0x00E0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
@@ -1219,7 +1219,7 @@ namespace CG
 		struct FSlateSound                                         CheckedSlateSound;                                       // 0x0850(0x0018) Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic
 		struct FSlateSound                                         UncheckedSlateSound;                                     // 0x0868(0x0018) Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic
 		struct FSlateSound                                         HoveredSlateSound;                                       // 0x0880(0x0018) Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_23VO[0x8];                                   // 0x0898(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_ZQMH[0x8];                                   // 0x0898(0x0008) MISSED OFFSET (PADDING)
 	};
 
 }

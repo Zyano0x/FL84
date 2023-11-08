@@ -15,33 +15,33 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_6E78FC9E46B098A1927284AAA21E3D66
+	 * DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_40384EEC489D7C38A70421A02EF7485A
 	 */
-	struct UUI_Currency_Bar_C_OnClicked_6E78FC9E46B098A1927284AAA21E3D66_Params
+	struct UUI_Currency_Bar_C_OnClicked_40384EEC489D7C38A70421A02EF7485A_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_400DD5ED40EAE2E734166B9DC44B2B56
+	 * DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_7785F5FB404C65C44C96349788254218
 	 */
-	struct UUI_Currency_Bar_C_OnClicked_400DD5ED40EAE2E734166B9DC44B2B56_Params
+	struct UUI_Currency_Bar_C_OnClicked_7785F5FB404C65C44C96349788254218_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_4910C97048176A6F1C12D1B35CA71427
+	 * DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_85F263354BF9D978B59A098245067120
 	 */
-	struct UUI_Currency_Bar_C_OnClicked_4910C97048176A6F1C12D1B35CA71427_Params
+	struct UUI_Currency_Bar_C_OnClicked_85F263354BF9D978B59A098245067120_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_CC9BE56D485D0C97063C3A838B18AEDA
+	 * DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_B9A0E05E4EABB4BDD5286D8EA263E4CB
 	 */
-	struct UUI_Currency_Bar_C_OnClicked_CC9BE56D485D0C97063C3A838B18AEDA_Params
+	struct UUI_Currency_Bar_C_OnClicked_B9A0E05E4EABB4BDD5286D8EA263E4CB_Params
 	{	};
 
 	/**
-	 * Function UI_Currency_Bar.UI_Currency_Bar_C.Construct
+	 * Function UI_Currency_Bar.UI_Currency_Bar_C.OnSolarUIOpened
 	 */
-	struct UUI_Currency_Bar_C_Construct_Params
+	struct UUI_Currency_Bar_C_OnSolarUIOpened_Params
 	{	};
 
 	/**
@@ -51,9 +51,9 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Currency_Bar.UI_Currency_Bar_C.OnSolarUIOpened
+	 * Function UI_Currency_Bar.UI_Currency_Bar_C.Construct
 	 */
-	struct UUI_Currency_Bar_C_OnSolarUIOpened_Params
+	struct UUI_Currency_Bar_C_Construct_Params
 	{	};
 
 	/**

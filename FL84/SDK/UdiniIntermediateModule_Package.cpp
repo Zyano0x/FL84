@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CE4650
+	 * 		RVA    -> 0x01CE3890
 	 * 		Name   -> Function UdiniIntermediateModule.UdiniIntermediateModuleBPLibrary.UdiniIntermediateModuleSampleFunction
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:

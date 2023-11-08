@@ -21,15 +21,15 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Component_Gamepad.UI_Component_Gamepad_C.Construct
-	 */
-	struct UUI_Component_Gamepad_C_Construct_Params
-	{	};
-
-	/**
 	 * Function UI_Component_Gamepad.UI_Component_Gamepad_C.OnInitialized
 	 */
 	struct UUI_Component_Gamepad_C_OnInitialized_Params
+	{	};
+
+	/**
+	 * Function UI_Component_Gamepad.UI_Component_Gamepad_C.Construct
+	 */
+	struct UUI_Component_Gamepad_C_Construct_Params
 	{	};
 
 	/**

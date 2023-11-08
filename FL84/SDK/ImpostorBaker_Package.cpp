@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CF85E0
+	 * 		RVA    -> 0x01CF7820
 	 * 		Name   -> Function ImpostorBaker.KismetImpostorBakerLibrary.ConvertProceduralToStatic
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9EBD0
+	 * 		RVA    -> 0x01D9DE10
 	 * 		Name   -> Function GooglePAD.GooglePADFunctionLibrary.ShowCellularDataConfirmation
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9EB30
+	 * 		RVA    -> 0x01D9DD70
 	 * 		Name   -> Function GooglePAD.GooglePADFunctionLibrary.RequestRemoval
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -59,7 +59,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9E540
+	 * 		RVA    -> 0x01D9D780
 	 * 		Name   -> Function GooglePAD.GooglePADFunctionLibrary.RequestInfo
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -84,7 +84,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9E540
+	 * 		RVA    -> 0x01D9D780
 	 * 		Name   -> Function GooglePAD.GooglePADFunctionLibrary.RequestDownload
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -109,7 +109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9EAB0
+	 * 		RVA    -> 0x01D9DCF0
 	 * 		Name   -> Function GooglePAD.GooglePADFunctionLibrary.ReleaseDownloadState
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -132,7 +132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9EAB0
+	 * 		RVA    -> 0x01D9DCF0
 	 * 		Name   -> Function GooglePAD.GooglePADFunctionLibrary.ReleaseAssetPackLocation
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -155,7 +155,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9E870
+	 * 		RVA    -> 0x01D9DAB0
 	 * 		Name   -> Function GooglePAD.GooglePADFunctionLibrary.GetTotalBytesToDownload
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -180,7 +180,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9EA20
+	 * 		RVA    -> 0x01D9DC60
 	 * 		Name   -> Function GooglePAD.GooglePADFunctionLibrary.GetStorageMethod
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -205,7 +205,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9E990
+	 * 		RVA    -> 0x01D9DBD0
 	 * 		Name   -> Function GooglePAD.GooglePADFunctionLibrary.GetShowCellularDataConfirmationStatus
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -232,7 +232,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9E900
+	 * 		RVA    -> 0x01D9DB40
 	 * 		Name   -> Function GooglePAD.GooglePADFunctionLibrary.GetDownloadStatus
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -257,7 +257,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9E6B0
+	 * 		RVA    -> 0x01D9D8F0
 	 * 		Name   -> Function GooglePAD.GooglePADFunctionLibrary.GetDownloadState
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -286,7 +286,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9E870
+	 * 		RVA    -> 0x01D9DAB0
 	 * 		Name   -> Function GooglePAD.GooglePADFunctionLibrary.GetBytesDownloaded
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -311,7 +311,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9E7A0
+	 * 		RVA    -> 0x01D9D9E0
 	 * 		Name   -> Function GooglePAD.GooglePADFunctionLibrary.GetAssetsPath
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -336,7 +336,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9E6B0
+	 * 		RVA    -> 0x01D9D8F0
 	 * 		Name   -> Function GooglePAD.GooglePADFunctionLibrary.GetAssetPackLocation
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -365,7 +365,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9E540
+	 * 		RVA    -> 0x01D9D780
 	 * 		Name   -> Function GooglePAD.GooglePADFunctionLibrary.CancelDownload
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:

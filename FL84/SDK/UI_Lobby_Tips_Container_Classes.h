@@ -29,11 +29,11 @@ namespace CG
 		class UCanvasPanel*                                        CanvasPanel_Container;                                   // 0x0428(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnClicked_7448812F4DDEEFF2850F28859D70B023();
-		void OnPressed_E51569124397344114C3D3AA7232B453();
+		void OnClicked_0A99827A496E213AB78AC7B4CB8CB582();
+		void OnPressed_71C02F5D49CAA3C49895809FCA48BC4F();
 		void Destruct();
-		void Construct();
 		void OnHide();
+		void Construct();
 		void OnShow();
 		class FString GetModuleName();
 		static UClass* StaticClass();

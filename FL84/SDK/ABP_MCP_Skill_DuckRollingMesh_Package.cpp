@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B4B9D0
+	 * 		RVA    -> 0x01B4AC10
 	 * 		Name   -> Function ABP_MCP_Skill_DuckRollingMesh.ABP_MCP_Skill_DuckRollingMesh_C.ExecuteUbergraph_ABP_MCP_Skill_DuckRollingMesh
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -35,7 +35,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B49450
+	 * 		RVA    -> 0x01B48690
 	 * 		Name   -> Function ABP_MCP_Skill_DuckRollingMesh.ABP_MCP_Skill_DuckRollingMesh_C.AnimGraph
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

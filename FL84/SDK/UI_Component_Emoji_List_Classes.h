@@ -33,7 +33,7 @@ namespace CG
 		class UWidgetSwitcher*                                     WidgetSwitcher_Content;                                  // 0x0448(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnStateChangedEvent_474F707248AFA6563F8D4689D9B7A291(int32_t InLastButtonIndex);
+		void OnStateChangedEvent_BFDCBBE44555E548065681985936E79F(int32_t InLastButtonIndex);
 		void Construct();
 		void Destruct();
 		class FString GetModuleName();

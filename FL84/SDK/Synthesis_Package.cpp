@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCA900
+	 * 		RVA    -> 0x01DC9B40
 	 * 		Name   -> Function Synthesis.ModularSynthLibrary.AddModularSynthPresetToBankAsset
 	 * 		Flags  -> (Final, Native, Static, Private, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -67,7 +67,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCCF20
+	 * 		RVA    -> 0x01DCC160
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetSynthPreset
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -90,7 +90,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCCEA0
+	 * 		RVA    -> 0x01DCC0E0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetSustainGain
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -113,7 +113,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCCE20
+	 * 		RVA    -> 0x01DCC060
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetStereoDelayWetlevel
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -136,7 +136,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCCDA0
+	 * 		RVA    -> 0x01DCBFE0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetStereoDelayTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -159,7 +159,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCCD20
+	 * 		RVA    -> 0x01DCBF60
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetStereoDelayRatio
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -182,7 +182,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCCCA0
+	 * 		RVA    -> 0x01DCBEE0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetStereoDelayMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -205,7 +205,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCCC10
+	 * 		RVA    -> 0x01DCBE50
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetStereoDelayIsEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -228,7 +228,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCCB90
+	 * 		RVA    -> 0x01DCBDD0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetStereoDelayFeedback
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -251,7 +251,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCCB10
+	 * 		RVA    -> 0x01DCBD50
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetSpread
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -274,7 +274,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCCA90
+	 * 		RVA    -> 0x01DCBCD0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetReleaseTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -297,7 +297,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCCA10
+	 * 		RVA    -> 0x01DCBC50
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetPortamento
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -320,7 +320,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCC990
+	 * 		RVA    -> 0x01DCBBD0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetPitchBend
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -343,7 +343,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCC910
+	 * 		RVA    -> 0x01DCBB50
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetPan
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -366,7 +366,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCC840
+	 * 		RVA    -> 0x01DCBA80
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -391,7 +391,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCC7B0
+	 * 		RVA    -> 0x01DCB9F0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscSync
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -414,7 +414,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCC6E0
+	 * 		RVA    -> 0x01DCB920
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscSemitones
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -439,7 +439,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCC610
+	 * 		RVA    -> 0x01DCB850
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscPulsewidth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -464,7 +464,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCC540
+	 * 		RVA    -> 0x01DCB780
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscOctave
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -489,7 +489,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCC470
+	 * 		RVA    -> 0x01DCB6B0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscGainMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -514,7 +514,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCC3A0
+	 * 		RVA    -> 0x01DCB5E0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscGain
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -539,7 +539,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCC2D0
+	 * 		RVA    -> 0x01DCB510
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscFrequencyMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -564,7 +564,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCC200
+	 * 		RVA    -> 0x01DCB440
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetOscCents
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -589,7 +589,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCC180
+	 * 		RVA    -> 0x01DCB3C0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetModEnvSustainGain
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -612,7 +612,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCC100
+	 * 		RVA    -> 0x01DCB340
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetModEnvReleaseTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -635,7 +635,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCC080
+	 * 		RVA    -> 0x01DCB2C0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetModEnvPatch
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -658,7 +658,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCBFF0
+	 * 		RVA    -> 0x01DCB230
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetModEnvInvert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -681,7 +681,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCBF70
+	 * 		RVA    -> 0x01DCB1B0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetModEnvDepth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -704,7 +704,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCBEF0
+	 * 		RVA    -> 0x01DCB130
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetModEnvDecayTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -727,7 +727,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCBE70
+	 * 		RVA    -> 0x01DCB0B0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetModEnvBiasPatch
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -750,7 +750,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCBDE0
+	 * 		RVA    -> 0x01DCB020
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetModEnvBiasInvert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -773,7 +773,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCBD60
+	 * 		RVA    -> 0x01DCAFA0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetModEnvAttackTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -796,7 +796,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCBC90
+	 * 		RVA    -> 0x01DCAED0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -821,7 +821,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCBBC0
+	 * 		RVA    -> 0x01DCAE00
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOPatch
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -846,7 +846,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCBAF0
+	 * 		RVA    -> 0x01DCAD30
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -871,7 +871,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCBA20
+	 * 		RVA    -> 0x01DCAC60
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOGainMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -896,7 +896,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCB950
+	 * 		RVA    -> 0x01DCAB90
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOGain
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -921,7 +921,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCB880
+	 * 		RVA    -> 0x01DCAAC0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOFrequencyMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -946,7 +946,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCB7B0
+	 * 		RVA    -> 0x01DCA9F0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetLFOFrequency
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -971,7 +971,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCB730
+	 * 		RVA    -> 0x01DCA970
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetGainDb
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -994,7 +994,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCB6B0
+	 * 		RVA    -> 0x01DCA8F0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetFilterType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1017,7 +1017,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCB630
+	 * 		RVA    -> 0x01DCA870
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetFilterQMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1040,7 +1040,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCB5B0
+	 * 		RVA    -> 0x01DCA7F0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetFilterQ
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1063,7 +1063,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCB530
+	 * 		RVA    -> 0x01DCA770
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetFilterFrequencyMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1086,7 +1086,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCB4B0
+	 * 		RVA    -> 0x01DCA6F0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetFilterFrequency
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1109,7 +1109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCB430
+	 * 		RVA    -> 0x01DCA670
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetFilterAlgorithm
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1132,7 +1132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCB3A0
+	 * 		RVA    -> 0x01DCA5E0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetEnableUnison
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1155,7 +1155,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCB310
+	 * 		RVA    -> 0x01DCA550
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetEnableRetrigger
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1178,7 +1178,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCB280
+	 * 		RVA    -> 0x01DCA4C0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetEnablePolyphony
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1201,7 +1201,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCB1B0
+	 * 		RVA    -> 0x01DCA3F0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetEnablePatch
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1228,7 +1228,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCB120
+	 * 		RVA    -> 0x01DCA360
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetEnableLegato
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1251,7 +1251,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCB0A0
+	 * 		RVA    -> 0x01DCA2E0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetDecayTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1274,7 +1274,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCB020
+	 * 		RVA    -> 0x01DCA260
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetChorusFrequency
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1297,7 +1297,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCAFA0
+	 * 		RVA    -> 0x01DCA1E0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetChorusFeedback
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1320,7 +1320,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCAF10
+	 * 		RVA    -> 0x01DCA150
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetChorusEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1343,7 +1343,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCAE90
+	 * 		RVA    -> 0x01DCA0D0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetChorusDepth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1366,7 +1366,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCAE10
+	 * 		RVA    -> 0x01DCA050
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.SetAttackTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1389,7 +1389,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCACF0
+	 * 		RVA    -> 0x01DC9F30
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.NoteOn
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1416,7 +1416,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCABD0
+	 * 		RVA    -> 0x01DC9E10
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.NoteOff
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1443,7 +1443,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DCAA80
+	 * 		RVA    -> 0x01DC9CC0
 	 * 		Name   -> Function Synthesis.ModularSynthComponent.CreatePatch
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1486,7 +1486,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD1F10
+	 * 		RVA    -> 0x01DD1150
 	 * 		Name   -> Function Synthesis.SourceEffectBitCrusherPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1523,7 +1523,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD1FC0
+	 * 		RVA    -> 0x01DD1200
 	 * 		Name   -> Function Synthesis.SourceEffectChorusPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1560,7 +1560,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD2070
+	 * 		RVA    -> 0x01DD12B0
 	 * 		Name   -> Function Synthesis.SourceEffectDynamicsProcessorPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1611,7 +1611,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD2890
+	 * 		RVA    -> 0x01DD1AD0
 	 * 		Name   -> Function Synthesis.SourceEffectEnvelopeFollowerPreset.UnregisterEnvelopeFollowerListener
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1634,7 +1634,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD21D0
+	 * 		RVA    -> 0x01DD1410
 	 * 		Name   -> Function Synthesis.SourceEffectEnvelopeFollowerPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1657,7 +1657,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD1DF0
+	 * 		RVA    -> 0x01DD1030
 	 * 		Name   -> Function Synthesis.SourceEffectEnvelopeFollowerPreset.RegisterEnvelopeFollowerListener
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1694,7 +1694,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD2120
+	 * 		RVA    -> 0x01DD1360
 	 * 		Name   -> Function Synthesis.SourceEffectEQPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1731,7 +1731,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD2280
+	 * 		RVA    -> 0x01DD14C0
 	 * 		Name   -> Function Synthesis.SourceEffectFilterPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1768,7 +1768,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD2330
+	 * 		RVA    -> 0x01DD1570
 	 * 		Name   -> Function Synthesis.SourceEffectFoldbackDistortionPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1805,7 +1805,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD23E0
+	 * 		RVA    -> 0x01DD1620
 	 * 		Name   -> Function Synthesis.SourceEffectMidSideSpreaderPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1842,7 +1842,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD2490
+	 * 		RVA    -> 0x01DD16D0
 	 * 		Name   -> Function Synthesis.SourceEffectPannerPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1879,7 +1879,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD2540
+	 * 		RVA    -> 0x01DD1780
 	 * 		Name   -> Function Synthesis.SourceEffectPhaserPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1916,7 +1916,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD2600
+	 * 		RVA    -> 0x01DD1840
 	 * 		Name   -> Function Synthesis.SourceEffectRingModulationPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1953,7 +1953,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD26A0
+	 * 		RVA    -> 0x01DD18E0
 	 * 		Name   -> Function Synthesis.SourceEffectSimpleDelayPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1990,7 +1990,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD2750
+	 * 		RVA    -> 0x01DD1990
 	 * 		Name   -> Function Synthesis.SourceEffectStereoDelayPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2027,7 +2027,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD2490
+	 * 		RVA    -> 0x01DD16D0
 	 * 		Name   -> Function Synthesis.SourceEffectWaveShaperPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2078,7 +2078,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD27F0
+	 * 		RVA    -> 0x01DD1A30
 	 * 		Name   -> Function Synthesis.SubmixEffectConvolutionReverbPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2101,7 +2101,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD1E80
+	 * 		RVA    -> 0x01DD10C0
 	 * 		Name   -> Function Synthesis.SubmixEffectConvolutionReverbPreset.SetImpulseResponse
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2138,7 +2138,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD8220
+	 * 		RVA    -> 0x01DD7460
 	 * 		Name   -> Function Synthesis.SubmixEffectDelayPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2161,7 +2161,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7750
+	 * 		RVA    -> 0x01DD6990
 	 * 		Name   -> Function Synthesis.SubmixEffectDelayPreset.SetInterpolationTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2184,7 +2184,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6920
+	 * 		RVA    -> 0x01DD5B60
 	 * 		Name   -> Function Synthesis.SubmixEffectDelayPreset.SetDelay
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2207,7 +2207,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD5A60
+	 * 		RVA    -> 0x01DD4CA0
 	 * 		Name   -> Function Synthesis.SubmixEffectDelayPreset.GetMaxDelayInMilliseconds
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -2243,7 +2243,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD82E0
+	 * 		RVA    -> 0x01DD7520
 	 * 		Name   -> Function Synthesis.SubmixEffectFilterPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2266,7 +2266,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7040
+	 * 		RVA    -> 0x01DD6280
 	 * 		Name   -> Function Synthesis.SubmixEffectFilterPreset.SetFilterType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2289,7 +2289,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6FC0
+	 * 		RVA    -> 0x01DD6200
 	 * 		Name   -> Function Synthesis.SubmixEffectFilterPreset.SetFilterQMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2312,7 +2312,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6F40
+	 * 		RVA    -> 0x01DD6180
 	 * 		Name   -> Function Synthesis.SubmixEffectFilterPreset.SetFilterQ
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2335,7 +2335,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6AA0
+	 * 		RVA    -> 0x01DD5CE0
 	 * 		Name   -> Function Synthesis.SubmixEffectFilterPreset.SetFilterCutoffFrequencyMod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2358,7 +2358,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6A20
+	 * 		RVA    -> 0x01DD5C60
 	 * 		Name   -> Function Synthesis.SubmixEffectFilterPreset.SetFilterCutoffFrequency
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2381,7 +2381,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD69A0
+	 * 		RVA    -> 0x01DD5BE0
 	 * 		Name   -> Function Synthesis.SubmixEffectFilterPreset.SetFilterAlgorithm
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2418,7 +2418,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD8390
+	 * 		RVA    -> 0x01DD75D0
 	 * 		Name   -> Function Synthesis.SubmixEffectFlexiverbPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2455,7 +2455,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD87C0
+	 * 		RVA    -> 0x01DD7A00
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.SetTap
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2480,7 +2480,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD8450
+	 * 		RVA    -> 0x01DD7690
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.SetSettings
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2503,7 +2503,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD77D0
+	 * 		RVA    -> 0x01DD6A10
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.SetInterpolationTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2526,7 +2526,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6140
+	 * 		RVA    -> 0x01DD5380
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.RemoveTap
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2549,7 +2549,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD5C20
+	 * 		RVA    -> 0x01DD4E60
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.GetTapIds
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2574,7 +2574,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD5B40
+	 * 		RVA    -> 0x01DD4D80
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.GetTap
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2601,7 +2601,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD5A80
+	 * 		RVA    -> 0x01DD4CC0
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.GetMaxDelayInMilliseconds
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -2623,7 +2623,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD5820
+	 * 		RVA    -> 0x01DD4A60
 	 * 		Name   -> Function Synthesis.SubmixEffectTapDelayPreset.AddTap
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2662,7 +2662,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD88A0
+	 * 		RVA    -> 0x01DD7AE0
 	 * 		Name   -> Function Synthesis.Synth2DSlider.SetValue
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2685,7 +2685,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD8630
+	 * 		RVA    -> 0x01DD7870
 	 * 		Name   -> Function Synthesis.Synth2DSlider.SetStepSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2708,7 +2708,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD8510
+	 * 		RVA    -> 0x01DD7750
 	 * 		Name   -> Function Synthesis.Synth2DSlider.SetSliderHandleColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2731,7 +2731,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7850
+	 * 		RVA    -> 0x01DD6A90
 	 * 		Name   -> Function Synthesis.Synth2DSlider.SetLocked
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2754,7 +2754,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD76C0
+	 * 		RVA    -> 0x01DD6900
 	 * 		Name   -> Function Synthesis.Synth2DSlider.SetIndentHandle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2777,7 +2777,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD5CD0
+	 * 		RVA    -> 0x01DD4F10
 	 * 		Name   -> Function Synthesis.Synth2DSlider.GetValue
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2813,7 +2813,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD86B0
+	 * 		RVA    -> 0x01DD78F0
 	 * 		Name   -> Function Synthesis.GranularSynth.SetSustainGain
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2836,7 +2836,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD85A0
+	 * 		RVA    -> 0x01DD77E0
 	 * 		Name   -> Function Synthesis.GranularSynth.SetSoundWave
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2859,7 +2859,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD8190
+	 * 		RVA    -> 0x01DD73D0
 	 * 		Name   -> Function Synthesis.GranularSynth.SetScrubMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2882,7 +2882,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD8110
+	 * 		RVA    -> 0x01DD7350
 	 * 		Name   -> Function Synthesis.GranularSynth.SetReleaseTimeMsec
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2905,7 +2905,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7A60
+	 * 		RVA    -> 0x01DD6CA0
 	 * 		Name   -> Function Synthesis.GranularSynth.SetPlayheadTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2932,7 +2932,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD79E0
+	 * 		RVA    -> 0x01DD6C20
 	 * 		Name   -> Function Synthesis.GranularSynth.SetPlaybackSpeed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2955,7 +2955,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7580
+	 * 		RVA    -> 0x01DD67C0
 	 * 		Name   -> Function Synthesis.GranularSynth.SetGrainVolume
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -2980,7 +2980,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7640
+	 * 		RVA    -> 0x01DD6880
 	 * 		Name   -> Function Synthesis.GranularSynth.SetGrainsPerSecond
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3003,7 +3003,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7500
+	 * 		RVA    -> 0x01DD6740
 	 * 		Name   -> Function Synthesis.GranularSynth.SetGrainProbability
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3026,7 +3026,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7440
+	 * 		RVA    -> 0x01DD6680
 	 * 		Name   -> Function Synthesis.GranularSynth.SetGrainPitch
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3051,7 +3051,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7380
+	 * 		RVA    -> 0x01DD65C0
 	 * 		Name   -> Function Synthesis.GranularSynth.SetGrainPan
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3076,7 +3076,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7300
+	 * 		RVA    -> 0x01DD6540
 	 * 		Name   -> Function Synthesis.GranularSynth.SetGrainEnvelopeType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3099,7 +3099,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7240
+	 * 		RVA    -> 0x01DD6480
 	 * 		Name   -> Function Synthesis.GranularSynth.SetGrainDuration
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3124,7 +3124,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD65F0
+	 * 		RVA    -> 0x01DD5830
 	 * 		Name   -> Function Synthesis.GranularSynth.SetDecayTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3147,7 +3147,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD65F0
+	 * 		RVA    -> 0x01DD5830
 	 * 		Name   -> Function Synthesis.GranularSynth.SetAttackTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3170,7 +3170,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD5EA0
+	 * 		RVA    -> 0x01DD50E0
 	 * 		Name   -> Function Synthesis.GranularSynth.NoteOn
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3197,7 +3197,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD5D40
+	 * 		RVA    -> 0x01DD4F80
 	 * 		Name   -> Function Synthesis.GranularSynth.NoteOff
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3222,7 +3222,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD5D10
+	 * 		RVA    -> 0x01DD4F50
 	 * 		Name   -> Function Synthesis.GranularSynth.IsLoaded
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3244,7 +3244,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD5B10
+	 * 		RVA    -> 0x01DD4D50
 	 * 		Name   -> Function Synthesis.GranularSynth.GetSampleDuration
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3266,7 +3266,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD58B0
+	 * 		RVA    -> 0x01DD4AF0
 	 * 		Name   -> Function Synthesis.GranularSynth.GetCurrentPlayheadTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3316,7 +3316,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD8920
+	 * 		RVA    -> 0x01DD7B60
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetWaveTablePosition
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3339,7 +3339,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD8730
+	 * 		RVA    -> 0x01DD7970
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetSustainPedalState
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3362,7 +3362,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7C70
+	 * 		RVA    -> 0x01DD6EB0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPosLfoType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3385,7 +3385,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7BF0
+	 * 		RVA    -> 0x01DD6E30
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPosLfoFrequency
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3408,7 +3408,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7B70
+	 * 		RVA    -> 0x01DD6DB0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPosLfoDepth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3431,7 +3431,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD8090
+	 * 		RVA    -> 0x01DD72D0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeSustainGain
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3454,7 +3454,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD8010
+	 * 		RVA    -> 0x01DD7250
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeReleaseTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3477,7 +3477,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7F80
+	 * 		RVA    -> 0x01DD71C0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeInvert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3500,7 +3500,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7F00
+	 * 		RVA    -> 0x01DD7140
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeDepth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3523,7 +3523,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7E80
+	 * 		RVA    -> 0x01DD70C0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeDecayTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3546,7 +3546,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7DF0
+	 * 		RVA    -> 0x01DD7030
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeBiasInvert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3569,7 +3569,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7D70
+	 * 		RVA    -> 0x01DD6FB0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeBiasDepth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3592,7 +3592,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7CF0
+	 * 		RVA    -> 0x01DD6F30
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetPositionEnvelopeAttackTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3615,7 +3615,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7960
+	 * 		RVA    -> 0x01DD6BA0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetLowPassFilterResonance
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3638,7 +3638,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD78E0
+	 * 		RVA    -> 0x01DD6B20
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetLowPassFilterFrequency
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3661,7 +3661,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD71C0
+	 * 		RVA    -> 0x01DD6400
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFrequencyWithMidiNote
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3684,7 +3684,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD7140
+	 * 		RVA    -> 0x01DD6380
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFrequencyPitchBend
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3707,7 +3707,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD70C0
+	 * 		RVA    -> 0x01DD6300
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFrequency
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3730,7 +3730,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6E40
+	 * 		RVA    -> 0x01DD6080
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeSustainGain
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3753,7 +3753,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6DC0
+	 * 		RVA    -> 0x01DD6000
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeReleaseTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3776,7 +3776,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6EC0
+	 * 		RVA    -> 0x01DD6100
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopenDecayTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3799,7 +3799,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6D30
+	 * 		RVA    -> 0x01DD5F70
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeInvert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3822,7 +3822,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6CB0
+	 * 		RVA    -> 0x01DD5EF0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeDepth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3845,7 +3845,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6C20
+	 * 		RVA    -> 0x01DD5E60
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeBiasInvert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3868,7 +3868,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6BA0
+	 * 		RVA    -> 0x01DD5DE0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeBiasDepth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3891,7 +3891,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6B20
+	 * 		RVA    -> 0x01DD5D60
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetFilterEnvelopeAttackTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3914,7 +3914,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6810
+	 * 		RVA    -> 0x01DD5A50
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetCurveValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3943,7 +3943,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6740
+	 * 		RVA    -> 0x01DD5980
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetCurveTangent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3970,7 +3970,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6670
+	 * 		RVA    -> 0x01DD58B0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetCurveInterpolationType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3997,7 +3997,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6570
+	 * 		RVA    -> 0x01DD57B0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeSustainGain
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4020,7 +4020,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD64F0
+	 * 		RVA    -> 0x01DD5730
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeReleaseTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4043,7 +4043,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6460
+	 * 		RVA    -> 0x01DD56A0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeInvert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4066,7 +4066,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD63E0
+	 * 		RVA    -> 0x01DD5620
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeDepth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4089,7 +4089,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6360
+	 * 		RVA    -> 0x01DD55A0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeDecayTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4112,7 +4112,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD62D0
+	 * 		RVA    -> 0x01DD5510
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeBiasInvert
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4135,7 +4135,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6250
+	 * 		RVA    -> 0x01DD5490
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeBiasDepth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4158,7 +4158,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD61D0
+	 * 		RVA    -> 0x01DD5410
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.SetAmpEnvelopeAttackTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4181,7 +4181,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD60B0
+	 * 		RVA    -> 0x01DD52F0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.RefreshWaveTable
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4204,7 +4204,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD6090
+	 * 		RVA    -> 0x01DD52D0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.RefreshAllWaveTables
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4224,7 +4224,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD5FC0
+	 * 		RVA    -> 0x01DD5200
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.NoteOn
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4249,7 +4249,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD5E20
+	 * 		RVA    -> 0x01DD5060
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.NoteOff
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4272,7 +4272,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD5AE0
+	 * 		RVA    -> 0x01DD4D20
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.GetNumTableEntries
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4294,7 +4294,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD5AA0
+	 * 		RVA    -> 0x01DD4CE0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.GetMaxTableIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4316,7 +4316,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD5980
+	 * 		RVA    -> 0x01DD4BC0
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.GetKeyFrameValuesForTable
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -4341,7 +4341,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD58E0
+	 * 		RVA    -> 0x01DD4B20
 	 * 		Name   -> Function Synthesis.SynthComponentMonoWaveTable.GetCurveTangent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4380,7 +4380,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD9A50
+	 * 		RVA    -> 0x01DD8C90
 	 * 		Name   -> Function Synthesis.SynthSamplePlayer.SetSoundWave
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4403,7 +4403,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD99D0
+	 * 		RVA    -> 0x01DD8C10
 	 * 		Name   -> Function Synthesis.SynthSamplePlayer.SetScrubTimeWidth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4426,7 +4426,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD9940
+	 * 		RVA    -> 0x01DD8B80
 	 * 		Name   -> Function Synthesis.SynthSamplePlayer.SetScrubMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4449,7 +4449,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD9870
+	 * 		RVA    -> 0x01DD8AB0
 	 * 		Name   -> Function Synthesis.SynthSamplePlayer.SetPitch
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4474,7 +4474,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD96C0
+	 * 		RVA    -> 0x01DD8900
 	 * 		Name   -> Function Synthesis.SynthSamplePlayer.SeekToTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4501,7 +4501,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD9690
+	 * 		RVA    -> 0x01DD88D0
 	 * 		Name   -> Function Synthesis.SynthSamplePlayer.IsLoaded
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4523,7 +4523,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD9630
+	 * 		RVA    -> 0x01DD8870
 	 * 		Name   -> Function Synthesis.SynthSamplePlayer.GetSampleDuration
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4545,7 +4545,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD9600
+	 * 		RVA    -> 0x01DD8840
 	 * 		Name   -> Function Synthesis.SynthSamplePlayer.GetCurrentPlaybackProgressTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4567,7 +4567,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD95D0
+	 * 		RVA    -> 0x01DD8810
 	 * 		Name   -> Function Synthesis.SynthSamplePlayer.GetCurrentPlaybackProgressPercent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4603,7 +4603,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD9B60
+	 * 		RVA    -> 0x01DD8DA0
 	 * 		Name   -> Function Synthesis.SynthKnob.SetValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4626,7 +4626,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD9AE0
+	 * 		RVA    -> 0x01DD8D20
 	 * 		Name   -> Function Synthesis.SynthKnob.SetStepSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4649,7 +4649,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD97E0
+	 * 		RVA    -> 0x01DD8A20
 	 * 		Name   -> Function Synthesis.SynthKnob.SetLocked
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4672,7 +4672,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01DD9660
+	 * 		RVA    -> 0x01DD88A0
 	 * 		Name   -> Function Synthesis.SynthKnob.GetValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

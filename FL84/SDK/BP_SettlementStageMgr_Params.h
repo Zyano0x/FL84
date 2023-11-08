@@ -21,15 +21,27 @@ namespace CG
 	{	};
 
 	/**
+	 * Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.ShowDiePage
+	 */
+	struct UBP_SettlementStageMgr_C_ShowDiePage_Params
+	{	};
+
+	/**
+	 * Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.Init
+	 */
+	struct UBP_SettlementStageMgr_C_Init_Params
+	{	};
+
+	/**
 	 * Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.CloseDiePage
 	 */
 	struct UBP_SettlementStageMgr_C_CloseDiePage_Params
 	{	};
 
 	/**
-	 * Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.ShowDiePage
+	 * Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.ShowNextStage
 	 */
-	struct UBP_SettlementStageMgr_C_ShowDiePage_Params
+	struct UBP_SettlementStageMgr_C_ShowNextStage_Params
 	{	};
 
 	/**
@@ -41,18 +53,6 @@ namespace CG
 		class UClass*                                              InClass;                                                 // 0x0000(0x0008)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		class FString                                              ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
-
-	/**
-	 * Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.Init
-	 */
-	struct UBP_SettlementStageMgr_C_Init_Params
-	{	};
-
-	/**
-	 * Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.ShowNextStage
-	 */
-	struct UBP_SettlementStageMgr_C_ShowNextStage_Params
-	{	};
 
 }
 

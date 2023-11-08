@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CB4800
+	 * 		RVA    -> 0x01CB3A40
 	 * 		Name   -> Function DTBPJson.DTBPJsonBPLib.StructToJson
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -41,7 +41,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CB4700
+	 * 		RVA    -> 0x01CB3940
 	 * 		Name   -> Function DTBPJson.DTBPJsonBPLib.JsonToStruct
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:

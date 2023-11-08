@@ -24,9 +24,9 @@ namespace CG
 		class UCanvasPanel*                                        CanvasPanel_Container;                                   // 0x0400(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
+		void OnSolarUIOpened();
 		void OnInitialized();
 		void OnSolarUIClosed();
-		void OnSolarUIOpened();
 		class FString GetModuleName();
 		static UClass* StaticClass();
 	};

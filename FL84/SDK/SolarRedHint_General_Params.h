@@ -21,15 +21,15 @@ namespace CG
 	{	};
 
 	/**
-	 * Function SolarRedHint_General.SolarRedHint_General_C.ConstructCopy
-	 */
-	struct USolarRedHint_General_C_ConstructCopy_Params
-	{	};
-
-	/**
 	 * Function SolarRedHint_General.SolarRedHint_General_C.OnInitialized
 	 */
 	struct USolarRedHint_General_C_OnInitialized_Params
+	{	};
+
+	/**
+	 * Function SolarRedHint_General.SolarRedHint_General_C.ConstructCopy
+	 */
+	struct USolarRedHint_General_C_ConstructCopy_Params
 	{	};
 
 	/**

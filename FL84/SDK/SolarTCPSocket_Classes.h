@@ -24,7 +24,7 @@ namespace CG
 		int32_t                                                    SendBufferSize;                                          // 0x0228(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    ReceiveBufferSize;                                       // 0x022C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      TimeBetweenTicks;                                        // 0x0230(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_QZ0P[0x84];                                  // 0x0234(0x0084) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_3MRR[0x84];                                  // 0x0234(0x0084) MISSED OFFSET (PADDING)
 
 	public:
 		bool SendData(int32_t ConnectionId, TArray<unsigned char> Data);

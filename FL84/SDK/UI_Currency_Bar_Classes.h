@@ -60,13 +60,13 @@ namespace CG
 		E_Type_State_Desktop                                       StateDesktopVip;                                         // 0x0519(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnClicked_6E78FC9E46B098A1927284AAA21E3D66();
-		void OnClicked_400DD5ED40EAE2E734166B9DC44B2B56();
-		void OnClicked_4910C97048176A6F1C12D1B35CA71427();
-		void OnClicked_CC9BE56D485D0C97063C3A838B18AEDA();
-		void Construct();
-		void OnSolarUIClosed();
+		void OnClicked_40384EEC489D7C38A70421A02EF7485A();
+		void OnClicked_7785F5FB404C65C44C96349788254218();
+		void OnClicked_85F263354BF9D978B59A098245067120();
+		void OnClicked_B9A0E05E4EABB4BDD5286D8EA263E4CB();
 		void OnSolarUIOpened();
+		void OnSolarUIClosed();
+		void Construct();
 		class FString GetModuleName();
 		void SetStateDesktop(E_Type_State_Desktop StateDesktopDiamond, E_Type_State_Desktop StateDesktopVip);
 		void PreConstruct(bool IsDesignTime);

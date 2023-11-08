@@ -53,7 +53,7 @@ namespace CG
 		class UUI_Component_Item_VoiceSlot_C*                      UI_Component_Item_VideoSlot;                             // 0x04E8(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UOverlay*                                            Unlock;                                                  // 0x04F0(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		E_Type_Item                                                ItemState;                                               // 0x04F8(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_CIMR[0x3];                                   // 0x04F9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JYVF[0x3];                                   // 0x04F9(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		E_Item_Quality                                             Quality;                                                 // 0x0500(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       Select;                                                  // 0x0501(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       Experience;                                              // 0x0502(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
@@ -61,14 +61,14 @@ namespace CG
 		bool                                                       Puzzle;                                                  // 0x0504(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       Equiped;                                                 // 0x0505(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       RedHint;                                                 // 0x0506(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_XMS7[0x1];                                   // 0x0507(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_EUS8[0x1];                                   // 0x0507(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    Txt_Size;                                                // 0x0508(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       NoQuality;                                               // 0x050C(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
-		void BP_OnItemSelectionChangedCopy(bool bIsSelected);
-		void OnListItemObjectSetCopy(class UObject* ListItemObject);
 		void PlayEnterAnim();
+		void OnListItemObjectSetCopy(class UObject* ListItemObject);
+		void BP_OnItemSelectionChangedCopy(bool bIsSelected);
 		class FString GetModuleName();
 		void BP_OnEntryReleased();
 		void BP_OnItemExpansionChanged(bool bIsExpanded);

@@ -15,25 +15,9 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.IsExclusiveFlagId
+	 * Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.OnSolarUIOpened
 	 */
-	struct UUI_Component_NationalFlag_C_IsExclusiveFlagId_Params
-	{
-	public:
-		int32_t                                                    InFlagID;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		bool                                                       ReturnValue;                                             // 0x0004(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	};
-
-	/**
-	 * Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.SetDefaultClanFlag
-	 */
-	struct UUI_Component_NationalFlag_C_SetDefaultClanFlag_Params
-	{	};
-
-	/**
-	 * Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.Construct
-	 */
-	struct UUI_Component_NationalFlag_C_Construct_Params
+	struct UUI_Component_NationalFlag_C_OnSolarUIOpened_Params
 	{	};
 
 	/**
@@ -43,10 +27,26 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.OnSolarUIClosed
+	 * Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.SetDefaultClanFlag
 	 */
-	struct UUI_Component_NationalFlag_C_OnSolarUIClosed_Params
+	struct UUI_Component_NationalFlag_C_SetDefaultClanFlag_Params
 	{	};
+
+	/**
+	 * Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.LoadClanFlagByUrl
+	 */
+	struct UUI_Component_NationalFlag_C_LoadClanFlagByUrl_Params
+	{	};
+
+	/**
+	 * Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.IsExclusiveFlagId
+	 */
+	struct UUI_Component_NationalFlag_C_IsExclusiveFlagId_Params
+	{
+	public:
+		int32_t                                                    InFlagID;                                                // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       ReturnValue;                                             // 0x0004(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	};
 
 	/**
 	 * Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.IsBroadCastMode
@@ -58,9 +58,9 @@ namespace CG
 	};
 
 	/**
-	 * Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.SetDefaultNationalFlag
+	 * Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.OnSolarUIClosed
 	 */
-	struct UUI_Component_NationalFlag_C_SetDefaultNationalFlag_Params
+	struct UUI_Component_NationalFlag_C_OnSolarUIClosed_Params
 	{	};
 
 	/**
@@ -70,15 +70,15 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.LoadClanFlagByUrl
+	 * Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.SetDefaultNationalFlag
 	 */
-	struct UUI_Component_NationalFlag_C_LoadClanFlagByUrl_Params
+	struct UUI_Component_NationalFlag_C_SetDefaultNationalFlag_Params
 	{	};
 
 	/**
-	 * Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.OnSolarUIOpened
+	 * Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.Construct
 	 */
-	struct UUI_Component_NationalFlag_C_OnSolarUIOpened_Params
+	struct UUI_Component_NationalFlag_C_Construct_Params
 	{	};
 
 	/**
@@ -103,7 +103,7 @@ namespace CG
 	{
 	public:
 		E_FlagType                                                 FlagType;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_VWSJ[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_XVIM[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**

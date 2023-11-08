@@ -26,10 +26,10 @@ namespace CG
 		struct FRigVMByteCode                                      ByteCode;                                                // 0x0168(0x0010) NativeAccessSpecifierPublic
 		struct FRigVMInstructionArray                              Instructions;                                            // 0x0178(0x0010) Transient, NativeAccessSpecifierPrivate
 		TArray<class FName>                                        FunctionNames;                                           // 0x0188(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_W4UG[0x10];                                  // 0x0198(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_303C[0x10];                                  // 0x0198(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FRigVMParameter>                             Parameters;                                              // 0x01A8(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TMap<class FName, int32_t>                                 ParametersNameMap;                                       // 0x01B8(0x0050) NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_96SZ[0x38];                                  // 0x0208(0x0038) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_WMBF[0x38];                                  // 0x0208(0x0038) MISSED OFFSET (PADDING)
 
 	public:
 		void SetParameterValueVector2D(const class FName& InParameterName, const struct FVector2D& InValue, int32_t InArrayIndex);

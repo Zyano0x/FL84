@@ -21,6 +21,12 @@ namespace CG
 	{	};
 
 	/**
+	 * Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.OnInitialized
+	 */
+	struct UUI_Target_Card_Medal_Item_C_OnInitialized_Params
+	{	};
+
+	/**
 	 * Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.BPCalLuaInitDataCopy
 	 */
 	struct UUI_Target_Card_Medal_Item_C_BPCalLuaInitDataCopy_Params
@@ -30,12 +36,6 @@ namespace CG
 		int32_t                                                    Type;                                                    // 0x0004(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		int32_t                                                    Level;                                                   // 0x0008(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
-
-	/**
-	 * Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.OnInitialized
-	 */
-	struct UUI_Target_Card_Medal_Item_C_OnInitialized_Params
-	{	};
 
 	/**
 	 * Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.GetModuleName

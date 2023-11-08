@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9F570
+	 * 		RVA    -> 0x01D9E7B0
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.StopLocationServices
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9F540
+	 * 		RVA    -> 0x01D9E780
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.StartLocationServices
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -56,7 +56,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9F4C0
+	 * 		RVA    -> 0x01D9E700
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.IsLocationAccuracyAvailable
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -81,7 +81,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9F3B0
+	 * 		RVA    -> 0x01D9E5F0
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.InitLocationServices
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -110,7 +110,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9F390
+	 * 		RVA    -> 0x01D9E5D0
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.GetLocationServicesImpl
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -132,7 +132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9F350
+	 * 		RVA    -> 0x01D9E590
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.GetLastKnownLocation
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -154,7 +154,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D9F320
+	 * 		RVA    -> 0x01D9E560
 	 * 		Name   -> Function LocationServicesBPLibrary.LocationServices.AreLocationServicesEnabled
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */

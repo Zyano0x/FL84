@@ -12,20 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
-	 * 		Name   -> Function UI_Component_Item.UI_Component_Item_C.BP_OnItemSelectionChangedCopy
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
-	 * Parameters:
-	 * 		bool                                               bIsSelected                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function UI_Component_Item.UI_Component_Item_C.PlayEnterAnim
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
-	void UUI_Component_Item_C::BP_OnItemSelectionChangedCopy(bool bIsSelected)
+	void UUI_Component_Item_C::PlayEnterAnim()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_Item.UI_Component_Item_C.BP_OnItemSelectionChangedCopy"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_Item.UI_Component_Item_C.PlayEnterAnim"));
 		
-		UUI_Component_Item_C_BP_OnItemSelectionChangedCopy_Params params {};
-		params.bIsSelected = bIsSelected;
+		UUI_Component_Item_C_PlayEnterAnim_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -34,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Item.UI_Component_Item_C.OnListItemObjectSetCopy
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -56,17 +53,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function UI_Component_Item.UI_Component_Item_C.PlayEnterAnim
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		RVA    -> 0x02D63E80
+	 * 		Name   -> Function UI_Component_Item.UI_Component_Item_C.BP_OnItemSelectionChangedCopy
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 * Parameters:
+	 * 		bool                                               bIsSelected                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	 */
-	void UUI_Component_Item_C::PlayEnterAnim()
+	void UUI_Component_Item_C::BP_OnItemSelectionChangedCopy(bool bIsSelected)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_Item.UI_Component_Item_C.PlayEnterAnim"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_Item.UI_Component_Item_C.BP_OnItemSelectionChangedCopy"));
 		
-		UUI_Component_Item_C_PlayEnterAnim_Params params {};
+		UUI_Component_Item_C_BP_OnItemSelectionChangedCopy_Params params {};
+		params.bIsSelected = bIsSelected;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -75,7 +75,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Item.UI_Component_Item_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -96,7 +96,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Item.UI_Component_Item_C.BP_OnEntryReleased
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -115,7 +115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Item.UI_Component_Item_C.BP_OnItemExpansionChanged
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -137,7 +137,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Component_Item.UI_Component_Item_C.BP_OnItemSelectionChanged
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -159,7 +159,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Component_Item.UI_Component_Item_C.OnListItemObjectSet
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -181,7 +181,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Item.UI_Component_Item_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -203,7 +203,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Item.UI_Component_Item_C.ChangItemState
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -222,7 +222,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Item.UI_Component_Item_C.PlayReceiveAnimEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -241,7 +241,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Item.UI_Component_Item_C.StopReceiveAnimEvent
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -260,7 +260,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Component_Item.UI_Component_Item_C.ExecuteUbergraph_UI_Component_Item
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

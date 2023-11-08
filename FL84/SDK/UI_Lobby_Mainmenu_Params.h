@@ -15,21 +15,21 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_A7A85BA04CD795E1EEEE77A8BCB48C30
+	 * DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_5DFA0112438A6356A25291A8F67FBBED
 	 */
-	struct UUI_Lobby_Mainmenu_C_OnClicked_A7A85BA04CD795E1EEEE77A8BCB48C30_Params
+	struct UUI_Lobby_Mainmenu_C_OnClicked_5DFA0112438A6356A25291A8F67FBBED_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_A80D89E14877A60DA15C68A65558B774
+	 * DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_C01224C840506574E9EDC2A45B152913
 	 */
-	struct UUI_Lobby_Mainmenu_C_OnClicked_A80D89E14877A60DA15C68A65558B774_Params
+	struct UUI_Lobby_Mainmenu_C_OnClicked_C01224C840506574E9EDC2A45B152913_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_406BF8FF4351F1C8FE007292EF8E3985
+	 * DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_E8CA90AF401D24CBD5478BA3DCC28CCD
 	 */
-	struct UUI_Lobby_Mainmenu_C_OnClicked_406BF8FF4351F1C8FE007292EF8E3985_Params
+	struct UUI_Lobby_Mainmenu_C_OnClicked_E8CA90AF401D24CBD5478BA3DCC28CCD_Params
 	{	};
 
 	/**
@@ -45,15 +45,15 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnSolarUIOpened
-	 */
-	struct UUI_Lobby_Mainmenu_C_OnSolarUIOpened_Params
-	{	};
-
-	/**
 	 * Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.Construct
 	 */
 	struct UUI_Lobby_Mainmenu_C_Construct_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnSolarUIOpened
+	 */
+	struct UUI_Lobby_Mainmenu_C_OnSolarUIOpened_Params
 	{	};
 
 	/**

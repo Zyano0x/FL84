@@ -12,17 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5E720
-	 * 		Name   -> Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnClicked_1C2F27A844E618A50E3F8D9CC511953E
+	 * 		RVA    -> 0x00B5D930
+	 * 		Name   -> Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnClicked_98ACEF644FA69430CD0506BA61D0DDDC
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */
-	void UUI_Lobby_RedPacket_C::OnClicked_1C2F27A844E618A50E3F8D9CC511953E()
+	void UUI_Lobby_RedPacket_C::OnClicked_98ACEF644FA69430CD0506BA61D0DDDC()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnClicked_1C2F27A844E618A50E3F8D9CC511953E"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnClicked_98ACEF644FA69430CD0506BA61D0DDDC"));
 		
-		UUI_Lobby_RedPacket_C_OnClicked_1C2F27A844E618A50E3F8D9CC511953E_Params params {};
+		UUI_Lobby_RedPacket_C_OnClicked_98ACEF644FA69430CD0506BA61D0DDDC_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -31,17 +31,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.Construct
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.Destruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
-	void UUI_Lobby_RedPacket_C::Construct()
+	void UUI_Lobby_RedPacket_C::Destruct()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.Construct"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.Destruct"));
 		
-		UUI_Lobby_RedPacket_C_Construct_Params params {};
+		UUI_Lobby_RedPacket_C_Destruct_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -50,27 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnSolarUIClosed
-	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
-	 */
-	void UUI_Lobby_RedPacket_C::OnSolarUIClosed()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnSolarUIClosed"));
-		
-		UUI_Lobby_RedPacket_C_OnSolarUIClosed_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6C980
+	 * 		RVA    -> 0x00B6BB90
 	 * 		Name   -> Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnSolarUIOpened
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -90,17 +70,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6C980
-	 * 		Name   -> Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.Destruct
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
-	void UUI_Lobby_RedPacket_C::Destruct()
+	void UUI_Lobby_RedPacket_C::Construct()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.Destruct"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.Construct"));
 		
-		UUI_Lobby_RedPacket_C_Destruct_Params params {};
+		UUI_Lobby_RedPacket_C_Construct_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -109,7 +89,27 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x00B6BB90
+	 * 		Name   -> Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnSolarUIClosed
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 */
+	void UUI_Lobby_RedPacket_C::OnSolarUIClosed()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnSolarUIClosed"));
+		
+		UUI_Lobby_RedPacket_C_OnSolarUIClosed_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */

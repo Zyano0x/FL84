@@ -96,9 +96,9 @@ namespace CG
 		bool                                                       IsNeedShow;                                              // 0x0492(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
-		void OnClicked_377F82354631C095C7FC3291637493F3();
-		void OnClicked_87467308422994E3C4FAACB51D598AD5();
-		void OnClicked_35B1E9A64701B55F20CEC192D8EA1278();
+		void OnClicked_DAD3BEBA4C54C526AF4164BF050DCABE();
+		void OnClicked_1AF477F344B2C07BD995DEB8ACBEBDCB();
+		void OnClicked_DFE13D2A4FDA0A10F30B9BB742395BFF();
 		void Destruct();
 		void Construct();
 		class FString GetModuleName();

@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE0050
+	 * 		RVA    -> 0x00BDF260
 	 * 		Name   -> Function CommonUI.CommonActionWidget.SetInputActions
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -63,7 +63,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDFEA0
+	 * 		RVA    -> 0x00BDF0B0
 	 * 		Name   -> Function CommonUI.CommonActionWidget.SetInputAction
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -86,7 +86,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDFDF0
+	 * 		RVA    -> 0x00BDF000
 	 * 		Name   -> Function CommonUI.CommonActionWidget.SetIconRimBrush
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -109,7 +109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction CommonUI.CommonActionWidget.OnInputMethodChanged__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -131,7 +131,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF970
+	 * 		RVA    -> 0x00BDEB80
 	 * 		Name   -> Function CommonUI.CommonActionWidget.IsHeldAction
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -153,7 +153,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF130
+	 * 		RVA    -> 0x00BDE340
 	 * 		Name   -> Function CommonUI.CommonActionWidget.GetIcon
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -175,7 +175,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF090
+	 * 		RVA    -> 0x00BDE2A0
 	 * 		Name   -> Function CommonUI.CommonActionWidget.GetDisplayText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -211,7 +211,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEAC30
+	 * 		RVA    -> 0x00BE9E40
 	 * 		Name   -> Function CommonUI.CommonUserWidget.SetConsumePointerInput
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -248,7 +248,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF950
+	 * 		RVA    -> 0x00BDEB60
 	 * 		Name   -> Function CommonUI.CommonActivatableWidget.IsActivated
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -270,7 +270,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDEAF0
+	 * 		RVA    -> 0x00BDDD00
 	 * 		Name   -> Function CommonUI.CommonActivatableWidget.DeactivateWidget
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -290,7 +290,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonActivatableWidget.BP_OnHandleBackAction
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -311,7 +311,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonActivatableWidget.BP_OnDeactivated
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -330,7 +330,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonActivatableWidget.BP_OnActivated
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -349,7 +349,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonActivatableWidget.BP_GetDesiredFocusTarget
 	 * 		Flags  -> (Event, Protected, BlueprintEvent, Const)
 	 */
@@ -370,7 +370,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDE9F0
+	 * 		RVA    -> 0x00BDDC00
 	 * 		Name   -> Function CommonUI.CommonActivatableWidget.ActivateWidget
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -404,7 +404,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDFB30
+	 * 		RVA    -> 0x00BDED40
 	 * 		Name   -> Function CommonUI.CommonActivatableWidgetContainerBase.RemoveWidget
 	 * 		Flags  -> (Final, Native, Private, BlueprintCallable)
 	 * Parameters:
@@ -427,7 +427,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDEBE0
+	 * 		RVA    -> 0x00BDDDF0
 	 * 		Name   -> Function CommonUI.CommonActivatableWidgetContainerBase.GetActiveWidget
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -449,7 +449,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDEAD0
+	 * 		RVA    -> 0x00BDDCE0
 	 * 		Name   -> Function CommonUI.CommonActivatableWidgetContainerBase.ClearWidgets
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -469,7 +469,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDEA10
+	 * 		RVA    -> 0x00BDDC20
 	 * 		Name   -> Function CommonUI.CommonActivatableWidgetContainerBase.BP_AddWidget
 	 * 		Flags  -> (Final, Native, Private, BlueprintCallable)
 	 * Parameters:
@@ -536,7 +536,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDFC40
+	 * 		RVA    -> 0x00BDEE50
 	 * 		Name   -> Function CommonUI.CommonAnimatedSwitcher.SetDisableTransitionAnimation
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -559,7 +559,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF920
+	 * 		RVA    -> 0x00BDEB30
 	 * 		Name   -> Function CommonUI.CommonAnimatedSwitcher.HasWidgets
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -581,7 +581,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDE960
+	 * 		RVA    -> 0x00BDDB70
 	 * 		Name   -> Function CommonUI.CommonAnimatedSwitcher.ActivatePreviousWidget
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -604,7 +604,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDE8D0
+	 * 		RVA    -> 0x00BDDAE0
 	 * 		Name   -> Function CommonUI.CommonAnimatedSwitcher.ActivateNextWidget
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -655,7 +655,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDEC10
+	 * 		RVA    -> 0x00BDDE20
 	 * 		Name   -> Function CommonUI.CommonBorderStyle.GetBackgroundBrush
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -694,7 +694,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE0910
+	 * 		RVA    -> 0x00BDFB20
 	 * 		Name   -> Function CommonUI.CommonBorder.SetStyle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -731,7 +731,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDFCD0
+	 * 		RVA    -> 0x00BDEEE0
 	 * 		Name   -> Function CommonUI.CommonBoundActionBar.SetDisplayOwningPlayerActionsOnly
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -768,7 +768,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE0BF0
+	 * 		RVA    -> 0x00BDFE00
 	 * 		Name   -> Function CommonUI.CommonButtonBase.StopDoubleClickPropagation
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 */
@@ -788,7 +788,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE0B50
+	 * 		RVA    -> 0x00BDFD60
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetTriggeringInputAction
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -811,7 +811,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE0AB0
+	 * 		RVA    -> 0x00BDFCC0
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetTriggeredInputAction
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -834,7 +834,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE0A30
+	 * 		RVA    -> 0x00BDFC40
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetTouchMethod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -857,7 +857,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE09A0
+	 * 		RVA    -> 0x00BDFBB0
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetStyle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -880,7 +880,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE0880
+	 * 		RVA    -> 0x00BDFA90
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetShouldUseFallbackDefaultInputAction
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -903,7 +903,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE07F0
+	 * 		RVA    -> 0x00BDFA00
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetShouldSelectUponReceivingFocus
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -926,7 +926,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE06C0
+	 * 		RVA    -> 0x00BDF8D0
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetSelectedInternal
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -953,7 +953,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE05B0
+	 * 		RVA    -> 0x00BDF7C0
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetPressMethod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -976,7 +976,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE0630
+	 * 		RVA    -> 0x00BDF840
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetPressedSoundOverride
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -999,7 +999,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE04E0
+	 * 		RVA    -> 0x00BDF6F0
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetMinDimensions
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1024,7 +1024,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE0450
+	 * 		RVA    -> 0x00BDF660
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetIsToggleable
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1047,7 +1047,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE0380
+	 * 		RVA    -> 0x00BDF590
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetIsSelected
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1072,7 +1072,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE02F0
+	 * 		RVA    -> 0x00BDF500
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetIsSelectable
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1095,7 +1095,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE0260
+	 * 		RVA    -> 0x00BDF470
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetIsInteractionEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1118,7 +1118,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE01D0
+	 * 		RVA    -> 0x00BDF3E0
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetIsInteractableWhenSelected
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1141,7 +1141,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE0140
+	 * 		RVA    -> 0x00BDF350
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetIsFocusable
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1164,7 +1164,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDFF40
+	 * 		RVA    -> 0x00BDF150
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetInputActionProgressMaterial
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1189,7 +1189,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDFD60
+	 * 		RVA    -> 0x00BDEF70
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetHoveredSoundOverride
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1212,7 +1212,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDFBC0
+	 * 		RVA    -> 0x00BDEDD0
 	 * 		Name   -> Function CommonUI.CommonButtonBase.SetClickMethod
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1235,7 +1235,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonButtonBase.OnTriggeredInputActionChanged
 	 * 		Flags  -> (Event, Protected, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -1257,7 +1257,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDFAB0
+	 * 		RVA    -> 0x00BDECC0
 	 * 		Name   -> Function CommonUI.CommonButtonBase.OnInputMethodChanged
 	 * 		Flags  -> (Native, Protected)
 	 * Parameters:
@@ -1280,7 +1280,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonButtonBase.OnCurrentTextStyleChanged
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -1299,7 +1299,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonButtonBase.OnActionProgress
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -1321,7 +1321,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonButtonBase.OnActionComplete
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -1340,7 +1340,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDFA20
+	 * 		RVA    -> 0x00BDEC30
 	 * 		Name   -> Function CommonUI.CommonButtonBase.NativeOnActionProgress
 	 * 		Flags  -> (Native, Protected)
 	 * Parameters:
@@ -1363,7 +1363,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDFA00
+	 * 		RVA    -> 0x00BDEC10
 	 * 		Name   -> Function CommonUI.CommonButtonBase.NativeOnActionComplete
 	 * 		Flags  -> (Native, Protected)
 	 */
@@ -1383,7 +1383,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF9D0
+	 * 		RVA    -> 0x00BDEBE0
 	 * 		Name   -> Function CommonUI.CommonButtonBase.IsPressed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1405,7 +1405,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF9A0
+	 * 		RVA    -> 0x00BDEBB0
 	 * 		Name   -> Function CommonUI.CommonButtonBase.IsInteractionEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1427,7 +1427,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF880
+	 * 		RVA    -> 0x00BDEA90
 	 * 		Name   -> Function CommonUI.CommonButtonBase.HandleTriggeringActionCommited
 	 * 		Flags  -> (Native, Protected, HasOutParms)
 	 * Parameters:
@@ -1452,7 +1452,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF860
+	 * 		RVA    -> 0x00BDEA70
 	 * 		Name   -> Function CommonUI.CommonButtonBase.HandleFocusReceived
 	 * 		Flags  -> (Native, Protected)
 	 */
@@ -1472,7 +1472,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF840
+	 * 		RVA    -> 0x00BDEA50
 	 * 		Name   -> Function CommonUI.CommonButtonBase.HandleButtonReleased
 	 * 		Flags  -> (Final, Native, Protected)
 	 */
@@ -1492,7 +1492,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF820
+	 * 		RVA    -> 0x00BDEA30
 	 * 		Name   -> Function CommonUI.CommonButtonBase.HandleButtonPressed
 	 * 		Flags  -> (Final, Native, Protected)
 	 */
@@ -1512,7 +1512,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF800
+	 * 		RVA    -> 0x00BDEA10
 	 * 		Name   -> Function CommonUI.CommonButtonBase.HandleButtonClicked
 	 * 		Flags  -> (Final, Native, Protected)
 	 */
@@ -1532,7 +1532,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF7D0
+	 * 		RVA    -> 0x00BDE9E0
 	 * 		Name   -> Function CommonUI.CommonButtonBase.GetStyle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1554,7 +1554,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF7A0
+	 * 		RVA    -> 0x00BDE9B0
 	 * 		Name   -> Function CommonUI.CommonButtonBase.GetSingleMaterialStyleMID
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1576,7 +1576,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF770
+	 * 		RVA    -> 0x00BDE980
 	 * 		Name   -> Function CommonUI.CommonButtonBase.GetShouldSelectUponReceivingFocus
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1598,7 +1598,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF4D0
+	 * 		RVA    -> 0x00BDE6E0
 	 * 		Name   -> Function CommonUI.CommonButtonBase.GetSelected
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1620,7 +1620,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF230
+	 * 		RVA    -> 0x00BDE440
 	 * 		Name   -> Function CommonUI.CommonButtonBase.GetIsFocusable
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1642,7 +1642,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF180
+	 * 		RVA    -> 0x00BDE390
 	 * 		Name   -> Function CommonUI.CommonButtonBase.GetInputAction
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1669,7 +1669,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDEED0
+	 * 		RVA    -> 0x00BDE0E0
 	 * 		Name   -> Function CommonUI.CommonButtonBase.GetCurrentTextStyleClass
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1691,7 +1691,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDEEA0
+	 * 		RVA    -> 0x00BDE0B0
 	 * 		Name   -> Function CommonUI.CommonButtonBase.GetCurrentTextStyle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1713,7 +1713,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDEE00
+	 * 		RVA    -> 0x00BDE010
 	 * 		Name   -> Function CommonUI.CommonButtonBase.GetCurrentCustomPadding
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1738,7 +1738,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDED60
+	 * 		RVA    -> 0x00BDDF70
 	 * 		Name   -> Function CommonUI.CommonButtonBase.GetCurrentButtonPadding
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1763,7 +1763,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDEB10
+	 * 		RVA    -> 0x00BDDD20
 	 * 		Name   -> Function CommonUI.CommonButtonBase.DisableButtonWithReason
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1786,7 +1786,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDEAB0
+	 * 		RVA    -> 0x00BDDCC0
 	 * 		Name   -> Function CommonUI.CommonButtonBase.ClearSelection
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1806,7 +1806,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonButtonBase.BP_OnUnhovered
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -1825,7 +1825,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonButtonBase.BP_OnSelected
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -1844,7 +1844,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonButtonBase.BP_OnHovered
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -1863,7 +1863,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonButtonBase.BP_OnEnabled
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -1882,7 +1882,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonButtonBase.BP_OnDoubleClicked
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -1901,7 +1901,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonButtonBase.BP_OnDisabled
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -1920,7 +1920,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonButtonBase.BP_OnDeselected
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -1939,7 +1939,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonButtonBase.BP_OnClicked
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -1972,7 +1972,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonBoundActionButton.OnUpdateInputAction
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -2005,7 +2005,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF740
+	 * 		RVA    -> 0x00BDE950
 	 * 		Name   -> Function CommonUI.CommonButtonStyle.GetSelectedTextStyle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2027,7 +2027,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF690
+	 * 		RVA    -> 0x00BDE8A0
 	 * 		Name   -> Function CommonUI.CommonButtonStyle.GetSelectedPressedBrush
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2052,7 +2052,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF660
+	 * 		RVA    -> 0x00BDE870
 	 * 		Name   -> Function CommonUI.CommonButtonStyle.GetSelectedHoveredTextStyle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2074,7 +2074,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF5B0
+	 * 		RVA    -> 0x00BDE7C0
 	 * 		Name   -> Function CommonUI.CommonButtonStyle.GetSelectedHoveredBrush
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2099,7 +2099,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF500
+	 * 		RVA    -> 0x00BDE710
 	 * 		Name   -> Function CommonUI.CommonButtonStyle.GetSelectedBaseBrush
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2124,7 +2124,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF4A0
+	 * 		RVA    -> 0x00BDE6B0
 	 * 		Name   -> Function CommonUI.CommonButtonStyle.GetNormalTextStyle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2146,7 +2146,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF3F0
+	 * 		RVA    -> 0x00BDE600
 	 * 		Name   -> Function CommonUI.CommonButtonStyle.GetNormalPressedBrush
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2171,7 +2171,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF3C0
+	 * 		RVA    -> 0x00BDE5D0
 	 * 		Name   -> Function CommonUI.CommonButtonStyle.GetNormalHoveredTextStyle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2193,7 +2193,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF310
+	 * 		RVA    -> 0x00BDE520
 	 * 		Name   -> Function CommonUI.CommonButtonStyle.GetNormalHoveredBrush
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2218,7 +2218,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF260
+	 * 		RVA    -> 0x00BDE470
 	 * 		Name   -> Function CommonUI.CommonButtonStyle.GetNormalBaseBrush
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2243,7 +2243,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDEC10
+	 * 		RVA    -> 0x00BDDE20
 	 * 		Name   -> Function CommonUI.CommonButtonStyle.GetMaterialBrush
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2268,7 +2268,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDF060
+	 * 		RVA    -> 0x00BDE270
 	 * 		Name   -> Function CommonUI.CommonButtonStyle.GetDisabledTextStyle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2290,7 +2290,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDEFB0
+	 * 		RVA    -> 0x00BDE1C0
 	 * 		Name   -> Function CommonUI.CommonButtonStyle.GetDisabledBrush
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2315,7 +2315,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDEF10
+	 * 		RVA    -> 0x00BDE120
 	 * 		Name   -> Function CommonUI.CommonButtonStyle.GetCustomPadding
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2340,7 +2340,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BDECC0
+	 * 		RVA    -> 0x00BDDED0
 	 * 		Name   -> Function CommonUI.CommonButtonStyle.GetButtonPadding
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2393,7 +2393,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA940
+	 * 		RVA    -> 0x00BE9B50
 	 * 		Name   -> Function CommonUI.CommonWidgetGroupBase.RemoveWidget
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2416,7 +2416,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA920
+	 * 		RVA    -> 0x00BE9B30
 	 * 		Name   -> Function CommonUI.CommonWidgetGroupBase.RemoveAll
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -2436,7 +2436,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE9CD0
+	 * 		RVA    -> 0x00BE8EE0
 	 * 		Name   -> Function CommonUI.CommonWidgetGroupBase.AddWidget
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2473,7 +2473,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE5F10
+	 * 		RVA    -> 0x00BE5120
 	 * 		Name   -> Function CommonUI.CommonButtonGroupBase.SetSelectionRequired
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2496,7 +2496,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE51A0
+	 * 		RVA    -> 0x00BE43B0
 	 * 		Name   -> Function CommonUI.CommonButtonGroupBase.SelectPreviousButton
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2519,7 +2519,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE5110
+	 * 		RVA    -> 0x00BE4320
 	 * 		Name   -> Function CommonUI.CommonButtonGroupBase.SelectNextButton
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2542,7 +2542,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE5080
+	 * 		RVA    -> 0x00BE4290
 	 * 		Name   -> Function CommonUI.CommonButtonGroupBase.SelectButtonAtIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2565,7 +2565,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4C70
+	 * 		RVA    -> 0x00BE3E80
 	 * 		Name   -> Function CommonUI.CommonButtonGroupBase.OnSelectionStateChangedBase
 	 * 		Flags  -> (Native, Protected)
 	 * Parameters:
@@ -2590,7 +2590,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4BC0
+	 * 		RVA    -> 0x00BE3DD0
 	 * 		Name   -> Function CommonUI.CommonButtonGroupBase.OnHandleButtonBaseDoubleClicked
 	 * 		Flags  -> (Native, Protected)
 	 * Parameters:
@@ -2613,7 +2613,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4B30
+	 * 		RVA    -> 0x00BE3D40
 	 * 		Name   -> Function CommonUI.CommonButtonGroupBase.OnHandleButtonBaseClicked
 	 * 		Flags  -> (Native, Protected)
 	 * Parameters:
@@ -2636,7 +2636,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4AA0
+	 * 		RVA    -> 0x00BE3CB0
 	 * 		Name   -> Function CommonUI.CommonButtonGroupBase.OnButtonBaseUnhovered
 	 * 		Flags  -> (Native, Protected)
 	 * Parameters:
@@ -2659,7 +2659,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4A10
+	 * 		RVA    -> 0x00BE3C20
 	 * 		Name   -> Function CommonUI.CommonButtonGroupBase.OnButtonBaseHovered
 	 * 		Flags  -> (Native, Protected)
 	 * Parameters:
@@ -2682,7 +2682,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE47A0
+	 * 		RVA    -> 0x00BE39B0
 	 * 		Name   -> Function CommonUI.CommonButtonGroupBase.HasAnyButtons
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2704,7 +2704,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4150
+	 * 		RVA    -> 0x00BE3360
 	 * 		Name   -> Function CommonUI.CommonButtonGroupBase.GetSelectedButtonIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2726,7 +2726,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4120
+	 * 		RVA    -> 0x00BE3330
 	 * 		Name   -> Function CommonUI.CommonButtonGroupBase.GetSelectedButtonBase
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2748,7 +2748,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE40C0
+	 * 		RVA    -> 0x00BE32D0
 	 * 		Name   -> Function CommonUI.CommonButtonGroupBase.GetHoveredButtonIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2770,7 +2770,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4030
+	 * 		RVA    -> 0x00BE3240
 	 * 		Name   -> Function CommonUI.CommonButtonGroupBase.GetButtonCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -2792,7 +2792,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE3F90
+	 * 		RVA    -> 0x00BE31A0
 	 * 		Name   -> Function CommonUI.CommonButtonGroupBase.GetButtonBaseAtIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2817,7 +2817,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE3ED0
+	 * 		RVA    -> 0x00BE30E0
 	 * 		Name   -> Function CommonUI.CommonButtonGroupBase.FindButtonIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -2842,7 +2842,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE3DA0
+	 * 		RVA    -> 0x00BE2FB0
 	 * 		Name   -> Function CommonUI.CommonButtonGroupBase.DeselectAll
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -2890,7 +2890,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEAE70
+	 * 		RVA    -> 0x00BEA080
 	 * 		Name   -> Function CommonUI.CommonTextBlock.SetWrapTextWidth
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2913,7 +2913,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEADE0
+	 * 		RVA    -> 0x00BE9FF0
 	 * 		Name   -> Function CommonUI.CommonTextBlock.SetTextCase
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2936,7 +2936,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEAD50
+	 * 		RVA    -> 0x00BE9F60
 	 * 		Name   -> Function CommonUI.CommonTextBlock.SetStyle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -2959,7 +2959,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA9D0
+	 * 		RVA    -> 0x00BE9BE0
 	 * 		Name   -> Function CommonUI.CommonTextBlock.ResetScrollState
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -2993,7 +2993,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE6210
+	 * 		RVA    -> 0x00BE5420
 	 * 		Name   -> Function CommonUI.CommonDateTimeTextBlock.SetTimespanValue
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3016,7 +3016,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE5740
+	 * 		RVA    -> 0x00BE4950
 	 * 		Name   -> Function CommonUI.CommonDateTimeTextBlock.SetDateTimeValue
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -3043,7 +3043,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE55E0
+	 * 		RVA    -> 0x00BE47F0
 	 * 		Name   -> Function CommonUI.CommonDateTimeTextBlock.SetCountDownCompletionText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3066,7 +3066,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4080
+	 * 		RVA    -> 0x00BE3290
 	 * 		Name   -> Function CommonUI.CommonDateTimeTextBlock.GetDateTime
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3130,7 +3130,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE5CE0
+	 * 		RVA    -> 0x00BE4EF0
 	 * 		Name   -> Function CommonUI.CommonLazyImage.SetMaterialTextureParamName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3153,7 +3153,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE54D0
+	 * 		RVA    -> 0x00BE46E0
 	 * 		Name   -> Function CommonUI.CommonLazyImage.SetBrushFromLazyTexture
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3176,7 +3176,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE5410
+	 * 		RVA    -> 0x00BE4620
 	 * 		Name   -> Function CommonUI.CommonLazyImage.SetBrushFromLazyMaterial
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 */
@@ -3196,7 +3196,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE5300
+	 * 		RVA    -> 0x00BE4510
 	 * 		Name   -> Function CommonUI.CommonLazyImage.SetBrushFromLazyDisplayAsset
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3219,7 +3219,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4960
+	 * 		RVA    -> 0x00BE3B70
 	 * 		Name   -> Function CommonUI.CommonLazyImage.IsLoading
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3255,7 +3255,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE59E0
+	 * 		RVA    -> 0x00BE4BF0
 	 * 		Name   -> Function CommonUI.CommonLazyWidget.SetLazyContent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -3275,7 +3275,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4990
+	 * 		RVA    -> 0x00BE3BA0
 	 * 		Name   -> Function CommonUI.CommonLazyWidget.IsLoading
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3297,7 +3297,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4060
+	 * 		RVA    -> 0x00BE3270
 	 * 		Name   -> Function CommonUI.CommonLazyWidget.GetContent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3333,7 +3333,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE5850
+	 * 		RVA    -> 0x00BE4A60
 	 * 		Name   -> Function CommonUI.CommonListView.SetEntrySpacing
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3370,7 +3370,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE6290
+	 * 		RVA    -> 0x00BE54A0
 	 * 		Name   -> Function CommonUI.LoadGuardSlot.SetVerticalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3393,7 +3393,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE5DF0
+	 * 		RVA    -> 0x00BE5000
 	 * 		Name   -> Function CommonUI.LoadGuardSlot.SetPadding
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3416,7 +3416,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE58D0
+	 * 		RVA    -> 0x00BE4AE0
 	 * 		Name   -> Function CommonUI.LoadGuardSlot.SetHorizontalAlignment
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3453,7 +3453,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE5C10
+	 * 		RVA    -> 0x00BE4E20
 	 * 		Name   -> Function CommonUI.CommonLoadGuard.SetLoadingText
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3476,7 +3476,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE5950
+	 * 		RVA    -> 0x00BE4B60
 	 * 		Name   -> Function CommonUI.CommonLoadGuard.SetIsLoading
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3499,7 +3499,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction CommonUI.CommonLoadGuard.OnAssetLoaded__DelegateSignature
 	 * 		Flags  -> (Public, Delegate)
 	 * Parameters:
@@ -3521,7 +3521,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE49C0
+	 * 		RVA    -> 0x00BE3BD0
 	 * 		Name   -> Function CommonUI.CommonLoadGuard.IsLoading
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3543,7 +3543,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE3C70
+	 * 		RVA    -> 0x00BE2E80
 	 * 		Name   -> Function CommonUI.CommonLoadGuard.BP_GuardAndLoadAsset
 	 * 		Flags  -> (Final, Native, Private, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3580,7 +3580,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE5D70
+	 * 		RVA    -> 0x00BE4F80
 	 * 		Name   -> Function CommonUI.CommonNumericTextBlock.SetNumericType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3603,7 +3603,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE56C0
+	 * 		RVA    -> 0x00BE48D0
 	 * 		Name   -> Function CommonUI.CommonNumericTextBlock.SetCurrentValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3626,7 +3626,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction CommonUI.CommonNumericTextBlock.OnOutro__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -3648,7 +3648,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction CommonUI.CommonNumericTextBlock.OnInterpolationUpdated__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -3674,7 +3674,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction CommonUI.CommonNumericTextBlock.OnInterpolationStarted__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -3696,7 +3696,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction CommonUI.CommonNumericTextBlock.OnInterpolationEnded__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -3720,7 +3720,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4930
+	 * 		RVA    -> 0x00BE3B40
 	 * 		Name   -> Function CommonUI.CommonNumericTextBlock.IsInterpolatingNumericValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3742,7 +3742,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE47D0
+	 * 		RVA    -> 0x00BE39E0
 	 * 		Name   -> Function CommonUI.CommonNumericTextBlock.InterpolateToValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3771,7 +3771,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE43E0
+	 * 		RVA    -> 0x00BE35F0
 	 * 		Name   -> Function CommonUI.CommonNumericTextBlock.GetTargetValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3807,7 +3807,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4C50
+	 * 		RVA    -> 0x00BE3E60
 	 * 		Name   -> Function CommonUI.CommonPoolableWidgetInterface.OnReleaseToPool
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -3827,7 +3827,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE49F0
+	 * 		RVA    -> 0x00BE3C00
 	 * 		Name   -> Function CommonUI.CommonPoolableWidgetInterface.OnAcquireFromPool
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -3875,7 +3875,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE6330
+	 * 		RVA    -> 0x00BE5540
 	 * 		Name   -> Function CommonUI.CommonRotator.ShiftTextRight
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -3895,7 +3895,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE6310
+	 * 		RVA    -> 0x00BE5520
 	 * 		Name   -> Function CommonUI.CommonRotator.ShiftTextLeft
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -3915,7 +3915,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE5E80
+	 * 		RVA    -> 0x00BE5090
 	 * 		Name   -> Function CommonUI.CommonRotator.SetSelectedItem
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3938,7 +3938,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4D40
+	 * 		RVA    -> 0x00BE3F50
 	 * 		Name   -> Function CommonUI.CommonRotator.PopulateTextLabels
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -3961,7 +3961,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE41E0
+	 * 		RVA    -> 0x00BE33F0
 	 * 		Name   -> Function CommonUI.CommonRotator.GetSelectedText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -3983,7 +3983,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4180
+	 * 		RVA    -> 0x00BE3390
 	 * 		Name   -> Function CommonUI.CommonRotator.GetSelectedIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4005,7 +4005,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonRotator.BP_OnOptionsPopulated
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4027,7 +4027,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonRotator.BP_OnOptionSelected
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4063,7 +4063,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE6140
+	 * 		RVA    -> 0x00BE5350
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.SetTabVisibility
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4088,7 +4088,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE6070
+	 * 		RVA    -> 0x00BE5280
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.SetTabInteractionEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4113,7 +4113,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE5FA0
+	 * 		RVA    -> 0x00BE51B0
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.SetTabEnabled
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4138,7 +4138,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE5B80
+	 * 		RVA    -> 0x00BE4D90
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.SetListeningForInput
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4161,7 +4161,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE5AF0
+	 * 		RVA    -> 0x00BE4D00
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.SetLinkedSwitcher
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4184,7 +4184,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE5230
+	 * 		RVA    -> 0x00BE4440
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.SelectTabByID
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4211,7 +4211,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4FE0
+	 * 		RVA    -> 0x00BE41F0
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.RemoveTab
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4236,7 +4236,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4FC0
+	 * 		RVA    -> 0x00BE41D0
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.RemoveAllTabs
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -4256,7 +4256,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4EB0
+	 * 		RVA    -> 0x00BE40C0
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.RegisterTab
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -4285,7 +4285,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction CommonUI.CommonTabListWidgetBase.OnTabSelected__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4307,7 +4307,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction CommonUI.CommonTabListWidgetBase.OnTabButtonRemoval__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4331,7 +4331,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> DelegateFunction CommonUI.CommonTabListWidgetBase.OnTabButtonCreation__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4355,7 +4355,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE46D0
+	 * 		RVA    -> 0x00BE38E0
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.HandleTabRemoval
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4380,7 +4380,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4600
+	 * 		RVA    -> 0x00BE3810
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.HandleTabCreation
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -4405,7 +4405,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4530
+	 * 		RVA    -> 0x00BE3740
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.HandleTabButtonSelected
 	 * 		Flags  -> (Final, Native, Protected)
 	 * Parameters:
@@ -4430,7 +4430,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE44A0
+	 * 		RVA    -> 0x00BE36B0
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.HandlePreviousTabInputAction
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -4455,7 +4455,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.HandlePreLinkedSwitcherChanged_BP
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -4474,7 +4474,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64C70
+	 * 		RVA    -> 0x02D63E80
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.HandlePostLinkedSwitcherChanged_BP
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -4493,7 +4493,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4410
+	 * 		RVA    -> 0x00BE3620
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.HandleNextTabInputAction
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms)
 	 * Parameters:
@@ -4518,7 +4518,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4350
+	 * 		RVA    -> 0x00BE3560
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.GetTabIdAtIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -4543,7 +4543,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4320
+	 * 		RVA    -> 0x00BE3530
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.GetTabCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4565,7 +4565,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE4280
+	 * 		RVA    -> 0x00BE3490
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.GetTabButtonBaseByID
 	 * 		Flags  -> (Final, Native, Protected, BlueprintCallable)
 	 * Parameters:
@@ -4590,7 +4590,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE41A0
+	 * 		RVA    -> 0x00BE33B0
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.GetSelectedTabId
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4612,7 +4612,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE40F0
+	 * 		RVA    -> 0x00BE3300
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.GetLinkedSwitcher
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4634,7 +4634,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE3F70
+	 * 		RVA    -> 0x00BE3180
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.GetActiveTab
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4656,7 +4656,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE3DC0
+	 * 		RVA    -> 0x00BE2FD0
 	 * 		Name   -> Function CommonUI.CommonTabListWidgetBase.DisableTabWithReason
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -4695,7 +4695,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA560
+	 * 		RVA    -> 0x00BE9770
 	 * 		Name   -> Function CommonUI.CommonTextStyle.GetStrikeBrush
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -4720,7 +4720,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA4D0
+	 * 		RVA    -> 0x00BE96E0
 	 * 		Name   -> Function CommonUI.CommonTextStyle.GetShadowOffset
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -4745,7 +4745,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA440
+	 * 		RVA    -> 0x00BE9650
 	 * 		Name   -> Function CommonUI.CommonTextStyle.GetShadowColor
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -4770,7 +4770,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA310
+	 * 		RVA    -> 0x00BE9520
 	 * 		Name   -> Function CommonUI.CommonTextStyle.GetMargin
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -4795,7 +4795,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA2E0
+	 * 		RVA    -> 0x00BE94F0
 	 * 		Name   -> Function CommonUI.CommonTextStyle.GetLineHeightPercentage
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -4817,7 +4817,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA090
+	 * 		RVA    -> 0x00BE92A0
 	 * 		Name   -> Function CommonUI.CommonTextStyle.GetFont
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -4842,7 +4842,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA000
+	 * 		RVA    -> 0x00BE9210
 	 * 		Name   -> Function CommonUI.CommonTextStyle.GetColor
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -4965,7 +4965,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE9EB0
+	 * 		RVA    -> 0x00BE90C0
 	 * 		Name   -> Function CommonUI.CommonUILibrary.FindParentWidgetOfType
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5034,7 +5034,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA160
+	 * 		RVA    -> 0x00BE9370
 	 * 		Name   -> Function CommonUI.CommonUISubsystemBase.GetInputActionButtonIcon
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -5091,7 +5091,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEAB10
+	 * 		RVA    -> 0x00BE9D20
 	 * 		Name   -> Function CommonUI.CommonVisibilitySwitcher.SetActiveWidgetIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5114,7 +5114,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA9F0
+	 * 		RVA    -> 0x00BE9C00
 	 * 		Name   -> Function CommonUI.CommonVisibilitySwitcher.SetActiveWidget
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5137,7 +5137,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA850
+	 * 		RVA    -> 0x00BE9A60
 	 * 		Name   -> Function CommonUI.CommonVisibilitySwitcher.IncrementActiveWidgetIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5160,7 +5160,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE9FB0
+	 * 		RVA    -> 0x00BE91C0
 	 * 		Name   -> Function CommonUI.CommonVisibilitySwitcher.GetActiveWidgetIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -5182,7 +5182,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE9F80
+	 * 		RVA    -> 0x00BE9190
 	 * 		Name   -> Function CommonUI.CommonVisibilitySwitcher.GetActiveWidget
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -5204,7 +5204,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE9E00
+	 * 		RVA    -> 0x00BE9010
 	 * 		Name   -> Function CommonUI.CommonVisibilitySwitcher.DecrementActiveWidgetIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5227,7 +5227,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE9DE0
+	 * 		RVA    -> 0x00BE8FF0
 	 * 		Name   -> Function CommonUI.CommonVisibilitySwitcher.DeactivateVisibleSlot
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -5247,7 +5247,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE9CB0
+	 * 		RVA    -> 0x00BE8EC0
 	 * 		Name   -> Function CommonUI.CommonVisibilitySwitcher.ActivateVisibleSlot
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -5295,7 +5295,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA3B0
+	 * 		RVA    -> 0x00BE95C0
 	 * 		Name   -> Function CommonUI.CommonVisibilityWidgetBase.GetRegisteredPlatforms
 	 * 		Flags  -> (Final, Native, Static, Protected)
 	 */
@@ -5345,7 +5345,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEABA0
+	 * 		RVA    -> 0x00BE9DB0
 	 * 		Name   -> Function CommonUI.CommonWidgetCarousel.SetActiveWidgetIndex
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5368,7 +5368,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEAA80
+	 * 		RVA    -> 0x00BE9C90
 	 * 		Name   -> Function CommonUI.CommonWidgetCarousel.SetActiveWidget
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5391,7 +5391,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA900
+	 * 		RVA    -> 0x00BE9B10
 	 * 		Name   -> Function CommonUI.CommonWidgetCarousel.PreviousPage
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -5411,7 +5411,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA8E0
+	 * 		RVA    -> 0x00BE9AF0
 	 * 		Name   -> Function CommonUI.CommonWidgetCarousel.NextPage
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -5431,7 +5431,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA610
+	 * 		RVA    -> 0x00BE9820
 	 * 		Name   -> Function CommonUI.CommonWidgetCarousel.GetWidgetAtIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -5456,7 +5456,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE9FD0
+	 * 		RVA    -> 0x00BE91E0
 	 * 		Name   -> Function CommonUI.CommonWidgetCarousel.GetActiveWidgetIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -5478,7 +5478,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE9E90
+	 * 		RVA    -> 0x00BE90A0
 	 * 		Name   -> Function CommonUI.CommonWidgetCarousel.EndAutoScrolling
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -5498,7 +5498,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BE9D60
+	 * 		RVA    -> 0x00BE8F70
 	 * 		Name   -> Function CommonUI.CommonWidgetCarousel.BeginAutoScrolling
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5535,7 +5535,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEACC0
+	 * 		RVA    -> 0x00BE9ED0
 	 * 		Name   -> Function CommonUI.CommonWidgetCarouselNavBar.SetLinkedCarousel
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -5558,7 +5558,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA780
+	 * 		RVA    -> 0x00BE9990
 	 * 		Name   -> Function CommonUI.CommonWidgetCarouselNavBar.HandlePageChanged
 	 * 		Flags  -> (Final, Native, Protected)
 	 * Parameters:
@@ -5583,7 +5583,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BEA6B0
+	 * 		RVA    -> 0x00BE98C0
 	 * 		Name   -> Function CommonUI.CommonWidgetCarouselNavBar.HandleButtonClicked
 	 * 		Flags  -> (Final, Native, Protected)
 	 * Parameters:

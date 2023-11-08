@@ -15,18 +15,6 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Currency_BarPanel.UI_Currency_BarPanel_C.Destruct
-	 */
-	struct UUI_Currency_BarPanel_C_Destruct_Params
-	{	};
-
-	/**
-	 * Function UI_Currency_BarPanel.UI_Currency_BarPanel_C.Construct
-	 */
-	struct UUI_Currency_BarPanel_C_Construct_Params
-	{	};
-
-	/**
 	 * Function UI_Currency_BarPanel.UI_Currency_BarPanel_C.OnSolarUIClosed
 	 */
 	struct UUI_Currency_BarPanel_C_OnSolarUIClosed_Params
@@ -36,6 +24,18 @@ namespace CG
 	 * Function UI_Currency_BarPanel.UI_Currency_BarPanel_C.OnSolarUIOpened
 	 */
 	struct UUI_Currency_BarPanel_C_OnSolarUIOpened_Params
+	{	};
+
+	/**
+	 * Function UI_Currency_BarPanel.UI_Currency_BarPanel_C.Destruct
+	 */
+	struct UUI_Currency_BarPanel_C_Destruct_Params
+	{	};
+
+	/**
+	 * Function UI_Currency_BarPanel.UI_Currency_BarPanel_C.Construct
+	 */
+	struct UUI_Currency_BarPanel_C_Construct_Params
 	{	};
 
 	/**

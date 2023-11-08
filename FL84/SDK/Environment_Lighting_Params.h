@@ -15,12 +15,6 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function Environment_Lighting.Environment_Lighting_C.ReceiveBeginPlay
-	 */
-	struct AEnvironment_Lighting_C_ReceiveBeginPlay_Params
-	{	};
-
-	/**
 	 * Function Environment_Lighting.Environment_Lighting_C.ReceiveEndPlay
 	 */
 	struct AEnvironment_Lighting_C_ReceiveEndPlay_Params
@@ -28,6 +22,12 @@ namespace CG
 	public:
 		EEndPlayReason                                             EndPlayReason;                                           // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
+
+	/**
+	 * Function Environment_Lighting.Environment_Lighting_C.ReceiveBeginPlay
+	 */
+	struct AEnvironment_Lighting_C_ReceiveBeginPlay_Params
+	{	};
 
 	/**
 	 * Function Environment_Lighting.Environment_Lighting_C.GetModuleName
@@ -63,7 +63,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_JHJO[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_16HG[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }
