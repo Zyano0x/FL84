@@ -25,6 +25,8 @@ struct ClassInfo
 
 HRESULT WINAPI hkPresent(_In_ IDXGISwapChain* SwapChain, _In_ UINT SyncInterval, _In_ UINT Flags)
 {
+	SPOOF_FUNC;
+
 	_mainGUI.Present(SwapChain, SyncInterval, Flags);
 
 	return oPresent(SwapChain, SyncInterval, Flags);
@@ -32,6 +34,8 @@ HRESULT WINAPI hkPresent(_In_ IDXGISwapChain* SwapChain, _In_ UINT SyncInterval,
 
 HRESULT WINAPI hkResizeBuffers(_In_ IDXGISwapChain* SwapChain, _In_ UINT BufferCount, _In_ UINT Width, _In_ UINT Height, _In_ DXGI_FORMAT NewFormat, _In_ UINT SwapChainFlags)
 {
+	SPOOF_FUNC;
+
 	return _mainGUI.ResizeBuffers(SwapChain, BufferCount, Width, Height, NewFormat, SwapChainFlags);
 }
 
@@ -70,7 +74,7 @@ void HOOKCALL hkSetAppearance(CG::ASolarCharacter* Character, int SkinID)
 
 	if (Character == LocalCharacter)
 	{
-		SkinID = 132505;
+		SkinID = 120030;
 		return SetAppearance(Character, SkinID);
 	}
 	else
@@ -140,7 +144,7 @@ void Initialize()
 	AllocConsole();
 	FILE* f;
 	freopen_s(&f, "CONOUT$", "w", stdout);
-	SetConsoleTitle(xorstr_(L"Zy4n0 Private Debug Mode"));
+	SetConsoleTitleW(xorstr_(L"Zy4n0 Private Debug Mode"));
 
 	printf(xorstr_("Injecting\n"));
 
@@ -189,7 +193,7 @@ void Initialize()
 #endif
 	printf(xorstr_("Cheat Loaded!\n"));
 #ifndef _DEBUG
-	Sleep(2000);
+	LI_FN(Sleep)(2000);
 	::ShowWindow(::GetConsoleWindow(), SW_HIDE);
 #endif
 }

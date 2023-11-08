@@ -162,6 +162,12 @@
     <ClInclude Include="SDK.h">
       <Filter>SDK</Filter>
     </ClInclude>
+    <ClInclude Include="Encryption\Spoofer.h">
+      <Filter>Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="Encryption\Mouse.h">
+      <Filter>Encryption</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">

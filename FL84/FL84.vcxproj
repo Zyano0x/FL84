@@ -161,6 +161,7 @@
   <ItemGroup>
     <ClInclude Include="Aimbot.h" />
     <ClInclude Include="Detours\detours.h" />
+    <ClInclude Include="Encryption\Spoofer.h" />
     <ClInclude Include="ImGUI\dirent.h" />
     <ClInclude Include="Draw.h" />
     <ClInclude Include="Elements.h" />
@@ -183,6 +184,7 @@
     <ClInclude Include="Mathematics.h" />
     <ClInclude Include="Memory.h" />
     <ClInclude Include="Menu.h" />
+    <ClInclude Include="Encryption\Mouse.h" />
     <ClInclude Include="Profiler.h" />
     <ClInclude Include="RapidXML\rapidxml.hpp" />
     <ClInclude Include="RapidXML\rapidxml_iterators.hpp" />

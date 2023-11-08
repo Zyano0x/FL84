@@ -41,6 +41,8 @@
 #include "imgui/imgui_impl_win32.h"
 #include "imgui/imgui_file_system.h"
 
+#include "Encryption/Spoofer.h"
+#include "Encryption/Mouse.h"
 #include "Encryption/XOR.hpp"
 #include "Encryption/LazyImporter.hpp"
 #include "Encryption/Thunk.hpp"

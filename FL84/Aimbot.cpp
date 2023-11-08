@@ -93,11 +93,15 @@ namespace Aimbot
 
 	void LockOnTarget()
 	{
+		SPOOF_FUNC;
+
 		int ScreenCenterX = ScreenWidth / 2;
 		int ScreenCenterY = ScreenHeight / 2;
 		float AimSpeed = (_profiler.gAimSmooth.Custom.flValue) * 2.f;
 		float TargetX = 0;
 		float TargetY = 0;
+
+		MouseController::Init();
 
 		if (Engine::IsKeyDown(_profiler.gAimKey.Custom.iValue) && _profiler.gAimMode.Custom.iValue == 0 && _profiler.gAimEnabled.Custom.bValue
 			|| Engine::IsKeyDown(_profiler.gAimKey.Custom.iValue) && _profiler.gAimMode.Custom.iValue == 2 && _profiler.gAimEnabled.Custom.bValue)
@@ -148,8 +152,8 @@ namespace Aimbot
 				CG::FVector2D OutTarget = Randomize(GetTarget, _profiler.gHumanSpeed.Custom.flValue, _profiler.gHumanScale.Custom.flValue);
 
 				if (TargetX != 0 && TargetY != 0)
-					mouse_event(MOUSEEVENTF_MOVE, static_cast<DWORD>(OutTarget.X), static_cast<DWORD>(OutTarget.Y), NULL, NULL);
-				//SysCall::Send_Mouse_Input(MOUSEEVENTF_MOVE, static_cast<DWORD>(OutTarget.X), static_cast<DWORD>(OutTarget.Y), NULL, NULL);
+					//mouse_event(MOUSEEVENTF_MOVE, static_cast<DWORD>(OutTarget.X), static_cast<DWORD>(OutTarget.Y), NULL, NULL);
+					MouseController::NtInjectMouse((int)OutTarget.X, (int)OutTarget.Y);
 			}
 		}
 		else
@@ -160,14 +164,16 @@ namespace Aimbot
 
 	void SetRotation(CG::APlayerCameraManager* PlayerCameraManager, CG::APlayerController* PlayerController, CG::FRotator TargetRotation, bool bWithRotationInput)
 	{
+		SPOOF_FUNC;
+
 		uint64_t v10 = reinterpret_cast<uint64_t>(PlayerCameraManager) + 0x2A5C;
 		uint64_t v11 = reinterpret_cast<uint64_t>(PlayerController) + 0x6B0;
 
 		if (!bWithRotationInput)
 			v11 = v10;
 
-		if (Engine::IsKeyDown(_profiler.gAimKey.Custom.iValue) && _profiler.gAimMode.Custom.iValue == 0 && _profiler.gAimEnabled.Custom.bValue
-			|| Engine::IsKeyDown(_profiler.gAimKey.Custom.iValue) && _profiler.gAimMode.Custom.iValue == 2 && _profiler.gAimEnabled.Custom.bValue)
+		if (Engine::IsKeyDown(_profiler.gAimKey.Custom.iValue) && _profiler.gAimMode.Custom.iValue == cProfiler::AIMMODE_FOV && _profiler.gAimEnabled.Custom.bValue
+			|| Engine::IsKeyDown(_profiler.gAimKey.Custom.iValue) && _profiler.gAimMode.Custom.iValue == cProfiler::AIMMODE_AUTOMATIC && _profiler.gAimEnabled.Custom.bValue)
 		{
 			if (ClosestDistance != InitCenterDistance)
 			{
@@ -360,10 +366,10 @@ namespace Aimbot
 					if (!ZXC.PlayerController->ProjectWorldLocationToScreen(b.AimPosition, &TargetPosB, false))
 						return true;
 
-					float distanceA = std::sqrt(std::pow(TargetPosA.X - (ScreenWidth / 2), 2) + std::pow(TargetPosA.Y - (ScreenHeight / 2), 2));
-					float distanceB = std::sqrt(std::pow(TargetPosB.X - (ScreenWidth / 2), 2) + std::pow(TargetPosB.Y - (ScreenHeight / 2), 2));
+					float DistanceA = std::sqrt(std::pow(TargetPosA.X - (ScreenWidth / 2), 2) + std::pow(TargetPosA.Y - (ScreenHeight / 2), 2));
+					float DistanceB = std::sqrt(std::pow(TargetPosB.X - (ScreenWidth / 2), 2) + std::pow(TargetPosB.Y - (ScreenHeight / 2), 2));
 
-					return distanceA < distanceB;
+					return DistanceA < DistanceB;
 				});
 		}
 	}

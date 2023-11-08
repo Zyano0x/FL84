@@ -35,6 +35,8 @@ bool XXX::SanityCheck()
 
 void XXX::Unknown()
 {
+	SPOOF_FUNC;
+
 	if (!SanityCheck())
 		return;
 
@@ -506,6 +508,8 @@ void XXX::Unknown()
 
 void XXX::Removals()
 {
+	SPOOF_FUNC;
+
 	if (!SanityCheck())
 		return;
 
@@ -610,6 +614,8 @@ void XXX::Removals()
 
 void XXX::Vehicle()
 {
+	SPOOF_FUNC;
+
 	if (!SanityCheck())
 		return;
 
@@ -671,6 +677,8 @@ void XXX::Vehicle()
 
 void XXX::Aimbot()
 {
+	SPOOF_FUNC;
+
 	if (!SanityCheck())
 		return;
 
@@ -722,6 +730,8 @@ void XXX::Aimbot()
 
 void XXX::Misc()
 {
+	SPOOF_FUNC;
+
 	if (!SanityCheck())
 		return;
 
@@ -797,6 +807,8 @@ void XXX::Misc()
 
 void XXX::Radar()
 {
+	SPOOF_FUNC;
+
 	if (!_profiler.gRadar.Custom.bValue)
 		return;
 
@@ -863,6 +875,8 @@ void XXX::Radar()
 
 void XXX::BypassEAC()
 {
+	SPOOF_FUNC;
+
 	CG::USolarEasyAntiCheatManager* EAC_ = reinterpret_cast<CG::USolarEasyAntiCheatManager*>(CG::USolarEasyAntiCheatManager::StaticClass());
 	if (!EAC_)
 		return;
