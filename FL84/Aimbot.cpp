@@ -360,10 +360,10 @@ namespace Aimbot
 					CG::FVector2D TargetPosB;
 
 					// Calculate screen positions for targets 'a' and 'b'
-					if (!ZXC.GameplayStatics->STATIC_ProjectWorldToScreen(ZXC.PlayerController, a.AimPosition, &TargetPosA, false))
+					if (!Math::W2S(a.AimPosition, &TargetPosA))
 						return false;
 
-					if (!ZXC.GameplayStatics->STATIC_ProjectWorldToScreen(ZXC.PlayerController, b.AimPosition, &TargetPosB, false))
+					if (!Math::W2S(b.AimPosition, &TargetPosB))
 						return true;
 
 					float DistanceA = std::sqrt(std::pow(TargetPosA.X - (ScreenWidth / 2), 2) + std::pow(TargetPosA.Y - (ScreenHeight / 2), 2));

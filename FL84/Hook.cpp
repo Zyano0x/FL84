@@ -5,7 +5,6 @@ tResizeBuffers oResizeBuffers;
 tGetShotDir GetShotDir;
 tGetBulletSocketLocation GetBulletSocketLocation;
 tSetAppearance SetAppearance;
-tProcessEvent ProcessEvent;
 tProcessRemoteFunction ProcessRemoteFunction;
 
 int32_t ScreenWidth = 0;
@@ -81,26 +80,10 @@ void HOOKCALL hkSetAppearance(CG::ASolarCharacter* Character, int SkinID)
 	if (Character == LocalCharacter && LocalCharacter->AssignedCharacterID == 100013)
 	{
 		SkinID = 131303;
-		return SetAppearance(Character, SkinID);
+		SetAppearance(Character, SkinID);
 	}
 	else
-	{
-		return SetAppearance(Character, SkinID);
-	}
-}
-
-CG::UFunction* FN_ServerReportRPC = nullptr;
-CG::UFunction* FN_AntiCheatDataSchedulerUpload = nullptr;
-void HOOKCALL hkProcessEvent(void* Object, CG::UFunction* Function, void* Params)
-{
-	SPOOF_FUNC;
-
-	if (Function == FN_AntiCheatDataSchedulerUpload || Function == FN_ServerReportRPC)
-	{
-		return;
-	}
-
-	return ProcessEvent(Object, Function, Params);
+		SetAppearance(Character, SkinID);
 }
 
 #ifdef _DEBUG
@@ -183,9 +166,6 @@ void Initialize()
 	_InterlockedExchangePointer((volatile PVOID*)PresentAddr, hkPresent);
 	_InterlockedExchangePointer((volatile PVOID*)ResizeBuffersAddr, hkResizeBuffers);
 
-	FN_ServerReportRPC = CG::UObject::FindObject<CG::UFunction>("Function Solarland.SolarMeerkatScheduleComponent.ServerReportRPC");
-	FN_AntiCheatDataSchedulerUpload = CG::UObject::FindObject<CG::UFunction>("Function Solarland.SolarPlayerController.AntiCheatDataSchedulerUpload");
-
 	GetShotDir = reinterpret_cast<tGetShotDir>(Signature(xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")).GetPointer());
 	Hook(GetShotDir, hkGetShotDir); // Silent Aim
 
@@ -194,9 +174,6 @@ void Initialize()
 
 	SetAppearance = reinterpret_cast<tSetAppearance>(Signature(xorstr_("40 55 53 57 48 8D 6C 24 F0 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 E0")).GetPointer());
 	Hook(SetAppearance, hkSetAppearance); // Skin
-
-	ProcessEvent = reinterpret_cast<tProcessEvent>(Signature(xorstr_("40 55 56 57 41 54 41 55 41 56 41 57 48 81 EC ? ? ? ? 48 8D 6C 24 ? 48 89 9D ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C5 48 89 85 ? ? ? ? 4C 8B")).GetPointer());
-	Hook(ProcessEvent, hkProcessEvent);
 
 #ifdef _DEBUG
 	ProcessRemoteFunction = reinterpret_cast<tProcessRemoteFunction>(Signature(xorstr_("4C 89 4C 24 ? 55 53 56 57 41 55 41 57")).GetPointer());
@@ -214,7 +191,6 @@ void Deallocate()
 	UnHook(GetShotDir, hkGetShotDir);
 	UnHook(GetBulletSocketLocation, hkGetBulletSocketLocation);
 	UnHook(SetAppearance, hkSetAppearance);
-	UnHook(ProcessEvent, hkProcessEvent);
 #ifdef _DEBUG
 	UnHook(ProcessRemoteFunction, hkProcessRemoteFunction);
 #endif

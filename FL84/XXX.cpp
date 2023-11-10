@@ -89,10 +89,7 @@ void XXX::Unknown()
 				if (Enemy->IsInInvisibleStatus())
 					ImVec4Copy(_profiler.gColorEnemyStealth.Custom.cValue, ColorVisisble);
 			}
-			else
-			{
-				ImVec4Copy(_profiler.gColorTeammate.Custom.cValue, ColorVisisble);
-			}
+			else ImVec4Copy(_profiler.gColorTeammate.Custom.cValue, ColorVisisble);
 
 			if (!Enemy->K2_IsAlive())
 				continue;
@@ -104,8 +101,8 @@ void XXX::Unknown()
 			Head = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(Enemy->Mesh->GetBoneIndex(CG::FName("head"))));
 			Root = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(Enemy->Mesh->GetBoneIndex(CG::FName("Root"))));
 
-			if (GameplayStatics->STATIC_ProjectWorldToScreen(PlayerController, Head, &HeadPos, false)
-				&& GameplayStatics->STATIC_ProjectWorldToScreen(PlayerController, Root, &FootPos, false))
+			if (Math::W2S(Head, &HeadPos)
+				&& Math::W2S(Root, &FootPos))
 			{
 				float Top = HeadPos.Y;
 				float Bottom = FootPos.Y;
@@ -257,8 +254,8 @@ void XXX::Unknown()
 						CG::FVector BoneLoc1 = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(Enemy->Mesh->GetBoneIndex(CG::FName(BONE1))));
 						CG::FVector BoneLoc2 = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(Enemy->Mesh->GetBoneIndex(CG::FName(BONE2))));
 
-						if (GameplayStatics->STATIC_ProjectWorldToScreen(PlayerController, BoneLoc1, &BoneScreen, false)
-							&& GameplayStatics->STATIC_ProjectWorldToScreen(PlayerController, BoneLoc2, &PrevBoneScreen, false))
+						if (Math::W2S(BoneLoc1, &BoneScreen)
+							&& Math::W2S(BoneLoc2, &PrevBoneScreen))
 						{
 							Draw::DrawLine(BoneScreen.X, BoneScreen.Y, PrevBoneScreen.X, PrevBoneScreen.Y, 1.5f, ColorVisisble);
 						}
@@ -272,8 +269,8 @@ void XXX::Unknown()
 					CG::FVector End = Angles * 250 + Start;
 					CG::FVector2D ScreenStart, ScreenEnd;
 
-					if (GameplayStatics->STATIC_ProjectWorldToScreen(PlayerController, Start, &ScreenStart, false)
-						&& GameplayStatics->STATIC_ProjectWorldToScreen(PlayerController, End, &ScreenEnd, false))
+					if (Math::W2S(Start, &ScreenStart)
+						&& Math::W2S(End, &ScreenEnd))
 					{
 						Draw::DrawLine(ScreenStart.X, ScreenStart.Y, ScreenEnd.X, ScreenEnd.Y, 1.5f, ColorVisisble);
 					}
@@ -352,7 +349,7 @@ void XXX::Unknown()
 
 			CG::FVector ItemLocation = Item->K2_GetActorLocation();
 
-			GameplayStatics->STATIC_ProjectWorldToScreen(PlayerController, ItemLocation, &ItemPos, false);
+			Math::W2S(ItemLocation, &ItemPos);
 
 			int ItemDistance = LocalCharacter->GetDistanceTo(Item) / 100.f;
 
@@ -491,7 +488,7 @@ void XXX::Unknown()
 
 			CG::FVector VehicleLocation = Vehicle->K2_GetActorLocation();
 
-			GameplayStatics->STATIC_ProjectWorldToScreen(PlayerController, VehicleLocation, &VehiclePos, false);
+			Math::W2S(VehicleLocation, &VehiclePos);
 
 			int VehicleDistance = LocalCharacter->GetDistanceTo(Vehicle) / 100;
 
@@ -705,7 +702,7 @@ void XXX::Aimbot()
 		for (int i = 0; i < vTargetInfo.size(); i++)
 		{
 			CG::FVector2D TargetPos = CG::FVector2D();
-			if (!GameplayStatics->STATIC_ProjectWorldToScreen(PlayerController, vTargetInfo.front().AimPosition, &TargetPos, false))
+			if (!Math::W2S(vTargetInfo.front().AimPosition, &TargetPos))
 				continue;
 
 			const float x = TargetPos.X - (ScreenWidth / 2);
@@ -718,7 +715,7 @@ void XXX::Aimbot()
 				Aimbot::LockPosition = TargetPos; // Mouse Event
 				Aimbot::TargetPosition = vTargetInfo.front().AimPosition; // Silent
 				Aimbot::TargetRotation = Aimbot::CalcAngle(ZXC.CameraManager->GetCameraLocation(), vTargetInfo.front().AimPosition, ZXC.CameraManager->GetCameraRotation(), _profiler.gAimSmooth.Custom.flValue); // Memory
-				bTargetLine = GameplayStatics->STATIC_ProjectWorldToScreen(PlayerController, Aimbot::AimPosition, &TargetLine, false);
+				bTargetLine = Math::W2S(Aimbot::AimPosition, &TargetLine);
 			}
 		}
 	}

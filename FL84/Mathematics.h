@@ -12,7 +12,8 @@ namespace Math
 	D3DMATRIX MatrixMultiplication(D3DMATRIX pM1, D3DMATRIX pM2);
 	CG::FVector2D WorldToRadar(CG::FRotator Rotation, CG::FVector Location, CG::FVector EnemyLocation, CG::FVector2D RadarPosition, CG::FVector2D RadarSize);
 	CG::FVector GetDirectionUnitVector(CG::FVector From, CG::FVector To);
+	CG::FVector GetBonePosition(CG::USkeletalMeshComponent* mesh, int index);
 	void VectorAnglesRadar(CG::FVector& Forward, CG::FVector& Angles);
 	void RotateTriangle(std::array<CG::FVector, 3>& Points, float Rotation);
-	float GetFOV(CG::FRotator Angle, CG::FVector Src, CG::FVector Dst);
+	bool W2S(const CG::FVector& Position, CG::FVector2D* OutPosition);
 }

@@ -26,8 +26,5 @@ extern tProcessRemoteFunction ProcessRemoteFunction;
 typedef void(HOOKCALL* tSetAppearance)(CG::ASolarCharacter* Character, int SkinID);
 extern tSetAppearance SetAppearance;
 
-typedef void(HOOKCALL* tProcessEvent)(void* Object, CG::UFunction* Function, void* Params);
-extern tProcessEvent ProcessEvent;
-
 void Initialize();
 void Deallocate();

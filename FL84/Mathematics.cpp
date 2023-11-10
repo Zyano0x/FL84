@@ -93,6 +93,19 @@ namespace Math
 		return (To - From).GetSafeNormal();
 	}
 
+	typedef CG::FMatrix* (__thiscall* tGetBoneMatrix)(CG::USkeletalMeshComponent* mesh, CG::FMatrix* result, int index);
+	CG::FVector GetBonePosition(CG::USkeletalMeshComponent* mesh, int index)
+	{
+		if (!mesh)
+			return { 0.f, 0.f, 0.f };
+
+		CG::FMatrix matrix{};
+		tGetBoneMatrix GetBoneMatrix = reinterpret_cast<tGetBoneMatrix>((uintptr_t)GetModuleHandleW(0) + GET_BONE_MATRIX_OFFSET);
+		GetBoneMatrix(mesh, &matrix, index);
+
+		return matrix.WPlane;
+	}
+
 	void VectorAnglesRadar(CG::FVector& Forward, CG::FVector& Angles)
 	{
 		if (Forward.X == 0.f && Forward.Y == 0.f)
@@ -129,19 +142,30 @@ namespace Math
 		}
 	}
 
-	float GetFOV(CG::FRotator Angle, CG::FVector Src, CG::FVector Dst)
+	bool W2S(const CG::FVector& Position, CG::FVector2D* OutPosition)
 	{
-		CG::FVector Aim = ZXC.MathLibrary->STATIC_MakeVector(Angle.Pitch, Angle.Yaw, Angle.Roll);
+		CG::FRotator Rotation = ZXC.CameraManager->GetCameraRotation();
+		D3DMATRIX tempMatrix = Matrix(Rotation);
 
-		CG::FVector Delta = ZXC.MathLibrary->STATIC_Subtract_VectorVector(Src, Dst);
-		CG::FRotator Angles = Delta.ToRotator();
+		CG::FVector vAxisX, vAxisY, vAxisZ;
 
-		CG::FVector _Qang = ZXC.MathLibrary->STATIC_MakeVector(Angles.Pitch, Angles.Yaw, Angles.Roll);
+		vAxisX = CG::FVector(tempMatrix.m[0][0], tempMatrix.m[0][1], tempMatrix.m[0][2]);
+		vAxisY = CG::FVector(tempMatrix.m[1][0], tempMatrix.m[1][1], tempMatrix.m[1][2]);
+		vAxisZ = CG::FVector(tempMatrix.m[2][0], tempMatrix.m[2][1], tempMatrix.m[2][2]);
 
-		float Mag_D = sqrtf((Aim.X * Aim.X) + (Aim.Y * Aim.Y) + (Aim.Z * Aim.Z));
-		float Mag_S = sqrtf((Aim.X * Aim.X) + (Aim.Y * Aim.Y) + (Aim.Z * Aim.Z));
-		float U_Dot_V = (Aim.X * _Qang.X) + (Aim.Y * _Qang.Y) + (Aim.Z * _Qang.Z);
+		CG::FVector vDelta = Position - ZXC.CameraManager->GetCameraLocation();
+		CG::FVector vTransformed = CG::FVector(vDelta.Dot(vAxisY), vDelta.Dot(vAxisZ), vDelta.Dot(vAxisX));
 
-		return acosf(U_Dot_V / (Mag_S * Mag_D)) * 57.29577951308232087f;
+		if (vTransformed.Z < 0.0001f) return false;
+
+		float FovAngle = ZXC.CameraManager->GetFOVAngle();
+		float ScreenCenterX = ScreenWidth / 2;
+		float ScreenCenterY = ScreenHeight / 2;
+		float ScreenCenterZ = ScreenHeight / 2;
+
+		OutPosition->X = ScreenCenterX + vTransformed.X * (ScreenCenterX / tanf(FovAngle * (float)M_PI / 360.f)) / vTransformed.Z;
+		OutPosition->Y = ScreenCenterY - vTransformed.Y * (ScreenCenterX / tanf(FovAngle * (float)M_PI / 360.f)) / vTransformed.Z;
+
+		return true;
 	}
 }

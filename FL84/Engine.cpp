@@ -87,17 +87,4 @@ namespace Engine
 	{
 		return ((GetAsyncKeyState(VK_Key) & 0x8000) ? 1 : 0);
 	}
-
-	typedef CG::FMatrix* (__thiscall* tGetBoneMatrix)(CG::USkeletalMeshComponent* mesh, CG::FMatrix* result, int index);
-	CG::FVector GetBonePosition(CG::USkeletalMeshComponent* mesh, int index)
-	{
-		if (!mesh)
-			return { 0.f, 0.f, 0.f };
-
-		CG::FMatrix matrix{};
-		tGetBoneMatrix GetBoneMatrix = reinterpret_cast<tGetBoneMatrix>((uintptr_t)GetModuleHandleW(0) + GET_BONE_MATRIX_OFFSET);
-		GetBoneMatrix(mesh, &matrix, index);
-
-		return matrix.WPlane;
-	}
 }
