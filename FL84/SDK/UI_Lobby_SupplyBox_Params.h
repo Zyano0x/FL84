@@ -15,21 +15,21 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_SupplyBox.UI_Lobby_SupplyBox_C.OnClicked_031F01D349CCC5B670A7CA8ED4F22D4E
+	 * DelegateFunction UI_Lobby_SupplyBox.UI_Lobby_SupplyBox_C.OnClicked_C4A64BD943162448D66BD3981B1C8644
 	 */
-	struct UUI_Lobby_SupplyBox_C_OnClicked_031F01D349CCC5B670A7CA8ED4F22D4E_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_SupplyBox.UI_Lobby_SupplyBox_C.Destruct
-	 */
-	struct UUI_Lobby_SupplyBox_C_Destruct_Params
+	struct UUI_Lobby_SupplyBox_C_OnClicked_C4A64BD943162448D66BD3981B1C8644_Params
 	{	};
 
 	/**
 	 * Function UI_Lobby_SupplyBox.UI_Lobby_SupplyBox_C.Construct
 	 */
 	struct UUI_Lobby_SupplyBox_C_Construct_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_SupplyBox.UI_Lobby_SupplyBox_C.Destruct
+	 */
+	struct UUI_Lobby_SupplyBox_C_Destruct_Params
 	{	};
 
 	/**
@@ -58,7 +58,7 @@ namespace CG
 	public:
 		int32_t                                                    State;                                                   // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       Claim;                                                   // 0x0004(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-		unsigned char                                              UnknownData_KW2S[0x3];                                   // 0x0005(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_D3HX[0x3];                                   // 0x0005(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**

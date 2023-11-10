@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0082D220
+	 * 		RVA    -> 0x0082A8C0
 	 * 		Name   -> Function BlockoutToolsPlugin.BlockoutToolsParent.RerunConstructionScript
 	 * 		Flags  -> (Final, Native, Private, BlueprintCallable)
 	 */
@@ -32,7 +32,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0082D200
+	 * 		RVA    -> 0x0082A8A0
 	 * 		Name   -> Function BlockoutToolsPlugin.BlockoutToolsParent.BlockoutSetMaterial
 	 * 		Flags  -> (Final, Native, Private, BlueprintCallable)
 	 */

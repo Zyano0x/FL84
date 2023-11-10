@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CCA240
+	 * 		RVA    -> 0x00CC86E0
 	 * 		Name   -> Function CascadeExtensionPlugin.ForcePointDataProvider.GetForcePoints
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent, Const)
 	 */
@@ -62,7 +62,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CCA9F0
+	 * 		RVA    -> 0x00CC8E90
 	 * 		Name   -> Function CascadeExtensionPlugin.MeshDataProvider.GetMeshTriangleData
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent, Const)
 	 */
@@ -84,7 +84,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CCA9C0
+	 * 		RVA    -> 0x00CC8E60
 	 * 		Name   -> Function CascadeExtensionPlugin.MeshDataProvider.GetDataRevision
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent, Const)
 	 */
@@ -120,7 +120,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CCB120
+	 * 		RVA    -> 0x00CC95C0
 	 * 		Name   -> Function CascadeExtensionPlugin.ParticleDataProvider.UpdateParticle
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent, Const)
 	 * Parameters:
@@ -145,7 +145,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CCB020
+	 * 		RVA    -> 0x00CC94C0
 	 * 		Name   -> Function CascadeExtensionPlugin.ParticleDataProvider.SpawnParticle
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent, Const)
 	 * Parameters:
@@ -296,7 +296,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CCC110
+	 * 		RVA    -> 0x00CCA5B0
 	 * 		Name   -> Function CascadeExtensionPlugin.ParticleModuleLocationMesh.OnCachedActorDestroyed
 	 * 		Flags  -> (Final, Native, Private)
 	 * Parameters:

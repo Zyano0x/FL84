@@ -15,51 +15,45 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_0EF606C447133BA916546DB0768EA4AB
+	 * DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_AAC9B7254B42273CF1CCC881BD19D2FC
 	 */
-	struct UUI_Lobby_Social_Entrance_C_OnClicked_0EF606C447133BA916546DB0768EA4AB_Params
+	struct UUI_Lobby_Social_Entrance_C_OnClicked_AAC9B7254B42273CF1CCC881BD19D2FC_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_52CBF6FA45189F2578642BA195205B1A
+	 * DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_E8A3D8E24238B441481CDB8DA152B747
 	 */
-	struct UUI_Lobby_Social_Entrance_C_OnClicked_52CBF6FA45189F2578642BA195205B1A_Params
+	struct UUI_Lobby_Social_Entrance_C_OnClicked_E8A3D8E24238B441481CDB8DA152B747_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_08CC7383458A91B2083F20B3DAD90256
+	 * DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_411CA45541525B630BCFEF8785C7A3B9
 	 */
-	struct UUI_Lobby_Social_Entrance_C_OnClicked_08CC7383458A91B2083F20B3DAD90256_Params
+	struct UUI_Lobby_Social_Entrance_C_OnClicked_411CA45541525B630BCFEF8785C7A3B9_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_F03278524A1E412371206A92774ACE59
+	 * DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_F6FFD16845769E6A2065E2A728ACFA4D
 	 */
-	struct UUI_Lobby_Social_Entrance_C_OnClicked_F03278524A1E412371206A92774ACE59_Params
+	struct UUI_Lobby_Social_Entrance_C_OnClicked_F6FFD16845769E6A2065E2A728ACFA4D_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_4DC584094CED3B31713F8E9EC584FD67
+	 * DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_E78075C746F563BEEBCF5D8F21C31D99
 	 */
-	struct UUI_Lobby_Social_Entrance_C_OnClicked_4DC584094CED3B31713F8E9EC584FD67_Params
+	struct UUI_Lobby_Social_Entrance_C_OnClicked_E78075C746F563BEEBCF5D8F21C31D99_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_4B29EBDE436C645E4AE5A0A41C5BA1EC
+	 * DelegateFunction UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnClicked_C322D9444784C8525D99ACBCD0AD1DEA
 	 */
-	struct UUI_Lobby_Social_Entrance_C_OnClicked_4B29EBDE436C645E4AE5A0A41C5BA1EC_Params
+	struct UUI_Lobby_Social_Entrance_C_OnClicked_C322D9444784C8525D99ACBCD0AD1DEA_Params
 	{	};
 
 	/**
-	 * Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnInitialized
+	 * Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnSolarUIOpened
 	 */
-	struct UUI_Lobby_Social_Entrance_C_OnInitialized_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnSolarUIClosed
-	 */
-	struct UUI_Lobby_Social_Entrance_C_OnSolarUIClosed_Params
+	struct UUI_Lobby_Social_Entrance_C_OnSolarUIOpened_Params
 	{	};
 
 	/**
@@ -69,15 +63,21 @@ namespace CG
 	{	};
 
 	/**
+	 * Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnSolarUIClosed
+	 */
+	struct UUI_Lobby_Social_Entrance_C_OnSolarUIClosed_Params
+	{	};
+
+	/**
 	 * Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.ConstructCopy
 	 */
 	struct UUI_Lobby_Social_Entrance_C_ConstructCopy_Params
 	{	};
 
 	/**
-	 * Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnSolarUIOpened
+	 * Function UI_Lobby_Social_Entrance.UI_Lobby_Social_Entrance_C.OnInitialized
 	 */
-	struct UUI_Lobby_Social_Entrance_C_OnSolarUIOpened_Params
+	struct UUI_Lobby_Social_Entrance_C_OnInitialized_Params
 	{	};
 
 	/**

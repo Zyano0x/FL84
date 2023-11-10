@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function BP_QuickSummon_FootDown.BP_QuickSummon_FootDown_C.TryGetSummonHitResult
 	 * 		Flags  -> (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:

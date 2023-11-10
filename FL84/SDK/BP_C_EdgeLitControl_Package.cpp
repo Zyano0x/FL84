@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function BP_C_EdgeLitControl.BP_C_EdgeLitControl_C.UserConstructionScript
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */

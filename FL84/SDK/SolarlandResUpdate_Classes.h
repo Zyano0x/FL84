@@ -24,7 +24,7 @@ namespace CG
 		class FScriptMulticastDelegate                             OnDownloadComplete;                                      // 0x0028(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnDownloadProgress;                                      // 0x0038(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnDownloadFailed;                                        // 0x0048(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_6DHS[0x70];                                  // 0x0058(0x0070) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_CEDS[0x70];                                  // 0x0058(0x0070) MISSED OFFSET (PADDING)
 
 	public:
 		void StartDownload();
@@ -43,7 +43,7 @@ namespace CG
 	class USolarlandResUpdater : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_AIM3[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_TVA9[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptDelegate                                      OnPatchPrompt;                                           // 0x0030(0x0010) BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, NativeAccessSpecifierPublic
 		class FScriptDelegate                                      OnPatchComplete;                                         // 0x0040(0x0010) BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, NativeAccessSpecifierPublic
 		class FScriptDelegate                                      OnPatchFailed;                                           // 0x0050(0x0010) BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, NativeAccessSpecifierPublic

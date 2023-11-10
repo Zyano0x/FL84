@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function UI_Lobby_Live.UI_Lobby_Live_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function UI_Lobby_Live.UI_Lobby_Live_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -53,7 +53,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function UI_Lobby_Live.UI_Lobby_Live_C.ExecuteUbergraph_UI_Lobby_Live
 	 * 		Flags  -> (Final)
 	 * Parameters:

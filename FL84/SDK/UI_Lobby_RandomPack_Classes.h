@@ -32,9 +32,9 @@ namespace CG
 		class UTickerWidget_C*                                     Txt_ToBeClaimed;                                         // 0x0440(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnClicked_B32AFEAF4EE67104D859DB87ECA65A65();
-		void OnSolarUIOpened();
+		void OnClicked_2E06783A4DB0436D99A641A663908B97();
 		void OnInitialized();
+		void OnSolarUIOpened();
 		void OnSolarUIClosed();
 		class FString GetModuleName();
 		static UClass* StaticClass();

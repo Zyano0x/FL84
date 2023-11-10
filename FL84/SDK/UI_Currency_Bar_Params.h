@@ -15,27 +15,27 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_40384EEC489D7C38A70421A02EF7485A
+	 * DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_020FD53143CD4391E11F6285F2B34C91
 	 */
-	struct UUI_Currency_Bar_C_OnClicked_40384EEC489D7C38A70421A02EF7485A_Params
+	struct UUI_Currency_Bar_C_OnClicked_020FD53143CD4391E11F6285F2B34C91_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_7785F5FB404C65C44C96349788254218
+	 * DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_CD382D804422C5C489C50AB004661BFA
 	 */
-	struct UUI_Currency_Bar_C_OnClicked_7785F5FB404C65C44C96349788254218_Params
+	struct UUI_Currency_Bar_C_OnClicked_CD382D804422C5C489C50AB004661BFA_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_85F263354BF9D978B59A098245067120
+	 * DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_73CE979448CBEE6FA7AD25BEC10C2293
 	 */
-	struct UUI_Currency_Bar_C_OnClicked_85F263354BF9D978B59A098245067120_Params
+	struct UUI_Currency_Bar_C_OnClicked_73CE979448CBEE6FA7AD25BEC10C2293_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_B9A0E05E4EABB4BDD5286D8EA263E4CB
+	 * DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_77281A174AEFFA05C63D7E9045775082
 	 */
-	struct UUI_Currency_Bar_C_OnClicked_B9A0E05E4EABB4BDD5286D8EA263E4CB_Params
+	struct UUI_Currency_Bar_C_OnClicked_77281A174AEFFA05C63D7E9045775082_Params
 	{	};
 
 	/**

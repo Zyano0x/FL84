@@ -15,6 +15,24 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function UI_Lobby_Banner_Slot2.UI_Lobby_Banner_Slot2_C.OnListItemObjectSetCopy
+	 */
+	struct UUI_Lobby_Banner_Slot2_C_OnListItemObjectSetCopy_Params
+	{
+	public:
+		class UObject*                                             ListItemObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
+	/**
+	 * Function UI_Lobby_Banner_Slot2.UI_Lobby_Banner_Slot2_C.BP_OnItemSelectionChangedCopy
+	 */
+	struct UUI_Lobby_Banner_Slot2_C_BP_OnItemSelectionChangedCopy_Params
+	{
+	public:
+		bool                                                       bIsSelected;                                             // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	};
+
+	/**
 	 * Function UI_Lobby_Banner_Slot2.UI_Lobby_Banner_Slot2_C.GetModuleName
 	 */
 	struct UUI_Lobby_Banner_Slot2_C_GetModuleName_Params

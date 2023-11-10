@@ -38,9 +38,9 @@ namespace CG
 		bool                                                       BOpened;                                                 // 0x0470(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
-		void OnClicked_8A85330B433EC0A7AF613FB865C81B1D();
-		void OnSolarUIOpened();
+		void OnClicked_68C3306F4A2C879C6EBA79BEBF3159AF();
 		void OnSolarUIClosed();
+		void OnSolarUIOpened();
 		void OnInitializedCopy();
 		class FString GetModuleName();
 		void OnOpenDownloadList();

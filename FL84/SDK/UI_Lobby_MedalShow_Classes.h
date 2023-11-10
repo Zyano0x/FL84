@@ -28,8 +28,8 @@ namespace CG
 		int32_t                                                    IndexInLobby;                                            // 0x0420(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void Destruct();
 		void Construct();
+		void Destruct();
 		class FString GetModuleName();
 		static UClass* StaticClass();
 	};

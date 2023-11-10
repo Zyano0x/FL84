@@ -21,7 +21,7 @@ namespace CG
 	class URichtapController : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_YY4O[0x48];                                  // 0x0028(0x0048) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_WMRE[0x48];                                  // 0x0028(0x0048) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<class FString, class URichtapClip*>                   HeDataMap;                                               // 0x0070(0x0050) NativeAccessSpecifierPrivate
 
 	public:

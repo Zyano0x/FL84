@@ -6,7 +6,7 @@
  */
 
 #ifdef _MSC_VER
-#pragma pack(push, 0x01)
+	#pragma pack(push, 0x01)
 #endif
 
 namespace CG
@@ -22,7 +22,7 @@ namespace CG
 	class TArray
 	{
 	private:
-		T* _data;                                                   // 0x0000(0x0000)
+		T*                                                         _data;                                                   // 0x0000(0x0000)
 		int32_t                                                    _count;                                                  // 0x0000(0x0000)
 		int32_t                                                    _max;                                                    // 0x0000(0x0000)
 
@@ -90,11 +90,11 @@ namespace CG
 	class FUObjectItem
 	{
 	public:
-		class UObject* Object;                                                  // 0x0000(0x0008)
+		class UObject*                                             Object;                                                  // 0x0000(0x0008)
 		int32_t                                                    Flags;                                                   // 0x0008(0x0004)
 		int32_t                                                    ClusterIndex;                                            // 0x000C(0x0004)
 		int32_t                                                    SerialNumber;                                            // 0x0010(0x0004)
-		unsigned char                                              pad_BLNS5XV250[0x04];                                    // 0x0014(0x0004)
+		unsigned char                                              pad_V3H4DTZT5A[0x04];                                    // 0x0014(0x0004)
 
 	public:
 		bool IsUnreachable() const;
@@ -109,8 +109,8 @@ namespace CG
 	{
 	private:
 		static const constexpr int32_t                             NumElementsPerChunk = 64 * 1024;                         // 0x0000(0x0000)
-		FUObjectItem** Objects;                                                 // 0x0000(0x0000)
-		FUObjectItem* PreAllocatedObjects;                                     // 0x0000(0x0000)
+		FUObjectItem**                                             Objects;                                                 // 0x0000(0x0000)
+		FUObjectItem*                                              PreAllocatedObjects;                                     // 0x0000(0x0000)
 	public:
 		int32_t                                                    MaxElements;                                             // 0x0000(0x0000)
 		int32_t                                                    NumElements;                                             // 0x0000(0x0000)
@@ -177,7 +177,7 @@ namespace CG
 		static const constexpr int32_t                             MaxOffset = Stride * (1 << 16);                          // 0x0000(0x0000)
 		int32_t                                                    CurrentBlock;                                            // 0x0000(0x0000)
 		int32_t                                                    CurrentByteCursor;                                       // 0x0000(0x0000)
-		uint8_t* Blocks[8192];                                            // 0x0000(0x0000)
+		uint8_t*                                                   Blocks[8192];                                            // 0x0000(0x0000)
 
 	public:
 		int32_t NumBlocks() const;
@@ -212,7 +212,7 @@ namespace CG
 	class FName
 	{
 	public:
-		static FNamePool* GNames;                                                  // 0x0000(0x0000)
+		static FNamePool*                                          GNames;                                                  // 0x0000(0x0000)
 		int32_t                                                    ComparisonIndex;                                         // 0x0000(0x0000)
 		int32_t                                                    Number;                                                  // 0x0000(0x0000)
 
@@ -277,8 +277,8 @@ namespace CG
 	class FScriptInterface
 	{
 	private:
-		UObject* ObjectPointer;                                           // 0x0000(0x0000)
-		void* InterfacePointer;                                        // 0x0000(0x0000)
+		UObject*                                                   ObjectPointer;                                           // 0x0000(0x0000)
+		void*                                                      InterfacePointer;                                        // 0x0000(0x0000)
 
 	public:
 		UObject* GetObjectPtr() const;
@@ -320,8 +320,8 @@ namespace CG
 	private:
 		uint8_t                                                    UnknownData[0x28];                                       // 0x0000(0x0000)
 	public:
-		wchar_t* Name;                                                    // 0x0000(0x0000)
-		int32_t* Length;                                                  // 0x0000(0x0000)
+		wchar_t*                                                   Name;                                                    // 0x0000(0x0000)
+		int32_t*                                                   Length;                                                  // 0x0000(0x0000)
 	};
 
 	/**
@@ -331,7 +331,7 @@ namespace CG
 	class FText
 	{
 	private:
-		FTextData* Data;                                                    // 0x0000(0x0000)
+		FTextData*                                                 Data;                                                    // 0x0000(0x0000)
 		uint8_t                                                    UnknownData[0x10];                                       // 0x0000(0x0000)
 
 	public:
@@ -370,12 +370,12 @@ namespace CG
 		uint8_t                                                    UnknownData[0x01];                                       // 0x0000(0x0000)
 	};
 
-#ifdef _MSC_VER
-#pragma pack(pop)
-#endif	/**
- * PredefinedClass BasicTypes.TPair
- * Size -> 0x0000
- */
+	#ifdef _MSC_VER
+		#pragma pack(pop)
+	#endif	/**
+	 * PredefinedClass BasicTypes.TPair
+	 * Size -> 0x0000
+	 */
 	template<typename KeyType, typename ValueType>
 	class TPair
 	{
@@ -383,15 +383,15 @@ namespace CG
 		KeyType                                                    First;                                                   // 0x0000(0x0000)
 		ValueType                                                  Second;                                                  // 0x0000(0x0000)
 	};
-#ifdef _MSC_VER
-#pragma pack(push, 0x01)
-#endif
-#ifdef _MSC_VER
-#pragma pack(pop)
-#endif	/**
- * PredefinedClass BasicTypes.TSetElement
- * Size -> 0x0000
- */
+	#ifdef _MSC_VER
+		#pragma pack(push, 0x01)
+	#endif
+	#ifdef _MSC_VER
+		#pragma pack(pop)
+	#endif	/**
+	 * PredefinedClass BasicTypes.TSetElement
+	 * Size -> 0x0000
+	 */
 	template<typename ElementType>
 	class TSetElement
 	{
@@ -400,9 +400,9 @@ namespace CG
 		int32_t                                                    HashNextId;                                              // 0x0000(0x0000)
 		int32_t                                                    HashIndex;                                               // 0x0000(0x0000)
 	};
-#ifdef _MSC_VER
-#pragma pack(push, 0x01)
-#endif
+	#ifdef _MSC_VER
+		#pragma pack(push, 0x01)
+	#endif
 	/**
 	 * PredefinedClass BasicTypes.TMap
 	 * Size -> 0x0000
@@ -453,7 +453,7 @@ namespace CG
 	class FStructBaseChain
 	{
 	private:
-		FStructBaseChain** StructBaseChainArray;                                    // 0x0000(0x0000)
+		FStructBaseChain**                                         StructBaseChainArray;                                    // 0x0000(0x0000)
 		int32_t                                                    NumStructBasesInChainMinusOne;                           // 0x0000(0x0000)
 		uint8_t                                                    Padding_0[0x04];                                         // 0x0000(0x0000)
 	};
@@ -512,12 +512,12 @@ namespace CG
 	class TAutoPointer : public TBase
 	{
 	public:
-		operator T* () const
+		operator T*() const
 		{
 			return TBase::Get();
 		}
 
-		operator const T* () const
+		operator const T*() const
 		{
 			return (const T*)TBase::Get();
 		}
@@ -536,8 +536,7 @@ namespace CG
 	template<class T>
 	class TAutoWeakObjectPtr : public TAutoPointer<T, TWeakObjectPtr<T>>
 	{
-		friend class FString;
-	};
+		friend class FString;	};
 
 	/**
 	 * PredefinedClass BasicTypes.TPersistentObjectPtr
@@ -592,5 +591,5 @@ namespace CG
 }
 
 #ifdef _MSC_VER
-#pragma pack(pop)
+	#pragma pack(pop)
 #endif

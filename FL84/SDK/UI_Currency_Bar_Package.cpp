@@ -12,17 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5D930
-	 * 		Name   -> DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_40384EEC489D7C38A70421A02EF7485A
+	 * 		RVA    -> 0x00B5BE00
+	 * 		Name   -> DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_020FD53143CD4391E11F6285F2B34C91
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Currency_Bar_C::OnClicked_40384EEC489D7C38A70421A02EF7485A()
+	void UUI_Currency_Bar_C::OnClicked_020FD53143CD4391E11F6285F2B34C91()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_40384EEC489D7C38A70421A02EF7485A"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_020FD53143CD4391E11F6285F2B34C91"));
 		
-		UUI_Currency_Bar_C_OnClicked_40384EEC489D7C38A70421A02EF7485A_Params params {};
+		UUI_Currency_Bar_C_OnClicked_020FD53143CD4391E11F6285F2B34C91_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -31,17 +31,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5D930
-	 * 		Name   -> DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_7785F5FB404C65C44C96349788254218
+	 * 		RVA    -> 0x00B5BE00
+	 * 		Name   -> DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_CD382D804422C5C489C50AB004661BFA
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Currency_Bar_C::OnClicked_7785F5FB404C65C44C96349788254218()
+	void UUI_Currency_Bar_C::OnClicked_CD382D804422C5C489C50AB004661BFA()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_7785F5FB404C65C44C96349788254218"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_CD382D804422C5C489C50AB004661BFA"));
 		
-		UUI_Currency_Bar_C_OnClicked_7785F5FB404C65C44C96349788254218_Params params {};
+		UUI_Currency_Bar_C_OnClicked_CD382D804422C5C489C50AB004661BFA_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -50,17 +50,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5D930
-	 * 		Name   -> DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_85F263354BF9D978B59A098245067120
+	 * 		RVA    -> 0x00B5BE00
+	 * 		Name   -> DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_73CE979448CBEE6FA7AD25BEC10C2293
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Currency_Bar_C::OnClicked_85F263354BF9D978B59A098245067120()
+	void UUI_Currency_Bar_C::OnClicked_73CE979448CBEE6FA7AD25BEC10C2293()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_85F263354BF9D978B59A098245067120"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_73CE979448CBEE6FA7AD25BEC10C2293"));
 		
-		UUI_Currency_Bar_C_OnClicked_85F263354BF9D978B59A098245067120_Params params {};
+		UUI_Currency_Bar_C_OnClicked_73CE979448CBEE6FA7AD25BEC10C2293_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -69,17 +69,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5D930
-	 * 		Name   -> DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_B9A0E05E4EABB4BDD5286D8EA263E4CB
+	 * 		RVA    -> 0x00B5BE00
+	 * 		Name   -> DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_77281A174AEFFA05C63D7E9045775082
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Currency_Bar_C::OnClicked_B9A0E05E4EABB4BDD5286D8EA263E4CB()
+	void UUI_Currency_Bar_C::OnClicked_77281A174AEFFA05C63D7E9045775082()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_B9A0E05E4EABB4BDD5286D8EA263E4CB"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Currency_Bar.UI_Currency_Bar_C.OnClicked_77281A174AEFFA05C63D7E9045775082"));
 		
-		UUI_Currency_Bar_C_OnClicked_B9A0E05E4EABB4BDD5286D8EA263E4CB_Params params {};
+		UUI_Currency_Bar_C_OnClicked_77281A174AEFFA05C63D7E9045775082_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -88,7 +88,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6BB90
+	 * 		RVA    -> 0x00B6A060
 	 * 		Name   -> Function UI_Currency_Bar.UI_Currency_Bar_C.OnSolarUIOpened
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -108,7 +108,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6BB90
+	 * 		RVA    -> 0x00B6A060
 	 * 		Name   -> Function UI_Currency_Bar.UI_Currency_Bar_C.OnSolarUIClosed
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -128,7 +128,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6BB90
+	 * 		RVA    -> 0x00B6A060
 	 * 		Name   -> Function UI_Currency_Bar.UI_Currency_Bar_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -147,7 +147,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function UI_Currency_Bar.UI_Currency_Bar_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -168,7 +168,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function UI_Currency_Bar.UI_Currency_Bar_C.SetStateDesktop
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -192,7 +192,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function UI_Currency_Bar.UI_Currency_Bar_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -214,7 +214,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function UI_Currency_Bar.UI_Currency_Bar_C.ExecuteUbergraph_UI_Currency_Bar
 	 * 		Flags  -> (Final)
 	 * Parameters:

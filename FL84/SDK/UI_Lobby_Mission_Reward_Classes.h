@@ -28,10 +28,10 @@ namespace CG
 		class USolarTextBlock*                                     Txt_GameRecommend;                                       // 0x0420(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnClicked_7D4963554D3D6BD794AC46944B155009();
+		void OnClicked_7A5BA79B46825960E0D6F3B7278422B1();
+		void Destruct();
 		void OnSolarUIOpened();
 		void OnSolarUIClosed();
-		void Destruct();
 		void ConstructCopy();
 		class FString GetModuleName();
 		void Construct();

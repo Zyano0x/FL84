@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function Ability_VH_Hover_WL04_StickyBomb.Ability_VH_Hover_WL04_StickyBomb_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function Ability_VH_Hover_WL04_StickyBomb.Ability_VH_Hover_WL04_StickyBomb_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -53,7 +53,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function Ability_VH_Hover_WL04_StickyBomb.Ability_VH_Hover_WL04_StickyBomb_C.ExecuteUbergraph_Ability_VH_Hover_WL04_StickyBomb
 	 * 		Flags  -> (Final)
 	 * Parameters:

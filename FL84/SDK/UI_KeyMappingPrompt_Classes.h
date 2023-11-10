@@ -42,16 +42,16 @@ namespace CG
 		bool                                                       bEnableInputSettingHide;                                 // 0x0482(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
-		void OnInputDeviceChanged_0F6C92144F870E3E4F56858A7FCCF46C(const struct FInputDeviceProxy& InputDeviceProxy);
-		void OnInputMappingUpdate_17C85B91478BCFD6205F60BDFC2DD0FD();
-		void OnInputDeviceChanged_FFD76035401DCA3110A96A890641B01C(const struct FInputDeviceProxy& InputDeviceProxy);
-		void OnInputMappingUpdate_AADA585B45BD0201195463961CF27848();
-		void OnInputDeviceChanged_8E2579504242415EBEF7EFA277C27E28(const struct FInputDeviceProxy& InputDeviceProxy);
-		void OnInputMappingUpdate_D27E20B44C5E37D2D68ADA972BA868FD();
-		void Destruct();
+		void OnInputDeviceChanged_CBB3DEEC4FA7D6FCA74AFD882B213469(const struct FInputDeviceProxy& InputDeviceProxy);
+		void OnInputMappingUpdate_14DFE7CE46A0FF846392BE8C80544D5C();
+		void OnInputDeviceChanged_C0AA05C74DF00E543BDF05B239EB3425(const struct FInputDeviceProxy& InputDeviceProxy);
+		void OnInputMappingUpdate_7713DBDE4DFBF0C345507BA2F606BD8A();
+		void OnInputDeviceChanged_F354A8CA4142A920E29EF59F61DB9475(const struct FInputDeviceProxy& InputDeviceProxy);
+		void OnInputMappingUpdate_CC54D54449B858CAA22B6C8C1F94DFB7();
 		void OnChangeAdapterSlotWidgetParametersCopy(TArray<struct FWidgetOverrideParam> Params);
-		void OnInitialized();
 		void Construct();
+		void Destruct();
+		void OnInitialized();
 		class FString GetModuleName();
 		void SetEnableInputSettingHide(bool bEnable);
 		void SetOperationTypeImpl(E_InputOperationType InType);

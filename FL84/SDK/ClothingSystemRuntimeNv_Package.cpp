@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x046B4740
+	 * 		RVA    -> 0x046B6AA0
 	 * 		Name   -> Function ClothingSystemRuntimeNv.ClothingSimulationInteractorNv.SetAnimDriveDamperStiffness
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:

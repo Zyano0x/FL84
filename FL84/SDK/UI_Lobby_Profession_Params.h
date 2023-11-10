@@ -15,33 +15,33 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_4C025927416AED6A8D4BC3BB64E9E5D0
+	 * DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_ED28CD6341E609C969C96486BDDAB529
 	 */
-	struct UUI_Lobby_Profession_C_OnClicked_4C025927416AED6A8D4BC3BB64E9E5D0_Params
+	struct UUI_Lobby_Profession_C_OnClicked_ED28CD6341E609C969C96486BDDAB529_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_F48E094C40BC54DFF8AE24B390AE8301
+	 * DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_E20B5A064C587B9BC3E1248E6DF8DC6C
 	 */
-	struct UUI_Lobby_Profession_C_OnClicked_F48E094C40BC54DFF8AE24B390AE8301_Params
+	struct UUI_Lobby_Profession_C_OnClicked_E20B5A064C587B9BC3E1248E6DF8DC6C_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_9D5E19814D2189B2607DADA6ED40DC1E
+	 * DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_27DF7BD34529ABC4A36BA48556DD4AFB
 	 */
-	struct UUI_Lobby_Profession_C_OnClicked_9D5E19814D2189B2607DADA6ED40DC1E_Params
+	struct UUI_Lobby_Profession_C_OnClicked_27DF7BD34529ABC4A36BA48556DD4AFB_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_E9DFC363401EEDEF711BFCBF5DEFAC25
+	 * DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_1BC63871487B2566A807A08E0B7C81FC
 	 */
-	struct UUI_Lobby_Profession_C_OnClicked_E9DFC363401EEDEF711BFCBF5DEFAC25_Params
+	struct UUI_Lobby_Profession_C_OnClicked_1BC63871487B2566A807A08E0B7C81FC_Params
 	{	};
 
 	/**
-	 * Function UI_Lobby_Profession.UI_Lobby_Profession_C.OnInitialized
+	 * Function UI_Lobby_Profession.UI_Lobby_Profession_C.Construct
 	 */
-	struct UUI_Lobby_Profession_C_OnInitialized_Params
+	struct UUI_Lobby_Profession_C_Construct_Params
 	{	};
 
 	/**
@@ -51,9 +51,9 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Lobby_Profession.UI_Lobby_Profession_C.Construct
+	 * Function UI_Lobby_Profession.UI_Lobby_Profession_C.OnInitialized
 	 */
-	struct UUI_Lobby_Profession_C_Construct_Params
+	struct UUI_Lobby_Profession_C_OnInitialized_Params
 	{	};
 
 	/**

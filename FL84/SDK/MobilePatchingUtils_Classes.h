@@ -21,7 +21,7 @@ namespace CG
 	class UMobileInstalledContent : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_RYCX[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_T5WO[0x20];                                  // 0x0028(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		bool Mount(int32_t PakOrder, const class FString& MountPoint);
@@ -37,7 +37,7 @@ namespace CG
 	class UMobilePendingContent : public UMobileInstalledContent
 	{
 	public:
-		unsigned char                                              UnknownData_ZX6G[0x40];                                  // 0x0048(0x0040) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_ZOWM[0x40];                                  // 0x0048(0x0040) MISSED OFFSET (PADDING)
 
 	public:
 		void StartInstall(const class FScriptDelegate& OnSucceeded, const class FScriptDelegate& OnFailed);

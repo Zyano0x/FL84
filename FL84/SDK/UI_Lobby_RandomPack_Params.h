@@ -15,21 +15,21 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnClicked_B32AFEAF4EE67104D859DB87ECA65A65
+	 * DelegateFunction UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnClicked_2E06783A4DB0436D99A641A663908B97
 	 */
-	struct UUI_Lobby_RandomPack_C_OnClicked_B32AFEAF4EE67104D859DB87ECA65A65_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnSolarUIOpened
-	 */
-	struct UUI_Lobby_RandomPack_C_OnSolarUIOpened_Params
+	struct UUI_Lobby_RandomPack_C_OnClicked_2E06783A4DB0436D99A641A663908B97_Params
 	{	};
 
 	/**
 	 * Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnInitialized
 	 */
 	struct UUI_Lobby_RandomPack_C_OnInitialized_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnSolarUIOpened
+	 */
+	struct UUI_Lobby_RandomPack_C_OnSolarUIOpened_Params
 	{	};
 
 	/**

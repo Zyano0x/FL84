@@ -15,9 +15,9 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Component_Gamepad.UI_Component_Gamepad_C.Destruct
+	 * Function UI_Component_Gamepad.UI_Component_Gamepad_C.Construct
 	 */
-	struct UUI_Component_Gamepad_C_Destruct_Params
+	struct UUI_Component_Gamepad_C_Construct_Params
 	{	};
 
 	/**
@@ -27,9 +27,9 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Component_Gamepad.UI_Component_Gamepad_C.Construct
+	 * Function UI_Component_Gamepad.UI_Component_Gamepad_C.Destruct
 	 */
-	struct UUI_Component_Gamepad_C_Construct_Params
+	struct UUI_Component_Gamepad_C_Destruct_Params
 	{	};
 
 	/**

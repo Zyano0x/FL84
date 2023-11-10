@@ -21,13 +21,12 @@ namespace CG
 	struct FPropertyCollector
 	{
 	public:
-		class UObject*                                             None;                                                    // 0x0000(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		ETutorialTriggerType                                       None2;                                                   // 0x0000(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		class AActor*                                              None3;                                                   // 0x0000(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		class UClass*                                              None4;                                                   // 0x0000(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash
-		int32_t                                                    None5;                                                   // 0x0000(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		struct FTutorialTableRow                                   None6;                                                   // 0x0000(0x0098) HasGetValueTypeHash
-		struct FInputKeyMappingEntry                               None7;                                                   // 0x0000(0x0040) HasGetValueTypeHash
+		ETutorialTriggerType                                       None;                                                    // 0x0000(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		class AActor*                                              None2;                                                   // 0x0000(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		class UClass*                                              None3;                                                   // 0x0000(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash
+		int32_t                                                    None4;                                                   // 0x0000(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
+		struct FTutorialTableRow                                   None5;                                                   // 0x0000(0x0098) HasGetValueTypeHash
+		struct FInputKeyMappingEntry                               None6;                                                   // 0x0000(0x0040) HasGetValueTypeHash
 	};
 
 	/**
@@ -37,7 +36,7 @@ namespace CG
 	struct FInSightEvent
 	{
 	public:
-		unsigned char                                              UnknownData_M3PO[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_9Z51[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
 	};
 
 }

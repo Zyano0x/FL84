@@ -12,17 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5D930
-	 * 		Name   -> DelegateFunction UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnClicked_8A85330B433EC0A7AF613FB865C81B1D
+	 * 		RVA    -> 0x00B5BE00
+	 * 		Name   -> DelegateFunction UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnClicked_68C3306F4A2C879C6EBA79BEBF3159AF
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_DownLoad_C::OnClicked_8A85330B433EC0A7AF613FB865C81B1D()
+	void UUI_Lobby_DownLoad_C::OnClicked_68C3306F4A2C879C6EBA79BEBF3159AF()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnClicked_8A85330B433EC0A7AF613FB865C81B1D"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnClicked_68C3306F4A2C879C6EBA79BEBF3159AF"));
 		
-		UUI_Lobby_DownLoad_C_OnClicked_8A85330B433EC0A7AF613FB865C81B1D_Params params {};
+		UUI_Lobby_DownLoad_C_OnClicked_68C3306F4A2C879C6EBA79BEBF3159AF_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -31,27 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6BB90
-	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnSolarUIOpened
-	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
-	 */
-	void UUI_Lobby_DownLoad_C::OnSolarUIOpened()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnSolarUIOpened"));
-		
-		UUI_Lobby_DownLoad_C_OnSolarUIOpened_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6BB90
+	 * 		RVA    -> 0x00B6A060
 	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnSolarUIClosed
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -71,7 +51,27 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnSolarUIOpened
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 */
+	void UUI_Lobby_DownLoad_C::OnSolarUIOpened()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnSolarUIOpened"));
+		
+		UUI_Lobby_DownLoad_C_OnSolarUIOpened_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnInitializedCopy
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -90,7 +90,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -111,7 +111,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnOpenDownloadList
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -130,7 +130,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6BB90
+	 * 		RVA    -> 0x00B6A060
 	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnInitialized
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -149,7 +149,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.CustomEvent_1
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -168,7 +168,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -190,7 +190,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -209,7 +209,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.ExecuteUbergraph_UI_Lobby_DownLoad
 	 * 		Flags  -> (Final)
 	 * Parameters:

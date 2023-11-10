@@ -15,15 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_BlockAll.UI_BlockAll_C.Destruct
-	 */
-	struct UUI_BlockAll_C_Destruct_Params
-	{	};
-
-	/**
 	 * Function UI_BlockAll.UI_BlockAll_C.Construct
 	 */
 	struct UUI_BlockAll_C_Construct_Params
+	{	};
+
+	/**
+	 * Function UI_BlockAll.UI_BlockAll_C.Destruct
+	 */
+	struct UUI_BlockAll_C_Destruct_Params
 	{	};
 
 	/**

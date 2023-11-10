@@ -60,10 +60,10 @@ namespace CG
 		E_Type_State_Desktop                                       StateDesktopVip;                                         // 0x0519(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnClicked_40384EEC489D7C38A70421A02EF7485A();
-		void OnClicked_7785F5FB404C65C44C96349788254218();
-		void OnClicked_85F263354BF9D978B59A098245067120();
-		void OnClicked_B9A0E05E4EABB4BDD5286D8EA263E4CB();
+		void OnClicked_020FD53143CD4391E11F6285F2B34C91();
+		void OnClicked_CD382D804422C5C489C50AB004661BFA();
+		void OnClicked_73CE979448CBEE6FA7AD25BEC10C2293();
+		void OnClicked_77281A174AEFFA05C63D7E9045775082();
 		void OnSolarUIOpened();
 		void OnSolarUIClosed();
 		void Construct();

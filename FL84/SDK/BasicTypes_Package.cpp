@@ -36,7 +36,7 @@ namespace CG
 	 */
 	bool InitSDK()
 	{
-		return InitSDK(xorstr_(L"SolarlandClient-Win64-Shipping.exe"), 0x6ED2BC0, 0x6EBA240, 0x7031EF8);
+		return InitSDK(xorstr_(L"SolarlandClient-Win64-Shipping.exe"), 0x6ED5000, 0x6EBC680, 0x7034318);
 	}
 
 	// --------------------------------------------------
@@ -131,12 +131,8 @@ namespace CG
 	 */
 	std::wstring FString::ToStringW() const
 	{
-		if (IsValid())
-		{
-			return _data;
-		}
-
-		return L"?";
+		std::wstring str(_data);
+		return str;
 	}
 
 	/**

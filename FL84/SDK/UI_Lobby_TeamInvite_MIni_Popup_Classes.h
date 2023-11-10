@@ -63,13 +63,13 @@ namespace CG
 		class UUI_Component_PlayerHead_C*                          UI_Component_PlayerHead_2;                               // 0x0538(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UUI_Component_PlayerHead_C*                          UI_Component_PlayerHead_3;                               // 0x0540(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		ET_Type_Invitation                                         Pop_Type;                                                // 0x0548(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_WIB6[0x3];                                   // 0x0549(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_J4F6[0x3];                                   // 0x0549(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    Player;                                                  // 0x054C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       IsNeedShow;                                              // 0x0550(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
-		void OnClicked_4EE67CCD475D2519E11BEFB14E9F3A77();
-		void OnClicked_B771D74D4B27943E201960AB333E9B79();
+		void OnClicked_A484A6ED4B98F8A7C3DBA88899B401DD();
+		void OnClicked_C683FE1E44C398DFD48F8586F40C6297();
 		void Destruct();
 		void Construct();
 		class FString GetModuleName();

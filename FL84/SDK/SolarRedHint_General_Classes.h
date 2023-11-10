@@ -30,10 +30,10 @@ namespace CG
 		E_Type_RedHint                                             Type;                                                    // 0x0422(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
+		void OnSetHintDataCompleteCopy();
+		void ConstructCopy();
 		void Destruct();
 		void OnInitialized();
-		void ConstructCopy();
-		void OnSetHintDataCompleteCopy();
 		class FString GetModuleName();
 		void OnSetHintDataComplete();
 		void SetStyle(E_Type_RedHint Type);

@@ -24,7 +24,7 @@ namespace CG
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0260(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		class UImage*                                              Img_Charging;                                            // 0x0268(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UProgressBar*                                        ProgressBar_Battery;                                     // 0x0270(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
-		unsigned char                                              UnknownData_5A0A[0x8];                                   // 0x0278(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_SS8J[0x8];                                   // 0x0278(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSlateBrush                                         ProgressBarBgImage;                                      // 0x0280(0x00E0) Edit, BlueprintVisible, DisableEditOnInstance
 		struct FSlateBrush                                         ProgressBarMarqueeImage;                                 // 0x0360(0x00E0) Edit, BlueprintVisible, DisableEditOnInstance
 		struct FSlateBrush                                         ProgressBarFillNormal;                                   // 0x0440(0x00E0) Edit, BlueprintVisible, DisableEditOnInstance

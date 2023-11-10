@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02A53390
+	 * 		RVA    -> 0x02A53F50
 	 * 		Name   -> Function SolarlandDeviceId.SolarlandDeviceInfoSettings.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */

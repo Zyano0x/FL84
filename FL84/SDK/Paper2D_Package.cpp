@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C97830
+	 * 		RVA    -> 0x01C96380
 	 * 		Name   -> Function Paper2D.PaperFlipbook.IsValidKeyFrameIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -65,7 +65,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C97770
+	 * 		RVA    -> 0x01C962C0
 	 * 		Name   -> Function Paper2D.PaperFlipbook.GetTotalDuration
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -87,7 +87,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96F00
+	 * 		RVA    -> 0x01C95A50
 	 * 		Name   -> Function Paper2D.PaperFlipbook.GetSpriteAtTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -114,7 +114,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96E60
+	 * 		RVA    -> 0x01C959B0
 	 * 		Name   -> Function Paper2D.PaperFlipbook.GetSpriteAtFrame
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -139,7 +139,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96DB0
+	 * 		RVA    -> 0x01C95900
 	 * 		Name   -> Function Paper2D.PaperFlipbook.GetNumKeyFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -161,7 +161,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96D80
+	 * 		RVA    -> 0x01C958D0
 	 * 		Name   -> Function Paper2D.PaperFlipbook.GetNumFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -183,7 +183,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96AD0
+	 * 		RVA    -> 0x01C95620
 	 * 		Name   -> Function Paper2D.PaperFlipbook.GetKeyFrameIndexAtTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -238,7 +238,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C98C50
+	 * 		RVA    -> 0x01C977A0
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.Stop
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -258,7 +258,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C98800
+	 * 		RVA    -> 0x01C97350
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetSpriteColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -281,7 +281,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C985D0
+	 * 		RVA    -> 0x01C97120
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetPlayRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -304,7 +304,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C98730
+	 * 		RVA    -> 0x01C97280
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetPlaybackPositionInFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -329,7 +329,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C98650
+	 * 		RVA    -> 0x01C971A0
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetPlaybackPosition
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -354,7 +354,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C98550
+	 * 		RVA    -> 0x01C970A0
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetNewTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -377,7 +377,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C984C0
+	 * 		RVA    -> 0x01C97010
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetLooping
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -400,7 +400,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C98110
+	 * 		RVA    -> 0x01C96C60
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.SetFlipbook
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -425,7 +425,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C98010
+	 * 		RVA    -> 0x01C96B60
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.ReverseFromEnd
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -445,7 +445,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C97FF0
+	 * 		RVA    -> 0x01C96B40
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.Reverse
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -465,7 +465,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C97E40
+	 * 		RVA    -> 0x01C96990
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.PlayFromStart
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -485,7 +485,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C97E20
+	 * 		RVA    -> 0x01C96970
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.Play
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -505,7 +505,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C97D60
+	 * 		RVA    -> 0x01C968B0
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.OnRep_SourceFlipbook
 	 * 		Flags  -> (Final, Native, Protected)
 	 * Parameters:
@@ -528,7 +528,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C97800
+	 * 		RVA    -> 0x01C96350
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.IsReversing
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -550,7 +550,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C977D0
+	 * 		RVA    -> 0x01C96320
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.IsPlaying
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -572,7 +572,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C977A0
+	 * 		RVA    -> 0x01C962F0
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.IsLooping
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -594,7 +594,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96DD0
+	 * 		RVA    -> 0x01C95920
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetPlayRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -616,7 +616,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96E30
+	 * 		RVA    -> 0x01C95980
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetPlaybackPositionInFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -638,7 +638,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96E00
+	 * 		RVA    -> 0x01C95950
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetPlaybackPosition
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -660,7 +660,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96910
+	 * 		RVA    -> 0x01C95460
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetFlipbookLengthInFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -682,7 +682,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C968E0
+	 * 		RVA    -> 0x01C95430
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetFlipbookLength
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -704,7 +704,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C968B0
+	 * 		RVA    -> 0x01C95400
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetFlipbookFramerate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -726,7 +726,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96880
+	 * 		RVA    -> 0x01C953D0
 	 * 		Name   -> Function Paper2D.PaperFlipbookComponent.GetFlipbook
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -776,7 +776,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C98D90
+	 * 		RVA    -> 0x01C978E0
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.UpdateInstanceTransform
 	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -809,7 +809,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C98C70
+	 * 		RVA    -> 0x01C977C0
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.UpdateInstanceColor
 	 * 		Flags  -> (Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -838,7 +838,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C98BC0
+	 * 		RVA    -> 0x01C97710
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.SortInstancesAlongAxis
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -861,7 +861,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C97E80
+	 * 		RVA    -> 0x01C969D0
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.RemoveInstance
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -886,7 +886,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96970
+	 * 		RVA    -> 0x01C954C0
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.GetInstanceTransform
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -917,7 +917,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96940
+	 * 		RVA    -> 0x01C95490
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.GetInstanceCount
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -939,7 +939,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B49D10
+	 * 		RVA    -> 0x01B48830
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.ClearInstances
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -959,7 +959,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96280
+	 * 		RVA    -> 0x01C94DD0
 	 * 		Name   -> Function Paper2D.PaperGroupedSpriteComponent.AddInstance
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1060,7 +1060,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C978D0
+	 * 		RVA    -> 0x01C96420
 	 * 		Name   -> Function Paper2D.PaperSpriteBlueprintLibrary.MakeBrushFromSprite
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1103,7 +1103,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C98890
+	 * 		RVA    -> 0x01C973E0
 	 * 		Name   -> Function Paper2D.PaperSpriteComponent.SetSpriteColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1126,7 +1126,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C98110
+	 * 		RVA    -> 0x01C96C60
 	 * 		Name   -> Function Paper2D.PaperSpriteComponent.SetSprite
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1151,7 +1151,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96880
+	 * 		RVA    -> 0x01C953D0
 	 * 		Name   -> Function Paper2D.PaperSpriteComponent.GetSprite
 	 * 		Flags  -> (Native, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -1201,7 +1201,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C98920
+	 * 		RVA    -> 0x01C97470
 	 * 		Name   -> Function Paper2D.PaperTerrainComponent.SetTerrainColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1308,7 +1308,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C98B30
+	 * 		RVA    -> 0x01C97680
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.SetTileMapColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1331,7 +1331,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C98110
+	 * 		RVA    -> 0x01C96C60
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.SetTileMap
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1356,7 +1356,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C989B0
+	 * 		RVA    -> 0x01C97500
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.SetTile
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1385,7 +1385,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C983F0
+	 * 		RVA    -> 0x01C96F40
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.SetLayerColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -1410,7 +1410,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C981B0
+	 * 		RVA    -> 0x01C96D00
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.SetLayerCollision
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1445,7 +1445,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C98030
+	 * 		RVA    -> 0x01C96B80
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.SetDefaultCollisionThickness
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1470,7 +1470,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C97F20
+	 * 		RVA    -> 0x01C96A70
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.ResizeMap
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1495,7 +1495,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C97E60
+	 * 		RVA    -> 0x01C969B0
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.RebuildCollision
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1515,7 +1515,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C97DF0
+	 * 		RVA    -> 0x01C96940
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.OwnsTileMap
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1537,7 +1537,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C97D40
+	 * 		RVA    -> 0x01C96890
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.MakeTileMapEditable
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1557,7 +1557,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C97420
+	 * 		RVA    -> 0x01C95F70
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetTilePolygon
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1590,7 +1590,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C973E0
+	 * 		RVA    -> 0x01C95F30
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetTileMapColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1612,7 +1612,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C97270
+	 * 		RVA    -> 0x01C95DC0
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetTileCornerPosition
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1643,7 +1643,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C97100
+	 * 		RVA    -> 0x01C95C50
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetTileCenterPosition
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1674,7 +1674,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96FE0
+	 * 		RVA    -> 0x01C95B30
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetTile
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1703,7 +1703,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96C40
+	 * 		RVA    -> 0x01C95790
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetMapSize
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1734,7 +1734,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96BA0
+	 * 		RVA    -> 0x01C956F0
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.GetLayerColor
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1759,7 +1759,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C966B0
+	 * 		RVA    -> 0x01C95200
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.CreateNewTileMap
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1792,7 +1792,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96450
+	 * 		RVA    -> 0x01C94FA0
 	 * 		Name   -> Function Paper2D.PaperTileMapComponent.AddNewLayer
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1842,7 +1842,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C97B70
+	 * 		RVA    -> 0x01C966C0
 	 * 		Name   -> Function Paper2D.TileMapBlueprintLibrary.MakeTile
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1875,7 +1875,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C976D0
+	 * 		RVA    -> 0x01C96220
 	 * 		Name   -> Function Paper2D.TileMapBlueprintLibrary.GetTileUserData
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1900,7 +1900,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C975F0
+	 * 		RVA    -> 0x01C96140
 	 * 		Name   -> Function Paper2D.TileMapBlueprintLibrary.GetTileTransform
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -1925,7 +1925,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C96480
+	 * 		RVA    -> 0x01C94FD0
 	 * 		Name   -> Function Paper2D.TileMapBlueprintLibrary.BreakTile
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:

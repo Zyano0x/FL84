@@ -34,7 +34,7 @@ namespace CG
 	public:
 		TArray<struct FRawInputDeviceConfiguration>                DeviceConfigurations;                                    // 0x0038(0x0010) Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bRegisterDefaultDevice;                                  // 0x0048(0x0001) Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_0LZL[0x7];                                   // 0x0049(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_061C[0x7];                                   // 0x0049(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FRawInputDeadzoneConfiguration                      LeftStickDeadzone;                                       // 0x0050(0x0018) Edit, Config, NativeAccessSpecifierPublic
 		struct FRawInputDeadzoneConfiguration                      RightStickDeadzone;                                      // 0x0068(0x0018) Edit, Config, NativeAccessSpecifierPublic
 		struct FRawInputDeadzoneConfiguration                      TriggerDeadzone;                                         // 0x0080(0x0018) Edit, Config, NativeAccessSpecifierPublic

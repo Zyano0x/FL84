@@ -15,22 +15,98 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnRecordingStartedDelegate_86FFFEA34B1CD49EDE4B69A080A966E5
+	 * DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnRecordingStartedDelegate_369E13824E3178FDDD5B17ABE1FFE01F
 	 */
-	struct UBP_SolarReplayManager_C_OnRecordingStartedDelegate_86FFFEA34B1CD49EDE4B69A080A966E5_Params
+	struct UBP_SolarReplayManager_C_OnRecordingStartedDelegate_369E13824E3178FDDD5B17ABE1FFE01F_Params
 	{	};
 
 	/**
-	 * DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnRecordingStartedDelegate_27DEB101494EAFBF476057859DF95A66
+	 * DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnRecordingStartedDelegate_E9F149AF4D2698F660EF9BA2745FBB34
 	 */
-	struct UBP_SolarReplayManager_C_OnRecordingStartedDelegate_27DEB101494EAFBF476057859DF95A66_Params
+	struct UBP_SolarReplayManager_C_OnRecordingStartedDelegate_E9F149AF4D2698F660EF9BA2745FBB34_Params
 	{	};
 
 	/**
-	 * DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnPlayingStartedDelegate_AE9D838B428DB59DB0AEB7AEC16F1D7F
+	 * DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnPlayingStartedDelegate_77E10C4948CABDCB3A7034B044174976
 	 */
-	struct UBP_SolarReplayManager_C_OnPlayingStartedDelegate_AE9D838B428DB59DB0AEB7AEC16F1D7F_Params
+	struct UBP_SolarReplayManager_C_OnPlayingStartedDelegate_77E10C4948CABDCB3A7034B044174976_Params
 	{	};
+
+	/**
+	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.IsHighlightVersionOut
+	 */
+	struct UBP_SolarReplayManager_C_IsHighlightVersionOut_Params
+	{
+	public:
+		class FString                                              HighlightFileName;                                       // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.NotifyBackendPlayReplayFinished
+	 */
+	struct UBP_SolarReplayManager_C_NotifyBackendPlayReplayFinished_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestBattleList
+	 */
+	struct UBP_SolarReplayManager_C_RequestBattleList_Params
+	{
+	public:
+		int32_t                                                    PageIndex;                                               // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		int32_t                                                    PageSize;                                                // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.ReceivePlayingStartFailed
+	 */
+	struct UBP_SolarReplayManager_C_ReceivePlayingStartFailed_Params
+	{	};
+
+	/**
+	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.IsReady
+	 */
+	struct UBP_SolarReplayManager_C_IsReady_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestCheckpointForLiveWatch
+	 */
+	struct UBP_SolarReplayManager_C_RequestCheckpointForLiveWatch_Params
+	{	};
+
+	/**
+	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.GetBattleIDByIndex
+	 */
+	struct UBP_SolarReplayManager_C_GetBattleIDByIndex_Params
+	{
+	public:
+		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		unsigned char                                              UnknownData_PFYL[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		class FString                                              ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	};
+
+	/**
+	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.LuaBindDelegates
+	 */
+	struct UBP_SolarReplayManager_C_LuaBindDelegates_Params
+	{	};
+
+	/**
+	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.IsRequestingReplayDownloadInfo
+	 */
+	struct UBP_SolarReplayManager_C_IsRequestingReplayDownloadInfo_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	};
 
 	/**
 	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.SetReadyToRecord
@@ -39,20 +115,20 @@ namespace CG
 	{
 	public:
 		bool                                                       bIsReady;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		unsigned char                                              UnknownData_MGLN[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_8V4W[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		TArray<class FString>                                      OBPlayerIDs;                                             // 0x0008(0x0010)  (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
+
+	/**
+	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestPlayReplayOfCurrentBattle
+	 */
+	struct UBP_SolarReplayManager_C_RequestPlayReplayOfCurrentBattle_Params
+	{	};
 
 	/**
 	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.OnLiveWatchTargetLost
 	 */
 	struct UBP_SolarReplayManager_C_OnLiveWatchTargetLost_Params
-	{	};
-
-	/**
-	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.LuaBindDelegates
-	 */
-	struct UBP_SolarReplayManager_C_LuaBindDelegates_Params
 	{	};
 
 	/**
@@ -66,64 +142,12 @@ namespace CG
 	};
 
 	/**
-	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.IsReady
+	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestWatchingLiveOfPlayer
 	 */
-	struct UBP_SolarReplayManager_C_IsReady_Params
+	struct UBP_SolarReplayManager_C_RequestWatchingLiveOfPlayer_Params
 	{
 	public:
-		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	};
-
-	/**
-	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.ReceivePlayingStartFailed
-	 */
-	struct UBP_SolarReplayManager_C_ReceivePlayingStartFailed_Params
-	{	};
-
-	/**
-	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestPlayReplay
-	 */
-	struct UBP_SolarReplayManager_C_RequestPlayReplay_Params
-	{
-	public:
-		class FString                                              InBattleID;                                              // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		bool                                                       IsLive;                                                  // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	};
-
-	/**
-	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestPlayReplayOfCurrentBattle
-	 */
-	struct UBP_SolarReplayManager_C_RequestPlayReplayOfCurrentBattle_Params
-	{	};
-
-	/**
-	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestBattleList
-	 */
-	struct UBP_SolarReplayManager_C_RequestBattleList_Params
-	{
-	public:
-		int32_t                                                    PageIndex;                                               // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		int32_t                                                    PageSize;                                                // 0x0004(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	};
-
-	/**
-	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.GetBattleIDByIndex
-	 */
-	struct UBP_SolarReplayManager_C_GetBattleIDByIndex_Params
-	{
-	public:
-		int32_t                                                    Index;                                                   // 0x0000(0x0004)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		unsigned char                                              UnknownData_GN4B[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
-		class FString                                              ReturnValue;                                             // 0x0008(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	};
-
-	/**
-	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.IsRequestingReplayDownloadInfo
-	 */
-	struct UBP_SolarReplayManager_C_IsRequestingReplayDownloadInfo_Params
-	{
-	public:
-		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		class FString                                              SolarPlayerID;                                           // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -134,27 +158,9 @@ namespace CG
 	public:
 		EReplayPlayingFinishReason                                 reason;                                                  // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		unsigned char                                              StreamerErrorCode;                                       // 0x0001(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		unsigned char                                              UnknownData_NIIA[0x6];                                   // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_5V2W[0x6];                                   // 0x0002(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FString                                              StreamerErrorMsg;                                        // 0x0008(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 		bool                                                       ReturnValue;                                             // 0x0018(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	};
-
-	/**
-	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.LuaOnPostLoadMapWithWorld
-	 */
-	struct UBP_SolarReplayManager_C_LuaOnPostLoadMapWithWorld_Params
-	{
-	public:
-		class FString                                              LevelName;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	};
-
-	/**
-	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestWatchingLiveOfPlayer
-	 */
-	struct UBP_SolarReplayManager_C_RequestWatchingLiveOfPlayer_Params
-	{
-	public:
-		class FString                                              SolarPlayerID;                                           // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 	/**
@@ -167,28 +173,22 @@ namespace CG
 	};
 
 	/**
-	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.NotifyBackendPlayReplayFinished
+	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestPlayReplay
 	 */
-	struct UBP_SolarReplayManager_C_NotifyBackendPlayReplayFinished_Params
+	struct UBP_SolarReplayManager_C_RequestPlayReplay_Params
 	{
 	public:
-		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		class FString                                              InBattleID;                                              // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+		bool                                                       IsLive;                                                  // 0x0010(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestCheckpointForLiveWatch
+	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.LuaOnPostLoadMapWithWorld
 	 */
-	struct UBP_SolarReplayManager_C_RequestCheckpointForLiveWatch_Params
-	{	};
-
-	/**
-	 * Function BP_SolarReplayManager.BP_SolarReplayManager_C.IsHighlightVersionOut
-	 */
-	struct UBP_SolarReplayManager_C_IsHighlightVersionOut_Params
+	struct UBP_SolarReplayManager_C_LuaOnPostLoadMapWithWorld_Params
 	{
 	public:
-		class FString                                              HighlightFileName;                                       // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-		bool                                                       ReturnValue;                                             // 0x0010(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		class FString                                              LevelName;                                               // 0x0000(0x0010)  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	};
 
 }

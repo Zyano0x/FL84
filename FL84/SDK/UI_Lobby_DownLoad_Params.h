@@ -15,21 +15,21 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnClicked_8A85330B433EC0A7AF613FB865C81B1D
+	 * DelegateFunction UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnClicked_68C3306F4A2C879C6EBA79BEBF3159AF
 	 */
-	struct UUI_Lobby_DownLoad_C_OnClicked_8A85330B433EC0A7AF613FB865C81B1D_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnSolarUIOpened
-	 */
-	struct UUI_Lobby_DownLoad_C_OnSolarUIOpened_Params
+	struct UUI_Lobby_DownLoad_C_OnClicked_68C3306F4A2C879C6EBA79BEBF3159AF_Params
 	{	};
 
 	/**
 	 * Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnSolarUIClosed
 	 */
 	struct UUI_Lobby_DownLoad_C_OnSolarUIClosed_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnSolarUIOpened
+	 */
+	struct UUI_Lobby_DownLoad_C_OnSolarUIOpened_Params
 	{	};
 
 	/**

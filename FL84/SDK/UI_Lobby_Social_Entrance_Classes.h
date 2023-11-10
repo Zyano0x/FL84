@@ -43,17 +43,17 @@ namespace CG
 		bool                                                       isShowGuide;                                             // 0x0498(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
-		void OnClicked_0EF606C447133BA916546DB0768EA4AB();
-		void OnClicked_52CBF6FA45189F2578642BA195205B1A();
-		void OnClicked_08CC7383458A91B2083F20B3DAD90256();
-		void OnClicked_F03278524A1E412371206A92774ACE59();
-		void OnClicked_4DC584094CED3B31713F8E9EC584FD67();
-		void OnClicked_4B29EBDE436C645E4AE5A0A41C5BA1EC();
-		void OnInitialized();
-		void OnSolarUIClosed();
-		void Destruct();
-		void ConstructCopy();
+		void OnClicked_AAC9B7254B42273CF1CCC881BD19D2FC();
+		void OnClicked_E8A3D8E24238B441481CDB8DA152B747();
+		void OnClicked_411CA45541525B630BCFEF8785C7A3B9();
+		void OnClicked_F6FFD16845769E6A2065E2A728ACFA4D();
+		void OnClicked_E78075C746F563BEEBCF5D8F21C31D99();
+		void OnClicked_C322D9444784C8525D99ACBCD0AD1DEA();
 		void OnSolarUIOpened();
+		void Destruct();
+		void OnSolarUIClosed();
+		void ConstructCopy();
+		void OnInitialized();
 		class FString GetModuleName();
 		void ShowGuide(bool ShowGuide);
 		void PreConstruct(bool IsDesignTime);

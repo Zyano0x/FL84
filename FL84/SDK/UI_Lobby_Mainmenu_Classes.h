@@ -30,9 +30,9 @@ namespace CG
 		class USolarRedHint_General_C*                             RedHint_Warehouse;                                       // 0x0430(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnClicked_5DFA0112438A6356A25291A8F67FBBED();
-		void OnClicked_C01224C840506574E9EDC2A45B152913();
-		void OnClicked_E8CA90AF401D24CBD5478BA3DCC28CCD();
+		void OnClicked_F2C42E164C7ED96966C1538248E14E3A();
+		void OnClicked_49B3237C4C8545010B2BA5B12C14AF3F();
+		void OnClicked_4C50337447224CE2601902A318B5DF46();
 		void Destruct();
 		void OnSolarUIClosed();
 		void Construct();

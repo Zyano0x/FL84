@@ -15,21 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnClicked_F242A7F34229E7BB9792FABD95772101
+	 * DelegateFunction UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnClicked_D344A3D340925D1D464E2E9502E8CD0E
 	 */
-	struct UUI_Lobby_PlayerInfo_C_OnClicked_F242A7F34229E7BB9792FABD95772101_Params
+	struct UUI_Lobby_PlayerInfo_C_OnClicked_D344A3D340925D1D464E2E9502E8CD0E_Params
 	{	};
 
 	/**
 	 * Function UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.Destruct
 	 */
 	struct UUI_Lobby_PlayerInfo_C_Destruct_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnSolarUIOpened
-	 */
-	struct UUI_Lobby_PlayerInfo_C_OnSolarUIOpened_Params
 	{	};
 
 	/**
@@ -42,6 +36,12 @@ namespace CG
 	 * Function UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.Construct
 	 */
 	struct UUI_Lobby_PlayerInfo_C_Construct_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnSolarUIOpened
+	 */
+	struct UUI_Lobby_PlayerInfo_C_OnSolarUIOpened_Params
 	{	};
 
 	/**

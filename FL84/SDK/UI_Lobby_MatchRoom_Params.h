@@ -15,21 +15,21 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.OnClicked_0EAE309B4FCC1565DC2324A3C6556152
+	 * DelegateFunction UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.OnClicked_E722E5044F71ED683133AF8A0D546EA0
 	 */
-	struct UUI_Lobby_MatchRoom_C_OnClicked_0EAE309B4FCC1565DC2324A3C6556152_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.Destruct
-	 */
-	struct UUI_Lobby_MatchRoom_C_Destruct_Params
+	struct UUI_Lobby_MatchRoom_C_OnClicked_E722E5044F71ED683133AF8A0D546EA0_Params
 	{	};
 
 	/**
 	 * Function UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.Construct
 	 */
 	struct UUI_Lobby_MatchRoom_C_Construct_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.Destruct
+	 */
+	struct UUI_Lobby_MatchRoom_C_Destruct_Params
 	{	};
 
 	/**

@@ -12,26 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
-	 * 		Name   -> Function Lobby_Script.Lobby_Script_C.ReceiveBeginPlayCopy
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
-	 */
-	void ALobby_Script_C::ReceiveBeginPlayCopy()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function Lobby_Script.Lobby_Script_C.ReceiveBeginPlayCopy"));
-		
-		ALobby_Script_C_ReceiveBeginPlayCopy_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6BB90
+	 * 		RVA    -> 0x00B6A060
 	 * 		Name   -> Function Lobby_Script.Lobby_Script_C.ReceiveEndPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -53,7 +34,26 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
+	 * 		Name   -> Function Lobby_Script.Lobby_Script_C.ReceiveBeginPlayCopy
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 */
+	void ALobby_Script_C::ReceiveBeginPlayCopy()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function Lobby_Script.Lobby_Script_C.ReceiveBeginPlayCopy"));
+		
+		ALobby_Script_C_ReceiveBeginPlayCopy_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function Lobby_Script.Lobby_Script_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -74,7 +74,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6BB90
+	 * 		RVA    -> 0x00B6A060
 	 * 		Name   -> Function Lobby_Script.Lobby_Script_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -93,7 +93,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function Lobby_Script.Lobby_Script_C.ExecuteUbergraph_Lobby_Script
 	 * 		Flags  -> (Final)
 	 * Parameters:

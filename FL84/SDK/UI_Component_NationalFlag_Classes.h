@@ -28,16 +28,16 @@ namespace CG
 		E_FlagType                                                 FlagType;                                                // 0x044C(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnSolarUIOpened();
-		void OnInitialized();
-		void SetDefaultClanFlag();
+		void SetDefaultNationalFlag();
 		void LoadClanFlagByUrl();
-		bool IsExclusiveFlagId(int32_t InFlagID);
+		void Destruct();
+		void Construct();
 		bool IsBroadCastMode();
 		void OnSolarUIClosed();
-		void Destruct();
-		void SetDefaultNationalFlag();
-		void Construct();
+		void OnSolarUIOpened();
+		void SetDefaultClanFlag();
+		void OnInitialized();
+		bool IsExclusiveFlagId(int32_t InFlagID);
 		class FString GetModuleName();
 		void SetEmptyClan();
 		void SetFlagType(E_FlagType FlagType);

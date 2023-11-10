@@ -27,9 +27,10 @@ namespace CG
 
 	public:
 		class FString GetModuleName();
-		void PreConstruct(bool IsDesignTime);
 		void CloseSelf();
 		void OnEndAnimFinish();
+		void PreConstruct(bool IsDesignTime);
+		void OnSolarUIClosed();
 		void ExecuteUbergraph_UI_HUD_Notice_VICTORY_Desktop(int32_t EntryPoint);
 		static UClass* StaticClass();
 	};

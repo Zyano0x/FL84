@@ -21,12 +21,12 @@ namespace CG
 	class UBP_SettlementStageMgr_C : public USettlementStageManager
 	{
 	public:
+		class FString GetClassRelativePathName(class UClass* InClass);
 		void SkipToTarget();
+		void CloseDiePage();
 		void ShowDiePage();
 		void Init();
-		void CloseDiePage();
 		void ShowNextStage();
-		class FString GetClassRelativePathName(class UClass* InClass);
 		static UClass* StaticClass();
 	};
 

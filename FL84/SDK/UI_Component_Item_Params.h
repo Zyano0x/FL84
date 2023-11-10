@@ -21,21 +21,21 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Component_Item.UI_Component_Item_C.OnListItemObjectSetCopy
-	 */
-	struct UUI_Component_Item_C_OnListItemObjectSetCopy_Params
-	{
-	public:
-		class UObject*                                             ListItemObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	};
-
-	/**
 	 * Function UI_Component_Item.UI_Component_Item_C.BP_OnItemSelectionChangedCopy
 	 */
 	struct UUI_Component_Item_C_BP_OnItemSelectionChangedCopy_Params
 	{
 	public:
 		bool                                                       bIsSelected;                                             // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	};
+
+	/**
+	 * Function UI_Component_Item.UI_Component_Item_C.OnListItemObjectSetCopy
+	 */
+	struct UUI_Component_Item_C_OnListItemObjectSetCopy_Params
+	{
+	public:
+		class UObject*                                             ListItemObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**

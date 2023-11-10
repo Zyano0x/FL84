@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C9BB10
+	 * 		RVA    -> 0x01C9A660
 	 * 		Name   -> Function SolarTCPSocket.SolarTCPSocketClient.SendData
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -39,7 +39,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C9BA80
+	 * 		RVA    -> 0x01C9A5D0
 	 * 		Name   -> Function SolarTCPSocket.SolarTCPSocketClient.Disconnect
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -62,7 +62,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C9B810
+	 * 		RVA    -> 0x01C9A360
 	 * 		Name   -> Function SolarTCPSocket.SolarTCPSocketClient.Connect
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

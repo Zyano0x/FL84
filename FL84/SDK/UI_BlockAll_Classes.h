@@ -24,8 +24,8 @@ namespace CG
 		class UCanvasPanel*                                        Panel_Block;                                             // 0x0400(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void Destruct();
 		void Construct();
+		void Destruct();
 		class FString GetModuleName();
 		static UClass* StaticClass();
 	};

@@ -12,17 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5D930
-	 * 		Name   -> DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnRecordingStartedDelegate_86FFFEA34B1CD49EDE4B69A080A966E5
+	 * 		RVA    -> 0x00B5BE00
+	 * 		Name   -> DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnRecordingStartedDelegate_369E13824E3178FDDD5B17ABE1FFE01F
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UBP_SolarReplayManager_C::OnRecordingStartedDelegate_86FFFEA34B1CD49EDE4B69A080A966E5()
+	void UBP_SolarReplayManager_C::OnRecordingStartedDelegate_369E13824E3178FDDD5B17ABE1FFE01F()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnRecordingStartedDelegate_86FFFEA34B1CD49EDE4B69A080A966E5"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnRecordingStartedDelegate_369E13824E3178FDDD5B17ABE1FFE01F"));
 		
-		UBP_SolarReplayManager_C_OnRecordingStartedDelegate_86FFFEA34B1CD49EDE4B69A080A966E5_Params params {};
+		UBP_SolarReplayManager_C_OnRecordingStartedDelegate_369E13824E3178FDDD5B17ABE1FFE01F_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -31,17 +31,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5D930
-	 * 		Name   -> DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnRecordingStartedDelegate_27DEB101494EAFBF476057859DF95A66
+	 * 		RVA    -> 0x00B5BE00
+	 * 		Name   -> DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnRecordingStartedDelegate_E9F149AF4D2698F660EF9BA2745FBB34
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UBP_SolarReplayManager_C::OnRecordingStartedDelegate_27DEB101494EAFBF476057859DF95A66()
+	void UBP_SolarReplayManager_C::OnRecordingStartedDelegate_E9F149AF4D2698F660EF9BA2745FBB34()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnRecordingStartedDelegate_27DEB101494EAFBF476057859DF95A66"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnRecordingStartedDelegate_E9F149AF4D2698F660EF9BA2745FBB34"));
 		
-		UBP_SolarReplayManager_C_OnRecordingStartedDelegate_27DEB101494EAFBF476057859DF95A66_Params params {};
+		UBP_SolarReplayManager_C_OnRecordingStartedDelegate_E9F149AF4D2698F660EF9BA2745FBB34_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -50,17 +50,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5D930
-	 * 		Name   -> DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnPlayingStartedDelegate_AE9D838B428DB59DB0AEB7AEC16F1D7F
+	 * 		RVA    -> 0x00B5BE00
+	 * 		Name   -> DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnPlayingStartedDelegate_77E10C4948CABDCB3A7034B044174976
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UBP_SolarReplayManager_C::OnPlayingStartedDelegate_AE9D838B428DB59DB0AEB7AEC16F1D7F()
+	void UBP_SolarReplayManager_C::OnPlayingStartedDelegate_77E10C4948CABDCB3A7034B044174976()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnPlayingStartedDelegate_AE9D838B428DB59DB0AEB7AEC16F1D7F"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction BP_SolarReplayManager.BP_SolarReplayManager_C.OnPlayingStartedDelegate_77E10C4948CABDCB3A7034B044174976"));
 		
-		UBP_SolarReplayManager_C_OnPlayingStartedDelegate_AE9D838B428DB59DB0AEB7AEC16F1D7F_Params params {};
+		UBP_SolarReplayManager_C_OnPlayingStartedDelegate_77E10C4948CABDCB3A7034B044174976_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -69,103 +69,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6BB90
-	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.SetReadyToRecord
-	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.IsHighlightVersionOut
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
-	 * 		bool                                               bIsReady                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	 * 		TArray<class FString>                              OBPlayerIDs                                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class FString                                      HighlightFileName                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UBP_SolarReplayManager_C::SetReadyToRecord(bool bIsReady, TArray<class FString> OBPlayerIDs)
+	bool UBP_SolarReplayManager_C::IsHighlightVersionOut(const class FString& HighlightFileName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.SetReadyToRecord"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.IsHighlightVersionOut"));
 		
-		UBP_SolarReplayManager_C_SetReadyToRecord_Params params {};
-		params.bIsReady = bIsReady;
-		params.OBPlayerIDs = OBPlayerIDs;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6BB90
-	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.OnLiveWatchTargetLost
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
-	 */
-	void UBP_SolarReplayManager_C::OnLiveWatchTargetLost()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.OnLiveWatchTargetLost"));
-		
-		UBP_SolarReplayManager_C_OnLiveWatchTargetLost_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6BB90
-	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.LuaBindDelegates
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
-	 */
-	void UBP_SolarReplayManager_C::LuaBindDelegates()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.LuaBindDelegates"));
-		
-		UBP_SolarReplayManager_C_LuaBindDelegates_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6BB90
-	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.SetRequestTryStrategy
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		float                                              Interval                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		int32_t                                            Times                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 */
-	void UBP_SolarReplayManager_C::SetRequestTryStrategy(float Interval, int32_t Times)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.SetRequestTryStrategy"));
-		
-		UBP_SolarReplayManager_C_SetRequestTryStrategy_Params params {};
-		params.Interval = Interval;
-		params.Times = Times;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6BB90
-	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.IsReady
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
-	 */
-	bool UBP_SolarReplayManager_C::IsReady()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.IsReady"));
-		
-		UBP_SolarReplayManager_C_IsReady_Params params {};
+		UBP_SolarReplayManager_C_IsHighlightVersionOut_Params params {};
+		params.HighlightFileName = HighlightFileName;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -176,69 +93,28 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6BB90
-	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.ReceivePlayingStartFailed
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.NotifyBackendPlayReplayFinished
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
-	void UBP_SolarReplayManager_C::ReceivePlayingStartFailed()
+	bool UBP_SolarReplayManager_C::NotifyBackendPlayReplayFinished()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.ReceivePlayingStartFailed"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.NotifyBackendPlayReplayFinished"));
 		
-		UBP_SolarReplayManager_C_ReceivePlayingStartFailed_Params params {};
+		UBP_SolarReplayManager_C_NotifyBackendPlayReplayFinished_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6BB90
-	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestPlayReplay
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FString                                      InBattleID                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 * 		bool                                               IsLive                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	 */
-	void UBP_SolarReplayManager_C::RequestPlayReplay(const class FString& InBattleID, bool IsLive)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestPlayReplay"));
-		
-		UBP_SolarReplayManager_C_RequestPlayReplay_Params params {};
-		params.InBattleID = InBattleID;
-		params.IsLive = IsLive;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6BB90
-	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestPlayReplayOfCurrentBattle
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void UBP_SolarReplayManager_C::RequestPlayReplayOfCurrentBattle()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestPlayReplayOfCurrentBattle"));
-		
-		UBP_SolarReplayManager_C_RequestPlayReplayOfCurrentBattle_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6BB90
+	 * 		RVA    -> 0x00B6A060
 	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestBattleList
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -262,7 +138,66 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6BB90
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.ReceivePlayingStartFailed
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 */
+	void UBP_SolarReplayManager_C::ReceivePlayingStartFailed()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.ReceivePlayingStartFailed"));
+		
+		UBP_SolarReplayManager_C_ReceivePlayingStartFailed_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.IsReady
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 */
+	bool UBP_SolarReplayManager_C::IsReady()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.IsReady"));
+		
+		UBP_SolarReplayManager_C_IsReady_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestCheckpointForLiveWatch
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 */
+	void UBP_SolarReplayManager_C::RequestCheckpointForLiveWatch()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestCheckpointForLiveWatch"));
+		
+		UBP_SolarReplayManager_C_RequestCheckpointForLiveWatch_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6A060
 	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.GetBattleIDByIndex
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -286,7 +221,26 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6BB90
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.LuaBindDelegates
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 */
+	void UBP_SolarReplayManager_C::LuaBindDelegates()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.LuaBindDelegates"));
+		
+		UBP_SolarReplayManager_C_LuaBindDelegates_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6A060
 	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.IsRequestingReplayDownloadInfo
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -307,7 +261,115 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6BB90
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.SetReadyToRecord
+	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		bool                                               bIsReady                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	 * 		TArray<class FString>                              OBPlayerIDs                                                (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UBP_SolarReplayManager_C::SetReadyToRecord(bool bIsReady, TArray<class FString> OBPlayerIDs)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.SetReadyToRecord"));
+		
+		UBP_SolarReplayManager_C_SetReadyToRecord_Params params {};
+		params.bIsReady = bIsReady;
+		params.OBPlayerIDs = OBPlayerIDs;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestPlayReplayOfCurrentBattle
+	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 */
+	void UBP_SolarReplayManager_C::RequestPlayReplayOfCurrentBattle()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestPlayReplayOfCurrentBattle"));
+		
+		UBP_SolarReplayManager_C_RequestPlayReplayOfCurrentBattle_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.OnLiveWatchTargetLost
+	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 */
+	void UBP_SolarReplayManager_C::OnLiveWatchTargetLost()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.OnLiveWatchTargetLost"));
+		
+		UBP_SolarReplayManager_C_OnLiveWatchTargetLost_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.SetRequestTryStrategy
+	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		float                                              Interval                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		int32_t                                            Times                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UBP_SolarReplayManager_C::SetRequestTryStrategy(float Interval, int32_t Times)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.SetRequestTryStrategy"));
+		
+		UBP_SolarReplayManager_C_SetRequestTryStrategy_Params params {};
+		params.Interval = Interval;
+		params.Times = Times;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestWatchingLiveOfPlayer
+	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class FString                                      SolarPlayerID                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 */
+	void UBP_SolarReplayManager_C::RequestWatchingLiveOfPlayer(const class FString& SolarPlayerID)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestWatchingLiveOfPlayer"));
+		
+		UBP_SolarReplayManager_C_RequestWatchingLiveOfPlayer_Params params {};
+		params.SolarPlayerID = SolarPlayerID;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6A060
 	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.ReceivePlayingFinished
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -335,51 +397,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6BB90
-	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.LuaOnPostLoadMapWithWorld
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
-	 * Parameters:
-	 * 		class FString                                      LevelName                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 */
-	void UBP_SolarReplayManager_C::LuaOnPostLoadMapWithWorld(const class FString& LevelName)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.LuaOnPostLoadMapWithWorld"));
-		
-		UBP_SolarReplayManager_C_LuaOnPostLoadMapWithWorld_Params params {};
-		params.LevelName = LevelName;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6BB90
-	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestWatchingLiveOfPlayer
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class FString                                      SolarPlayerID                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	 */
-	void UBP_SolarReplayManager_C::RequestWatchingLiveOfPlayer(const class FString& SolarPlayerID)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestWatchingLiveOfPlayer"));
-		
-		UBP_SolarReplayManager_C_RequestWatchingLiveOfPlayer_Params params {};
-		params.SolarPlayerID = SolarPlayerID;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6BB90
+	 * 		RVA    -> 0x00B6A060
 	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.GetStartRecordingParams
 	 * 		Flags  -> (Event, Protected, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -403,38 +421,22 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6BB90
-	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.NotifyBackendPlayReplayFinished
-	 * 		Flags  -> (Event, Public, BlueprintEvent)
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestPlayReplay
+	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class FString                                      InBattleID                                                 (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		bool                                               IsLive                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	bool UBP_SolarReplayManager_C::NotifyBackendPlayReplayFinished()
+	void UBP_SolarReplayManager_C::RequestPlayReplay(const class FString& InBattleID, bool IsLive)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.NotifyBackendPlayReplayFinished"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestPlayReplay"));
 		
-		UBP_SolarReplayManager_C_NotifyBackendPlayReplayFinished_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6BB90
-	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestCheckpointForLiveWatch
-	 * 		Flags  -> (Event, Protected, BlueprintEvent)
-	 */
-	void UBP_SolarReplayManager_C::RequestCheckpointForLiveWatch()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.RequestCheckpointForLiveWatch"));
-		
-		UBP_SolarReplayManager_C_RequestCheckpointForLiveWatch_Params params {};
+		UBP_SolarReplayManager_C_RequestPlayReplay_Params params {};
+		params.InBattleID = InBattleID;
+		params.IsLive = IsLive;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -443,26 +445,24 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6BB90
-	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.IsHighlightVersionOut
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function BP_SolarReplayManager.BP_SolarReplayManager_C.LuaOnPostLoadMapWithWorld
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
-	 * 		class FString                                      HighlightFileName                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		class FString                                      LevelName                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	bool UBP_SolarReplayManager_C::IsHighlightVersionOut(const class FString& HighlightFileName)
+	void UBP_SolarReplayManager_C::LuaOnPostLoadMapWithWorld(const class FString& LevelName)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.IsHighlightVersionOut"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function BP_SolarReplayManager.BP_SolarReplayManager_C.LuaOnPostLoadMapWithWorld"));
 		
-		UBP_SolarReplayManager_C_IsHighlightVersionOut_Params params {};
-		params.HighlightFileName = HighlightFileName;
+		UBP_SolarReplayManager_C_LuaOnPostLoadMapWithWorld_Params params {};
+		params.LevelName = LevelName;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
 	}
 
 	/**

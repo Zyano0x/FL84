@@ -96,10 +96,10 @@ namespace CG
 		ET_Type_Button                                             Btn_Type;                                                // 0x0632(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void Delegate_257BA2E4401D20AEF310968CC4EE53D9();
-		void OnClicked_A1D0FCCF4892234C795311B8817A78FE();
-		void OnClicked_46E616AD487DEAF1E1461B96E3AE8E87();
-		void OnClicked_36FB118F4F2F59E29F990D927862CC21();
+		void Delegate_9F31278B48E620C03A6DFEB83F69E342();
+		void OnClicked_F9D8D9824900FE2FC73C67AEE1F4ED17();
+		void OnClicked_FE0B0CCF409DF3793B041199631D798B();
+		void OnClicked_2DC3E53C435D201391F165A8A958BA70();
 		void Destruct();
 		void Construct();
 		class FString GetModuleName();

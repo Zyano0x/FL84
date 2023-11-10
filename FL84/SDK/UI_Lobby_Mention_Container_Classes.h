@@ -25,8 +25,8 @@ namespace CG
 
 	public:
 		void OnSolarUIOpened();
-		void OnInitialized();
 		void OnSolarUIClosed();
+		void OnInitialized();
 		class FString GetModuleName();
 		static UClass* StaticClass();
 	};

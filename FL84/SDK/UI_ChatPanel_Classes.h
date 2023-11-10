@@ -34,11 +34,11 @@ namespace CG
 		E_Type_State_Desktop                                       StateDesktop;                                            // 0x0450(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnClicked_23E705E846F8D02FAE67ACAF9141D27F();
-		void OnSolarUIOpened();
-		void OnInitialized();
+		void OnClicked_60265F614149D44DA4521F833405EE95();
 		void OnSolarUIClosed();
 		void Destruct();
+		void OnSolarUIOpened();
+		void OnInitialized();
 		void Construct();
 		class FString GetModuleName();
 		void SetStateDesktop(E_Type_State_Desktop StateHD);

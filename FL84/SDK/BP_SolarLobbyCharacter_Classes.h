@@ -26,9 +26,9 @@ namespace CG
 
 	public:
 		void InitCharacterByLua();
-		void ClearCharacterByLua();
-		bool IsCanOpenChangeAnim();
 		bool IsCanOpenMirror();
+		bool IsCanOpenChangeAnim();
+		void ClearCharacterByLua();
 		class FString GetModuleName();
 		void ReceiveBeginPlay();
 		void ExecuteUbergraph_BP_SolarLobbyCharacter(int32_t EntryPoint);

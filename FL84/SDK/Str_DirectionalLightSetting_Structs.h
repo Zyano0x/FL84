@@ -30,7 +30,7 @@ namespace CG
 		bool                                                       LightChannel0_24_E3D186BA4C82C6B3BD72FB80ACF787E2;       // 0x0020(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       LightChannel1_25_019A668A4DD58574DE0AFDA2E4E3E9F0;       // 0x0021(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       LightChannel2_26_08AE8857406688F44FCD3EACD64C0879;       // 0x0022(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_K6UL[0x1];                                   // 0x0023(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_KULP[0x1];                                   // 0x0023(0x0001) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      DynamicShadowDistanceMovableLight_35_3BB5B38E40806965B2BE7FAE9A5E217E; // 0x0024(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		int32_t                                                    NumDynamicShadowCascades_37_AC7F56B040BC6DBB939D1395BFD997C2; // 0x0028(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		float                                                      DistributionExponent_41_6B5C490B4EE217C84292669D374C18B3; // 0x002C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash

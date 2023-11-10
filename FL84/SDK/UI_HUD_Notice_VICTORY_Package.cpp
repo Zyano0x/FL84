@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.GetModuleName
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -33,7 +33,45 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
+	 * 		Name   -> Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.CloseSelf
+	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
+	 */
+	void UUI_HUD_Notice_VICTORY_C::CloseSelf()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.CloseSelf"));
+		
+		UUI_HUD_Notice_VICTORY_C_CloseSelf_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D64A40
+	 * 		Name   -> Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.OnEndAnimFinish
+	 * 		Flags  -> (Event, Protected, BlueprintEvent)
+	 */
+	void UUI_HUD_Notice_VICTORY_C::OnEndAnimFinish()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.OnEndAnimFinish"));
+		
+		UUI_HUD_Notice_VICTORY_C_OnEndAnimFinish_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -55,36 +93,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
-	 * 		Name   -> Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.CloseSelf
-	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
-	 */
-	void UUI_HUD_Notice_VICTORY_C::CloseSelf()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.CloseSelf"));
-		
-		UUI_HUD_Notice_VICTORY_C_CloseSelf_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x02D63E80
-	 * 		Name   -> Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.OnEndAnimFinish
+	 * 		RVA    -> 0x02D64A40
+	 * 		Name   -> Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.OnSolarUIClosed
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
-	void UUI_HUD_Notice_VICTORY_C::OnEndAnimFinish()
+	void UUI_HUD_Notice_VICTORY_C::OnSolarUIClosed()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.OnEndAnimFinish"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.OnSolarUIClosed"));
 		
-		UUI_HUD_Notice_VICTORY_C_OnEndAnimFinish_Params params {};
+		UUI_HUD_Notice_VICTORY_C_OnSolarUIClosed_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -93,7 +112,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.ExecuteUbergraph_UI_HUD_Notice_VICTORY
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

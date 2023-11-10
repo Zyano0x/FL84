@@ -21,7 +21,7 @@ namespace CG
 	class AAbility_VH_Hover_Soroll03_TurretA1_BaseDamage_C : public ASolarAbility
 	{
 	public:
-		unsigned char                                              UnknownData_3807[0x8];                                   // 0x0308(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_GR4N[0x8];                                   // 0x0308(0x0008) Fix Super Size
 
 	public:
 		static UClass* StaticClass();

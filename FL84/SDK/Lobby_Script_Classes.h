@@ -33,8 +33,8 @@ namespace CG
 		TArray<class AActor*>                                      LocatorList;                                             // 0x0278(0x0010) Edit, BlueprintVisible, DisableEditOnTemplate, HasGetValueTypeHash
 
 	public:
-		void ReceiveBeginPlayCopy();
 		void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+		void ReceiveBeginPlayCopy();
 		class FString GetModuleName();
 		void ReceiveBeginPlay();
 		void ExecuteUbergraph_Lobby_Script(int32_t EntryPoint);

@@ -15,15 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_Tournament.UI_Lobby_Tournament_C.OnClicked_5993CE8D45D09D4154C8A8AEAD92A824
+	 * DelegateFunction UI_Lobby_Tournament.UI_Lobby_Tournament_C.OnClicked_666C3B6A47BE62FC629AD4B8BB4C606C
 	 */
-	struct UUI_Lobby_Tournament_C_OnClicked_5993CE8D45D09D4154C8A8AEAD92A824_Params
+	struct UUI_Lobby_Tournament_C_OnClicked_666C3B6A47BE62FC629AD4B8BB4C606C_Params
 	{	};
 
 	/**
-	 * Function UI_Lobby_Tournament.UI_Lobby_Tournament_C.Destruct
+	 * Function UI_Lobby_Tournament.UI_Lobby_Tournament_C.Construct
 	 */
-	struct UUI_Lobby_Tournament_C_Destruct_Params
+	struct UUI_Lobby_Tournament_C_Construct_Params
 	{	};
 
 	/**
@@ -33,9 +33,9 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Lobby_Tournament.UI_Lobby_Tournament_C.Construct
+	 * Function UI_Lobby_Tournament.UI_Lobby_Tournament_C.Destruct
 	 */
-	struct UUI_Lobby_Tournament_C_Construct_Params
+	struct UUI_Lobby_Tournament_C_Destruct_Params
 	{	};
 
 	/**

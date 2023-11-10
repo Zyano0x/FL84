@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CB81B0
+	 * 		RVA    -> 0x01CB6D00
 	 * 		Name   -> Function FarlightPatchRuntime.PakHelper.ReloadRedirectSettingsFromIni
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -35,7 +35,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CB80C0
+	 * 		RVA    -> 0x01CB6C10
 	 * 		Name   -> Function FarlightPatchRuntime.PakHelper.ReloadIniFile
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -62,7 +62,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CB80A0
+	 * 		RVA    -> 0x01CB6BF0
 	 * 		Name   -> Function FarlightPatchRuntime.PakHelper.ReloadGameUserSettings
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -82,7 +82,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CB8080
+	 * 		RVA    -> 0x01CB6BD0
 	 * 		Name   -> Function FarlightPatchRuntime.PakHelper.ReloadDeviceProfiles
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -102,7 +102,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CB8060
+	 * 		RVA    -> 0x01CB6BB0
 	 * 		Name   -> Function FarlightPatchRuntime.PakHelper.ReloadCVarSettingsFromIni
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -122,7 +122,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CB7F30
+	 * 		RVA    -> 0x01CB6A80
 	 * 		Name   -> Function FarlightPatchRuntime.PakHelper.OpenShaderPatchLibrary
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -149,7 +149,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CB7E50
+	 * 		RVA    -> 0x01CB69A0
 	 * 		Name   -> Function FarlightPatchRuntime.PakHelper.MountPak
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -176,7 +176,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CB7D50
+	 * 		RVA    -> 0x01CB68A0
 	 * 		Name   -> Function FarlightPatchRuntime.PakHelper.GetStrippedConfigFileName
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -201,7 +201,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CB7CD0
+	 * 		RVA    -> 0x01CB6820
 	 * 		Name   -> Function FarlightPatchRuntime.PakHelper.GetProjectName
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -223,7 +223,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CB7AB0
+	 * 		RVA    -> 0x01CB6600
 	 * 		Name   -> Function FarlightPatchRuntime.PakHelper.CreatePakWriter
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -250,7 +250,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CB79D0
+	 * 		RVA    -> 0x01CB6520
 	 * 		Name   -> Function FarlightPatchRuntime.PakHelper.CreatePakReader
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -291,7 +291,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CB7E30
+	 * 		RVA    -> 0x01CB6980
 	 * 		Name   -> Function FarlightPatchRuntime.PakReader.GetTotalSize
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -313,7 +313,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CB7BB0
+	 * 		RVA    -> 0x01CB6700
 	 * 		Name   -> Function FarlightPatchRuntime.PakReader.GetPakIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -335,7 +335,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CB79B0
+	 * 		RVA    -> 0x01CB6500
 	 * 		Name   -> Function FarlightPatchRuntime.PakReader.Close
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */

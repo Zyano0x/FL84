@@ -24,10 +24,10 @@ namespace CG
 		class UUI_Currency_Bar_C*                                  UI_Currency_Bar;                                         // 0x0400(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnSolarUIClosed();
-		void OnSolarUIOpened();
-		void Destruct();
 		void Construct();
+		void OnSolarUIClosed();
+		void Destruct();
+		void OnSolarUIOpened();
 		class FString GetModuleName();
 		static UClass* StaticClass();
 	};

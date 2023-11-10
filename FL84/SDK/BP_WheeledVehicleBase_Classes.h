@@ -21,7 +21,7 @@ namespace CG
 	class ABP_WheeledVehicleBase_C : public ASolarWheeledVehicle
 	{
 	public:
-		unsigned char                                              UnknownData_2RAP[0x8];                                   // 0x13E8(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_K8TY[0x8];                                   // 0x13E8(0x0008) Fix Super Size
 
 	public:
 		static UClass* StaticClass();

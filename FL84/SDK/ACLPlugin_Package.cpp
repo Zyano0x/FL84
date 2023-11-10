@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CAF510
+	 * 		RVA    -> 0x01CAE060
 	 * 		Name   -> Function ACLPlugin.AnimationCompressionLibraryDatabase.SetVisualFidelity
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -45,7 +45,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CAF480
+	 * 		RVA    -> 0x01CADFD0
 	 * 		Name   -> Function ACLPlugin.AnimationCompressionLibraryDatabase.GetVisualFidelity
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:

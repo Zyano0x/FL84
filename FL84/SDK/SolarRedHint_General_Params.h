@@ -15,15 +15,9 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function SolarRedHint_General.SolarRedHint_General_C.Destruct
+	 * Function SolarRedHint_General.SolarRedHint_General_C.OnSetHintDataCompleteCopy
 	 */
-	struct USolarRedHint_General_C_Destruct_Params
-	{	};
-
-	/**
-	 * Function SolarRedHint_General.SolarRedHint_General_C.OnInitialized
-	 */
-	struct USolarRedHint_General_C_OnInitialized_Params
+	struct USolarRedHint_General_C_OnSetHintDataCompleteCopy_Params
 	{	};
 
 	/**
@@ -33,9 +27,15 @@ namespace CG
 	{	};
 
 	/**
-	 * Function SolarRedHint_General.SolarRedHint_General_C.OnSetHintDataCompleteCopy
+	 * Function SolarRedHint_General.SolarRedHint_General_C.Destruct
 	 */
-	struct USolarRedHint_General_C_OnSetHintDataCompleteCopy_Params
+	struct USolarRedHint_General_C_Destruct_Params
+	{	};
+
+	/**
+	 * Function SolarRedHint_General.SolarRedHint_General_C.OnInitialized
+	 */
+	struct USolarRedHint_General_C_OnInitialized_Params
 	{	};
 
 	/**

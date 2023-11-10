@@ -6,7 +6,7 @@
  */
 
 #ifdef _MSC_VER
-#pragma pack(push, 0x01)
+	#pragma pack(push, 0x01)
 #endif
 
 namespace CG
@@ -19,13 +19,13 @@ namespace CG
 	 */
 	enum class EInterpCurveMode : uint8_t
 	{
-		CIM_Linear = 0,
-		CIM_CurveAuto = 1,
-		CIM_Constant = 2,
-		CIM_CurveUser = 3,
-		CIM_CurveBreak = 4,
+		CIM_Linear           = 0,
+		CIM_CurveAuto        = 1,
+		CIM_Constant         = 2,
+		CIM_CurveUser        = 3,
+		CIM_CurveBreak       = 4,
 		CIM_CurveAutoClamped = 5,
-		CIM_MAX = 6
+		CIM_MAX              = 6
 	};
 
 	/**
@@ -35,8 +35,8 @@ namespace CG
 	{
 		Exclusive = 0,
 		Inclusive = 1,
-		Open = 2,
-		MAX = 3
+		Open      = 2,
+		MAX       = 3
 	};
 
 	/**
@@ -44,10 +44,10 @@ namespace CG
 	 */
 	enum class ELocalizedTextSourceCategory : uint8_t
 	{
-		Game = 0,
+		Game   = 0,
 		Engine = 1,
 		Editor = 2,
-		MAX = 3
+		MAX    = 3
 	};
 
 	/**
@@ -55,10 +55,10 @@ namespace CG
 	 */
 	enum class EAutomationEventType : uint8_t
 	{
-		Info = 0,
+		Info    = 0,
 		Warning = 1,
-		Error = 2,
-		MAX = 3
+		Error   = 2,
+		MAX     = 3
 	};
 
 	/**
@@ -66,21 +66,21 @@ namespace CG
 	 */
 	enum class EMouseCursor : uint8_t
 	{
-		None = 0,
-		Default = 1,
-		TextEditBeam = 2,
+		None            = 0,
+		Default         = 1,
+		TextEditBeam    = 2,
 		ResizeLeftRight = 3,
-		ResizeUpDown = 4,
+		ResizeUpDown    = 4,
 		ResizeSouthEast = 5,
 		ResizeSouthWest = 6,
-		CardinalCross = 7,
-		Crosshairs = 8,
-		Hand = 9,
-		GrabHand = 10,
-		GrabHandClosed = 11,
-		SlashedCircle = 12,
-		EyeDropper = 13,
-		MAX = 14
+		CardinalCross   = 7,
+		Crosshairs      = 8,
+		Hand            = 9,
+		GrabHand        = 10,
+		GrabHandClosed  = 11,
+		SlashedCircle   = 12,
+		EyeDropper      = 13,
+		MAX             = 14
 	};
 
 	/**
@@ -88,22 +88,22 @@ namespace CG
 	 */
 	enum class ELifetimeCondition : uint8_t
 	{
-		COND_None = 0,
-		COND_InitialOnly = 1,
-		COND_OwnerOnly = 2,
-		COND_SkipOwner = 3,
-		COND_SimulatedOnly = 4,
-		COND_AutonomousOnly = 5,
-		COND_SimulatedOrPhysics = 6,
-		COND_InitialOrOwner = 7,
-		COND_Custom = 8,
-		COND_ReplayOrOwner = 9,
-		COND_ReplayOnly = 10,
-		COND_SimulatedOnlyNoReplay = 11,
+		COND_None                       = 0,
+		COND_InitialOnly                = 1,
+		COND_OwnerOnly                  = 2,
+		COND_SkipOwner                  = 3,
+		COND_SimulatedOnly              = 4,
+		COND_AutonomousOnly             = 5,
+		COND_SimulatedOrPhysics         = 6,
+		COND_InitialOrOwner             = 7,
+		COND_Custom                     = 8,
+		COND_ReplayOrOwner              = 9,
+		COND_ReplayOnly                 = 10,
+		COND_SimulatedOnlyNoReplay      = 11,
 		COND_SimulatedOrPhysicsNoReplay = 12,
-		COND_SkipReplay = 13,
-		COND_Never = 14,
-		COND_Max = 15
+		COND_SkipReplay                 = 13,
+		COND_Never                      = 14,
+		COND_Max                        = 15
 	};
 
 	/**
@@ -111,10 +111,10 @@ namespace CG
 	 */
 	enum class EDataValidationResult : uint8_t
 	{
-		Invalid = 0,
-		Valid = 1,
+		Invalid      = 0,
+		Valid        = 1,
 		NotValidated = 2,
-		MAX = 3
+		MAX          = 3
 	};
 
 	/**
@@ -123,9 +123,9 @@ namespace CG
 	enum class EPropertyAccessChangeNotifyMode : uint8_t
 	{
 		Default = 0,
-		Never = 1,
-		Always = 2,
-		MAX = 3
+		Never   = 1,
+		Always  = 2,
+		MAX     = 3
 	};
 
 	/**
@@ -133,57 +133,57 @@ namespace CG
 	 */
 	enum class EUnit : uint8_t
 	{
-		Micrometers = 0,
-		Millimeters = 1,
-		Centimeters = 2,
-		Meters = 3,
-		Kilometers = 4,
-		Inches = 5,
-		Feet = 6,
-		Yards = 7,
-		Miles = 8,
-		Lightyears = 9,
-		Degrees = 10,
-		Radians = 11,
-		MetersPerSecond = 12,
-		KilometersPerHour = 13,
-		MilesPerHour = 14,
-		Celsius = 15,
-		Farenheit = 16,
-		Kelvin = 17,
-		Micrograms = 18,
-		Milligrams = 19,
-		Grams = 20,
-		Kilograms = 21,
-		MetricTons = 22,
-		Ounces = 23,
-		Pounds = 24,
-		Stones = 25,
-		Newtons = 26,
-		PoundsForce = 27,
-		KilogramsForce = 28,
-		Hertz = 29,
-		Kilohertz = 30,
-		Megahertz = 31,
-		Gigahertz = 32,
+		Micrometers          = 0,
+		Millimeters          = 1,
+		Centimeters          = 2,
+		Meters               = 3,
+		Kilometers           = 4,
+		Inches               = 5,
+		Feet                 = 6,
+		Yards                = 7,
+		Miles                = 8,
+		Lightyears           = 9,
+		Degrees              = 10,
+		Radians              = 11,
+		MetersPerSecond      = 12,
+		KilometersPerHour    = 13,
+		MilesPerHour         = 14,
+		Celsius              = 15,
+		Farenheit            = 16,
+		Kelvin               = 17,
+		Micrograms           = 18,
+		Milligrams           = 19,
+		Grams                = 20,
+		Kilograms            = 21,
+		MetricTons           = 22,
+		Ounces               = 23,
+		Pounds               = 24,
+		Stones               = 25,
+		Newtons              = 26,
+		PoundsForce          = 27,
+		KilogramsForce       = 28,
+		Hertz                = 29,
+		Kilohertz            = 30,
+		Megahertz            = 31,
+		Gigahertz            = 32,
 		RevolutionsPerMinute = 33,
-		Bytes = 34,
-		Kilobytes = 35,
-		Megabytes = 36,
-		Gigabytes = 37,
-		Terabytes = 38,
-		Lumens = 39,
-		Milliseconds = 40,
-		Seconds = 41,
-		Minutes = 42,
-		Hours = 43,
-		Days = 44,
-		Months = 45,
-		Years = 46,
-		Multiplier = 47,
-		Percentage = 48,
-		Unspecified = 49,
-		MAX = 50
+		Bytes                = 34,
+		Kilobytes            = 35,
+		Megabytes            = 36,
+		Gigabytes            = 37,
+		Terabytes            = 38,
+		Lumens               = 39,
+		Milliseconds         = 40,
+		Seconds              = 41,
+		Minutes              = 42,
+		Hours                = 43,
+		Days                 = 44,
+		Months               = 45,
+		Years                = 46,
+		Multiplier           = 47,
+		Percentage           = 48,
+		Unspecified          = 49,
+		MAX                  = 50
 	};
 
 	/**
@@ -191,78 +191,78 @@ namespace CG
 	 */
 	enum class EPixelFormat : uint8_t
 	{
-		PF_Unknown = 0,
-		PF_A32B32G32R32F = 1,
-		PF_B8G8R8A8 = 2,
-		PF_G8 = 3,
-		PF_G16 = 4,
-		PF_DXT1 = 5,
-		PF_DXT3 = 6,
-		PF_DXT5 = 7,
-		PF_UYVY = 8,
-		PF_FloatRGB = 9,
-		PF_FloatRGBA = 10,
-		PF_DepthStencil = 11,
-		PF_ShadowDepth = 12,
-		PF_R32_FLOAT = 13,
-		PF_G16R16 = 14,
-		PF_G16R16F = 15,
-		PF_G16R16F_FILTER = 16,
-		PF_G32R32F = 17,
-		PF_A2B10G10R10 = 18,
-		PF_A16B16G16R16 = 19,
-		PF_D24 = 20,
-		PF_R16F = 21,
-		PF_R16F_FILTER = 22,
-		PF_BC5 = 23,
-		PF_V8U8 = 24,
-		PF_A1 = 25,
-		PF_FloatR11G11B10 = 26,
-		PF_A8 = 27,
-		PF_R32_UINT = 28,
-		PF_R32_SINT = 29,
-		PF_PVRTC2 = 30,
-		PF_PVRTC4 = 31,
-		PF_R16_UINT = 32,
-		PF_R16_SINT = 33,
-		PF_R16G16B16A16_UINT = 34,
-		PF_R16G16B16A16_SINT = 35,
-		PF_R5G6B5_UNORM = 36,
-		PF_R8G8B8A8 = 37,
-		PF_A8R8G8B8 = 38,
-		PF_BC4 = 39,
-		PF_R8G8 = 40,
-		PF_ATC_RGB = 41,
-		PF_ATC_RGBA_E = 42,
-		PF_ATC_RGBA_I = 43,
-		PF_X24_G8 = 44,
-		PF_ETC1 = 45,
-		PF_ETC2_RGB = 46,
-		PF_ETC2_RGBA = 47,
-		PF_R32G32B32A32_UINT = 48,
-		PF_R16G16_UINT = 49,
-		PF_ASTC_4x4 = 50,
-		PF_ASTC_6x6 = 51,
-		PF_ASTC_8x8 = 52,
-		PF_ASTC_10x10 = 53,
-		PF_ASTC_12x12 = 54,
-		PF_BC6H = 55,
-		PF_BC7 = 56,
-		PF_R8_UINT = 57,
-		PF_L8 = 58,
-		PF_XGXR8 = 59,
-		PF_R8G8B8A8_UINT = 60,
-		PF_R8G8B8A8_SNORM = 61,
+		PF_Unknown            = 0,
+		PF_A32B32G32R32F      = 1,
+		PF_B8G8R8A8           = 2,
+		PF_G8                 = 3,
+		PF_G16                = 4,
+		PF_DXT1               = 5,
+		PF_DXT3               = 6,
+		PF_DXT5               = 7,
+		PF_UYVY               = 8,
+		PF_FloatRGB           = 9,
+		PF_FloatRGBA          = 10,
+		PF_DepthStencil       = 11,
+		PF_ShadowDepth        = 12,
+		PF_R32_FLOAT          = 13,
+		PF_G16R16             = 14,
+		PF_G16R16F            = 15,
+		PF_G16R16F_FILTER     = 16,
+		PF_G32R32F            = 17,
+		PF_A2B10G10R10        = 18,
+		PF_A16B16G16R16       = 19,
+		PF_D24                = 20,
+		PF_R16F               = 21,
+		PF_R16F_FILTER        = 22,
+		PF_BC5                = 23,
+		PF_V8U8               = 24,
+		PF_A1                 = 25,
+		PF_FloatR11G11B10     = 26,
+		PF_A8                 = 27,
+		PF_R32_UINT           = 28,
+		PF_R32_SINT           = 29,
+		PF_PVRTC2             = 30,
+		PF_PVRTC4             = 31,
+		PF_R16_UINT           = 32,
+		PF_R16_SINT           = 33,
+		PF_R16G16B16A16_UINT  = 34,
+		PF_R16G16B16A16_SINT  = 35,
+		PF_R5G6B5_UNORM       = 36,
+		PF_R8G8B8A8           = 37,
+		PF_A8R8G8B8           = 38,
+		PF_BC4                = 39,
+		PF_R8G8               = 40,
+		PF_ATC_RGB            = 41,
+		PF_ATC_RGBA_E         = 42,
+		PF_ATC_RGBA_I         = 43,
+		PF_X24_G8             = 44,
+		PF_ETC1               = 45,
+		PF_ETC2_RGB           = 46,
+		PF_ETC2_RGBA          = 47,
+		PF_R32G32B32A32_UINT  = 48,
+		PF_R16G16_UINT        = 49,
+		PF_ASTC_4x4           = 50,
+		PF_ASTC_6x6           = 51,
+		PF_ASTC_8x8           = 52,
+		PF_ASTC_10x10         = 53,
+		PF_ASTC_12x12         = 54,
+		PF_BC6H               = 55,
+		PF_BC7                = 56,
+		PF_R8_UINT            = 57,
+		PF_L8                 = 58,
+		PF_XGXR8              = 59,
+		PF_R8G8B8A8_UINT      = 60,
+		PF_R8G8B8A8_SNORM     = 61,
 		PF_R16G16B16A16_UNORM = 62,
 		PF_R16G16B16A16_SNORM = 63,
-		PF_PLATFORM_HDR = 64,
-		PF_PLATFORM_HDR01 = 65,
-		PF_PLATFORM_HDR02 = 66,
-		PF_NV12 = 67,
-		PF_R32G32_UINT = 68,
-		PF_ETC2_R11_EAC = 69,
-		PF_ETC2_RG11_EAC = 70,
-		_PF_MAX_ = 71
+		PF_PLATFORM_HDR       = 64,
+		PF_PLATFORM_HDR01     = 65,
+		PF_PLATFORM_HDR02     = 66,
+		PF_NV12               = 67,
+		PF_R32G32_UINT        = 68,
+		PF_ETC2_R11_EAC       = 69,
+		PF_ETC2_RG11_EAC      = 70,
+		_PF_MAX_              = 71
 	};
 
 	/**
@@ -271,10 +271,10 @@ namespace CG
 	enum class EAxis : uint8_t
 	{
 		None = 0,
-		X = 1,
-		Y = 2,
-		Z = 3,
-		MAX = 4
+		X    = 1,
+		Y    = 2,
+		Z    = 3,
+		MAX  = 4
 	};
 
 	/**
@@ -282,11 +282,11 @@ namespace CG
 	 */
 	enum class ELogTimes : uint8_t
 	{
-		None = 0,
-		UTC = 1,
+		None            = 0,
+		UTC             = 1,
 		SinceGStartTime = 2,
-		Local = 3,
-		MAX = 4
+		Local           = 3,
+		MAX             = 4
 	};
 
 	/**
@@ -295,8 +295,8 @@ namespace CG
 	enum class ESearchDir : uint8_t
 	{
 		FromStart = 0,
-		FromEnd = 1,
-		MAX = 2
+		FromEnd   = 1,
+		MAX       = 2
 	};
 
 	/**
@@ -305,8 +305,8 @@ namespace CG
 	enum class ESearchCase : uint8_t
 	{
 		CaseSensitive = 0,
-		IgnoreCase = 1,
-		MAX = 2
+		IgnoreCase    = 1,
+		MAX           = 2
 	};
 
 	/**
@@ -316,8 +316,8 @@ namespace CG
 	{
 		PSL_Mobile_Forward_LDR = 0,
 		PSL_Mobile_Forward_HDR = 1,
-		PSL_PC_Deferred = 2,
-		PSL_MAX = 3
+		PSL_PC_Deferred        = 2,
+		PSL_MAX                = 3
 	};
 
 	// --------------------------------------------------
@@ -346,7 +346,7 @@ namespace CG
 	struct FUniqueNetIdWrapper
 	{
 	public:
-		unsigned char                                              UnknownData_SXCD[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_VRA5[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -626,7 +626,7 @@ namespace CG
 		struct FVector                                             Min;                                                     // 0x0000(0x000C) Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             Max;                                                     // 0x000C(0x000C) Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		unsigned char                                              IsValid;                                                 // 0x0018(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_Q5UC[0x3];                                   // 0x0019(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_PC87[0x3];                                   // 0x0019(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -639,7 +639,7 @@ namespace CG
 		struct FVector2D                                           Min;                                                     // 0x0000(0x0008) Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector2D                                           Max;                                                     // 0x0008(0x0008) Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		unsigned char                                              bIsValid;                                                // 0x0010(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_IB23[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_9HFW[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -698,7 +698,7 @@ namespace CG
 		float                                                      ArriveTangent;                                           // 0x0008(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      LeaveTangent;                                            // 0x000C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		EInterpCurveMode                                           InterpMode;                                              // 0x0010(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_QM8R[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_77XC[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -710,7 +710,7 @@ namespace CG
 	public:
 		TArray<struct FInterpCurvePointFloat>                      Points;                                                  // 0x0000(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIsLooped;                                               // 0x0010(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_9CPO[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_0DCZ[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      LoopKeyOffset;                                           // 0x0014(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
@@ -726,7 +726,7 @@ namespace CG
 		struct FVector2D                                           ArriveTangent;                                           // 0x000C(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector2D                                           LeaveTangent;                                            // 0x0014(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		EInterpCurveMode                                           InterpMode;                                              // 0x001C(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1F8X[0x3];                                   // 0x001D(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_9XAK[0x3];                                   // 0x001D(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -738,7 +738,7 @@ namespace CG
 	public:
 		TArray<struct FInterpCurvePointVector2D>                   Points;                                                  // 0x0000(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIsLooped;                                               // 0x0010(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_40KR[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XSJ1[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      LoopKeyOffset;                                           // 0x0014(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
@@ -754,7 +754,7 @@ namespace CG
 		struct FVector                                             ArriveTangent;                                           // 0x0010(0x000C) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FVector                                             LeaveTangent;                                            // 0x001C(0x000C) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		EInterpCurveMode                                           InterpMode;                                              // 0x0028(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_Q73L[0x3];                                   // 0x0029(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_YZLU[0x3];                                   // 0x0029(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -766,7 +766,7 @@ namespace CG
 	public:
 		TArray<struct FInterpCurvePointVector>                     Points;                                                  // 0x0000(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIsLooped;                                               // 0x0010(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_QDXJ[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_OQ6M[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      LoopKeyOffset;                                           // 0x0014(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
@@ -778,12 +778,12 @@ namespace CG
 	{
 	public:
 		float                                                      InVal;                                                   // 0x0000(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_SNRV[0xC];                                   // 0x0004(0x000C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_MJNB[0xC];                                   // 0x0004(0x000C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FQuat                                               OutVal;                                                  // 0x0010(0x0010) Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		struct FQuat                                               ArriveTangent;                                           // 0x0020(0x0010) Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		struct FQuat                                               LeaveTangent;                                            // 0x0030(0x0010) Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		EInterpCurveMode                                           InterpMode;                                              // 0x0040(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_YF0S[0xF];                                   // 0x0041(0x000F) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_C9FU[0xF];                                   // 0x0041(0x000F) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -795,7 +795,7 @@ namespace CG
 	public:
 		TArray<struct FInterpCurvePointQuat>                       Points;                                                  // 0x0000(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIsLooped;                                               // 0x0010(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_2F38[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_MJK9[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      LoopKeyOffset;                                           // 0x0014(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
@@ -811,7 +811,7 @@ namespace CG
 		struct FTwoVectors                                         ArriveTangent;                                           // 0x001C(0x0018) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		struct FTwoVectors                                         LeaveTangent;                                            // 0x0034(0x0018) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		EInterpCurveMode                                           InterpMode;                                              // 0x004C(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_F9HU[0x3];                                   // 0x004D(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_MZXO[0x3];                                   // 0x004D(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -823,7 +823,7 @@ namespace CG
 	public:
 		TArray<struct FInterpCurvePointTwoVectors>                 Points;                                                  // 0x0000(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIsLooped;                                               // 0x0010(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_YDAT[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_V7CD[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      LoopKeyOffset;                                           // 0x0014(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
@@ -839,7 +839,7 @@ namespace CG
 		struct FLinearColor                                        ArriveTangent;                                           // 0x0014(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FLinearColor                                        LeaveTangent;                                            // 0x0024(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		EInterpCurveMode                                           InterpMode;                                              // 0x0034(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_4TSR[0x3];                                   // 0x0035(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_9DDN[0x3];                                   // 0x0035(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -851,7 +851,7 @@ namespace CG
 	public:
 		TArray<struct FInterpCurvePointLinearColor>                Points;                                                  // 0x0000(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bIsLooped;                                               // 0x0010(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_DPYD[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_417I[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      LoopKeyOffset;                                           // 0x0014(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
@@ -864,9 +864,9 @@ namespace CG
 	public:
 		struct FQuat                                               Rotation;                                                // 0x0000(0x0010) Edit, BlueprintVisible, SaveGame, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic
 		struct FVector                                             Translation;                                             // 0x0010(0x000C) Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_X9F8[0x4];                                   // 0x001C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_PU7I[0x4];                                   // 0x001C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FVector                                             Scale3D;                                                 // 0x0020(0x000C) Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_7ZH6[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_247O[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		FMatrix ToMatrixWithScale() const;
@@ -890,7 +890,7 @@ namespace CG
 	struct FDateTime
 	{
 	public:
-		unsigned char                                              UnknownData_FK3M[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_EI5Y[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -955,7 +955,7 @@ namespace CG
 		int32_t                                                    Seconds;                                                 // 0x0008(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    Frames;                                                  // 0x000C(0x0004) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bDropFrameFormat;                                        // 0x0010(0x0001) BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1QWA[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_5270[0x3];                                   // 0x0011(0x0003) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -965,7 +965,7 @@ namespace CG
 	struct FTimespan
 	{
 	public:
-		unsigned char                                              UnknownData_77YW[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_C298[0x8];                                   // 0x0000(0x0008) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -1014,7 +1014,7 @@ namespace CG
 	struct FFallbackStruct
 	{
 	public:
-		unsigned char                                              UnknownData_VXYT[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_SW4Y[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -1025,7 +1025,7 @@ namespace CG
 	{
 	public:
 		ERangeBoundTypes                                           Type;                                                    // 0x0000(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1A77[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_QT5F[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      Value;                                                   // 0x0004(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
@@ -1048,7 +1048,7 @@ namespace CG
 	{
 	public:
 		ERangeBoundTypes                                           Type;                                                    // 0x0000(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_6ZHP[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_CU8M[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    Value;                                                   // 0x0004(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
@@ -1093,14 +1093,14 @@ namespace CG
 	{
 	public:
 		ELocalizedTextSourceCategory                               Category;                                                // 0x0000(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_MK7U[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_CWAP[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              NativeCulture;                                           // 0x0008(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              Namespace;                                               // 0x0018(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              Key;                                                     // 0x0028(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              NativeString;                                            // 0x0038(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TMap<class FString, class FString>                         LocalizedStrings;                                        // 0x0048(0x0050) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		bool                                                       bIsMinimalPatch;                                         // 0x0098(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_JV98[0x7];                                   // 0x0099(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_UB1A[0x7];                                   // 0x0099(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FText                                                CachedText;                                              // 0x00A0(0x0018) Transient, NativeAccessSpecifierPublic
 	};
 
@@ -1112,7 +1112,7 @@ namespace CG
 	{
 	public:
 		EAutomationEventType                                       Type;                                                    // 0x0000(0x0001) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_AY9G[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_OSGO[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              Message;                                                 // 0x0008(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              Context;                                                 // 0x0018(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		struct FGuid                                               Artifact;                                                // 0x0028(0x0010) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
@@ -1128,12 +1128,12 @@ namespace CG
 		struct FAutomationEvent                                    Event;                                                   // 0x0000(0x0038) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              Filename;                                                // 0x0038(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    LineNumber;                                              // 0x0048(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_0D1L[0x4];                                   // 0x004C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_IVVS[0x4];                                   // 0x004C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FDateTime                                           Timestamp;                                               // 0x0050(0x0008) ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 	};
 
 }
 
 #ifdef _MSC_VER
-#pragma pack(pop)
+	#pragma pack(pop)
 #endif

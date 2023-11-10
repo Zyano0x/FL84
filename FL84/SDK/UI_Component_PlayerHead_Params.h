@@ -15,189 +15,183 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_840E607E48716F5C26BEACAC213F0AB9
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_905ECB4E400C59B2EEA511A7E631FCA0
 	 */
-	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_840E607E48716F5C26BEACAC213F0AB9_Params
+	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_905ECB4E400C59B2EEA511A7E631FCA0_Params
 	{
 	public:
 		bool                                                       bSuccess;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_8C16112C476CA60AA45A2898B33B3EC0
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_A87EF6284E3F7FD6443D238B7FB3F993
 	 */
-	struct UUI_Component_PlayerHead_C_OnClicked_8C16112C476CA60AA45A2898B33B3EC0_Params
+	struct UUI_Component_PlayerHead_C_OnClicked_A87EF6284E3F7FD6443D238B7FB3F993_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_E1347CB94C95B398B0B107B30B606A0F
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_71B0BA724457443FB3B1ECBE833CBE2E
 	 */
-	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_E1347CB94C95B398B0B107B30B606A0F_Params
+	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_71B0BA724457443FB3B1ECBE833CBE2E_Params
 	{
 	public:
 		bool                                                       bSuccess;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_7C63ED5341D48D894DC01CB1EA450F2E
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_938BE2E64523713EA004EB869FFD445B
 	 */
-	struct UUI_Component_PlayerHead_C_OnClicked_7C63ED5341D48D894DC01CB1EA450F2E_Params
+	struct UUI_Component_PlayerHead_C_OnClicked_938BE2E64523713EA004EB869FFD445B_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_B71006564FE431CA03CF138E753E96F9
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_162B4227470603B1B3B0058E2FD3DF0F
 	 */
-	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_B71006564FE431CA03CF138E753E96F9_Params
+	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_162B4227470603B1B3B0058E2FD3DF0F_Params
 	{
 	public:
 		bool                                                       bSuccess;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_D9EBE6AD4EBDA97BBC4ADEAF15BC5640
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_0D66074A4F4BE887E5D39F88977E8336
 	 */
-	struct UUI_Component_PlayerHead_C_OnClicked_D9EBE6AD4EBDA97BBC4ADEAF15BC5640_Params
+	struct UUI_Component_PlayerHead_C_OnClicked_0D66074A4F4BE887E5D39F88977E8336_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_524AEA4A40DFBF844E7AFFB9522573FA
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_529325D64E379E5A370500B750FA038D
 	 */
-	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_524AEA4A40DFBF844E7AFFB9522573FA_Params
+	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_529325D64E379E5A370500B750FA038D_Params
 	{
 	public:
 		bool                                                       bSuccess;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_C36263C54CDF829F60B63D95DA78162B
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_F352034C4F0E2CBAC4D052AC57CEB0D5
 	 */
-	struct UUI_Component_PlayerHead_C_OnClicked_C36263C54CDF829F60B63D95DA78162B_Params
+	struct UUI_Component_PlayerHead_C_OnClicked_F352034C4F0E2CBAC4D052AC57CEB0D5_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_A2128E4049A80A40562D7A9E4842D8A1
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_050FEEE3404D3957EC8C3D8AD98F3D2F
 	 */
-	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_A2128E4049A80A40562D7A9E4842D8A1_Params
+	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_050FEEE3404D3957EC8C3D8AD98F3D2F_Params
 	{
 	public:
 		bool                                                       bSuccess;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_4615C9964BD48EE3087B72B1AEE55A9B
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_C2A78B724B7B84297A965E9C3767ECEA
 	 */
-	struct UUI_Component_PlayerHead_C_OnClicked_4615C9964BD48EE3087B72B1AEE55A9B_Params
+	struct UUI_Component_PlayerHead_C_OnClicked_C2A78B724B7B84297A965E9C3767ECEA_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_83CA2BF84E5D53861742DABD488CB07A
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_8DA8FFE54CE4EE0E0646ADBC8BE91725
 	 */
-	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_83CA2BF84E5D53861742DABD488CB07A_Params
+	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_8DA8FFE54CE4EE0E0646ADBC8BE91725_Params
 	{
 	public:
 		bool                                                       bSuccess;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_AB626E5540B54DC4D82655889086BBD9
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_2E933EAD4DDEDAE1126B0887A9389F95
 	 */
-	struct UUI_Component_PlayerHead_C_OnClicked_AB626E5540B54DC4D82655889086BBD9_Params
+	struct UUI_Component_PlayerHead_C_OnClicked_2E933EAD4DDEDAE1126B0887A9389F95_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_0BD8260B4E23EC088FE2E88E54221FF4
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_F41E7E374CC42AB810B87A90B4DDFECE
 	 */
-	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_0BD8260B4E23EC088FE2E88E54221FF4_Params
+	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_F41E7E374CC42AB810B87A90B4DDFECE_Params
 	{
 	public:
 		bool                                                       bSuccess;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_5B5BCDD04D55005825D9399C46126FBF
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_31F3378342888AA10D0BE7A40FA02491
 	 */
-	struct UUI_Component_PlayerHead_C_OnClicked_5B5BCDD04D55005825D9399C46126FBF_Params
+	struct UUI_Component_PlayerHead_C_OnClicked_31F3378342888AA10D0BE7A40FA02491_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_8D45F32D4B7ABBA9213ADAAAAF0C2EDB
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_B05249104A6B7853FBC093A9B9F6711F
 	 */
-	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_8D45F32D4B7ABBA9213ADAAAAF0C2EDB_Params
+	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_B05249104A6B7853FBC093A9B9F6711F_Params
 	{
 	public:
 		bool                                                       bSuccess;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_7C58640F4601E4E49BED2493A553F5C7
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_6F1C95C84BB2D623CB81D5838AAAA14E
 	 */
-	struct UUI_Component_PlayerHead_C_OnClicked_7C58640F4601E4E49BED2493A553F5C7_Params
+	struct UUI_Component_PlayerHead_C_OnClicked_6F1C95C84BB2D623CB81D5838AAAA14E_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_0E7F8BC1452F38D3F21B9A952FC2702D
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_04E7D2F14CF4D8B3796F639BD31FD745
 	 */
-	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_0E7F8BC1452F38D3F21B9A952FC2702D_Params
+	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_04E7D2F14CF4D8B3796F639BD31FD745_Params
 	{
 	public:
 		bool                                                       bSuccess;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_43A76DC645292C1551CDE5B00357B197
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_87F7F4F748B586216477B995C62C5708
 	 */
-	struct UUI_Component_PlayerHead_C_OnClicked_43A76DC645292C1551CDE5B00357B197_Params
+	struct UUI_Component_PlayerHead_C_OnClicked_87F7F4F748B586216477B995C62C5708_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_72DC0FDB40091489E714F289DBF6AC34
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_DD59E3D043D724B27485899C78B23E5D
 	 */
-	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_72DC0FDB40091489E714F289DBF6AC34_Params
+	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_DD59E3D043D724B27485899C78B23E5D_Params
 	{
 	public:
 		bool                                                       bSuccess;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_3B89A263444AEC7A319120B0145E7D88
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_F34BB93A4C97141E2EB3D1A07393469C
 	 */
-	struct UUI_Component_PlayerHead_C_OnClicked_3B89A263444AEC7A319120B0145E7D88_Params
+	struct UUI_Component_PlayerHead_C_OnClicked_F34BB93A4C97141E2EB3D1A07393469C_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_2F4B9BFC4481959170224891D6703F39
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_5CCEF38D488E71FFC51259AFD715077E
 	 */
-	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_2F4B9BFC4481959170224891D6703F39_Params
+	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_5CCEF38D488E71FFC51259AFD715077E_Params
 	{
 	public:
 		bool                                                       bSuccess;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_455F932D4FEB483FC4E2DD8A125A5FD6
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_A17D39904796E71641B6BF8CACB969A3
 	 */
-	struct UUI_Component_PlayerHead_C_OnClicked_455F932D4FEB483FC4E2DD8A125A5FD6_Params
+	struct UUI_Component_PlayerHead_C_OnClicked_A17D39904796E71641B6BF8CACB969A3_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_D79CD6B44A6A6319E5326E94788374CD
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_F415743C4C3DEF0F2ADEF682C7873D1B
 	 */
-	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_D79CD6B44A6A6319E5326E94788374CD_Params
+	struct UUI_Component_PlayerHead_C_OnURLDownloadFinish_F415743C4C3DEF0F2ADEF682C7873D1B_Params
 	{
 	public:
 		bool                                                       bSuccess;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_339229C444121CB5EC9F19B52833E4D6
+	 * DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_51E3B3AE4DD3FC9B013D519595D07E49
 	 */
-	struct UUI_Component_PlayerHead_C_OnClicked_339229C444121CB5EC9F19B52833E4D6_Params
-	{	};
-
-	/**
-	 * Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnInitialized
-	 */
-	struct UUI_Component_PlayerHead_C_OnInitialized_Params
+	struct UUI_Component_PlayerHead_C_OnClicked_51E3B3AE4DD3FC9B013D519595D07E49_Params
 	{	};
 
 	/**
@@ -207,7 +201,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    AvatarID;                                                // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_0XEI[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_I6BT[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FString                                              AvatarUrl;                                               // 0x0008(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	};
 
@@ -218,8 +212,14 @@ namespace CG
 	{
 	public:
 		unsigned char                                              VipType;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_9UG6[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_2K5A[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
+
+	/**
+	 * Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.Destruct
+	 */
+	struct UUI_Component_PlayerHead_C_Destruct_Params
+	{	};
 
 	/**
 	 * Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnSolarUIOpened
@@ -234,24 +234,9 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.Destruct
+	 * Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnInitialized
 	 */
-	struct UUI_Component_PlayerHead_C_Destruct_Params
-	{	};
-
-	/**
-	 * Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.ForceShowFrameCopy
-	 */
-	struct UUI_Component_PlayerHead_C_ForceShowFrameCopy_Params
-	{
-	public:
-		int32_t                                                    FrameID;                                                 // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	};
-
-	/**
-	 * Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.ConstructCopy
-	 */
-	struct UUI_Component_PlayerHead_C_ConstructCopy_Params
+	struct UUI_Component_PlayerHead_C_OnInitialized_Params
 	{	};
 
 	/**
@@ -262,6 +247,21 @@ namespace CG
 	public:
 		class ASolarPlayerState*                                   ps;                                                      // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       bWithoutGender;                                          // 0x0008(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	};
+
+	/**
+	 * Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.ConstructCopy
+	 */
+	struct UUI_Component_PlayerHead_C_ConstructCopy_Params
+	{	};
+
+	/**
+	 * Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.ForceShowFrameCopy
+	 */
+	struct UUI_Component_PlayerHead_C_ForceShowFrameCopy_Params
+	{
+	public:
+		int32_t                                                    FrameID;                                                 // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
 
 	/**
@@ -308,7 +308,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    AvatarID;                                                // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_JDVM[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_FXU1[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FString                                              AvatarUrl;                                               // 0x0008(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	};
 
@@ -334,7 +334,7 @@ namespace CG
 	{
 	public:
 		unsigned char                                              VipType;                                                 // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_ZV8R[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_0OH7[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**
@@ -364,7 +364,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    InAvatarID;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_DEBV[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_7PI2[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**

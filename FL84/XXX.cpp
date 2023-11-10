@@ -128,10 +128,17 @@ void XXX::Unknown()
 					}
 					else
 					{
-						CG::FString PlayerName = Enemy->PlayerState->PlayerNamePrivate;
+						//CG::FString PlayerName = Enemy->PlayerState->PlayerNamePrivate;
+						CG::FString PlayerName = Enemy->PlayerState->GetPlayerName();
 
 						if (PlayerName.IsValid())
+						{
 							Name = Engine::WString_UTF8(PlayerName.ToStringW());
+							size_t HashSymbol = Name.find("#");
+
+							if (HashSymbol != std::wstring::npos)
+								Name.erase(HashSymbol);				
+						}
 					}
 
 					Draw::DrawString(ImGui::GetIO().FontDefault, Name, (Left + Right) / 2, Top - 17, 15.f, true, ImVec4(1.f, 1.f, 1.f, 1.f));
@@ -517,13 +524,17 @@ void XXX::Removals()
 		if (!PlayerController->Character)
 			return;
 
+		HMODULE hModule = LI_FN(GetModuleHandleW)(xorstr_(L"SolarlandClient-Win64-Shipping.exe"));
+
 		CG::ASolarPlayerWeapon* CachedCurrentWeapon = static_cast<CG::ASolarCharacter*>(PlayerController->Character)->CachedCurrentWeapon;
 		if (!CachedCurrentWeapon)
 			return;
 
 		uint64_t* VTable = *(uint64_t**)(CachedCurrentWeapon + 0x0);
 
-		printf("0x%llX\n", VTable[278]);
+		uint64_t Address = VTable[268] - (uint64_t)hModule;
+
+		printf("0x%llX\n", Address);
 	}*/
 
 	if (_profiler.gFastReload.Custom.bValue)
@@ -643,7 +654,7 @@ void XXX::Vehicle()
 			return;
 
 		if (Aimbot::TargetPosition.IsValid())
-			*(CG::FVector*)(VehicleWeapon + 0xBAC) = Aimbot::TargetPosition; // GetShotTargetLocation
+			*(CG::FVector*)(VehicleWeapon + 0xBDC) = Aimbot::TargetPosition; // GetShotTargetLocation
 	}
 
 	if (_profiler.gVehicleNoRecoil.Custom.bValue)

@@ -15,9 +15,9 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Component_Keyboard.UI_Component_Keyboard_C.Destruct
+	 * Function UI_Component_Keyboard.UI_Component_Keyboard_C.ConstructCopy
 	 */
-	struct UUI_Component_Keyboard_C_Destruct_Params
+	struct UUI_Component_Keyboard_C_ConstructCopy_Params
 	{	};
 
 	/**
@@ -27,9 +27,9 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Component_Keyboard.UI_Component_Keyboard_C.ConstructCopy
+	 * Function UI_Component_Keyboard.UI_Component_Keyboard_C.Destruct
 	 */
-	struct UUI_Component_Keyboard_C_ConstructCopy_Params
+	struct UUI_Component_Keyboard_C_Destruct_Params
 	{	};
 
 	/**

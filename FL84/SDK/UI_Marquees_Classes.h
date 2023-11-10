@@ -27,10 +27,10 @@ namespace CG
 		class USolarTextBlock*                                     Txt_Marquees;                                            // 0x0418(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnSolarUIOpened();
 		void ReceiveTick(const struct FGeometry& MyGeometry, float InDeltaTime);
 		void Construct();
 		void OnSolarUIClosed();
+		void OnSolarUIOpened();
 		class FString GetModuleName();
 		void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 		void ExecuteUbergraph_UI_Marquees(int32_t EntryPoint);

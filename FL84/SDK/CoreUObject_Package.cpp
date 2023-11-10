@@ -10,7 +10,7 @@ namespace CG
 	// --------------------------------------------------
 	// # Structs Static Fields
 	// --------------------------------------------------
-	class TUObjectArray* UObject::GObjects = nullptr;                             // 0x0000(0x0008) PREDEFINED PROPERTY
+	class TUObjectArray*                                        UObject::GObjects = nullptr;                             // 0x0000(0x0008) PREDEFINED PROPERTY
 
 	// --------------------------------------------------
 	// # Structs Functions
@@ -18,7 +18,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 */
 	FRotator::FRotator()
@@ -31,7 +31,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              pitch
@@ -48,7 +48,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -61,7 +61,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FRotator&                                    other
@@ -74,7 +74,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -87,7 +87,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FRotator&                                    other
@@ -100,7 +100,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -113,7 +113,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FRotator&                                    other
@@ -126,7 +126,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -139,7 +139,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FRotator&                                    other
@@ -152,7 +152,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FRotator&                                    other
@@ -165,7 +165,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -181,7 +181,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FRotator&                                    other
@@ -197,7 +197,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -213,7 +213,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FRotator&                                    other
@@ -229,7 +229,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FRotator&                                    other
@@ -245,7 +245,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const float                                        other
@@ -261,7 +261,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FRotator&                                    other
@@ -277,7 +277,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const float                                        other
@@ -293,7 +293,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 */
 	float FRotator::Size() const
@@ -304,7 +304,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 */
 	FRotator FRotator::Clamp() const
@@ -334,7 +334,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 */
 	FVector::FVector()
@@ -347,7 +347,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              x
@@ -364,7 +364,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -377,7 +377,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector&                                     other
@@ -390,7 +390,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -403,7 +403,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector&                                     other
@@ -416,7 +416,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -429,7 +429,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector&                                     other
@@ -442,7 +442,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -455,7 +455,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector&                                     other
@@ -468,7 +468,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector&                                     other
@@ -484,7 +484,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -500,7 +500,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector&                                     other
@@ -516,7 +516,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -532,7 +532,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector&                                     other
@@ -548,7 +548,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector&                                     other
@@ -564,7 +564,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -580,7 +580,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 */
 	bool FVector::IsValid()
@@ -591,7 +591,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		FVector&                                           angle
@@ -599,7 +599,7 @@ namespace CG
 	void FVector::Normalize360(FVector& angle)
 	{
 		const float maxX1 = 80.0f;
-
+		
 		while (angle.X > maxX1)
 			angle.X -= 180.0f;
 		while (angle.X < -maxX1)
@@ -613,7 +613,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector&                                     b
@@ -626,7 +626,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 */
 	float FVector::MagnitudeSqr() const
@@ -637,7 +637,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 */
 	float FVector::Magnitude() const
@@ -648,7 +648,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 */
 	FVector FVector::Unit() const
@@ -683,7 +683,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 */
 	FRotator FVector::ToRotator() const
@@ -696,7 +696,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector&                                     v
@@ -709,7 +709,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		FVector&                                           v
@@ -722,7 +722,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 */
 	FVector2D::FVector2D()
@@ -734,7 +734,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              x
@@ -749,7 +749,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 */
 	bool FVector2D::IsValid()
@@ -760,7 +760,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		FVector2D&                                         v
@@ -773,7 +773,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector2D&                                   other
@@ -786,7 +786,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -799,7 +799,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -812,7 +812,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector2D&                                   other
@@ -825,7 +825,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -838,7 +838,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector2D&                                   other
@@ -851,7 +851,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -864,7 +864,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector2D&                                   other
@@ -877,7 +877,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector2D&                                   other
@@ -892,7 +892,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -907,7 +907,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector2D&                                   other
@@ -922,7 +922,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -937,7 +937,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector2D&                                   other
@@ -952,7 +952,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FVector2D&                                   other
@@ -967,7 +967,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              scalar
@@ -982,7 +982,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 */
 	FLinearColor::FLinearColor()
@@ -996,7 +996,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		float                                              r
@@ -1015,7 +1015,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const FMatrix&                                     other
@@ -1023,34 +1023,34 @@ namespace CG
 	FMatrix FMatrix::operator *(const FMatrix& other) const
 	{
 		FMatrix ret;
-
+		
 		ret.XPlane.X = XPlane.X * other.XPlane.X + XPlane.Y * other.YPlane.X + XPlane.Z * other.ZPlane.X + XPlane.W * other.WPlane.X;
 		ret.XPlane.Y = XPlane.X * other.XPlane.Y + XPlane.Y * other.YPlane.Y + XPlane.Z * other.ZPlane.Y + XPlane.W * other.WPlane.Y;
 		ret.XPlane.Z = XPlane.X * other.XPlane.Z + XPlane.Y * other.YPlane.Z + XPlane.Z * other.ZPlane.Z + XPlane.W * other.WPlane.Z;
 		ret.XPlane.W = XPlane.X * other.XPlane.W + XPlane.Y * other.YPlane.W + XPlane.Z * other.ZPlane.W + XPlane.W * other.WPlane.W;
-
+		
 		ret.YPlane.X = YPlane.X * other.XPlane.X + YPlane.Y * other.YPlane.X + YPlane.Z * other.ZPlane.X + YPlane.W * other.WPlane.X;
 		ret.YPlane.Y = YPlane.X * other.XPlane.Y + YPlane.Y * other.YPlane.Y + YPlane.Z * other.ZPlane.Y + YPlane.W * other.WPlane.Y;
 		ret.YPlane.Z = YPlane.X * other.XPlane.Z + YPlane.Y * other.YPlane.Z + YPlane.Z * other.ZPlane.Z + YPlane.W * other.WPlane.Z;
 		ret.YPlane.W = YPlane.X * other.XPlane.W + YPlane.Y * other.YPlane.W + YPlane.Z * other.ZPlane.W + YPlane.W * other.WPlane.W;
-
+		
 		ret.ZPlane.X = ZPlane.X * other.XPlane.X + ZPlane.Y * other.YPlane.X + ZPlane.Z * other.ZPlane.X + ZPlane.W * other.WPlane.X;
 		ret.ZPlane.Y = ZPlane.X * other.XPlane.Y + ZPlane.Y * other.YPlane.Y + ZPlane.Z * other.ZPlane.Y + ZPlane.W * other.WPlane.Y;
 		ret.ZPlane.Z = ZPlane.X * other.XPlane.Z + ZPlane.Y * other.YPlane.Z + ZPlane.Z * other.ZPlane.Z + ZPlane.W * other.WPlane.Z;
 		ret.ZPlane.W = ZPlane.X * other.XPlane.W + ZPlane.Y * other.YPlane.W + ZPlane.Z * other.ZPlane.W + ZPlane.W * other.WPlane.W;
-
+		
 		ret.WPlane.X = WPlane.X * other.XPlane.X + WPlane.Y * other.YPlane.X + WPlane.Z * other.ZPlane.X + WPlane.W * other.WPlane.X;
 		ret.WPlane.Y = WPlane.X * other.XPlane.Y + WPlane.Y * other.YPlane.Y + WPlane.Z * other.ZPlane.Y + WPlane.W * other.WPlane.Y;
 		ret.WPlane.Z = WPlane.X * other.XPlane.Z + WPlane.Y * other.YPlane.Z + WPlane.Z * other.ZPlane.Z + WPlane.W * other.WPlane.Z;
 		ret.WPlane.W = WPlane.X * other.XPlane.W + WPlane.Y * other.YPlane.W + WPlane.Z * other.ZPlane.W + WPlane.W * other.WPlane.W;
-
+		
 		return ret;
 	}
 
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 */
 	FMatrix FTransform::ToMatrixWithScale() const
@@ -1059,57 +1059,57 @@ namespace CG
 		OutMatrix.WPlane.X = Translation.X;
 		OutMatrix.WPlane.Y = Translation.Y;
 		OutMatrix.WPlane.Z = Translation.Z;
-
+		
 		const float x2 = Rotation.X + Rotation.X;
 		const float y2 = Rotation.Y + Rotation.Y;
 		const float z2 = Rotation.Z + Rotation.Z;
-
+		
 		{
 			const float xx2 = Rotation.X * x2;
 			const float yy2 = Rotation.Y * y2;
 			const float zz2 = Rotation.Z * z2;
-
+		
 			OutMatrix.XPlane.X = (1.0f - (yy2 + zz2)) * Scale3D.X;
 			OutMatrix.YPlane.Y = (1.0f - (xx2 + zz2)) * Scale3D.Y;
 			OutMatrix.ZPlane.Z = (1.0f - (xx2 + yy2)) * Scale3D.Z;
 		}
-
+		
 		{
 			const float yz2 = Rotation.Y * z2;
 			const float wx2 = Rotation.W * x2;
-
+		
 			OutMatrix.ZPlane.Y = (yz2 - wx2) * Scale3D.Z;
 			OutMatrix.YPlane.Z = (yz2 + wx2) * Scale3D.Y;
 		}
-
+		
 		{
 			const float xy2 = Rotation.X * y2;
 			const float wz2 = Rotation.W * z2;
-
+		
 			OutMatrix.YPlane.X = (xy2 - wz2) * Scale3D.Y;
 			OutMatrix.XPlane.Y = (xy2 + wz2) * Scale3D.X;
 		}
-
+		
 		{
 			const float xz2 = Rotation.X * z2;
 			const float wy2 = Rotation.W * y2;
-
+		
 			OutMatrix.ZPlane.X = (xz2 + wy2) * Scale3D.Z;
 			OutMatrix.XPlane.Z = (xz2 - wy2) * Scale3D.X;
 		}
-
+		
 		OutMatrix.XPlane.W = 0.0f;
 		OutMatrix.YPlane.W = 0.0f;
 		OutMatrix.ZPlane.W = 0.0f;
 		OutMatrix.WPlane.W = 1.0f;
-
+		
 		return OutMatrix;
 	}
 
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 */
 	TUObjectArray& UObject::GetGlobalObjects()
@@ -1120,7 +1120,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 */
 	std::string UObject::GetName() const
@@ -1137,7 +1137,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 */
 	std::string UObject::GetFullName() const
@@ -1161,7 +1161,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		const std::string&                                 name
@@ -1174,7 +1174,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		UClass*                                            cmp
@@ -1186,13 +1186,13 @@ namespace CG
 			if (super == cmp)
 				return true;
 		}
-
+		
 		return false;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D63E80
+	 * 		RVA    -> 0x02D64A40
 	 * 		Name   -> Function CoreUObject.Object.ExecuteUbergraph
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -1203,10 +1203,10 @@ namespace CG
 		static UFunction* fn = nullptr;
 		if (!fn)
 			fn = UObject::FindObject<UFunction>(xorstr_("Function CoreUObject.Object.ExecuteUbergraph"));
-
-		UObject_ExecuteUbergraph_Params params{};
+		
+		UObject_ExecuteUbergraph_Params params {};
 		params.EntryPoint = EntryPoint;
-
+		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
@@ -1215,7 +1215,7 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 * Parameters:
 	 * 		class UFunction*                                   function
@@ -1299,12 +1299,12 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00000000
-	 * 		Name   ->
+	 * 		Name   -> 
 	 * 		Flags  -> ()
 	 */
 	UObject* UClass::CreateDefaultObject()
 	{
-		return GetVFunction<UObject * (*)(UClass*)>(this, CREATE_DEFAULT_OBJECT_INDEX)(this);
+		return GetVFunction<UObject*(*)(UClass*)>(this, CREATE_DEFAULT_OBJECT_INDEX)(this);
 	}
 
 	/**

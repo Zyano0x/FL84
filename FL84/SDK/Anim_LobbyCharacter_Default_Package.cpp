@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B5D580
+	 * 		RVA    -> 0x01B5C0A0
 	 * 		Name   -> Function Anim_LobbyCharacter_Default.Anim_LobbyCharacter_Default_C.SetCharacterCanBeLooked
 	 * 		Flags  -> (Native, Event, Public)
 	 * Parameters:
@@ -35,7 +35,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B3B060
+	 * 		RVA    -> 0x01B39B80
 	 * 		Name   -> Function Anim_LobbyCharacter_Default.Anim_LobbyCharacter_Default_C.Rand Idle Show BP
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -55,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B48910
+	 * 		RVA    -> 0x01B47430
 	 * 		Name   -> Function Anim_LobbyCharacter_Default.Anim_LobbyCharacter_Default_C.RandIdleShow
 	 * 		Flags  -> (Native, Event, Public)
 	 */
@@ -75,7 +75,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B3B020
+	 * 		RVA    -> 0x01B39B40
 	 * 		Name   -> Function Anim_LobbyCharacter_Default.Anim_LobbyCharacter_Default_C.PlayIdleShow
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -95,7 +95,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B3AED0
+	 * 		RVA    -> 0x01B399F0
 	 * 		Name   -> Function Anim_LobbyCharacter_Default.Anim_LobbyCharacter_Default_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Anim_LobbyCharacter_Default_AnimGraphNode_TwoWayBlend_1324C6B947749553DBAB488CF6FFAA1D
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -115,7 +115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B3AEF0
+	 * 		RVA    -> 0x01B39A10
 	 * 		Name   -> Function Anim_LobbyCharacter_Default.Anim_LobbyCharacter_Default_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Anim_LobbyCharacter_Default_AnimGraphNode_TransitionResult_EFF864F2415FFE7C85667C9B1A0CC213
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -135,7 +135,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B3AF50
+	 * 		RVA    -> 0x01B39A70
 	 * 		Name   -> Function Anim_LobbyCharacter_Default.Anim_LobbyCharacter_Default_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Anim_LobbyCharacter_Default_AnimGraphNode_TransitionResult_91AB0B2E43FDD2622D11D4823EEDD73C
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -155,7 +155,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B3AF30
+	 * 		RVA    -> 0x01B39A50
 	 * 		Name   -> Function Anim_LobbyCharacter_Default.Anim_LobbyCharacter_Default_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Anim_LobbyCharacter_Default_AnimGraphNode_SequencePlayer_D129D66148A76FE8404F6BB53C41B2F5
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -175,7 +175,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B3AE70
+	 * 		RVA    -> 0x01B39990
 	 * 		Name   -> Function Anim_LobbyCharacter_Default.Anim_LobbyCharacter_Default_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Anim_LobbyCharacter_Default_AnimGraphNode_SequencePlayer_9F92E37E45D0DB25B7813584454F8BDC
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -195,7 +195,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B3AE90
+	 * 		RVA    -> 0x01B399B0
 	 * 		Name   -> Function Anim_LobbyCharacter_Default.Anim_LobbyCharacter_Default_C.EvaluateGraphExposedInputs_ExecuteUbergraph_Anim_LobbyCharacter_Default_AnimGraphNode_SequencePlayer_8F8046714AA0A8276EC35FB1CD0F037A
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -215,7 +215,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B61010
+	 * 		RVA    -> 0x01B5FB30
 	 * 		Name   -> Function Anim_LobbyCharacter_Default.Anim_LobbyCharacter_Default_C.BlueprintUpdateAnimation
 	 * 		Flags  -> (Native, Event, Public)
 	 * Parameters:
@@ -238,7 +238,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B3AF10
+	 * 		RVA    -> 0x01B39A30
 	 * 		Name   -> Function Anim_LobbyCharacter_Default.Anim_LobbyCharacter_Default_C.AnimNotify_IdleShowStart
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -258,7 +258,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B48A30
+	 * 		RVA    -> 0x01B47550
 	 * 		Name   -> Function Anim_LobbyCharacter_Default.Anim_LobbyCharacter_Default_C.AnimNotify_IdleShowFinish
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -278,7 +278,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B3B000
+	 * 		RVA    -> 0x01B39B20
 	 * 		Name   -> Function Anim_LobbyCharacter_Default.Anim_LobbyCharacter_Default_C.AnimNotify_IdleAnimStart
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -298,7 +298,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B5D440
+	 * 		RVA    -> 0x01B5BF60
 	 * 		Name   -> Function Anim_LobbyCharacter_Default.Anim_LobbyCharacter_Default_C.AnimGraph
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BFFAB0
+	 * 		RVA    -> 0x00BFDF80
 	 * 		Name   -> Function RawInput.RawInputFunctionLibrary.GetRegisteredDevices
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */

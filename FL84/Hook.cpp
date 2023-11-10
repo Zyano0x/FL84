@@ -77,9 +77,20 @@ void HOOKCALL hkSetAppearance(CG::ASolarCharacter* Character, int SkinID)
 
 	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(ZXC.PlayerController->K2_GetPawn());
 
-	if (Character == LocalCharacter && LocalCharacter->AssignedCharacterID == 100013)
+	if (Character == LocalCharacter)
 	{
-		SkinID = 131303;
+		switch (LocalCharacter->AssignedCharacterID)
+		{
+		case 100013:
+			SkinID = 131303;
+			break;
+		case 100002:
+			SkinID = 130210;
+			break;
+		default:
+			break;
+		}
+		
 		SetAppearance(Character, SkinID);
 	}
 	else
@@ -145,23 +156,14 @@ void Initialize()
 
 	CG::InitSDK();
 
-	/*uint64_t hkPresent_Sig = Signature(xorstr_("48 89 6C 24 ? 48 89 74 24 ? 41 56 48 83 EC ? 41 8B E8")).Import(xorstr_("GameOverlayRenderer64.dll")).GetPointer();
-	uint64_t hkResizeBuffers_Sig = Signature(xorstr_("48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 41 56 41 57 48 83 EC ? 44 8B FA")).Import(xorstr_("GameOverlayRenderer64.dll")).GetPointer();
-	uint64_t CreateHook_Sig = Signature(xorstr_("48 89 5C 24 ? 57 48 83 EC ? 33 C0 48 89 44 24")).Import(xorstr_("GameOverlayRenderer64.dll")).GetPointer();
+	uint64_t PresentAddr = (uint64_t)(LI_FN(GetModuleHandleW)(xorstr_(L"GameOverlayRenderer64.dll"))) + 0x147640;
+	uint64_t ResizeBuffersAddr = (uint64_t)(LI_FN(GetModuleHandleW)(xorstr_(L"GameOverlayRenderer64.dll"))) + 0x147648;
 
-	__int64(HOOKCALL * CreateHook)(unsigned __int64 pFuncAddress, __int64 pDetourFuncAddress, unsigned __int64* pOriginalFuncAddressOut, int a4);
-	CreateHook = (decltype(CreateHook))CreateHook_Sig;
-	CreateHook(hkPresent_Sig, (__int64)&hkPresent, (unsigned __int64*)&oPresent, 1);
-	CreateHook(hkResizeBuffers_Sig, (__int64)&hkResizeBuffers, (unsigned __int64*)&oResizeBuffers, 1);*/
+	tPresent* _Present = (tPresent*)PresentAddr;
+	oPresent = *_Present;
 
-	uint64_t PresentAddr = (uint64_t)(LI_FN(GetModuleHandleW)(xorstr_(L"DiscordHook64.dll"))) + 0xE9090;
-	uint64_t ResizeBuffersAddr = (uint64_t)(LI_FN(GetModuleHandleW)(xorstr_(L"DiscordHook64.dll"))) + 0xE90B8;
-
-	tPresent* Discord_Present = (tPresent*)PresentAddr;
-	oPresent = *Discord_Present;
-
-	tResizeBuffers* Discord_ResizeBuffers = (tResizeBuffers*)ResizeBuffersAddr;
-	oResizeBuffers = *Discord_ResizeBuffers;
+	tResizeBuffers* _ResizeBuffers = (tResizeBuffers*)ResizeBuffersAddr;
+	oResizeBuffers = *_ResizeBuffers;
 
 	_InterlockedExchangePointer((volatile PVOID*)PresentAddr, hkPresent);
 	_InterlockedExchangePointer((volatile PVOID*)ResizeBuffersAddr, hkResizeBuffers);

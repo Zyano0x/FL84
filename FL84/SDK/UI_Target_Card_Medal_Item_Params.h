@@ -15,6 +15,17 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.BPCalLuaInitDataCopy
+	 */
+	struct UUI_Target_Card_Medal_Item_C_BPCalLuaInitDataCopy_Params
+	{
+	public:
+		int32_t                                                    ID;                                                      // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    Type;                                                    // 0x0004(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+		int32_t                                                    Level;                                                   // 0x0008(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
+	/**
 	 * Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.Destruct
 	 */
 	struct UUI_Target_Card_Medal_Item_C_Destruct_Params
@@ -25,17 +36,6 @@ namespace CG
 	 */
 	struct UUI_Target_Card_Medal_Item_C_OnInitialized_Params
 	{	};
-
-	/**
-	 * Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.BPCalLuaInitDataCopy
-	 */
-	struct UUI_Target_Card_Medal_Item_C_BPCalLuaInitDataCopy_Params
-	{
-	public:
-		int32_t                                                    ID;                                                      // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		int32_t                                                    Type;                                                    // 0x0004(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		int32_t                                                    Level;                                                   // 0x0008(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	};
 
 	/**
 	 * Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.GetModuleName

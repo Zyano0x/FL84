@@ -15,21 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnClicked_0A99827A496E213AB78AC7B4CB8CB582
+	 * DelegateFunction UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnClicked_4B5E1DF749030E299395E092AFDF017B
 	 */
-	struct UUI_Lobby_Tips_Container_C_OnClicked_0A99827A496E213AB78AC7B4CB8CB582_Params
+	struct UUI_Lobby_Tips_Container_C_OnClicked_4B5E1DF749030E299395E092AFDF017B_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnPressed_71C02F5D49CAA3C49895809FCA48BC4F
+	 * DelegateFunction UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnPressed_49D0792F4F4E4192EB9D668480DFB9F0
 	 */
-	struct UUI_Lobby_Tips_Container_C_OnPressed_71C02F5D49CAA3C49895809FCA48BC4F_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.Destruct
-	 */
-	struct UUI_Lobby_Tips_Container_C_Destruct_Params
+	struct UUI_Lobby_Tips_Container_C_OnPressed_49D0792F4F4E4192EB9D668480DFB9F0_Params
 	{	};
 
 	/**
@@ -48,6 +42,12 @@ namespace CG
 	 * Function UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.OnShow
 	 */
 	struct UUI_Lobby_Tips_Container_C_OnShow_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_Tips_Container.UI_Lobby_Tips_Container_C.Destruct
+	 */
+	struct UUI_Lobby_Tips_Container_C_Destruct_Params
 	{	};
 
 	/**

@@ -15,21 +15,21 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_RoomInvite_MIni_Popup.UI_Lobby_RoomInvite_MIni_Popup_C.OnClicked_DAD3BEBA4C54C526AF4164BF050DCABE
+	 * DelegateFunction UI_Lobby_RoomInvite_MIni_Popup.UI_Lobby_RoomInvite_MIni_Popup_C.OnClicked_B8F83EDD4AD4524B8793E4AB9AF525AE
 	 */
-	struct UUI_Lobby_RoomInvite_MIni_Popup_C_OnClicked_DAD3BEBA4C54C526AF4164BF050DCABE_Params
+	struct UUI_Lobby_RoomInvite_MIni_Popup_C_OnClicked_B8F83EDD4AD4524B8793E4AB9AF525AE_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_RoomInvite_MIni_Popup.UI_Lobby_RoomInvite_MIni_Popup_C.OnClicked_1AF477F344B2C07BD995DEB8ACBEBDCB
+	 * DelegateFunction UI_Lobby_RoomInvite_MIni_Popup.UI_Lobby_RoomInvite_MIni_Popup_C.OnClicked_F9D6D86245E381E1E5A5F3B03D8BF523
 	 */
-	struct UUI_Lobby_RoomInvite_MIni_Popup_C_OnClicked_1AF477F344B2C07BD995DEB8ACBEBDCB_Params
+	struct UUI_Lobby_RoomInvite_MIni_Popup_C_OnClicked_F9D6D86245E381E1E5A5F3B03D8BF523_Params
 	{	};
 
 	/**
-	 * Function UI_Lobby_RoomInvite_MIni_Popup.UI_Lobby_RoomInvite_MIni_Popup_C.OnClicked_DFE13D2A4FDA0A10F30B9BB742395BFF
+	 * Function UI_Lobby_RoomInvite_MIni_Popup.UI_Lobby_RoomInvite_MIni_Popup_C.OnClicked_B33CD8E3433A64C2EDD897A47C18C314
 	 */
-	struct UUI_Lobby_RoomInvite_MIni_Popup_C_OnClicked_DFE13D2A4FDA0A10F30B9BB742395BFF_Params
+	struct UUI_Lobby_RoomInvite_MIni_Popup_C_OnClicked_B33CD8E3433A64C2EDD897A47C18C314_Params
 	{	};
 
 	/**

@@ -24,15 +24,6 @@ namespace CG
 	};
 
 	/**
-	 * Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.PreConstruct
-	 */
-	struct UUI_HUD_Notice_VICTORY_C_PreConstruct_Params
-	{
-	public:
-		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	};
-
-	/**
 	 * Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.CloseSelf
 	 */
 	struct UUI_HUD_Notice_VICTORY_C_CloseSelf_Params
@@ -42,6 +33,21 @@ namespace CG
 	 * Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.OnEndAnimFinish
 	 */
 	struct UUI_HUD_Notice_VICTORY_C_OnEndAnimFinish_Params
+	{	};
+
+	/**
+	 * Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.PreConstruct
+	 */
+	struct UUI_HUD_Notice_VICTORY_C_PreConstruct_Params
+	{
+	public:
+		bool                                                       IsDesignTime;                                            // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	};
+
+	/**
+	 * Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.OnSolarUIClosed
+	 */
+	struct UUI_HUD_Notice_VICTORY_C_OnSolarUIClosed_Params
 	{	};
 
 	/**

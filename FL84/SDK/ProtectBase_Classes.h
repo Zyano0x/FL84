@@ -21,7 +21,7 @@ namespace CG
 	class UProtectBaseComponent : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_P39E[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_JJ2Y[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		class UProtectBaseComponent* STATIC_GetInstance();
@@ -45,7 +45,7 @@ namespace CG
 	class USecDSComponent : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_AXFZ[0x98];                                  // 0x0028(0x0098) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_3JOV[0x98];                                  // 0x0028(0x0098) MISSED OFFSET (PADDING)
 
 	public:
 		class USecDSComponent* STATIC_GetInstance();

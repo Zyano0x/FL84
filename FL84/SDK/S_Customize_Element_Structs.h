@@ -26,7 +26,7 @@ namespace CG
 		class UWidget*                                             DragWidget_32_625CBF2246B0278CD18809971563076C;          // 0x0018(0x0008) Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		class UWidget*                                             SelectedWidget_34_8DEE1E594AE75D45FD35AAA7EBB6FF14;      // 0x0020(0x0008) Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		int32_t                                                    NoticeId_45_FD5E6E5C45B1A0B2786E3B9107BABFFA;            // 0x0028(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_MMD5[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_TTOH[0x4];                                   // 0x002C(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UWidget*>                                     SelectedHideWidgets_40_E56A7010459F7BE4121B739202DA1058; // 0x0030(0x0010) Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash
 		TArray<class UWidget*>                                     SelectedShowWidgets_41_3DB1ACF94FF26528168047A9A05881A1; // 0x0040(0x0010) Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash
 		class UWidget*                                             PanelDisableWidget_48_9C396A2343CA316E853BC7B06F9F2901;  // 0x0050(0x0008) Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash

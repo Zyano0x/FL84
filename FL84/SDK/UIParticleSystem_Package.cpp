@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00833050
+	 * 		RVA    -> 0x008306F0
 	 * 		Name   -> Function UIParticleSystem.ParticleSystemWidget.SetReactivate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -35,7 +35,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00832F80
+	 * 		RVA    -> 0x00830620
 	 * 		Name   -> Function UIParticleSystem.ParticleSystemWidget.ActivateParticles
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:

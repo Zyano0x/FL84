@@ -32,7 +32,7 @@ namespace CG
 	class UUnLuaManager : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_MR9P[0x590];                                 // 0x0028(0x0590) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_1BGU[0x590];                                 // 0x0028(0x0590) MISSED OFFSET (PADDING)
 
 	public:
 		void TriggerAnimNotify();
@@ -53,12 +53,12 @@ namespace CG
 	class AUnLuaPerformanceTestProxy : public AActor
 	{
 	public:
-		unsigned char                                              UnknownData_GEOT[0x8];                                   // 0x0228(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_D61H[0x8];                                   // 0x0228(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    MeshID;                                                  // 0x0230(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_F93E[0x4];                                   // 0x0234(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XNYY[0x4];                                   // 0x0234(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FString                                              MeshName;                                                // 0x0238(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		struct FVector                                             COM;                                                     // 0x0248(0x000C) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_RR16[0x4];                                   // 0x0254(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_BWH2[0x4];                                   // 0x0254(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<int32_t>                                            Indices;                                                 // 0x0258(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TArray<struct FVector>                                     Positions;                                               // 0x0268(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TArray<struct FVector>                                     PredictedPositions;                                      // 0x0278(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
