@@ -30,12 +30,12 @@
 #include <d3d11.h>
 #include <iostream>
 #include <algorithm>
-#include <detours.h>
 #include <d3dx10math.h>
 #include <unordered_map>
 
-#include "Kiero/kiero.h"
-#include "Kiero/MinHook/include/MinHook.h"
+#include <detours.h>
+#include <kiero.h>
+#include <MinHook/include/MinHook.h>
 #define IMGUI_DEFINE_MATH_OPERATORS
 #include "imgui/imgui.h"
 #include "imgui/imgui_internal.h"
