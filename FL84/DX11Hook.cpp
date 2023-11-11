@@ -8,8 +8,8 @@ tSetAppearance SetAppearance;
 tProcessRemoteFunction ProcessRemoteFunction;
 tRemoveSpectatingMePlayer RemoveSpectatingMePlayer;
 
-int32_t ScreenWidth = 0;
-int32_t ScreenHeight = 0;
+int ScreenWidth = 0;
+int ScreenHeight = 0;
 
 struct FuncInfo
 {
@@ -85,6 +85,9 @@ void HOOKCALL hkSetAppearance(CG::ASolarCharacter* Character, int SkinID)
 		case 100013: // Syfer
 			SkinID = 131303;
 			break;
+		case 100003: // Ducksyde
+			SkinID = 130304;
+			break;
 		case 100002: // Momoi
 			SkinID = 130210;
 			break;
@@ -139,7 +142,7 @@ __int64 HOOKCALL hkProcessRemoteFunction(CG::UNetDriver* Driver, CG::AActor* Act
 }
 #endif
 
-void Initialize()
+void InitializeHook()
 {
 	//GWorld: 48 8B 1D ?? ?? ?? ?? 48 85 DB 74 ?? 41 B0 01
 	//GNames: 4C 8D 05 ? ? ? ? EB ? 48 8D 0D ? ? ? ? E8
@@ -160,7 +163,18 @@ void Initialize()
 
 	CG::InitSDK();
 
-	uint64_t PresentAddr = (uint64_t)(LI_FN(GetModuleHandleW)(xorstr_(L"GameOverlayRenderer64.dll"))) + 0x147640;
+	bool InitHook = false;
+	do
+	{
+		if (kiero::init(kiero::RenderType::D3D11) == kiero::Status::Success)
+		{
+			kiero::bind(8, (void**)&oPresent, hkPresent);
+			kiero::bind(13, (void**)&oResizeBuffers, hkResizeBuffers);
+			InitHook = true;
+		}
+	} while (!InitHook);
+
+	/*uint64_t PresentAddr = (uint64_t)(LI_FN(GetModuleHandleW)(xorstr_(L"GameOverlayRenderer64.dll"))) + 0x147640;
 	uint64_t ResizeBuffersAddr = (uint64_t)(LI_FN(GetModuleHandleW)(xorstr_(L"GameOverlayRenderer64.dll"))) + 0x147648;
 
 	tPresent* _Present = (tPresent*)PresentAddr;
@@ -170,38 +184,38 @@ void Initialize()
 	oResizeBuffers = *_ResizeBuffers;
 
 	_InterlockedExchangePointer((volatile PVOID*)PresentAddr, hkPresent);
-	_InterlockedExchangePointer((volatile PVOID*)ResizeBuffersAddr, hkResizeBuffers);
+	_InterlockedExchangePointer((volatile PVOID*)ResizeBuffersAddr, hkResizeBuffers);*/
 
-	GetShotDir = reinterpret_cast<tGetShotDir>(Signature(xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")).GetPointer());
-	Hook(GetShotDir, hkGetShotDir); // Silent Aim
+	uint64_t GetShotDirAddr = Signature(xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")).GetPointer();
+	if (GetShotDirAddr) MH_CreateHook(reinterpret_cast<LPVOID>(GetShotDirAddr), hkGetShotDir, reinterpret_cast<LPVOID*>(&GetShotDir));
 
-	GetBulletSocketLocation = reinterpret_cast<tGetBulletSocketLocation>(Signature(xorstr_("48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 48 8B 01 48 8B DA 48 8B F9 FF 90 ? ? ? ? 48 8B F0 48 85 C0 0F")).GetPointer());
-	Hook(GetBulletSocketLocation, hkGetBulletSocketLocation); // Silent Shotgun
+	uint64_t GetBulletSocketLocationAddr = Signature(xorstr_("48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 48 8B 01 48 8B DA 48 8B F9 FF 90 ? ? ? ? 48 8B F0 48 85 C0 0F")).GetPointer();
+	if (GetBulletSocketLocationAddr) MH_CreateHook(reinterpret_cast<LPVOID>(GetBulletSocketLocationAddr), hkGetBulletSocketLocation, reinterpret_cast<LPVOID*>(&GetBulletSocketLocation));
 
-	SetAppearance = reinterpret_cast<tSetAppearance>(Signature(xorstr_("40 55 53 57 48 8D 6C 24 F0 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 E0")).GetPointer());
-	Hook(SetAppearance, hkSetAppearance); // Skin
+	uint64_t SetAppearanceAddr = Signature(xorstr_("40 55 53 57 48 8D 6C 24 F0 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 E0")).GetPointer();
+	if (SetAppearanceAddr) MH_CreateHook(reinterpret_cast<LPVOID>(SetAppearanceAddr), hkSetAppearance, reinterpret_cast<LPVOID*>(&SetAppearance));
+
+#ifdef _DEBUG
+	uint64_t ProcessRemoteFunctionAddr = Signature(xorstr_("4C 89 4C 24 ? 55 53 56 57 41 55 41 57")).GetPointer();
+	if (ProcessRemoteFunctionAddr) MH_CreateHook(reinterpret_cast<LPVOID>(hkProcessRemoteFunction), hkSetAppearance, reinterpret_cast<LPVOID*>(&ProcessRemoteFunction));
+#endif
+
+	MH_EnableHook(MH_ALL_HOOKS);
 
 	RemoveSpectatingMePlayer = reinterpret_cast<tRemoveSpectatingMePlayer>(Signature(xorstr_("48 85 D2 0F 84 ? ? ? ? 41 56 41 57 48 83 EC ? 4C 8B 81")).GetPointer());
 
-#ifdef _DEBUG
-	ProcessRemoteFunction = reinterpret_cast<tProcessRemoteFunction>(Signature(xorstr_("4C 89 4C 24 ? 55 53 56 57 41 55 41 57")).GetPointer());
-	Hook(ProcessRemoteFunction, hkProcessRemoteFunction);
-#endif
 	printf(xorstr_("Cheat Loaded!\n"));
+
 #ifndef _DEBUG
 	LI_FN(Sleep)(2000);
 	::ShowWindow(::GetConsoleWindow(), SW_HIDE);
 #endif
 }
 
-void Deallocate()
+void DeallocateHook()
 {
-	UnHook(GetShotDir, hkGetShotDir);
-	UnHook(GetBulletSocketLocation, hkGetBulletSocketLocation);
-	UnHook(SetAppearance, hkSetAppearance);
-#ifdef _DEBUG
-	UnHook(ProcessRemoteFunction, hkProcessRemoteFunction);
-#endif
+	MH_DisableHook(MH_ALL_HOOKS);
+
 	_mainGUI.pDevice->Release();
 	_mainGUI.pDeviceContext->Release();
 

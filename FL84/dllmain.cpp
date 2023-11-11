@@ -20,11 +20,11 @@ BOOL APIENTRY DllMain(_In_ HINSTANCE hInstance,
 	switch (ul_reason_for_call)
 	{
 	case DLL_PROCESS_ATTACH:
-		I_beginthreadex(0, 0, (_beginthreadex_proc_type)Initialize, 0, 0, 0);
+		I_beginthreadex(0, 0, (_beginthreadex_proc_type)InitializeHook, 0, 0, 0);
 		return TRUE;
 
 	case DLL_PROCESS_DETACH:
-		I_beginthreadex(0, 0, (_beginthreadex_proc_type)Deallocate, 0, 0, 0);
+		I_beginthreadex(0, 0, (_beginthreadex_proc_type)DeallocateHook, 0, 0, 0);
 		return TRUE;
 	}
 	return FALSE;

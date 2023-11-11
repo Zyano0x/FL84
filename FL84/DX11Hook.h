@@ -5,8 +5,8 @@
 
 #define HOOKCALL __fastcall
 
-extern int32_t ScreenWidth;
-extern int32_t ScreenHeight;
+extern int ScreenWidth;
+extern int ScreenHeight;
 
 typedef HRESULT(WINAPI* tPresent)(_In_ IDXGISwapChain* SwapChain, _In_ UINT SyncInterval, _In_ UINT Flags);
 extern tPresent oPresent;
@@ -29,5 +29,5 @@ extern tSetAppearance SetAppearance;
 typedef void(HOOKCALL* tRemoveSpectatingMePlayer)(CG::ASolarSpectateInfo* SpectateInfo, CG::AActor* Owner);
 extern tRemoveSpectatingMePlayer RemoveSpectatingMePlayer;
 
-void Initialize();
-void Deallocate();
+void InitializeHook();
+void DeallocateHook();

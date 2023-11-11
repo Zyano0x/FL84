@@ -247,7 +247,6 @@ namespace Aimbot
 		else if (_profiler.gAimBone.Custom.iValue == cProfiler::AIMBONE_RANDOM)
 		{
 			std::vector<int> AIMBOT_Bones;
-			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("head")));
 			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("Neck_01")));
 			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("spine_03")));
 			AIMBOT_Bones.push_back(Enemy->Mesh->GetBoneIndex(CG::FName("spine_02")));
