@@ -6,6 +6,7 @@ tGetShotDir GetShotDir;
 tGetBulletSocketLocation GetBulletSocketLocation;
 tSetAppearance SetAppearance;
 tProcessRemoteFunction ProcessRemoteFunction;
+tRemoveSpectatingMePlayer RemoveSpectatingMePlayer;
 
 int32_t ScreenWidth = 0;
 int32_t ScreenHeight = 0;
@@ -81,11 +82,14 @@ void HOOKCALL hkSetAppearance(CG::ASolarCharacter* Character, int SkinID)
 	{
 		switch (LocalCharacter->AssignedCharacterID)
 		{
-		case 100013:
+		case 100013: // Syfer
 			SkinID = 131303;
 			break;
-		case 100002:
+		case 100002: // Momoi
 			SkinID = 130210;
+			break;
+		case  100015: // Phantom
+			SkinID = 131504;
 			break;
 		default:
 			break;
@@ -176,6 +180,8 @@ void Initialize()
 
 	SetAppearance = reinterpret_cast<tSetAppearance>(Signature(xorstr_("40 55 53 57 48 8D 6C 24 F0 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 E0")).GetPointer());
 	Hook(SetAppearance, hkSetAppearance); // Skin
+
+	RemoveSpectatingMePlayer = reinterpret_cast<tRemoveSpectatingMePlayer>(Signature(xorstr_("48 85 D2 0F 84 ? ? ? ? 41 56 41 57 48 83 EC ? 4C 8B 81")).GetPointer());
 
 #ifdef _DEBUG
 	ProcessRemoteFunction = reinterpret_cast<tProcessRemoteFunction>(Signature(xorstr_("4C 89 4C 24 ? 55 53 56 57 41 55 41 57")).GetPointer());

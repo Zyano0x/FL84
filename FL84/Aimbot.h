@@ -15,7 +15,7 @@ namespace Aimbot
 {
 	constexpr float InitCenterDistance = 10000.0f;
 	extern float ClosestDistance;
-	extern CG::FVector2D LockPosition;
+	extern CG::FVector LockPosition;
 	extern CG::FVector BestBone;
 	extern CG::FVector AimPosition;
 	extern CG::FVector CurrentPosition;

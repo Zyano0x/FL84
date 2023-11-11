@@ -142,7 +142,7 @@ namespace Math
 		}
 	}
 
-	bool W2S(const CG::FVector& Position, CG::FVector2D* OutPosition)
+	bool W2S(const CG::FVector& Position, CG::FVector* OutPosition)
 	{
 		CG::FRotator Rotation = ZXC.CameraManager->GetCameraRotation();
 		D3DMATRIX tempMatrix = Matrix(Rotation);
@@ -165,6 +165,7 @@ namespace Math
 
 		OutPosition->X = ScreenCenterX + vTransformed.X * (ScreenCenterX / tanf(FovAngle * (float)M_PI / 360.f)) / vTransformed.Z;
 		OutPosition->Y = ScreenCenterY - vTransformed.Y * (ScreenCenterX / tanf(FovAngle * (float)M_PI / 360.f)) / vTransformed.Z;
+		OutPosition->Z = ScreenCenterZ - vTransformed.Z * (ScreenCenterX / tanf(FovAngle * (float)M_PI / 360.f)) / vTransformed.Z;
 
 		return true;
 	}

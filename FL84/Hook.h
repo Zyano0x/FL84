@@ -26,5 +26,8 @@ extern tProcessRemoteFunction ProcessRemoteFunction;
 typedef void(HOOKCALL* tSetAppearance)(CG::ASolarCharacter* Character, int SkinID);
 extern tSetAppearance SetAppearance;
 
+typedef void(HOOKCALL* tRemoveSpectatingMePlayer)(CG::ASolarSpectateInfo* SpectateInfo, CG::AActor* Owner);
+extern tRemoveSpectatingMePlayer RemoveSpectatingMePlayer;
+
 void Initialize();
 void Deallocate();

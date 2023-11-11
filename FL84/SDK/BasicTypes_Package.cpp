@@ -131,8 +131,12 @@ namespace CG
 	 */
 	std::wstring FString::ToStringW() const
 	{
-		std::wstring str(_data);
-		return str;
+		if (IsValid())
+		{
+			return _data;
+		}
+
+		return L"?";
 	}
 
 	/**

@@ -250,7 +250,7 @@ void XXX::Unknown()
 						{"foot_l", "calf_l"},
 					};
 
-					CG::FVector2D BoneScreen, PrevBoneScreen;
+					CG::FVector BoneScreen, PrevBoneScreen;
 					for (const std::pair<const char*, const char*>& Connection : SkeletonConnections)
 					{
 						auto BONE1 = Connection.first;
@@ -274,7 +274,7 @@ void XXX::Unknown()
 					CG::FVector Start = Enemy->Mesh->GetSocketLocation(Enemy->Mesh->GetBoneName(Enemy->Mesh->GetBoneIndex(CG::FName("head"))));
 					CG::FVector Angles = MathLibrary->STATIC_Conv_RotatorToVector(Enemy->K2_GetActorRotation());
 					CG::FVector End = Angles * 250 + Start;
-					CG::FVector2D ScreenStart, ScreenEnd;
+					CG::FVector ScreenStart, ScreenEnd;
 
 					if (Math::W2S(Start, &ScreenStart)
 						&& Math::W2S(End, &ScreenEnd))
@@ -356,7 +356,7 @@ void XXX::Unknown()
 
 			CG::FVector ItemLocation = Item->K2_GetActorLocation();
 
-			Math::W2S(ItemLocation, &ItemPos);
+			GameplayStatics->STATIC_ProjectWorldToScreen(PlayerController, ItemLocation, &ItemPos, false);
 
 			int ItemDistance = LocalCharacter->GetDistanceTo(Item) / 100.f;
 
@@ -495,7 +495,7 @@ void XXX::Unknown()
 
 			CG::FVector VehicleLocation = Vehicle->K2_GetActorLocation();
 
-			Math::W2S(VehicleLocation, &VehiclePos);
+			GameplayStatics->STATIC_ProjectWorldToScreen(PlayerController, VehicleLocation, &VehiclePos, false);
 
 			int VehicleDistance = LocalCharacter->GetDistanceTo(Vehicle) / 100;
 
@@ -693,7 +693,7 @@ void XXX::Aimbot()
 		return;
 
 	bool bTargetLine = false;
-	CG::FVector2D TargetLine = CG::FVector2D();
+	CG::FVector TargetLine = CG::FVector();
 	std::vector<tTargetInfo> vTargetInfo;
 
 	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(ZXC.PlayerController->Character);
@@ -712,7 +712,7 @@ void XXX::Aimbot()
 	{
 		for (int i = 0; i < vTargetInfo.size(); i++)
 		{
-			CG::FVector2D TargetPos = CG::FVector2D();
+			CG::FVector TargetPos = CG::FVector();
 			if (!Math::W2S(vTargetInfo.front().AimPosition, &TargetPos))
 				continue;
 
@@ -749,8 +749,6 @@ void XXX::Misc()
 	if (!LocalCharacter)
 		return;
 
-	LocalCharacter->CustomTimeDilation = 2.0f;
-
 	if (_profiler.gSuicide.Custom.bValue)
 	{
 		if (_mainGUI.GetKeyPress(VK_DELETE, false))
@@ -769,21 +767,20 @@ void XXX::Misc()
 		LocalCharacter->ServerInitSheildComp(1010616);
 	}
 
-	CG::ASolarSpectateInfo* SpectateInfo = LocalCharacter->GetSpectateInfo();
-	if (!SpectateInfo)
+	CG::ASolarSpectateInfo* LocalSpectateInfo = LocalCharacter->GetSpectateInfo();
+	if (!LocalSpectateInfo)
 		return;
 
 	if (_profiler.gSpamLike.Custom.bValue)
 	{
 		if (_mainGUI.GetKeyPress(VK_OEM_PLUS, false))
 		{
-			SpectateInfo->ServerChangeLikeValue(_profiler.gLikeValue.Custom.iValue, 2, CG::ESocialActionType::Like);
-			SpectateInfo->ServerChangeLikeValue(_profiler.gLikeValue.Custom.iValue, 2, CG::ESocialActionType::Gift);
+			LocalSpectateInfo->ServerChangeLikeValue(_profiler.gLikeValue.Custom.iValue, 2, CG::ESocialActionType::Like);
 		}
 
 		if (_mainGUI.GetKeyPress(VK_OEM_MINUS, false))
 		{
-			SpectateInfo->ServerChangeLikeValue(_profiler.gDislikeValue.Custom.iValue, -1, CG::ESocialActionType::Unlike);
+			LocalSpectateInfo->ServerChangeLikeValue(_profiler.gDislikeValue.Custom.iValue, -1, CG::ESocialActionType::Unlike);
 		}
 	}
 
@@ -791,26 +788,28 @@ void XXX::Misc()
 	{
 		if (_mainGUI.GetKeyPress(VK_LEFT, false))
 		{
-			SpectateInfo->ServerSpectatePreviousPlayer();
+			LocalSpectateInfo->ServerSpectatePreviousPlayer();
 		}
 
 		if (_mainGUI.GetKeyPress(VK_RIGHT, false))
 		{
-			SpectateInfo->ServerSpectateNextPlayer();
+			LocalSpectateInfo->ServerSpectateNextPlayer();
 		}
 	}
 
 	if (_profiler.gStopSpectator.Custom.bValue)
 	{
-		CG::TArray<CG::ASolarPlayerState*> Spectators = SpectateInfo->PlayersSpectatingMe;
+		CG::ASolarPlayerState* Owner = (CG::ASolarPlayerState*)LocalSpectateInfo->Owner;
+		if (!Owner)
+			return;
+
+		CG::TArray<CG::ASolarPlayerState*> Spectators = LocalSpectateInfo->PlayersSpectatingMe;
 		for (int i = 0; i < Spectators.Count(); i++)
 		{
-			CG::ASolarSpectateInfo* Spectator = Spectators[i]->GetSpectateInfo();
-			if (!Spectator)
+			if (!Spectators[i])
 				continue;
 
-			Spectator->ServerStopSpectateOtherPlayer();
-			Spectator->ServerStopSpectateOtherPlayer_Internal();
+			RemoveSpectatingMePlayer(LocalSpectateInfo, Spectators[i]);
 		}
 	}
 }

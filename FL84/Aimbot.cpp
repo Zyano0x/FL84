@@ -3,7 +3,7 @@
 namespace Aimbot
 {
 	float ClosestDistance = InitCenterDistance;
-	CG::FVector2D LockPosition = CG::FVector2D();
+	CG::FVector LockPosition = CG::FVector();
 	CG::FVector BestBone = CG::FVector();
 	CG::FVector AimPosition = CG::FVector();
 	CG::FVector CurrentPosition = CG::FVector();
@@ -356,8 +356,8 @@ namespace Aimbot
 		{
 			std::sort(vTargetInfo.begin(), vTargetInfo.end(), [&](const tTargetInfo& a, const tTargetInfo& b)
 				{	
-					CG::FVector2D TargetPosA;
-					CG::FVector2D TargetPosB;
+					CG::FVector TargetPosA;
+					CG::FVector TargetPosB;
 
 					// Calculate screen positions for targets 'a' and 'b'
 					if (!Math::W2S(a.AimPosition, &TargetPosA))

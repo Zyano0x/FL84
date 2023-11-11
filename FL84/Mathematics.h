@@ -15,5 +15,5 @@ namespace Math
 	CG::FVector GetBonePosition(CG::USkeletalMeshComponent* mesh, int index);
 	void VectorAnglesRadar(CG::FVector& Forward, CG::FVector& Angles);
 	void RotateTriangle(std::array<CG::FVector, 3>& Points, float Rotation);
-	bool W2S(const CG::FVector& Position, CG::FVector2D* OutPosition);
+	bool W2S(const CG::FVector& Position, CG::FVector* OutPosition);
 }
