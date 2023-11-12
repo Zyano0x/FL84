@@ -1,8 +1,5 @@
 #pragma once
 
-#define Hook(original, hook) (DetourTransactionBegin(), DetourUpdateThread(GetCurrentThread()), DetourAttach((LPVOID*)&original, (LPVOID)hook), DetourTransactionCommit())
-#define UnHook(original, hook) (DetourTransactionBegin(), DetourUpdateThread(GetCurrentThread()), DetourDetach((LPVOID*)&original, (LPVOID)hook), DetourTransactionCommit())
-
 #define HOOKCALL __fastcall
 
 extern int ScreenWidth;
@@ -29,5 +26,5 @@ extern tSetAppearance SetAppearance;
 typedef void(HOOKCALL* tRemoveSpectatingMePlayer)(CG::ASolarSpectateInfo* SpectateInfo, CG::AActor* Owner);
 extern tRemoveSpectatingMePlayer RemoveSpectatingMePlayer;
 
-void InitializeHook();
-void DeallocateHook();
+void _Initialize();
+void _Deallocate();

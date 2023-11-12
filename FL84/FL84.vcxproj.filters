@@ -25,9 +25,6 @@
     <Filter Include="Menu">
       <UniqueIdentifier>{c1a0687a-1f7c-4457-ad1b-84dee1b79b06}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Detours">
-      <UniqueIdentifier>{3ab290c3-9508-44f8-ad2e-4ad80b92b5e3}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Encryption">
       <UniqueIdentifier>{c6d44f1c-68aa-48e7-9cae-89a1a7c18dc0}</UniqueIdentifier>
     </Filter>
@@ -107,9 +104,6 @@
     </ClInclude>
     <ClInclude Include="Engine.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Detours\detours.h">
-      <Filter>Detours</Filter>
     </ClInclude>
     <ClInclude Include="Mathematics.h">
       <Filter>Header Files</Filter>
@@ -299,11 +293,6 @@
     <ClCompile Include="Kiero\kiero.cpp">
       <Filter>Kiero</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="Detours\detours.lib">
-      <Filter>Detours</Filter>
-    </Library>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Kiero\MinHook\dll_resources\MinHook.rc">

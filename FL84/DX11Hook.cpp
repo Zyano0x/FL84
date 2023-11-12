@@ -142,7 +142,7 @@ __int64 HOOKCALL hkProcessRemoteFunction(CG::UNetDriver* Driver, CG::AActor* Act
 }
 #endif
 
-void InitializeHook()
+void _Initialize()
 {
 	//GWorld: 48 8B 1D ?? ?? ?? ?? 48 85 DB 74 ?? 41 B0 01
 	//GNames: 4C 8D 05 ? ? ? ? EB ? 48 8D 0D ? ? ? ? E8
@@ -212,7 +212,7 @@ void InitializeHook()
 #endif
 }
 
-void DeallocateHook()
+void _Deallocate()
 {
 	MH_DisableHook(MH_ALL_HOOKS);
 
