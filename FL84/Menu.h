@@ -375,10 +375,16 @@ namespace ZyanoCheats
 			bool bKey, bDown, bUp;
 		} VirtualKeys[MAX_VIRTUALKEYS];
 
-		HWND hWindow;
-		ID3D11Device* pDevice;
-		ID3D11DeviceContext* pDeviceContext;
-		ID3D11RenderTargetView* pRenderTarget;
+		static HWND hWindow;
+		static IDXGISwapChain* pSwapChain;
+		static ID3D11Device* pDevice;
+		static ID3D11DeviceContext* pDeviceContext;
+		static ID3D11RenderTargetView* pRenderTarget;
+
+		typedef LRESULT(CALLBACK* tWindowProcess)(_In_ HWND hWnd, _In_ UINT uMsg, _In_ WPARAM wParam, _In_ LPARAM lParam);
+		tWindowProcess oWindowProcess;
+
+		cWin32Thunk<tWindowProcess, MainGUI> _thunkWindowProcess;
 
 		void Hotkey(int* k, const ImVec2& size_arg = ImVec2(0, 0));
 		bool GetKeyPress(int vkey, bool immediate);
@@ -387,13 +393,11 @@ namespace ZyanoCheats
 		void InitGUI();
 		void Render();
 
+		static BOOL CALLBACK EnumWindow(HWND Handle, LPARAM LP);
+		static HWND GetProcessWindow();
+		static BOOL GetD3D11SwapChain(void** pTable, size_t size);
+		LRESULT CALLBACK WindowProcess(_In_ HWND hWnd, _In_ UINT uMsg, _In_ WPARAM wParam, _In_ LPARAM lParam);
 		void WINAPI Present(_In_ IDXGISwapChain* pSwapChain, _In_ UINT SyncInterval, _In_ UINT Flags);
 		HRESULT WINAPI ResizeBuffers(_In_ IDXGISwapChain* SwapChain, _In_ UINT BufferCount, _In_ UINT Width, _In_ UINT Height, _In_ DXGI_FORMAT NewFormat, _In_ UINT SwapChainFlags);
-		LRESULT CALLBACK WindowProcess(_In_ HWND hWnd, _In_ UINT uMsg, _In_ WPARAM wParam, _In_ LPARAM lParam);
-
-		typedef LRESULT(CALLBACK* tWindowProcess)(_In_ HWND hWnd, _In_ UINT uMsg, _In_ WPARAM wParam, _In_ LPARAM lParam);
-		tWindowProcess oWindowProcess;
-
-		cWin32Thunk<tWindowProcess, MainGUI> _thunkWindowProcess;
 	} extern _mainGUI;
 }

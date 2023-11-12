@@ -156,11 +156,12 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>d3d11.lib;dxgi.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>detours.lib;d3d11.lib;dxgi.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Aimbot.h" />
+    <ClInclude Include="Detours\detours.h" />
     <ClInclude Include="Encryption\Spoofer.h" />
     <ClInclude Include="ImGUI\dirent.h" />
     <ClInclude Include="Draw.h" />
@@ -181,15 +182,6 @@
     <ClInclude Include="ImGUI\imstb_rectpack.h" />
     <ClInclude Include="ImGUI\imstb_textedit.h" />
     <ClInclude Include="ImGUI\imstb_truetype.h" />
-    <ClInclude Include="Kiero\kiero.h" />
-    <ClInclude Include="Kiero\MinHook\include\MinHook.h" />
-    <ClInclude Include="Kiero\MinHook\src\buffer.h" />
-    <ClInclude Include="Kiero\MinHook\src\hde\hde32.h" />
-    <ClInclude Include="Kiero\MinHook\src\hde\hde64.h" />
-    <ClInclude Include="Kiero\MinHook\src\hde\pstdint.h" />
-    <ClInclude Include="Kiero\MinHook\src\hde\table32.h" />
-    <ClInclude Include="Kiero\MinHook\src\hde\table64.h" />
-    <ClInclude Include="Kiero\MinHook\src\trampoline.h" />
     <ClInclude Include="Mathematics.h" />
     <ClInclude Include="Memory.h" />
     <ClInclude Include="Menu.h" />
@@ -221,12 +213,6 @@
     <ClCompile Include="ImGUI\imgui_impl_win32.cpp" />
     <ClCompile Include="ImGUI\imgui_tables.cpp" />
     <ClCompile Include="ImGUI\imgui_widgets.cpp" />
-    <ClCompile Include="Kiero\kiero.cpp" />
-    <ClCompile Include="Kiero\MinHook\src\buffer.c" />
-    <ClCompile Include="Kiero\MinHook\src\hde\hde32.c" />
-    <ClCompile Include="Kiero\MinHook\src\hde\hde64.c" />
-    <ClCompile Include="Kiero\MinHook\src\hook.c" />
-    <ClCompile Include="Kiero\MinHook\src\trampoline.c" />
     <ClCompile Include="Mathematics.cpp" />
     <ClCompile Include="Memory.cpp" />
     <ClCompile Include="Menu.cpp" />
@@ -245,10 +231,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Kiero\MinHook\dll_resources\MinHook.def" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Kiero\MinHook\dll_resources\MinHook.rc" />
+    <Library Include="Detours\detours.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

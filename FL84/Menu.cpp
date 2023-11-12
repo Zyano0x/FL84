@@ -8,6 +8,12 @@ typedef enum
 namespace ZyanoCheats
 {
 	MainGUI _mainGUI;
+	
+	HWND MainGUI::hWindow = nullptr;
+	IDXGISwapChain* MainGUI::pSwapChain = nullptr;
+	ID3D11Device* MainGUI::pDevice = nullptr;
+	ID3D11DeviceContext* MainGUI::pDeviceContext = nullptr;
+	ID3D11RenderTargetView* MainGUI::pRenderTarget = nullptr;
 
 	int MainTab = 0;
 
@@ -753,6 +759,65 @@ namespace ZyanoCheats
 			return VirtualKeys[vkey].bDown;
 		else
 			return VirtualKeys[vkey].bUp;
+	}
+
+	BOOL CALLBACK MainGUI::EnumWindow(const HWND Handle, LPARAM LP)
+	{
+		DWORD procID;
+		GetWindowThreadProcessId(Handle, &procID);
+		if (GetCurrentProcessId() != procID)
+			return TRUE;
+
+		hWindow = Handle;
+		return FALSE;
+	}
+
+	HWND MainGUI::GetProcessWindow()
+	{
+		hWindow = nullptr;
+
+		EnumWindows(EnumWindow, NULL);
+
+		if (hWindow == nullptr)
+			return nullptr;
+
+		return hWindow;
+	}
+
+	BOOL MainGUI::GetD3D11SwapChain(void** pTable, const size_t size)
+	{
+		if (!pTable)
+			return FALSE;
+
+		ID3D11Device* pd3dDevice = nullptr;
+
+		DXGI_SWAP_CHAIN_DESC sd;
+		ZeroMemory(&sd, sizeof(sd));
+		sd.BufferCount = 2;
+		sd.BufferDesc.Width = 0;
+		sd.BufferDesc.Height = 0;
+		sd.BufferDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
+		sd.BufferDesc.RefreshRate.Numerator = 60;
+		sd.BufferDesc.RefreshRate.Denominator = 1;
+		sd.Flags = DXGI_SWAP_CHAIN_FLAG_ALLOW_MODE_SWITCH;
+		sd.BufferUsage = DXGI_USAGE_RENDER_TARGET_OUTPUT;
+		sd.OutputWindow = GetProcessWindow();
+		sd.SampleDesc.Count = 1;
+		sd.SampleDesc.Quality = 0;
+		sd.Windowed = (GetWindowLongPtr(sd.OutputWindow, GWL_STYLE) & WS_POPUP) != 0 ? false : true;
+		sd.SwapEffect = DXGI_SWAP_EFFECT_DISCARD;
+
+		HRESULT res = D3D11CreateDeviceAndSwapChain(nullptr, D3D_DRIVER_TYPE_HARDWARE, nullptr, 0, nullptr, 0, D3D11_SDK_VERSION, &sd, &pSwapChain, &pd3dDevice, nullptr, nullptr);
+		if (res == DXGI_ERROR_UNSUPPORTED)
+			res = D3D11CreateDeviceAndSwapChain(nullptr, D3D_DRIVER_TYPE_WARP, nullptr, 0, nullptr, 0, D3D11_SDK_VERSION, &sd, &pSwapChain, &pd3dDevice, nullptr, nullptr);
+		if (res != S_OK)
+			return false;
+
+		memcpy(pTable, *(void***)(pSwapChain), size);
+
+		pSwapChain->Release();
+		pd3dDevice->Release();
+		return TRUE;
 	}
 
 	LRESULT CALLBACK MainGUI::WindowProcess(_In_ HWND hWnd, _In_ UINT uMsg, _In_ WPARAM wParam, _In_ LPARAM lParam)

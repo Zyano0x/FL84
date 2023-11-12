@@ -6,10 +6,10 @@ tGetShotDir GetShotDir;
 tGetBulletSocketLocation GetBulletSocketLocation;
 tSetAppearance SetAppearance;
 tProcessRemoteFunction ProcessRemoteFunction;
-tRemoveSpectatingMePlayer RemoveSpectatingMePlayer;
 
 int ScreenWidth = 0;
 int ScreenHeight = 0;
+void* DX11SwapChain[40];
 
 struct FuncInfo
 {
@@ -163,16 +163,14 @@ void _Initialize()
 
 	CG::InitSDK();
 
-	bool InitHook = false;
-	do
+	if (_mainGUI.GetD3D11SwapChain(DX11SwapChain, sizeof(DX11SwapChain)))
 	{
-		if (kiero::init(kiero::RenderType::D3D11) == kiero::Status::Success)
-		{
-			kiero::bind(8, (void**)&oPresent, hkPresent);
-			kiero::bind(13, (void**)&oResizeBuffers, hkResizeBuffers);
-			InitHook = true;
-		}
-	} while (!InitHook);
+		oPresent = (tPresent)DX11SwapChain[8];
+		oResizeBuffers = (tResizeBuffers)DX11SwapChain[13];
+
+		Hook(oPresent, hkPresent);
+		Hook(oResizeBuffers, hkResizeBuffers);
+	}
 
 	/*uint64_t PresentAddr = (uint64_t)(LI_FN(GetModuleHandleW)(xorstr_(L"GameOverlayRenderer64.dll"))) + 0x147640;
 	uint64_t ResizeBuffersAddr = (uint64_t)(LI_FN(GetModuleHandleW)(xorstr_(L"GameOverlayRenderer64.dll"))) + 0x147648;
@@ -186,26 +184,20 @@ void _Initialize()
 	_InterlockedExchangePointer((volatile PVOID*)PresentAddr, hkPresent);
 	_InterlockedExchangePointer((volatile PVOID*)ResizeBuffersAddr, hkResizeBuffers);*/
 
-	uint64_t GetShotDirAddr = Signature(xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")).GetPointer();
-	if (GetShotDirAddr) MH_CreateHook(reinterpret_cast<LPVOID>(GetShotDirAddr), hkGetShotDir, reinterpret_cast<LPVOID*>(&GetShotDir));
+	GetShotDir = reinterpret_cast<tGetShotDir>(Signature(xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")).GetPointer());
+	Hook(GetShotDir, hkGetShotDir);
 
-	uint64_t GetBulletSocketLocationAddr = Signature(xorstr_("48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 48 8B 01 48 8B DA 48 8B F9 FF 90 ? ? ? ? 48 8B F0 48 85 C0 0F")).GetPointer();
-	if (GetBulletSocketLocationAddr) MH_CreateHook(reinterpret_cast<LPVOID>(GetBulletSocketLocationAddr), hkGetBulletSocketLocation, reinterpret_cast<LPVOID*>(&GetBulletSocketLocation));
+	GetBulletSocketLocation = reinterpret_cast<tGetBulletSocketLocation>(Signature(xorstr_("48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 48 8B 01 48 8B DA 48 8B F9 FF 90 ? ? ? ? 48 8B F0 48 85 C0 0F")).GetPointer());
+	Hook(GetBulletSocketLocation, hkGetBulletSocketLocation);
 
-	uint64_t SetAppearanceAddr = Signature(xorstr_("40 55 53 57 48 8D 6C 24 F0 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 E0")).GetPointer();
-	if (SetAppearanceAddr) MH_CreateHook(reinterpret_cast<LPVOID>(SetAppearanceAddr), hkSetAppearance, reinterpret_cast<LPVOID*>(&SetAppearance));
+	SetAppearance = reinterpret_cast<tSetAppearance>(Signature(xorstr_("40 55 53 57 48 8D 6C 24 F0 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 E0")).GetPointer());
+	Hook(SetAppearance, hkSetAppearance);
 
 #ifdef _DEBUG
-	uint64_t ProcessRemoteFunctionAddr = Signature(xorstr_("4C 89 4C 24 ? 55 53 56 57 41 55 41 57")).GetPointer();
-	if (ProcessRemoteFunctionAddr) MH_CreateHook(reinterpret_cast<LPVOID>(hkProcessRemoteFunction), hkSetAppearance, reinterpret_cast<LPVOID*>(&ProcessRemoteFunction));
+	ProcessRemoteFunction = reinterpret_cast<tProcessRemoteFunction>(Signature(xorstr_("4C 89 4C 24 ? 55 53 56 57 41 55 41 57")).GetPointer());
+	Hook(ProcessRemoteFunction, hkProcessRemoteFunction);
 #endif
-
-	MH_EnableHook(MH_ALL_HOOKS);
-
-	RemoveSpectatingMePlayer = reinterpret_cast<tRemoveSpectatingMePlayer>(Signature(xorstr_("48 85 D2 0F 84 ? ? ? ? 41 56 41 57 48 83 EC ? 4C 8B 81")).GetPointer());
-
 	printf(xorstr_("Cheat Loaded!\n"));
-
 #ifndef _DEBUG
 	LI_FN(Sleep)(2000);
 	::ShowWindow(::GetConsoleWindow(), SW_HIDE);
@@ -214,8 +206,14 @@ void _Initialize()
 
 void _Deallocate()
 {
-	MH_DisableHook(MH_ALL_HOOKS);
-
+	UnHook(oPresent, hkPresent);
+	UnHook(oResizeBuffers, hkResizeBuffers);
+	UnHook(GetShotDir, hkGetShotDir);
+	UnHook(GetBulletSocketLocation, hkGetBulletSocketLocation);
+	UnHook(SetAppearance, hkSetAppearance);
+#ifdef _DEBUG
+	UnHook(ProcessRemoteFunction, hkProcessRemoteFunction);
+#endif
 	_mainGUI.pDevice->Release();
 	_mainGUI.pDeviceContext->Release();
 

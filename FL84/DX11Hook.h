@@ -1,9 +1,13 @@
 #pragma once
 
+#define Hook(original, hook) (DetourTransactionBegin(), DetourUpdateThread(GetCurrentThread()), DetourAttach((LPVOID*)&original, (LPVOID)hook), DetourTransactionCommit())
+#define UnHook(original, hook) (DetourTransactionBegin(), DetourUpdateThread(GetCurrentThread()), DetourDetach((LPVOID*)&original, (LPVOID)hook), DetourTransactionCommit())
+
 #define HOOKCALL __fastcall
 
 extern int ScreenWidth;
 extern int ScreenHeight;
+extern void* DX11SwapChain[40];
 
 typedef HRESULT(WINAPI* tPresent)(_In_ IDXGISwapChain* SwapChain, _In_ UINT SyncInterval, _In_ UINT Flags);
 extern tPresent oPresent;
@@ -22,9 +26,6 @@ extern tProcessRemoteFunction ProcessRemoteFunction;
 
 typedef void(HOOKCALL* tSetAppearance)(CG::ASolarCharacter* Character, int SkinID);
 extern tSetAppearance SetAppearance;
-
-typedef void(HOOKCALL* tRemoveSpectatingMePlayer)(CG::ASolarSpectateInfo* SpectateInfo, CG::AActor* Owner);
-extern tRemoveSpectatingMePlayer RemoveSpectatingMePlayer;
 
 void _Initialize();
 void _Deallocate();

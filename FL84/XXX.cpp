@@ -799,17 +799,15 @@ void XXX::Misc()
 
 	if (_profiler.gStopSpectator.Custom.bValue)
 	{
-		CG::ASolarPlayerState* Owner = (CG::ASolarPlayerState*)LocalSpectateInfo->Owner;
-		if (!Owner)
-			return;
-
 		CG::TArray<CG::ASolarPlayerState*> Spectators = LocalSpectateInfo->PlayersSpectatingMe;
 		for (int i = 0; i < Spectators.Count(); i++)
 		{
-			if (!Spectators[i])
+			CG::ASolarSpectateInfo* SpectateInfo = Spectators[i]->SpectateInfo;
+
+			if (!SpectateInfo)
 				continue;
 
-			RemoveSpectatingMePlayer(LocalSpectateInfo, Spectators[i]);
+			SpectateInfo->ServerStopSpectateOtherPlayer_Internal();
 		}
 	}
 }
