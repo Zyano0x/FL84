@@ -164,7 +164,7 @@
     <ClInclude Include="Detours\detours.h" />
     <ClInclude Include="Encryption\Spoofer.h" />
     <ClInclude Include="ImGUI\dirent.h" />
-    <ClInclude Include="Draw.h" />
+    <ClInclude Include="Drawing.h" />
     <ClInclude Include="Elements.h" />
     <ClInclude Include="Encryption\LazyImporter.hpp" />
     <ClInclude Include="Encryption\XOR.hpp" />
@@ -201,7 +201,7 @@
   <ItemGroup>
     <ClCompile Include="Aimbot.cpp" />
     <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="Draw.cpp" />
+    <ClCompile Include="Drawing.cpp" />
     <ClCompile Include="Elements.cpp" />
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="FileUtility\FileUtility.cpp" />

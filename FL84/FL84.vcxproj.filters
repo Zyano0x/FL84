@@ -43,9 +43,6 @@
     <Filter Include="ImGUI\Custom">
       <UniqueIdentifier>{5fd407ae-058a-4b5c-81f7-bc20c7692976}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Draw">
-      <UniqueIdentifier>{271056d8-176a-482e-b870-2c59119a3063}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Menu\Icons &amp; Fonts">
       <UniqueIdentifier>{15394754-32bf-43f7-976c-4746ef4fbfeb}</UniqueIdentifier>
     </Filter>
@@ -54,6 +51,9 @@
     </Filter>
     <Filter Include="Detours">
       <UniqueIdentifier>{d9c1dd54-39e3-4f41-b399-25a37c20380b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawing">
+      <UniqueIdentifier>{271056d8-176a-482e-b870-2c59119a3063}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -141,8 +141,8 @@
     <ClInclude Include="FileUtility\FileUtility.h">
       <Filter>Profiler\RapidXML\Utilities</Filter>
     </ClInclude>
-    <ClInclude Include="Draw.h">
-      <Filter>Draw</Filter>
+    <ClInclude Include="Drawing.h">
+      <Filter>Drawing</Filter>
     </ClInclude>
     <ClInclude Include="Fonts.h">
       <Filter>Menu\Icons &amp; Fonts</Filter>
@@ -227,8 +227,8 @@
     <ClCompile Include="Engine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Draw.cpp">
-      <Filter>Draw</Filter>
+    <ClCompile Include="Drawing.cpp">
+      <Filter>Drawing</Filter>
     </ClCompile>
     <ClCompile Include="Memory.cpp">
       <Filter>Memory</Filter>
