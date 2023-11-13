@@ -797,14 +797,21 @@ void XXX::Misc()
 		}
 	}
 
+	if (_profiler.gSpectateMode.Custom.bValue)
+	{
+		if (_mainGUI.GetKeyPress(VK_PRIOR, false)) LocalSpectateInfo->ServerBeginSpectateOtherPlayer();
+
+		if (_mainGUI.GetKeyPress(VK_NEXT, false)) LocalSpectateInfo->ServerStopSpectateOtherPlayer();
+	}
+
 	if (_profiler.gStopSpectator.Custom.bValue)
 	{
+
 		CG::TArray<CG::ASolarPlayerState*> Spectators = LocalSpectateInfo->PlayersSpectatingMe;
 		for (int i = 0; i < Spectators.Count(); i++)
 		{
 			CG::ASolarSpectateInfo* SpectateInfo = Spectators[i]->SpectateInfo;
-
-			if (!SpectateInfo)
+			if (SpectateInfo)
 				continue;
 
 			SpectateInfo->ServerStopSpectateOtherPlayer_Internal();

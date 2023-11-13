@@ -176,6 +176,7 @@ namespace ZyanoCheats
 
 		sCvar gStopSpectator = { " Stop Spectator", nullptr, false, FALSE, TRUE };
 		sCvar gFastSpectating = { " Fast Spectating", nullptr, false, FALSE, TRUE };
+		sCvar gSpectateMode = { " Spectate Mode", nullptr, false, FALSE, TRUE };
 		sCvar gSuicide = { " Suicide", nullptr, false, FALSE, TRUE };
 		sCvar gSpamLike = { " Spam Like", nullptr, false, FALSE, TRUE };
 		sCvar gLikeValue = { " Like", nullptr, 100, 1, 10000000 };

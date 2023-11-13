@@ -73,6 +73,7 @@ namespace ZyanoCheats
 
 			XML.set("ZyanoCheats.Exploits.StopSpectator", gStopSpectator.Custom.bValue);
 			XML.set("ZyanoCheats.Exploits.FastSpectating", gFastSpectating.Custom.bValue);
+			XML.set("ZyanoCheats.Exploits.SpectateMode", gSpectateMode.Custom.bValue);
 			XML.set("ZyanoCheats.Exploits.Suicide", gSuicide.Custom.bValue);
 			XML.set("ZyanoCheats.Exploits.SpamLike", gSpamLike.Custom.bValue);
 			XML.set("ZyanoCheats.Exploits.LikeValue", gLikeValue.Custom.iValue);
@@ -203,6 +204,7 @@ namespace ZyanoCheats
 
 			XML.get_if_present("ZyanoCheats.Exploits.StopSpectator", gStopSpectator.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Exploits.FastSpectating", gFastSpectating.Custom.bValue);
+			XML.get_if_present("ZyanoCheats.Exploits.SpectateMode", gSpectateMode.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Exploits.Suicide", gSuicide.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Exploits.SpamLike", gSpamLike.Custom.bValue);
 			XML.get_if_present("ZyanoCheats.Exploits.LikeValue", gLikeValue.Custom.iValue);

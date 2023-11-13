@@ -611,7 +611,7 @@ namespace ZyanoCheats
 						ImGui::SameLine();
 						HelpMarker("Max 10m Likes");
 
-						ImGui::SameLine(ImGui::GetCursorPosX() + 460.0f);
+						ImGui::SameLine(ImGui::GetCursorPosX() + 440.0f);
 
 						ImGui::PushItemWidth(130);
 						ImGui::InputInt(_profiler.gDislikeValue.szLabel, &_profiler.gDislikeValue.Custom.iValue, 1, 100, ImGuiInputTextFlags_CharsDecimal);
@@ -637,7 +637,14 @@ namespace ZyanoCheats
 						Menu.bWriteLog = true;
 					} ImGui::SameLine();
 					HelpMarker(xorstr_("Left Arrow/Right Arrow"));
-					ImGui::SameLine(ImGui::GetCursorPosX() + 460.0f);
+					ImGui::SameLine(ImGui::GetCursorPosX() + 440.0f);
+
+					if (ImGui::Checkbox(_profiler.gSpectateMode.szLabel, &_profiler.gSpectateMode.Custom.bValue))
+					{
+						Menu.bWriteLog = true;
+					} ImGui::SameLine();
+					HelpMarker(xorstr_("PGUP (Active)/PGDN (Deactive)"));
+					ImGui::SameLine(ImGui::GetCursorPosX() + 680.0f);
 
 					if (ImGui::Checkbox(_profiler.gSuicide.szLabel, &_profiler.gSuicide.Custom.bValue))
 					{
@@ -654,7 +661,7 @@ namespace ZyanoCheats
 					if (ImGui::Checkbox(_profiler.gShotgunDamage.szLabel, &_profiler.gShotgunDamage.Custom.bValue))
 					{
 						Menu.bWriteLog = true;
-					} ImGui::SameLine(ImGui::GetCursorPosX() + 460.0f);
+					} ImGui::SameLine(ImGui::GetCursorPosX() + 440.0f);
 
 					if (ImGui::Checkbox(_profiler.gTest.szLabel, &_profiler.gTest.Custom.bValue))
 					{
