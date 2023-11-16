@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function Lobby.Lobby_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function Lobby.Lobby_C.ExecuteUbergraph_Lobby
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

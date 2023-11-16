@@ -18,6 +18,9 @@ extern tResizeBuffers oResizeBuffers;
 typedef __int64(HOOKCALL* tGetShotDir)(CG::ASolarPlayerWeapon* Weapon, uint64_t Result, bool NeedSpread);
 extern tGetShotDir GetShotDir;
 
+typedef __int64(HOOKCALL* tGetShotDirVehicle)(CG::ASolarPlayerWeapon* VehicleWeapon, uint64_t Result, bool NeedSpread);
+extern tGetShotDirVehicle GetShotDirVehicle;
+
 typedef __int64(HOOKCALL* tGetBulletSocketLocation)(CG::ASolarPlayerWeapon* Weapon, uint64_t Result);
 extern tGetBulletSocketLocation GetBulletSocketLocation;
 

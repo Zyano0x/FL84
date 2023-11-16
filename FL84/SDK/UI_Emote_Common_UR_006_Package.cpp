@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Emote_Common_UR_006.UI_Emote_Common_UR_006_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Emote_Common_UR_006.UI_Emote_Common_UR_006_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -53,7 +53,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Emote_Common_UR_006.UI_Emote_Common_UR_006_C.ExecuteUbergraph_UI_Emote_Common_UR_006
 	 * 		Flags  -> (Final)
 	 * Parameters:

@@ -119,7 +119,7 @@ namespace CG
 		bool                                                       Ready;                                                   // 0x06EA(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       Disable;                                                 // 0x06EB(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		bool                                                       PC;                                                      // 0x06EC(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_HZBB[0x3];                                   // 0x06ED(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_X7T9[0x3];                                   // 0x06ED(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FLinearColor                                        StartBtnLinearColorWordSolid;                            // 0x06F0(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FLinearColor                                        StartBtnLinearColorTimeSolid;                            // 0x0700(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FLinearColor                                        StartBtnLinearColorWordGreyout;                          // 0x0710(0x0010) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
@@ -128,13 +128,13 @@ namespace CG
 		E_Type_State_Desktop                                       StateDesktopStart;                                       // 0x0725(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnClicked_A776C32643E1EF4A17FCFEB9F8B06413();
-		void OnClicked_80A7CC814C20FB086B2E0F8B75A5108B();
-		void OnClicked_D4CB9F8442E5EF2DF16E2FA9611B992A();
-		void OnClicked_0DD8D9904C37C371CC668A83299AB3B0();
-		void OnClicked_D2B132814D09E3DD533976AAA23D0D2A();
-		void OnClicked_E3B348724BFA128BE80987829971C7E3();
-		void OnClicked_B4B055DD45E3B426C3B491A9F559A6D5();
+		void OnClicked_6196CB3843FF32CCFA980487EE7DEF0C();
+		void OnClicked_2D738ACB495BB10ED035FA835E29F841();
+		void OnClicked_B67A8B9841A07DD60E7A4FAD437D111A();
+		void OnClicked_0D04B918421FB8FA6752A990C6BC532A();
+		void OnClicked_92CF1FAF43009877B2A4389F13CCB1F2();
+		void OnClicked_F14B777D42AF17BA56B9129A617F9DD9();
+		void OnClicked_D88AEC054ABDEEDA494A8B910C473261();
 		void Destruct();
 		void OnSolarUIOpened();
 		void OnSolarUIClosed();

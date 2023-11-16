@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Component_Keyboard.UI_Component_Keyboard_C.ConstructCopy
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -69,7 +69,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Component_Keyboard.UI_Component_Keyboard_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -90,7 +90,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Component_Keyboard.UI_Component_Keyboard_C.BP_RefreshKeyboardUI
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -116,7 +116,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Component_Keyboard.UI_Component_Keyboard_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -157,7 +157,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Component_Keyboard.UI_Component_Keyboard_C.ExecuteUbergraph_UI_Component_Keyboard
 	 * 		Flags  -> (Final)
 	 * Parameters:

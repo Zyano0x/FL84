@@ -15,12 +15,6 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Lobby_Banner_Slot.UI_Lobby_Banner_Slot_C.Construct
-	 */
-	struct UUI_Lobby_Banner_Slot_C_Construct_Params
-	{	};
-
-	/**
 	 * Function UI_Lobby_Banner_Slot.UI_Lobby_Banner_Slot_C.OnListItemObjectSetCopy
 	 */
 	struct UUI_Lobby_Banner_Slot_C_OnListItemObjectSetCopy_Params
@@ -28,6 +22,12 @@ namespace CG
 	public:
 		class UObject*                                             ListItemObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
+
+	/**
+	 * Function UI_Lobby_Banner_Slot.UI_Lobby_Banner_Slot_C.Construct
+	 */
+	struct UUI_Lobby_Banner_Slot_C_Construct_Params
+	{	};
 
 	/**
 	 * Function UI_Lobby_Banner_Slot.UI_Lobby_Banner_Slot_C.Destruct
@@ -84,7 +84,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_N4NJ[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_V19J[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

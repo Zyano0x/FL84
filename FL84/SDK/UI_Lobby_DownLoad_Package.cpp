@@ -13,16 +13,16 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnClicked_68C3306F4A2C879C6EBA79BEBF3159AF
+	 * 		Name   -> DelegateFunction UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnClicked_615FAB87491C9528C1EC7995C49FBC2D
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_DownLoad_C::OnClicked_68C3306F4A2C879C6EBA79BEBF3159AF()
+	void UUI_Lobby_DownLoad_C::OnClicked_615FAB87491C9528C1EC7995C49FBC2D()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnClicked_68C3306F4A2C879C6EBA79BEBF3159AF"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnClicked_615FAB87491C9528C1EC7995C49FBC2D"));
 		
-		UUI_Lobby_DownLoad_C_OnClicked_68C3306F4A2C879C6EBA79BEBF3159AF_Params params {};
+		UUI_Lobby_DownLoad_C_OnClicked_615FAB87491C9528C1EC7995C49FBC2D_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -51,6 +51,25 @@ namespace CG
 
 	/**
 	 * Function:
+	 * 		RVA    -> 0x02D656B0
+	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnInitializedCopy
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_Lobby_DownLoad_C::OnInitializedCopy()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnInitializedCopy"));
+		
+		UUI_Lobby_DownLoad_C_OnInitializedCopy_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
 	 * 		RVA    -> 0x00B6A060
 	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnSolarUIOpened
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
@@ -71,26 +90,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
-	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnInitializedCopy
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Lobby_DownLoad_C::OnInitializedCopy()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnInitializedCopy"));
-		
-		UUI_Lobby_DownLoad_C_OnInitializedCopy_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -111,7 +111,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnOpenDownloadList
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -149,7 +149,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.CustomEvent_1
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -168,7 +168,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -190,7 +190,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -209,7 +209,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.ExecuteUbergraph_UI_Lobby_DownLoad
 	 * 		Flags  -> (Final)
 	 * Parameters:

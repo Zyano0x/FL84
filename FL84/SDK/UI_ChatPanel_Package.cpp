@@ -13,55 +13,16 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_ChatPanel.UI_ChatPanel_C.OnClicked_60265F614149D44DA4521F833405EE95
+	 * 		Name   -> DelegateFunction UI_ChatPanel.UI_ChatPanel_C.OnClicked_80D225AC4B210AE73B1DA099DC1D1579
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_ChatPanel_C::OnClicked_60265F614149D44DA4521F833405EE95()
+	void UUI_ChatPanel_C::OnClicked_80D225AC4B210AE73B1DA099DC1D1579()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_ChatPanel.UI_ChatPanel_C.OnClicked_60265F614149D44DA4521F833405EE95"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_ChatPanel.UI_ChatPanel_C.OnClicked_80D225AC4B210AE73B1DA099DC1D1579"));
 		
-		UUI_ChatPanel_C_OnClicked_60265F614149D44DA4521F833405EE95_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_ChatPanel.UI_ChatPanel_C.OnSolarUIClosed
-	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
-	 */
-	void UUI_ChatPanel_C::OnSolarUIClosed()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_ChatPanel.UI_ChatPanel_C.OnSolarUIClosed"));
-		
-		UUI_ChatPanel_C_OnSolarUIClosed_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_ChatPanel.UI_ChatPanel_C.Destruct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_ChatPanel_C::Destruct()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_ChatPanel.UI_ChatPanel_C.Destruct"));
-		
-		UUI_ChatPanel_C_Destruct_Params params {};
+		UUI_ChatPanel_C_OnClicked_80D225AC4B210AE73B1DA099DC1D1579_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -110,6 +71,26 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function UI_ChatPanel.UI_ChatPanel_C.OnSolarUIClosed
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 */
+	void UUI_ChatPanel_C::OnSolarUIClosed()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_ChatPanel.UI_ChatPanel_C.OnSolarUIClosed"));
+		
+		UUI_ChatPanel_C_OnSolarUIClosed_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6A060
 	 * 		Name   -> Function UI_ChatPanel.UI_ChatPanel_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -128,7 +109,26 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function UI_ChatPanel.UI_ChatPanel_C.Destruct
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_ChatPanel_C::Destruct()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_ChatPanel.UI_ChatPanel_C.Destruct"));
+		
+		UUI_ChatPanel_C_Destruct_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_ChatPanel.UI_ChatPanel_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -149,7 +149,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_ChatPanel.UI_ChatPanel_C.SetStateDesktop
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -171,7 +171,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_ChatPanel.UI_ChatPanel_C.SetMsgText
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -201,7 +201,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_ChatPanel.UI_ChatPanel_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -223,7 +223,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_ChatPanel.UI_ChatPanel_C.ExecuteUbergraph_UI_ChatPanel
 	 * 		Flags  -> (Final)
 	 * Parameters:

@@ -47,17 +47,17 @@ namespace CG
 		bool                                                       IsHD;                                                    // 0x049F(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
-		void OnClicked_91C89FBB43B1A444D589C19C08B12B39();
-		void OnClicked_7CA735FE4E5E7980A740AD86F4A2AB04();
-		void OnClicked_ECB361C44DEEF64B0BE49DBBF912FDF1();
-		void OnClicked_D437528E4183F3C27EA70A9FFD4C16CB();
-		void OnClicked_651CFFB74F45905A25AB2F8AB82B5558();
-		void OnClicked_860A5CE54930F62AE119DF986E670B97();
-		void OnClicked_0032978A4DFB9EE2D5F1C5B9B17DBA8B();
-		void OnClicked_D2CE4CA6408754616C1F5FA56DFDD040();
-		void Destruct();
-		void OnInitialized();
+		void OnClicked_3402CC4E4E2A1E0C5B112FA657582408();
+		void OnClicked_93E510DB497BA572893C65987CFFAB54();
+		void OnClicked_38CDD83A40EEA139B67C5CA50102B6E5();
+		void OnClicked_F9B42E0647F25A1516B40B9F7856190E();
+		void OnClicked_90C68C9B47430A70702E1D9D682853FC();
+		void OnClicked_171C7D8F4BB73B07E777469C728AA4C9();
+		void OnClicked_E3638D744239EA0538FDE0911D1B1959();
+		void OnClicked_961B8BAF4830C71F12C0B7B56AAEE43D();
 		void ConstructCopy();
+		void OnInitialized();
+		void Destruct();
 		class FString GetModuleName();
 		void SetHD(bool IsHD);
 		void SetStateQuitHD(E_Type_State_Desktop StateQuitHD);

@@ -35,9 +35,9 @@ namespace CG
 
 	public:
 		void Destruct();
+		void OnSolarUIClosed();
 		void ConstructCopy();
 		void OnSolarUIOpened();
-		void OnSolarUIClosed();
 		class FString GetModuleName();
 		void BP_RefreshSanctuaryUI(bool bInLocked, bool bInMatching);
 		void PreConstruct(bool IsDesignTime);

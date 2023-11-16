@@ -13,16 +13,16 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_ED28CD6341E609C969C96486BDDAB529
+	 * 		Name   -> DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_CA18B2C94BA490ECACA6948545DDD708
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_Profession_C::OnClicked_ED28CD6341E609C969C96486BDDAB529()
+	void UUI_Lobby_Profession_C::OnClicked_CA18B2C94BA490ECACA6948545DDD708()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_ED28CD6341E609C969C96486BDDAB529"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_CA18B2C94BA490ECACA6948545DDD708"));
 		
-		UUI_Lobby_Profession_C_OnClicked_ED28CD6341E609C969C96486BDDAB529_Params params {};
+		UUI_Lobby_Profession_C_OnClicked_CA18B2C94BA490ECACA6948545DDD708_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -32,16 +32,16 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_E20B5A064C587B9BC3E1248E6DF8DC6C
+	 * 		Name   -> DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_D2AE55394524600BF115A5B88314F927
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_Profession_C::OnClicked_E20B5A064C587B9BC3E1248E6DF8DC6C()
+	void UUI_Lobby_Profession_C::OnClicked_D2AE55394524600BF115A5B88314F927()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_E20B5A064C587B9BC3E1248E6DF8DC6C"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_D2AE55394524600BF115A5B88314F927"));
 		
-		UUI_Lobby_Profession_C_OnClicked_E20B5A064C587B9BC3E1248E6DF8DC6C_Params params {};
+		UUI_Lobby_Profession_C_OnClicked_D2AE55394524600BF115A5B88314F927_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -51,16 +51,16 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_27DF7BD34529ABC4A36BA48556DD4AFB
+	 * 		Name   -> DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_22310821440A461BBF77D899BAF9D0DB
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_Profession_C::OnClicked_27DF7BD34529ABC4A36BA48556DD4AFB()
+	void UUI_Lobby_Profession_C::OnClicked_22310821440A461BBF77D899BAF9D0DB()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_27DF7BD34529ABC4A36BA48556DD4AFB"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_22310821440A461BBF77D899BAF9D0DB"));
 		
-		UUI_Lobby_Profession_C_OnClicked_27DF7BD34529ABC4A36BA48556DD4AFB_Params params {};
+		UUI_Lobby_Profession_C_OnClicked_22310821440A461BBF77D899BAF9D0DB_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -70,16 +70,35 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_1BC63871487B2566A807A08E0B7C81FC
+	 * 		Name   -> DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_18B4C68D414FE83B37CFA89DA4DE2B5E
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_Profession_C::OnClicked_1BC63871487B2566A807A08E0B7C81FC()
+	void UUI_Lobby_Profession_C::OnClicked_18B4C68D414FE83B37CFA89DA4DE2B5E()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_1BC63871487B2566A807A08E0B7C81FC"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_18B4C68D414FE83B37CFA89DA4DE2B5E"));
 		
-		UUI_Lobby_Profession_C_OnClicked_1BC63871487B2566A807A08E0B7C81FC_Params params {};
+		UUI_Lobby_Profession_C_OnClicked_18B4C68D414FE83B37CFA89DA4DE2B5E_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function UI_Lobby_Profession.UI_Lobby_Profession_C.OnInitialized
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_Lobby_Profession_C::OnInitialized()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Profession.UI_Lobby_Profession_C.OnInitialized"));
+		
+		UUI_Lobby_Profession_C_OnInitialized_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -126,26 +145,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Lobby_Profession.UI_Lobby_Profession_C.OnInitialized
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Lobby_Profession_C::OnInitialized()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Profession.UI_Lobby_Profession_C.OnInitialized"));
-		
-		UUI_Lobby_Profession_C_OnInitialized_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_Profession.UI_Lobby_Profession_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -166,7 +166,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_Profession.UI_Lobby_Profession_C.SetSelection
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -188,7 +188,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_Profession.UI_Lobby_Profession_C.UpdateState
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -207,7 +207,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_Profession.UI_Lobby_Profession_C.Render
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 */
@@ -226,7 +226,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_Profession.UI_Lobby_Profession_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -248,7 +248,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_Profession.UI_Lobby_Profession_C.ExecuteUbergraph_UI_Lobby_Profession
 	 * 		Flags  -> (Final)
 	 * Parameters:

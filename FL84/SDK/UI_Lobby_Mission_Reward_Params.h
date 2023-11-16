@@ -15,15 +15,9 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.OnClicked_7A5BA79B46825960E0D6F3B7278422B1
+	 * DelegateFunction UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.OnClicked_8D2C22794C50361C762DB78E54F5E1B8
 	 */
-	struct UUI_Lobby_Mission_Reward_C_OnClicked_7A5BA79B46825960E0D6F3B7278422B1_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.Destruct
-	 */
-	struct UUI_Lobby_Mission_Reward_C_Destruct_Params
+	struct UUI_Lobby_Mission_Reward_C_OnClicked_8D2C22794C50361C762DB78E54F5E1B8_Params
 	{	};
 
 	/**
@@ -36,6 +30,12 @@ namespace CG
 	 * Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.OnSolarUIClosed
 	 */
 	struct UUI_Lobby_Mission_Reward_C_OnSolarUIClosed_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.Destruct
+	 */
+	struct UUI_Lobby_Mission_Reward_C_Destruct_Params
 	{	};
 
 	/**

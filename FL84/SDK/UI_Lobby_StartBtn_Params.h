@@ -15,45 +15,45 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_A776C32643E1EF4A17FCFEB9F8B06413
+	 * DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_6196CB3843FF32CCFA980487EE7DEF0C
 	 */
-	struct UUI_Lobby_StartBtn_C_OnClicked_A776C32643E1EF4A17FCFEB9F8B06413_Params
+	struct UUI_Lobby_StartBtn_C_OnClicked_6196CB3843FF32CCFA980487EE7DEF0C_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_80A7CC814C20FB086B2E0F8B75A5108B
+	 * DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_2D738ACB495BB10ED035FA835E29F841
 	 */
-	struct UUI_Lobby_StartBtn_C_OnClicked_80A7CC814C20FB086B2E0F8B75A5108B_Params
+	struct UUI_Lobby_StartBtn_C_OnClicked_2D738ACB495BB10ED035FA835E29F841_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_D4CB9F8442E5EF2DF16E2FA9611B992A
+	 * DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_B67A8B9841A07DD60E7A4FAD437D111A
 	 */
-	struct UUI_Lobby_StartBtn_C_OnClicked_D4CB9F8442E5EF2DF16E2FA9611B992A_Params
+	struct UUI_Lobby_StartBtn_C_OnClicked_B67A8B9841A07DD60E7A4FAD437D111A_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_0DD8D9904C37C371CC668A83299AB3B0
+	 * DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_0D04B918421FB8FA6752A990C6BC532A
 	 */
-	struct UUI_Lobby_StartBtn_C_OnClicked_0DD8D9904C37C371CC668A83299AB3B0_Params
+	struct UUI_Lobby_StartBtn_C_OnClicked_0D04B918421FB8FA6752A990C6BC532A_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_D2B132814D09E3DD533976AAA23D0D2A
+	 * DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_92CF1FAF43009877B2A4389F13CCB1F2
 	 */
-	struct UUI_Lobby_StartBtn_C_OnClicked_D2B132814D09E3DD533976AAA23D0D2A_Params
+	struct UUI_Lobby_StartBtn_C_OnClicked_92CF1FAF43009877B2A4389F13CCB1F2_Params
 	{	};
 
 	/**
-	 * Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_E3B348724BFA128BE80987829971C7E3
+	 * Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_F14B777D42AF17BA56B9129A617F9DD9
 	 */
-	struct UUI_Lobby_StartBtn_C_OnClicked_E3B348724BFA128BE80987829971C7E3_Params
+	struct UUI_Lobby_StartBtn_C_OnClicked_F14B777D42AF17BA56B9129A617F9DD9_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_B4B055DD45E3B426C3B491A9F559A6D5
+	 * DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_D88AEC054ABDEEDA494A8B910C473261
 	 */
-	struct UUI_Lobby_StartBtn_C_OnClicked_B4B055DD45E3B426C3B491A9F559A6D5_Params
+	struct UUI_Lobby_StartBtn_C_OnClicked_D88AEC054ABDEEDA494A8B910C473261_Params
 	{	};
 
 	/**

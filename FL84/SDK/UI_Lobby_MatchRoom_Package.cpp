@@ -13,35 +13,16 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.OnClicked_E722E5044F71ED683133AF8A0D546EA0
+	 * 		Name   -> DelegateFunction UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.OnClicked_C5F82F29401519B152A0039DB506B938
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_MatchRoom_C::OnClicked_E722E5044F71ED683133AF8A0D546EA0()
+	void UUI_Lobby_MatchRoom_C::OnClicked_C5F82F29401519B152A0039DB506B938()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.OnClicked_E722E5044F71ED683133AF8A0D546EA0"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.OnClicked_C5F82F29401519B152A0039DB506B938"));
 		
-		UUI_Lobby_MatchRoom_C_OnClicked_E722E5044F71ED683133AF8A0D546EA0_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.Construct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Lobby_MatchRoom_C::Construct()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.Construct"));
-		
-		UUI_Lobby_MatchRoom_C_Construct_Params params {};
+		UUI_Lobby_MatchRoom_C_OnClicked_C5F82F29401519B152A0039DB506B938_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -70,6 +51,25 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.Construct
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_Lobby_MatchRoom_C::Construct()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.Construct"));
+		
+		UUI_Lobby_MatchRoom_C_Construct_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6A060
 	 * 		Name   -> Function UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.OnInitialized
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -88,7 +88,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -109,7 +109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -131,7 +131,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_MatchRoom.UI_Lobby_MatchRoom_C.ExecuteUbergraph_UI_Lobby_MatchRoom
 	 * 		Flags  -> (Final)
 	 * Parameters:

@@ -21,19 +21,19 @@ namespace CG
 	class UControlRig : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_B64B[0x4C];                                  // 0x0028(0x004C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_SJV5[0x4C];                                  // 0x0028(0x004C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		ERigExecutionType                                          ExecutionType;                                           // 0x0074(0x0001) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_GORP[0x3];                                   // 0x0075(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_IRE4[0x3];                                   // 0x0075(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class URigVM*                                              VM;                                                      // 0x0078(0x0008) Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		struct FRigHierarchyContainer                              Hierarchy;                                               // 0x0080(0x01B0) Edit, DisableEditOnInstance, EditConst, NativeAccessSpecifierPrivate
 		unsigned char                                              GizmoLibrary[0x28];                                      // 0x0230(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
-		unsigned char                                              UnknownData_UN3A[0x10];                                  // 0x0258(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_HXPU[0x10];                                  // 0x0258(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<class FName, struct FCachedPropertyPath>              InputProperties;                                         // 0x0268(0x0050) Deprecated, NativeAccessSpecifierPrivate
 		TMap<class FName, struct FCachedPropertyPath>              OutputProperties;                                        // 0x02B8(0x0050) Deprecated, NativeAccessSpecifierPrivate
 		struct FControlRigDrawContainer                            DrawContainer;                                           // 0x0308(0x0010) NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_WHEJ[0x8];                                   // 0x0318(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_CPK8[0x8];                                   // 0x0318(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UAnimationDataSourceRegistry*                        DataSourceRegistry;                                      // 0x0320(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_78ON[0x38];                                  // 0x0328(0x0038) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_2QXX[0x38];                                  // 0x0328(0x0038) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -46,7 +46,7 @@ namespace CG
 	class UAdditiveControlRig : public UControlRig
 	{
 	public:
-		unsigned char                                              UnknownData_KHNE[0x10];                                  // 0x0360(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_IY0P[0x10];                                  // 0x0360(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -101,12 +101,12 @@ namespace CG
 	class UControlRigGizmoLibrary : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_CQ17[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_05OZ[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FControlRigGizmoDefinition                          DefaultGizmo;                                            // 0x0030(0x0060) Edit, NativeAccessSpecifierPublic
 		unsigned char                                              DefaultMaterial[0x28];                                   // 0x0090(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		class FName                                                MaterialColorParameter;                                  // 0x00B8(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<struct FControlRigGizmoDefinition>                  Gizmos;                                                  // 0x00C0(0x0010) Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_LUD9[0x10];                                  // 0x00D0(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_42QC[0x10];                                  // 0x00D0(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -119,7 +119,7 @@ namespace CG
 	class UControlRigLayerInstance : public UAnimInstance
 	{
 	public:
-		unsigned char                                              UnknownData_715K[0x8];                                   // 0x0268(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_RR5T[0x8];                                   // 0x0268(0x0008) Fix Super Size
 
 	public:
 		static UClass* StaticClass();
@@ -148,7 +148,7 @@ namespace CG
 		unsigned char                                              LastExportedToAnimationSequence[0x28];                   // 0x0498(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		unsigned char                                              LastExportedUsingSkeletalMesh[0x28];                     // 0x04C0(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
 		float                                                      LastExportedFrameRate;                                   // 0x04E8(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_D60F[0x4];                                   // 0x04EC(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_M7ZY[0x4];                                   // 0x04EC(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -161,7 +161,7 @@ namespace CG
 	class UControlRigSequencerAnimInstance : public UAnimSequencerInstance
 	{
 	public:
-		unsigned char                                              UnknownData_BF6W[0x10];                                  // 0x0270(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_A13R[0x10];                                  // 0x0270(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -199,11 +199,11 @@ namespace CG
 		struct FMovieSceneTransformMask                            TransformMask;                                           // 0x0158(0x0004) NoDestructor, NativeAccessSpecifierPublic
 		bool                                                       bAdditive;                                               // 0x015C(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bApplyBoneFilter;                                        // 0x015D(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_5ABW[0x2];                                   // 0x015E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_1XXT[0x2];                                   // 0x015E(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FInputBlendPose                                     BoneFilter;                                              // 0x0160(0x0010) Edit, NativeAccessSpecifierPublic
 		struct FMovieSceneFloatChannel                             Weight;                                                  // 0x0170(0x00A0) NativeAccessSpecifierPublic
 		TMap<class FName, struct FChannelMapInfo>                  ControlChannelMap;                                       // 0x0210(0x0050) NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_1HWM[0x18];                                  // 0x0260(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_9KQX[0x18];                                  // 0x0260(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -234,7 +234,7 @@ namespace CG
 	public:
 		bool                                                       bAdditive;                                               // 0x0158(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bApplyBoneFilter;                                        // 0x0159(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_XLYX[0x6];                                   // 0x015A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XWGD[0x6];                                   // 0x015A(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FInputBlendPose                                     BoneFilter;                                              // 0x0160(0x0010) Edit, NativeAccessSpecifierPublic
 		struct FMovieSceneFloatChannel                             Weight;                                                  // 0x0170(0x00A0) NativeAccessSpecifierPublic
 

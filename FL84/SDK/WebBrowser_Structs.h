@@ -21,7 +21,7 @@ namespace CG
 	struct FWebJSCallbackBase
 	{
 	public:
-		unsigned char                                              UnknownData_9JA8[0x20];                                  // 0x0000(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_6VFU[0x20];                                  // 0x0000(0x0020) MISSED OFFSET (PADDING)
 	};
 
 	/**

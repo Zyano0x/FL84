@@ -21,7 +21,7 @@ namespace CG
 	class AAbility_VehicleWeapon_ShapedGun_C : public ASolarAbility
 	{
 	public:
-		unsigned char                                              UnknownData_OBLT[0x8];                                   // 0x0308(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_MFDS[0x8];                                   // 0x0308(0x0008) Fix Super Size
 
 	public:
 		static UClass* StaticClass();

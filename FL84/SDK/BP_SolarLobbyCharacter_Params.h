@@ -15,21 +15,6 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.InitCharacterByLua
-	 */
-	struct ABP_SolarLobbyCharacter_C_InitCharacterByLua_Params
-	{	};
-
-	/**
-	 * Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.IsCanOpenMirror
-	 */
-	struct ABP_SolarLobbyCharacter_C_IsCanOpenMirror_Params
-	{
-	public:
-		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	};
-
-	/**
 	 * Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.IsCanOpenChangeAnim
 	 */
 	struct ABP_SolarLobbyCharacter_C_IsCanOpenChangeAnim_Params
@@ -43,6 +28,21 @@ namespace CG
 	 */
 	struct ABP_SolarLobbyCharacter_C_ClearCharacterByLua_Params
 	{	};
+
+	/**
+	 * Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.InitCharacterByLua
+	 */
+	struct ABP_SolarLobbyCharacter_C_InitCharacterByLua_Params
+	{	};
+
+	/**
+	 * Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.IsCanOpenMirror
+	 */
+	struct ABP_SolarLobbyCharacter_C_IsCanOpenMirror_Params
+	{
+	public:
+		bool                                                       ReturnValue;                                             // 0x0000(0x0001)  (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	};
 
 	/**
 	 * Function BP_SolarLobbyCharacter.BP_SolarLobbyCharacter_C.GetModuleName

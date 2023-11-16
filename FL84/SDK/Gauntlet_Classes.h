@@ -21,7 +21,7 @@ namespace CG
 	class UGauntletTestController : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_KJNV[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_J6PD[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -44,7 +44,7 @@ namespace CG
 	class UGauntletTestControllerErrorTest : public UGauntletTestController
 	{
 	public:
-		unsigned char                                              UnknownData_QXSH[0x20];                                  // 0x0030(0x0020) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_RQI9[0x20];                                  // 0x0030(0x0020) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

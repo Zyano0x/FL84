@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function MotionWarping.AnimNotifyState_MotionWarping.OnWarpUpdate
 	 * 		Flags  -> (Event, Public, BlueprintEvent, Const)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function MotionWarping.AnimNotifyState_MotionWarping.OnWarpEnd
 	 * 		Flags  -> (Event, Public, BlueprintEvent, Const)
 	 * Parameters:
@@ -60,7 +60,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function MotionWarping.AnimNotifyState_MotionWarping.OnWarpBegin
 	 * 		Flags  -> (Event, Public, BlueprintEvent, Const)
 	 * Parameters:

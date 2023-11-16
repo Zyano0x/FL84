@@ -25,10 +25,10 @@ namespace CG
 		class UMediaSoundComponent*                                MediaSound;                                              // 0x0440(0x0008) BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void InitCharacterByLua();
-		bool IsCanOpenMirror();
 		bool IsCanOpenChangeAnim();
 		void ClearCharacterByLua();
+		void InitCharacterByLua();
+		bool IsCanOpenMirror();
 		class FString GetModuleName();
 		void ReceiveBeginPlay();
 		void ExecuteUbergraph_BP_SolarLobbyCharacter(int32_t EntryPoint);

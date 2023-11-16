@@ -13,16 +13,16 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnClicked_D344A3D340925D1D464E2E9502E8CD0E
+	 * 		Name   -> DelegateFunction UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnClicked_2006DAE943FE7D7B631687BB44F5A62D
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_PlayerInfo_C::OnClicked_D344A3D340925D1D464E2E9502E8CD0E()
+	void UUI_Lobby_PlayerInfo_C::OnClicked_2006DAE943FE7D7B631687BB44F5A62D()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnClicked_D344A3D340925D1D464E2E9502E8CD0E"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnClicked_2006DAE943FE7D7B631687BB44F5A62D"));
 		
-		UUI_Lobby_PlayerInfo_C_OnClicked_D344A3D340925D1D464E2E9502E8CD0E_Params params {};
+		UUI_Lobby_PlayerInfo_C_OnClicked_2006DAE943FE7D7B631687BB44F5A62D_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -109,7 +109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */

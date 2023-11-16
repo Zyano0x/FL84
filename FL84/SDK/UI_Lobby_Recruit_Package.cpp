@@ -13,16 +13,16 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_4FD15E0A4E6B5E0B701BE281ECC04A9F
+	 * 		Name   -> DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_D7944B3949AB285D968962BC7603406D
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_Recruit_C::OnClicked_4FD15E0A4E6B5E0B701BE281ECC04A9F()
+	void UUI_Lobby_Recruit_C::OnClicked_D7944B3949AB285D968962BC7603406D()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_4FD15E0A4E6B5E0B701BE281ECC04A9F"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_D7944B3949AB285D968962BC7603406D"));
 		
-		UUI_Lobby_Recruit_C_OnClicked_4FD15E0A4E6B5E0B701BE281ECC04A9F_Params params {};
+		UUI_Lobby_Recruit_C_OnClicked_D7944B3949AB285D968962BC7603406D_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -32,16 +32,16 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_885E034E410E2D60DD211CAE65383447
+	 * 		Name   -> DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_E2DFC7754A51D967EA683A9437B3022F
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_Recruit_C::OnClicked_885E034E410E2D60DD211CAE65383447()
+	void UUI_Lobby_Recruit_C::OnClicked_E2DFC7754A51D967EA683A9437B3022F()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_885E034E410E2D60DD211CAE65383447"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_E2DFC7754A51D967EA683A9437B3022F"));
 		
-		UUI_Lobby_Recruit_C_OnClicked_885E034E410E2D60DD211CAE65383447_Params params {};
+		UUI_Lobby_Recruit_C_OnClicked_E2DFC7754A51D967EA683A9437B3022F_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -69,7 +69,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_Recruit.UI_Lobby_Recruit_C.ConstructCopy
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -128,7 +128,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_Recruit.UI_Lobby_Recruit_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -149,7 +149,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_Recruit.UI_Lobby_Recruit_C.SetSize
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -173,7 +173,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_Recruit.UI_Lobby_Recruit_C.SetStateDesktop
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -197,7 +197,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_Recruit.UI_Lobby_Recruit_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -238,7 +238,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_Recruit.UI_Lobby_Recruit_C.ExecuteUbergraph_UI_Lobby_Recruit
 	 * 		Flags  -> (Final)
 	 * Parameters:

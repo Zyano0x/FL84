@@ -30,17 +30,17 @@ namespace CG
 		class UOverlay*                                            Overlay_2;                                               // 0x0430(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		bool                                                       Myself;                                                  // 0x0438(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn
 		E_ProfessionType                                           ProfessionType;                                          // 0x0439(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
-		unsigned char                                              UnknownData_JJ43[0x2];                                   // 0x043A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_U9XW[0x2];                                   // 0x043A(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    Index;                                                   // 0x043C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash
 
 	public:
-		void OnClicked_ED28CD6341E609C969C96486BDDAB529();
-		void OnClicked_E20B5A064C587B9BC3E1248E6DF8DC6C();
-		void OnClicked_27DF7BD34529ABC4A36BA48556DD4AFB();
-		void OnClicked_1BC63871487B2566A807A08E0B7C81FC();
+		void OnClicked_CA18B2C94BA490ECACA6948545DDD708();
+		void OnClicked_D2AE55394524600BF115A5B88314F927();
+		void OnClicked_22310821440A461BBF77D899BAF9D0DB();
+		void OnClicked_18B4C68D414FE83B37CFA89DA4DE2B5E();
+		void OnInitialized();
 		void Construct();
 		void Destruct();
-		void OnInitialized();
 		class FString GetModuleName();
 		void SetSelection(unsigned char Index);
 		void UpdateState();

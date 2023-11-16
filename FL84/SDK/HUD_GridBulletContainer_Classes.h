@@ -30,7 +30,7 @@ namespace CG
 		int32_t                                                    MaxBulletForDebug;                                       // 0x051C(0x0004) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		struct FProgressBarStyle                                   NewVar_1;                                                // 0x0520(0x02B0) Edit, BlueprintVisible, DisableEditOnInstance
 		bool                                                       IsMaxAmmoChanged;                                        // 0x07D0(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_IPVS[0x7];                                   // 0x07D1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_NOKQ[0x7];                                   // 0x07D1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UWidget*>                                     DivisorWidgetArray;                                      // 0x07D8(0x0010) Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash
 
 	public:

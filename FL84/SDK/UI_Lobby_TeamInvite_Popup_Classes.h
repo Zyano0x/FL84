@@ -65,8 +65,8 @@ namespace CG
 		ET_Type_Invitation                                         Pop_Type;                                                // 0x0548(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnClicked_D57F39144AAA4E1704B809A3EB91C266();
-		void OnClicked_42ED2B6A446312FF451BA4905C19ACEE();
+		void OnClicked_185AE9CF4D6A40094E16A0B6EBC43309();
+		void OnClicked_6A92DB58416019DB46F6DA9F60F7DE88();
 		void Destruct();
 		void Construct();
 		class FString GetModuleName();

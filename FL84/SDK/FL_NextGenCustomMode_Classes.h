@@ -6,7 +6,7 @@
  */
 
 #ifdef _MSC_VER
-#pragma pack(push, 0x01)
+	#pragma pack(push, 0x01)
 #endif
 
 namespace CG
@@ -61,11 +61,11 @@ namespace CG
 		void STATIC_VectorArray2String(TArray<struct FVector>* Vector, class UObject* __WorldContext, class FString* str);
 		void STATIC_Vector2D2String(const struct FVector2D& Vector, class UObject* __WorldContext, class FString* str);
 		void STATIC_(int32_t _, int32_t __, TArray<int32_t>* ___, class UObject* __WorldContext, int32_t* Result);
-		void STATIC_SGetBuildPackageType(class UObject* __WorldContext, ESolarBuildConfiguration*);
+		void STATIC_SGetBuildPackageType(class UObject* __WorldContext, ESolarBuildConfiguration* );
 		void STATIC_SNumber2Letter(int32_t Number, class UObject* __WorldContext, class FString* Letter, bool* Valid);
 		void STATIC_Vector2String(const struct FVector& Vector, class UObject* __WorldContext, class FString* str);
 		void STATIC_Bool2String(bool _bool_, class UObject* __WorldContext, class FString* String);
-		void STATIC_(const struct FVector& _, bool __, class UObject* __WorldContext, struct FVector* ___, float* Z, bool* ____);
+		void STATIC_(const struct FVector& , bool _, class UObject* __WorldContext, struct FVector* __, float* Z, bool* ___);
 		void STATIC_ToIntStringArray(TArray<class FString>* str, class UObject* __WorldContext, TArray<int32_t>* Int);
 		void STATIC_AGetMiniMapSize(int32_t MapId, class UObject* __WorldContext, struct FVector2D* Size);
 		void STATIC_SGetMapIDByName(const class FString& LevelName, class UObject* __WorldContext, int32_t* MapId);
@@ -90,5 +90,5 @@ namespace CG
 }
 
 #ifdef _MSC_VER
-#pragma pack(pop)
+	#pragma pack(pop)
 #endif

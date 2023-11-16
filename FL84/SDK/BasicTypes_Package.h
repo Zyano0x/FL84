@@ -10,7 +10,7 @@
 #define GOBJECTS_CHUNKS
 
 #ifdef _MSC_VER
-#pragma pack(push, 0x01)
+	#pragma pack(push, 0x01)
 #endif
 
 namespace CG
@@ -29,13 +29,13 @@ namespace CG
 	Fn GetVFunction(const void* instance, size_t index)
 	{
 		auto vtable = *static_cast<const void***>(const_cast<void*>(instance));
-		return reinterpret_cast<Fn>(const_cast<void(*)>(vtable[index]));
+		return reinterpret_cast<Fn>(const_cast<void (*)>(vtable[index]));
 	}
 
 }
 
 #ifdef _MSC_VER
-#pragma pack(pop)
+	#pragma pack(pop)
 #endif
 
 #include "BasicTypes_Structs.h"

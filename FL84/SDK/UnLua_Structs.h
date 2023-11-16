@@ -36,7 +36,7 @@ namespace CG
 	struct FInSightEvent
 	{
 	public:
-		unsigned char                                              UnknownData_9Z51[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_OY91[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
 	};
 
 }

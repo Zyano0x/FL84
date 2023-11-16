@@ -41,7 +41,7 @@ namespace CG
 		class USizeBox*                                            Size_Vip;                                                // 0x0488(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UUI_Vip_Icon_Type_C*                                 UI_Vip;                                                  // 0x0490(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		bool                                                       ShowBusinessCardBtn;                                     // 0x0498(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_I7F2[0x7];                                   // 0x0499(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_P4VO[0x7];                                   // 0x0499(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             OnClicked;                                               // 0x04A0(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 		class FScriptMulticastDelegate                             OnReleased;                                              // 0x04B0(0x0010) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable
 		bool                                                       IsNonuseFrame;                                           // 0x04C0(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
@@ -49,46 +49,46 @@ namespace CG
 		E_Type_Social                                              Social;                                                  // 0x04C2(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       GenderOn;                                                // 0x04C3(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		E_Type_Gender                                              Gender;                                                  // 0x04C4(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_93Y9[0x3];                                   // 0x04C5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_XCWL[0x3];                                   // 0x04C5(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      Size;                                                    // 0x04C8(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       Vip;                                                     // 0x04CC(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 		E_TabLobbyItemState                                        StateHD;                                                 // 0x04CD(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       IsCustom;                                                // 0x04CE(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
-		void OnURLDownloadFinish_905ECB4E400C59B2EEA511A7E631FCA0(bool bSuccess);
-		void OnClicked_A87EF6284E3F7FD6443D238B7FB3F993();
-		void OnURLDownloadFinish_71B0BA724457443FB3B1ECBE833CBE2E(bool bSuccess);
-		void OnClicked_938BE2E64523713EA004EB869FFD445B();
-		void OnURLDownloadFinish_162B4227470603B1B3B0058E2FD3DF0F(bool bSuccess);
-		void OnClicked_0D66074A4F4BE887E5D39F88977E8336();
-		void OnURLDownloadFinish_529325D64E379E5A370500B750FA038D(bool bSuccess);
-		void OnClicked_F352034C4F0E2CBAC4D052AC57CEB0D5();
-		void OnURLDownloadFinish_050FEEE3404D3957EC8C3D8AD98F3D2F(bool bSuccess);
-		void OnClicked_C2A78B724B7B84297A965E9C3767ECEA();
-		void OnURLDownloadFinish_8DA8FFE54CE4EE0E0646ADBC8BE91725(bool bSuccess);
-		void OnClicked_2E933EAD4DDEDAE1126B0887A9389F95();
-		void OnURLDownloadFinish_F41E7E374CC42AB810B87A90B4DDFECE(bool bSuccess);
-		void OnClicked_31F3378342888AA10D0BE7A40FA02491();
-		void OnURLDownloadFinish_B05249104A6B7853FBC093A9B9F6711F(bool bSuccess);
-		void OnClicked_6F1C95C84BB2D623CB81D5838AAAA14E();
-		void OnURLDownloadFinish_04E7D2F14CF4D8B3796F639BD31FD745(bool bSuccess);
-		void OnClicked_87F7F4F748B586216477B995C62C5708();
-		void OnURLDownloadFinish_DD59E3D043D724B27485899C78B23E5D(bool bSuccess);
-		void OnClicked_F34BB93A4C97141E2EB3D1A07393469C();
-		void OnURLDownloadFinish_5CCEF38D488E71FFC51259AFD715077E(bool bSuccess);
-		void OnClicked_A17D39904796E71641B6BF8CACB969A3();
-		void OnURLDownloadFinish_F415743C4C3DEF0F2ADEF682C7873D1B(bool bSuccess);
-		void OnClicked_51E3B3AE4DD3FC9B013D519595D07E49();
-		void SetAvatarCopy(int32_t AvatarID, const class FString& AvatarUrl);
+		void OnURLDownloadFinish_C952552C4D37C670846E6A8AEE428B09(bool bSuccess);
+		void OnClicked_527D1B154D24F140D9DA5785D97F801B();
+		void OnURLDownloadFinish_C34F19C843592691A9AE85BDEF5CF009(bool bSuccess);
+		void OnClicked_88E313C7445ECB66ED358FBA347D09C1();
+		void OnURLDownloadFinish_462E60E44124DC1B194B12AFA823DBFC(bool bSuccess);
+		void OnClicked_8F76342A494D0012470F84BC01782DE4();
+		void OnURLDownloadFinish_D8FF15AE437875053C3111B749A1E24F(bool bSuccess);
+		void OnClicked_F180CD7F49E520599C663490F0AB82EC();
+		void OnURLDownloadFinish_9278A4614991FF1CAF36258931CD4109(bool bSuccess);
+		void OnClicked_2A2E6377423153BB1FB709A74F65DCDF();
+		void OnURLDownloadFinish_1F70369A43AD62A4D8535296BA424D52(bool bSuccess);
+		void OnClicked_EFA58478436F16F121BBB38BF9D63802();
+		void OnURLDownloadFinish_8C9C7E5A43CDEA9D66F9FF8A9AFD2F1E(bool bSuccess);
+		void OnClicked_BA328C0346FD9D96348B73B490B78F63();
+		void OnURLDownloadFinish_BEC9C8EE4BA412DEA06E56A21BDE7C17(bool bSuccess);
+		void OnClicked_09C5CDEA4F7D292ACEE5B8A850DA9C77();
+		void OnURLDownloadFinish_3FC88FD649EFA95ECA8493B5CBA18C5D(bool bSuccess);
+		void OnClicked_2A0EEE704DF99E44D61D85A3CBF79F7F();
+		void OnURLDownloadFinish_D6384FD74168AA6839A411905C974947(bool bSuccess);
+		void OnClicked_60BE132D44E33B4FEE859D8AB5B54693();
+		void OnURLDownloadFinish_900DE5AE41E8B62E7ADC5C86017E55E6(bool bSuccess);
+		void OnClicked_68D77842466635BEDA072EAD42F0FB59();
+		void OnURLDownloadFinish_7CE7F961471903363450A2A8902F893C(bool bSuccess);
+		void OnClicked_20BCA2364D03C43CD9EEBA9BAF07483A();
+		void RefreshByPSCopy(class ASolarPlayerState* ps, bool bWithoutGender);
+		void ForceShowFrameCopy(int32_t FrameID);
 		void SetVipTypeCopy(unsigned char VipType);
-		void Destruct();
-		void OnSolarUIOpened();
 		void OnSolarUIClosed();
 		void OnInitialized();
-		void RefreshByPSCopy(class ASolarPlayerState* ps, bool bWithoutGender);
+		void Destruct();
 		void ConstructCopy();
-		void ForceShowFrameCopy(int32_t FrameID);
+		void SetAvatarCopy(int32_t AvatarID, const class FString& AvatarUrl);
+		void OnSolarUIOpened();
 		class FString GetModuleName();
 		void ForceShowFrame(int32_t FrameID);
 		void RefreshByPS(class ASolarPlayerState* ps, bool bWithoutGender);

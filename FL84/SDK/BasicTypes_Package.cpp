@@ -10,7 +10,7 @@ namespace CG
 	// --------------------------------------------------
 	// # Structs Static Fields
 	// --------------------------------------------------
-	FNamePool* FName::GNames = nullptr;                                 // 0x0000(0x0000)
+	FNamePool*                                                  FName::GNames = nullptr;                                 // 0x0000(0x0000)
 
 	// --------------------------------------------------
 	// # Global functions
@@ -23,11 +23,11 @@ namespace CG
 		auto mBaseAddress = reinterpret_cast<uintptr_t>(LI_FN(GetModuleHandleW)(moduleName.c_str()));
 		if (!mBaseAddress)
 			return false;
-
+		
 		UObject::GObjects = reinterpret_cast<CG::TUObjectArray*>(mBaseAddress + gObjectsOffset);
 		FName::GNames = reinterpret_cast<CG::FNamePool*>(mBaseAddress + gNamesOffset);
 		UWorld::GWorld = reinterpret_cast<CG::UWorld**>(mBaseAddress + gWorldOffset);
-
+		
 		return true;
 	}
 
@@ -36,7 +36,7 @@ namespace CG
 	 */
 	bool InitSDK()
 	{
-		return InitSDK(xorstr_(L"SolarlandClient-Win64-Shipping.exe"), 0x6ED5000, 0x6EBC680, 0x7034318);
+		return InitSDK(xorstr_(L"SolarlandClient-Win64-Shipping.exe"), 0x6ED5FC0, 0x6EBD640, 0x70352D8);
 	}
 
 	// --------------------------------------------------
@@ -131,6 +131,9 @@ namespace CG
 	 */
 	std::wstring FString::ToStringW() const
 	{
+		/*std::wstring str(_data);
+		return str;*/
+
 		if (IsValid())
 		{
 			return _data;
@@ -416,12 +419,12 @@ namespace CG
 			lastBlock = 0;
 			nextFNameAddress = reinterpret_cast<uintptr_t>(Allocator.Blocks[0]);
 		}
-	RePlay:
+		RePlay:
 		int32_t nextFNameComparisonId = MAKELONG((uint16_t)((nextFNameAddress - reinterpret_cast<uintptr_t>(Allocator.Blocks[lastBlock])) / 2), (uint16_t)lastBlock);
 		int32_t block = nextFNameComparisonId >> 16;
 		int32_t offset = (uint16_t)nextFNameComparisonId;
 		int32_t offsetFromBlock = static_cast<int32_t>(nextFNameAddress - reinterpret_cast<uintptr_t>(Allocator.Blocks[lastBlock]));
-
+		
 		// Get entry information
 		const uintptr_t entryOffset = nextFNameAddress;
 		const int toAdd = 0x00 + 0x02; // HeaderOffset + HeaderSize
@@ -430,31 +433,31 @@ namespace CG
 		bool isWide = (nameHeader & 1) != 0;
 		if (isWide)
 			nameLength += nameLength;
-
+		
 		// if odd number (odd numbers are aligned with 0x00)
 		if (!isWide && nameLength % 2 != 0)
 			nameLength += 1;
-
+		
 		// Block end ?
 		if (offsetFromBlock + toAdd + (nameLength * 2) >= 0xFFFF * FNameEntryAllocator::Stride || nameHeader == 0x00 || block == Allocator.CurrentBlock && offset >= Allocator.CurrentByteCursor)
 		{
 			nextFNameAddress = reinterpret_cast<uintptr_t>(Allocator.Blocks[++lastBlock]);
 			goto RePlay;
 		}
-
+		
 		// We hit last Name in last Block
 		if (lastBlock > Allocator.CurrentBlock)
 			return nullptr;
-
+		
 		// Get next name address
 		nextFNameAddress = entryOffset + toAdd + nameLength;
-
+		
 		// Get name
 		FNameEntry* ret = Allocator.GetById(nextFNameComparisonId);
-
+		
 		if (comparisonId)
 			*comparisonId = nextFNameComparisonId;
-
+		
 		return ret;
 	}
 
@@ -551,14 +554,14 @@ namespace CG
 			if (GetGlobalNames()[i]->GetAnsiName() == nameToFind)
 			{
 				ComparisonIndex = i;
-#ifdef FNAME_POOL_WITH_CASE_PRESERVING_NAME
+				#ifdef FNAME_POOL_WITH_CASE_PRESERVING_NAME
 				DisplayIndex = i;
-#endif
+				#endif
 				return;
 			}
 		}
-
-#ifdef FNAME_POOL
+		
+		#ifdef FNAME_POOL
 		uintptr_t lastFNameAddress = NULL;
 		uint32_t curComparisonId = 0;
 		for (FNameEntry* name = GetGlobalNames().GetNext(lastFNameAddress, &curComparisonId); name != nullptr; name = GetGlobalNames().GetNext(lastFNameAddress, &curComparisonId))
@@ -567,13 +570,13 @@ namespace CG
 			{
 				cache.insert(curComparisonId);
 				ComparisonIndex = curComparisonId;
-#ifdef FNAME_POOL_WITH_CASE_PRESERVING_NAME
+				#ifdef FNAME_POOL_WITH_CASE_PRESERVING_NAME
 				DisplayIndex = curComparisonId;
-#endif
+				#endif
 				return;
 			}
 		}
-#else
+		#else
 		for (int32_t i = 0; i < GetGlobalNames().Count(); ++i)
 		{
 			if (GetGlobalNames()[i]->GetAnsiName() == nameToFind)
@@ -583,7 +586,7 @@ namespace CG
 				return;
 			}
 		}
-#endif
+		#endif
 	}
 
 	/**
@@ -603,14 +606,14 @@ namespace CG
 			if (GetGlobalNames()[i]->GetWideName() == nameToFind)
 			{
 				ComparisonIndex = i;
-#ifdef FNAME_POOL_WITH_CASE_PRESERVING_NAME
+				#ifdef FNAME_POOL_WITH_CASE_PRESERVING_NAME
 				DisplayIndex = i;
-#endif
+				#endif
 				return;
 			}
 		}
-
-#ifdef FNAME_POOL
+		
+		#ifdef FNAME_POOL
 		uintptr_t lastFNameAddress = NULL;
 		uint32_t curComparisonId = 0;
 		for (FNameEntry* name = GetGlobalNames().GetNext(lastFNameAddress, &curComparisonId); name != nullptr; name = GetGlobalNames().GetNext(lastFNameAddress, &curComparisonId))
@@ -619,13 +622,13 @@ namespace CG
 			{
 				cache.insert(curComparisonId);
 				ComparisonIndex = curComparisonId;
-#ifdef FNAME_POOL_WITH_CASE_PRESERVING_NAME
+				#ifdef FNAME_POOL_WITH_CASE_PRESERVING_NAME
 				DisplayIndex = curComparisonId;
-#endif
+				#endif
 				return;
 			}
 		}
-#else
+		#else
 		for (int32_t i = 0; i < GetGlobalNames().Count(); ++i)
 		{
 			if (GetGlobalNames()[i]->GetWideName() == nameToFind)
@@ -635,7 +638,7 @@ namespace CG
 				return;
 			}
 		}
-#endif
+		#endif
 	}
 
 	/**
@@ -736,12 +739,12 @@ namespace CG
 	{
 		wchar_t* name = Get();
 		if (!name)
-			return "NOT FOUND";
-
+		    return "NOT FOUND";
+		
 		size_t length = std::wcslen(name);
 		std::string str(length, '\0');
 		std::use_facet<std::ctype<wchar_t>>(std::locale()).narrow(name, name + length, '?', &str[0]);
-
+		
 		return str;
 	}
 
@@ -755,8 +758,8 @@ namespace CG
 	{
 		wchar_t* name = Get();
 		if (!name)
-			return L"NOT FOUND";
-
+		    return L"NOT FOUND";
+		
 		std::wstring str(name);
 		return str;
 	}
@@ -784,14 +787,14 @@ namespace CG
 	{
 		if (ObjectSerialNumber == 0 || ObjectIndex < 0)
 			return false;
-
+		
 		auto ObjectItem = UObject::GetGlobalObjects().GetItemByIndex(ObjectIndex);
 		if (!ObjectItem)
 			return false;
-
+		
 		if (!SerialNumbersMatch(ObjectItem))
 			return false;
-
+		
 		return !(ObjectItem->IsUnreachable() || ObjectItem->IsPendingKill());
 	}
 
@@ -805,11 +808,11 @@ namespace CG
 	{
 		if (!IsValid())
 			return nullptr;
-
+		
 		auto ObjectItem = UObject::GetGlobalObjects().GetItemByIndex(ObjectIndex);
 		if (!ObjectItem)
 			return nullptr;
-
+		
 		return ObjectItem->Object;
 	}
 

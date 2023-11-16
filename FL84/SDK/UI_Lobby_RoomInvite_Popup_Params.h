@@ -15,39 +15,39 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Delegate_9F31278B48E620C03A6DFEB83F69E342
+	 * DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Delegate_E10E804242E41C24547A9085B8CA03D0
 	 */
-	struct UUI_Lobby_RoomInvite_Popup_C_Delegate_9F31278B48E620C03A6DFEB83F69E342_Params
+	struct UUI_Lobby_RoomInvite_Popup_C_Delegate_E10E804242E41C24547A9085B8CA03D0_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_F9D8D9824900FE2FC73C67AEE1F4ED17
+	 * DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_BE6C2E0842D90957D3E82EB3B0880014
 	 */
-	struct UUI_Lobby_RoomInvite_Popup_C_OnClicked_F9D8D9824900FE2FC73C67AEE1F4ED17_Params
+	struct UUI_Lobby_RoomInvite_Popup_C_OnClicked_BE6C2E0842D90957D3E82EB3B0880014_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_FE0B0CCF409DF3793B041199631D798B
+	 * DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_F38AC1AB4CE67AB75D9131AA5A775A31
 	 */
-	struct UUI_Lobby_RoomInvite_Popup_C_OnClicked_FE0B0CCF409DF3793B041199631D798B_Params
+	struct UUI_Lobby_RoomInvite_Popup_C_OnClicked_F38AC1AB4CE67AB75D9131AA5A775A31_Params
 	{	};
 
 	/**
-	 * Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_2DC3E53C435D201391F165A8A958BA70
+	 * Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_1217C7F04BEAA850E33699B003FC39C0
 	 */
-	struct UUI_Lobby_RoomInvite_Popup_C_OnClicked_2DC3E53C435D201391F165A8A958BA70_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Destruct
-	 */
-	struct UUI_Lobby_RoomInvite_Popup_C_Destruct_Params
+	struct UUI_Lobby_RoomInvite_Popup_C_OnClicked_1217C7F04BEAA850E33699B003FC39C0_Params
 	{	};
 
 	/**
 	 * Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Construct
 	 */
 	struct UUI_Lobby_RoomInvite_Popup_C_Construct_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Destruct
+	 */
+	struct UUI_Lobby_RoomInvite_Popup_C_Destruct_Params
 	{	};
 
 	/**

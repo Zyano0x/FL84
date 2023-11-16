@@ -15,15 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.OnClicked_D57F39144AAA4E1704B809A3EB91C266
+	 * Function UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.OnClicked_185AE9CF4D6A40094E16A0B6EBC43309
 	 */
-	struct UUI_Lobby_TeamInvite_Popup_C_OnClicked_D57F39144AAA4E1704B809A3EB91C266_Params
+	struct UUI_Lobby_TeamInvite_Popup_C_OnClicked_185AE9CF4D6A40094E16A0B6EBC43309_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.OnClicked_42ED2B6A446312FF451BA4905C19ACEE
+	 * DelegateFunction UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.OnClicked_6A92DB58416019DB46F6DA9F60F7DE88
 	 */
-	struct UUI_Lobby_TeamInvite_Popup_C_OnClicked_42ED2B6A446312FF451BA4905C19ACEE_Params
+	struct UUI_Lobby_TeamInvite_Popup_C_OnClicked_6A92DB58416019DB46F6DA9F60F7DE88_Params
 	{	};
 
 	/**

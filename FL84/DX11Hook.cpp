@@ -3,6 +3,7 @@
 tPresent oPresent;
 tResizeBuffers oResizeBuffers;
 tGetShotDir GetShotDir;
+tGetShotDirVehicle GetShotDirVehicle;
 tGetBulletSocketLocation GetBulletSocketLocation;
 tSetAppearance SetAppearance;
 tProcessRemoteFunction ProcessRemoteFunction;
@@ -52,6 +53,20 @@ __int64 HOOKCALL hkGetShotDir(CG::ASolarPlayerWeapon* Weapon, uint64_t a2, bool 
 		CG::FVector Out = Math::GetDirectionUnitVector(ZXC.CameraManager->GetCameraLocation(), Aimbot::TargetPosition);
 
 		*(CG::FVector*)(Result) = Out;
+	}
+
+	return Result;
+}
+
+__int64 HOOKCALL hkGetShotDirVehicle(CG::ASolarPlayerWeapon* VehicleWeapon, uint64_t a2, bool NeedSpread)
+{
+	SPOOF_FUNC;
+
+	__int64 Result = GetShotDirVehicle(VehicleWeapon, a2, NeedSpread);
+
+	if (_profiler.gVehicleSilentAim.Custom.bValue && Aimbot::TargetPosition.IsValid())
+	{
+		*(CG::FVector*)(Result) = Aimbot::TargetPosition;
 	}
 
 	return Result;
@@ -187,6 +202,9 @@ void _Initialize()
 	GetShotDir = reinterpret_cast<tGetShotDir>(Signature(xorstr_("40 55 53 57 41 56 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B D9")).GetPointer());
 	Hook(GetShotDir, hkGetShotDir);
 
+	GetShotDirVehicle = reinterpret_cast<tGetShotDirVehicle>(Signature(xorstr_("40 55 56 57 41 56 41 57 48 8D 6C 24 ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 45 ? 48 8B 81")).GetPointer());
+	Hook(GetShotDirVehicle, hkGetShotDirVehicle);
+
 	GetBulletSocketLocation = reinterpret_cast<tGetBulletSocketLocation>(Signature(xorstr_("48 89 5C 24 ? 48 89 74 24 ? 57 48 83 EC ? 48 8B 01 48 8B DA 48 8B F9 FF 90 ? ? ? ? 48 8B F0 48 85 C0 0F")).GetPointer());
 	Hook(GetBulletSocketLocation, hkGetBulletSocketLocation);
 
@@ -199,8 +217,8 @@ void _Initialize()
 #endif
 	printf(xorstr_("Cheat Loaded!\n"));
 #ifndef _DEBUG
-	LI_FN(Sleep)(2000);
-	::ShowWindow(::GetConsoleWindow(), SW_HIDE);
+	//LI_FN(Sleep)(2000);
+	//::ShowWindow(::GetConsoleWindow(), SW_HIDE);
 #endif
 }
 
@@ -209,6 +227,7 @@ void _Deallocate()
 	UnHook(oPresent, hkPresent);
 	UnHook(oResizeBuffers, hkResizeBuffers);
 	UnHook(GetShotDir, hkGetShotDir);
+	UnHook(GetShotDirVehicle, hkGetShotDirVehicle);
 	UnHook(GetBulletSocketLocation, hkGetBulletSocketLocation);
 	UnHook(SetAppearance, hkSetAppearance);
 #ifdef _DEBUG

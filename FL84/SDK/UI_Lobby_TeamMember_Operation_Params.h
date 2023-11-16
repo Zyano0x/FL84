@@ -15,57 +15,57 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.OnClicked_91C89FBB43B1A444D589C19C08B12B39
+	 * DelegateFunction UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.OnClicked_3402CC4E4E2A1E0C5B112FA657582408
 	 */
-	struct UUI_Lobby_TeamMember_Operation_C_OnClicked_91C89FBB43B1A444D589C19C08B12B39_Params
+	struct UUI_Lobby_TeamMember_Operation_C_OnClicked_3402CC4E4E2A1E0C5B112FA657582408_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.OnClicked_7CA735FE4E5E7980A740AD86F4A2AB04
+	 * DelegateFunction UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.OnClicked_93E510DB497BA572893C65987CFFAB54
 	 */
-	struct UUI_Lobby_TeamMember_Operation_C_OnClicked_7CA735FE4E5E7980A740AD86F4A2AB04_Params
+	struct UUI_Lobby_TeamMember_Operation_C_OnClicked_93E510DB497BA572893C65987CFFAB54_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.OnClicked_ECB361C44DEEF64B0BE49DBBF912FDF1
+	 * DelegateFunction UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.OnClicked_38CDD83A40EEA139B67C5CA50102B6E5
 	 */
-	struct UUI_Lobby_TeamMember_Operation_C_OnClicked_ECB361C44DEEF64B0BE49DBBF912FDF1_Params
+	struct UUI_Lobby_TeamMember_Operation_C_OnClicked_38CDD83A40EEA139B67C5CA50102B6E5_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.OnClicked_D437528E4183F3C27EA70A9FFD4C16CB
+	 * DelegateFunction UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.OnClicked_F9B42E0647F25A1516B40B9F7856190E
 	 */
-	struct UUI_Lobby_TeamMember_Operation_C_OnClicked_D437528E4183F3C27EA70A9FFD4C16CB_Params
+	struct UUI_Lobby_TeamMember_Operation_C_OnClicked_F9B42E0647F25A1516B40B9F7856190E_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.OnClicked_651CFFB74F45905A25AB2F8AB82B5558
+	 * DelegateFunction UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.OnClicked_90C68C9B47430A70702E1D9D682853FC
 	 */
-	struct UUI_Lobby_TeamMember_Operation_C_OnClicked_651CFFB74F45905A25AB2F8AB82B5558_Params
+	struct UUI_Lobby_TeamMember_Operation_C_OnClicked_90C68C9B47430A70702E1D9D682853FC_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.OnClicked_860A5CE54930F62AE119DF986E670B97
+	 * DelegateFunction UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.OnClicked_171C7D8F4BB73B07E777469C728AA4C9
 	 */
-	struct UUI_Lobby_TeamMember_Operation_C_OnClicked_860A5CE54930F62AE119DF986E670B97_Params
+	struct UUI_Lobby_TeamMember_Operation_C_OnClicked_171C7D8F4BB73B07E777469C728AA4C9_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.OnClicked_0032978A4DFB9EE2D5F1C5B9B17DBA8B
+	 * DelegateFunction UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.OnClicked_E3638D744239EA0538FDE0911D1B1959
 	 */
-	struct UUI_Lobby_TeamMember_Operation_C_OnClicked_0032978A4DFB9EE2D5F1C5B9B17DBA8B_Params
+	struct UUI_Lobby_TeamMember_Operation_C_OnClicked_E3638D744239EA0538FDE0911D1B1959_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.OnClicked_D2CE4CA6408754616C1F5FA56DFDD040
+	 * DelegateFunction UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.OnClicked_961B8BAF4830C71F12C0B7B56AAEE43D
 	 */
-	struct UUI_Lobby_TeamMember_Operation_C_OnClicked_D2CE4CA6408754616C1F5FA56DFDD040_Params
+	struct UUI_Lobby_TeamMember_Operation_C_OnClicked_961B8BAF4830C71F12C0B7B56AAEE43D_Params
 	{	};
 
 	/**
-	 * Function UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.Destruct
+	 * Function UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.ConstructCopy
 	 */
-	struct UUI_Lobby_TeamMember_Operation_C_Destruct_Params
+	struct UUI_Lobby_TeamMember_Operation_C_ConstructCopy_Params
 	{	};
 
 	/**
@@ -75,9 +75,9 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.ConstructCopy
+	 * Function UI_Lobby_TeamMember_Operation.UI_Lobby_TeamMember_Operation_C.Destruct
 	 */
-	struct UUI_Lobby_TeamMember_Operation_C_ConstructCopy_Params
+	struct UUI_Lobby_TeamMember_Operation_C_Destruct_Params
 	{	};
 
 	/**
@@ -96,7 +96,7 @@ namespace CG
 	{
 	public:
 		bool                                                       IsHD;                                                    // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-		unsigned char                                              UnknownData_D9BF[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_RG9Z[0x3];                                   // 0x0001(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**

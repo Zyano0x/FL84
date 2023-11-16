@@ -48,6 +48,9 @@ void XXX::Unknown()
 	if (!LocalCharacter)
 		return;
 
+	if (_profiler.gDrawFOV.Custom.bValue)
+		ImGui::GetBackgroundDrawList()->AddCircle(ImVec2(ScreenWidth / 2, ScreenHeight / 2), _profiler.gAimFOV.Custom.flValue, ImGui::GetColorU32(ImVec4(1.f, 0.141f, 0.f, 1.f)));
+
 	CG::TArray<CG::AActor*> Actors = *(CG::TArray<CG::AActor*>*)((uintptr_t)World->PersistentLevel + 0x98);
 	for (int i = 0; i < Actors.Count(); i++)
 	{
@@ -647,16 +650,6 @@ void XXX::Vehicle()
 		LocalVehicle->VehicleAttributeSet->SpeedMultiplier.CurrentValue = _profiler.gVehicleSpeedMulti.Custom.flValue;
 	}
 
-	if (_profiler.gVehicleSilentAim.Custom.bValue)
-	{
-		CG::ASolarVehicleWeapon* VehicleWeapon = LocalVehicle->SeatSlots[0].SeatWeapon;
-		if (!VehicleWeapon)
-			return;
-
-		if (Aimbot::TargetPosition.IsValid())
-			*(CG::FVector*)(VehicleWeapon + 0xBDC) = Aimbot::TargetPosition; // GetShotTargetLocation
-	}
-
 	if (_profiler.gVehicleNoRecoil.Custom.bValue)
 	{
 		CG::ASolarVehicleWeapon* VehicleWeapon = LocalVehicle->SeatSlots[0].SeatWeapon;
@@ -695,13 +688,6 @@ void XXX::Aimbot()
 	bool bTargetLine = false;
 	CG::FVector TargetLine = CG::FVector();
 	std::vector<tTargetInfo> vTargetInfo;
-
-	CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(ZXC.PlayerController->Character);
-	if (!LocalCharacter)
-		return;
-
-	if (_profiler.gDrawFOV.Custom.bValue)
-		ImGui::GetBackgroundDrawList()->AddCircle(ImVec2(ScreenWidth / 2, ScreenHeight / 2), _profiler.gAimFOV.Custom.flValue, ImGui::GetColorU32(ImVec4(1.f, 0.141f, 0.f, 1.f)));
 
 	if (!_profiler.gAimEnabled.Custom.bValue)
 		return;
@@ -751,10 +737,7 @@ void XXX::Misc()
 
 	if (_profiler.gSuicide.Custom.bValue)
 	{
-		if (_mainGUI.GetKeyPress(VK_DELETE, false))
-		{
-			LocalCharacter->Suicide();
-		}
+		if (_mainGUI.GetKeyPress(VK_DELETE, false)) LocalCharacter->Suicide();
 	}
 
 	if (_mainGUI.GetKeyPress(VK_F3, false))
@@ -773,48 +756,41 @@ void XXX::Misc()
 
 	if (_profiler.gSpamLike.Custom.bValue)
 	{
-		if (_mainGUI.GetKeyPress(VK_OEM_PLUS, false))
-		{
-			LocalSpectateInfo->ServerChangeLikeValue(_profiler.gLikeValue.Custom.iValue, 2, CG::ESocialActionType::Like);
-		}
+		if (_mainGUI.GetKeyPress(VK_OEM_PLUS, false)) LocalSpectateInfo->ServerChangeLikeValue(_profiler.gLikeValue.Custom.iValue, 2, CG::ESocialActionType::Like);
 
-		if (_mainGUI.GetKeyPress(VK_OEM_MINUS, false))
-		{
-			LocalSpectateInfo->ServerChangeLikeValue(_profiler.gDislikeValue.Custom.iValue, -1, CG::ESocialActionType::Unlike);
-		}
+		if (_mainGUI.GetKeyPress(VK_OEM_MINUS, false)) LocalSpectateInfo->ServerChangeLikeValue(_profiler.gDislikeValue.Custom.iValue, -1, CG::ESocialActionType::Unlike);
 	}
 
 	if (_profiler.gFastSpectating.Custom.bValue)
 	{
-		if (_mainGUI.GetKeyPress(VK_LEFT, false))
-		{
-			LocalSpectateInfo->ServerSpectatePreviousPlayer();
-		}
+		if (_mainGUI.GetKeyPress(VK_LEFT, false)) LocalSpectateInfo->ServerSpectatePreviousPlayer();
 
-		if (_mainGUI.GetKeyPress(VK_RIGHT, false))
-		{
-			LocalSpectateInfo->ServerSpectateNextPlayer();
-		}
+		if (_mainGUI.GetKeyPress(VK_RIGHT, false)) LocalSpectateInfo->ServerSpectateNextPlayer();
 	}
 
 	if (_profiler.gSpectateMode.Custom.bValue)
-	{
+	{	
 		if (_mainGUI.GetKeyPress(VK_PRIOR, false)) LocalSpectateInfo->ServerBeginSpectateOtherPlayer();
 
-		if (_mainGUI.GetKeyPress(VK_NEXT, false)) LocalSpectateInfo->ServerStopSpectateOtherPlayer();
+		if (_mainGUI.GetKeyPress(VK_NEXT, false))
+		{
+			LocalSpectateInfo->ServerStopSpectateOtherPlayer();
+		}
 	}
 
 	if (_profiler.gStopSpectator.Custom.bValue)
 	{
-
 		CG::TArray<CG::ASolarPlayerState*> Spectators = LocalSpectateInfo->PlayersSpectatingMe;
 		for (int i = 0; i < Spectators.Count(); i++)
 		{
-			CG::ASolarSpectateInfo* SpectateInfo = Spectators[i]->SpectateInfo;
-			if (SpectateInfo)
+			CG::ASolarSpectateInfo* SpectateInfo = *(CG::ASolarSpectateInfo**)(Spectators[i] + 0x780);
+
+			printf("0x%llX\n", SpectateInfo);
+
+			if (!SpectateInfo)
 				continue;
 
-			SpectateInfo->ServerStopSpectateOtherPlayer_Internal();
+			SpectateInfo->ServerStopSpectateOtherPlayer();
 		}
 	}
 }

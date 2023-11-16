@@ -37,12 +37,12 @@ namespace CG
 		int32_t                                                    OrderId;                                                 // 0x04A8(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnCheckStateChanged_83FB3B8E45A4932D05C7289FDE85ADD4(bool bIsChecked);
-		void OnCheckStateChanged_EC9C8BD644D54C743E0989A8EDAD970C(bool bIsChecked);
-		void OnCheckStateChanged_BFD3D68A4F1D8587B52D63AA15B66304(bool bIsChecked);
-		void OnCheckStateChanged_254388B64B3B82C92B687EAADB0E173E(bool bIsChecked);
-		void Destruct();
+		void OnCheckStateChanged_FF1314C94D416A23B1E1D8B7E04AC124(bool bIsChecked);
+		void OnCheckStateChanged_D7DE8844432689A4F122DBA4D3A41A5E(bool bIsChecked);
+		void OnCheckStateChanged_23D7B3064C23DD4889E0438E5B224923(bool bIsChecked);
+		void OnCheckStateChanged_E04B8CCF46B440BB33725D88B3029DA0(bool bIsChecked);
 		void Construct();
+		void Destruct();
 		class FString GetModuleName();
 		void SetOrder(int32_t OrderId);
 		void PreConstruct(bool IsDesignTime);

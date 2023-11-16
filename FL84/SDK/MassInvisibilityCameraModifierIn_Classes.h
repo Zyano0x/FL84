@@ -21,7 +21,7 @@ namespace CG
 	class UMassInvisibilityCameraModifierIn_C : public UCameraShake
 	{
 	public:
-		unsigned char                                              UnknownData_0YF3[0x8];                                   // 0x0158(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_9HZL[0x8];                                   // 0x0158(0x0008) Fix Super Size
 
 	public:
 		static UClass* StaticClass();

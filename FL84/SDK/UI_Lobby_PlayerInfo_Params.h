@@ -15,9 +15,9 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnClicked_D344A3D340925D1D464E2E9502E8CD0E
+	 * DelegateFunction UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnClicked_2006DAE943FE7D7B631687BB44F5A62D
 	 */
-	struct UUI_Lobby_PlayerInfo_C_OnClicked_D344A3D340925D1D464E2E9502E8CD0E_Params
+	struct UUI_Lobby_PlayerInfo_C_OnClicked_2006DAE943FE7D7B631687BB44F5A62D_Params
 	{	};
 
 	/**

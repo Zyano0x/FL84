@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function Ability_VH_Hover_Soroll05_weapon_ExplosionDamage_Secondary.Ability_VH_Hover_Soroll05_weapon_ExplosionDamage_Secondary_C.ReceiveBeginPlay
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function Ability_VH_Hover_Soroll05_weapon_ExplosionDamage_Secondary.Ability_VH_Hover_Soroll05_weapon_ExplosionDamage_Secondary_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -53,7 +53,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function Ability_VH_Hover_Soroll05_weapon_ExplosionDamage_Secondary.Ability_VH_Hover_Soroll05_weapon_ExplosionDamage_Secondary_C.ExecuteUbergraph_Ability_VH_Hover_Soroll05_weapon_ExplosionDamage_Secondary
 	 * 		Flags  -> (Final)
 	 * Parameters:

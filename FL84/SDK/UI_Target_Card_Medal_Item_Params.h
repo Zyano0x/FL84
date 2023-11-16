@@ -26,15 +26,15 @@ namespace CG
 	};
 
 	/**
-	 * Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.Destruct
-	 */
-	struct UUI_Target_Card_Medal_Item_C_Destruct_Params
-	{	};
-
-	/**
 	 * Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.OnInitialized
 	 */
 	struct UUI_Target_Card_Medal_Item_C_OnInitialized_Params
+	{	};
+
+	/**
+	 * Function UI_Target_Card_Medal_Item.UI_Target_Card_Medal_Item_C.Destruct
+	 */
+	struct UUI_Target_Card_Medal_Item_C_Destruct_Params
 	{	};
 
 	/**

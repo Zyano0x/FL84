@@ -13,49 +13,23 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_Banner.UI_Lobby_Banner_C.OnURLDownloadFinish_26244C4A40852915158CCC8672F6AC3A
+	 * 		Name   -> DelegateFunction UI_Lobby_Banner.UI_Lobby_Banner_C.OnURLDownloadFinish_7AA01EEE4400C2C96514EB95F17F99B6
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		bool                                               bSuccess                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_Lobby_Banner_C::OnURLDownloadFinish_26244C4A40852915158CCC8672F6AC3A(bool bSuccess)
+	void UUI_Lobby_Banner_C::OnURLDownloadFinish_7AA01EEE4400C2C96514EB95F17F99B6(bool bSuccess)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Banner.UI_Lobby_Banner_C.OnURLDownloadFinish_26244C4A40852915158CCC8672F6AC3A"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_Banner.UI_Lobby_Banner_C.OnURLDownloadFinish_7AA01EEE4400C2C96514EB95F17F99B6"));
 		
-		UUI_Lobby_Banner_C_OnURLDownloadFinish_26244C4A40852915158CCC8672F6AC3A_Params params {};
+		UUI_Lobby_Banner_C_OnURLDownloadFinish_7AA01EEE4400C2C96514EB95F17F99B6_Params params {};
 		params.bSuccess = bSuccess;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnMouseButtonDown
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
-	 * Parameters:
-	 * 		struct FGeometry                                   MyGeometry                                                 (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	 * 		struct FPointerEvent                               MouseEvent                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	 */
-	struct FEventReply UUI_Lobby_Banner_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnMouseButtonDown"));
-		
-		UUI_Lobby_Banner_C_OnMouseButtonDown_Params params {};
-		params.MyGeometry = MyGeometry;
-		params.MouseEvent = MouseEvent;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
 	}
 
 	/**
@@ -71,6 +45,26 @@ namespace CG
 			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnSolarUIOpened"));
 		
 		UUI_Lobby_Banner_C_OnSolarUIOpened_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnSolarUIClosed
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 */
+	void UUI_Lobby_Banner_C::OnSolarUIClosed()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnSolarUIClosed"));
+		
+		UUI_Lobby_Banner_C_OnSolarUIClosed_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
@@ -107,26 +101,32 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnSolarUIClosed
-	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 * 		Name   -> Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnMouseButtonDown
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
+	 * Parameters:
+	 * 		struct FGeometry                                   MyGeometry                                                 (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	 * 		struct FPointerEvent                               MouseEvent                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	void UUI_Lobby_Banner_C::OnSolarUIClosed()
+	struct FEventReply UUI_Lobby_Banner_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnSolarUIClosed"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnMouseButtonDown"));
 		
-		UUI_Lobby_Banner_C_OnSolarUIClosed_Params params {};
+		UUI_Lobby_Banner_C_OnMouseButtonDown_Params params {};
+		params.MyGeometry = MyGeometry;
+		params.MouseEvent = MouseEvent;
 		
 		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
+		
+		return params.ReturnValue;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_Banner.UI_Lobby_Banner_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -147,7 +147,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_Banner.UI_Lobby_Banner_C.SetStateHD
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -169,7 +169,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_Banner.UI_Lobby_Banner_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -191,7 +191,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnMouseEnter
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -215,7 +215,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnMouseLeave
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -237,7 +237,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_Banner.UI_Lobby_Banner_C.ExecuteUbergraph_UI_Lobby_Banner
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

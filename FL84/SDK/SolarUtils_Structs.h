@@ -21,7 +21,7 @@ namespace CG
 	struct FSolarAggregationTickFunction : public FTickFunction
 	{
 	public:
-		unsigned char                                              UnknownData_C24V[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_TPYV[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 	};
 
 }

@@ -26,8 +26,8 @@ namespace CG
 		class UImage*                                              Img_Default;                                             // 0x0410(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void Construct();
 		void OnListItemObjectSetCopy(class UObject* ListItemObject);
+		void Construct();
 		void Destruct();
 		class FString GetModuleName();
 		void BP_OnEntryReleased();

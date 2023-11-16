@@ -15,9 +15,9 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Component_Emoji_List.UI_Component_Emoji_List_C.OnStateChangedEvent_9512904E45BDCC2F0360F2A14415CCDB
+	 * DelegateFunction UI_Component_Emoji_List.UI_Component_Emoji_List_C.OnStateChangedEvent_CA2229744174CE02CEE5058D885740E2
 	 */
-	struct UUI_Component_Emoji_List_C_OnStateChangedEvent_9512904E45BDCC2F0360F2A14415CCDB_Params
+	struct UUI_Component_Emoji_List_C_OnStateChangedEvent_CA2229744174CE02CEE5058D885740E2_Params
 	{
 	public:
 		int32_t                                                    InLastButtonIndex;                                       // 0x0000(0x0004)  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)

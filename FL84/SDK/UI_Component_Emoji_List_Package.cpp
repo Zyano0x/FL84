@@ -13,18 +13,18 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_Emoji_List.UI_Component_Emoji_List_C.OnStateChangedEvent_9512904E45BDCC2F0360F2A14415CCDB
+	 * 		Name   -> DelegateFunction UI_Component_Emoji_List.UI_Component_Emoji_List_C.OnStateChangedEvent_CA2229744174CE02CEE5058D885740E2
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		int32_t                                            InLastButtonIndex                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UUI_Component_Emoji_List_C::OnStateChangedEvent_9512904E45BDCC2F0360F2A14415CCDB(int32_t InLastButtonIndex)
+	void UUI_Component_Emoji_List_C::OnStateChangedEvent_CA2229744174CE02CEE5058D885740E2(int32_t InLastButtonIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_Emoji_List.UI_Component_Emoji_List_C.OnStateChangedEvent_9512904E45BDCC2F0360F2A14415CCDB"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_Emoji_List.UI_Component_Emoji_List_C.OnStateChangedEvent_CA2229744174CE02CEE5058D885740E2"));
 		
-		UUI_Component_Emoji_List_C_OnStateChangedEvent_9512904E45BDCC2F0360F2A14415CCDB_Params params {};
+		UUI_Component_Emoji_List_C_OnStateChangedEvent_CA2229744174CE02CEE5058D885740E2_Params params {};
 		params.InLastButtonIndex = InLastButtonIndex;
 		
 		auto flags = fn->FunctionFlags;
@@ -72,7 +72,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Component_Emoji_List.UI_Component_Emoji_List_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */

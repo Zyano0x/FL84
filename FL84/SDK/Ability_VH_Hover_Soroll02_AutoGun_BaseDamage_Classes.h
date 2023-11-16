@@ -21,7 +21,7 @@ namespace CG
 	class AAbility_VH_Hover_Soroll02_AutoGun_BaseDamage_C : public ASolarAbility
 	{
 	public:
-		unsigned char                                              UnknownData_MOGO[0x8];                                   // 0x0308(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_DKTM[0x8];                                   // 0x0308(0x0008) Fix Super Size
 
 	public:
 		static UClass* StaticClass();

@@ -31,7 +31,7 @@ namespace CG
 		class UUI_Component_PlayerName_C*                          UI_Component_PlayerName;                                 // 0x0438(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnClicked_D344A3D340925D1D464E2E9502E8CD0E();
+		void OnClicked_2006DAE943FE7D7B631687BB44F5A62D();
 		void Destruct();
 		void OnSolarUIClosed();
 		void Construct();

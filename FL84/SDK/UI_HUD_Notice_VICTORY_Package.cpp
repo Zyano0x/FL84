@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.GetModuleName
 	 * 		Flags  -> (Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -33,7 +33,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.CloseSelf
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -52,7 +52,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.OnEndAnimFinish
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -71,7 +71,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -93,7 +93,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.OnSolarUIClosed
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 */
@@ -112,7 +112,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_HUD_Notice_VICTORY.UI_HUD_Notice_VICTORY_C.ExecuteUbergraph_UI_HUD_Notice_VICTORY
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

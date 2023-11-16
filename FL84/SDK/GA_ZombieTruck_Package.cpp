@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function GA_ZombieTruck.GA_ZombieTruck_C.K2_OnEndAbility
 	 * 		Flags  -> (Event, Protected, BlueprintEvent)
 	 * Parameters:
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function GA_ZombieTruck.GA_ZombieTruck_C.K2_CommitExecute
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -53,7 +53,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function GA_ZombieTruck.GA_ZombieTruck_C.ExecuteUbergraph_GA_ZombieTruck
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

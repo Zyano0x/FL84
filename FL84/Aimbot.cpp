@@ -280,7 +280,7 @@ namespace Aimbot
 	{
 		tTargetInfo TargetInfo;
 
-		CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(ZXC.PlayerController->Character);
+		CG::ASolarCharacter* LocalCharacter = static_cast<CG::ASolarCharacter*>(ZXC.PlayerController->K2_GetPawn());
 		if (!LocalCharacter)
 			return;
 
@@ -319,19 +319,19 @@ namespace Aimbot
 
 			if (VisibilityMethod(Enemy))
 			{
-				if (_profiler.gAimPrediction.Custom.bValue)
+				if (_profiler.gAimPrediction.Custom.bValue && !LocalCharacter->IsInVehicle())
 				{
 					CG::ASolarPlayerWeapon* CachedCurrentWeapon = LocalCharacter->CachedCurrentWeapon;
 					if (!CachedCurrentWeapon)
-						return;
+						continue;
 
 					CG::USingleWeaponConfig* Config = CachedCurrentWeapon->Config;
 					if (!Config)
-						return;
+						continue;
 
 					CG::UAmmoConfig* AmmoConfig = Config->PrimaryAmmo;
 					if (!AmmoConfig)
-						return;
+						continue;
 
 					float BulletSpeed = AmmoConfig->InitSpeed / 100.f;
 					float BulletGravity = AmmoConfig->ProjectileMaxGravity;

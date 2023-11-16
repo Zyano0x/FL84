@@ -39,19 +39,19 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Warehouse_DragPanel.UI_Warehouse_DragPanel_C.OnMouseMove
+	 * 		Name   -> Function UI_Warehouse_DragPanel.UI_Warehouse_DragPanel_C.OnMouseButtonUp
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGeometry                                   MyGeometry                                                 (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		struct FPointerEvent                               MouseEvent                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	struct FEventReply UUI_Warehouse_DragPanel_C::OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
+	struct FEventReply UUI_Warehouse_DragPanel_C::OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Warehouse_DragPanel.UI_Warehouse_DragPanel_C.OnMouseMove"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Warehouse_DragPanel.UI_Warehouse_DragPanel_C.OnMouseButtonUp"));
 		
-		UUI_Warehouse_DragPanel_C_OnMouseMove_Params params {};
+		UUI_Warehouse_DragPanel_C_OnMouseButtonUp_Params params {};
 		params.MyGeometry = MyGeometry;
 		params.MouseEvent = MouseEvent;
 		
@@ -84,19 +84,19 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Warehouse_DragPanel.UI_Warehouse_DragPanel_C.OnMouseButtonUp
+	 * 		Name   -> Function UI_Warehouse_DragPanel.UI_Warehouse_DragPanel_C.OnMouseMove
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
 	 * 		struct FGeometry                                   MyGeometry                                                 (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		struct FPointerEvent                               MouseEvent                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	struct FEventReply UUI_Warehouse_DragPanel_C::OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
+	struct FEventReply UUI_Warehouse_DragPanel_C::OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Warehouse_DragPanel.UI_Warehouse_DragPanel_C.OnMouseButtonUp"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Warehouse_DragPanel.UI_Warehouse_DragPanel_C.OnMouseMove"));
 		
-		UUI_Warehouse_DragPanel_C_OnMouseButtonUp_Params params {};
+		UUI_Warehouse_DragPanel_C_OnMouseMove_Params params {};
 		params.MyGeometry = MyGeometry;
 		params.MouseEvent = MouseEvent;
 		
@@ -109,7 +109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Warehouse_DragPanel.UI_Warehouse_DragPanel_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */

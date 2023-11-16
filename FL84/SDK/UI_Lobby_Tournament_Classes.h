@@ -36,7 +36,7 @@ namespace CG
 		class UWidgetSwitcher*                                     WidgetSwitcher_Tournament;                               // 0x0460(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnClicked_666C3B6A47BE62FC629AD4B8BB4C606C();
+		void OnClicked_7AFDC0B04E2D056AB79146B470D12223();
 		void Construct();
 		void OnInitialized();
 		void Destruct();

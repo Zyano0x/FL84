@@ -21,27 +21,27 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnHide
-	 */
-	struct UUI_TeamInvite_Container_C_OnHide_Params
-	{	};
-
-	/**
 	 * Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnShow
 	 */
 	struct UUI_TeamInvite_Container_C_OnShow_Params
 	{	};
 
 	/**
-	 * Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnInitialized
+	 * Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnHide
 	 */
-	struct UUI_TeamInvite_Container_C_OnInitialized_Params
+	struct UUI_TeamInvite_Container_C_OnHide_Params
 	{	};
 
 	/**
 	 * Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnSolarUIOpened
 	 */
 	struct UUI_TeamInvite_Container_C_OnSolarUIOpened_Params
+	{	};
+
+	/**
+	 * Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnInitialized
+	 */
+	struct UUI_TeamInvite_Container_C_OnInitialized_Params
 	{	};
 
 	/**

@@ -162,11 +162,11 @@
     <ClInclude Include="Encryption\Mouse.h">
       <Filter>Encryption</Filter>
     </ClInclude>
-    <ClInclude Include="SDK.h">
-      <Filter>SDK</Filter>
-    </ClInclude>
     <ClInclude Include="Detours\detours.h">
       <Filter>Detours</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK.h">
+      <Filter>SDK</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -48,12 +48,12 @@ namespace CG
 		class UObject*                                             MicroImgOff;                                             // 0x0508(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		struct FEventReply OnMouseButtonDownEvent_71616335490BDB6DF4AFAEA9C4FC62D8(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-		struct FEventReply OnMouseButtonDownEvent_5A2E134C45C5B73F9CD6BE9AA141D97F(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-		void OnStateChangedEvent_0BFE88304F1A434F1D3A1D980795F34B(TArray<class UCheckBox*> ChildChangedArray, int32_t CheckedChildIndex);
-		void OnStateChangedEvent_91F014F845889D6AFF37689DD5287289(TArray<class UCheckBox*> ChildChangedArray, int32_t CheckedChildIndex);
-		void Destruct();
+		struct FEventReply OnMouseButtonDownEvent_4B58E0224142357CAB1CDEB00E5DFF9D(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+		struct FEventReply OnMouseButtonDownEvent_B9D5A2FE44D77356BD1A02A0742A8CC9(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+		void OnStateChangedEvent_EF6964914BA6B627781E1EA75A87DDBA(TArray<class UCheckBox*> ChildChangedArray, int32_t CheckedChildIndex);
+		void OnStateChangedEvent_78A63FB4442408C9C3027CB75EAD4C7F(TArray<class UCheckBox*> ChildChangedArray, int32_t CheckedChildIndex);
 		void Construct();
+		void Destruct();
 		class FString GetModuleName();
 		void PreConstruct(bool IsDesignTime);
 		void ExecuteUbergraph_UI_MicroPhoneSetting(int32_t EntryPoint);

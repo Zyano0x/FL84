@@ -121,15 +121,56 @@ namespace CG
 	};
 
 	/**
-	 * BoneSkeletalMesh R_Weapon_WL02_Set00_LOD0.R_Weapon_WL02_Set00_LOD0
+	 * BoneSkeletalMesh R_Weapon_Psm03_Set00_LOD0.R_Weapon_Psm03_Set00_LOD0
 	 */
-	enum class EBone_R_Weapon_WL02_Set00_LOD0 : uint8_t
+	enum class EBone_R_Weapon_Psm03_Set00_LOD0 : uint8_t
 	{
 		Weapon_root = 0,
 		Weapon_body = 1,
 		Weapon01    = 2,
-		Bullet      = 3,
-		Handler     = 4
+		Mag         = 3
+	};
+
+	/**
+	 * BoneSkeletalMesh R_BI_DuckDoll.R_BI_DuckDoll
+	 */
+	enum class EBone_R_BI_DuckDoll : uint8_t
+	{
+		Root                 = 0,
+		Bone_Body_01         = 1,
+		Bone_Spine_01        = 2,
+		Bone_Head_01         = 3,
+		Bone_Hat_01          = 4,
+		Bone_Hat_02          = 5,
+		Bone_Eye_R_01        = 6,
+		Bone_Eye_R_02        = 7,
+		Bone_Eye_L_01        = 8,
+		Bone_Eye_L_02        = 9,
+		Bone_Ctrl_01         = 10,
+		Bone_Clavicle_R      = 11,
+		Bone_UpperArm_R      = 12,
+		Bone_LowerArm_R      = 13,
+		Bone_Hand_R          = 14,
+		Bone_Thamb_R_01      = 15,
+		Bone_Thamb_R_02      = 16,
+		Bone_Index_R_01      = 17,
+		Bone_Index_R_02      = 18,
+		Bone_Clavicle_L      = 19,
+		Bone_UpperArm_L      = 20,
+		Bone_LowerArm_L      = 21,
+		Bone_Hand_L          = 22,
+		Bone_Thamb_L_01      = 23,
+		Bone_Thamb_L_02      = 24,
+		Bone_Index_L_01      = 25,
+		Bone_Index_L_02      = 26,
+		Bone_Foot_L          = 27,
+		Bone_Leg_L           = 28,
+		Bone_Foot_R          = 29,
+		Bone_Leg_R           = 30,
+		Bone_Box_Root        = 31,
+		Bone_Box_01_Cover    = 32,
+		Bone_Box_03_Cover_03 = 33,
+		Bone_Box_03_Cover_02 = 34
 	};
 
 }

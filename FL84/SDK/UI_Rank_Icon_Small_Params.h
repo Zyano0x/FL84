@@ -21,21 +21,6 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnInitialized
-	 */
-	struct UUI_Rank_Icon_Small_C_OnInitialized_Params
-	{	};
-
-	/**
-	 * Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.FormatViewCopy
-	 */
-	struct UUI_Rank_Icon_Small_C_FormatViewCopy_Params
-	{
-	public:
-		int32_t                                                    LevelID;                                                 // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	};
-
-	/**
 	 * Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnSolarUIOpened
 	 */
 	struct UUI_Rank_Icon_Small_C_OnSolarUIOpened_Params
@@ -45,6 +30,21 @@ namespace CG
 	 * Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.FormatViewJustIconCopy
 	 */
 	struct UUI_Rank_Icon_Small_C_FormatViewJustIconCopy_Params
+	{
+	public:
+		int32_t                                                    LevelID;                                                 // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
+
+	/**
+	 * Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnInitialized
+	 */
+	struct UUI_Rank_Icon_Small_C_OnInitialized_Params
+	{	};
+
+	/**
+	 * Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.FormatViewCopy
+	 */
+	struct UUI_Rank_Icon_Small_C_FormatViewCopy_Params
 	{
 	public:
 		int32_t                                                    LevelID;                                                 // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

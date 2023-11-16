@@ -23,9 +23,9 @@ namespace CG
 	public:
 		TArray<unsigned char>                                      CookedCompressedBytes;                                   // 0x0028(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		TArray<uint64_t>                                           CookedAnimSequenceMappings;                              // 0x0038(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_HGVI[0x108];                                 // 0x0048(0x0108) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_9OQ4[0x108];                                 // 0x0048(0x0108) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		uint32_t                                                   MaxStreamRequestSizeKB;                                  // 0x0150(0x0004) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_QNIR[0x4];                                   // 0x0154(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_QFIH[0x4];                                   // 0x0154(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		void STATIC_SetVisualFidelity(class UObject* WorldContextObject, const struct FLatentActionInfo& LatentInfo, class UAnimationCompressionLibraryDatabase* DatabaseAsset, EACLVisualFidelityChangeResult* Result, EACLVisualFidelity VisualFidelity);

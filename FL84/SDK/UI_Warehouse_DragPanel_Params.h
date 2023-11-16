@@ -26,9 +26,9 @@ namespace CG
 	};
 
 	/**
-	 * Function UI_Warehouse_DragPanel.UI_Warehouse_DragPanel_C.OnMouseMove
+	 * Function UI_Warehouse_DragPanel.UI_Warehouse_DragPanel_C.OnMouseButtonUp
 	 */
-	struct UUI_Warehouse_DragPanel_C_OnMouseMove_Params
+	struct UUI_Warehouse_DragPanel_C_OnMouseButtonUp_Params
 	{
 	public:
 		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -43,9 +43,9 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Warehouse_DragPanel.UI_Warehouse_DragPanel_C.OnMouseButtonUp
+	 * Function UI_Warehouse_DragPanel.UI_Warehouse_DragPanel_C.OnMouseMove
 	 */
-	struct UUI_Warehouse_DragPanel_C_OnMouseButtonUp_Params
+	struct UUI_Warehouse_DragPanel_C_OnMouseMove_Params
 	{
 	public:
 		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)

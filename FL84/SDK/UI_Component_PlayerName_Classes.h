@@ -25,16 +25,16 @@ namespace CG
 		class USolarTextBlock*                                     Txt_PlayerName;                                          // 0x0408(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		struct FS_VIP_TxtInfo                                      DefaultTxtInfo;                                          // 0x0410(0x0088) Edit, BlueprintVisible, HasGetValueTypeHash
 		E_Type_PlayerName_Vip_Color                                VIP_State;                                               // 0x0498(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_CSK9[0x7];                                   // 0x0499(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_4VTS[0x7];                                   // 0x0499(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<E_Type_PlayerName_Vip_Color, struct FS_VIP_TxtInfo>   VIP_TxtInfos;                                            // 0x04A0(0x0050) Edit, BlueprintVisible
 		bool                                                       Cheater;                                                 // 0x04F0(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_UZWU[0x7];                                   // 0x04F1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_P1A0[0x7];                                   // 0x04F1(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FS_VIP_TxtInfo                                      CheatTxtInfo;                                            // 0x04F8(0x0088) Edit, BlueprintVisible, HasGetValueTypeHash
 		bool                                                       Killed;                                                  // 0x0580(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_P71L[0x7];                                   // 0x0581(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_OSQQ[0x7];                                   // 0x0581(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FS_VIP_TxtInfo                                      KilledTxtInfo;                                           // 0x0588(0x0088) Edit, BlueprintVisible, HasGetValueTypeHash
 		bool                                                       bSpecialSelf;                                            // 0x0610(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_YCDC[0x7];                                   // 0x0611(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_Z2ZV[0x7];                                   // 0x0611(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FS_VIP_TxtInfo                                      SpecialSelfTxtInfo;                                      // 0x0618(0x0088) Edit, BlueprintVisible, HasGetValueTypeHash
 		struct FS_VIP_TxtInfo                                      CurTxtInfo;                                              // 0x06A0(0x0088) Edit, BlueprintVisible, HasGetValueTypeHash
 		class FText                                                DefaultText;                                             // 0x0728(0x0018) Edit, BlueprintVisible

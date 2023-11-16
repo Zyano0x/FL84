@@ -21,7 +21,7 @@ namespace CG
 	struct FDTStruct
 	{
 	public:
-		unsigned char                                              UnknownData_DBDH[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_3M9P[0x1];                                   // 0x0000(0x0001) MISSED OFFSET (PADDING)
 	};
 
 }

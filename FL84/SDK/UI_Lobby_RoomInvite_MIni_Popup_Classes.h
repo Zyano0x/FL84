@@ -96,11 +96,11 @@ namespace CG
 		bool                                                       IsNeedShow;                                              // 0x0492(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
-		void OnClicked_B8F83EDD4AD4524B8793E4AB9AF525AE();
-		void OnClicked_F9D6D86245E381E1E5A5F3B03D8BF523();
-		void OnClicked_B33CD8E3433A64C2EDD897A47C18C314();
-		void Destruct();
+		void OnClicked_B5A36A8B490D1E4DFABE44BE8AA7DA70();
+		void OnClicked_00868CDE49C0C5982DC1A89F1054F6F0();
+		void OnClicked_E9F0DAC84A9216E0A4AEEB9123E2EA56();
 		void Construct();
+		void Destruct();
 		class FString GetModuleName();
 		void Update_Btn(ET_Type_Button NewParam);
 		void SetType(ET_Type_System_Push Type);

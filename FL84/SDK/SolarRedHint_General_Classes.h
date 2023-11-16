@@ -32,8 +32,8 @@ namespace CG
 	public:
 		void OnSetHintDataCompleteCopy();
 		void ConstructCopy();
-		void Destruct();
 		void OnInitialized();
+		void Destruct();
 		class FString GetModuleName();
 		void OnSetHintDataComplete();
 		void SetStyle(E_Type_RedHint Type);

@@ -15,29 +15,24 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_Banner.UI_Lobby_Banner_C.OnURLDownloadFinish_26244C4A40852915158CCC8672F6AC3A
+	 * DelegateFunction UI_Lobby_Banner.UI_Lobby_Banner_C.OnURLDownloadFinish_7AA01EEE4400C2C96514EB95F17F99B6
 	 */
-	struct UUI_Lobby_Banner_C_OnURLDownloadFinish_26244C4A40852915158CCC8672F6AC3A_Params
+	struct UUI_Lobby_Banner_C_OnURLDownloadFinish_7AA01EEE4400C2C96514EB95F17F99B6_Params
 	{
 	public:
 		bool                                                       bSuccess;                                                // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnMouseButtonDown
-	 */
-	struct UUI_Lobby_Banner_C_OnMouseButtonDown_Params
-	{
-	public:
-		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-		struct FPointerEvent                                       MouseEvent;                                              // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-	};
-
-	/**
 	 * Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnSolarUIOpened
 	 */
 	struct UUI_Lobby_Banner_C_OnSolarUIOpened_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnSolarUIClosed
+	 */
+	struct UUI_Lobby_Banner_C_OnSolarUIClosed_Params
 	{	};
 
 	/**
@@ -52,10 +47,15 @@ namespace CG
 	};
 
 	/**
-	 * Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnSolarUIClosed
+	 * Function UI_Lobby_Banner.UI_Lobby_Banner_C.OnMouseButtonDown
 	 */
-	struct UUI_Lobby_Banner_C_OnSolarUIClosed_Params
-	{	};
+	struct UUI_Lobby_Banner_C_OnMouseButtonDown_Params
+	{
+	public:
+		struct FGeometry                                           MyGeometry;                                              // 0x0000(0x0038)  (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+		struct FPointerEvent                                       MouseEvent;                                              // 0x0038(0x0070)  (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+		struct FEventReply                                         ReturnValue;                                             // 0x00A8(0x00B8)  (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	};
 
 	/**
 	 * Function UI_Lobby_Banner.UI_Lobby_Banner_C.GetModuleName
@@ -110,7 +110,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_Q5XD[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_GD0M[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

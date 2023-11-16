@@ -15,12 +15,6 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Component_Item.UI_Component_Item_C.PlayEnterAnim
-	 */
-	struct UUI_Component_Item_C_PlayEnterAnim_Params
-	{	};
-
-	/**
 	 * Function UI_Component_Item.UI_Component_Item_C.BP_OnItemSelectionChangedCopy
 	 */
 	struct UUI_Component_Item_C_BP_OnItemSelectionChangedCopy_Params
@@ -37,6 +31,12 @@ namespace CG
 	public:
 		class UObject*                                             ListItemObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
+
+	/**
+	 * Function UI_Component_Item.UI_Component_Item_C.PlayEnterAnim
+	 */
+	struct UUI_Component_Item_C_PlayEnterAnim_Params
+	{	};
 
 	/**
 	 * Function UI_Component_Item.UI_Component_Item_C.GetModuleName

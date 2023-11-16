@@ -96,12 +96,12 @@ namespace CG
 		ET_Type_Button                                             Btn_Type;                                                // 0x0632(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void Delegate_9F31278B48E620C03A6DFEB83F69E342();
-		void OnClicked_F9D8D9824900FE2FC73C67AEE1F4ED17();
-		void OnClicked_FE0B0CCF409DF3793B041199631D798B();
-		void OnClicked_2DC3E53C435D201391F165A8A958BA70();
-		void Destruct();
+		void Delegate_E10E804242E41C24547A9085B8CA03D0();
+		void OnClicked_BE6C2E0842D90957D3E82EB3B0880014();
+		void OnClicked_F38AC1AB4CE67AB75D9131AA5A775A31();
+		void OnClicked_1217C7F04BEAA850E33699B003FC39C0();
 		void Construct();
+		void Destruct();
 		class FString GetModuleName();
 		void Update_Btn(ET_Type_Button NewParam);
 		void SetType(ET_Type_System_Push NewParam);

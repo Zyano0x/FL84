@@ -33,7 +33,7 @@ namespace CG
 		struct FAnimNode_SequencePlayer                            AnimGraphNode_SequencePlayer;                            // 0x04F0(0x0078) NativeAccessSpecifierPublic
 		struct FAnimNode_StateResult                               AnimGraphNode_StateResult;                               // 0x0568(0x0030) NativeAccessSpecifierPublic
 		struct FAnimNode_StateMachine                              AnimGraphNode_StateMachine;                              // 0x0598(0x00B0) NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_6ELG[0x8];                                   // 0x0648(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_LX2S[0x8];                                   // 0x0648(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		void EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_Summon_Set01_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_F2855A6E43032126BE9962A2F5370D30();

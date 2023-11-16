@@ -15,9 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnClicked_2E06783A4DB0436D99A641A663908B97
+	 * DelegateFunction UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnClicked_93007EFC4761A5177A33FFBEB7D7DF2F
 	 */
-	struct UUI_Lobby_RandomPack_C_OnClicked_2E06783A4DB0436D99A641A663908B97_Params
+	struct UUI_Lobby_RandomPack_C_OnClicked_93007EFC4761A5177A33FFBEB7D7DF2F_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnSolarUIClosed
+	 */
+	struct UUI_Lobby_RandomPack_C_OnSolarUIClosed_Params
 	{	};
 
 	/**
@@ -30,12 +36,6 @@ namespace CG
 	 * Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnSolarUIOpened
 	 */
 	struct UUI_Lobby_RandomPack_C_OnSolarUIOpened_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnSolarUIClosed
-	 */
-	struct UUI_Lobby_RandomPack_C_OnSolarUIClosed_Params
 	{	};
 
 	/**

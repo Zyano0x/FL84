@@ -55,8 +55,8 @@ namespace MouseController
 	{
 		SPOOF_FUNC
 
-			// windows 8.1 / windows 10
-			LPVOID NtUserInjectMouseInput_Addr = GetProcAddress(GetModuleHandle(L"win32u"), "NtUserInjectMouseInput");
+		// windows 8.1 / windows 10
+		LPVOID NtUserInjectMouseInput_Addr = GetProcAddress(GetModuleHandle(L"win32u"), "NtUserInjectMouseInput");
 		if (!NtUserInjectMouseInput_Addr)
 		{
 			NtUserInjectMouseInput_Addr = GetProcAddress(GetModuleHandle(L"user32"), "NtUserInjectMouseInput");
@@ -78,14 +78,13 @@ namespace MouseController
 	{
 		SPOOF_FUNC
 
-			LPVOID NtUserInjectMouseInput_Spoof = VirtualAlloc(0, 0x1000, MEM_COMMIT, PAGE_EXECUTE_READWRITE); // allocate space for syscall
+		LPVOID NtUserInjectMouseInput_Spoof = VirtualAlloc(0, 0x1000, MEM_COMMIT, PAGE_EXECUTE_READWRITE); // allocate space for syscall
 		if (!NtUserInjectMouseInput_Spoof)
 			return FALSE;
 
 		DecryptFunctionBytes(NtUserInjectMouseInput_Bytes, 30);
 		memcpy(NtUserInjectMouseInput_Spoof, NtUserInjectMouseInput_Bytes, 30); // copy syscall
 		EncryptFunctionBytes(NtUserInjectMouseInput_Bytes, 30);
-
 
 		NTSTATUS Result = reinterpret_cast<NTSTATUS(NTAPI*)(InjectedInputMouseInfo*, int)>(NtUserInjectMouseInput_Spoof)(input, count); // calling spoofed function
 		ZeroMemory(NtUserInjectMouseInput_Spoof, 0x1000); // clean address

@@ -31,9 +31,9 @@ namespace CG
 		E_Type_State_Desktop                                       StateDesktop;                                            // 0x0438(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnClicked_E722E5044F71ED683133AF8A0D546EA0();
-		void Construct();
+		void OnClicked_C5F82F29401519B152A0039DB506B938();
 		void Destruct();
+		void Construct();
 		void OnInitialized();
 		class FString GetModuleName();
 		void PreConstruct(bool IsDesignTime);

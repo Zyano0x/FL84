@@ -21,7 +21,7 @@ namespace CG
 	class UMeshWidgetUWidget : public UWidget
 	{
 	public:
-		unsigned char                                              UnknownData_B9HI[0x10];                                  // 0x0138(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_4TRP[0x10];                                  // 0x0138(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -36,7 +36,7 @@ namespace CG
 	public:
 		class USlateVectorArtData*                                 TrailMeshAsset;                                          // 0x0148(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    MaxParticleCount;                                        // 0x0150(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_LQQR[0x34];                                  // 0x0154(0x0034) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_7J3D[0x34];                                  // 0x0154(0x0034) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -51,7 +51,7 @@ namespace CG
 	public:
 		class UMaterialInterface*                                  BaseMaterial;                                            // 0x0148(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    NumFloat4PerInstance;                                    // 0x0150(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_UCX5[0x1C];                                  // 0x0154(0x001C) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_J45Y[0x1C];                                  // 0x0154(0x001C) MISSED OFFSET (PADDING)
 
 	public:
 		void SetInstanceNum(int32_t NewNum);
@@ -68,7 +68,7 @@ namespace CG
 	{
 	public:
 		class UMaterialInterface*                                  BaseMaterial;                                            // 0x0148(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_G6I5[0x28];                                  // 0x0150(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_WDIR[0x28];                                  // 0x0150(0x0028) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -82,7 +82,7 @@ namespace CG
 	{
 	public:
 		class UMaterialInterface*                                  BaseMaterial;                                            // 0x0148(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_S5VJ[0x28];                                  // 0x0150(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_SK9E[0x28];                                  // 0x0150(0x0028) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

@@ -15,12 +15,6 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Lobby_Mention_Container.UI_Lobby_Mention_Container_C.OnSolarUIOpened
-	 */
-	struct UUI_Lobby_Mention_Container_C_OnSolarUIOpened_Params
-	{	};
-
-	/**
 	 * Function UI_Lobby_Mention_Container.UI_Lobby_Mention_Container_C.OnSolarUIClosed
 	 */
 	struct UUI_Lobby_Mention_Container_C_OnSolarUIClosed_Params
@@ -30,6 +24,12 @@ namespace CG
 	 * Function UI_Lobby_Mention_Container.UI_Lobby_Mention_Container_C.OnInitialized
 	 */
 	struct UUI_Lobby_Mention_Container_C_OnInitialized_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_Mention_Container.UI_Lobby_Mention_Container_C.OnSolarUIOpened
+	 */
+	struct UUI_Lobby_Mention_Container_C_OnSolarUIOpened_Params
 	{	};
 
 	/**

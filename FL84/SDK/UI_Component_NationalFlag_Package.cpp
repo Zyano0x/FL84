@@ -13,77 +13,25 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.SetDefaultNationalFlag
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.IsExclusiveFlagId
+	 * 		Flags  -> (Event, Protected, BlueprintEvent, Const)
+	 * Parameters:
+	 * 		int32_t                                            InFlagID                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UUI_Component_NationalFlag_C::SetDefaultNationalFlag()
+	bool UUI_Component_NationalFlag_C::IsExclusiveFlagId(int32_t InFlagID)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.SetDefaultNationalFlag"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.IsExclusiveFlagId"));
 		
-		UUI_Component_NationalFlag_C_SetDefaultNationalFlag_Params params {};
+		UUI_Component_NationalFlag_C_IsExclusiveFlagId_Params params {};
+		params.InFlagID = InFlagID;
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.LoadClanFlagByUrl
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void UUI_Component_NationalFlag_C::LoadClanFlagByUrl()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.LoadClanFlagByUrl"));
 		
-		UUI_Component_NationalFlag_C_LoadClanFlagByUrl_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.Destruct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Component_NationalFlag_C::Destruct()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.Destruct"));
-		
-		UUI_Component_NationalFlag_C_Destruct_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.Construct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Component_NationalFlag_C::Construct()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.Construct"));
-		
-		UUI_Component_NationalFlag_C_Construct_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
+		return params.ReturnValue;
 	}
 
 	/**
@@ -130,36 +78,16 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.OnSolarUIOpened
-	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.Destruct
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
-	void UUI_Component_NationalFlag_C::OnSolarUIOpened()
+	void UUI_Component_NationalFlag_C::Destruct()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.OnSolarUIOpened"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.Destruct"));
 		
-		UUI_Component_NationalFlag_C_OnSolarUIOpened_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.SetDefaultClanFlag
-	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
-	 */
-	void UUI_Component_NationalFlag_C::SetDefaultClanFlag()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.SetDefaultClanFlag"));
-		
-		UUI_Component_NationalFlag_C_SetDefaultClanFlag_Params params {};
+		UUI_Component_NationalFlag_C_Destruct_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -188,30 +116,102 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.IsExclusiveFlagId
-	 * 		Flags  -> (Event, Protected, BlueprintEvent, Const)
-	 * Parameters:
-	 * 		int32_t                                            InFlagID                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.SetDefaultNationalFlag
+	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
-	bool UUI_Component_NationalFlag_C::IsExclusiveFlagId(int32_t InFlagID)
+	void UUI_Component_NationalFlag_C::SetDefaultNationalFlag()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.IsExclusiveFlagId"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.SetDefaultNationalFlag"));
 		
-		UUI_Component_NationalFlag_C_IsExclusiveFlagId_Params params {};
-		params.InFlagID = InFlagID;
+		UUI_Component_NationalFlag_C_SetDefaultNationalFlag_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
 		fn->FunctionFlags = flags;
-		
-		return params.ReturnValue;
 	}
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.SetDefaultClanFlag
+	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 */
+	void UUI_Component_NationalFlag_C::SetDefaultClanFlag()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.SetDefaultClanFlag"));
+		
+		UUI_Component_NationalFlag_C_SetDefaultClanFlag_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.Construct
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_Component_NationalFlag_C::Construct()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.Construct"));
+		
+		UUI_Component_NationalFlag_C_Construct_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.OnSolarUIOpened
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 */
+	void UUI_Component_NationalFlag_C::OnSolarUIOpened()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.OnSolarUIOpened"));
+		
+		UUI_Component_NationalFlag_C_OnSolarUIOpened_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.LoadClanFlagByUrl
+	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
+	 */
+	void UUI_Component_NationalFlag_C::LoadClanFlagByUrl()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.LoadClanFlagByUrl"));
+		
+		UUI_Component_NationalFlag_C_LoadClanFlagByUrl_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -232,7 +232,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.SetEmptyClan
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -251,7 +251,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.SetFlagType
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -273,7 +273,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.Set UI State
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -292,7 +292,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -314,7 +314,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.SetNationalFlagType
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -333,7 +333,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.SetClanFlagType
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -352,7 +352,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Component_NationalFlag.UI_Component_NationalFlag_C.ExecuteUbergraph_UI_Component_NationalFlag
 	 * 		Flags  -> (Final)
 	 * Parameters:

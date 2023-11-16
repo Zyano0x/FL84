@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function SolarFramework.SolarContainer.ReceiveInitialize
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -31,7 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function SolarFramework.SolarContainer.ReceiveDeinitialize
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 */
@@ -92,7 +92,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function SolarFramework.SolarArchitecture.OnScopeChanged
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -116,7 +116,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02A59690
+	 * 		RVA    -> 0x02A5A300
 	 * 		Name   -> Function SolarFramework.SolarArchitecture.IsScopeSettlement
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -138,7 +138,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02A59660
+	 * 		RVA    -> 0x02A5A2D0
 	 * 		Name   -> Function SolarFramework.SolarArchitecture.IsScopeLogin
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -160,7 +160,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02A59630
+	 * 		RVA    -> 0x02A5A2A0
 	 * 		Name   -> Function SolarFramework.SolarArchitecture.IsScopeLobby
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -182,7 +182,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02A59600
+	 * 		RVA    -> 0x02A5A270
 	 * 		Name   -> Function SolarFramework.SolarArchitecture.IsScopeBattle
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -204,7 +204,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02A59570
+	 * 		RVA    -> 0x02A5A1E0
 	 * 		Name   -> Function SolarFramework.SolarArchitecture.IsInScope
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -229,7 +229,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02A594D0
+	 * 		RVA    -> 0x02A5A140
 	 * 		Name   -> Function SolarFramework.SolarArchitecture.GetModel
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -254,7 +254,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02A59430
+	 * 		RVA    -> 0x02A5A0A0
 	 * 		Name   -> Function SolarFramework.SolarArchitecture.GetManager
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -279,7 +279,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02A59410
+	 * 		RVA    -> 0x02A5A080
 	 * 		Name   -> Function SolarFramework.SolarArchitecture.GetCurScope
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

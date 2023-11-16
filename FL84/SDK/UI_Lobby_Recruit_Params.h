@@ -15,15 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_4FD15E0A4E6B5E0B701BE281ECC04A9F
+	 * DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_D7944B3949AB285D968962BC7603406D
 	 */
-	struct UUI_Lobby_Recruit_C_OnClicked_4FD15E0A4E6B5E0B701BE281ECC04A9F_Params
+	struct UUI_Lobby_Recruit_C_OnClicked_D7944B3949AB285D968962BC7603406D_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_885E034E410E2D60DD211CAE65383447
+	 * DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_E2DFC7754A51D967EA683A9437B3022F
 	 */
-	struct UUI_Lobby_Recruit_C_OnClicked_885E034E410E2D60DD211CAE65383447_Params
+	struct UUI_Lobby_Recruit_C_OnClicked_E2DFC7754A51D967EA683A9437B3022F_Params
 	{	};
 
 	/**
@@ -77,7 +77,7 @@ namespace CG
 	public:
 		E_Type_State_Desktop                                       StateDesktopInvite;                                      // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		E_Type_State_Desktop                                       StateDesktopRecruit;                                     // 0x0001(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_AMSR[0x2];                                   // 0x0002(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_Q26D[0x2];                                   // 0x0002(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**

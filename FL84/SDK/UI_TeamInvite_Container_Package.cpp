@@ -33,6 +33,26 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnShow
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 */
+	void UUI_TeamInvite_Container_C::OnShow()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnShow"));
+		
+		UUI_TeamInvite_Container_C_OnShow_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B6A060
 	 * 		Name   -> Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnHide
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -53,16 +73,16 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnShow
+	 * 		Name   -> Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnSolarUIOpened
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
-	void UUI_TeamInvite_Container_C::OnShow()
+	void UUI_TeamInvite_Container_C::OnSolarUIOpened()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnShow"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnSolarUIOpened"));
 		
-		UUI_TeamInvite_Container_C_OnShow_Params params {};
+		UUI_TeamInvite_Container_C_OnSolarUIOpened_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		fn->FunctionFlags |= 0x00000400;
@@ -91,27 +111,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnSolarUIOpened
-	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
-	 */
-	void UUI_TeamInvite_Container_C::OnSolarUIOpened()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnSolarUIOpened"));
-		
-		UUI_TeamInvite_Container_C_OnSolarUIOpened_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */

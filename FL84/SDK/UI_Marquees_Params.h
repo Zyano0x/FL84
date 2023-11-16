@@ -15,6 +15,12 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function UI_Marquees.UI_Marquees_C.OnSolarUIOpened
+	 */
+	struct UUI_Marquees_C_OnSolarUIOpened_Params
+	{	};
+
+	/**
 	 * Function UI_Marquees.UI_Marquees_C.ReceiveTick
 	 */
 	struct UUI_Marquees_C_ReceiveTick_Params
@@ -34,12 +40,6 @@ namespace CG
 	 * Function UI_Marquees.UI_Marquees_C.OnSolarUIClosed
 	 */
 	struct UUI_Marquees_C_OnSolarUIClosed_Params
-	{	};
-
-	/**
-	 * Function UI_Marquees.UI_Marquees_C.OnSolarUIOpened
-	 */
-	struct UUI_Marquees_C_OnSolarUIOpened_Params
 	{	};
 
 	/**

@@ -13,16 +13,16 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Delegate_9F31278B48E620C03A6DFEB83F69E342
+	 * 		Name   -> DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Delegate_E10E804242E41C24547A9085B8CA03D0
 	 * 		Flags  -> (Public, Delegate)
 	 */
-	void UUI_Lobby_RoomInvite_Popup_C::Delegate_9F31278B48E620C03A6DFEB83F69E342()
+	void UUI_Lobby_RoomInvite_Popup_C::Delegate_E10E804242E41C24547A9085B8CA03D0()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Delegate_9F31278B48E620C03A6DFEB83F69E342"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Delegate_E10E804242E41C24547A9085B8CA03D0"));
 		
-		UUI_Lobby_RoomInvite_Popup_C_Delegate_9F31278B48E620C03A6DFEB83F69E342_Params params {};
+		UUI_Lobby_RoomInvite_Popup_C_Delegate_E10E804242E41C24547A9085B8CA03D0_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -32,16 +32,16 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_F9D8D9824900FE2FC73C67AEE1F4ED17
+	 * 		Name   -> DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_BE6C2E0842D90957D3E82EB3B0880014
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_RoomInvite_Popup_C::OnClicked_F9D8D9824900FE2FC73C67AEE1F4ED17()
+	void UUI_Lobby_RoomInvite_Popup_C::OnClicked_BE6C2E0842D90957D3E82EB3B0880014()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_F9D8D9824900FE2FC73C67AEE1F4ED17"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_BE6C2E0842D90957D3E82EB3B0880014"));
 		
-		UUI_Lobby_RoomInvite_Popup_C_OnClicked_F9D8D9824900FE2FC73C67AEE1F4ED17_Params params {};
+		UUI_Lobby_RoomInvite_Popup_C_OnClicked_BE6C2E0842D90957D3E82EB3B0880014_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -51,16 +51,16 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_FE0B0CCF409DF3793B041199631D798B
+	 * 		Name   -> DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_F38AC1AB4CE67AB75D9131AA5A775A31
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_RoomInvite_Popup_C::OnClicked_FE0B0CCF409DF3793B041199631D798B()
+	void UUI_Lobby_RoomInvite_Popup_C::OnClicked_F38AC1AB4CE67AB75D9131AA5A775A31()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_FE0B0CCF409DF3793B041199631D798B"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_F38AC1AB4CE67AB75D9131AA5A775A31"));
 		
-		UUI_Lobby_RoomInvite_Popup_C_OnClicked_FE0B0CCF409DF3793B041199631D798B_Params params {};
+		UUI_Lobby_RoomInvite_Popup_C_OnClicked_F38AC1AB4CE67AB75D9131AA5A775A31_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -70,35 +70,16 @@ namespace CG
 	/**
 	 * Function:
 	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_2DC3E53C435D201391F165A8A958BA70
+	 * 		Name   -> Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_1217C7F04BEAA850E33699B003FC39C0
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */
-	void UUI_Lobby_RoomInvite_Popup_C::OnClicked_2DC3E53C435D201391F165A8A958BA70()
+	void UUI_Lobby_RoomInvite_Popup_C::OnClicked_1217C7F04BEAA850E33699B003FC39C0()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_2DC3E53C435D201391F165A8A958BA70"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.OnClicked_1217C7F04BEAA850E33699B003FC39C0"));
 		
-		UUI_Lobby_RoomInvite_Popup_C_OnClicked_2DC3E53C435D201391F165A8A958BA70_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Destruct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Lobby_RoomInvite_Popup_C::Destruct()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Destruct"));
-		
-		UUI_Lobby_RoomInvite_Popup_C_Destruct_Params params {};
+		UUI_Lobby_RoomInvite_Popup_C_OnClicked_1217C7F04BEAA850E33699B003FC39C0_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -126,7 +107,26 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x00B6A060
+	 * 		Name   -> Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Destruct
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_Lobby_RoomInvite_Popup_C::Destruct()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Destruct"));
+		
+		UUI_Lobby_RoomInvite_Popup_C_Destruct_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -147,7 +147,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.Update_Btn
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -169,7 +169,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.SetType
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -191,7 +191,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -213,7 +213,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D64A40
+	 * 		RVA    -> 0x02D656B0
 	 * 		Name   -> Function UI_Lobby_RoomInvite_Popup.UI_Lobby_RoomInvite_Popup_C.ExecuteUbergraph_UI_Lobby_RoomInvite_Popup
 	 * 		Flags  -> (Final)
 	 * Parameters:

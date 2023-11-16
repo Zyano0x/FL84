@@ -21,7 +21,7 @@ namespace CG
 	class UBP_9A01_CameraAnim_C : public UCameraShake
 	{
 	public:
-		unsigned char                                              UnknownData_COPX[0x8];                                   // 0x0158(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_TH7R[0x8];                                   // 0x0158(0x0008) Fix Super Size
 
 	public:
 		static UClass* StaticClass();
