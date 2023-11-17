@@ -772,10 +772,7 @@ void XXX::Misc()
 	{	
 		if (_mainGUI.GetKeyPress(VK_PRIOR, false)) LocalSpectateInfo->ServerBeginSpectateOtherPlayer();
 
-		if (_mainGUI.GetKeyPress(VK_NEXT, false))
-		{
-			LocalSpectateInfo->ServerStopSpectateOtherPlayer();
-		}
+		if (_mainGUI.GetKeyPress(VK_NEXT, false)) LocalSpectateInfo->ServerStopSpectateOtherPlayer();
 	}
 
 	if (_profiler.gStopSpectator.Custom.bValue)
