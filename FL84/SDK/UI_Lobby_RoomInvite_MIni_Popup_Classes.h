@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -96,9 +96,9 @@ namespace CG
 		bool                                                       IsNeedShow;                                              // 0x0492(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
-		void OnClicked_B5A36A8B490D1E4DFABE44BE8AA7DA70();
-		void OnClicked_00868CDE49C0C5982DC1A89F1054F6F0();
-		void OnClicked_E9F0DAC84A9216E0A4AEEB9123E2EA56();
+		void OnClicked_1245F55D465D0B8D1782588247E23EEC();
+		void OnClicked_4FDFA4F846F684A5174C5B9868C14C62();
+		void OnClicked_D1ADFC0A41292E1617744684E4E39A7B();
 		void Construct();
 		void Destruct();
 		class FString GetModuleName();

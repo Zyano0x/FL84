@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -30,13 +30,13 @@ namespace CG
 		class USolarRedHint_General_C*                             RedHint_Warehouse;                                       // 0x0430(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnClicked_F3870C954A3DAFED513856B2FD00413D();
-		void OnClicked_66374DAF4F697E07D8697D901AC700E6();
-		void OnClicked_18C5CC2A4FEB5927AF00F095EF7F6761();
+		void OnClicked_1521EA384D47609111217A97CC3DE3AB();
+		void OnClicked_E37CF23A4803A198948793A86357E663();
+		void OnClicked_047FC2CE4B1E2A38BC549A9F4DE76B3A();
 		void Destruct();
-		void Construct();
 		void OnSolarUIClosed();
 		void OnSolarUIOpened();
+		void Construct();
 		class FString GetModuleName();
 		void PreConstruct(bool IsDesignTime);
 		void ExecuteUbergraph_UI_Lobby_Mainmenu(int32_t EntryPoint);

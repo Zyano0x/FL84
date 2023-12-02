@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	struct FSolarAggregationTickFunction : public FTickFunction
 	{
 	public:
-		unsigned char                                              UnknownData_TPYV[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_7O0K[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 	};
 
 }

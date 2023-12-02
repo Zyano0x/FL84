@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,20 +12,20 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnMouseButtonDownEvent_4B58E0224142357CAB1CDEB00E5DFF9D
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnMouseButtonDownEvent_8206C22C41FD0E455D16A9BE84F59E88
 	 * 		Flags  -> (Public, Delegate, HasOutParms)
 	 * Parameters:
 	 * 		struct FGeometry                                   MyGeometry                                                 (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		struct FPointerEvent                               MouseEvent                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	struct FEventReply UUI_MicroPhoneSetting_C::OnMouseButtonDownEvent_4B58E0224142357CAB1CDEB00E5DFF9D(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
+	struct FEventReply UUI_MicroPhoneSetting_C::OnMouseButtonDownEvent_8206C22C41FD0E455D16A9BE84F59E88(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnMouseButtonDownEvent_4B58E0224142357CAB1CDEB00E5DFF9D"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnMouseButtonDownEvent_8206C22C41FD0E455D16A9BE84F59E88"));
 		
-		UUI_MicroPhoneSetting_C_OnMouseButtonDownEvent_4B58E0224142357CAB1CDEB00E5DFF9D_Params params {};
+		UUI_MicroPhoneSetting_C_OnMouseButtonDownEvent_8206C22C41FD0E455D16A9BE84F59E88_Params params {};
 		params.MyGeometry = MyGeometry;
 		params.MouseEvent = MouseEvent;
 		
@@ -38,20 +38,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnMouseButtonDownEvent_B9D5A2FE44D77356BD1A02A0742A8CC9
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnMouseButtonDownEvent_461F9F934EAB73C79DDB2CA931A66733
 	 * 		Flags  -> (Public, Delegate, HasOutParms)
 	 * Parameters:
 	 * 		struct FGeometry                                   MyGeometry                                                 (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 * 		struct FPointerEvent                               MouseEvent                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	 */
-	struct FEventReply UUI_MicroPhoneSetting_C::OnMouseButtonDownEvent_B9D5A2FE44D77356BD1A02A0742A8CC9(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
+	struct FEventReply UUI_MicroPhoneSetting_C::OnMouseButtonDownEvent_461F9F934EAB73C79DDB2CA931A66733(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnMouseButtonDownEvent_B9D5A2FE44D77356BD1A02A0742A8CC9"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnMouseButtonDownEvent_461F9F934EAB73C79DDB2CA931A66733"));
 		
-		UUI_MicroPhoneSetting_C_OnMouseButtonDownEvent_B9D5A2FE44D77356BD1A02A0742A8CC9_Params params {};
+		UUI_MicroPhoneSetting_C_OnMouseButtonDownEvent_461F9F934EAB73C79DDB2CA931A66733_Params params {};
 		params.MyGeometry = MyGeometry;
 		params.MouseEvent = MouseEvent;
 		
@@ -64,20 +64,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnStateChangedEvent_EF6964914BA6B627781E1EA75A87DDBA
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnStateChangedEvent_5C22B51E4690382810BFC89F0306DB6B
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
 	 * 		TArray<class UCheckBox*>                           ChildChangedArray                                          (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            CheckedChildIndex                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UUI_MicroPhoneSetting_C::OnStateChangedEvent_EF6964914BA6B627781E1EA75A87DDBA(TArray<class UCheckBox*> ChildChangedArray, int32_t CheckedChildIndex)
+	void UUI_MicroPhoneSetting_C::OnStateChangedEvent_5C22B51E4690382810BFC89F0306DB6B(TArray<class UCheckBox*> ChildChangedArray, int32_t CheckedChildIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnStateChangedEvent_EF6964914BA6B627781E1EA75A87DDBA"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnStateChangedEvent_5C22B51E4690382810BFC89F0306DB6B"));
 		
-		UUI_MicroPhoneSetting_C_OnStateChangedEvent_EF6964914BA6B627781E1EA75A87DDBA_Params params {};
+		UUI_MicroPhoneSetting_C_OnStateChangedEvent_5C22B51E4690382810BFC89F0306DB6B_Params params {};
 		params.ChildChangedArray = ChildChangedArray;
 		params.CheckedChildIndex = CheckedChildIndex;
 		
@@ -88,20 +88,20 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnStateChangedEvent_78A63FB4442408C9C3027CB75EAD4C7F
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnStateChangedEvent_F68ABAE04DA9197E0AEF40A42CF8B3D8
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
 	 * 		TArray<class UCheckBox*>                           ChildChangedArray                                          (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 * 		int32_t                                            CheckedChildIndex                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UUI_MicroPhoneSetting_C::OnStateChangedEvent_78A63FB4442408C9C3027CB75EAD4C7F(TArray<class UCheckBox*> ChildChangedArray, int32_t CheckedChildIndex)
+	void UUI_MicroPhoneSetting_C::OnStateChangedEvent_F68ABAE04DA9197E0AEF40A42CF8B3D8(TArray<class UCheckBox*> ChildChangedArray, int32_t CheckedChildIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnStateChangedEvent_78A63FB4442408C9C3027CB75EAD4C7F"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.OnStateChangedEvent_F68ABAE04DA9197E0AEF40A42CF8B3D8"));
 		
-		UUI_MicroPhoneSetting_C_OnStateChangedEvent_78A63FB4442408C9C3027CB75EAD4C7F_Params params {};
+		UUI_MicroPhoneSetting_C_OnStateChangedEvent_F68ABAE04DA9197E0AEF40A42CF8B3D8_Params params {};
 		params.ChildChangedArray = ChildChangedArray;
 		params.CheckedChildIndex = CheckedChildIndex;
 		
@@ -112,7 +112,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -131,7 +131,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.Destruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -150,7 +150,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -171,7 +171,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -193,7 +193,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_MicroPhoneSetting.UI_MicroPhoneSetting_C.ExecuteUbergraph_UI_MicroPhoneSetting
 	 * 		Flags  -> (Final)
 	 * Parameters:

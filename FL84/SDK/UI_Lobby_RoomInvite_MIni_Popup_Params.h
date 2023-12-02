@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,21 +15,21 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_RoomInvite_MIni_Popup.UI_Lobby_RoomInvite_MIni_Popup_C.OnClicked_B5A36A8B490D1E4DFABE44BE8AA7DA70
+	 * DelegateFunction UI_Lobby_RoomInvite_MIni_Popup.UI_Lobby_RoomInvite_MIni_Popup_C.OnClicked_1245F55D465D0B8D1782588247E23EEC
 	 */
-	struct UUI_Lobby_RoomInvite_MIni_Popup_C_OnClicked_B5A36A8B490D1E4DFABE44BE8AA7DA70_Params
+	struct UUI_Lobby_RoomInvite_MIni_Popup_C_OnClicked_1245F55D465D0B8D1782588247E23EEC_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_RoomInvite_MIni_Popup.UI_Lobby_RoomInvite_MIni_Popup_C.OnClicked_00868CDE49C0C5982DC1A89F1054F6F0
+	 * DelegateFunction UI_Lobby_RoomInvite_MIni_Popup.UI_Lobby_RoomInvite_MIni_Popup_C.OnClicked_4FDFA4F846F684A5174C5B9868C14C62
 	 */
-	struct UUI_Lobby_RoomInvite_MIni_Popup_C_OnClicked_00868CDE49C0C5982DC1A89F1054F6F0_Params
+	struct UUI_Lobby_RoomInvite_MIni_Popup_C_OnClicked_4FDFA4F846F684A5174C5B9868C14C62_Params
 	{	};
 
 	/**
-	 * Function UI_Lobby_RoomInvite_MIni_Popup.UI_Lobby_RoomInvite_MIni_Popup_C.OnClicked_E9F0DAC84A9216E0A4AEEB9123E2EA56
+	 * Function UI_Lobby_RoomInvite_MIni_Popup.UI_Lobby_RoomInvite_MIni_Popup_C.OnClicked_D1ADFC0A41292E1617744684E4E39A7B
 	 */
-	struct UUI_Lobby_RoomInvite_MIni_Popup_C_OnClicked_E9F0DAC84A9216E0A4AEEB9123E2EA56_Params
+	struct UUI_Lobby_RoomInvite_MIni_Popup_C_OnClicked_D1ADFC0A41292E1617744684E4E39A7B_Params
 	{	};
 
 	/**

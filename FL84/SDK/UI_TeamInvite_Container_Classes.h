@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -28,11 +28,11 @@ namespace CG
 		class UUI_Lobby_TeamInvite_Mini_Popup_C*                   UI_Lobby_TeamInvite_Mini_Popup;                          // 0x0420(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnSolarUIClosed();
+		void OnSolarUIOpened();
 		void OnShow();
 		void OnHide();
-		void OnSolarUIOpened();
 		void OnInitialized();
+		void OnSolarUIClosed();
 		class FString GetModuleName();
 		static UClass* StaticClass();
 	};

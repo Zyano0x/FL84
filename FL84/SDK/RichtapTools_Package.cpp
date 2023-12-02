@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B73B70
+	 * 		RVA    -> 0x00B71170
 	 * 		Name   -> Function RichtapTools.RichtapController.SetRichtapEnable
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -35,7 +35,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B73AF0
+	 * 		RVA    -> 0x00B710F0
 	 * 		Name   -> Function RichtapTools.RichtapController.SetEnableWinRichtap
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -58,7 +58,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B73A70
+	 * 		RVA    -> 0x00B71070
 	 * 		Name   -> Function RichtapTools.RichtapController.SetEnableRichtap
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:

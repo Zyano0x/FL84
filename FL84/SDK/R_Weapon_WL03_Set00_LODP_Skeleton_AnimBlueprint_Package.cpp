@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39970
+	 * 		RVA    -> 0x01AD78C0
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.TestAPI
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -32,7 +32,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B47550
+	 * 		RVA    -> 0x01AE54A0
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.InterruptAnim
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -52,7 +52,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B399D0
+	 * 		RVA    -> 0x01AD7920
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_FD3912374DA1042122EF4BA346AED47D
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -72,7 +72,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39B80
+	 * 		RVA    -> 0x01AD7AD0
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_F3E1CE4F4F52BDDF2C7C4392679371E6
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -92,7 +92,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39F00
+	 * 		RVA    -> 0x01AD7E50
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_D5845B9E400B3D008BEF698B783B92A9
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -112,7 +112,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39FA0
+	 * 		RVA    -> 0x01AD7EF0
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_D26EF958487058FA7FC43FAD41F4DEF7
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -132,7 +132,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B399F0
+	 * 		RVA    -> 0x01AD7940
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_C56C131748626A9573F10282DB5E5052
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -152,7 +152,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E53B0
+	 * 		RVA    -> 0x007E2880
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_9F7EE7DF4EADB7412001EA80EB6DF9EE
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -172,7 +172,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39EA0
+	 * 		RVA    -> 0x01AD7DF0
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_90C49DEF49A94759B5DF8D8AB0247252
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -192,7 +192,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39A70
+	 * 		RVA    -> 0x01AD79C0
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_7BF9F6B543647F4000354585CCDD9D8C
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -212,7 +212,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39A10
+	 * 		RVA    -> 0x01AD7960
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_69DC14EC4A779FA924FD3BAD514C71CA
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -232,7 +232,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B3A080
+	 * 		RVA    -> 0x01AD7FD0
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_520B94684B85FF9018373286CEF79B9D
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -252,7 +252,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39F40
+	 * 		RVA    -> 0x01AD7E90
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_512995A9441B7ABA6A1354A124B4947D
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -272,7 +272,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39D20
+	 * 		RVA    -> 0x01AD7C70
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_48E7AFC2428503DF315D6DA5F2F053F5
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -292,7 +292,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B3A120
+	 * 		RVA    -> 0x01AD8070
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_3FDD26624535716666823A85B4A0EA6B
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -312,7 +312,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39BA0
+	 * 		RVA    -> 0x01AD7AF0
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_37CC4BD349701B7B6B2903932ADDE28C
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -332,7 +332,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C6D000
+	 * 		RVA    -> 0x00C6A650
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_2DD7E36F4A2BD62B1A8519B45B2FBE75
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -352,7 +352,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39BC0
+	 * 		RVA    -> 0x01AD7B10
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_2AFD33E54E0DB5EA1233039AC1CBEAAE
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -372,7 +372,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39C60
+	 * 		RVA    -> 0x01AD7BB0
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_272B77AE42671779C55883858592D62C
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -392,7 +392,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39B40
+	 * 		RVA    -> 0x01AD7A90
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_075E1FBF4BB9C39350964A81FBF296DE
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -412,7 +412,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C6CFC0
+	 * 		RVA    -> 0x00C6A610
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_0584AE8244C44B37DF07C28ADC078A60
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -432,7 +432,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39990
+	 * 		RVA    -> 0x01AD78E0
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_SequencePlayer_31A4CD864812F3929F156E9AEE73754C
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -452,7 +452,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39A50
+	 * 		RVA    -> 0x01AD79A0
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_SequencePlayer_306EF0F349340C3816672B840E67EAF3
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -472,7 +472,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B399B0
+	 * 		RVA    -> 0x01AD7900
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_AnimGraphNode_SequencePlayer_296D1E13442BD0646F8BEE8C73C07614
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -492,7 +492,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39B60
+	 * 		RVA    -> 0x01AD7AB0
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.AnimNotify_QuitIdle
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -512,7 +512,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39B20
+	 * 		RVA    -> 0x01AD7A70
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.AnimNotify_QuitFire
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -532,7 +532,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B47430
+	 * 		RVA    -> 0x01AE5380
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.AnimNotify_EnterIdle
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -552,7 +552,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39A30
+	 * 		RVA    -> 0x01AD7980
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.AnimNotify_EnterFire
 	 * 		Flags  -> (Native, Public, BlueprintCallable)
 	 */
@@ -572,7 +572,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B77560
+	 * 		RVA    -> 0x01B11960
 	 * 		Name   -> Function R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint.R_Weapon_WL03_Set00_LODP_Skeleton_AnimBlueprint_C.AnimGraph
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

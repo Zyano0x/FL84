@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -43,16 +43,16 @@ namespace CG
 		bool                                                       isShowGuide;                                             // 0x0498(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
-		void OnClicked_C64597014DC901496A22FFA6DDD9CDE4();
-		void OnClicked_D1E3F70F47319664893B46980D58242D();
-		void OnClicked_575004F34B848AE0B7A8E2917139BCF9();
-		void OnClicked_8BA813D2498CFED5BCE9338DAB4AEAF8();
-		void OnClicked_D814359C4F7FD61ACC22E68026D57740();
-		void OnClicked_8178B90A431A575F87048F842E344C7C();
+		void OnClicked_70F7EC2A48467B467C18758A34E9A2A5();
+		void OnClicked_B689F2804DAA131962DF2B9B8146B52F();
+		void OnClicked_B1F6ABB547D44323F1814CABA0CD74B4();
+		void OnClicked_B03D5063484F18E3776CA69E7720B59B();
+		void OnClicked_9D5E76D0419EA7C0850305B49D183F40();
+		void OnClicked_E08DDB85438B3D89597BA3B92EBC44EF();
 		void OnSolarUIOpened();
-		void OnSolarUIClosed();
-		void ConstructCopy();
 		void OnInitialized();
+		void ConstructCopy();
+		void OnSolarUIClosed();
 		void Destruct();
 		class FString GetModuleName();
 		void ShowGuide(bool ShowGuide);

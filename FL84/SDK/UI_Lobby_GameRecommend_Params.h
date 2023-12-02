@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,15 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Lobby_GameRecommend.UI_Lobby_GameRecommend_C.Destruct
-	 */
-	struct UUI_Lobby_GameRecommend_C_Destruct_Params
-	{	};
-
-	/**
 	 * Function UI_Lobby_GameRecommend.UI_Lobby_GameRecommend_C.ConstructCopy
 	 */
 	struct UUI_Lobby_GameRecommend_C_ConstructCopy_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_GameRecommend.UI_Lobby_GameRecommend_C.Destruct
+	 */
+	struct UUI_Lobby_GameRecommend_C_Destruct_Params
 	{	};
 
 	/**
@@ -57,7 +57,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_FD3T[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_23M7[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

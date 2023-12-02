@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -46,7 +46,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    VoiceCount;                                              // 0x07F0(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_CNZ2[0x69C];                                 // 0x07F4(0x069C) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_EF2M[0x69C];                                 // 0x07F4(0x069C) MISSED OFFSET (PADDING)
 
 	public:
 		void SetSynthPreset(const struct FModularSynthPreset& SynthPreset);
@@ -118,7 +118,7 @@ namespace CG
 	class USourceEffectBitCrusherPreset : public USoundEffectSourcePreset
 	{
 	public:
-		unsigned char                                              UnknownData_S4MR[0x30];                                  // 0x0040(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_9NC1[0x30];                                  // 0x0040(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSourceEffectBitCrusherSettings                     Settings;                                                // 0x0070(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -133,7 +133,7 @@ namespace CG
 	class USourceEffectChorusPreset : public USoundEffectSourcePreset
 	{
 	public:
-		unsigned char                                              UnknownData_7Y3N[0x40];                                  // 0x0040(0x0040) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_R62D[0x40];                                  // 0x0040(0x0040) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSourceEffectChorusSettings                         Settings;                                                // 0x0080(0x0018) Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -148,7 +148,7 @@ namespace CG
 	class USourceEffectDynamicsProcessorPreset : public USoundEffectSourcePreset
 	{
 	public:
-		unsigned char                                              UnknownData_0U4X[0x50];                                  // 0x0040(0x0050) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_IF3Y[0x50];                                  // 0x0040(0x0050) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSourceEffectDynamicsProcessorSettings              Settings;                                                // 0x0090(0x0028) Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -164,7 +164,7 @@ namespace CG
 	{
 	public:
 		class FScriptMulticastDelegate                             OnEnvelopeFollowerUpdate;                                // 0x00B0(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_MGAX[0x10];                                  // 0x00C0(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_U3Y9[0x10];                                  // 0x00C0(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -177,7 +177,7 @@ namespace CG
 	class USourceEffectEnvelopeFollowerPreset : public USoundEffectSourcePreset
 	{
 	public:
-		unsigned char                                              UnknownData_RVJK[0x34];                                  // 0x0040(0x0034) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_T6WE[0x34];                                  // 0x0040(0x0034) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSourceEffectEnvelopeFollowerSettings               Settings;                                                // 0x0074(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -194,7 +194,7 @@ namespace CG
 	class USourceEffectEQPreset : public USoundEffectSourcePreset
 	{
 	public:
-		unsigned char                                              UnknownData_9WN8[0x38];                                  // 0x0040(0x0038) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_VEKK[0x38];                                  // 0x0040(0x0038) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSourceEffectEQSettings                             Settings;                                                // 0x0078(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic
 
 	public:
@@ -209,7 +209,7 @@ namespace CG
 	class USourceEffectFilterPreset : public USoundEffectSourcePreset
 	{
 	public:
-		unsigned char                                              UnknownData_OKVF[0x34];                                  // 0x0040(0x0034) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_QE5L[0x34];                                  // 0x0040(0x0034) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSourceEffectFilterSettings                         Settings;                                                // 0x0074(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -224,7 +224,7 @@ namespace CG
 	class USourceEffectFoldbackDistortionPreset : public USoundEffectSourcePreset
 	{
 	public:
-		unsigned char                                              UnknownData_4SK5[0x34];                                  // 0x0040(0x0034) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_7RK0[0x34];                                  // 0x0040(0x0034) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSourceEffectFoldbackDistortionSettings             Settings;                                                // 0x0074(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -239,7 +239,7 @@ namespace CG
 	class USourceEffectMidSideSpreaderPreset : public USoundEffectSourcePreset
 	{
 	public:
-		unsigned char                                              UnknownData_B09F[0x34];                                  // 0x0040(0x0034) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_OECZ[0x34];                                  // 0x0040(0x0034) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSourceEffectMidSideSpreaderSettings                Settings;                                                // 0x0074(0x000C) Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -254,7 +254,7 @@ namespace CG
 	class USourceEffectPannerPreset : public USoundEffectSourcePreset
 	{
 	public:
-		unsigned char                                              UnknownData_JQGX[0x30];                                  // 0x0040(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_8BBC[0x30];                                  // 0x0040(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSourceEffectPannerSettings                         Settings;                                                // 0x0070(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -269,7 +269,7 @@ namespace CG
 	class USourceEffectPhaserPreset : public USoundEffectSourcePreset
 	{
 	public:
-		unsigned char                                              UnknownData_XMJR[0x38];                                  // 0x0040(0x0038) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_8O44[0x38];                                  // 0x0040(0x0038) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSourceEffectPhaserSettings                         Settings;                                                // 0x0078(0x0010) Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -284,7 +284,7 @@ namespace CG
 	class USourceEffectRingModulationPreset : public USoundEffectSourcePreset
 	{
 	public:
-		unsigned char                                              UnknownData_QGCM[0x3C];                                  // 0x0040(0x003C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_93P1[0x3C];                                  // 0x0040(0x003C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSourceEffectRingModulationSettings                 Settings;                                                // 0x007C(0x0014) Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -299,7 +299,7 @@ namespace CG
 	class USourceEffectSimpleDelayPreset : public USoundEffectSourcePreset
 	{
 	public:
-		unsigned char                                              UnknownData_949R[0x40];                                  // 0x0040(0x0040) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_31UU[0x40];                                  // 0x0040(0x0040) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSourceEffectSimpleDelaySettings                    Settings;                                                // 0x0080(0x0018) Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -314,7 +314,7 @@ namespace CG
 	class USourceEffectStereoDelayPreset : public USoundEffectSourcePreset
 	{
 	public:
-		unsigned char                                              UnknownData_9OOK[0x3C];                                  // 0x0040(0x003C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_2BMF[0x3C];                                  // 0x0040(0x003C) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSourceEffectStereoDelaySettings                    Settings;                                                // 0x007C(0x0014) Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -329,7 +329,7 @@ namespace CG
 	class USourceEffectWaveShaperPreset : public USoundEffectSourcePreset
 	{
 	public:
-		unsigned char                                              UnknownData_0BYA[0x30];                                  // 0x0040(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_FPGD[0x30];                                  // 0x0040(0x0030) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSourceEffectWaveShaperSettings                     Settings;                                                // 0x0070(0x0008) Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -348,7 +348,7 @@ namespace CG
 		int32_t                                                    NumChannels;                                             // 0x0038(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    SampleRate;                                              // 0x003C(0x0004) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      NormalizationVolumeDb;                                   // 0x0040(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_P3VT[0x4];                                   // 0x0044(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_WNXB[0x4];                                   // 0x0044(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<float>                                              IRData;                                                  // 0x0048(0x0010) ZeroConstructor, Deprecated, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
 	public:
@@ -366,7 +366,7 @@ namespace CG
 		class UAudioImpulseResponse*                               ImpulseResponse;                                         // 0x0060(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		ESubmixEffectConvolutionReverbBlockSize                    BlockSize;                                               // 0x0068(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bEnableHardwareAcceleration;                             // 0x0069(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_8KJU[0x4E];                                  // 0x006A(0x004E) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_YJT2[0x4E];                                  // 0x006A(0x004E) MISSED OFFSET (PADDING)
 
 	public:
 		void SetSettings(const struct FSubmixEffectConvolutionReverbSettings& InSettings);
@@ -381,10 +381,10 @@ namespace CG
 	class USubmixEffectDelayPreset : public USoundEffectSubmixPreset
 	{
 	public:
-		unsigned char                                              UnknownData_9020[0x34];                                  // 0x0040(0x0034) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_58VO[0x34];                                  // 0x0040(0x0034) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSubmixEffectDelaySettings                          Settings;                                                // 0x0074(0x000C) Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic
 		struct FSubmixEffectDelaySettings                          DynamicSettings;                                         // 0x0080(0x000C) Transient, NoDestructor, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ZCS7[0x4];                                   // 0x008C(0x0004) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_E61R[0x4];                                   // 0x008C(0x0004) MISSED OFFSET (PADDING)
 
 	public:
 		void SetSettings(const struct FSubmixEffectDelaySettings& InSettings);
@@ -401,7 +401,7 @@ namespace CG
 	class USubmixEffectFilterPreset : public USoundEffectSubmixPreset
 	{
 	public:
-		unsigned char                                              UnknownData_LRW3[0x34];                                  // 0x0040(0x0034) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_IO0P[0x34];                                  // 0x0040(0x0034) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSubmixEffectFilterSettings                         Settings;                                                // 0x0074(0x000C) Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -422,7 +422,7 @@ namespace CG
 	class USubmixEffectFlexiverbPreset : public USoundEffectSubmixPreset
 	{
 	public:
-		unsigned char                                              UnknownData_OODZ[0x38];                                  // 0x0040(0x0038) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_F5KZ[0x38];                                  // 0x0040(0x0038) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSubmixEffectFlexiverbSettings                      Settings;                                                // 0x0078(0x0010) Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic
 
 	public:
@@ -437,9 +437,9 @@ namespace CG
 	class USubmixEffectTapDelayPreset : public USoundEffectSubmixPreset
 	{
 	public:
-		unsigned char                                              UnknownData_UH04[0x40];                                  // 0x0040(0x0040) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_VTHN[0x40];                                  // 0x0040(0x0040) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		struct FSubmixEffectTapDelaySettings                       Settings;                                                // 0x0080(0x0018) Edit, BlueprintVisible, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_IR61[0x18];                                  // 0x0098(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_KEOV[0x18];                                  // 0x0098(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		void SetTap(int32_t TapId, const struct FTapDelayInfo& TapInfo);
@@ -468,17 +468,17 @@ namespace CG
 		struct FLinearColor                                        SliderHandleColor;                                       // 0x05E0(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       IndentHandle;                                            // 0x05F0(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       Locked;                                                  // 0x05F1(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_V2VG[0x2];                                   // 0x05F2(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_453I[0x2];                                   // 0x05F2(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		float                                                      StepSize;                                                // 0x05F4(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       IsFocusable;                                             // 0x05F8(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_FDZ7[0x7];                                   // 0x05F9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_FZIJ[0x7];                                   // 0x05F9(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             OnMouseCaptureBegin;                                     // 0x0600(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnMouseCaptureEnd;                                       // 0x0610(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnControllerCaptureBegin;                                // 0x0620(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnControllerCaptureEnd;                                  // 0x0630(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnValueChangedX;                                         // 0x0640(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnValueChangedY;                                         // 0x0650(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_QD75[0x10];                                  // 0x0660(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_LW1N[0x10];                                  // 0x0660(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		void SetValue(const struct FVector2D& InValue);
@@ -498,7 +498,7 @@ namespace CG
 	{
 	public:
 		class USoundWave*                                          GranulatedSoundWave;                                     // 0x07F0(0x0008) ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_3S3M[0x3B8];                                 // 0x07F8(0x03B8) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_B3XA[0x3B8];                                 // 0x07F8(0x03B8) MISSED OFFSET (PADDING)
 
 	public:
 		void SetSustainGain(float SustainGain);
@@ -533,13 +533,13 @@ namespace CG
 	public:
 		class FString                                              PresetName;                                              // 0x0028(0x0010) Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bLockKeyframesToGridBool : 1;                            // 0x0038(0x0001) BIT_FIELD Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ENW6[0x3];                                   // 0x0039(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_WLP3[0x3];                                   // 0x0039(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    LockKeyframesToGrid;                                     // 0x003C(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		int32_t                                                    WaveTableResolution;                                     // 0x0040(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_MS36[0x4];                                   // 0x0044(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_ZG8Q[0x4];                                   // 0x0044(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FRuntimeFloatCurve>                          WaveTable;                                               // 0x0048(0x0010) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NonTransactional, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       bNormalizeWaveTables : 1;                                // 0x0058(0x0001) BIT_FIELD Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_OTQB[0x117];                                 // 0x0059(0x0117) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_AD65[0x117];                                 // 0x0059(0x0117) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -555,7 +555,7 @@ namespace CG
 		class FScriptMulticastDelegate                             OnTableAltered;                                          // 0x07F0(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnNumTablesChanged;                                      // 0x0800(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class UMonoWaveTableSynthPreset*                           CurrentPreset;                                           // 0x0810(0x0008) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_P8YZ[0x718];                                 // 0x0818(0x0718) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_MLRT[0x718];                                 // 0x0818(0x0718) MISSED OFFSET (PADDING)
 
 	public:
 		void SetWaveTablePosition(float InPosition);
@@ -616,7 +616,7 @@ namespace CG
 		class USoundWave*                                          SoundWave;                                               // 0x07F0(0x0008) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnSampleLoaded;                                          // 0x07F8(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnSamplePlaybackProgress;                                // 0x0808(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_REYL[0x108];                                 // 0x0818(0x0108) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_2BFR[0x108];                                 // 0x0818(0x0108) MISSED OFFSET (PADDING)
 
 	public:
 		void SetSoundWave(class USoundWave* InSoundWave);
@@ -643,20 +643,20 @@ namespace CG
 		float                                                      MouseSpeed;                                              // 0x0140(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		float                                                      MouseFineTuneSpeed;                                      // 0x0144(0x0004) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       ShowTooltipInfo : 1;                                     // 0x0148(0x0001) BIT_FIELD Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_FMTI[0x7];                                   // 0x0149(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_X6TN[0x7];                                   // 0x0149(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FText                                                ParameterName;                                           // 0x0150(0x0018) Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic
 		class FText                                                ParameterUnits;                                          // 0x0168(0x0018) Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic
 		class FScriptDelegate                                      ValueDelegate;                                           // 0x0180(0x0010) ZeroConstructor, InstancedReference, NoDestructor, NativeAccessSpecifierPublic
 		struct FSynthKnobStyle                                     WidgetStyle;                                             // 0x0190(0x03A0) Edit, BlueprintVisible, NativeAccessSpecifierPublic
 		bool                                                       Locked;                                                  // 0x0530(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		bool                                                       IsFocusable;                                             // 0x0531(0x0001) Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_QXTR[0x6];                                   // 0x0532(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_5B1S[0x6];                                   // 0x0532(0x0006) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class FScriptMulticastDelegate                             OnMouseCaptureBegin;                                     // 0x0538(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnMouseCaptureEnd;                                       // 0x0548(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnControllerCaptureBegin;                                // 0x0558(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnControllerCaptureEnd;                                  // 0x0568(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnValueChanged;                                          // 0x0578(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_ROX3[0x18];                                  // 0x0588(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_815D[0x18];                                  // 0x0588(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		void SetValue(float InValue);

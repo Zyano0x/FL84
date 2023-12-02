@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CD64D0
+	 * 		RVA    -> 0x00CD40C0
 	 * 		Name   -> Function DownloaderTool.DownloaderUtils.StringFileRawData
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -51,7 +51,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CD6290
+	 * 		RVA    -> 0x00CD3E80
 	 * 		Name   -> Function DownloaderTool.DownloaderUtils.SaveResponseToCache
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -76,7 +76,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CD6130
+	 * 		RVA    -> 0x00CD3D20
 	 * 		Name   -> Function DownloaderTool.DownloaderUtils.GetVerbFromJsonRequestStr
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -101,7 +101,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CD5EE0
+	 * 		RVA    -> 0x00CD3AD0
 	 * 		Name   -> Function DownloaderTool.DownloaderUtils.GetResponseFromCache
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -128,7 +128,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CD5D50
+	 * 		RVA    -> 0x00CD3940
 	 * 		Name   -> Function DownloaderTool.DownloaderUtils.GetHeadersFromJsonRequestStr
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -153,7 +153,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CD6650
+	 * 		RVA    -> 0x00CD4240
 	 * 		Name   -> Function DownloaderTool.DownloaderUtils.execConvertRawDataToTexture
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -180,7 +180,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CD5BD0
+	 * 		RVA    -> 0x00CD37C0
 	 * 		Name   -> Function DownloaderTool.DownloaderUtils.DecodeFileRawData
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

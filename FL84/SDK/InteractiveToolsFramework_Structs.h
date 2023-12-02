@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -196,7 +196,7 @@ namespace CG
 	struct FBrushStampData
 	{
 	public:
-		unsigned char                                              UnknownData_LKXI[0xA8];                                  // 0x0000(0x00A8) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_5WK3[0xA8];                                  // 0x0000(0x00A8) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -207,7 +207,7 @@ namespace CG
 	{
 	public:
 		class UInputBehavior*                                      Behavior;                                                // 0x0000(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_GRBF[0x18];                                  // 0x0008(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_I2IB[0x18];                                  // 0x0008(0x0018) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -217,7 +217,7 @@ namespace CG
 	struct FActiveGizmo
 	{
 	public:
-		unsigned char                                              UnknownData_39VZ[0x30];                                  // 0x0000(0x0030) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_WHOU[0x30];                                  // 0x0000(0x0030) MISSED OFFSET (PADDING)
 	};
 
 	/**
@@ -249,7 +249,7 @@ namespace CG
 	struct FInputRayHit
 	{
 	public:
-		unsigned char                                              UnknownData_05OG[0x28];                                  // 0x0000(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_U29Y[0x28];                                  // 0x0000(0x0028) MISSED OFFSET (PADDING)
 	};
 
 }

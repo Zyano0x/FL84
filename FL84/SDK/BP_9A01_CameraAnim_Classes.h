@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UBP_9A01_CameraAnim_C : public UCameraShake
 	{
 	public:
-		unsigned char                                              UnknownData_TH7R[0x8];                                   // 0x0158(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_KG7P[0x8];                                   // 0x0158(0x0008) Fix Super Size
 
 	public:
 		static UClass* StaticClass();

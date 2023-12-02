@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,15 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Lobby_MedalShow.UI_Lobby_MedalShow_C.Construct
-	 */
-	struct UUI_Lobby_MedalShow_C_Construct_Params
-	{	};
-
-	/**
 	 * Function UI_Lobby_MedalShow.UI_Lobby_MedalShow_C.Destruct
 	 */
 	struct UUI_Lobby_MedalShow_C_Destruct_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_MedalShow.UI_Lobby_MedalShow_C.Construct
+	 */
+	struct UUI_Lobby_MedalShow_C_Construct_Params
 	{	};
 
 	/**

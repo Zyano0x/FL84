@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,27 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Marquees.UI_Marquees_C.OnSolarUIOpened
-	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
-	 */
-	void UUI_Marquees_C::OnSolarUIOpened()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Marquees.UI_Marquees_C.OnSolarUIOpened"));
-		
-		UUI_Marquees_C_OnSolarUIOpened_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Marquees.UI_Marquees_C.ReceiveTick
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -56,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Marquees.UI_Marquees_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -75,7 +55,27 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
+	 * 		Name   -> Function UI_Marquees.UI_Marquees_C.OnSolarUIOpened
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 */
+	void UUI_Marquees_C::OnSolarUIOpened()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Marquees.UI_Marquees_C.OnSolarUIOpened"));
+		
+		UUI_Marquees_C_OnSolarUIOpened_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Marquees.UI_Marquees_C.OnSolarUIClosed
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -95,7 +95,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Marquees.UI_Marquees_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -116,7 +116,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Marquees.UI_Marquees_C.Tick
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -140,7 +140,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Marquees.UI_Marquees_C.ExecuteUbergraph_UI_Marquees
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

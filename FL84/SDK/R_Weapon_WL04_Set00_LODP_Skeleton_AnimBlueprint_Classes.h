@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -26,7 +26,7 @@ namespace CG
 		struct FAnimNode_Slot                                      AnimGraphNode_Slot;                                      // 0x0318(0x0048) NativeAccessSpecifierPublic
 		struct FAnimMsgData                                        K2Node_MakeStruct_AnimMsgData;                           // 0x0360(0x0008) Transient, DuplicateTransient, NoDestructor, NativeAccessSpecifierPublic
 		TArray<struct FAnimMsgData>                                K2Node_MakeArray_Array;                                  // 0x0368(0x0010) ZeroConstructor, Transient, DuplicateTransient, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_NZ0P[0x8];                                   // 0x0378(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_TWW2[0x8];                                   // 0x0378(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		void TestAPI();

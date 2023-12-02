@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,88 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnSolarUIClosed
-	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
-	 */
-	void UUI_Rank_Icon_Small_C::OnSolarUIClosed()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnSolarUIClosed"));
-		
-		UUI_Rank_Icon_Small_C_OnSolarUIClosed_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnSolarUIOpened
-	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
-	 */
-	void UUI_Rank_Icon_Small_C::OnSolarUIOpened()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnSolarUIOpened"));
-		
-		UUI_Rank_Icon_Small_C_OnSolarUIOpened_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x02D656B0
-	 * 		Name   -> Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.FormatViewJustIconCopy
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		int32_t                                            LevelID                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UUI_Rank_Icon_Small_C::FormatViewJustIconCopy(int32_t LevelID)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.FormatViewJustIconCopy"));
-		
-		UUI_Rank_Icon_Small_C_FormatViewJustIconCopy_Params params {};
-		params.LevelID = LevelID;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnInitialized
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Rank_Icon_Small_C::OnInitialized()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnInitialized"));
-		
-		UUI_Rank_Icon_Small_C_OnInitialized_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.FormatViewCopy
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -115,7 +34,88 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x00B67660
+	 * 		Name   -> Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnSolarUIOpened
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 */
+	void UUI_Rank_Icon_Small_C::OnSolarUIOpened()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnSolarUIOpened"));
+		
+		UUI_Rank_Icon_Small_C_OnSolarUIOpened_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B67660
+	 * 		Name   -> Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnInitialized
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_Rank_Icon_Small_C::OnInitialized()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnInitialized"));
+		
+		UUI_Rank_Icon_Small_C_OnInitialized_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B67660
+	 * 		Name   -> Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnSolarUIClosed
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 */
+	void UUI_Rank_Icon_Small_C::OnSolarUIClosed()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnSolarUIClosed"));
+		
+		UUI_Rank_Icon_Small_C_OnSolarUIClosed_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D0DF90
+	 * 		Name   -> Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.FormatViewJustIconCopy
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		int32_t                                            LevelID                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UUI_Rank_Icon_Small_C::FormatViewJustIconCopy(int32_t LevelID)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.FormatViewJustIconCopy"));
+		
+		UUI_Rank_Icon_Small_C_FormatViewJustIconCopy_Params params {};
+		params.LevelID = LevelID;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -136,7 +136,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.FormatViewJustIcon
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -158,7 +158,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.SetStar
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -180,7 +180,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.FormatView
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -202,7 +202,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -224,7 +224,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.SetRankIconView
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -246,7 +246,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.ExecuteUbergraph_UI_Rank_Icon_Small
 	 * 		Flags  -> (Final)
 	 * Parameters:

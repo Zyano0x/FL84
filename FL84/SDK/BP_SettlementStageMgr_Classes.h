@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -21,11 +21,11 @@ namespace CG
 	class UBP_SettlementStageMgr_C : public USettlementStageManager
 	{
 	public:
-		void Init();
-		void CloseDiePage();
-		void ShowNextStage();
 		void ShowDiePage();
+		void CloseDiePage();
 		void SkipToTarget();
+		void ShowNextStage();
+		void Init();
 		class FString GetClassRelativePathName(class UClass* InClass);
 		static UClass* StaticClass();
 	};

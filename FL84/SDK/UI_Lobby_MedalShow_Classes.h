@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -28,8 +28,8 @@ namespace CG
 		int32_t                                                    IndexInLobby;                                            // 0x0420(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void Construct();
 		void Destruct();
+		void Construct();
 		class FString GetModuleName();
 		static UClass* StaticClass();
 	};

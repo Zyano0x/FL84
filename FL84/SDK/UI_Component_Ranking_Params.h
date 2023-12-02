@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -14,6 +14,18 @@ namespace CG
 	// --------------------------------------------------
 	// # Structs
 	// --------------------------------------------------
+	/**
+	 * Function UI_Component_Ranking.UI_Component_Ranking_C.OnInitialized
+	 */
+	struct UUI_Component_Ranking_C_OnInitialized_Params
+	{	};
+
+	/**
+	 * Function UI_Component_Ranking.UI_Component_Ranking_C.OnDeinitialize
+	 */
+	struct UUI_Component_Ranking_C_OnDeinitialize_Params
+	{	};
+
 	/**
 	 * Function UI_Component_Ranking.UI_Component_Ranking_C.GetModuleName
 	 */
@@ -57,7 +69,7 @@ namespace CG
 	{
 	public:
 		int32_t                                                    EntryPoint;                                              // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_Z4UW[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_DH57[0x4];                                   // 0x0004(0x0004) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 }

@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,9 +15,9 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnInitialized
+	 * Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnShow
 	 */
-	struct UUI_Component_TeamNum_C_OnInitialized_Params
+	struct UUI_Component_TeamNum_C_OnShow_Params
 	{	};
 
 	/**
@@ -27,15 +27,15 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnSolarUIClosed
+	 * Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnInitialized
 	 */
-	struct UUI_Component_TeamNum_C_OnSolarUIClosed_Params
+	struct UUI_Component_TeamNum_C_OnInitialized_Params
 	{	};
 
 	/**
-	 * Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnShow
+	 * Function UI_Component_TeamNum.UI_Component_TeamNum_C.OnSolarUIClosed
 	 */
-	struct UUI_Component_TeamNum_C_OnShow_Params
+	struct UUI_Component_TeamNum_C_OnSolarUIClosed_Params
 	{	};
 
 	/**

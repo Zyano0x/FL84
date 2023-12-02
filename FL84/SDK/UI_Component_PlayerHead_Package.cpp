@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,19 +12,19 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_C952552C4D37C670846E6A8AEE428B09
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_702130DA4684381AA4E6998480BBD7D7
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		bool                                               bSuccess                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_C952552C4D37C670846E6A8AEE428B09(bool bSuccess)
+	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_702130DA4684381AA4E6998480BBD7D7(bool bSuccess)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_C952552C4D37C670846E6A8AEE428B09"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_702130DA4684381AA4E6998480BBD7D7"));
 		
-		UUI_Component_PlayerHead_C_OnURLDownloadFinish_C952552C4D37C670846E6A8AEE428B09_Params params {};
+		UUI_Component_PlayerHead_C_OnURLDownloadFinish_702130DA4684381AA4E6998480BBD7D7_Params params {};
 		params.bSuccess = bSuccess;
 		
 		auto flags = fn->FunctionFlags;
@@ -34,17 +34,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_527D1B154D24F140D9DA5785D97F801B
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_C39A39B440985C87411E2596C33BA36F
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Component_PlayerHead_C::OnClicked_527D1B154D24F140D9DA5785D97F801B()
+	void UUI_Component_PlayerHead_C::OnClicked_C39A39B440985C87411E2596C33BA36F()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_527D1B154D24F140D9DA5785D97F801B"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_C39A39B440985C87411E2596C33BA36F"));
 		
-		UUI_Component_PlayerHead_C_OnClicked_527D1B154D24F140D9DA5785D97F801B_Params params {};
+		UUI_Component_PlayerHead_C_OnClicked_C39A39B440985C87411E2596C33BA36F_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -53,19 +53,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_C34F19C843592691A9AE85BDEF5CF009
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_23C53E1D4EA49DC9A79E278F62F900BE
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		bool                                               bSuccess                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_C34F19C843592691A9AE85BDEF5CF009(bool bSuccess)
+	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_23C53E1D4EA49DC9A79E278F62F900BE(bool bSuccess)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_C34F19C843592691A9AE85BDEF5CF009"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_23C53E1D4EA49DC9A79E278F62F900BE"));
 		
-		UUI_Component_PlayerHead_C_OnURLDownloadFinish_C34F19C843592691A9AE85BDEF5CF009_Params params {};
+		UUI_Component_PlayerHead_C_OnURLDownloadFinish_23C53E1D4EA49DC9A79E278F62F900BE_Params params {};
 		params.bSuccess = bSuccess;
 		
 		auto flags = fn->FunctionFlags;
@@ -75,17 +75,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_88E313C7445ECB66ED358FBA347D09C1
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_89473C7043396430FD079CA24F768C2C
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Component_PlayerHead_C::OnClicked_88E313C7445ECB66ED358FBA347D09C1()
+	void UUI_Component_PlayerHead_C::OnClicked_89473C7043396430FD079CA24F768C2C()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_88E313C7445ECB66ED358FBA347D09C1"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_89473C7043396430FD079CA24F768C2C"));
 		
-		UUI_Component_PlayerHead_C_OnClicked_88E313C7445ECB66ED358FBA347D09C1_Params params {};
+		UUI_Component_PlayerHead_C_OnClicked_89473C7043396430FD079CA24F768C2C_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -94,19 +94,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_462E60E44124DC1B194B12AFA823DBFC
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_096FEA9745DE64C71B2C2E98FF8595A2
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		bool                                               bSuccess                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_462E60E44124DC1B194B12AFA823DBFC(bool bSuccess)
+	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_096FEA9745DE64C71B2C2E98FF8595A2(bool bSuccess)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_462E60E44124DC1B194B12AFA823DBFC"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_096FEA9745DE64C71B2C2E98FF8595A2"));
 		
-		UUI_Component_PlayerHead_C_OnURLDownloadFinish_462E60E44124DC1B194B12AFA823DBFC_Params params {};
+		UUI_Component_PlayerHead_C_OnURLDownloadFinish_096FEA9745DE64C71B2C2E98FF8595A2_Params params {};
 		params.bSuccess = bSuccess;
 		
 		auto flags = fn->FunctionFlags;
@@ -116,17 +116,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_8F76342A494D0012470F84BC01782DE4
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_2015CCF64D958974C844B2B8DCB9342D
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Component_PlayerHead_C::OnClicked_8F76342A494D0012470F84BC01782DE4()
+	void UUI_Component_PlayerHead_C::OnClicked_2015CCF64D958974C844B2B8DCB9342D()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_8F76342A494D0012470F84BC01782DE4"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_2015CCF64D958974C844B2B8DCB9342D"));
 		
-		UUI_Component_PlayerHead_C_OnClicked_8F76342A494D0012470F84BC01782DE4_Params params {};
+		UUI_Component_PlayerHead_C_OnClicked_2015CCF64D958974C844B2B8DCB9342D_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -135,19 +135,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_D8FF15AE437875053C3111B749A1E24F
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_390119F64DCADC441A7103B3B7D9C77F
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		bool                                               bSuccess                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_D8FF15AE437875053C3111B749A1E24F(bool bSuccess)
+	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_390119F64DCADC441A7103B3B7D9C77F(bool bSuccess)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_D8FF15AE437875053C3111B749A1E24F"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_390119F64DCADC441A7103B3B7D9C77F"));
 		
-		UUI_Component_PlayerHead_C_OnURLDownloadFinish_D8FF15AE437875053C3111B749A1E24F_Params params {};
+		UUI_Component_PlayerHead_C_OnURLDownloadFinish_390119F64DCADC441A7103B3B7D9C77F_Params params {};
 		params.bSuccess = bSuccess;
 		
 		auto flags = fn->FunctionFlags;
@@ -157,17 +157,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_F180CD7F49E520599C663490F0AB82EC
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_E78CFA4045B945149D7853A98E5A2007
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Component_PlayerHead_C::OnClicked_F180CD7F49E520599C663490F0AB82EC()
+	void UUI_Component_PlayerHead_C::OnClicked_E78CFA4045B945149D7853A98E5A2007()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_F180CD7F49E520599C663490F0AB82EC"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_E78CFA4045B945149D7853A98E5A2007"));
 		
-		UUI_Component_PlayerHead_C_OnClicked_F180CD7F49E520599C663490F0AB82EC_Params params {};
+		UUI_Component_PlayerHead_C_OnClicked_E78CFA4045B945149D7853A98E5A2007_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -176,19 +176,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_9278A4614991FF1CAF36258931CD4109
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_CC8E505F4C832B8E84AABDB6C9F0811D
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		bool                                               bSuccess                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_9278A4614991FF1CAF36258931CD4109(bool bSuccess)
+	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_CC8E505F4C832B8E84AABDB6C9F0811D(bool bSuccess)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_9278A4614991FF1CAF36258931CD4109"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_CC8E505F4C832B8E84AABDB6C9F0811D"));
 		
-		UUI_Component_PlayerHead_C_OnURLDownloadFinish_9278A4614991FF1CAF36258931CD4109_Params params {};
+		UUI_Component_PlayerHead_C_OnURLDownloadFinish_CC8E505F4C832B8E84AABDB6C9F0811D_Params params {};
 		params.bSuccess = bSuccess;
 		
 		auto flags = fn->FunctionFlags;
@@ -198,17 +198,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_2A2E6377423153BB1FB709A74F65DCDF
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_25986DD444DD858297D0A6A2475AA22B
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Component_PlayerHead_C::OnClicked_2A2E6377423153BB1FB709A74F65DCDF()
+	void UUI_Component_PlayerHead_C::OnClicked_25986DD444DD858297D0A6A2475AA22B()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_2A2E6377423153BB1FB709A74F65DCDF"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_25986DD444DD858297D0A6A2475AA22B"));
 		
-		UUI_Component_PlayerHead_C_OnClicked_2A2E6377423153BB1FB709A74F65DCDF_Params params {};
+		UUI_Component_PlayerHead_C_OnClicked_25986DD444DD858297D0A6A2475AA22B_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -217,19 +217,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_1F70369A43AD62A4D8535296BA424D52
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_9323F4844E1252066F3EE588909E65B1
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		bool                                               bSuccess                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_1F70369A43AD62A4D8535296BA424D52(bool bSuccess)
+	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_9323F4844E1252066F3EE588909E65B1(bool bSuccess)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_1F70369A43AD62A4D8535296BA424D52"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_9323F4844E1252066F3EE588909E65B1"));
 		
-		UUI_Component_PlayerHead_C_OnURLDownloadFinish_1F70369A43AD62A4D8535296BA424D52_Params params {};
+		UUI_Component_PlayerHead_C_OnURLDownloadFinish_9323F4844E1252066F3EE588909E65B1_Params params {};
 		params.bSuccess = bSuccess;
 		
 		auto flags = fn->FunctionFlags;
@@ -239,17 +239,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_EFA58478436F16F121BBB38BF9D63802
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_FE7871F64D0B78CAB9D56E801667B628
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Component_PlayerHead_C::OnClicked_EFA58478436F16F121BBB38BF9D63802()
+	void UUI_Component_PlayerHead_C::OnClicked_FE7871F64D0B78CAB9D56E801667B628()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_EFA58478436F16F121BBB38BF9D63802"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_FE7871F64D0B78CAB9D56E801667B628"));
 		
-		UUI_Component_PlayerHead_C_OnClicked_EFA58478436F16F121BBB38BF9D63802_Params params {};
+		UUI_Component_PlayerHead_C_OnClicked_FE7871F64D0B78CAB9D56E801667B628_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -258,19 +258,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_8C9C7E5A43CDEA9D66F9FF8A9AFD2F1E
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_574CF6BB4D7D749E5A749A8BEC070E41
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		bool                                               bSuccess                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_8C9C7E5A43CDEA9D66F9FF8A9AFD2F1E(bool bSuccess)
+	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_574CF6BB4D7D749E5A749A8BEC070E41(bool bSuccess)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_8C9C7E5A43CDEA9D66F9FF8A9AFD2F1E"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_574CF6BB4D7D749E5A749A8BEC070E41"));
 		
-		UUI_Component_PlayerHead_C_OnURLDownloadFinish_8C9C7E5A43CDEA9D66F9FF8A9AFD2F1E_Params params {};
+		UUI_Component_PlayerHead_C_OnURLDownloadFinish_574CF6BB4D7D749E5A749A8BEC070E41_Params params {};
 		params.bSuccess = bSuccess;
 		
 		auto flags = fn->FunctionFlags;
@@ -280,17 +280,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_BA328C0346FD9D96348B73B490B78F63
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_6D9CD0724B9D3B15AEE1009A08FC1449
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Component_PlayerHead_C::OnClicked_BA328C0346FD9D96348B73B490B78F63()
+	void UUI_Component_PlayerHead_C::OnClicked_6D9CD0724B9D3B15AEE1009A08FC1449()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_BA328C0346FD9D96348B73B490B78F63"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_6D9CD0724B9D3B15AEE1009A08FC1449"));
 		
-		UUI_Component_PlayerHead_C_OnClicked_BA328C0346FD9D96348B73B490B78F63_Params params {};
+		UUI_Component_PlayerHead_C_OnClicked_6D9CD0724B9D3B15AEE1009A08FC1449_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -299,19 +299,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_BEC9C8EE4BA412DEA06E56A21BDE7C17
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_D1EAF98C4C2418553512DAA9B96E8735
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		bool                                               bSuccess                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_BEC9C8EE4BA412DEA06E56A21BDE7C17(bool bSuccess)
+	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_D1EAF98C4C2418553512DAA9B96E8735(bool bSuccess)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_BEC9C8EE4BA412DEA06E56A21BDE7C17"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_D1EAF98C4C2418553512DAA9B96E8735"));
 		
-		UUI_Component_PlayerHead_C_OnURLDownloadFinish_BEC9C8EE4BA412DEA06E56A21BDE7C17_Params params {};
+		UUI_Component_PlayerHead_C_OnURLDownloadFinish_D1EAF98C4C2418553512DAA9B96E8735_Params params {};
 		params.bSuccess = bSuccess;
 		
 		auto flags = fn->FunctionFlags;
@@ -321,17 +321,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_09C5CDEA4F7D292ACEE5B8A850DA9C77
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_6EA6B61140005EFB08983A894F528513
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Component_PlayerHead_C::OnClicked_09C5CDEA4F7D292ACEE5B8A850DA9C77()
+	void UUI_Component_PlayerHead_C::OnClicked_6EA6B61140005EFB08983A894F528513()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_09C5CDEA4F7D292ACEE5B8A850DA9C77"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_6EA6B61140005EFB08983A894F528513"));
 		
-		UUI_Component_PlayerHead_C_OnClicked_09C5CDEA4F7D292ACEE5B8A850DA9C77_Params params {};
+		UUI_Component_PlayerHead_C_OnClicked_6EA6B61140005EFB08983A894F528513_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -340,19 +340,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_3FC88FD649EFA95ECA8493B5CBA18C5D
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_8289AA53403A3888034D0B90638156A2
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		bool                                               bSuccess                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_3FC88FD649EFA95ECA8493B5CBA18C5D(bool bSuccess)
+	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_8289AA53403A3888034D0B90638156A2(bool bSuccess)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_3FC88FD649EFA95ECA8493B5CBA18C5D"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_8289AA53403A3888034D0B90638156A2"));
 		
-		UUI_Component_PlayerHead_C_OnURLDownloadFinish_3FC88FD649EFA95ECA8493B5CBA18C5D_Params params {};
+		UUI_Component_PlayerHead_C_OnURLDownloadFinish_8289AA53403A3888034D0B90638156A2_Params params {};
 		params.bSuccess = bSuccess;
 		
 		auto flags = fn->FunctionFlags;
@@ -362,17 +362,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_2A0EEE704DF99E44D61D85A3CBF79F7F
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_5517652643295B80491040BE1CD33335
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Component_PlayerHead_C::OnClicked_2A0EEE704DF99E44D61D85A3CBF79F7F()
+	void UUI_Component_PlayerHead_C::OnClicked_5517652643295B80491040BE1CD33335()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_2A0EEE704DF99E44D61D85A3CBF79F7F"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_5517652643295B80491040BE1CD33335"));
 		
-		UUI_Component_PlayerHead_C_OnClicked_2A0EEE704DF99E44D61D85A3CBF79F7F_Params params {};
+		UUI_Component_PlayerHead_C_OnClicked_5517652643295B80491040BE1CD33335_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -381,19 +381,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_D6384FD74168AA6839A411905C974947
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_D3B73F964AB5B16B7F7E9E9551888913
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		bool                                               bSuccess                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_D6384FD74168AA6839A411905C974947(bool bSuccess)
+	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_D3B73F964AB5B16B7F7E9E9551888913(bool bSuccess)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_D6384FD74168AA6839A411905C974947"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_D3B73F964AB5B16B7F7E9E9551888913"));
 		
-		UUI_Component_PlayerHead_C_OnURLDownloadFinish_D6384FD74168AA6839A411905C974947_Params params {};
+		UUI_Component_PlayerHead_C_OnURLDownloadFinish_D3B73F964AB5B16B7F7E9E9551888913_Params params {};
 		params.bSuccess = bSuccess;
 		
 		auto flags = fn->FunctionFlags;
@@ -403,17 +403,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_60BE132D44E33B4FEE859D8AB5B54693
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_D5AB1124456AC126307009858FEFBF67
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Component_PlayerHead_C::OnClicked_60BE132D44E33B4FEE859D8AB5B54693()
+	void UUI_Component_PlayerHead_C::OnClicked_D5AB1124456AC126307009858FEFBF67()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_60BE132D44E33B4FEE859D8AB5B54693"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_D5AB1124456AC126307009858FEFBF67"));
 		
-		UUI_Component_PlayerHead_C_OnClicked_60BE132D44E33B4FEE859D8AB5B54693_Params params {};
+		UUI_Component_PlayerHead_C_OnClicked_D5AB1124456AC126307009858FEFBF67_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -422,19 +422,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_900DE5AE41E8B62E7ADC5C86017E55E6
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_459D68154D57943D1CF99D867ECBEE13
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		bool                                               bSuccess                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_900DE5AE41E8B62E7ADC5C86017E55E6(bool bSuccess)
+	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_459D68154D57943D1CF99D867ECBEE13(bool bSuccess)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_900DE5AE41E8B62E7ADC5C86017E55E6"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_459D68154D57943D1CF99D867ECBEE13"));
 		
-		UUI_Component_PlayerHead_C_OnURLDownloadFinish_900DE5AE41E8B62E7ADC5C86017E55E6_Params params {};
+		UUI_Component_PlayerHead_C_OnURLDownloadFinish_459D68154D57943D1CF99D867ECBEE13_Params params {};
 		params.bSuccess = bSuccess;
 		
 		auto flags = fn->FunctionFlags;
@@ -444,17 +444,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_68D77842466635BEDA072EAD42F0FB59
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_B3999BC04E86AA61F3F72EAE587502BC
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Component_PlayerHead_C::OnClicked_68D77842466635BEDA072EAD42F0FB59()
+	void UUI_Component_PlayerHead_C::OnClicked_B3999BC04E86AA61F3F72EAE587502BC()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_68D77842466635BEDA072EAD42F0FB59"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_B3999BC04E86AA61F3F72EAE587502BC"));
 		
-		UUI_Component_PlayerHead_C_OnClicked_68D77842466635BEDA072EAD42F0FB59_Params params {};
+		UUI_Component_PlayerHead_C_OnClicked_B3999BC04E86AA61F3F72EAE587502BC_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -463,19 +463,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_7CE7F961471903363450A2A8902F893C
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_E28118AE4EBCC837A686EF91AA8B3C76
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		bool                                               bSuccess                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_7CE7F961471903363450A2A8902F893C(bool bSuccess)
+	void UUI_Component_PlayerHead_C::OnURLDownloadFinish_E28118AE4EBCC837A686EF91AA8B3C76(bool bSuccess)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_7CE7F961471903363450A2A8902F893C"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnURLDownloadFinish_E28118AE4EBCC837A686EF91AA8B3C76"));
 		
-		UUI_Component_PlayerHead_C_OnURLDownloadFinish_7CE7F961471903363450A2A8902F893C_Params params {};
+		UUI_Component_PlayerHead_C_OnURLDownloadFinish_E28118AE4EBCC837A686EF91AA8B3C76_Params params {};
 		params.bSuccess = bSuccess;
 		
 		auto flags = fn->FunctionFlags;
@@ -485,17 +485,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_20BCA2364D03C43CD9EEBA9BAF07483A
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_C271A0E343347CFF2EAAB096F5A1E151
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Component_PlayerHead_C::OnClicked_20BCA2364D03C43CD9EEBA9BAF07483A()
+	void UUI_Component_PlayerHead_C::OnClicked_C271A0E343347CFF2EAAB096F5A1E151()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_20BCA2364D03C43CD9EEBA9BAF07483A"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked_C271A0E343347CFF2EAAB096F5A1E151"));
 		
-		UUI_Component_PlayerHead_C_OnClicked_20BCA2364D03C43CD9EEBA9BAF07483A_Params params {};
+		UUI_Component_PlayerHead_C_OnClicked_C271A0E343347CFF2EAAB096F5A1E151_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -504,114 +504,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
-	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.RefreshByPSCopy
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		class ASolarPlayerState*                           ps                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 * 		bool                                               bWithoutGender                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	 */
-	void UUI_Component_PlayerHead_C::RefreshByPSCopy(class ASolarPlayerState* ps, bool bWithoutGender)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.RefreshByPSCopy"));
-		
-		UUI_Component_PlayerHead_C_RefreshByPSCopy_Params params {};
-		params.ps = ps;
-		params.bWithoutGender = bWithoutGender;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x02D656B0
-	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.ForceShowFrameCopy
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		int32_t                                            FrameID                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UUI_Component_PlayerHead_C::ForceShowFrameCopy(int32_t FrameID)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.ForceShowFrameCopy"));
-		
-		UUI_Component_PlayerHead_C_ForceShowFrameCopy_Params params {};
-		params.FrameID = FrameID;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x02D656B0
-	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetVipTypeCopy
-	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
-	 * Parameters:
-	 * 		unsigned char                                      VipType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	 */
-	void UUI_Component_PlayerHead_C::SetVipTypeCopy(unsigned char VipType)
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetVipTypeCopy"));
-		
-		UUI_Component_PlayerHead_C_SetVipTypeCopy_Params params {};
-		params.VipType = VipType;
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnSolarUIClosed
-	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
-	 */
-	void UUI_Component_PlayerHead_C::OnSolarUIClosed()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnSolarUIClosed"));
-		
-		UUI_Component_PlayerHead_C_OnSolarUIClosed_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnInitialized
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Component_PlayerHead_C::OnInitialized()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnInitialized"));
-		
-		UUI_Component_PlayerHead_C_OnInitialized_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.Destruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -630,7 +523,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.ConstructCopy
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -649,7 +542,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetAvatarCopy
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -673,7 +566,53 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x02D0DF90
+	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.RefreshByPSCopy
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		class ASolarPlayerState*                           ps                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 * 		bool                                               bWithoutGender                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	 */
+	void UUI_Component_PlayerHead_C::RefreshByPSCopy(class ASolarPlayerState* ps, bool bWithoutGender)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.RefreshByPSCopy"));
+		
+		UUI_Component_PlayerHead_C_RefreshByPSCopy_Params params {};
+		params.ps = ps;
+		params.bWithoutGender = bWithoutGender;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D0DF90
+	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetVipTypeCopy
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		unsigned char                                      VipType                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UUI_Component_PlayerHead_C::SetVipTypeCopy(unsigned char VipType)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetVipTypeCopy"));
+		
+		UUI_Component_PlayerHead_C_SetVipTypeCopy_Params params {};
+		params.VipType = VipType;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnSolarUIOpened
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -693,7 +632,68 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x00B67660
+	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnInitialized
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_Component_PlayerHead_C::OnInitialized()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnInitialized"));
+		
+		UUI_Component_PlayerHead_C_OnInitialized_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D0DF90
+	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.ForceShowFrameCopy
+	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
+	 * Parameters:
+	 * 		int32_t                                            FrameID                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	 */
+	void UUI_Component_PlayerHead_C::ForceShowFrameCopy(int32_t FrameID)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.ForceShowFrameCopy"));
+		
+		UUI_Component_PlayerHead_C_ForceShowFrameCopy_Params params {};
+		params.FrameID = FrameID;
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B67660
+	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnSolarUIClosed
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 */
+	void UUI_Component_PlayerHead_C::OnSolarUIClosed()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnSolarUIClosed"));
+		
+		UUI_Component_PlayerHead_C_OnSolarUIClosed_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -714,7 +714,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.ForceShowFrame
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -736,7 +736,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.RefreshByPS
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -760,7 +760,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetAvatarSize
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -782,7 +782,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetAvatar
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -806,7 +806,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetStateHD
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -828,7 +828,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetDefaultSteamAvatar
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -847,7 +847,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetVipType
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -869,7 +869,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnTouchMoved
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -895,7 +895,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetAvatarState
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -917,7 +917,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetAvatarIcon
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -939,7 +939,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetEmptyState
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -961,7 +961,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetPlayerGender
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -983,7 +983,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.SetSocialIcon
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -1005,7 +1005,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.Update
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -1024,7 +1024,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -1046,7 +1046,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.BndEvt__Btn_PlayerInfo_K2Node_ComponentBoundEvent_1_OnButtonReleasedEvent__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1065,7 +1065,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.BndEvt__Btn_PlayerInfo_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
 	 * 		Flags  -> (BlueprintEvent)
 	 */
@@ -1084,7 +1084,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -1103,7 +1103,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.ExecuteUbergraph_UI_Component_PlayerHead
 	 * 		Flags  -> (Final)
 	 * Parameters:
@@ -1125,7 +1125,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnReleased__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */
@@ -1144,7 +1144,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_PlayerHead.UI_Component_PlayerHead_C.OnClicked__DelegateSignature
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */

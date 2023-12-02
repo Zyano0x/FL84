@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -34,11 +34,11 @@ namespace CG
 		E_Type_State_Desktop                                       StateDesktop;                                            // 0x0450(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnClicked_80D225AC4B210AE73B1DA099DC1D1579();
-		void OnSolarUIOpened();
-		void OnInitialized();
+		void OnClicked_22F3D1E747A8FF48742982BFF8DA2BD1();
 		void OnSolarUIClosed();
 		void Construct();
+		void OnSolarUIOpened();
+		void OnInitialized();
 		void Destruct();
 		class FString GetModuleName();
 		void SetStateDesktop(E_Type_State_Desktop StateHD);

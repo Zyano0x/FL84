@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -63,15 +63,15 @@ namespace CG
 		class UUI_Component_PlayerHead_C*                          UI_Component_PlayerHead_2;                               // 0x0538(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class UUI_Component_PlayerHead_C*                          UI_Component_PlayerHead_3;                               // 0x0540(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		ET_Type_Invitation                                         Pop_Type;                                                // 0x0548(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
-		unsigned char                                              UnknownData_WTH8[0x3];                                   // 0x0549(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_PL51[0x3];                                   // 0x0549(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    Player;                                                  // 0x054C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		bool                                                       IsNeedShow;                                              // 0x0550(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
-		void OnClicked_2C09327B4D737A38576883944415CDBE();
-		void OnClicked_6F16AF8B4BD4E317125E67B28093E671();
-		void Destruct();
+		void OnClicked_99DF1C324DFA66C6D341BD8FB3C9F7D5();
+		void OnClicked_F678A4824BA6DAD6356704A6C86D6F69();
 		void Construct();
+		void Destruct();
 		class FString GetModuleName();
 		void SetPlayer(int32_t Num);
 		void SetType(ET_Type_Invitation Pop_Type);

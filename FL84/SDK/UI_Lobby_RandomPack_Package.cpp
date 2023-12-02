@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,17 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnClicked_93007EFC4761A5177A33FFBEB7D7DF2F
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnClicked_3EB4E79341450A0C0E8CFAB583FC6309
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_RandomPack_C::OnClicked_93007EFC4761A5177A33FFBEB7D7DF2F()
+	void UUI_Lobby_RandomPack_C::OnClicked_3EB4E79341450A0C0E8CFAB583FC6309()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnClicked_93007EFC4761A5177A33FFBEB7D7DF2F"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnClicked_3EB4E79341450A0C0E8CFAB583FC6309"));
 		
-		UUI_Lobby_RandomPack_C_OnClicked_93007EFC4761A5177A33FFBEB7D7DF2F_Params params {};
+		UUI_Lobby_RandomPack_C_OnClicked_3EB4E79341450A0C0E8CFAB583FC6309_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -31,46 +31,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnSolarUIClosed
-	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
-	 */
-	void UUI_Lobby_RandomPack_C::OnSolarUIClosed()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnSolarUIClosed"));
-		
-		UUI_Lobby_RandomPack_C_OnSolarUIClosed_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		fn->FunctionFlags |= 0x00000400;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnInitialized
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Lobby_RandomPack_C::OnInitialized()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnInitialized"));
-		
-		UUI_Lobby_RandomPack_C_OnInitialized_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnSolarUIOpened
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -90,7 +51,46 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x00B67660
+	 * 		Name   -> Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnInitialized
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_Lobby_RandomPack_C::OnInitialized()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnInitialized"));
+		
+		UUI_Lobby_RandomPack_C_OnInitialized_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B67660
+	 * 		Name   -> Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnSolarUIClosed
+	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
+	 */
+	void UUI_Lobby_RandomPack_C::OnSolarUIClosed()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnSolarUIClosed"));
+		
+		UUI_Lobby_RandomPack_C_OnSolarUIClosed_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */

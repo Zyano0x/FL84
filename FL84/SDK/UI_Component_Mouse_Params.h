@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,6 +15,12 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
+	 * Function UI_Component_Mouse.UI_Component_Mouse_C.Destruct
+	 */
+	struct UUI_Component_Mouse_C_Destruct_Params
+	{	};
+
+	/**
 	 * Function UI_Component_Mouse.UI_Component_Mouse_C.Construct
 	 */
 	struct UUI_Component_Mouse_C_Construct_Params
@@ -24,12 +30,6 @@ namespace CG
 	 * Function UI_Component_Mouse.UI_Component_Mouse_C.OnInitialized
 	 */
 	struct UUI_Component_Mouse_C_OnInitialized_Params
-	{	};
-
-	/**
-	 * Function UI_Component_Mouse.UI_Component_Mouse_C.Destruct
-	 */
-	struct UUI_Component_Mouse_C_Destruct_Params
 	{	};
 
 	/**

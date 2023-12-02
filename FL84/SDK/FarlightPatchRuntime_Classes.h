@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -42,7 +42,7 @@ namespace CG
 	class UPakReader : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_15Y7[0x28];                                  // 0x0028(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_WKD4[0x28];                                  // 0x0028(0x0028) MISSED OFFSET (PADDING)
 
 	public:
 		int64_t GetTotalSize();
@@ -58,7 +58,7 @@ namespace CG
 	class UPakWriter : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_KGOI[0x98];                                  // 0x0028(0x0098) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_B6GB[0x98];                                  // 0x0028(0x0098) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -32,10 +32,10 @@ namespace CG
 		class UTickerWidget_C*                                     Txt_ToBeClaimed;                                         // 0x0440(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnClicked_93007EFC4761A5177A33FFBEB7D7DF2F();
-		void OnSolarUIClosed();
-		void OnInitialized();
+		void OnClicked_3EB4E79341450A0C0E8CFAB583FC6309();
 		void OnSolarUIOpened();
+		void OnInitialized();
+		void OnSolarUIClosed();
 		class FString GetModuleName();
 		static UClass* StaticClass();
 	};

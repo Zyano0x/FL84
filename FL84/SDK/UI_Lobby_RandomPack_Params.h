@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,15 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnClicked_93007EFC4761A5177A33FFBEB7D7DF2F
+	 * DelegateFunction UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnClicked_3EB4E79341450A0C0E8CFAB583FC6309
 	 */
-	struct UUI_Lobby_RandomPack_C_OnClicked_93007EFC4761A5177A33FFBEB7D7DF2F_Params
+	struct UUI_Lobby_RandomPack_C_OnClicked_3EB4E79341450A0C0E8CFAB583FC6309_Params
 	{	};
 
 	/**
-	 * Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnSolarUIClosed
+	 * Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnSolarUIOpened
 	 */
-	struct UUI_Lobby_RandomPack_C_OnSolarUIClosed_Params
+	struct UUI_Lobby_RandomPack_C_OnSolarUIOpened_Params
 	{	};
 
 	/**
@@ -33,9 +33,9 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnSolarUIOpened
+	 * Function UI_Lobby_RandomPack.UI_Lobby_RandomPack_C.OnSolarUIClosed
 	 */
-	struct UUI_Lobby_RandomPack_C_OnSolarUIOpened_Params
+	struct UUI_Lobby_RandomPack_C_OnSolarUIClosed_Params
 	{	};
 
 	/**

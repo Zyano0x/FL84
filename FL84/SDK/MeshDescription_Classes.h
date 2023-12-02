@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -31,7 +31,7 @@ namespace CG
 	class UMeshDescriptionBase : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_7KOF[0x368];                                 // 0x0028(0x0368) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_LUSB[0x368];                                 // 0x0028(0x0368) MISSED OFFSET (PADDING)
 
 	public:
 		void SetVertexPosition(const struct FVertexID& VertexID, const struct FVector& Position);

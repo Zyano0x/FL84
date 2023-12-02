@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BF39A0
+	 * 		RVA    -> 0x00BF0FA0
 	 * 		Name   -> Function WebBrowserWidget.WebBrowser.StopLoad
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -32,7 +32,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BF38D0
+	 * 		RVA    -> 0x00BF0ED0
 	 * 		Name   -> Function WebBrowserWidget.WebBrowser.SetURLWithoutNavigation
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -55,7 +55,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BF38B0
+	 * 		RVA    -> 0x00BF0EB0
 	 * 		Name   -> Function WebBrowserWidget.WebBrowser.Reload
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -75,7 +75,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction WebBrowserWidget.WebBrowser.OnUrlChanged__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -97,7 +97,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction WebBrowserWidget.WebBrowser.OnBeforePopup__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -121,7 +121,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction WebBrowserWidget.WebBrowser.OnBeforeNavigation__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -143,7 +143,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BF37C0
+	 * 		RVA    -> 0x00BF0DC0
 	 * 		Name   -> Function WebBrowserWidget.WebBrowser.LoadURL
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -166,7 +166,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BF3640
+	 * 		RVA    -> 0x00BF0C40
 	 * 		Name   -> Function WebBrowserWidget.WebBrowser.LoadString
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -191,7 +191,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BF35C0
+	 * 		RVA    -> 0x00BF0BC0
 	 * 		Name   -> Function WebBrowserWidget.WebBrowser.GetUrl
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -213,7 +213,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BF3520
+	 * 		RVA    -> 0x00BF0B20
 	 * 		Name   -> Function WebBrowserWidget.WebBrowser.GetTitleText
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -235,7 +235,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BF3480
+	 * 		RVA    -> 0x00BF0A80
 	 * 		Name   -> Function WebBrowserWidget.WebBrowser.ExecuteJavascript
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -258,7 +258,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BF3460
+	 * 		RVA    -> 0x00BF0A60
 	 * 		Name   -> Function WebBrowserWidget.WebBrowser.CloseSelf
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -278,7 +278,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00BF3330
+	 * 		RVA    -> 0x00BF0930
 	 * 		Name   -> Function WebBrowserWidget.WebBrowser.BindUObject
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:

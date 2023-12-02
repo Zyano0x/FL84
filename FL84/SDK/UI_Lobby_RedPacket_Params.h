@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,15 +15,9 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnClicked_91B23DA0437A821191F45C9A4AC88C22
+	 * Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnClicked_531131474037630A649027A0B0E8AEE1
 	 */
-	struct UUI_Lobby_RedPacket_C_OnClicked_91B23DA0437A821191F45C9A4AC88C22_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.Destruct
-	 */
-	struct UUI_Lobby_RedPacket_C_Destruct_Params
+	struct UUI_Lobby_RedPacket_C_OnClicked_531131474037630A649027A0B0E8AEE1_Params
 	{	};
 
 	/**
@@ -33,15 +27,21 @@ namespace CG
 	{	};
 
 	/**
+	 * Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnSolarUIOpened
+	 */
+	struct UUI_Lobby_RedPacket_C_OnSolarUIOpened_Params
+	{	};
+
+	/**
 	 * Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnSolarUIClosed
 	 */
 	struct UUI_Lobby_RedPacket_C_OnSolarUIClosed_Params
 	{	};
 
 	/**
-	 * Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.OnSolarUIOpened
+	 * Function UI_Lobby_RedPacket.UI_Lobby_RedPacket_C.Destruct
 	 */
-	struct UUI_Lobby_RedPacket_C_OnSolarUIOpened_Params
+	struct UUI_Lobby_RedPacket_C_Destruct_Params
 	{	};
 
 	/**

@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -24,9 +24,9 @@ namespace CG
 		class UCanvasPanel*                                        CanvasPanel_Container;                                   // 0x0400(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnSolarUIClosed();
-		void OnInitialized();
 		void OnSolarUIOpened();
+		void OnInitialized();
+		void OnSolarUIClosed();
 		class FString GetModuleName();
 		static UClass* StaticClass();
 	};

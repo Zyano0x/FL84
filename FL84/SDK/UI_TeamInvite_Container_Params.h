@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,9 +15,9 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnSolarUIClosed
+	 * Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnSolarUIOpened
 	 */
-	struct UUI_TeamInvite_Container_C_OnSolarUIClosed_Params
+	struct UUI_TeamInvite_Container_C_OnSolarUIOpened_Params
 	{	};
 
 	/**
@@ -33,15 +33,15 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnSolarUIOpened
-	 */
-	struct UUI_TeamInvite_Container_C_OnSolarUIOpened_Params
-	{	};
-
-	/**
 	 * Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnInitialized
 	 */
 	struct UUI_TeamInvite_Container_C_OnInitialized_Params
+	{	};
+
+	/**
+	 * Function UI_TeamInvite_Container.UI_TeamInvite_Container_C.OnSolarUIClosed
+	 */
+	struct UUI_TeamInvite_Container_C_OnSolarUIClosed_Params
 	{	};
 
 	/**

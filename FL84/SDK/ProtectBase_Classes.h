@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -16,12 +16,12 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Class ProtectBase.ProtectBaseComponent
-	 * Size -> 0x0008 (FullSize[0x0030] - InheritedSize[0x0028])
+	 * Size -> 0x0048 (FullSize[0x0070] - InheritedSize[0x0028])
 	 */
 	class UProtectBaseComponent : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_CR9I[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_RD5Q[0x48];                                  // 0x0028(0x0048) MISSED OFFSET (PADDING)
 
 	public:
 		class UProtectBaseComponent* STATIC_GetInstance();
@@ -45,7 +45,7 @@ namespace CG
 	class USecDSComponent : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_2KS9[0x98];                                  // 0x0028(0x0098) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_P10Y[0x98];                                  // 0x0028(0x0098) MISSED OFFSET (PADDING)
 
 	public:
 		class USecDSComponent* STATIC_GetInstance();

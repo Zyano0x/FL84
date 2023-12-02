@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class AAbility_VehicleWeapon_IronManLaser_C : public ASolarAbility
 	{
 	public:
-		unsigned char                                              UnknownData_IMCG[0x8];                                   // 0x0308(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_DECP[0x8];                                   // 0x0308(0x0008) Fix Super Size
 
 	public:
 		static UClass* StaticClass();

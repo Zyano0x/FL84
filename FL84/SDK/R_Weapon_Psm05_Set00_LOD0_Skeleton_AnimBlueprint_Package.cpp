@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B49730
+	 * 		RVA    -> 0x01AE7680
 	 * 		Name   -> Function R_Weapon_Psm05_Set00_LOD0_Skeleton_AnimBlueprint.R_Weapon_Psm05_Set00_LOD0_Skeleton_AnimBlueprint_C.ExecuteUbergraph_R_Weapon_Psm05_Set00_LOD0_Skeleton_AnimBlueprint
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -35,7 +35,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B471B0
+	 * 		RVA    -> 0x01AE5100
 	 * 		Name   -> Function R_Weapon_Psm05_Set00_LOD0_Skeleton_AnimBlueprint.R_Weapon_Psm05_Set00_LOD0_Skeleton_AnimBlueprint_C.AnimGraph
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

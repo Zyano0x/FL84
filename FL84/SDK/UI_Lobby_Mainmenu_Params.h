@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,33 +15,27 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_F3870C954A3DAFED513856B2FD00413D
+	 * DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_1521EA384D47609111217A97CC3DE3AB
 	 */
-	struct UUI_Lobby_Mainmenu_C_OnClicked_F3870C954A3DAFED513856B2FD00413D_Params
+	struct UUI_Lobby_Mainmenu_C_OnClicked_1521EA384D47609111217A97CC3DE3AB_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_66374DAF4F697E07D8697D901AC700E6
+	 * DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_E37CF23A4803A198948793A86357E663
 	 */
-	struct UUI_Lobby_Mainmenu_C_OnClicked_66374DAF4F697E07D8697D901AC700E6_Params
+	struct UUI_Lobby_Mainmenu_C_OnClicked_E37CF23A4803A198948793A86357E663_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_18C5CC2A4FEB5927AF00F095EF7F6761
+	 * DelegateFunction UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnClicked_047FC2CE4B1E2A38BC549A9F4DE76B3A
 	 */
-	struct UUI_Lobby_Mainmenu_C_OnClicked_18C5CC2A4FEB5927AF00F095EF7F6761_Params
+	struct UUI_Lobby_Mainmenu_C_OnClicked_047FC2CE4B1E2A38BC549A9F4DE76B3A_Params
 	{	};
 
 	/**
 	 * Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.Destruct
 	 */
 	struct UUI_Lobby_Mainmenu_C_Destruct_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.Construct
-	 */
-	struct UUI_Lobby_Mainmenu_C_Construct_Params
 	{	};
 
 	/**
@@ -54,6 +48,12 @@ namespace CG
 	 * Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.OnSolarUIOpened
 	 */
 	struct UUI_Lobby_Mainmenu_C_OnSolarUIOpened_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_Mainmenu.UI_Lobby_Mainmenu_C.Construct
+	 */
+	struct UUI_Lobby_Mainmenu_C_Construct_Params
 	{	};
 
 	/**

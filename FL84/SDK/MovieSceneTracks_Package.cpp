@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -68,7 +68,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneTransformOrigin.BP_GetTransformOrigin
 	 * 		Flags  -> (Event, Protected, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */
@@ -103,7 +103,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03B9B8B0
+	 * 		RVA    -> 0x03B47220
 	 * 		Name   -> Function MovieSceneTracks.MovieScene3DConstraintSection.SetConstraintBindingID
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -126,7 +126,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03B9B830
+	 * 		RVA    -> 0x03B471A0
 	 * 		Name   -> Function MovieSceneTracks.MovieScene3DConstraintSection.GetConstraintBindingID
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -288,7 +288,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03B9BA00
+	 * 		RVA    -> 0x03B47370
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneAudioSection.SetStartOffset
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -311,7 +311,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03B9B970
+	 * 		RVA    -> 0x03B472E0
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneAudioSection.SetSound
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -334,7 +334,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03B9B890
+	 * 		RVA    -> 0x03B47200
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneAudioSection.GetStartOffset
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -356,7 +356,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03B9B870
+	 * 		RVA    -> 0x03B471E0
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneAudioSection.GetSound
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -490,7 +490,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03B9B8B0
+	 * 		RVA    -> 0x03B47220
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneCameraCutSection.SetCameraBindingID
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -513,7 +513,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03B9B830
+	 * 		RVA    -> 0x03B471A0
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneCameraCutSection.GetCameraBindingID
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -591,7 +591,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03BA2100
+	 * 		RVA    -> 0x03B4DA70
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneCinematicShotSection.SetShotDisplayName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -614,7 +614,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03BA1F60
+	 * 		RVA    -> 0x03B4D8D0
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneCinematicShotSection.GetShotDisplayName
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -888,7 +888,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03BA2200
+	 * 		RVA    -> 0x03B4DB70
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetVisibility
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -911,7 +911,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03BA2050
+	 * 		RVA    -> 0x03B4D9C0
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetLevelNames
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -934,7 +934,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03BA2020
+	 * 		RVA    -> 0x03B4D990
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetVisibility
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -956,7 +956,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03BA1F30
+	 * 		RVA    -> 0x03B4D8A0
 	 * 		Name   -> Function MovieSceneTracks.MovieSceneLevelVisibilitySection.GetLevelNames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,9 +15,9 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Currency_BarPanel.UI_Currency_BarPanel_C.OnSolarUIClosed
+	 * Function UI_Currency_BarPanel.UI_Currency_BarPanel_C.Construct
 	 */
-	struct UUI_Currency_BarPanel_C_OnSolarUIClosed_Params
+	struct UUI_Currency_BarPanel_C_Construct_Params
 	{	};
 
 	/**
@@ -27,9 +27,9 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Currency_BarPanel.UI_Currency_BarPanel_C.Construct
+	 * Function UI_Currency_BarPanel.UI_Currency_BarPanel_C.OnSolarUIClosed
 	 */
-	struct UUI_Currency_BarPanel_C_Construct_Params
+	struct UUI_Currency_BarPanel_C_OnSolarUIClosed_Params
 	{	};
 
 	/**

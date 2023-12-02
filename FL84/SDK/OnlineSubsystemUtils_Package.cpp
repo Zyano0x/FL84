@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A99020
+	 * 		RVA    -> 0x00A96520
 	 * 		Name   -> Function OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementProgress
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -74,7 +74,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A98CC0
+	 * 		RVA    -> 0x00A961C0
 	 * 		Name   -> Function OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementDescription
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -131,7 +131,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A97A20
+	 * 		RVA    -> 0x00A94F20
 	 * 		Name   -> Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievements
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -158,7 +158,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A97950
+	 * 		RVA    -> 0x00A94E50
 	 * 		Name   -> Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievementDescriptions
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -199,7 +199,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A99B50
+	 * 		RVA    -> 0x00A97050
 	 * 		Name   -> Function OnlineSubsystemUtils.AchievementWriteCallbackProxy.WriteAchievementProgress
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -246,7 +246,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A97AF0
+	 * 		RVA    -> 0x00A94FF0
 	 * 		Name   -> Function OnlineSubsystemUtils.ConnectionCallbackProxy.ConnectToService
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -287,7 +287,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A98320
+	 * 		RVA    -> 0x00A95820
 	 * 		Name   -> Function OnlineSubsystemUtils.CreateSessionCallbackProxy.CreateSession
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -332,7 +332,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A98470
+	 * 		RVA    -> 0x00A95970
 	 * 		Name   -> Function OnlineSubsystemUtils.DestroySessionCallbackProxy.DestroySession
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -373,7 +373,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A98540
+	 * 		RVA    -> 0x00A95A40
 	 * 		Name   -> Function OnlineSubsystemUtils.EndMatchCallbackProxy.EndMatch
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -420,7 +420,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A98780
+	 * 		RVA    -> 0x00A95C80
 	 * 		Name   -> Function OnlineSubsystemUtils.EndTurnCallbackProxy.EndTurn
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -463,7 +463,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A998C0
+	 * 		RVA    -> 0x00A96DC0
 	 * 		Name   -> Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetServerName
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -488,7 +488,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A99670
+	 * 		RVA    -> 0x00A96B70
 	 * 		Name   -> Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetPingInMs
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -513,7 +513,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A99420
+	 * 		RVA    -> 0x00A96920
 	 * 		Name   -> Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetMaxPlayers
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -538,7 +538,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A991D0
+	 * 		RVA    -> 0x00A966D0
 	 * 		Name   -> Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetCurrentPlayers
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -563,7 +563,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A98940
+	 * 		RVA    -> 0x00A95E40
 	 * 		Name   -> Function OnlineSubsystemUtils.FindSessionsCallbackProxy.FindSessions
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -608,7 +608,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A98A90
+	 * 		RVA    -> 0x00A95F90
 	 * 		Name   -> Function OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy.FindTurnBasedMatch
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -657,7 +657,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A97CB0
+	 * 		RVA    -> 0x00A951B0
 	 * 		Name   -> Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPurchase
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -698,7 +698,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A98290
+	 * 		RVA    -> 0x00A95790
 	 * 		Name   -> Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseUnprocessedPurchases
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -723,7 +723,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A97FC0
+	 * 		RVA    -> 0x00A954C0
 	 * 		Name   -> Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseQueryOwned
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -748,7 +748,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A97BC0
+	 * 		RVA    -> 0x00A950C0
 	 * 		Name   -> Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchase
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -789,7 +789,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A97EB0
+	 * 		RVA    -> 0x00A953B0
 	 * 		Name   -> Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPurchaseQuery
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -830,7 +830,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A97DA0
+	 * 		RVA    -> 0x00A952A0
 	 * 		Name   -> Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2.CreateProxyObjectForInAppPurchaseQuery
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -871,7 +871,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A98170
+	 * 		RVA    -> 0x00A95670
 	 * 		Name   -> Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.CreateProxyObjectForInAppPurchaseRestore
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -912,7 +912,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A98050
+	 * 		RVA    -> 0x00A95550
 	 * 		Name   -> Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2.CreateProxyObjectForInAppPurchaseRestore
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -953,7 +953,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9DD30
+	 * 		RVA    -> 0x00A9B230
 	 * 		Name   -> Function OnlineSubsystemUtils.JoinSessionCallbackProxy.JoinSession
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -996,7 +996,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9ED10
+	 * 		RVA    -> 0x00A9C210
 	 * 		Name   -> Function OnlineSubsystemUtils.LeaderboardBlueprintLibrary.WriteLeaderboardInteger
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1039,7 +1039,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9DB90
+	 * 		RVA    -> 0x00A9B090
 	 * 		Name   -> Function OnlineSubsystemUtils.LeaderboardFlushCallbackProxy.CreateProxyObjectForFlush
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1080,7 +1080,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9DC60
+	 * 		RVA    -> 0x00A9B160
 	 * 		Name   -> Function OnlineSubsystemUtils.LeaderboardQueryCallbackProxy.CreateProxyObjectForIntQuery
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1121,7 +1121,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9DE80
+	 * 		RVA    -> 0x00A9B380
 	 * 		Name   -> Function OnlineSubsystemUtils.LogoutCallbackProxy.Logout
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1176,7 +1176,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007EECC0
+	 * 		RVA    -> 0x007EC190
 	 * 		Name   -> Function OnlineSubsystemUtils.OnlineBeaconClient.ClientOnConnected
 	 * 		Flags  -> (Final, Net, NetReliable, Native, Event, Private, NetClient)
 	 */
@@ -1280,7 +1280,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9E9B0
+	 * 		RVA    -> 0x00A9BEB0
 	 * 		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ServerUpdateReservationRequest
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -1305,7 +1305,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9E520
+	 * 		RVA    -> 0x00A9BA20
 	 * 		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ServerReservationRequest
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -1330,7 +1330,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9E290
+	 * 		RVA    -> 0x00A9B790
 	 * 		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ServerRemoveMemberFromReservationRequest
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -1355,7 +1355,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9E130
+	 * 		RVA    -> 0x00A9B630
 	 * 		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ServerCancelReservationRequest
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -1378,7 +1378,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9DA70
+	 * 		RVA    -> 0x00A9AF70
 	 * 		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationUpdates
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
@@ -1401,7 +1401,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007D1C60
+	 * 		RVA    -> 0x007CF130
 	 * 		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationFull
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 */
@@ -1421,7 +1421,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9D970
+	 * 		RVA    -> 0x00A9AE70
 	 * 		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ClientReservationResponse
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
@@ -1444,7 +1444,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9D850
+	 * 		RVA    -> 0x00A9AD50
 	 * 		Name   -> Function OnlineSubsystemUtils.PartyBeaconClient.ClientCancelReservationResponse
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
@@ -1509,7 +1509,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9DF50
+	 * 		RVA    -> 0x00A9B450
 	 * 		Name   -> Function OnlineSubsystemUtils.QuitMatchCallbackProxy.QuitMatch
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1556,7 +1556,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9EC40
+	 * 		RVA    -> 0x00A9C140
 	 * 		Name   -> Function OnlineSubsystemUtils.ShowLoginUICallbackProxy.ShowExternalLoginUI
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1597,7 +1597,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9E7B0
+	 * 		RVA    -> 0x00A9BCB0
 	 * 		Name   -> Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerReservationRequest
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -1622,7 +1622,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9E130
+	 * 		RVA    -> 0x00A9B630
 	 * 		Name   -> Function OnlineSubsystemUtils.SpectatorBeaconClient.ServerCancelReservationRequest
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 	 * Parameters:
@@ -1645,7 +1645,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9DB00
+	 * 		RVA    -> 0x00A9B000
 	 * 		Name   -> Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientSendReservationUpdates
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
@@ -1668,7 +1668,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007F6400
+	 * 		RVA    -> 0x007F38D0
 	 * 		Name   -> Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientSendReservationFull
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 */
@@ -1688,7 +1688,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9D9F0
+	 * 		RVA    -> 0x00A9AEF0
 	 * 		Name   -> Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientReservationResponse
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
@@ -1711,7 +1711,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9D8D0
+	 * 		RVA    -> 0x00A9ADD0
 	 * 		Name   -> Function OnlineSubsystemUtils.SpectatorBeaconClient.ClientCancelReservationResponse
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 * Parameters:
@@ -1776,7 +1776,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9E240
+	 * 		RVA    -> 0x00A9B740
 	 * 		Name   -> Function OnlineSubsystemUtils.TestBeaconClient.ServerPong
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 	 */
@@ -1796,7 +1796,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9D950
+	 * 		RVA    -> 0x00A9AE50
 	 * 		Name   -> Function OnlineSubsystemUtils.TestBeaconClient.ClientPing
 	 * 		Flags  -> (Net, NetReliable, Native, Event, Public, NetClient)
 	 */
@@ -1844,7 +1844,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9F920
+	 * 		RVA    -> 0x00A9CE20
 	 * 		Name   -> Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.RegisterTurnBasedMatchInterfaceObject
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1871,7 +1871,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9F6F0
+	 * 		RVA    -> 0x00A9CBF0
 	 * 		Name   -> Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetPlayerDisplayName
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1904,7 +1904,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9F540
+	 * 		RVA    -> 0x00A9CA40
 	 * 		Name   -> Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetMyPlayerIndex
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1935,7 +1935,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9F390
+	 * 		RVA    -> 0x00A9C890
 	 * 		Name   -> Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetIsMyTurn
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1980,7 +1980,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00A9F8F0
+	 * 		RVA    -> 0x00A9CDF0
 	 * 		Name   -> Function OnlineSubsystemUtils.VoipListenerSynthComponent.IsIdling
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */

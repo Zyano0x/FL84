@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -754,7 +754,7 @@ namespace CG
 	 */
 	bool FVector2D::IsValid()
 	{
-		return X == 0 && Y == 0;
+		return X != 0 && Y != 0;
 	}
 
 	/**
@@ -1192,7 +1192,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function CoreUObject.Object.ExecuteUbergraph
 	 * 		Flags  -> (Event, Public, BlueprintEvent)
 	 * Parameters:

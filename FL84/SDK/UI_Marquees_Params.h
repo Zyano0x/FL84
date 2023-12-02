@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -14,12 +14,6 @@ namespace CG
 	// --------------------------------------------------
 	// # Structs
 	// --------------------------------------------------
-	/**
-	 * Function UI_Marquees.UI_Marquees_C.OnSolarUIOpened
-	 */
-	struct UUI_Marquees_C_OnSolarUIOpened_Params
-	{	};
-
 	/**
 	 * Function UI_Marquees.UI_Marquees_C.ReceiveTick
 	 */
@@ -34,6 +28,12 @@ namespace CG
 	 * Function UI_Marquees.UI_Marquees_C.Construct
 	 */
 	struct UUI_Marquees_C_Construct_Params
+	{	};
+
+	/**
+	 * Function UI_Marquees.UI_Marquees_C.OnSolarUIOpened
+	 */
+	struct UUI_Marquees_C_OnSolarUIOpened_Params
 	{	};
 
 	/**

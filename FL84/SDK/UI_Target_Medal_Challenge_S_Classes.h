@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -27,8 +27,8 @@ namespace CG
 		bool                                                       IsLock;                                                  // 0x0418(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
-		void Destruct();
 		void Construct();
+		void Destruct();
 		class FString GetModuleName();
 		void SetStateIsLocked(bool IsLock);
 		void PreConstruct(bool IsDesignTime);

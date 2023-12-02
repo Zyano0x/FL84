@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,9 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.OnClicked_8D2C22794C50361C762DB78E54F5E1B8
+	 * DelegateFunction UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.OnClicked_CB218489451CB53F5F723796F45808FA
 	 */
-	struct UUI_Lobby_Mission_Reward_C_OnClicked_8D2C22794C50361C762DB78E54F5E1B8_Params
+	struct UUI_Lobby_Mission_Reward_C_OnClicked_CB218489451CB53F5F723796F45808FA_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.ConstructCopy
+	 */
+	struct UUI_Lobby_Mission_Reward_C_ConstructCopy_Params
 	{	};
 
 	/**
@@ -36,12 +42,6 @@ namespace CG
 	 * Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.Destruct
 	 */
 	struct UUI_Lobby_Mission_Reward_C_Destruct_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_Mission_Reward.UI_Lobby_Mission_Reward_C.ConstructCopy
-	 */
-	struct UUI_Lobby_Mission_Reward_C_ConstructCopy_Params
 	{	};
 
 	/**

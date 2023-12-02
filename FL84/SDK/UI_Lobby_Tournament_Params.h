@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,9 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_Tournament.UI_Lobby_Tournament_C.OnClicked_7AFDC0B04E2D056AB79146B470D12223
+	 * DelegateFunction UI_Lobby_Tournament.UI_Lobby_Tournament_C.OnClicked_DD64CEC24BCAC5A772A8D1A68655D70F
 	 */
-	struct UUI_Lobby_Tournament_C_OnClicked_7AFDC0B04E2D056AB79146B470D12223_Params
+	struct UUI_Lobby_Tournament_C_OnClicked_DD64CEC24BCAC5A772A8D1A68655D70F_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_Tournament.UI_Lobby_Tournament_C.Destruct
+	 */
+	struct UUI_Lobby_Tournament_C_Destruct_Params
 	{	};
 
 	/**
@@ -30,12 +36,6 @@ namespace CG
 	 * Function UI_Lobby_Tournament.UI_Lobby_Tournament_C.OnInitialized
 	 */
 	struct UUI_Lobby_Tournament_C_OnInitialized_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_Tournament.UI_Lobby_Tournament_C.Destruct
-	 */
-	struct UUI_Lobby_Tournament_C_Destruct_Params
 	{	};
 
 	/**

@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -27,9 +27,9 @@ namespace CG
 		class USolarTextBlock*                                     Txt_Marquees;                                            // 0x0418(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnSolarUIOpened();
 		void ReceiveTick(const struct FGeometry& MyGeometry, float InDeltaTime);
 		void Construct();
+		void OnSolarUIOpened();
 		void OnSolarUIClosed();
 		class FString GetModuleName();
 		void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);

@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D0F040
+	 * 		RVA    -> 0x01CA87C0
 	 * 		Name   -> Function AnimationSharing.AnimSharingStateInstance.GetInstancedActors
 	 * 		Flags  -> (Final, Native, Protected, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -93,7 +93,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D0F2B0
+	 * 		RVA    -> 0x01CA8A30
 	 * 		Name   -> Function AnimationSharing.AnimationSharingManager.RegisterActorWithSkeletonBP
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -118,7 +118,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D0EF80
+	 * 		RVA    -> 0x01CA8700
 	 * 		Name   -> Function AnimationSharing.AnimationSharingManager.GetAnimationSharingManager
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -143,7 +143,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D0EEB0
+	 * 		RVA    -> 0x01CA8630
 	 * 		Name   -> Function AnimationSharing.AnimationSharingManager.CreateAnimationSharingManager
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -170,7 +170,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D0EE80
+	 * 		RVA    -> 0x01CA8600
 	 * 		Name   -> Function AnimationSharing.AnimationSharingManager.AnimationSharingEnabled
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -220,7 +220,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D0F0F0
+	 * 		RVA    -> 0x01CA8870
 	 * 		Name   -> Function AnimationSharing.AnimationSharingStateProcessor.ProcessActorState
 	 * 		Flags  -> (Native, Event, Public, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -254,7 +254,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D0F010
+	 * 		RVA    -> 0x01CA8790
 	 * 		Name   -> Function AnimationSharing.AnimationSharingStateProcessor.GetAnimationStateEnum
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */

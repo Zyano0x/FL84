@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CAE060
+	 * 		RVA    -> 0x01C477E0
 	 * 		Name   -> Function ACLPlugin.AnimationCompressionLibraryDatabase.SetVisualFidelity
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -45,7 +45,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CADFD0
+	 * 		RVA    -> 0x01C47750
 	 * 		Name   -> Function ACLPlugin.AnimationCompressionLibraryDatabase.GetVisualFidelity
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:

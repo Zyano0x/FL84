@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -54,7 +54,7 @@ namespace CG
 	{
 	public:
 		class FScriptMulticastDelegate                             OnOnScopeChangeDelegate;                                 // 0x01A0(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_SRSG[0x198];                                 // 0x01B0(0x0198) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_QRHP[0x198];                                 // 0x01B0(0x0198) MISSED OFFSET (PADDING)
 
 	public:
 		void OnScopeChanged(EScope InLastScope, EScope InCurScope);

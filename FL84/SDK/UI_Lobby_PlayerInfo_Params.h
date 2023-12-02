@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,21 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnClicked_2006DAE943FE7D7B631687BB44F5A62D
+	 * DelegateFunction UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnClicked_A40BE80742A9CEE32C2D2B804CE0773C
 	 */
-	struct UUI_Lobby_PlayerInfo_C_OnClicked_2006DAE943FE7D7B631687BB44F5A62D_Params
+	struct UUI_Lobby_PlayerInfo_C_OnClicked_A40BE80742A9CEE32C2D2B804CE0773C_Params
 	{	};
 
 	/**
 	 * Function UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.Destruct
 	 */
 	struct UUI_Lobby_PlayerInfo_C_Destruct_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnSolarUIClosed
-	 */
-	struct UUI_Lobby_PlayerInfo_C_OnSolarUIClosed_Params
 	{	};
 
 	/**
@@ -42,6 +36,12 @@ namespace CG
 	 * Function UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnSolarUIOpened
 	 */
 	struct UUI_Lobby_PlayerInfo_C_OnSolarUIOpened_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_PlayerInfo.UI_Lobby_PlayerInfo_C.OnSolarUIClosed
+	 */
+	struct UUI_Lobby_PlayerInfo_C_OnSolarUIClosed_Params
 	{	};
 
 	/**

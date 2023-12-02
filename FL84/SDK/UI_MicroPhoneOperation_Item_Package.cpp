@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,19 +12,19 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_FF1314C94D416A23B1E1D8B7E04AC124
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_FBB2BD8842BC25E946420E9881B63AFC
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		bool                                               bIsChecked                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_MicroPhoneOperation_Item_C::OnCheckStateChanged_FF1314C94D416A23B1E1D8B7E04AC124(bool bIsChecked)
+	void UUI_MicroPhoneOperation_Item_C::OnCheckStateChanged_FBB2BD8842BC25E946420E9881B63AFC(bool bIsChecked)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_FF1314C94D416A23B1E1D8B7E04AC124"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_FBB2BD8842BC25E946420E9881B63AFC"));
 		
-		UUI_MicroPhoneOperation_Item_C_OnCheckStateChanged_FF1314C94D416A23B1E1D8B7E04AC124_Params params {};
+		UUI_MicroPhoneOperation_Item_C_OnCheckStateChanged_FBB2BD8842BC25E946420E9881B63AFC_Params params {};
 		params.bIsChecked = bIsChecked;
 		
 		auto flags = fn->FunctionFlags;
@@ -34,19 +34,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_D7DE8844432689A4F122DBA4D3A41A5E
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_96258C4E4CEE3FB5834974BCC66198AB
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		bool                                               bIsChecked                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_MicroPhoneOperation_Item_C::OnCheckStateChanged_D7DE8844432689A4F122DBA4D3A41A5E(bool bIsChecked)
+	void UUI_MicroPhoneOperation_Item_C::OnCheckStateChanged_96258C4E4CEE3FB5834974BCC66198AB(bool bIsChecked)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_D7DE8844432689A4F122DBA4D3A41A5E"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_96258C4E4CEE3FB5834974BCC66198AB"));
 		
-		UUI_MicroPhoneOperation_Item_C_OnCheckStateChanged_D7DE8844432689A4F122DBA4D3A41A5E_Params params {};
+		UUI_MicroPhoneOperation_Item_C_OnCheckStateChanged_96258C4E4CEE3FB5834974BCC66198AB_Params params {};
 		params.bIsChecked = bIsChecked;
 		
 		auto flags = fn->FunctionFlags;
@@ -56,19 +56,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_23D7B3064C23DD4889E0438E5B224923
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_A94FAD3A4D5F84E29BDF419EC0206C97
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		bool                                               bIsChecked                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_MicroPhoneOperation_Item_C::OnCheckStateChanged_23D7B3064C23DD4889E0438E5B224923(bool bIsChecked)
+	void UUI_MicroPhoneOperation_Item_C::OnCheckStateChanged_A94FAD3A4D5F84E29BDF419EC0206C97(bool bIsChecked)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_23D7B3064C23DD4889E0438E5B224923"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_A94FAD3A4D5F84E29BDF419EC0206C97"));
 		
-		UUI_MicroPhoneOperation_Item_C_OnCheckStateChanged_23D7B3064C23DD4889E0438E5B224923_Params params {};
+		UUI_MicroPhoneOperation_Item_C_OnCheckStateChanged_A94FAD3A4D5F84E29BDF419EC0206C97_Params params {};
 		params.bIsChecked = bIsChecked;
 		
 		auto flags = fn->FunctionFlags;
@@ -78,19 +78,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_E04B8CCF46B440BB33725D88B3029DA0
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_9EE519E349A807C7D3BC908F7B3EFD8D
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		bool                                               bIsChecked                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_MicroPhoneOperation_Item_C::OnCheckStateChanged_E04B8CCF46B440BB33725D88B3029DA0(bool bIsChecked)
+	void UUI_MicroPhoneOperation_Item_C::OnCheckStateChanged_9EE519E349A807C7D3BC908F7B3EFD8D(bool bIsChecked)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_E04B8CCF46B440BB33725D88B3029DA0"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_9EE519E349A807C7D3BC908F7B3EFD8D"));
 		
-		UUI_MicroPhoneOperation_Item_C_OnCheckStateChanged_E04B8CCF46B440BB33725D88B3029DA0_Params params {};
+		UUI_MicroPhoneOperation_Item_C_OnCheckStateChanged_9EE519E349A807C7D3BC908F7B3EFD8D_Params params {};
 		params.bIsChecked = bIsChecked;
 		
 		auto flags = fn->FunctionFlags;
@@ -100,7 +100,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -119,7 +119,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.Destruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -138,7 +138,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -159,7 +159,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.SetOrder
 	 * 		Flags  -> (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -181,7 +181,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -203,7 +203,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.ExecuteUbergraph_UI_MicroPhoneOperation_Item
 	 * 		Flags  -> (Final)
 	 * Parameters:

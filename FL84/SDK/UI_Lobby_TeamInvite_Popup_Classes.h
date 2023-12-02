@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -65,10 +65,10 @@ namespace CG
 		ET_Type_Invitation                                         Pop_Type;                                                // 0x0548(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnClicked_185AE9CF4D6A40094E16A0B6EBC43309();
-		void OnClicked_6A92DB58416019DB46F6DA9F60F7DE88();
-		void Destruct();
+		void OnClicked_04AE720A41B63B3A97C848B02C075A33();
+		void OnClicked_3E10C6B04264E830ADF82487B0FB4DAA();
 		void Construct();
+		void Destruct();
 		class FString GetModuleName();
 		void SetType(ET_Type_Invitation Pop_Type);
 		void PreConstruct(bool IsDesignTime);

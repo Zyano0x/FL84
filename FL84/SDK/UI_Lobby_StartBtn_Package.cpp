@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,17 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_6196CB3843FF32CCFA980487EE7DEF0C
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_E708C9A84FD17DEA366718BB1BAF677B
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_StartBtn_C::OnClicked_6196CB3843FF32CCFA980487EE7DEF0C()
+	void UUI_Lobby_StartBtn_C::OnClicked_E708C9A84FD17DEA366718BB1BAF677B()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_6196CB3843FF32CCFA980487EE7DEF0C"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_E708C9A84FD17DEA366718BB1BAF677B"));
 		
-		UUI_Lobby_StartBtn_C_OnClicked_6196CB3843FF32CCFA980487EE7DEF0C_Params params {};
+		UUI_Lobby_StartBtn_C_OnClicked_E708C9A84FD17DEA366718BB1BAF677B_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -31,17 +31,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_2D738ACB495BB10ED035FA835E29F841
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_AB90CD0549CCD21CE01154977D18AD82
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_StartBtn_C::OnClicked_2D738ACB495BB10ED035FA835E29F841()
+	void UUI_Lobby_StartBtn_C::OnClicked_AB90CD0549CCD21CE01154977D18AD82()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_2D738ACB495BB10ED035FA835E29F841"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_AB90CD0549CCD21CE01154977D18AD82"));
 		
-		UUI_Lobby_StartBtn_C_OnClicked_2D738ACB495BB10ED035FA835E29F841_Params params {};
+		UUI_Lobby_StartBtn_C_OnClicked_AB90CD0549CCD21CE01154977D18AD82_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -50,17 +50,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_B67A8B9841A07DD60E7A4FAD437D111A
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_089E1C274596ECFEF85E2BADC72C27E3
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_StartBtn_C::OnClicked_B67A8B9841A07DD60E7A4FAD437D111A()
+	void UUI_Lobby_StartBtn_C::OnClicked_089E1C274596ECFEF85E2BADC72C27E3()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_B67A8B9841A07DD60E7A4FAD437D111A"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_089E1C274596ECFEF85E2BADC72C27E3"));
 		
-		UUI_Lobby_StartBtn_C_OnClicked_B67A8B9841A07DD60E7A4FAD437D111A_Params params {};
+		UUI_Lobby_StartBtn_C_OnClicked_089E1C274596ECFEF85E2BADC72C27E3_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -69,17 +69,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_0D04B918421FB8FA6752A990C6BC532A
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_F032B1584C60DCB14D75DD9D07B6A12C
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_StartBtn_C::OnClicked_0D04B918421FB8FA6752A990C6BC532A()
+	void UUI_Lobby_StartBtn_C::OnClicked_F032B1584C60DCB14D75DD9D07B6A12C()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_0D04B918421FB8FA6752A990C6BC532A"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_F032B1584C60DCB14D75DD9D07B6A12C"));
 		
-		UUI_Lobby_StartBtn_C_OnClicked_0D04B918421FB8FA6752A990C6BC532A_Params params {};
+		UUI_Lobby_StartBtn_C_OnClicked_F032B1584C60DCB14D75DD9D07B6A12C_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -88,17 +88,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_92CF1FAF43009877B2A4389F13CCB1F2
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_6F04D16A4CF8E3E4F66A75859A7C0142
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_StartBtn_C::OnClicked_92CF1FAF43009877B2A4389F13CCB1F2()
+	void UUI_Lobby_StartBtn_C::OnClicked_6F04D16A4CF8E3E4F66A75859A7C0142()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_92CF1FAF43009877B2A4389F13CCB1F2"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_6F04D16A4CF8E3E4F66A75859A7C0142"));
 		
-		UUI_Lobby_StartBtn_C_OnClicked_92CF1FAF43009877B2A4389F13CCB1F2_Params params {};
+		UUI_Lobby_StartBtn_C_OnClicked_6F04D16A4CF8E3E4F66A75859A7C0142_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -107,17 +107,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_F14B777D42AF17BA56B9129A617F9DD9
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_714A273F4250B868A44DE984D10B6037
 	 * 		Flags  -> (Public, Delegate, BlueprintCallable, BlueprintEvent)
 	 */
-	void UUI_Lobby_StartBtn_C::OnClicked_F14B777D42AF17BA56B9129A617F9DD9()
+	void UUI_Lobby_StartBtn_C::OnClicked_714A273F4250B868A44DE984D10B6037()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_F14B777D42AF17BA56B9129A617F9DD9"));
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_714A273F4250B868A44DE984D10B6037"));
 		
-		UUI_Lobby_StartBtn_C_OnClicked_F14B777D42AF17BA56B9129A617F9DD9_Params params {};
+		UUI_Lobby_StartBtn_C_OnClicked_714A273F4250B868A44DE984D10B6037_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -126,17 +126,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_D88AEC054ABDEEDA494A8B910C473261
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_8387045A449D7275EE6054A293DEF923
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Lobby_StartBtn_C::OnClicked_D88AEC054ABDEEDA494A8B910C473261()
+	void UUI_Lobby_StartBtn_C::OnClicked_8387045A449D7275EE6054A293DEF923()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_D88AEC054ABDEEDA494A8B910C473261"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnClicked_8387045A449D7275EE6054A293DEF923"));
 		
-		UUI_Lobby_StartBtn_C_OnClicked_D88AEC054ABDEEDA494A8B910C473261_Params params {};
+		UUI_Lobby_StartBtn_C_OnClicked_8387045A449D7275EE6054A293DEF923_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -145,7 +145,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.Destruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -164,7 +164,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnSolarUIOpened
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -184,7 +184,26 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x02D0DF90
+	 * 		Name   -> Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.ConstructCopy
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_Lobby_StartBtn_C::ConstructCopy()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.ConstructCopy"));
+		
+		UUI_Lobby_StartBtn_C_ConstructCopy_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.OnSolarUIClosed
 	 * 		Flags  -> (Native, Event, Protected, BlueprintEvent)
 	 */
@@ -204,26 +223,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
-	 * 		Name   -> Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.ConstructCopy
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_Lobby_StartBtn_C::ConstructCopy()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.ConstructCopy"));
-		
-		UUI_Lobby_StartBtn_C_ConstructCopy_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -244,7 +244,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.SetStateDesktop
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -268,7 +268,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.UpdatePlatformBlendState
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -290,7 +290,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.UpdatePanelState
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -318,7 +318,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.Update All Widgets
 	 * 		Flags  -> (BlueprintCallable, BlueprintEvent)
 	 */
@@ -337,7 +337,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -359,7 +359,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -378,7 +378,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Lobby_StartBtn.UI_Lobby_StartBtn_C.ExecuteUbergraph_UI_Lobby_StartBtn
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

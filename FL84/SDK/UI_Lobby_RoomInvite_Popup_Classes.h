@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -96,10 +96,10 @@ namespace CG
 		ET_Type_Button                                             Btn_Type;                                                // 0x0632(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void Delegate_E10E804242E41C24547A9085B8CA03D0();
-		void OnClicked_BE6C2E0842D90957D3E82EB3B0880014();
-		void OnClicked_F38AC1AB4CE67AB75D9131AA5A775A31();
-		void OnClicked_1217C7F04BEAA850E33699B003FC39C0();
+		void Delegate_7EB6874348A8CC23152D51ACBEA98A4F();
+		void OnClicked_49D2DA5841C359A411E2A391A32DD556();
+		void OnClicked_2B316B914E2536BAADDCB8824259B192();
+		void OnClicked_E9B7008C4B33FE81FCDF76943C062670();
 		void Construct();
 		void Destruct();
 		class FString GetModuleName();

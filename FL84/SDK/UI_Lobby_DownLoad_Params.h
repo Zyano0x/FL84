@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,15 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnClicked_615FAB87491C9528C1EC7995C49FBC2D
+	 * DelegateFunction UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnClicked_2AE9AF064C9310C9B95660AD902F6E57
 	 */
-	struct UUI_Lobby_DownLoad_C_OnClicked_615FAB87491C9528C1EC7995C49FBC2D_Params
+	struct UUI_Lobby_DownLoad_C_OnClicked_2AE9AF064C9310C9B95660AD902F6E57_Params
 	{	};
 
 	/**
-	 * Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnSolarUIClosed
+	 * Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnSolarUIOpened
 	 */
-	struct UUI_Lobby_DownLoad_C_OnSolarUIClosed_Params
+	struct UUI_Lobby_DownLoad_C_OnSolarUIOpened_Params
 	{	};
 
 	/**
@@ -33,9 +33,9 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnSolarUIOpened
+	 * Function UI_Lobby_DownLoad.UI_Lobby_DownLoad_C.OnSolarUIClosed
 	 */
-	struct UUI_Lobby_DownLoad_C_OnSolarUIOpened_Params
+	struct UUI_Lobby_DownLoad_C_OnSolarUIClosed_Params
 	{	};
 
 	/**

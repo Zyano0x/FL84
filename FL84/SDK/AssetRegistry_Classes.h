@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UAssetRegistryImpl : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_IVDB[0x750];                                 // 0x0028(0x0750) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_EX10[0x750];                                 // 0x0028(0x0750) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -24,7 +24,7 @@ namespace CG
 		class FScriptMulticastDelegate                             OnTaskProgress;                                          // 0x0028(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnTaskSuccess;                                           // 0x0038(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
 		class FScriptMulticastDelegate                             OnTaskFailed;                                            // 0x0048(0x0010) ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_MXS1[0x70];                                  // 0x0058(0x0070) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_5YKP[0x70];                                  // 0x0058(0x0070) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

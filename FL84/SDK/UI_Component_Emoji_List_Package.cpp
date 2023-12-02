@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,19 +12,19 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Component_Emoji_List.UI_Component_Emoji_List_C.OnStateChangedEvent_CA2229744174CE02CEE5058D885740E2
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Component_Emoji_List.UI_Component_Emoji_List_C.OnStateChangedEvent_BD86E6C84E6E54DAB0B25E86032924E9
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		int32_t                                            InLastButtonIndex                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	 */
-	void UUI_Component_Emoji_List_C::OnStateChangedEvent_CA2229744174CE02CEE5058D885740E2(int32_t InLastButtonIndex)
+	void UUI_Component_Emoji_List_C::OnStateChangedEvent_BD86E6C84E6E54DAB0B25E86032924E9(int32_t InLastButtonIndex)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_Emoji_List.UI_Component_Emoji_List_C.OnStateChangedEvent_CA2229744174CE02CEE5058D885740E2"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Component_Emoji_List.UI_Component_Emoji_List_C.OnStateChangedEvent_BD86E6C84E6E54DAB0B25E86032924E9"));
 		
-		UUI_Component_Emoji_List_C_OnStateChangedEvent_CA2229744174CE02CEE5058D885740E2_Params params {};
+		UUI_Component_Emoji_List_C_OnStateChangedEvent_BD86E6C84E6E54DAB0B25E86032924E9_Params params {};
 		params.InLastButtonIndex = InLastButtonIndex;
 		
 		auto flags = fn->FunctionFlags;
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Component_Emoji_List.UI_Component_Emoji_List_C.Construct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -53,7 +53,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_Component_Emoji_List.UI_Component_Emoji_List_C.Destruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -72,7 +72,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Component_Emoji_List.UI_Component_Emoji_List_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */

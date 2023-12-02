@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,9 +15,9 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Lobby_Mention_Container.UI_Lobby_Mention_Container_C.OnSolarUIClosed
+	 * Function UI_Lobby_Mention_Container.UI_Lobby_Mention_Container_C.OnSolarUIOpened
 	 */
-	struct UUI_Lobby_Mention_Container_C_OnSolarUIClosed_Params
+	struct UUI_Lobby_Mention_Container_C_OnSolarUIOpened_Params
 	{	};
 
 	/**
@@ -27,9 +27,9 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Lobby_Mention_Container.UI_Lobby_Mention_Container_C.OnSolarUIOpened
+	 * Function UI_Lobby_Mention_Container.UI_Lobby_Mention_Container_C.OnSolarUIClosed
 	 */
-	struct UUI_Lobby_Mention_Container_C_OnSolarUIOpened_Params
+	struct UUI_Lobby_Mention_Container_C_OnSolarUIClosed_Params
 	{	};
 
 	/**

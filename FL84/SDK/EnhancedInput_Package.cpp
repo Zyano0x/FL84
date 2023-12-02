@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -40,7 +40,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB8460
+	 * 		RVA    -> 0x00CB5AB0
 	 * 		Name   -> Function EnhancedInput.EnhancedInputComponent.GetBoundActionValue
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -79,7 +79,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB9440
+	 * 		RVA    -> 0x00CB6A90
 	 * 		Name   -> Function EnhancedInput.EnhancedInputLibrary.RequestRebuildControlMappingsUsingContext
 	 * 		Flags  -> (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -104,7 +104,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB88A0
+	 * 		RVA    -> 0x00CB5EF0
 	 * 		Name   -> Function EnhancedInput.EnhancedInputLibrary.MakeInputActionValue
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -135,7 +135,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB8500
+	 * 		RVA    -> 0x00CB5B50
 	 * 		Name   -> Function EnhancedInput.EnhancedInputLibrary.GetBoundActionValue
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -162,7 +162,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB83C0
+	 * 		RVA    -> 0x00CB5A10
 	 * 		Name   -> Function EnhancedInput.EnhancedInputLibrary.Conv_InputActionValueToBool
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -187,7 +187,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB8310
+	 * 		RVA    -> 0x00CB5960
 	 * 		Name   -> Function EnhancedInput.EnhancedInputLibrary.Conv_InputActionValueToAxis3D
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -212,7 +212,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB8260
+	 * 		RVA    -> 0x00CB58B0
 	 * 		Name   -> Function EnhancedInput.EnhancedInputLibrary.Conv_InputActionValueToAxis2D
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -237,7 +237,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB81B0
+	 * 		RVA    -> 0x00CB5800
 	 * 		Name   -> Function EnhancedInput.EnhancedInputLibrary.Conv_InputActionValueToAxis1D
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -262,7 +262,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB7FF0
+	 * 		RVA    -> 0x00CB5640
 	 * 		Name   -> Function EnhancedInput.EnhancedInputLibrary.BreakInputActionValue
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -309,7 +309,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB93B0
+	 * 		RVA    -> 0x00CB6A00
 	 * 		Name   -> Function EnhancedInput.EnhancedInputSubsystemInterface.RequestRebuildControlMappings
 	 * 		Flags  -> (BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -332,7 +332,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB9320
+	 * 		RVA    -> 0x00CB6970
 	 * 		Name   -> Function EnhancedInput.EnhancedInputSubsystemInterface.RemoveMappingContext
 	 * 		Flags  -> (BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -355,7 +355,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB90A0
+	 * 		RVA    -> 0x00CB66F0
 	 * 		Name   -> Function EnhancedInput.EnhancedInputSubsystemInterface.QueryMapKeyInContextSet
 	 * 		Flags  -> (BlueprintCosmetic, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -392,7 +392,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB8E90
+	 * 		RVA    -> 0x00CB64E0
 	 * 		Name   -> Function EnhancedInput.EnhancedInputSubsystemInterface.QueryMapKeyInActiveContextSet
 	 * 		Flags  -> (BlueprintCosmetic, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -427,7 +427,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB8D20
+	 * 		RVA    -> 0x00CB6370
 	 * 		Name   -> Function EnhancedInput.EnhancedInputSubsystemInterface.QueryKeysMappedToAction
 	 * 		Flags  -> (BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -452,7 +452,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB8740
+	 * 		RVA    -> 0x00CB5D90
 	 * 		Name   -> Function EnhancedInput.EnhancedInputSubsystemInterface.HasMappingContext
 	 * 		Flags  -> (BlueprintCosmetic, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -477,7 +477,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB8190
+	 * 		RVA    -> 0x00CB57E0
 	 * 		Name   -> Function EnhancedInput.EnhancedInputSubsystemInterface.ClearAllMappings
 	 * 		Flags  -> (BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 */
@@ -497,7 +497,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB7F20
+	 * 		RVA    -> 0x00CB5570
 	 * 		Name   -> Function EnhancedInput.EnhancedInputSubsystemInterface.AddMappingContext
 	 * 		Flags  -> (BlueprintCosmetic, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -606,7 +606,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB95B0
+	 * 		RVA    -> 0x00CB6C00
 	 * 		Name   -> Function EnhancedInput.InputMappingContext.UnmapKey
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -631,7 +631,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB9590
+	 * 		RVA    -> 0x00CB6BE0
 	 * 		Name   -> Function EnhancedInput.InputMappingContext.UnmapAll
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -651,7 +651,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB9500
+	 * 		RVA    -> 0x00CB6B50
 	 * 		Name   -> Function EnhancedInput.InputMappingContext.UnmapAction
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -674,7 +674,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB8A40
+	 * 		RVA    -> 0x00CB6090
 	 * 		Name   -> Function EnhancedInput.InputMappingContext.MapKey
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -715,7 +715,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB8BB0
+	 * 		RVA    -> 0x00CB6200
 	 * 		Name   -> Function EnhancedInput.InputModifier.ModifyRaw
 	 * 		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 * Parameters:
@@ -744,7 +744,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB8610
+	 * 		RVA    -> 0x00CB5C60
 	 * 		Name   -> Function EnhancedInput.InputModifier.GetVisualizationColor
 	 * 		Flags  -> (Native, Event, Public, HasDefaults, BlueprintEvent, Const)
 	 * Parameters:
@@ -771,7 +771,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB85E0
+	 * 		RVA    -> 0x00CB5C30
 	 * 		Name   -> Function EnhancedInput.InputModifier.GetExecutionPhase
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent, Const)
 	 */
@@ -947,7 +947,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB96E0
+	 * 		RVA    -> 0x00CB6D30
 	 * 		Name   -> Function EnhancedInput.InputTrigger.UpdateState
 	 * 		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -976,7 +976,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB87E0
+	 * 		RVA    -> 0x00CB5E30
 	 * 		Name   -> Function EnhancedInput.InputTrigger.IsActuated
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -1001,7 +1001,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009069C0
+	 * 		RVA    -> 0x00903E90
 	 * 		Name   -> Function EnhancedInput.InputTrigger.GetTriggerType
 	 * 		Flags  -> (Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 */

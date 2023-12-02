@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -35,8 +35,8 @@ namespace CG
 		int32_t                                                    Size_H;                                                  // 0x0450(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnClicked_3445FDF9410E7B4152C6A59E328E9AC0();
-		void OnClicked_6D946638435D2E7580D3F8B4EE526DE2();
+		void OnClicked_9AEF874E40DCC50B4F0C8DA4315FA6BD();
+		void OnClicked_D9E0C8754EA1EA947CE4C9981773C953();
 		class FString GetModuleName();
 		void SetCardType(int32_t CardType);
 		void PreConstruct(bool IsDesignTime);

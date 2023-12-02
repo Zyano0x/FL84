@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -24,9 +24,9 @@ namespace CG
 		class UUI_Currency_Bar_C*                                  UI_Currency_Bar;                                         // 0x0400(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnSolarUIClosed();
-		void OnSolarUIOpened();
 		void Construct();
+		void OnSolarUIOpened();
+		void OnSolarUIClosed();
 		void Destruct();
 		class FString GetModuleName();
 		static UClass* StaticClass();

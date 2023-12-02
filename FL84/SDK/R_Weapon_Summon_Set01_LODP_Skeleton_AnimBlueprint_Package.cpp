@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39B20
+	 * 		RVA    -> 0x01AD7A70
 	 * 		Name   -> Function R_Weapon_Summon_Set01_LODP_Skeleton_AnimBlueprint.R_Weapon_Summon_Set01_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_Summon_Set01_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_F2855A6E43032126BE9962A2F5370D30
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -32,7 +32,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B47550
+	 * 		RVA    -> 0x01AE54A0
 	 * 		Name   -> Function R_Weapon_Summon_Set01_LODP_Skeleton_AnimBlueprint.R_Weapon_Summon_Set01_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_Summon_Set01_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_DDAC6AEB489D5E9CB3D09A9B9AA278F3
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -52,7 +52,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B47430
+	 * 		RVA    -> 0x01AE5380
 	 * 		Name   -> Function R_Weapon_Summon_Set01_LODP_Skeleton_AnimBlueprint.R_Weapon_Summon_Set01_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_Summon_Set01_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_A3D9D1AF449F798FCECE89AEF2D7661C
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -72,7 +72,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B39B60
+	 * 		RVA    -> 0x01AD7AB0
 	 * 		Name   -> Function R_Weapon_Summon_Set01_LODP_Skeleton_AnimBlueprint.R_Weapon_Summon_Set01_LODP_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_R_Weapon_Summon_Set01_LODP_Skeleton_AnimBlueprint_AnimGraphNode_TransitionResult_35F7023940C49D3FCC85AD9F57FAFFCB
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -92,7 +92,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01B89DA0
+	 * 		RVA    -> 0x01B23550
 	 * 		Name   -> Function R_Weapon_Summon_Set01_LODP_Skeleton_AnimBlueprint.R_Weapon_Summon_Set01_LODP_Skeleton_AnimBlueprint_C.AnimGraph
 	 * 		Flags  -> (Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:

@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,21 +15,9 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_ChatPanel.UI_ChatPanel_C.OnClicked_80D225AC4B210AE73B1DA099DC1D1579
+	 * DelegateFunction UI_ChatPanel.UI_ChatPanel_C.OnClicked_22F3D1E747A8FF48742982BFF8DA2BD1
 	 */
-	struct UUI_ChatPanel_C_OnClicked_80D225AC4B210AE73B1DA099DC1D1579_Params
-	{	};
-
-	/**
-	 * Function UI_ChatPanel.UI_ChatPanel_C.OnSolarUIOpened
-	 */
-	struct UUI_ChatPanel_C_OnSolarUIOpened_Params
-	{	};
-
-	/**
-	 * Function UI_ChatPanel.UI_ChatPanel_C.OnInitialized
-	 */
-	struct UUI_ChatPanel_C_OnInitialized_Params
+	struct UUI_ChatPanel_C_OnClicked_22F3D1E747A8FF48742982BFF8DA2BD1_Params
 	{	};
 
 	/**
@@ -42,6 +30,18 @@ namespace CG
 	 * Function UI_ChatPanel.UI_ChatPanel_C.Construct
 	 */
 	struct UUI_ChatPanel_C_Construct_Params
+	{	};
+
+	/**
+	 * Function UI_ChatPanel.UI_ChatPanel_C.OnSolarUIOpened
+	 */
+	struct UUI_ChatPanel_C_OnSolarUIOpened_Params
+	{	};
+
+	/**
+	 * Function UI_ChatPanel.UI_ChatPanel_C.OnInitialized
+	 */
+	struct UUI_ChatPanel_C_OnInitialized_Params
 	{	};
 
 	/**
@@ -75,7 +75,7 @@ namespace CG
 	{
 	public:
 		unsigned char                                              ChatType;                                                // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_KY8R[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_KPY4[0x7];                                   // 0x0001(0x0007) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 		class FString                                              playerName;                                              // 0x0008(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 		class FString                                              Msg;                                                     // 0x0018(0x0010)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 		class FString                                              OutputText;                                              // 0x0028(0x0010)  (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)

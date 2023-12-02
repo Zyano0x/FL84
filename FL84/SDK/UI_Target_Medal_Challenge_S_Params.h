@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,15 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Target_Medal_Challenge_S.UI_Target_Medal_Challenge_S_C.Destruct
-	 */
-	struct UUI_Target_Medal_Challenge_S_C_Destruct_Params
-	{	};
-
-	/**
 	 * Function UI_Target_Medal_Challenge_S.UI_Target_Medal_Challenge_S_C.Construct
 	 */
 	struct UUI_Target_Medal_Challenge_S_C_Construct_Params
+	{	};
+
+	/**
+	 * Function UI_Target_Medal_Challenge_S.UI_Target_Medal_Challenge_S_C.Destruct
+	 */
+	struct UUI_Target_Medal_Challenge_S_C_Destruct_Params
 	{	};
 
 	/**

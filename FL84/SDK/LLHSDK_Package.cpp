@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F03C0
+	 * 		RVA    -> 0x009ED8A0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.ShowSteamVirtualKeyboard
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F01D0
+	 * 		RVA    -> 0x009ED6B0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.SDKConfigIsMultiDetect
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -56,7 +56,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F01A0
+	 * 		RVA    -> 0x009ED680
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.SDKConfigIsDebug
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -78,7 +78,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKAppUtils.OnSteamUserStatesUpdate__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -106,7 +106,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0100
+	 * 		RVA    -> 0x009ED5E0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.IsSteamFriendOnline
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -131,7 +131,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0095D600
+	 * 		RVA    -> 0x0095AAE0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.IsSimulator
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -153,7 +153,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F00D0
+	 * 		RVA    -> 0x009ED5B0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.IsPlatformSteamDeck
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -175,7 +175,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EFFE0
+	 * 		RVA    -> 0x009ED4C0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.IsPackageInstalled
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -200,7 +200,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0095D600
+	 * 		RVA    -> 0x0095AAE0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.IsGrayRelease
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -222,7 +222,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EFF40
+	 * 		RVA    -> 0x009ED420
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.InviteSteamUserToGame
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -247,7 +247,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF7F0
+	 * 		RVA    -> 0x009ECCD0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetVersionName
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -269,7 +269,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF7F0
+	 * 		RVA    -> 0x009ECCD0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetVersionCode
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -291,7 +291,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EFD80
+	 * 		RVA    -> 0x009ED260
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetSteamFriendsOnlineList
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -313,7 +313,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EFD00
+	 * 		RVA    -> 0x009ED1E0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetSteamFriendsNameList
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -335,7 +335,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EFC20
+	 * 		RVA    -> 0x009ED100
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetSteamFriendName
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -360,7 +360,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EFBA0
+	 * 		RVA    -> 0x009ED080
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetSteamFriendIDList
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -382,7 +382,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EFB70
+	 * 		RVA    -> 0x009ED050
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetSteamFriendCount
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -404,7 +404,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF7F0
+	 * 		RVA    -> 0x009ECCD0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetSDKVersionName
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -426,7 +426,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF7F0
+	 * 		RVA    -> 0x009ECCD0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetSDKVersionCode
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -448,7 +448,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF7F0
+	 * 		RVA    -> 0x009ECCD0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetRunningProcessName
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -470,7 +470,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EFAF0
+	 * 		RVA    -> 0x009ECFD0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetOperatingSystemId
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -492,7 +492,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EFA60
+	 * 		RVA    -> 0x009ECF40
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -514,7 +514,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EFA30
+	 * 		RVA    -> 0x009ECF10
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetGameTime
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -536,7 +536,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF7F0
+	 * 		RVA    -> 0x009ECCD0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetGameID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -558,7 +558,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF9B0
+	 * 		RVA    -> 0x009ECE90
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetEnvId
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -580,7 +580,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF7F0
+	 * 		RVA    -> 0x009ECCD0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetDeviceUUID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -602,7 +602,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF7F0
+	 * 		RVA    -> 0x009ECCD0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetChannelID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -624,7 +624,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF770
+	 * 		RVA    -> 0x009ECC50
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetBiosUUID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -646,7 +646,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF6F0
+	 * 		RVA    -> 0x009ECBD0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetAppName
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -668,7 +668,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF670
+	 * 		RVA    -> 0x009ECB50
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetAppIDRaw
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -690,7 +690,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF5F0
+	 * 		RVA    -> 0x009ECAD0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.GetAppID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -712,7 +712,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF390
+	 * 		RVA    -> 0x009EC870
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.DoesDistributeForDomestic
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -734,7 +734,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF370
+	 * 		RVA    -> 0x009EC850
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.DismissSteamVirtualKeyboard
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -754,7 +754,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF310
+	 * 		RVA    -> 0x009EC7F0
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.DestoryInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -774,7 +774,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF1B0
+	 * 		RVA    -> 0x009EC690
 	 * 		Name   -> Function LLHSDK.LLHSDKAppUtils.BindOnlineSubsystemSteamPresence
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -808,7 +808,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKCommunity.OnInitCommunity__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -830,7 +830,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKCommunity.OnImageDownload__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -852,7 +852,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKCommunity.OnGetCommunityRedhint__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -874,7 +874,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKCommunity.OnExitCommunity__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -896,7 +896,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKCommunity.OnClearCommunityRedhint__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -918,7 +918,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EFE00
+	 * 		RVA    -> 0x009ED2E0
 	 * 		Name   -> Function LLHSDK.LLHSDKCommunity.InitCommunityConfig
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -945,7 +945,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EFA90
+	 * 		RVA    -> 0x009ECF70
 	 * 		Name   -> Function LLHSDK.LLHSDKCommunity.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -967,7 +967,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF870
+	 * 		RVA    -> 0x009ECD50
 	 * 		Name   -> Function LLHSDK.LLHSDKCommunity.GetCommunityRedHint
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -994,7 +994,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF4B0
+	 * 		RVA    -> 0x009EC990
 	 * 		Name   -> Function LLHSDK.LLHSDKCommunity.ExitCommunity
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1021,7 +1021,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF3C0
+	 * 		RVA    -> 0x009EC8A0
 	 * 		Name   -> Function LLHSDK.LLHSDKCommunity.DownloadImage
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1046,7 +1046,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF330
+	 * 		RVA    -> 0x009EC810
 	 * 		Name   -> Function LLHSDK.LLHSDKCommunity.DestoryInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1066,7 +1066,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF1D0
+	 * 		RVA    -> 0x009EC6B0
 	 * 		Name   -> Function LLHSDK.LLHSDKCommunity.ClearCommunityRedHint
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1107,7 +1107,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function LLHSDK.LLHSDKCustomerService.ShowCustomerServicePage
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1130,7 +1130,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0200
+	 * 		RVA    -> 0x009ED6E0
 	 * 		Name   -> Function LLHSDK.LLHSDKCustomerService.SetCustomerServiceDebug
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1157,7 +1157,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKCustomerService.OnReceiveNotification__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -1179,7 +1179,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EFAC0
+	 * 		RVA    -> 0x009ECFA0
 	 * 		Name   -> Function LLHSDK.LLHSDKCustomerService.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1201,7 +1201,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF350
+	 * 		RVA    -> 0x009EC830
 	 * 		Name   -> Function LLHSDK.LLHSDKCustomerService.DestoryInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1235,7 +1235,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKDeviceUtils.OnGoogleAdID__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -1257,7 +1257,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKDeviceUtils.OnDeviceScore__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -1279,7 +1279,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3240
+	 * 		RVA    -> 0x009F0720
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.IsEmulator
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1301,7 +1301,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F41B0
+	 * 		RVA    -> 0x009F1690
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetTotalRAM
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1323,7 +1323,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4130
+	 * 		RVA    -> 0x009F1610
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetTotalMemorySize
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1345,7 +1345,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F40B0
+	 * 		RVA    -> 0x009F1590
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetTimezoneName
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1367,7 +1367,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3F10
+	 * 		RVA    -> 0x009F13F0
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetOSVersion
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1389,7 +1389,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3EE0
+	 * 		RVA    -> 0x009F13C0
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetNetworkTypeEnum
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1411,7 +1411,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3E60
+	 * 		RVA    -> 0x009F1340
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetNetworkType
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1433,7 +1433,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF7F0
+	 * 		RVA    -> 0x009ECCD0
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetMacAddress
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1455,7 +1455,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3B90
+	 * 		RVA    -> 0x009F1070
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1477,7 +1477,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF7F0
+	 * 		RVA    -> 0x009ECCD0
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetIMSI
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1499,7 +1499,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF7F0
+	 * 		RVA    -> 0x009ECCD0
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetIDFA
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1521,7 +1521,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3B70
+	 * 		RVA    -> 0x009F1050
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetGoogleAdID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1541,7 +1541,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3AF0
+	 * 		RVA    -> 0x009F0FD0
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetDisplayMetrics
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1563,7 +1563,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3A70
+	 * 		RVA    -> 0x009F0F50
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetDisplayCutout
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1585,7 +1585,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF7F0
+	 * 		RVA    -> 0x009ECCD0
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetDeviceType
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1607,7 +1607,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3A50
+	 * 		RVA    -> 0x009F0F30
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetDeviceScore
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1627,7 +1627,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F39D0
+	 * 		RVA    -> 0x009F0EB0
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetDeviceModel
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1649,7 +1649,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3950
+	 * 		RVA    -> 0x009F0E30
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetDeviceID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1671,7 +1671,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF7F0
+	 * 		RVA    -> 0x009ECCD0
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetDeviceCarrier
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1693,7 +1693,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F38D0
+	 * 		RVA    -> 0x009F0DB0
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetDeviceBrand
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1715,7 +1715,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF7F0
+	 * 		RVA    -> 0x009ECCD0
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetDeviceAbi
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1737,7 +1737,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3850
+	 * 		RVA    -> 0x009F0D30
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetCPUModel
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1759,7 +1759,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3850
+	 * 		RVA    -> 0x009F0D30
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetCPUHardWareName
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1781,7 +1781,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F37D0
+	 * 		RVA    -> 0x009F0CB0
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetAvailableRAM
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1803,7 +1803,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF7F0
+	 * 		RVA    -> 0x009ECCD0
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.GetAndroidID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1825,7 +1825,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F33F0
+	 * 		RVA    -> 0x009F08D0
 	 * 		Name   -> Function LLHSDK.LLHSDKDeviceUtils.DestoryInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1859,7 +1859,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4FF0
+	 * 		RVA    -> 0x009F24D0
 	 * 		Name   -> Function LLHSDK.LLHSDKLocalization.SetLocaleName
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1882,7 +1882,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4F80
+	 * 		RVA    -> 0x009F2460
 	 * 		Name   -> Function LLHSDK.LLHSDKLocalization.SetLocale
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1905,7 +1905,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF7F0
+	 * 		RVA    -> 0x009ECCD0
 	 * 		Name   -> Function LLHSDK.LLHSDKLocalization.GetLocaleName
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1927,7 +1927,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3DA0
+	 * 		RVA    -> 0x009F1280
 	 * 		Name   -> Function LLHSDK.LLHSDKLocalization.GetLocaleInfo
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1949,7 +1949,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3240
+	 * 		RVA    -> 0x009F0720
 	 * 		Name   -> Function LLHSDK.LLHSDKLocalization.GetLocaleEnum
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1971,7 +1971,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3BC0
+	 * 		RVA    -> 0x009F10A0
 	 * 		Name   -> Function LLHSDK.LLHSDKLocalization.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1993,7 +1993,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3410
+	 * 		RVA    -> 0x009F08F0
 	 * 		Name   -> Function LLHSDK.LLHSDKLocalization.DestoryInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2027,7 +2027,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F5AB0
+	 * 		RVA    -> 0x009F2F90
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.UpdateSteamCallBack
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2047,7 +2047,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F5880
+	 * 		RVA    -> 0x009F2D60
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.SwitchOrLinkAccount
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2067,7 +2067,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F57E0
+	 * 		RVA    -> 0x009F2CC0
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.SteamRegister
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2092,7 +2092,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F5740
+	 * 		RVA    -> 0x009F2C20
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.SteamLoginResultSet
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2117,7 +2117,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F56A0
+	 * 		RVA    -> 0x009F2B80
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.SteamGetAccountInfo
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2142,7 +2142,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F5680
+	 * 		RVA    -> 0x009F2B60
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.SteamFree
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2162,7 +2162,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F55E0
+	 * 		RVA    -> 0x009F2AC0
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.SteamBindUrlGet
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2187,7 +2187,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F5540
+	 * 		RVA    -> 0x009F2A20
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.SteamAutoLogin
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2212,7 +2212,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3790
+	 * 		RVA    -> 0x009F0C70
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.ShowProtocolViewV2Ok
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2232,7 +2232,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F5150
+	 * 		RVA    -> 0x009F2630
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.ShowProtocolViewV2Confirm
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2252,7 +2252,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4F50
+	 * 		RVA    -> 0x009F2430
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.SetLimPCSDKLogHandler
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2274,7 +2274,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4F20
+	 * 		RVA    -> 0x009F2400
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.SetLimPCSDKEventHandler
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2296,7 +2296,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4E90
+	 * 		RVA    -> 0x009F2370
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.SetLimPCAlilogFieldsData
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2319,7 +2319,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4E20
+	 * 		RVA    -> 0x009F2300
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.QueryCurrentUserInfo
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2341,7 +2341,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4CD0
+	 * 		RVA    -> 0x009F21B0
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.QueryCurrentUser
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2363,7 +2363,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4B80
+	 * 		RVA    -> 0x009F2060
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.OpenSteamBindPage
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2388,7 +2388,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4AC0
+	 * 		RVA    -> 0x009F1FA0
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.OpenLIMPCSwitchAccPage
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2410,7 +2410,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4A20
+	 * 		RVA    -> 0x009F1F00
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.OpenLIMPCAccountPage
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2435,7 +2435,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKLogin.OnProtocolClick__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -2457,7 +2457,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKLogin.OnLoginFinish__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -2483,7 +2483,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKLogin.OnLoginFailed__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -2507,7 +2507,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKLogin.OnInitFinish__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
@@ -2526,7 +2526,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKLogin.OnBindFinish__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -2554,7 +2554,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B8070
+	 * 		RVA    -> 0x009B5550
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.NSLogout
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2574,7 +2574,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4370
+	 * 		RVA    -> 0x009F1850
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.NSLoginStart
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2599,7 +2599,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B8070
+	 * 		RVA    -> 0x009B5550
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.NSFinalize
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2619,7 +2619,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4370
+	 * 		RVA    -> 0x009F1850
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.NSAccountInfoGet
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2644,7 +2644,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F49F0
+	 * 		RVA    -> 0x009F1ED0
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.LogoutLimPCSDK
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2666,7 +2666,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3790
+	 * 		RVA    -> 0x009F0C70
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.Logout
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2686,7 +2686,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4770
+	 * 		RVA    -> 0x009F1C50
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.LoginUserInfo_ToString
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2711,7 +2711,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4880
+	 * 		RVA    -> 0x009F1D60
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.LoginUser_ToString
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -2736,7 +2736,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F46D0
+	 * 		RVA    -> 0x009F1BB0
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.LoginLimPCSDK
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2761,7 +2761,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F46B0
+	 * 		RVA    -> 0x009F1B90
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.Login
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2781,7 +2781,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKLogin.LimSteamSDKCallBack__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -2803,7 +2803,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKLogin.LimPCSDKCallBack__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -2825,7 +2825,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKLogin.LimOnSteamLoginResultSet__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -2851,7 +2851,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F01D0
+	 * 		RVA    -> 0x009ED6B0
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.IsInitFinish
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2873,7 +2873,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3270
+	 * 		RVA    -> 0x009F0750
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.IsCurrentUserNewReg
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2895,7 +2895,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4370
+	 * 		RVA    -> 0x009F1850
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.InitNSSDK
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2920,7 +2920,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F42D0
+	 * 		RVA    -> 0x009F17B0
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.InitLimSteamSDK
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2945,7 +2945,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4230
+	 * 		RVA    -> 0x009F1710
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.InitLimPCSDK
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -2970,7 +2970,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4030
+	 * 		RVA    -> 0x009F1510
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.GetSteamToken
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -2992,7 +2992,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3F90
+	 * 		RVA    -> 0x009F1470
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.GetSteamRegisterUrl
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3017,7 +3017,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3D00
+	 * 		RVA    -> 0x009F11E0
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.GetLimPCUserInfo
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3042,7 +3042,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3C80
+	 * 		RVA    -> 0x009F1160
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.GetLimPCAlilogFieldsData
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3064,7 +3064,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3C50
+	 * 		RVA    -> 0x009F1130
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.GetLimPCAlilogFields
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3086,7 +3086,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3BF0
+	 * 		RVA    -> 0x009F10D0
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3108,7 +3108,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F37B0
+	 * 		RVA    -> 0x009F0C90
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.FreeLimPCSDK
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3128,7 +3128,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3560
+	 * 		RVA    -> 0x009F0A40
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.DoSteamBind
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3153,7 +3153,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3430
+	 * 		RVA    -> 0x009F0910
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.DestoryInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3173,7 +3173,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3360
+	 * 		RVA    -> 0x009F0840
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.DAPLogAdd
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3196,7 +3196,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F32C0
+	 * 		RVA    -> 0x009F07A0
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.CommonReportLimPCPoint
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3221,7 +3221,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3270
+	 * 		RVA    -> 0x009F0750
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.ClearAutoLogin
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3243,7 +3243,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F31A0
+	 * 		RVA    -> 0x009F0680
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.ChangeLIMPCLanguage
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3268,7 +3268,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3150
+	 * 		RVA    -> 0x009F0630
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.CanContinueLogin
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3290,7 +3290,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3180
+	 * 		RVA    -> 0x009F0660
 	 * 		Name   -> Function LLHSDK.LLHSDKLogin.CancelSteamCallBack
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3324,7 +3324,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3470
+	 * 		RVA    -> 0x009F0950
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.UpdateNetworkExtensions
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3349,7 +3349,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.TwitterShareText
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3372,7 +3372,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3470
+	 * 		RVA    -> 0x009F0950
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.TwitterSharePhoto
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3397,7 +3397,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3790
+	 * 		RVA    -> 0x009F0C70
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.TryToEnableAndroidNotification
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3417,7 +3417,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F59E0
+	 * 		RVA    -> 0x009F2EC0
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.TcpPingDetect
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3442,7 +3442,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F58A0
+	 * 		RVA    -> 0x009F2D80
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.SystemShare
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -3469,7 +3469,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F5410
+	 * 		RVA    -> 0x009F28F0
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.StartIOSFarlightBrowserWithOrientation
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3496,7 +3496,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F52E0
+	 * 		RVA    -> 0x009F27C0
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.StartBrowserWithOrientation
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3523,7 +3523,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F5170
+	 * 		RVA    -> 0x009F2650
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.StartBrowser
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3548,7 +3548,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.SetNetworkPolicyDomain
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3571,7 +3571,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F50D0
+	 * 		RVA    -> 0x009F25B0
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.SetNetworkMultipleDetect
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3594,7 +3594,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.SetNetworkDiagnosisDeviceID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3617,7 +3617,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.RestartApplication
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3640,7 +3640,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3790
+	 * 		RVA    -> 0x009F0C70
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.RefreshFirebaseMessagingToken
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3660,7 +3660,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.RefreshAndroidMediaScanner
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3683,7 +3683,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3790
+	 * 		RVA    -> 0x009F0C70
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.QueryThirdPartUserInfo
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3703,7 +3703,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.PingDetect
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3726,7 +3726,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4CB0
+	 * 		RVA    -> 0x009F2190
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.PickFileFromAlbum
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -3746,7 +3746,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4C20
+	 * 		RVA    -> 0x009F2100
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.OpenSteamPayWebPage
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3769,7 +3769,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4AF0
+	 * 		RVA    -> 0x009F1FD0
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.OpenLimPCWebPage
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -3792,7 +3792,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKMisc.OnSystemShared__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -3814,7 +3814,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKMisc.OnScreenshotCapturedEvent__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -3836,7 +3836,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKMisc.OnRefreshFirebaseToken__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -3858,7 +3858,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKMisc.OnQueryThirdPartUserInfo__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -3884,7 +3884,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKMisc.OnPickFileFromAlbumFinishEvent__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -3908,7 +3908,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKMisc.OnLimPCOpenWebview__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -3930,7 +3930,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKMisc.OnLimPCCloseWebview__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -3952,7 +3952,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKMisc.OnGetFacebookToken__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -3982,7 +3982,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKMisc.OnFacebookPhotoShared__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4006,7 +4006,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKMisc.OnBrowserClosed__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
@@ -4025,7 +4025,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKMisc.NetworkDiagnosisCallback__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4049,7 +4049,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.MtrDetect
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4072,7 +4072,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3470
+	 * 		RVA    -> 0x009F0950
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.JumpToMarket
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4097,7 +4097,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.JumpToAppStore
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4120,7 +4120,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3240
+	 * 		RVA    -> 0x009F0720
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.IsFacebookShareable
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -4142,7 +4142,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3240
+	 * 		RVA    -> 0x009F0720
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.IsAppRooted
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -4164,7 +4164,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3270
+	 * 		RVA    -> 0x009F0750
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.IsAndroidNotificationEnabled
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -4186,7 +4186,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F4410
+	 * 		RVA    -> 0x009F18F0
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.InitNetworkDiagnosis
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4221,7 +4221,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.HttpDetect
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4244,7 +4244,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF7F0
+	 * 		RVA    -> 0x009ECCD0
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.GetNetworkDiagnosisDeviceID
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -4266,7 +4266,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3C20
+	 * 		RVA    -> 0x009F1100
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -4288,7 +4288,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009EF7F0
+	 * 		RVA    -> 0x009ECCD0
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.GetFirebaseMessagingToken
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -4310,7 +4310,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3790
+	 * 		RVA    -> 0x009F0C70
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.GetFacebookToken
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -4330,7 +4330,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3470
+	 * 		RVA    -> 0x009F0950
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.FacebookSharePhotoWithFileAndDescription
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4355,7 +4355,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.FacebookSharePhotoByPath
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4378,7 +4378,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3790
+	 * 		RVA    -> 0x009F0C70
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.FacebookSharePhoto
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -4398,7 +4398,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3600
+	 * 		RVA    -> 0x009F0AE0
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.FacebookShareLink
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4427,7 +4427,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3470
+	 * 		RVA    -> 0x009F0950
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.DnsDetect
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4452,7 +4452,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3450
+	 * 		RVA    -> 0x009F0930
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.DestoryInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -4472,7 +4472,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F32A0
+	 * 		RVA    -> 0x009F0780
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.CloseLimPCWebPageAll
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -4492,7 +4492,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3240
+	 * 		RVA    -> 0x009F0720
 	 * 		Name   -> Function LLHSDK.LLHSDKMisc.CheckGyroSensorSupport
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -4528,7 +4528,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F9690
+	 * 		RVA    -> 0x009F6B70
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.Test_Google_SkuItemDetailsToString
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4553,7 +4553,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKPay.SwitchSDKPayOrdersConsume__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4575,7 +4575,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKPay.SwitchSDKPayOrdersCheck__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4597,7 +4597,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKPay.SwitchSDKPayGetConsumables__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4619,7 +4619,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKPay.SwitchSDKPayGetConsumableItems__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4641,7 +4641,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKPay.SwitchSDKPayEShopOpen__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4663,7 +4663,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.Switch_OrdersConsume
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4686,7 +4686,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.Switch_OrdersCheck
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4709,7 +4709,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.Switch_GetConsumables
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4732,7 +4732,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.Switch_GetConsumableItems
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4755,7 +4755,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.Switch_EShopOpen
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4778,7 +4778,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F9570
+	 * 		RVA    -> 0x009F6A50
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.SteamQuerySkus
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4801,7 +4801,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F9600
+	 * 		RVA    -> 0x009F6AE0
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.Steam_StartPay
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4824,7 +4824,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.SetPayNotifyUrl
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -4847,7 +4847,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKPay.OnLLHQuerySkus__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -4871,7 +4871,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKPay.OnLLHPayFinished__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4903,7 +4903,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKPay.OnGoogleQuerySkuSubItemDetails__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4929,7 +4929,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKPay.OnGoogleQuerySkuItemDetails__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4955,7 +4955,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKPay.OnGooglePayFinished__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -4985,7 +4985,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKPay.OnGetIOSPurchaseExtNull__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -5009,7 +5009,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKPay.OnGetGoogleConsumeGoods__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate, HasOutParms)
 	 * Parameters:
@@ -5031,7 +5031,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKPay.LSteamSDKQuerySkus__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -5053,7 +5053,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKPay.LSteamSDKPayApplied__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -5075,7 +5075,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F7F90
+	 * 		RVA    -> 0x009F5470
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.LimPCStartPay
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5098,7 +5098,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKPay.LimPCSDKQueryPriceLadder__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -5120,7 +5120,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction LLHSDK.LLHSDKPay.LimPCSDKPayApplied__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -5142,7 +5142,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F7F00
+	 * 		RVA    -> 0x009F53E0
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.LimPCQueryPriceLadderWithRegion
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5165,7 +5165,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F7EE0
+	 * 		RVA    -> 0x009F53C0
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.LimPCQueryPriceLadder
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -5185,7 +5185,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3470
+	 * 		RVA    -> 0x009F0950
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.IOS_SetUserPayExtInCallback
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5210,7 +5210,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.IOS_SetUserPayExt
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5233,7 +5233,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F7E60
+	 * 		RVA    -> 0x009F5340
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.IOS_SetAutoPayExt
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5256,7 +5256,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F7DA0
+	 * 		RVA    -> 0x009F5280
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.IOS_QuerySkus
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -5279,7 +5279,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F7CB0
+	 * 		RVA    -> 0x009F5190
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.IOS_LLHPay
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5304,7 +5304,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F7C80
+	 * 		RVA    -> 0x009F5160
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.IOS_GetAutoPayExt
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -5326,7 +5326,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F7B10
+	 * 		RVA    -> 0x009F4FF0
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.Google_StartPaySubscription
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5351,7 +5351,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F7B10
+	 * 		RVA    -> 0x009F4FF0
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.Google_StartPay
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5376,7 +5376,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F79B0
+	 * 		RVA    -> 0x009F4E90
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.Google_QuerySkuItemDetailsSubscription
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5399,7 +5399,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F7850
+	 * 		RVA    -> 0x009F4D30
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.Google_QuerySkuItemDetails
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5422,7 +5422,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3240
+	 * 		RVA    -> 0x009F0720
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.Google_HasConsumePointsGoods
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -5444,7 +5444,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3240
+	 * 		RVA    -> 0x009F0720
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.Google_HasConsumeGoods
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -5466,7 +5466,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F77D0
+	 * 		RVA    -> 0x009F4CB0
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.Google_GetConsumePointsGoods
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -5488,7 +5488,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F77D0
+	 * 		RVA    -> 0x009F4CB0
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.Google_GetConsumeGoods
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -5510,7 +5510,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F7580
+	 * 		RVA    -> 0x009F4A60
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.Google_ConsumeGoods
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5535,7 +5535,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F7520
+	 * 		RVA    -> 0x009F4A00
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -5557,7 +5557,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F74E0
+	 * 		RVA    -> 0x009F49C0
 	 * 		Name   -> Function LLHSDK.LLHSDKPay.DestoryInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -5591,7 +5591,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F9420
+	 * 		RVA    -> 0x009F6900
 	 * 		Name   -> Function LLHSDK.LLHSDKReport.ReportToThirdParty_TwoParams
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5620,7 +5620,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F9280
+	 * 		RVA    -> 0x009F6760
 	 * 		Name   -> Function LLHSDK.LLHSDKReport.ReportToThirdParty_ThreeParams
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5651,7 +5651,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F8020
+	 * 		RVA    -> 0x009F5500
 	 * 		Name   -> Function LLHSDK.LLHSDKReport.ReportToThirdParty_OneParam
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5678,7 +5678,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F9080
+	 * 		RVA    -> 0x009F6560
 	 * 		Name   -> Function LLHSDK.LLHSDKReport.ReportToThirdParty_FourParams
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5711,7 +5711,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F8E30
+	 * 		RVA    -> 0x009F6310
 	 * 		Name   -> Function LLHSDK.LLHSDKReport.ReportToThirdParty_FiveParams
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5746,7 +5746,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F8D90
+	 * 		RVA    -> 0x009F6270
 	 * 		Name   -> Function LLHSDK.LLHSDKReport.ReportToThirdParty
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5771,7 +5771,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F8BB0
+	 * 		RVA    -> 0x009F6090
 	 * 		Name   -> Function LLHSDK.LLHSDKReport.ReportRevenueToThirdParty_TwoParams
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5804,7 +5804,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F8970
+	 * 		RVA    -> 0x009F5E50
 	 * 		Name   -> Function LLHSDK.LLHSDKReport.ReportRevenueToThirdParty_ThreeParams
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5839,7 +5839,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F87E0
+	 * 		RVA    -> 0x009F5CC0
 	 * 		Name   -> Function LLHSDK.LLHSDKReport.ReportRevenueToThirdParty_OneParam
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5870,7 +5870,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F8540
+	 * 		RVA    -> 0x009F5A20
 	 * 		Name   -> Function LLHSDK.LLHSDKReport.ReportRevenueToThirdParty_FourParams
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5907,7 +5907,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F8250
+	 * 		RVA    -> 0x009F5730
 	 * 		Name   -> Function LLHSDK.LLHSDKReport.ReportRevenueToThirdParty_FiveParams
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5946,7 +5946,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F8110
+	 * 		RVA    -> 0x009F55F0
 	 * 		Name   -> Function LLHSDK.LLHSDKReport.ReportRevenueToThirdParty
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -5975,7 +5975,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F8020
+	 * 		RVA    -> 0x009F5500
 	 * 		Name   -> Function LLHSDK.LLHSDKReport.ReportJsonToLilithImmediate
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -6002,7 +6002,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F7550
+	 * 		RVA    -> 0x009F4A30
 	 * 		Name   -> Function LLHSDK.LLHSDKReport.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -6024,7 +6024,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F7500
+	 * 		RVA    -> 0x009F49E0
 	 * 		Name   -> Function LLHSDK.LLHSDKReport.DestoryInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */

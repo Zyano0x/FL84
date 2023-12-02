@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -14,6 +14,21 @@ namespace CG
 	// --------------------------------------------------
 	// # Enums
 	// --------------------------------------------------
+	/**
+	 * BoneSkeletalMesh R_TP_Default_Set01.R_TP_Default_Set01
+	 */
+	enum class EBone_R_TP_Default_Set01 : uint8_t
+	{
+		Dummy_Root = 0,
+		Root       = 1,
+		Body       = 2,
+		body01     = 3,
+		door01     = 4,
+		door02     = 5,
+		door03     = 6,
+		door04     = 7
+	};
+
 	/**
 	 * BoneSkeletalMesh Avatar_MCP_Normal_LodP.Avatar_MCP_Normal_LodP
 	 */
@@ -99,78 +114,48 @@ namespace CG
 	};
 
 	/**
-	 * BoneSkeletalMesh R_VH_Hover_Soroll04_Set01_LODP.R_VH_Hover_Soroll04_Set01_LODP
+	 * BoneSkeletalMesh R_VH_Hover_Soroll02_Set01_LODP.R_VH_Hover_Soroll02_Set01_LODP
 	 */
-	enum class EBone_R_VH_Hover_Soroll04_Set01_LODP : uint8_t
+	enum class EBone_R_VH_Hover_Soroll02_Set01_LODP : uint8_t
 	{
-		Root          = 0,
-		Dummy_HandL   = 1,
-		Dummy_HandL_3 = 2,
-		Dummy_HandL_2 = 3,
-		Dummy_FootR   = 4,
-		Dummy_FootR_2 = 5,
-		Dummy_bag     = 6,
-		Dummy_Wings_R = 7,
-		Dummy_Fan     = 8,
-		Dummy_Wings_L = 9,
-		Dummy_FootL   = 10,
-		Dummy_FootL_2 = 11,
-		Dummy_HandR   = 12,
-		Dummy_HandR_2 = 13,
-		Dummy_HandR_3 = 14
+		Jeep_Root            = 0,
+		Jeep_Body            = 1,
+		Wheel_FL             = 2,
+		Wheel_FL01           = 3,
+		Wheel_BL             = 4,
+		Wheel_BL01           = 5,
+		Wheel_BR             = 6,
+		Wheel_BR01           = 7,
+		Wheel_FR             = 8,
+		Wheel_FR01           = 9,
+		Suspension_FR        = 10,
+		Suspension_FL        = 11,
+		Weapon               = 12,
+		Rudder               = 13,
+		Rudder_Hand_R        = 14,
+		Rudder_Hand_L        = 15,
+		Wheel_BR002          = 16,
+		Suspension_BL        = 17,
+		Suspension_BR        = 18,
+		Wheel_BL002          = 19,
+		Turret_A1            = 20,
+		Seat1                = 21,
+		Seat0                = 22,
+		VBJeep_Body_Wheel_FL = 23,
+		VBJeep_Body_Wheel_BL = 24,
+		VBJeep_Body_Wheel_BR = 25,
+		VBJeep_Body_Wheel_FR = 26
 	};
 
 	/**
-	 * BoneSkeletalMesh R_Weapon_Psm03_Set00_LOD0.R_Weapon_Psm03_Set00_LOD0
+	 * BoneSkeletalMesh R_Weapon_9A01_Set00_LOD0.R_Weapon_9A01_Set00_LOD0
 	 */
-	enum class EBone_R_Weapon_Psm03_Set00_LOD0 : uint8_t
+	enum class EBone_R_Weapon_9A01_Set00_LOD0 : uint8_t
 	{
 		Weapon_root = 0,
 		Weapon_body = 1,
 		Weapon01    = 2,
 		Mag         = 3
-	};
-
-	/**
-	 * BoneSkeletalMesh R_BI_DuckDoll.R_BI_DuckDoll
-	 */
-	enum class EBone_R_BI_DuckDoll : uint8_t
-	{
-		Root                 = 0,
-		Bone_Body_01         = 1,
-		Bone_Spine_01        = 2,
-		Bone_Head_01         = 3,
-		Bone_Hat_01          = 4,
-		Bone_Hat_02          = 5,
-		Bone_Eye_R_01        = 6,
-		Bone_Eye_R_02        = 7,
-		Bone_Eye_L_01        = 8,
-		Bone_Eye_L_02        = 9,
-		Bone_Ctrl_01         = 10,
-		Bone_Clavicle_R      = 11,
-		Bone_UpperArm_R      = 12,
-		Bone_LowerArm_R      = 13,
-		Bone_Hand_R          = 14,
-		Bone_Thamb_R_01      = 15,
-		Bone_Thamb_R_02      = 16,
-		Bone_Index_R_01      = 17,
-		Bone_Index_R_02      = 18,
-		Bone_Clavicle_L      = 19,
-		Bone_UpperArm_L      = 20,
-		Bone_LowerArm_L      = 21,
-		Bone_Hand_L          = 22,
-		Bone_Thamb_L_01      = 23,
-		Bone_Thamb_L_02      = 24,
-		Bone_Index_L_01      = 25,
-		Bone_Index_L_02      = 26,
-		Bone_Foot_L          = 27,
-		Bone_Leg_L           = 28,
-		Bone_Foot_R          = 29,
-		Bone_Leg_R           = 30,
-		Bone_Box_Root        = 31,
-		Bone_Box_01_Cover    = 32,
-		Bone_Box_03_Cover_03 = 33,
-		Bone_Box_03_Cover_02 = 34
 	};
 
 }

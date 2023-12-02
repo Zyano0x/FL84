@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CBD270
+	 * 		RVA    -> 0x00CBAE60
 	 * 		Name   -> Function ProtectBase.ProtectBaseComponent.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */
@@ -62,7 +62,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CBD2A0
+	 * 		RVA    -> 0x00CBAE90
 	 * 		Name   -> Function ProtectBase.SecDSComponent.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 	 */

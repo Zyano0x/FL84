@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -21,8 +21,8 @@ namespace CG
 	class UCustomMeshComponent : public UMeshComponent
 	{
 	public:
-		unsigned char                                              UnknownData_NK95[0x8];                                   // 0x0578(0x0008) Fix Super Size
-		unsigned char                                              UnknownData_M25T[0x10];                                  // 0x0580(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_HA7J[0x8];                                   // 0x0578(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_UY5X[0x10];                                  // 0x0580(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		bool SetCustomMeshTriangles(TArray<struct FCustomMeshTriangle> Triangles);

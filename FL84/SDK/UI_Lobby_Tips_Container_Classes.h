@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -29,11 +29,11 @@ namespace CG
 		class UCanvasPanel*                                        CanvasPanel_Container;                                   // 0x0428(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnClicked_1611A88244FCA9B0CD84F2AD47CA5819();
-		void OnPressed_2371AF9D41D93754BD6C2DAD47D8005E();
+		void OnClicked_BB6355F14823DB75561F199B74613B59();
+		void OnPressed_A3E3E36C400F24F57EC207B82F8F933A();
+		void OnHide();
 		void Construct();
 		void OnShow();
-		void OnHide();
 		void Destruct();
 		class FString GetModuleName();
 		static UClass* StaticClass();

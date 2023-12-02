@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D99AC0
+	 * 		RVA    -> 0x01D33240
 	 * 		Name   -> Function CableComponent.CableComponent.SetAttachEndToComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -51,7 +51,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D999B0
+	 * 		RVA    -> 0x01D33130
 	 * 		Name   -> Function CableComponent.CableComponent.SetAttachEndTo
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -78,7 +78,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D99900
+	 * 		RVA    -> 0x01D33080
 	 * 		Name   -> Function CableComponent.CableComponent.GetCableParticleLocations
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -103,7 +103,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D998D0
+	 * 		RVA    -> 0x01D33050
 	 * 		Name   -> Function CableComponent.CableComponent.GetAttachedComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -125,7 +125,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D998A0
+	 * 		RVA    -> 0x01D33020
 	 * 		Name   -> Function CableComponent.CableComponent.GetAttachedActor
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

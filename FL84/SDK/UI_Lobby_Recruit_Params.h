@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,27 +15,21 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_D7944B3949AB285D968962BC7603406D
+	 * DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_DA0FFAFD4DE80F1986F3A58946724480
 	 */
-	struct UUI_Lobby_Recruit_C_OnClicked_D7944B3949AB285D968962BC7603406D_Params
+	struct UUI_Lobby_Recruit_C_OnClicked_DA0FFAFD4DE80F1986F3A58946724480_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_E2DFC7754A51D967EA683A9437B3022F
+	 * DelegateFunction UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnClicked_B65D6933465FC9953CB8A3A276CB7BBC
 	 */
-	struct UUI_Lobby_Recruit_C_OnClicked_E2DFC7754A51D967EA683A9437B3022F_Params
+	struct UUI_Lobby_Recruit_C_OnClicked_B65D6933465FC9953CB8A3A276CB7BBC_Params
 	{	};
 
 	/**
 	 * Function UI_Lobby_Recruit.UI_Lobby_Recruit_C.Destruct
 	 */
 	struct UUI_Lobby_Recruit_C_Destruct_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_Recruit.UI_Lobby_Recruit_C.ConstructCopy
-	 */
-	struct UUI_Lobby_Recruit_C_ConstructCopy_Params
 	{	};
 
 	/**
@@ -48,6 +42,12 @@ namespace CG
 	 * Function UI_Lobby_Recruit.UI_Lobby_Recruit_C.OnSolarUIOpened
 	 */
 	struct UUI_Lobby_Recruit_C_OnSolarUIOpened_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_Recruit.UI_Lobby_Recruit_C.ConstructCopy
+	 */
+	struct UUI_Lobby_Recruit_C_ConstructCopy_Params
 	{	};
 
 	/**
@@ -77,7 +77,7 @@ namespace CG
 	public:
 		E_Type_State_Desktop                                       StateDesktopInvite;                                      // 0x0000(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		E_Type_State_Desktop                                       StateDesktopRecruit;                                     // 0x0001(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-		unsigned char                                              UnknownData_Q26D[0x2];                                   // 0x0002(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_CA0O[0x2];                                   // 0x0002(0x0002) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**

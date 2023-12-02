@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -32,11 +32,11 @@ namespace CG
 		E_TabLobbyItemState                                        StateHD;                                                 // 0x0440(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnURLDownloadFinish_7AA01EEE4400C2C96514EB95F17F99B6(bool bSuccess);
+		void OnURLDownloadFinish_C287F5244B47569BC0755DAE7571266F(bool bSuccess);
+		struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+		struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 		void OnSolarUIOpened();
 		void OnSolarUIClosed();
-		struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-		struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 		class FString GetModuleName();
 		void SetStateHD(E_TabLobbyItemState State);
 		void PreConstruct(bool IsDesignTime);

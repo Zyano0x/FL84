@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function GA_Weapon_EMP_Throw.GA_Weapon_EMP_Throw_C.K2_ActivateAbilityFromEvent
 	 * 		Flags  -> (Event, Protected, HasOutParms, BlueprintEvent)
 	 * Parameters:
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function GA_Weapon_EMP_Throw.GA_Weapon_EMP_Throw_C.ExecuteUbergraph_GA_Weapon_EMP_Throw
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

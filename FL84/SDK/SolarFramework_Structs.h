@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -41,7 +41,7 @@ namespace CG
 	public:
 		unsigned char                                              ContainerPath[0x28];                                     // 0x0000(0x0028) UNKNOWN PROPERTY: SoftClassProperty
 		EScope                                                     Scope;                                                   // 0x0028(0x0001) Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_TMHY[0x7];                                   // 0x0029(0x0007) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_89ZN[0x7];                                   // 0x0029(0x0007) MISSED OFFSET (PADDING)
 	};
 
 }

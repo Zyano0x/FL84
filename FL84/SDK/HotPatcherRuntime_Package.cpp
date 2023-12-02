@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD8AD0
+	 * 		RVA    -> 0x01C72250
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.SaveStringToFile
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -39,7 +39,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD89F0
+	 * 		RVA    -> 0x01C72170
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.PackagePathToFilename
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -64,7 +64,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD8950
+	 * 		RVA    -> 0x01C720D0
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.ModuleIsEnabled
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -89,7 +89,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD8870
+	 * 		RVA    -> 0x01C71FF0
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.LongPackageNameToPackagePath
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -114,7 +114,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD8770
+	 * 		RVA    -> 0x01C71EF0
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.LoadFileToString
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -143,7 +143,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD8680
+	 * 		RVA    -> 0x01C71E00
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.GetSpecifyAssetDetail
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -172,7 +172,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD8540
+	 * 		RVA    -> 0x01C71CC0
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.GetRedirectorList
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -201,7 +201,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD8440
+	 * 		RVA    -> 0x01C71BC0
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.GetPluginModuleAbsDir
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -230,7 +230,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD8340
+	 * 		RVA    -> 0x01C71AC0
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.GetModuleNameByRelativePath
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -259,7 +259,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD8240
+	 * 		RVA    -> 0x01C719C0
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.GetEnableModuleAbsDir
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -288,7 +288,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD80C0
+	 * 		RVA    -> 0x01C71840
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.GetAssetReferenceEx
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -319,7 +319,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD7FD0
+	 * 		RVA    -> 0x01C71750
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.GetAssetPackageGUID
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -348,7 +348,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD7ED0
+	 * 		RVA    -> 0x01C71650
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.GetAllEnabledModuleName
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -373,7 +373,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD7D50
+	 * 		RVA    -> 0x01C714D0
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.FindFilesRecursive
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -404,7 +404,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD7B60
+	 * 		RVA    -> 0x01C712E0
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.FilterNoRefAssetsWithIgnoreFilter
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -436,7 +436,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD79E0
+	 * 		RVA    -> 0x01C71160
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.FilterNoRefAssets
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -466,7 +466,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD78E0
+	 * 		RVA    -> 0x01C71060
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.FilenameToPackagePath
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -495,7 +495,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD77B0
+	 * 		RVA    -> 0x01C70F30
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.ExportCookPakCommandToFile
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -522,7 +522,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD76B0
+	 * 		RVA    -> 0x01C70E30
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.ConvRelativeDirToAbsDir
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -551,7 +551,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD7450
+	 * 		RVA    -> 0x01C70BD0
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.ConvLongPackageNameToCookedPath
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -587,7 +587,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD72C0
+	 * 		RVA    -> 0x01C70A40
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.CombineAssetsDetailAsFAssetDepenInfo
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -616,7 +616,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CD7080
+	 * 		RVA    -> 0x01C70800
 	 * 		Name   -> Function HotPatcherRuntime.FlibAssetManageHelper.CombineAssetDependencies
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -657,7 +657,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDEB00
+	 * 		RVA    -> 0x01C78280
 	 * 		Name   -> Function HotPatcherRuntime.FlibPakHelper.UnMountPak
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -682,7 +682,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDE900
+	 * 		RVA    -> 0x01C78080
 	 * 		Name   -> Function HotPatcherRuntime.FlibPakHelper.ScanPlatformDirectory
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -717,7 +717,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDE880
+	 * 		RVA    -> 0x01C78000
 	 * 		Name   -> Function HotPatcherRuntime.FlibPakHelper.ScanExtenPakFiles
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -739,7 +739,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDE6C0
+	 * 		RVA    -> 0x01C77E40
 	 * 		Name   -> Function HotPatcherRuntime.FlibPakHelper.ScanExtenFilesInDirectory
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -772,7 +772,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDE640
+	 * 		RVA    -> 0x01C77DC0
 	 * 		Name   -> Function HotPatcherRuntime.FlibPakHelper.ScanAllVersionDescribleFiles
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -794,7 +794,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDE5A0
+	 * 		RVA    -> 0x01C77D20
 	 * 		Name   -> Function HotPatcherRuntime.FlibPakHelper.ReloadShaderbytecode
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -814,7 +814,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDE2D0
+	 * 		RVA    -> 0x01C77A50
 	 * 		Name   -> Function HotPatcherRuntime.FlibPakHelper.OpenPSO
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -839,7 +839,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDE460
+	 * 		RVA    -> 0x01C77BE0
 	 * 		Name   -> Function HotPatcherRuntime.FlibPakHelper.MountPak
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -868,7 +868,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDE370
+	 * 		RVA    -> 0x01C77AF0
 	 * 		Name   -> Function HotPatcherRuntime.FlibPakHelper.LoadShaderbytecode
 	 * 		Flags  -> (Final, Exec, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -895,7 +895,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDE1E0
+	 * 		RVA    -> 0x01C77960
 	 * 		Name   -> Function HotPatcherRuntime.FlibPakHelper.LoadAssetRegistry
 	 * 		Flags  -> (Final, Exec, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -922,7 +922,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDDE10
+	 * 		RVA    -> 0x01C77590
 	 * 		Name   -> Function HotPatcherRuntime.FlibPakHelper.GetPakOrderByPakPath
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -947,7 +947,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDD220
+	 * 		RVA    -> 0x01C769A0
 	 * 		Name   -> Function HotPatcherRuntime.FlibPakHelper.GetAllMountedPaks
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -969,7 +969,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDCE60
+	 * 		RVA    -> 0x01C765E0
 	 * 		Name   -> Function HotPatcherRuntime.FlibPakHelper.ExecMountPak
 	 * 		Flags  -> (Final, Exec, Native, Static, Public)
 	 * Parameters:
@@ -996,7 +996,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDC0E0
+	 * 		RVA    -> 0x01C75860
 	 * 		Name   -> Function HotPatcherRuntime.FlibPakHelper.CreateFileByBytes
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1025,7 +1025,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDC050
+	 * 		RVA    -> 0x01C757D0
 	 * 		Name   -> Function HotPatcherRuntime.FlibPakHelper.CloseShaderbytecode
 	 * 		Flags  -> (Final, Exec, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1062,7 +1062,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDE5A0
+	 * 		RVA    -> 0x01C77D20
 	 * 		Name   -> Function HotPatcherRuntime.FlibPatchParserHelper.ReloadShaderbytecode
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1082,7 +1082,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDE370
+	 * 		RVA    -> 0x01C77AF0
 	 * 		Name   -> Function HotPatcherRuntime.FlibPatchParserHelper.LoadShaderbytecode
 	 * 		Flags  -> (Final, Exec, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1109,7 +1109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDE070
+	 * 		RVA    -> 0x01C777F0
 	 * 		Name   -> Function HotPatcherRuntime.FlibPatchParserHelper.HashStringWithSHA1
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1134,7 +1134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CB6820
+	 * 		RVA    -> 0x01C4FFA0
 	 * 		Name   -> Function HotPatcherRuntime.FlibPatchParserHelper.GetProjectName
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1156,7 +1156,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDDF30
+	 * 		RVA    -> 0x01C776B0
 	 * 		Name   -> Function HotPatcherRuntime.FlibPatchParserHelper.GetProjectIniFiles
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1183,7 +1183,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDDEB0
+	 * 		RVA    -> 0x01C77630
 	 * 		Name   -> Function HotPatcherRuntime.FlibPatchParserHelper.GetProjectFilePath
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1205,7 +1205,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDDCF0
+	 * 		RVA    -> 0x01C77470
 	 * 		Name   -> Function HotPatcherRuntime.FlibPatchParserHelper.GetPakFileInfo
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1234,7 +1234,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDDBB0
+	 * 		RVA    -> 0x01C77330
 	 * 		Name   -> Function HotPatcherRuntime.FlibPatchParserHelper.GetIniConfigs
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1261,7 +1261,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDDAD0
+	 * 		RVA    -> 0x01C77250
 	 * 		Name   -> Function HotPatcherRuntime.FlibPatchParserHelper.GetEngineConfigs
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1286,7 +1286,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDD9F0
+	 * 		RVA    -> 0x01C77170
 	 * 		Name   -> Function HotPatcherRuntime.FlibPatchParserHelper.GetEnabledPluginConfigs
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1311,7 +1311,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDD790
+	 * 		RVA    -> 0x01C76F10
 	 * 		Name   -> Function HotPatcherRuntime.FlibPatchParserHelper.GetCookedShaderBytecodeFiles
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1348,7 +1348,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDD650
+	 * 		RVA    -> 0x01C76DD0
 	 * 		Name   -> Function HotPatcherRuntime.FlibPatchParserHelper.GetCookedGlobalShaderCacheFiles
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1375,7 +1375,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDD4A0
+	 * 		RVA    -> 0x01C76C20
 	 * 		Name   -> Function HotPatcherRuntime.FlibPatchParserHelper.GetCookedAssetRegistryFiles
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1408,7 +1408,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDD2A0
+	 * 		RVA    -> 0x01C76A20
 	 * 		Name   -> Function HotPatcherRuntime.FlibPatchParserHelper.GetAvailableMaps
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1439,7 +1439,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDD000
+	 * 		RVA    -> 0x01C76780
 	 * 		Name   -> Function HotPatcherRuntime.FlibPatchParserHelper.GetAllExFilesByPlatform
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms)
 	 * Parameters:
@@ -1466,7 +1466,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDC870
+	 * 		RVA    -> 0x01C75FF0
 	 * 		Name   -> Function HotPatcherRuntime.FlibPatchParserHelper.DiffVersionAssets
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -1503,7 +1503,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDC230
+	 * 		RVA    -> 0x01C759B0
 	 * 		Name   -> Function HotPatcherRuntime.FlibPatchParserHelper.DiffVersionAllPlatformExFiles
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms)
 	 * Parameters:
@@ -1534,7 +1534,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDC050
+	 * 		RVA    -> 0x01C757D0
 	 * 		Name   -> Function HotPatcherRuntime.FlibPatchParserHelper.CloseShaderbytecode
 	 * 		Flags  -> (Final, Exec, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1571,7 +1571,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDE5C0
+	 * 		RVA    -> 0x01C77D40
 	 * 		Name   -> Function HotPatcherRuntime.FlibShaderPipelineCacheHelper.SavePipelineFileCache
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1596,7 +1596,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDE2D0
+	 * 		RVA    -> 0x01C77A50
 	 * 		Name   -> Function HotPatcherRuntime.FlibShaderPipelineCacheHelper.LoadShaderPipelineCache
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1621,7 +1621,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDE1B0
+	 * 		RVA    -> 0x01C77930
 	 * 		Name   -> Function HotPatcherRuntime.FlibShaderPipelineCacheHelper.IsEnabledUsePSO
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1643,7 +1643,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDE180
+	 * 		RVA    -> 0x01C77900
 	 * 		Name   -> Function HotPatcherRuntime.FlibShaderPipelineCacheHelper.IsEnabledSaveBoundPSOLog
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1665,7 +1665,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDE150
+	 * 		RVA    -> 0x01C778D0
 	 * 		Name   -> Function HotPatcherRuntime.FlibShaderPipelineCacheHelper.IsEnabledLogPSO
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -1687,7 +1687,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDCDD0
+	 * 		RVA    -> 0x01C76550
 	 * 		Name   -> Function HotPatcherRuntime.FlibShaderPipelineCacheHelper.EnableShaderPipelineCache
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1712,7 +1712,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDCD40
+	 * 		RVA    -> 0x01C764C0
 	 * 		Name   -> Function HotPatcherRuntime.FlibShaderPipelineCacheHelper.EnableSaveBoundPSOLog
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1737,7 +1737,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CDCCB0
+	 * 		RVA    -> 0x01C76430
 	 * 		Name   -> Function HotPatcherRuntime.FlibShaderPipelineCacheHelper.EnableLogPSO
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -1776,7 +1776,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01CE0B40
+	 * 		RVA    -> 0x01C7A2C0
 	 * 		Name   -> Function HotPatcherRuntime.MountListener.Init
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */

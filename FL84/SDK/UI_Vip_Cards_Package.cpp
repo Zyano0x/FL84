@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,17 +12,17 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_3445FDF9410E7B4152C6A59E328E9AC0
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_9AEF874E40DCC50B4F0C8DA4315FA6BD
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Vip_Cards_C::OnClicked_3445FDF9410E7B4152C6A59E328E9AC0()
+	void UUI_Vip_Cards_C::OnClicked_9AEF874E40DCC50B4F0C8DA4315FA6BD()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_3445FDF9410E7B4152C6A59E328E9AC0"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_9AEF874E40DCC50B4F0C8DA4315FA6BD"));
 		
-		UUI_Vip_Cards_C_OnClicked_3445FDF9410E7B4152C6A59E328E9AC0_Params params {};
+		UUI_Vip_Cards_C_OnClicked_9AEF874E40DCC50B4F0C8DA4315FA6BD_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -31,17 +31,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_6D946638435D2E7580D3F8B4EE526DE2
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_D9E0C8754EA1EA947CE4C9981773C953
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_Vip_Cards_C::OnClicked_6D946638435D2E7580D3F8B4EE526DE2()
+	void UUI_Vip_Cards_C::OnClicked_D9E0C8754EA1EA947CE4C9981773C953()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_6D946638435D2E7580D3F8B4EE526DE2"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_D9E0C8754EA1EA947CE4C9981773C953"));
 		
-		UUI_Vip_Cards_C_OnClicked_6D946638435D2E7580D3F8B4EE526DE2_Params params {};
+		UUI_Vip_Cards_C_OnClicked_D9E0C8754EA1EA947CE4C9981773C953_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -50,7 +50,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Vip_Cards.UI_Vip_Cards_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -71,7 +71,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Vip_Cards.UI_Vip_Cards_C.SetCardType
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -93,7 +93,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Vip_Cards.UI_Vip_Cards_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -115,7 +115,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_Vip_Cards.UI_Vip_Cards_C.ExecuteUbergraph_UI_Vip_Cards
 	 * 		Flags  -> (Final)
 	 * Parameters:

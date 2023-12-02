@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,19 +12,19 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_71104B48402A5174295A30A0BD998009
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_46E905534BA7BD1099477F8FEBF0E5EE
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		struct FInputDeviceProxy                           InputDeviceProxy                                           (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_KeyMappingPrompt_C::OnInputDeviceChanged_71104B48402A5174295A30A0BD998009(const struct FInputDeviceProxy& InputDeviceProxy)
+	void UUI_KeyMappingPrompt_C::OnInputDeviceChanged_46E905534BA7BD1099477F8FEBF0E5EE(const struct FInputDeviceProxy& InputDeviceProxy)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_71104B48402A5174295A30A0BD998009"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_46E905534BA7BD1099477F8FEBF0E5EE"));
 		
-		UUI_KeyMappingPrompt_C_OnInputDeviceChanged_71104B48402A5174295A30A0BD998009_Params params {};
+		UUI_KeyMappingPrompt_C_OnInputDeviceChanged_46E905534BA7BD1099477F8FEBF0E5EE_Params params {};
 		params.InputDeviceProxy = InputDeviceProxy;
 		
 		auto flags = fn->FunctionFlags;
@@ -34,17 +34,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_F0ADB69E4A52D8F1AAD39FA7864CF651
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_95EED30040CE4342E6C1A2A7AA22CF8C
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_KeyMappingPrompt_C::OnInputMappingUpdate_F0ADB69E4A52D8F1AAD39FA7864CF651()
+	void UUI_KeyMappingPrompt_C::OnInputMappingUpdate_95EED30040CE4342E6C1A2A7AA22CF8C()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_F0ADB69E4A52D8F1AAD39FA7864CF651"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_95EED30040CE4342E6C1A2A7AA22CF8C"));
 		
-		UUI_KeyMappingPrompt_C_OnInputMappingUpdate_F0ADB69E4A52D8F1AAD39FA7864CF651_Params params {};
+		UUI_KeyMappingPrompt_C_OnInputMappingUpdate_95EED30040CE4342E6C1A2A7AA22CF8C_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -53,19 +53,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_23D0EEE2478C271BB092E0BC26B59110
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_B1FC5C164D7B96EBECFC2192B5CD6E2C
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		struct FInputDeviceProxy                           InputDeviceProxy                                           (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_KeyMappingPrompt_C::OnInputDeviceChanged_23D0EEE2478C271BB092E0BC26B59110(const struct FInputDeviceProxy& InputDeviceProxy)
+	void UUI_KeyMappingPrompt_C::OnInputDeviceChanged_B1FC5C164D7B96EBECFC2192B5CD6E2C(const struct FInputDeviceProxy& InputDeviceProxy)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_23D0EEE2478C271BB092E0BC26B59110"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_B1FC5C164D7B96EBECFC2192B5CD6E2C"));
 		
-		UUI_KeyMappingPrompt_C_OnInputDeviceChanged_23D0EEE2478C271BB092E0BC26B59110_Params params {};
+		UUI_KeyMappingPrompt_C_OnInputDeviceChanged_B1FC5C164D7B96EBECFC2192B5CD6E2C_Params params {};
 		params.InputDeviceProxy = InputDeviceProxy;
 		
 		auto flags = fn->FunctionFlags;
@@ -75,17 +75,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_53780F934B14141E2CCD80B67ECFB519
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_D946EA104A45CCDE7D2A3484301271F9
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_KeyMappingPrompt_C::OnInputMappingUpdate_53780F934B14141E2CCD80B67ECFB519()
+	void UUI_KeyMappingPrompt_C::OnInputMappingUpdate_D946EA104A45CCDE7D2A3484301271F9()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_53780F934B14141E2CCD80B67ECFB519"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_D946EA104A45CCDE7D2A3484301271F9"));
 		
-		UUI_KeyMappingPrompt_C_OnInputMappingUpdate_53780F934B14141E2CCD80B67ECFB519_Params params {};
+		UUI_KeyMappingPrompt_C_OnInputMappingUpdate_D946EA104A45CCDE7D2A3484301271F9_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -94,19 +94,19 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_3D665858443378BD32370B92AE7193AD
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_05D917764389BFE78B8ACE9D2DB63DAF
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
 	 * 		struct FInputDeviceProxy                           InputDeviceProxy                                           (Parm, NoDestructor, NativeAccessSpecifierPublic)
 	 */
-	void UUI_KeyMappingPrompt_C::OnInputDeviceChanged_3D665858443378BD32370B92AE7193AD(const struct FInputDeviceProxy& InputDeviceProxy)
+	void UUI_KeyMappingPrompt_C::OnInputDeviceChanged_05D917764389BFE78B8ACE9D2DB63DAF(const struct FInputDeviceProxy& InputDeviceProxy)
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_3D665858443378BD32370B92AE7193AD"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputDeviceChanged_05D917764389BFE78B8ACE9D2DB63DAF"));
 		
-		UUI_KeyMappingPrompt_C_OnInputDeviceChanged_3D665858443378BD32370B92AE7193AD_Params params {};
+		UUI_KeyMappingPrompt_C_OnInputDeviceChanged_05D917764389BFE78B8ACE9D2DB63DAF_Params params {};
 		params.InputDeviceProxy = InputDeviceProxy;
 		
 		auto flags = fn->FunctionFlags;
@@ -116,17 +116,17 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B5BE00
-	 * 		Name   -> DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_A1C256A94842C3EA536AB982F5AF54E7
+	 * 		RVA    -> 0x00B59400
+	 * 		Name   -> DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_E69571E043B812E15D0DF8AF61AA2FFA
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 */
-	void UUI_KeyMappingPrompt_C::OnInputMappingUpdate_A1C256A94842C3EA536AB982F5AF54E7()
+	void UUI_KeyMappingPrompt_C::OnInputMappingUpdate_E69571E043B812E15D0DF8AF61AA2FFA()
 	{
 		static UFunction* fn = nullptr;
 		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_A1C256A94842C3EA536AB982F5AF54E7"));
+			fn = UObject::FindObject<UFunction>(xorstr_("DelegateFunction UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInputMappingUpdate_E69571E043B812E15D0DF8AF61AA2FFA"));
 		
-		UUI_KeyMappingPrompt_C_OnInputMappingUpdate_A1C256A94842C3EA536AB982F5AF54E7_Params params {};
+		UUI_KeyMappingPrompt_C_OnInputMappingUpdate_E69571E043B812E15D0DF8AF61AA2FFA_Params params {};
 		
 		auto flags = fn->FunctionFlags;
 		UObject::ProcessEvent(fn, &params);
@@ -135,7 +135,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnChangeAdapterSlotWidgetParametersCopy
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -157,45 +157,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.Construct
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_KeyMappingPrompt_C::Construct()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.Construct"));
-		
-		UUI_KeyMappingPrompt_C_Construct_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
-	 * 		Name   -> Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInitialized
-	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
-	 */
-	void UUI_KeyMappingPrompt_C::OnInitialized()
-	{
-		static UFunction* fn = nullptr;
-		if (!fn)
-			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInitialized"));
-		
-		UUI_KeyMappingPrompt_C_OnInitialized_Params params {};
-		
-		auto flags = fn->FunctionFlags;
-		UObject::ProcessEvent(fn, &params);
-		fn->FunctionFlags = flags;
-	}
-
-	/**
-	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.Destruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 */
@@ -214,7 +176,45 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x00B67660
+	 * 		Name   -> Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.Construct
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_KeyMappingPrompt_C::Construct()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.Construct"));
+		
+		UUI_KeyMappingPrompt_C_Construct_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x00B67660
+	 * 		Name   -> Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInitialized
+	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
+	 */
+	void UUI_KeyMappingPrompt_C::OnInitialized()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>(xorstr_("Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnInitialized"));
+		
+		UUI_KeyMappingPrompt_C_OnInitialized_Params params {};
+		
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+	}
+
+	/**
+	 * Function:
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.GetModuleName
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 	 */
@@ -235,7 +235,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.SetEnableInputSettingHide
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -257,7 +257,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.SetOperationTypeImpl
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -279,7 +279,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.RefreshEmptyDisplay
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -301,7 +301,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.SetEnableEmptyDispaly
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -323,7 +323,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.SetStyle
 	 * 		Flags  -> (Public, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -345,7 +345,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnChangeAdapterSlotWidgetGameplayTag
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -369,7 +369,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00B6A060
+	 * 		RVA    -> 0x00B67660
 	 * 		Name   -> Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnChangeAdapterSlotWidgetParameters
 	 * 		Flags  -> (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 	 * Parameters:
@@ -391,7 +391,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.OnLoadAdapterSlotWidgetFinished
 	 * 		Flags  -> (Event, Public, BlueprintCallable, BlueprintEvent)
 	 */
@@ -410,7 +410,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.PreConstruct
 	 * 		Flags  -> (BlueprintCosmetic, Event, Public, BlueprintEvent)
 	 * Parameters:
@@ -432,7 +432,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function UI_KeyMappingPrompt.UI_KeyMappingPrompt_C.ExecuteUbergraph_UI_KeyMappingPrompt
 	 * 		Flags  -> (Final, HasDefaults)
 	 * Parameters:

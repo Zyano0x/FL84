@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D94F90
+	 * 		RVA    -> 0x01D2E710
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetCollectionsContainingAssetPtr
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -37,7 +37,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D94E50
+	 * 		RVA    -> 0x01D2E5D0
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetCollectionsContainingAssetData
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -62,7 +62,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D94D70
+	 * 		RVA    -> 0x01D2E4F0
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetCollectionsContainingAsset
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -87,7 +87,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D94CF0
+	 * 		RVA    -> 0x01D2E470
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetCollections
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -109,7 +109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D94B60
+	 * 		RVA    -> 0x01D2E2E0
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.GetAssetsInCollection
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -134,7 +134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01D94AC0
+	 * 		RVA    -> 0x01D2E240
 	 * 		Name   -> Function AssetTags.AssetTagsSubsystem.CollectionExists
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:

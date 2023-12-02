@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class ABP_WheeledVehicleBase_C : public ASolarWheeledVehicle
 	{
 	public:
-		unsigned char                                              UnknownData_04CE[0x8];                                   // 0x13E8(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_MHRP[0x8];                                   // 0x13E8(0x0008) Fix Super Size
 
 	public:
 		static UClass* StaticClass();

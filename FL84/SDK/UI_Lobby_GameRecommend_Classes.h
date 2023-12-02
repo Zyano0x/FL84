@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -29,8 +29,8 @@ namespace CG
 		class USolarTextBlock*                                     Txt_GameRecommend;                                       // 0x0428(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void Destruct();
 		void ConstructCopy();
+		void Destruct();
 		class FString GetModuleName();
 		void PreConstruct(bool IsDesignTime);
 		void Construct();

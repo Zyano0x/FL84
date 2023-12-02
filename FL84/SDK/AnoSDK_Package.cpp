@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction AnoSDK.AnoSDK.OnAnoSentAntiData__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -34,7 +34,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> DelegateFunction AnoSDK.AnoSDK.OnAnoRecvAntiData__DelegateSignature
 	 * 		Flags  -> (MulticastDelegate, Public, Delegate)
 	 * Parameters:
@@ -58,7 +58,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C9C7E0
+	 * 		RVA    -> 0x01C35F60
 	 * 		Name   -> Function AnoSDK.AnoSDK.GetInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -80,7 +80,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C9C7C0
+	 * 		RVA    -> 0x01C35F40
 	 * 		Name   -> Function AnoSDK.AnoSDK.DestoryInstance
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -100,7 +100,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C9C6A0
+	 * 		RVA    -> 0x01C35E20
 	 * 		Name   -> Function AnoSDK.AnoSDK.AnoUESDKSetUserInfo
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -125,7 +125,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function AnoSDK.AnoSDK.AnoUESDKSetCSChannelDomain
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -148,7 +148,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function AnoSDK.AnoSDK.AnoUESDKSetChannelIP
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -171,7 +171,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3790
+	 * 		RVA    -> 0x009F0C70
 	 * 		Name   -> Function AnoSDK.AnoSDK.AnoUESDKSendSDKCoreData
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -191,7 +191,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3790
+	 * 		RVA    -> 0x009F0C70
 	 * 		Name   -> Function AnoSDK.AnoSDK.AnoUESDKSendDataToSvr
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -211,7 +211,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C9C680
+	 * 		RVA    -> 0x01C35E00
 	 * 		Name   -> Function AnoSDK.AnoSDK.AnoUESDKSendCoreTimeData
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -231,7 +231,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B8070
+	 * 		RVA    -> 0x009B5550
 	 * 		Name   -> Function AnoSDK.AnoSDK.AnoUESDKReportThreadShutDown
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -251,7 +251,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009B8070
+	 * 		RVA    -> 0x009B5550
 	 * 		Name   -> Function AnoSDK.AnoSDK.AnoUESDKReportThreadInit
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -271,7 +271,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3790
+	 * 		RVA    -> 0x009F0C70
 	 * 		Name   -> Function AnoSDK.AnoSDK.AnoUESDKRegistInfoListener
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -291,7 +291,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3790
+	 * 		RVA    -> 0x009F0C70
 	 * 		Name   -> Function AnoSDK.AnoSDK.AnoUESDKOnResume
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -311,7 +311,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C9C510
+	 * 		RVA    -> 0x01C35C90
 	 * 		Name   -> Function AnoSDK.AnoSDK.AnoUESDKOnRecvSignature
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -340,7 +340,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F0330
+	 * 		RVA    -> 0x009ED810
 	 * 		Name   -> Function AnoSDK.AnoSDK.AnoUESDKOnRecvData
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -363,7 +363,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x009F3790
+	 * 		RVA    -> 0x009F0C70
 	 * 		Name   -> Function AnoSDK.AnoSDK.AnoUESDKOnPause
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 */
@@ -383,7 +383,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C9C3F0
+	 * 		RVA    -> 0x01C35B70
 	 * 		Name   -> Function AnoSDK.AnoSDK.AnoUESDKIoctl
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:
@@ -408,7 +408,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x01C9C320
+	 * 		RVA    -> 0x01C35AA0
 	 * 		Name   -> Function AnoSDK.AnoSDK.AnoUESDKInit
 	 * 		Flags  -> (Final, Native, Static, Public, BlueprintCallable)
 	 * Parameters:

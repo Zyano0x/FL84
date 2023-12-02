@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -24,6 +24,18 @@ namespace CG
 	};
 
 	/**
+	 * Function UI_Component_Item.UI_Component_Item_C.SetIcon_LuaCopy
+	 */
+	struct UUI_Component_Item_C_SetIcon_LuaCopy_Params
+	{	};
+
+	/**
+	 * Function UI_Component_Item.UI_Component_Item_C.PlayEnterAnim
+	 */
+	struct UUI_Component_Item_C_PlayEnterAnim_Params
+	{	};
+
+	/**
 	 * Function UI_Component_Item.UI_Component_Item_C.OnListItemObjectSetCopy
 	 */
 	struct UUI_Component_Item_C_OnListItemObjectSetCopy_Params
@@ -33,12 +45,6 @@ namespace CG
 	};
 
 	/**
-	 * Function UI_Component_Item.UI_Component_Item_C.PlayEnterAnim
-	 */
-	struct UUI_Component_Item_C_PlayEnterAnim_Params
-	{	};
-
-	/**
 	 * Function UI_Component_Item.UI_Component_Item_C.GetModuleName
 	 */
 	struct UUI_Component_Item_C_GetModuleName_Params
@@ -46,6 +52,30 @@ namespace CG
 	public:
 		class FString                                              ReturnValue;                                             // 0x0000(0x0010)  (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
 	};
+
+	/**
+	 * Function UI_Component_Item.UI_Component_Item_C.SequenceEvent__ENTRYPOINTUI_Component_Item_3
+	 */
+	struct UUI_Component_Item_C_SequenceEvent__ENTRYPOINTUI_Component_Item_3_Params
+	{	};
+
+	/**
+	 * Function UI_Component_Item.UI_Component_Item_C.SequenceEvent__ENTRYPOINTUI_Component_Item_2
+	 */
+	struct UUI_Component_Item_C_SequenceEvent__ENTRYPOINTUI_Component_Item_2_Params
+	{	};
+
+	/**
+	 * Function UI_Component_Item.UI_Component_Item_C.SequenceEvent__ENTRYPOINTUI_Component_Item_1
+	 */
+	struct UUI_Component_Item_C_SequenceEvent__ENTRYPOINTUI_Component_Item_1_Params
+	{	};
+
+	/**
+	 * Function UI_Component_Item.UI_Component_Item_C.SetIcon_Lua
+	 */
+	struct UUI_Component_Item_C_SetIcon_Lua_Params
+	{	};
 
 	/**
 	 * Function UI_Component_Item.UI_Component_Item_C.BP_OnEntryReleased
@@ -79,6 +109,18 @@ namespace CG
 	public:
 		class UObject*                                             ListItemObject;                                          // 0x0000(0x0008)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	};
+
+	/**
+	 * Function UI_Component_Item.UI_Component_Item_C.PlaySound_Puzzle_Unlock_Anim
+	 */
+	struct UUI_Component_Item_C_PlaySound_Puzzle_Unlock_Anim_Params
+	{	};
+
+	/**
+	 * Function UI_Component_Item.UI_Component_Item_C.PlaySound_Anim_Exchange
+	 */
+	struct UUI_Component_Item_C_PlaySound_Anim_Exchange_Params
+	{	};
 
 	/**
 	 * Function UI_Component_Item.UI_Component_Item_C.PreConstruct

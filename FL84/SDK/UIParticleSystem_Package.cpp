@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008306F0
+	 * 		RVA    -> 0x0082DBC0
 	 * 		Name   -> Function UIParticleSystem.ParticleSystemWidget.SetReactivate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -35,7 +35,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00830620
+	 * 		RVA    -> 0x0082DAF0
 	 * 		Name   -> Function UIParticleSystem.ParticleSystemWidget.ActivateParticles
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:

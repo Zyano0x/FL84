@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0082A8C0
+	 * 		RVA    -> 0x00827D90
 	 * 		Name   -> Function BlockoutToolsPlugin.BlockoutToolsParent.RerunConstructionScript
 	 * 		Flags  -> (Final, Native, Private, BlueprintCallable)
 	 */
@@ -32,7 +32,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x0082A8A0
+	 * 		RVA    -> 0x00827D70
 	 * 		Name   -> Function BlockoutToolsPlugin.BlockoutToolsParent.BlockoutSetMaterial
 	 * 		Flags  -> (Final, Native, Private, BlueprintCallable)
 	 */

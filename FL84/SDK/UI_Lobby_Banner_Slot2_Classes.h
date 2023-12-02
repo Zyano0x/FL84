@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -27,8 +27,8 @@ namespace CG
 		bool                                                       SelectType;                                              // 0x0418(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 
 	public:
-		void OnListItemObjectSetCopy(class UObject* ListItemObject);
 		void BP_OnItemSelectionChangedCopy(bool bIsSelected);
+		void OnListItemObjectSetCopy(class UObject* ListItemObject);
 		class FString GetModuleName();
 		void BP_OnEntryReleased();
 		void BP_OnItemExpansionChanged(bool bIsExpanded);

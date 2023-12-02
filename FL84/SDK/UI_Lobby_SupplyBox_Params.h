@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,21 +15,21 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_SupplyBox.UI_Lobby_SupplyBox_C.OnClicked_5CF77EA349DEAA11A15E19AA2E697CA8
+	 * DelegateFunction UI_Lobby_SupplyBox.UI_Lobby_SupplyBox_C.OnClicked_5DD4AEA84059BBCB033834BBEE693DB7
 	 */
-	struct UUI_Lobby_SupplyBox_C_OnClicked_5CF77EA349DEAA11A15E19AA2E697CA8_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_SupplyBox.UI_Lobby_SupplyBox_C.Construct
-	 */
-	struct UUI_Lobby_SupplyBox_C_Construct_Params
+	struct UUI_Lobby_SupplyBox_C_OnClicked_5DD4AEA84059BBCB033834BBEE693DB7_Params
 	{	};
 
 	/**
 	 * Function UI_Lobby_SupplyBox.UI_Lobby_SupplyBox_C.Destruct
 	 */
 	struct UUI_Lobby_SupplyBox_C_Destruct_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_SupplyBox.UI_Lobby_SupplyBox_C.Construct
+	 */
+	struct UUI_Lobby_SupplyBox_C_Construct_Params
 	{	};
 
 	/**
@@ -58,7 +58,7 @@ namespace CG
 	public:
 		int32_t                                                    State;                                                   // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 		bool                                                       Claim;                                                   // 0x0004(0x0001)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-		unsigned char                                              UnknownData_7B9T[0x3];                                   // 0x0005(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
+		unsigned char                                              UnknownData_LF2V[0x3];                                   // 0x0005(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY) ()
 	};
 
 	/**

@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,36 +15,36 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_FF1314C94D416A23B1E1D8B7E04AC124
+	 * DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_FBB2BD8842BC25E946420E9881B63AFC
 	 */
-	struct UUI_MicroPhoneOperation_Item_C_OnCheckStateChanged_FF1314C94D416A23B1E1D8B7E04AC124_Params
+	struct UUI_MicroPhoneOperation_Item_C_OnCheckStateChanged_FBB2BD8842BC25E946420E9881B63AFC_Params
 	{
 	public:
 		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_D7DE8844432689A4F122DBA4D3A41A5E
+	 * DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_96258C4E4CEE3FB5834974BCC66198AB
 	 */
-	struct UUI_MicroPhoneOperation_Item_C_OnCheckStateChanged_D7DE8844432689A4F122DBA4D3A41A5E_Params
+	struct UUI_MicroPhoneOperation_Item_C_OnCheckStateChanged_96258C4E4CEE3FB5834974BCC66198AB_Params
 	{
 	public:
 		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_23D7B3064C23DD4889E0438E5B224923
+	 * DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_A94FAD3A4D5F84E29BDF419EC0206C97
 	 */
-	struct UUI_MicroPhoneOperation_Item_C_OnCheckStateChanged_23D7B3064C23DD4889E0438E5B224923_Params
+	struct UUI_MicroPhoneOperation_Item_C_OnCheckStateChanged_A94FAD3A4D5F84E29BDF419EC0206C97_Params
 	{
 	public:
 		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	};
 
 	/**
-	 * DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_E04B8CCF46B440BB33725D88B3029DA0
+	 * DelegateFunction UI_MicroPhoneOperation_Item.UI_MicroPhoneOperation_Item_C.OnCheckStateChanged_9EE519E349A807C7D3BC908F7B3EFD8D
 	 */
-	struct UUI_MicroPhoneOperation_Item_C_OnCheckStateChanged_E04B8CCF46B440BB33725D88B3029DA0_Params
+	struct UUI_MicroPhoneOperation_Item_C_OnCheckStateChanged_9EE519E349A807C7D3BC908F7B3EFD8D_Params
 	{
 	public:
 		bool                                                       bIsChecked;                                              // 0x0000(0x0001)  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)

@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -390,7 +390,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04734F20
+	 * 		RVA    -> 0x046E0A10
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoBaseComponent.UpdateWorldLocalState
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -413,7 +413,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04734E90
+	 * 		RVA    -> 0x046E0980
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoBaseComponent.UpdateHoverState
 	 * 		Flags  -> (Final, Native, Public)
 	 * Parameters:
@@ -492,7 +492,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04734DB0
+	 * 		RVA    -> 0x046E08A0
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoTransformSource.SetTransform
 	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -515,7 +515,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04734BF0
+	 * 		RVA    -> 0x046E06E0
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoTransformSource.GetTransform
 	 * 		Flags  -> (Native, Public, HasDefaults, Const)
 	 */
@@ -551,7 +551,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04734C60
+	 * 		RVA    -> 0x046E0750
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoAxisSource.HasTangentVectors
 	 * 		Flags  -> (Native, Public, Const)
 	 */
@@ -573,7 +573,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04734B00
+	 * 		RVA    -> 0x046E05F0
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoAxisSource.GetTangentVectors
 	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults, Const)
 	 * Parameters:
@@ -601,7 +601,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02796D30
+	 * 		RVA    -> 0x0273C210
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoAxisSource.GetOrigin
 	 * 		Flags  -> (Native, Public, HasDefaults, Const)
 	 */
@@ -623,7 +623,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04734A50
+	 * 		RVA    -> 0x046E0540
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoAxisSource.GetDirection
 	 * 		Flags  -> (Native, Public, HasDefaults, Const)
 	 */
@@ -659,7 +659,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02801A80
+	 * 		RVA    -> 0x027A7340
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoClickTarget.UpdateHoverState
 	 * 		Flags  -> (Native, Public, Const)
 	 * Parameters:
@@ -696,7 +696,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB8190
+	 * 		RVA    -> 0x00CB57E0
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoStateTarget.EndUpdate
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -716,7 +716,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02797300
+	 * 		RVA    -> 0x0273C7E0
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoStateTarget.BeginUpdate
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -750,7 +750,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04734C90
+	 * 		RVA    -> 0x046E0780
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoFloatParameterSource.SetParameter
 	 * 		Flags  -> (Native, Public)
 	 * Parameters:
@@ -773,7 +773,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04734A90
+	 * 		RVA    -> 0x046E0580
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoFloatParameterSource.GetParameter
 	 * 		Flags  -> (Native, Public, Const)
 	 */
@@ -795,7 +795,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02801CD0
+	 * 		RVA    -> 0x027A7590
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoFloatParameterSource.EndModify
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -815,7 +815,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB8190
+	 * 		RVA    -> 0x00CB57E0
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoFloatParameterSource.BeginModify
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -849,7 +849,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04734D20
+	 * 		RVA    -> 0x046E0810
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoVec2ParameterSource.SetParameter
 	 * 		Flags  -> (Native, Public, HasOutParms, HasDefaults)
 	 * Parameters:
@@ -872,7 +872,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x04734AC0
+	 * 		RVA    -> 0x046E05B0
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoVec2ParameterSource.GetParameter
 	 * 		Flags  -> (Native, Public, HasDefaults, Const)
 	 */
@@ -894,7 +894,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02801CD0
+	 * 		RVA    -> 0x027A7590
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoVec2ParameterSource.EndModify
 	 * 		Flags  -> (Native, Public)
 	 */
@@ -914,7 +914,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00CB8190
+	 * 		RVA    -> 0x00CB57E0
 	 * 		Name   -> Function InteractiveToolsFramework.GizmoVec2ParameterSource.BeginModify
 	 * 		Flags  -> (Native, Public)
 	 */

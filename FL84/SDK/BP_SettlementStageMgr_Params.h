@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,9 +15,9 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.Init
+	 * Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.ShowDiePage
 	 */
-	struct UBP_SettlementStageMgr_C_Init_Params
+	struct UBP_SettlementStageMgr_C_ShowDiePage_Params
 	{	};
 
 	/**
@@ -27,21 +27,21 @@ namespace CG
 	{	};
 
 	/**
+	 * Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.SkipToTarget
+	 */
+	struct UBP_SettlementStageMgr_C_SkipToTarget_Params
+	{	};
+
+	/**
 	 * Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.ShowNextStage
 	 */
 	struct UBP_SettlementStageMgr_C_ShowNextStage_Params
 	{	};
 
 	/**
-	 * Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.ShowDiePage
+	 * Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.Init
 	 */
-	struct UBP_SettlementStageMgr_C_ShowDiePage_Params
-	{	};
-
-	/**
-	 * Function BP_SettlementStageMgr.BP_SettlementStageMgr_C.SkipToTarget
-	 */
-	struct UBP_SettlementStageMgr_C_SkipToTarget_Params
+	struct UBP_SettlementStageMgr_C_Init_Params
 	{	};
 
 	/**

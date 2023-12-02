@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -33,7 +33,7 @@ namespace CG
 		class UWidgetSwitcher*                                     WidgetSwitcher_Content;                                  // 0x0448(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnStateChangedEvent_CA2229744174CE02CEE5058D885740E2(int32_t InLastButtonIndex);
+		void OnStateChangedEvent_BD86E6C84E6E54DAB0B25E86032924E9(int32_t InLastButtonIndex);
 		void Construct();
 		void Destruct();
 		class FString GetModuleName();

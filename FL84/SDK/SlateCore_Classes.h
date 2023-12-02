@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class UFontBulkData : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_F9N9[0x48];                                  // 0x0028(0x0048) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_2B1A[0x48];                                  // 0x0028(0x0048) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -77,7 +77,7 @@ namespace CG
 	class USlateWidgetStyleContainerBase : public UObject
 	{
 	public:
-		unsigned char                                              UnknownData_NAMI[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_V9GM[0x8];                                   // 0x0028(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

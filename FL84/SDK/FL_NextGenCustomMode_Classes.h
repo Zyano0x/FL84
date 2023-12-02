@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -60,15 +60,15 @@ namespace CG
 		void STATIC_Vector2DArray2String(TArray<struct FVector2D>* Vector, class UObject* __WorldContext, class FString* str);
 		void STATIC_VectorArray2String(TArray<struct FVector>* Vector, class UObject* __WorldContext, class FString* str);
 		void STATIC_Vector2D2String(const struct FVector2D& Vector, class UObject* __WorldContext, class FString* str);
-		void STATIC_(int32_t _, int32_t __, TArray<int32_t>* ___, class UObject* __WorldContext, int32_t* Result);
+		void STATIC_(int32_t , int32_t _2, TArray<int32_t>* _3, class UObject* __WorldContext, int32_t* Result);
 		void STATIC_SGetBuildPackageType(class UObject* __WorldContext, ESolarBuildConfiguration* );
 		void STATIC_SNumber2Letter(int32_t Number, class UObject* __WorldContext, class FString* Letter, bool* Valid);
 		void STATIC_Vector2String(const struct FVector& Vector, class UObject* __WorldContext, class FString* str);
 		void STATIC_Bool2String(bool _bool_, class UObject* __WorldContext, class FString* String);
-		void STATIC_(const struct FVector& , bool _, class UObject* __WorldContext, struct FVector* __, float* Z, bool* ___);
+		void STATIC_(const struct FVector& , bool _2, class UObject* __WorldContext, struct FVector* _3, float* Z, bool* _4);
 		void STATIC_ToIntStringArray(TArray<class FString>* str, class UObject* __WorldContext, TArray<int32_t>* Int);
-		void STATIC_AGetMiniMapSize(int32_t MapId, class UObject* __WorldContext, struct FVector2D* Size);
-		void STATIC_SGetMapIDByName(const class FString& LevelName, class UObject* __WorldContext, int32_t* MapId);
+		void STATIC_AGetMiniMapSize(int32_t MapID, class UObject* __WorldContext, struct FVector2D* Size);
+		void STATIC_SGetMapIDByName(const class FString& LevelName, class UObject* __WorldContext, int32_t* MapID);
 		class UCGMLogicComponent* STATIC_SGetModeMainLogic(class UObject* __WorldContext);
 		void STATIC_SDeployPlayer(class ASolarPlayerState* TargetPlayer, class APlayerStart* PlayerStart, bool ClearPlayerItems, class UObject* __WorldContext);
 		void STATIC_AWorldLocationToMiniMap(const struct FVector& WorldLocation, class UObject* __WorldContext, struct FVector2D* MiniMapPosition);

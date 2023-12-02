@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -60,7 +60,7 @@ namespace CG
 	struct FGameplayResourceSet
 	{
 	public:
-		unsigned char                                              UnknownData_NY30[0x2];                                   // 0x0000(0x0002) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_OSN7[0x2];                                   // 0x0000(0x0002) MISSED OFFSET (PADDING)
 	};
 
 }

@@ -98,7 +98,7 @@ void HOOKCALL hkSetAppearance(CG::ASolarCharacter* Character, int SkinID)
 		switch (LocalCharacter->AssignedCharacterID)
 		{
 		case 100013: // Syfer
-			SkinID = 131303;
+			SkinID = 131308;
 			break;
 		case 100003: // Ducksyde
 			SkinID = 130304;

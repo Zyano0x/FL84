@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -16,32 +16,34 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * BlueprintGeneratedClass BP_SolarReplayManager.BP_SolarReplayManager_C
-	 * Size -> 0x0000 (FullSize[0x0588] - InheritedSize[0x0588])
+	 * Size -> 0x0000 (FullSize[0x05C0] - InheritedSize[0x05C0])
 	 */
 	class UBP_SolarReplayManager_C : public USolarReplayManager
 	{
 	public:
-		void OnRecordingStartedDelegate_2F7AA7B246902429F358668E4DA06888();
-		void OnRecordingStartedDelegate_11936E9749980E8F3EDCFBA433DAD452();
-		void OnPlayingStartedDelegate_883EC4FB4D75A5406B44D29065739CA5();
-		void GetStartRecordingParams(struct FStartRecordingParams* OutParams);
-		void SetReadyToRecord(bool bIsReady, TArray<class FString> OBPlayerIDs);
+		void OnRecordingStartedDelegate_AE6F7B614EC71BD9E8EE58B2ED3BA5ED();
+		void OnRecordingStartedDelegate_05FA0E164F9BFCE227D9298B6C694CC6();
+		void OnPlayingStartedDelegate_DD902EC047F0EDE3D20E3480AA4C6793();
+		void LuaOnPostLoadMapWithWorld(const class FString& LevelName);
 		void ReceivePlayingStartFailed();
-		void LuaBindDelegates();
-		bool IsHighlightVersionOut(const class FString& HighlightFileName);
+		bool ReceivePlayingFinished(EReplayPlayingFinishReason reason, unsigned char StreamerErrorCode, const class FString& StreamerErrorMsg);
+		void RequestPlayReplay(const class FString& InBattleID, bool IsLive);
+		void RequestPlayReplayOfCurrentBattle();
 		bool NotifyBackendPlayReplayFinished();
 		void SetRequestTryStrategy(float Interval, int32_t Times);
-		void RequestPlayReplay(const class FString& InBattleID, bool IsLive);
-		void LuaOnPostLoadMapWithWorld(const class FString& LevelName);
-		bool IsReady();
-		bool IsRequestingReplayDownloadInfo();
-		void RequestWatchingLiveOfPlayer(const class FString& SolarPlayerID);
 		void RequestBattleList(int32_t PageIndex, int32_t PageSize);
-		bool ReceivePlayingFinished(EReplayPlayingFinishReason reason, unsigned char StreamerErrorCode, const class FString& StreamerErrorMsg);
-		void OnLiveWatchTargetLost();
-		void RequestPlayReplayOfCurrentBattle();
-		void RequestCheckpointForLiveWatch();
+		bool IsHighlightVersionOut(const class FString& HighlightFileName);
+		bool IsRequestingReplayDownloadInfo();
+		void SetReadyToRecord(bool bIsReady, TArray<class FString> OBPlayerIDs);
+		void ReportHighlightConversion(const struct FHighlightReportData& HighlightReportData);
 		class FString GetBattleIDByIndex(int32_t Index);
+		bool IsReady();
+		void GetStartRecordingParams(struct FStartRecordingParams* OutParams);
+		void LuaBindDelegates();
+		void OnLiveWatchTargetLost();
+		void SendLiveWatchOnlyMsg(const class FString& Msg);
+		void RequestWatchingLiveOfPlayer(const class FString& SolarPlayerID);
+		void RequestCheckpointForLiveWatch();
 		static UClass* StaticClass();
 	};
 

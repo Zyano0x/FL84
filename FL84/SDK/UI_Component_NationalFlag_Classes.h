@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -28,16 +28,16 @@ namespace CG
 		E_FlagType                                                 FlagType;                                                // 0x044C(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		bool IsExclusiveFlagId(int32_t InFlagID);
-		bool IsBroadCastMode();
-		void OnSolarUIClosed();
-		void Destruct();
-		void OnInitialized();
-		void SetDefaultNationalFlag();
-		void SetDefaultClanFlag();
-		void Construct();
-		void OnSolarUIOpened();
 		void LoadClanFlagByUrl();
+		bool IsExclusiveFlagId(int32_t InFlagID);
+		void Construct();
+		bool IsBroadCastMode();
+		void SetDefaultNationalFlag();
+		void OnSolarUIOpened();
+		void OnInitialized();
+		void OnSolarUIClosed();
+		void SetDefaultClanFlag();
+		void Destruct();
 		class FString GetModuleName();
 		void SetEmptyClan();
 		void SetFlagType(E_FlagType FlagType);

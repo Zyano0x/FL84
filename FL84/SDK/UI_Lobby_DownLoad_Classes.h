@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -38,10 +38,10 @@ namespace CG
 		bool                                                       BOpened;                                                 // 0x0470(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
 
 	public:
-		void OnClicked_615FAB87491C9528C1EC7995C49FBC2D();
-		void OnSolarUIClosed();
-		void OnInitializedCopy();
+		void OnClicked_2AE9AF064C9310C9B95660AD902F6E57();
 		void OnSolarUIOpened();
+		void OnInitializedCopy();
+		void OnSolarUIClosed();
 		class FString GetModuleName();
 		void OnOpenDownloadList();
 		void OnInitialized();

@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,27 +15,27 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_CA18B2C94BA490ECACA6948545DDD708
+	 * DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_94889DA84A2EE6088A7AA8B0833FABCB
 	 */
-	struct UUI_Lobby_Profession_C_OnClicked_CA18B2C94BA490ECACA6948545DDD708_Params
+	struct UUI_Lobby_Profession_C_OnClicked_94889DA84A2EE6088A7AA8B0833FABCB_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_D2AE55394524600BF115A5B88314F927
+	 * DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_BAD2A6DB4B0C839006DCB1BDB4A1F6A3
 	 */
-	struct UUI_Lobby_Profession_C_OnClicked_D2AE55394524600BF115A5B88314F927_Params
+	struct UUI_Lobby_Profession_C_OnClicked_BAD2A6DB4B0C839006DCB1BDB4A1F6A3_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_22310821440A461BBF77D899BAF9D0DB
+	 * DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_DC041F644222AFFC00856A975D1B6A53
 	 */
-	struct UUI_Lobby_Profession_C_OnClicked_22310821440A461BBF77D899BAF9D0DB_Params
+	struct UUI_Lobby_Profession_C_OnClicked_DC041F644222AFFC00856A975D1B6A53_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_18B4C68D414FE83B37CFA89DA4DE2B5E
+	 * DelegateFunction UI_Lobby_Profession.UI_Lobby_Profession_C.OnClicked_5C2EE7B540FD38DBB469DEABE76C3D9B
 	 */
-	struct UUI_Lobby_Profession_C_OnClicked_18B4C68D414FE83B37CFA89DA4DE2B5E_Params
+	struct UUI_Lobby_Profession_C_OnClicked_5C2EE7B540FD38DBB469DEABE76C3D9B_Params
 	{	};
 
 	/**

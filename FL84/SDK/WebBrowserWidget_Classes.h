@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -27,7 +27,7 @@ namespace CG
 		TArray<class FString>                                      URLKeywordWithoutNavigation;                             // 0x0168(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		class FString                                              InitialURL;                                              // 0x0178(0x0010) Edit, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		bool                                                       bSupportsTransparency;                                   // 0x0188(0x0001) Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_INS5[0x17];                                  // 0x0189(0x0017) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_DIBW[0x17];                                  // 0x0189(0x0017) MISSED OFFSET (PADDING)
 
 	public:
 		void StopLoad();
@@ -54,7 +54,7 @@ namespace CG
 	{
 	public:
 		unsigned char                                              DefaultMaterial[0x28];                                   // 0x0028(0x0028) UNKNOWN PROPERTY: SoftObjectProperty
-		unsigned char                                              UnknownData_B3QJ[0x28];                                  // 0x0050(0x0028) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_E9V4[0x28];                                  // 0x0050(0x0028) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

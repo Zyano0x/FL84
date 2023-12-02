@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,15 +15,15 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_3445FDF9410E7B4152C6A59E328E9AC0
+	 * DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_9AEF874E40DCC50B4F0C8DA4315FA6BD
 	 */
-	struct UUI_Vip_Cards_C_OnClicked_3445FDF9410E7B4152C6A59E328E9AC0_Params
+	struct UUI_Vip_Cards_C_OnClicked_9AEF874E40DCC50B4F0C8DA4315FA6BD_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_6D946638435D2E7580D3F8B4EE526DE2
+	 * DelegateFunction UI_Vip_Cards.UI_Vip_Cards_C.OnClicked_D9E0C8754EA1EA947CE4C9981773C953
 	 */
-	struct UUI_Vip_Cards_C_OnClicked_6D946638435D2E7580D3F8B4EE526DE2_Params
+	struct UUI_Vip_Cards_C_OnClicked_D9E0C8754EA1EA947CE4C9981773C953_Params
 	{	};
 
 	/**

@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -33,19 +33,19 @@ namespace CG
 		class USolarTextBlock*                                     Txt_Invite2;                                             // 0x0448(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		class USolarTextBlock*                                     Txt_Recruit;                                             // 0x0450(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 		bool                                                       Recruiting;                                              // 0x0458(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor
-		unsigned char                                              UnknownData_3SHW[0x3];                                   // 0x0459(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_UQ9L[0x3];                                   // 0x0459(0x0003) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		int32_t                                                    SizeW;                                                   // 0x045C(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		int32_t                                                    SizeH;                                                   // 0x0460(0x0004) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		E_Type_State_Desktop                                       StateDesktopInvite;                                      // 0x0464(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 		E_Type_State_Desktop                                       StateDesktopRecruit;                                     // 0x0465(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnClicked_D7944B3949AB285D968962BC7603406D();
-		void OnClicked_E2DFC7754A51D967EA683A9437B3022F();
+		void OnClicked_DA0FFAFD4DE80F1986F3A58946724480();
+		void OnClicked_B65D6933465FC9953CB8A3A276CB7BBC();
 		void Destruct();
-		void ConstructCopy();
 		void OnSolarUIClosed();
 		void OnSolarUIOpened();
+		void ConstructCopy();
 		class FString GetModuleName();
 		void SetSize(int32_t SizeH, int32_t SizeW);
 		void SetStateDesktop(E_Type_State_Desktop StateDesktopInvite, E_Type_State_Desktop StateDesktopRecruit);

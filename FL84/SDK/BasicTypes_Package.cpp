@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -36,7 +36,7 @@ namespace CG
 	 */
 	bool InitSDK()
 	{
-		return InitSDK(xorstr_(L"SolarlandClient-Win64-Shipping.exe"), 0x6ED5FC0, 0x6EBD640, 0x70352D8);
+		return InitSDK(xorstr_(L"SolarlandClient-Win64-Shipping.exe"), 0x6E75980, 0x6E5D000, 0x6FD55B8);
 	}
 
 	// --------------------------------------------------
@@ -109,18 +109,10 @@ namespace CG
 	 */
 	std::string FString::ToString() const
 	{
-		/*size_t length = std::wcslen(_data);
+		size_t length = std::wcslen(_data);
 		std::string str(length, '\0');
 		std::use_facet<std::ctype<wchar_t>>(std::locale()).narrow(_data, _data + length, '?', &str[0]);
-		return str;*/
-
-		if (IsValid())
-		{
-			std::wstring WData(_data);
-			return std::string(WData.begin(), WData.end());
-		}
-
-		return "?";
+		return str;
 	}
 
 	/**
@@ -131,15 +123,8 @@ namespace CG
 	 */
 	std::wstring FString::ToStringW() const
 	{
-		/*std::wstring str(_data);
-		return str;*/
-
-		if (IsValid())
-		{
-			return _data;
-		}
-
-		return L"?";
+		std::wstring str(_data);
+		return str;
 	}
 
 	/**

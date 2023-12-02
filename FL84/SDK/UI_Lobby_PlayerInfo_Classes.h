@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -31,11 +31,11 @@ namespace CG
 		class UUI_Component_PlayerName_C*                          UI_Component_PlayerName;                                 // 0x0438(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnClicked_2006DAE943FE7D7B631687BB44F5A62D();
+		void OnClicked_A40BE80742A9CEE32C2D2B804CE0773C();
 		void Destruct();
-		void OnSolarUIClosed();
 		void Construct();
 		void OnSolarUIOpened();
+		void OnSolarUIClosed();
 		class FString GetModuleName();
 		static UClass* StaticClass();
 	};

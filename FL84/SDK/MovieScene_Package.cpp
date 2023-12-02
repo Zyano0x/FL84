@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -26,7 +26,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03ADE7B0
+	 * 		RVA    -> 0x03A8A120
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetRowIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -49,7 +49,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03ADE720
+	 * 		RVA    -> 0x03A8A090
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetPreRollFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -72,7 +72,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03ADE690
+	 * 		RVA    -> 0x03A8A000
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetPostRollFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -95,7 +95,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03ADE600
+	 * 		RVA    -> 0x03A89F70
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetOverlapPriority
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -118,7 +118,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03ADE560
+	 * 		RVA    -> 0x03A89ED0
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetIsLocked
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -141,7 +141,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03ADE4C0
+	 * 		RVA    -> 0x03A89E30
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetIsActive
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -164,7 +164,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03ADE440
+	 * 		RVA    -> 0x03A89DB0
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetCompletionMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -187,7 +187,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03ADE3C0
+	 * 		RVA    -> 0x03A89D30
 	 * 		Name   -> Function MovieScene.MovieSceneSection.SetBlendType
 	 * 		Flags  -> (RequiredAPI, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -210,7 +210,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03ADE390
+	 * 		RVA    -> 0x03A89D00
 	 * 		Name   -> Function MovieScene.MovieSceneSection.IsLocked
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -232,7 +232,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03ADE360
+	 * 		RVA    -> 0x03A89CD0
 	 * 		Name   -> Function MovieScene.MovieSceneSection.IsActive
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -254,7 +254,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03ADE340
+	 * 		RVA    -> 0x03A89CB0
 	 * 		Name   -> Function MovieScene.MovieSceneSection.GetRowIndex
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -276,7 +276,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03ADE320
+	 * 		RVA    -> 0x03A89C90
 	 * 		Name   -> Function MovieScene.MovieSceneSection.GetPreRollFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -298,7 +298,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03ADE300
+	 * 		RVA    -> 0x03A89C70
 	 * 		Name   -> Function MovieScene.MovieSceneSection.GetPostRollFrames
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -320,7 +320,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03ADE2E0
+	 * 		RVA    -> 0x03A89C50
 	 * 		Name   -> Function MovieScene.MovieSceneSection.GetOverlapPriority
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -342,7 +342,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03ADE2C0
+	 * 		RVA    -> 0x03A89C30
 	 * 		Name   -> Function MovieScene.MovieSceneSection.GetCompletionMode
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -364,7 +364,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03ADE290
+	 * 		RVA    -> 0x03A89C00
 	 * 		Name   -> Function MovieScene.MovieSceneSection.GetBlendType
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -428,7 +428,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03ADE1B0
+	 * 		RVA    -> 0x03A89B20
 	 * 		Name   -> Function MovieScene.MovieSceneSequence.FindBindingsByTag
 	 * 		Flags  -> (Final, RequiredAPI, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -453,7 +453,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03ADE100
+	 * 		RVA    -> 0x03A89A70
 	 * 		Name   -> Function MovieScene.MovieSceneSequence.FindBindingByTag
 	 * 		Flags  -> (Final, RequiredAPI, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 * Parameters:
@@ -492,7 +492,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE2AB0
+	 * 		RVA    -> 0x03A8E420
 	 * 		Name   -> Function MovieScene.MovieSceneSubSection.SetSequence
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -515,7 +515,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1D60
+	 * 		RVA    -> 0x03A8D6D0
 	 * 		Name   -> Function MovieScene.MovieSceneSubSection.GetSequence
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -565,7 +565,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE2C30
+	 * 		RVA    -> 0x03A8E5A0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.StopAtCurrentTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -585,7 +585,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE2C10
+	 * 		RVA    -> 0x03A8E580
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.Stop
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -605,7 +605,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE2B40
+	 * 		RVA    -> 0x03A8E4B0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetTimeRange
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -630,7 +630,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE2860
+	 * 		RVA    -> 0x03A8E1D0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetPlayRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -653,7 +653,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE29E0
+	 * 		RVA    -> 0x03A8E350
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetPlaybackRange
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -678,7 +678,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE28E0
+	 * 		RVA    -> 0x03A8E250
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -701,7 +701,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE27D0
+	 * 		RVA    -> 0x03A8E140
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetFrameRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -724,7 +724,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE2700
+	 * 		RVA    -> 0x03A8E070
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetFrameRange
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -749,7 +749,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE2660
+	 * 		RVA    -> 0x03A8DFD0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.SetDisableCameraCuts
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -772,7 +772,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1FD0
+	 * 		RVA    -> 0x03A8D940
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.ScrubToSeconds
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -795,7 +795,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE25B0
+	 * 		RVA    -> 0x03A8DF20
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.ScrubToMarkedFrame
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -820,7 +820,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE2520
+	 * 		RVA    -> 0x03A8DE90
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.ScrubToFrame
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -843,7 +843,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE2500
+	 * 		RVA    -> 0x03A8DE70
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.Scrub
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -863,7 +863,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE2460
+	 * 		RVA    -> 0x03A8DDD0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.RPC_OnStopEvent
 	 * 		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
 	 * Parameters:
@@ -886,7 +886,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE2380
+	 * 		RVA    -> 0x03A8DCF0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.RPC_ExplicitServerUpdateEvent
 	 * 		Flags  -> (Final, Net, NetReliable, Native, Event, NetMulticast, Private)
 	 * Parameters:
@@ -911,7 +911,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE2300
+	 * 		RVA    -> 0x03A8DC70
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.PlayToSeconds
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -934,7 +934,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE2250
+	 * 		RVA    -> 0x03A8DBC0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.PlayToMarkedFrame
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -959,7 +959,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE21C0
+	 * 		RVA    -> 0x03A8DB30
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.PlayToFrame
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -982,7 +982,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE21A0
+	 * 		RVA    -> 0x03A8DB10
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.PlayReverse
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1002,7 +1002,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE2110
+	 * 		RVA    -> 0x03A8DA80
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.PlayLooping
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1025,7 +1025,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE20F0
+	 * 		RVA    -> 0x03A8DA60
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.Play
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1045,7 +1045,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE20D0
+	 * 		RVA    -> 0x03A8DA40
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.Pause
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1065,7 +1065,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE2050
+	 * 		RVA    -> 0x03A8D9C0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.JumpToSeconds
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1088,7 +1088,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1FD0
+	 * 		RVA    -> 0x03A8D940
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.JumpToPosition
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1111,7 +1111,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1F20
+	 * 		RVA    -> 0x03A8D890
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.JumpToMarkedFrame
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1136,7 +1136,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1E90
+	 * 		RVA    -> 0x03A8D800
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.JumpToFrame
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1159,7 +1159,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1E60
+	 * 		RVA    -> 0x03A8D7D0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.IsReversed
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1181,7 +1181,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1E30
+	 * 		RVA    -> 0x03A8D7A0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.IsPlaying
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1203,7 +1203,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1E00
+	 * 		RVA    -> 0x03A8D770
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.IsPaused
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1225,7 +1225,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1DE0
+	 * 		RVA    -> 0x03A8D750
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GoToEndAndStop
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1245,7 +1245,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1D90
+	 * 		RVA    -> 0x03A8D700
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetStartTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1267,7 +1267,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1B30
+	 * 		RVA    -> 0x03A8D4A0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetPlayRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1289,7 +1289,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1CE0
+	 * 		RVA    -> 0x03A8D650
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetPlaybackStart
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1311,7 +1311,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1BF0
+	 * 		RVA    -> 0x03A8D560
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetPlaybackPosition
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1333,7 +1333,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1B60
+	 * 		RVA    -> 0x03A8D4D0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetPlaybackEnd
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1355,7 +1355,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1A50
+	 * 		RVA    -> 0x03A8D3C0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetObjectBindings
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1380,7 +1380,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1A20
+	 * 		RVA    -> 0x03A8D390
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetLength
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1402,7 +1402,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1A00
+	 * 		RVA    -> 0x03A8D370
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetFrameRate
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1424,7 +1424,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE19D0
+	 * 		RVA    -> 0x03A8D340
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetFrameDuration
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1446,7 +1446,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1970
+	 * 		RVA    -> 0x03A8D2E0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetEndTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1468,7 +1468,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1930
+	 * 		RVA    -> 0x03A8D2A0
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetDuration
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1490,7 +1490,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1900
+	 * 		RVA    -> 0x03A8D270
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetDisableCameraCuts
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1512,7 +1512,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE18C0
+	 * 		RVA    -> 0x03A8D230
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetCurrentTime
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */
@@ -1534,7 +1534,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE17B0
+	 * 		RVA    -> 0x03A8D120
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.GetBoundObjects
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -1559,7 +1559,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AE1790
+	 * 		RVA    -> 0x03A8D100
 	 * 		Name   -> Function MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -1593,7 +1593,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AD9B40
+	 * 		RVA    -> 0x03A854B0
 	 * 		Name   -> Function MovieScene.MovieSceneCustomClockSource.OnTick
 	 * 		Flags  -> (Native, Public)
 	 * Parameters:
@@ -1618,7 +1618,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AD9A90
+	 * 		RVA    -> 0x03A85400
 	 * 		Name   -> Function MovieScene.MovieSceneCustomClockSource.OnStopPlaying
 	 * 		Flags  -> (Native, Public, HasOutParms)
 	 * Parameters:
@@ -1641,7 +1641,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AD99E0
+	 * 		RVA    -> 0x03A85350
 	 * 		Name   -> Function MovieScene.MovieSceneCustomClockSource.OnStartPlaying
 	 * 		Flags  -> (Native, Public, HasOutParms)
 	 * Parameters:
@@ -1664,7 +1664,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x03AD98E0
+	 * 		RVA    -> 0x03A85250
 	 * 		Name   -> Function MovieScene.MovieSceneCustomClockSource.OnRequestCurrentTime
 	 * 		Flags  -> (Native, Public, HasOutParms)
 	 * Parameters:
@@ -1789,7 +1789,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function MovieScene.MovieSceneEasingFunction.OnEvaluate
 	 * 		Flags  -> (Event, Protected, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 	 * Parameters:

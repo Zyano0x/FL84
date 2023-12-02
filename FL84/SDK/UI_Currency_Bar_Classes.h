@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -60,13 +60,13 @@ namespace CG
 		E_Type_State_Desktop                                       StateDesktopVip;                                         // 0x0519(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnClicked_F6C7D5B14BCDB48EDDCFE68655F624CD();
-		void OnClicked_43DFC3584FBE60F6FB4BE48F8B22A43F();
-		void OnClicked_BD20B7254B1C837EEECCA8A9296B26A7();
-		void OnClicked_72B700524913923585A4939B2C681E73();
+		void OnClicked_1995FCE24DB86075CFE03E8BF59E135E();
+		void OnClicked_1213894448A672B09A411FBEF5C124F9();
+		void OnClicked_0BB85F7D46852D3CBF9C05BC39C99B32();
+		void OnClicked_4214716E40832847915E3199654DED87();
+		void OnSolarUIOpened();
 		void OnSolarUIClosed();
 		void Construct();
-		void OnSolarUIOpened();
 		class FString GetModuleName();
 		void SetStateDesktop(E_Type_State_Desktop StateDesktopDiamond, E_Type_State_Desktop StateDesktopVip);
 		void PreConstruct(bool IsDesignTime);

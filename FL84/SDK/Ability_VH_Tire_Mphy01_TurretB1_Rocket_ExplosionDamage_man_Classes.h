@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -21,7 +21,7 @@ namespace CG
 	class AAbility_VH_Tire_Mphy01_TurretB1_Rocket_ExplosionDamage_man_C : public ASolarAbility
 	{
 	public:
-		unsigned char                                              UnknownData_VO3L[0x8];                                   // 0x0308(0x0008) Fix Super Size
+		unsigned char                                              UnknownData_X9AS[0x8];                                   // 0x0308(0x0008) Fix Super Size
 		struct FPointerToUberGraphFrame                            UberGraphFrame;                                          // 0x0310(0x0008) ZeroConstructor, Transient, DuplicateTransient
 		bool                                                       HasExploded;                                             // 0x0318(0x0001) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor
 

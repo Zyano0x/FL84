@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -12,7 +12,7 @@ namespace CG
 	// --------------------------------------------------
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function MotionWarping.AnimNotifyState_MotionWarping.OnWarpUpdate
 	 * 		Flags  -> (Event, Public, BlueprintEvent, Const)
 	 * Parameters:
@@ -36,7 +36,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function MotionWarping.AnimNotifyState_MotionWarping.OnWarpEnd
 	 * 		Flags  -> (Event, Public, BlueprintEvent, Const)
 	 * Parameters:
@@ -60,7 +60,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x02D656B0
+	 * 		RVA    -> 0x02D0DF90
 	 * 		Name   -> Function MotionWarping.AnimNotifyState_MotionWarping.OnWarpBegin
 	 * 		Flags  -> (Event, Public, BlueprintEvent, Const)
 	 * Parameters:
@@ -84,7 +84,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008A6840
+	 * 		RVA    -> 0x008A3D10
 	 * 		Name   -> Function MotionWarping.AnimNotifyState_MotionWarping.OnRootMotionModifierUpdate
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 * Parameters:
@@ -109,7 +109,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008A6770
+	 * 		RVA    -> 0x008A3C40
 	 * 		Name   -> Function MotionWarping.AnimNotifyState_MotionWarping.OnRootMotionModifierDeactivate
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 * Parameters:
@@ -134,7 +134,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008A66A0
+	 * 		RVA    -> 0x008A3B70
 	 * 		Name   -> Function MotionWarping.AnimNotifyState_MotionWarping.OnRootMotionModifierActivate
 	 * 		Flags  -> (Final, Native, Public, Const)
 	 * Parameters:
@@ -159,7 +159,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008A5770
+	 * 		RVA    -> 0x008A2C40
 	 * 		Name   -> Function MotionWarping.AnimNotifyState_MotionWarping.AddRootMotionModifier
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent, Const)
 	 * Parameters:
@@ -204,7 +204,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008A65C0
+	 * 		RVA    -> 0x008A3A90
 	 * 		Name   -> Function MotionWarping.MotionWarpingUtilities.GetMotionWarpingWindowsFromAnimation
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -231,7 +231,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008A64A0
+	 * 		RVA    -> 0x008A3970
 	 * 		Name   -> Function MotionWarping.MotionWarpingUtilities.GetMotionWarpingWindowsForWarpTargetFromAnimation
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -260,7 +260,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008A6190
+	 * 		RVA    -> 0x008A3660
 	 * 		Name   -> Function MotionWarping.MotionWarpingUtilities.ExtractRootMotionFromAnimation
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -303,7 +303,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008A6910
+	 * 		RVA    -> 0x008A3DE0
 	 * 		Name   -> Function MotionWarping.MotionWarpingComponent.RemoveWarpTarget
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -328,7 +328,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008A6170
+	 * 		RVA    -> 0x008A3640
 	 * 		Name   -> Function MotionWarping.MotionWarpingComponent.DisableAllRootMotionModifiers
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 */
@@ -348,7 +348,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008A5630
+	 * 		RVA    -> 0x008A2B00
 	 * 		Name   -> Function MotionWarping.MotionWarpingComponent.AddOrUpdateWarpTargetFromTransform
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -373,7 +373,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008A5490
+	 * 		RVA    -> 0x008A2960
 	 * 		Name   -> Function MotionWarping.MotionWarpingComponent.AddOrUpdateWarpTargetFromLocationAndRotation
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -400,7 +400,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008A5390
+	 * 		RVA    -> 0x008A2860
 	 * 		Name   -> Function MotionWarping.MotionWarpingComponent.AddOrUpdateWarpTargetFromLocation
 	 * 		Flags  -> (Final, Native, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -425,7 +425,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008A5230
+	 * 		RVA    -> 0x008A2700
 	 * 		Name   -> Function MotionWarping.MotionWarpingComponent.AddOrUpdateWarpTargetFromComponent
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable)
 	 * Parameters:
@@ -454,7 +454,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008A50F0
+	 * 		RVA    -> 0x008A25C0
 	 * 		Name   -> Function MotionWarping.MotionWarpingComponent.AddOrUpdateWarpTarget
 	 * 		Flags  -> (Final, Native, Public, HasOutParms, BlueprintCallable)
 	 * Parameters:
@@ -549,7 +549,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008A62E0
+	 * 		RVA    -> 0x008A37B0
 	 * 		Name   -> Function MotionWarping.RootMotionModifier_AdjustmentBlendWarp.GetAdjustmentBlendIKBoneTransformAndAlpha
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure)
 	 * Parameters:
@@ -581,7 +581,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008A58D0
+	 * 		RVA    -> 0x008A2DA0
 	 * 		Name   -> Function MotionWarping.RootMotionModifier_AdjustmentBlendWarp.AddRootMotionModifierAdjustmentBlendWarp
 	 * 		Flags  -> (Final, Native, Static, Public, HasOutParms, HasDefaults, BlueprintCallable)
 	 * Parameters:
@@ -644,7 +644,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x008A5D30
+	 * 		RVA    -> 0x008A3200
 	 * 		Name   -> Function MotionWarping.RootMotionModifier_SkewWarp.AddRootMotionModifierSkewWarp
 	 * 		Flags  -> (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 	 * Parameters:

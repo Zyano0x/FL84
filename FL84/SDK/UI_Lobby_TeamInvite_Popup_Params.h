@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,27 +15,27 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.OnClicked_185AE9CF4D6A40094E16A0B6EBC43309
+	 * Function UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.OnClicked_04AE720A41B63B3A97C848B02C075A33
 	 */
-	struct UUI_Lobby_TeamInvite_Popup_C_OnClicked_185AE9CF4D6A40094E16A0B6EBC43309_Params
+	struct UUI_Lobby_TeamInvite_Popup_C_OnClicked_04AE720A41B63B3A97C848B02C075A33_Params
 	{	};
 
 	/**
-	 * DelegateFunction UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.OnClicked_6A92DB58416019DB46F6DA9F60F7DE88
+	 * DelegateFunction UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.OnClicked_3E10C6B04264E830ADF82487B0FB4DAA
 	 */
-	struct UUI_Lobby_TeamInvite_Popup_C_OnClicked_6A92DB58416019DB46F6DA9F60F7DE88_Params
-	{	};
-
-	/**
-	 * Function UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.Destruct
-	 */
-	struct UUI_Lobby_TeamInvite_Popup_C_Destruct_Params
+	struct UUI_Lobby_TeamInvite_Popup_C_OnClicked_3E10C6B04264E830ADF82487B0FB4DAA_Params
 	{	};
 
 	/**
 	 * Function UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.Construct
 	 */
 	struct UUI_Lobby_TeamInvite_Popup_C_Construct_Params
+	{	};
+
+	/**
+	 * Function UI_Lobby_TeamInvite_Popup.UI_Lobby_TeamInvite_Popup_C.Destruct
+	 */
+	struct UUI_Lobby_TeamInvite_Popup_C_Destruct_Params
 	{	};
 
 	/**

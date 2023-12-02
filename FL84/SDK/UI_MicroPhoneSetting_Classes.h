@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -48,10 +48,10 @@ namespace CG
 		class UObject*                                             MicroImgOff;                                             // 0x0508(0x0008) Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		struct FEventReply OnMouseButtonDownEvent_4B58E0224142357CAB1CDEB00E5DFF9D(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-		struct FEventReply OnMouseButtonDownEvent_B9D5A2FE44D77356BD1A02A0742A8CC9(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-		void OnStateChangedEvent_EF6964914BA6B627781E1EA75A87DDBA(TArray<class UCheckBox*> ChildChangedArray, int32_t CheckedChildIndex);
-		void OnStateChangedEvent_78A63FB4442408C9C3027CB75EAD4C7F(TArray<class UCheckBox*> ChildChangedArray, int32_t CheckedChildIndex);
+		struct FEventReply OnMouseButtonDownEvent_8206C22C41FD0E455D16A9BE84F59E88(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+		struct FEventReply OnMouseButtonDownEvent_461F9F934EAB73C79DDB2CA931A66733(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+		void OnStateChangedEvent_5C22B51E4690382810BFC89F0306DB6B(TArray<class UCheckBox*> ChildChangedArray, int32_t CheckedChildIndex);
+		void OnStateChangedEvent_F68ABAE04DA9197E0AEF40A42CF8B3D8(TArray<class UCheckBox*> ChildChangedArray, int32_t CheckedChildIndex);
 		void Construct();
 		void Destruct();
 		class FString GetModuleName();

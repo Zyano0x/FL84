@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -31,7 +31,7 @@ namespace CG
 		E_Type_State_Desktop                                       StateDesktop;                                            // 0x0438(0x0001) Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash
 
 	public:
-		void OnClicked_C5F82F29401519B152A0039DB506B938();
+		void OnClicked_5D112F944FF66C5FAA0F6FAC08CA130D();
 		void Destruct();
 		void Construct();
 		void OnInitialized();

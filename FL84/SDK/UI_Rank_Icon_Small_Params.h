@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -15,10 +15,13 @@ namespace CG
 	// # Structs
 	// --------------------------------------------------
 	/**
-	 * Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnSolarUIClosed
+	 * Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.FormatViewCopy
 	 */
-	struct UUI_Rank_Icon_Small_C_OnSolarUIClosed_Params
-	{	};
+	struct UUI_Rank_Icon_Small_C_FormatViewCopy_Params
+	{
+	public:
+		int32_t                                                    LevelID;                                                 // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	};
 
 	/**
 	 * Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnSolarUIOpened
@@ -27,24 +30,21 @@ namespace CG
 	{	};
 
 	/**
-	 * Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.FormatViewJustIconCopy
-	 */
-	struct UUI_Rank_Icon_Small_C_FormatViewJustIconCopy_Params
-	{
-	public:
-		int32_t                                                    LevelID;                                                 // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	};
-
-	/**
 	 * Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnInitialized
 	 */
 	struct UUI_Rank_Icon_Small_C_OnInitialized_Params
 	{	};
 
 	/**
-	 * Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.FormatViewCopy
+	 * Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.OnSolarUIClosed
 	 */
-	struct UUI_Rank_Icon_Small_C_FormatViewCopy_Params
+	struct UUI_Rank_Icon_Small_C_OnSolarUIClosed_Params
+	{	};
+
+	/**
+	 * Function UI_Rank_Icon_Small.UI_Rank_Icon_Small_C.FormatViewJustIconCopy
+	 */
+	struct UUI_Rank_Icon_Small_C_FormatViewJustIconCopy_Params
 	{
 	public:
 		int32_t                                                    LevelID;                                                 // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

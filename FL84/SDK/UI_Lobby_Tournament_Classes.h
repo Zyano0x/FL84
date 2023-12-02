@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -36,10 +36,10 @@ namespace CG
 		class UWidgetSwitcher*                                     WidgetSwitcher_Tournament;                               // 0x0460(0x0008) BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash
 
 	public:
-		void OnClicked_7AFDC0B04E2D056AB79146B470D12223();
+		void OnClicked_DD64CEC24BCAC5A772A8D1A68655D70F();
+		void Destruct();
 		void Construct();
 		void OnInitialized();
-		void Destruct();
 		class FString GetModuleName();
 		void PreConstruct(bool IsDesignTime);
 		void ExecuteUbergraph_UI_Lobby_Tournament(int32_t EntryPoint);

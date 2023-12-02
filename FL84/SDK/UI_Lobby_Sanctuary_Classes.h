@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -35,9 +35,9 @@ namespace CG
 
 	public:
 		void Destruct();
-		void OnSolarUIClosed();
 		void ConstructCopy();
 		void OnSolarUIOpened();
+		void OnSolarUIClosed();
 		class FString GetModuleName();
 		void BP_RefreshSanctuaryUI(bool bInLocked, bool bInMatching);
 		void PreConstruct(bool IsDesignTime);

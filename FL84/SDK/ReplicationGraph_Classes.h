@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -25,13 +25,13 @@ namespace CG
 		class UNetDriver*                                          NetDriver;                                               // 0x0030(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<class UNetReplicationGraphConnection*>              Connections;                                             // 0x0038(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<class UNetReplicationGraphConnection*>              PendingConnections;                                      // 0x0048(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_3Y4M[0x40];                                  // 0x0058(0x0040) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_VO4S[0x40];                                  // 0x0058(0x0040) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UReplicationGraphNode*>                       GlobalGraphNodes;                                        // 0x0098(0x0010) ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		TArray<class UReplicationGraphNode*>                       PrepareForReplicationNodes;                              // 0x00A8(0x0010) ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
 		TArray<class UReplicationGraphNode*>                       PostReplicateNodes;                                      // 0x00B8(0x0010) ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_7RME[0x3C0];                                 // 0x00C8(0x03C0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_1QPQ[0x3C0];                                 // 0x00C8(0x03C0) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TMap<class UNetConnection*, struct FClassExtraReplicatedInfo> ConnectionInfos;                                         // 0x0488(0x0050) Protected, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_6CX8[0x20];                                  // 0x04D8(0x0020) Fix size for supers
+		unsigned char                                              UnknownData_PWIC[0x20];                                  // 0x04D8(0x0020) Fix size for supers
 
 	public:
 		static UClass* StaticClass();
@@ -48,7 +48,7 @@ namespace CG
 		class UReplicationGraphNode_ActorList*                     AlwaysRelevantNode;                                      // 0x0500(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<struct FConnectionAlwaysRelevantNodePair>           AlwaysRelevantForConnectionList;                         // 0x0508(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 		TArray<class AActor*>                                      ActorsWithoutNetConnection;                              // 0x0518(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_4UM3[0x8];                                   // 0x0528(0x0008) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_YQDE[0x8];                                   // 0x0528(0x0008) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -62,7 +62,7 @@ namespace CG
 	{
 	public:
 		TArray<class UReplicationGraphNode*>                       AllChildNodes;                                           // 0x0028(0x0010) ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_7YJL[0x18];                                  // 0x0038(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_3UA3[0x18];                                  // 0x0038(0x0018) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -75,7 +75,7 @@ namespace CG
 	class UReplicationGraphNode_ActorList : public UReplicationGraphNode
 	{
 	public:
-		unsigned char                                              UnknownData_HPXQ[0x80];                                  // 0x0050(0x0080) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_NXXW[0x80];                                  // 0x0050(0x0080) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -88,7 +88,7 @@ namespace CG
 	class UReplicationGraphNode_ActorListFrequencyBuckets : public UReplicationGraphNode
 	{
 	public:
-		unsigned char                                              UnknownData_HHTP[0xB8];                                  // 0x0050(0x00B8) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_5WOQ[0xB8];                                  // 0x0050(0x00B8) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -101,7 +101,7 @@ namespace CG
 	class UReplicationGraphNode_DynamicSpatialFrequency : public UReplicationGraphNode_ActorList
 	{
 	public:
-		unsigned char                                              UnknownData_97HF[0x30];                                  // 0x00D0(0x0030) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_UUYH[0x30];                                  // 0x00D0(0x0030) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -114,7 +114,7 @@ namespace CG
 	class UReplicationGraphNode_ConnectionDormancyNode : public UReplicationGraphNode_ActorList
 	{
 	public:
-		unsigned char                                              UnknownData_XN2E[0x80];                                  // 0x00D0(0x0080) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_9DN9[0x80];                                  // 0x00D0(0x0080) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -127,7 +127,7 @@ namespace CG
 	class UReplicationGraphNode_DormancyNode : public UReplicationGraphNode_ActorList
 	{
 	public:
-		unsigned char                                              UnknownData_47UE[0x10];                                  // 0x00D0(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_YJ9G[0x10];                                  // 0x00D0(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -140,7 +140,7 @@ namespace CG
 	class UReplicationGraphNode_GridCell : public UReplicationGraphNode_ActorList
 	{
 	public:
-		unsigned char                                              UnknownData_VO55[0x40];                                  // 0x00D0(0x0040) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_UKWZ[0x40];                                  // 0x00D0(0x0040) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class UReplicationGraphNode*                               DynamicNode;                                             // 0x0110(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		class UReplicationGraphNode_DormancyNode*                  DormancyNode;                                            // 0x0118(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 
@@ -155,7 +155,7 @@ namespace CG
 	class UReplicationGraphNode_GridSpatialization2D : public UReplicationGraphNode
 	{
 	public:
-		unsigned char                                              UnknownData_H944[0x1D8];                                 // 0x0050(0x01D8) Fix size for supers
+		unsigned char                                              UnknownData_I3JR[0x1D8];                                 // 0x0050(0x01D8) Fix size for supers
 
 	public:
 		static UClass* StaticClass();
@@ -169,7 +169,7 @@ namespace CG
 	{
 	public:
 		class UReplicationGraphNode*                               ChildNode;                                               // 0x0050(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected
-		unsigned char                                              UnknownData_QIH5[0x10];                                  // 0x0058(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_NCOY[0x10];                                  // 0x0058(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -182,7 +182,7 @@ namespace CG
 	class UReplicationGraphNode_AlwaysRelevant_ForConnection : public UReplicationGraphNode_ActorList
 	{
 	public:
-		unsigned char                                              UnknownData_7A8E[0x10];                                  // 0x00D0(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_JW0N[0x10];                                  // 0x00D0(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FAlwaysRelevantActorInfo>                    PastRelevantActors;                                      // 0x00E0(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
 
 	public:
@@ -197,7 +197,7 @@ namespace CG
 	{
 	public:
 		TArray<struct FTearOffActorInfo>                           TearOffActors;                                           // 0x0050(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_79ED[0x10];                                  // 0x0060(0x0010) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_ZGVE[0x10];                                  // 0x0060(0x0010) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();
@@ -211,14 +211,14 @@ namespace CG
 	{
 	public:
 		class UNetConnection*                                      NetConnection;                                           // 0x0028(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_NI2A[0x230];                                 // 0x0030(0x0230) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_WH3W[0x230];                                 // 0x0030(0x0230) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		class AReplicationGraphDebugActor*                         DebugActor;                                              // 0x0260(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_7BF8[0x10];                                  // 0x0268(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_M7IS[0x10];                                  // 0x0268(0x0010) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<struct FLastLocationGatherInfo>                     LastGatherLocations;                                     // 0x0278(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic
-		unsigned char                                              UnknownData_PMGN[0x8];                                   // 0x0288(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
+		unsigned char                                              UnknownData_RF0H[0x8];                                   // 0x0288(0x0008) MISSED OFFSET (FIX SPACE BETWEEN PREVIOUS PROPERTY)
 		TArray<class UReplicationGraphNode*>                       ConnectionGraphNodes;                                    // 0x0290(0x0010) ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
 		class UReplicationGraphNode_TearOff_ForConnection*         TearOffNode;                                             // 0x02A0(0x0008) ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate
-		unsigned char                                              UnknownData_T5UK[0x80];                                  // 0x02A8(0x0080) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_G0EG[0x80];                                  // 0x02A8(0x0080) MISSED OFFSET (PADDING)
 
 	public:
 		static UClass* StaticClass();

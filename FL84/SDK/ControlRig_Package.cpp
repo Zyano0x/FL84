@@ -1,6 +1,6 @@
 ﻿/**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #include "pch.h"
@@ -68,7 +68,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x007E4180
+	 * 		RVA    -> 0x007E1650
 	 * 		Name   -> Function ControlRig.ControlRigComponent.OnPreInitialize
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */
@@ -88,7 +88,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C6D000
+	 * 		RVA    -> 0x00C6A650
 	 * 		Name   -> Function ControlRig.ControlRigComponent.OnPreEvaluate
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */
@@ -108,7 +108,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C6CFE0
+	 * 		RVA    -> 0x00C6A630
 	 * 		Name   -> Function ControlRig.ControlRigComponent.OnPostInitialize
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */
@@ -128,7 +128,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C6CFC0
+	 * 		RVA    -> 0x00C6A610
 	 * 		Name   -> Function ControlRig.ControlRigComponent.OnPostEvaluate
 	 * 		Flags  -> (Native, Event, Public, BlueprintEvent)
 	 */
@@ -148,7 +148,7 @@ namespace CG
 
 	/**
 	 * Function:
-	 * 		RVA    -> 0x00C6CF90
+	 * 		RVA    -> 0x00C6A5E0
 	 * 		Name   -> Function ControlRig.ControlRigComponent.BP_GetControlRig
 	 * 		Flags  -> (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 	 */

@@ -2,7 +2,7 @@
 
 /**
  * Name: FL84
- * Version: 15.1
+ * Version: 1.15.1.6
  */
 
 #ifdef _MSC_VER
@@ -70,7 +70,7 @@ namespace CG
 	struct FTimedDataChannelSampleTime
 	{
 	public:
-		unsigned char                                              UnknownData_1R02[0x18];                                  // 0x0000(0x0018) MISSED OFFSET (PADDING)
+		unsigned char                                              UnknownData_29SI[0x18];                                  // 0x0000(0x0018) MISSED OFFSET (PADDING)
 	};
 
 }
